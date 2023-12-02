@@ -76,9 +76,6 @@ npm-publish: # Publish a new version of the JS package to npm
 	npm publish --access public && \
 	git push origin main --tags
 
-publish-major: ## Publish a major version of the JS package
-	@"$(MAKE)" VERSION=major npm-publish
-
 publish-minor: ## Publish a minor version of the JS package
 	@"$(MAKE)" VERSION=minor npm-publish
 
