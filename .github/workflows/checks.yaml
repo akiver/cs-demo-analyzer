@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'README.md'
+  pull_request:
+    branches:
+      - main
+    paths-ignore:
+      - 'README.md'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+          go-version-file: 'go.mod'
+
+      - name: Download demos cache file
+        run: curl -L -o demos.txt https://gitlab.com/akiver/cs-demos/-/raw/main/demos.txt
+
+      - name: Restore demos cache
+        uses: actions/cache@v3
+        id: demos-cache
+        with:
+          path: cs-demos
+          key: demos-${{ hashFiles('demos.txt') }}
+
+      - name: Download demos
+        if: steps.demos-cache.outputs.cache-hit != 'true'
+        run: ./download-demos.sh
+
+      - name: Test
+        run: go test ./tests

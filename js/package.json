@@ -1,0 +1,41 @@
+{
+  "name": "@akiver/cs-demo-analyzer",
+  "version": "0.0.0",
+  "description": "Analyze and extract data from Counter-Strike demos.",
+  "repository": "https://github.com/akiver/cs-demo-analyzer",
+  "main": "./dist/index.js",
+  "bin": {
+    "csda": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc && tsc --emitDeclarationOnly --declaration --removeComments false",
+    "format": "prettier --write src/*.ts"
+  },
+  "author": "AkiVer",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ],
+  "keywords": [
+    "Counter-Strike",
+    "CS",
+    "CSGO",
+    "CS2",
+    "demos",
+    "replays"
+  ],
+  "devDependencies": {
+    "@types/node": "20.10.2",
+    "prettier": "3.1.0",
+    "typescript": "5.3.2"
+  }
+}

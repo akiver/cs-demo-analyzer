@@ -1,0 +1,10 @@
+.DS_store
+dist
+bin
+node_modules
+*.exe
+*.zip
+*.csv
+/*.json
+/debug/*.json
+.vscode/launch.json

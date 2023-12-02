@@ -1,0 +1,79 @@
+name: '🐛 Bug report'
+description: Report a reproducible bug or regression
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This form is only for submitting bug reports.
+        If you have a usage question or are unsure if it's a bug, please post a question in the 
+        [Discussions tab](https://github.com/akiver/cs-demo-analyzer/discussions).
+        If it's a feature request please use the [feature request form](https://github.com/akiver/cs-demo-analyzer/issues/new?template=feature_requset.yml).
+
+        Before submitting a new bug/issue, please check the links below to see if there is a solution or question posted there already:
+         - [Open issues](https://github.com/akiver/cs-demo-analyzer/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)
+         - [Closed issues](https://github.com/akiver/cs-demo-analyzer/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
+         - [Discussions tab](https://github.com/akiver/cs-demo-analyzer/discussions)
+
+        If an issue already exists do not create a new one, and instead 👍 upvote the existing one.
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: Provide a clear and concise description of the issue you are running into.
+    validations:
+      required: true
+
+  - type: textarea
+    id: demo-links
+    attributes:
+      label: Demo links
+      description: |
+        A link to download the demo(s) affected by this issue.
+      placeholder: |
+        e.g. Dropbox, Google Drive, Mega, Azure etc.
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: |
+        A step-by-step description of how to reproduce the issue.
+      placeholder: |
+        1. Run: ./csda -demo-path myDemo.dem
+        2. Open the JSON file
+        3. Third step
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: Provide a clear and concise description of what you expected to happen.
+      placeholder: |
+        I would expected ___ but i am seeing ___
+    validations:
+      required: true
+
+  - type: textarea
+    id: code
+    attributes:
+      label: Code snippet
+      description: |
+        If applicable, paste a code snippet that can be used to reproduce the issue.
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment information
+      placeholder: |
+        - Version: xxx
+        - OS: xxx
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add extra information about the issue here.

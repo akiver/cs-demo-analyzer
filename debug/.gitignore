@@ -1,0 +1,4 @@
+*.dem
+*.csv
+*.json
+!.gitignore

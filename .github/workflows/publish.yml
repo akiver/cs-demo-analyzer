@@ -1,0 +1,56 @@
+name: Publish new release
+
+on:
+  workflow_dispatch:
+    inputs:
+      release-type:
+        type: choice
+        description: Select the release type
+        required: true
+        options:
+          - patch
+          - minor
+          - major
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+          go-version-file: 'go.mod'
+
+      - name: Publish
+        run: |
+          make publish-${{ github.event.inputs.release-type }}
+        env:
+          NPM_EMAIL: ${{ secrets.NPM_EMAIL }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Get last git tag
+        id: git-tag
+        run: echo "tag=$(git describe --tags --abbrev=0)" >> "$GITHUB_OUTPUT"
+
+      - name: Generate zip archives
+        run: |
+          cd bin/darwin-x64 && zip darwin-x64.zip * && cd -
+          cd bin/darwin-arm64 && zip darwin-arm64.zip * && cd -
+          cd bin/linux-x64 && zip linux-x64.zip * && cd -
+          cd bin/linux-arm64 && zip linux-arm64.zip * && cd -
+          cd bin/windows-x64 && zip windows-x64.zip * && cd -
+
+      - name: Create GitHub release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: 'bin/**/*.zip'
+          tag: ${{ steps.git-tag.outputs.tag }}
