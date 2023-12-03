@@ -867,6 +867,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 
 		bombDefused := newBombDefused(analyzer, event)
 		match.BombsDefused = append(match.BombsDefused, bombDefused)
+		analyzer.currentRound.EndReason = events.RoundEndReasonBombDefused
 	})
 
 	parser.RegisterEventHandler(func(event events.BombExplode) {
@@ -876,6 +877,9 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 
 		bombExploded := newBombExploded(analyzer, event)
 		match.BombsExploded = append(match.BombsExploded, bombExploded)
+		// Update the round end reason because sometimes when the bomb exploded, the round end event indicates
+		// RoundEndReasonTerroristsWin instead of RoundEndReasonTargetBombed.
+		analyzer.currentRound.EndReason = events.RoundEndReasonTargetBombed
 	})
 
 	parser.RegisterEventHandler(func(event events.BombPlantBegin) {

@@ -640,7 +640,7 @@ func TestEbot_Immortals_VS_North_IEM_Katowice_2017_Overpass(t *testing.T) {
 			TeamBStartMoney:   24500,
 			TeamAEconomyType:  constants.EconomyTypeFull,
 			TeamBEconomyType:  constants.EconomyTypeFull,
-			EndReason:         events.RoundEndReasonTerroristsWin,
+			EndReason:         events.RoundEndReasonTargetBombed,
 			WinnerSide:        common.TeamTerrorists,
 			TeamAScore:        15,
 			TeamBScore:        15,
