@@ -91,6 +91,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypePistol,
 			TeamAScore:          1,
 			TeamBScore:          0,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              2,
@@ -110,6 +112,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeForceBuy,
 			TeamAScore:          2,
 			TeamBScore:          0,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              3,
@@ -129,6 +133,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeEco,
 			TeamAScore:          3,
 			TeamBScore:          0,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              4,
@@ -148,6 +154,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeFull,
 			TeamAScore:          3,
 			TeamBScore:          1,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              5,
@@ -167,6 +175,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeFull,
 			TeamAScore:          4,
 			TeamBScore:          1,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              6,
@@ -186,6 +196,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeForceBuy,
 			TeamAScore:          5,
 			TeamBScore:          1,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              7,
@@ -205,6 +217,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeEco,
 			TeamAScore:          6,
 			TeamBScore:          1,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              8,
@@ -224,6 +238,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeFull,
 			TeamAScore:          7,
 			TeamBScore:          1,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              9,
@@ -243,6 +259,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeSemi,
 			TeamAScore:          8,
 			TeamBScore:          1,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              10,
@@ -262,6 +280,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeFull,
 			TeamAScore:          8,
 			TeamBScore:          2,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              11,
@@ -281,6 +301,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeFull,
 			TeamAScore:          9,
 			TeamBScore:          2,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              12,
@@ -300,6 +322,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeEco,
 			TeamAScore:          9,
 			TeamBScore:          3,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              13,
@@ -319,6 +343,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeFull,
 			TeamAScore:          10,
 			TeamBScore:          3,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              14,
@@ -338,6 +364,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeForceBuy,
 			TeamAScore:          10,
 			TeamBScore:          4,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              15,
@@ -357,6 +385,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeFull,
 			TeamAScore:          10,
 			TeamBScore:          5,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              16,
@@ -376,6 +406,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypePistol,
 			TeamAScore:          10,
 			TeamBScore:          6,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              17,
@@ -395,6 +427,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeSemi,
 			TeamAScore:          10,
 			TeamBScore:          7,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              18,
@@ -414,6 +448,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeSemi,
 			TeamAScore:          10,
 			TeamBScore:          8,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              19,
@@ -433,6 +469,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeFull,
 			TeamAScore:          10,
 			TeamBScore:          9,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              20,
@@ -452,6 +490,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeFull,
 			TeamAScore:          10,
 			TeamBScore:          10,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              21,
@@ -471,6 +511,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeFull,
 			TeamAScore:          11,
 			TeamBScore:          10,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              22,
@@ -490,6 +532,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeFull,
 			TeamAScore:          11,
 			TeamBScore:          11,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              23,
@@ -509,6 +553,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeFull,
 			TeamAScore:          11,
 			TeamBScore:          12,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              24,
@@ -528,6 +574,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeFull,
 			TeamAScore:          11,
 			TeamBScore:          13,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              25,
@@ -547,6 +595,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeFull,
 			TeamAScore:          11,
 			TeamBScore:          14,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              26,
@@ -566,6 +616,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeFull,
 			TeamAScore:          12,
 			TeamBScore:          14,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              27,
@@ -585,6 +637,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeForceBuy,
 			TeamAScore:          13,
 			TeamBScore:          14,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              28,
@@ -604,6 +658,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeEco,
 			TeamAScore:          14,
 			TeamBScore:          14,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              29,
@@ -623,6 +679,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeSemi,
 			TeamAScore:          14,
 			TeamBScore:          15,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 		{
 			Number:              30,
@@ -642,6 +700,8 @@ func TestEsea_CLG_VS_Liquid_IEM_Cologne_2017_Cbble(t *testing.T) {
 			TeamBEconomyType:    constants.EconomyTypeFull,
 			TeamAScore:          14,
 			TeamBScore:          16,
+			TeamAName:           expectedTeamNameA,
+			TeamBName:           expectedTeamNameB,
 		},
 	}
 

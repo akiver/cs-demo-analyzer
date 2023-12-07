@@ -98,6 +98,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            2,
@@ -114,6 +116,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            3,
@@ -130,6 +134,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            4,
@@ -146,6 +152,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            5,
@@ -162,6 +170,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            6,
@@ -178,6 +188,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            7,
@@ -194,6 +206,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            8,
@@ -210,6 +224,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            9,
@@ -226,6 +242,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            10,
@@ -242,6 +260,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            11,
@@ -258,6 +278,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            12,
@@ -274,6 +296,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            13,
@@ -290,6 +314,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            14,
@@ -306,6 +332,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            15,
@@ -322,6 +350,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            16,
@@ -340,6 +370,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            17,
@@ -356,6 +388,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            18,
@@ -372,6 +406,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            19,
@@ -388,6 +424,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            20,
@@ -404,6 +442,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            21,
@@ -420,6 +460,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            22,
@@ -436,6 +478,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            23,
@@ -452,6 +496,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            24,
@@ -468,6 +514,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            25,
@@ -484,6 +532,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            26,
@@ -500,6 +550,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            27,
@@ -516,6 +568,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            28,
@@ -532,6 +586,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            29,
@@ -548,6 +604,8 @@ func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 	}
 

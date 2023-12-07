@@ -364,6 +364,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            2,
@@ -380,6 +382,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            3,
@@ -396,6 +400,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            4,
@@ -412,6 +418,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            5,
@@ -428,6 +436,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            6,
@@ -444,6 +454,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            7,
@@ -460,6 +472,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            8,
@@ -476,6 +490,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            9,
@@ -492,6 +508,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            10,
@@ -508,6 +526,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            11,
@@ -524,6 +544,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            12,
@@ -540,6 +562,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            13,
@@ -556,6 +580,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            14,
@@ -572,6 +598,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            15,
@@ -588,6 +616,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            16,
@@ -606,6 +636,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            17,
@@ -622,6 +654,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            18,
@@ -638,6 +672,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            19,
@@ -654,6 +690,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            20,
@@ -670,6 +708,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            21,
@@ -686,6 +726,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            22,
@@ -702,6 +744,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            23,
@@ -718,6 +762,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            24,
@@ -734,6 +780,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            25,
@@ -750,6 +798,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            26,
@@ -766,6 +816,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            27,
@@ -782,6 +834,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            28,
@@ -798,6 +852,8 @@ func TestEsea_12283595_Cache(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 	}
 

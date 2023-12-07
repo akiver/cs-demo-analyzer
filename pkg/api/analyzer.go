@@ -419,10 +419,12 @@ func (analyzer *Analyzer) updateTeamNames() {
 	teamNameA := gameState.Team(*match.TeamA.CurrentSide).ClanName()
 	if teamNameA != "" {
 		match.TeamA.Name = teamNameA
+		analyzer.currentRound.TeamAName = teamNameA
 	}
 	teamNameB := gameState.Team(*match.TeamB.CurrentSide).ClanName()
 	if teamNameB != "" {
 		match.TeamB.Name = teamNameB
+		analyzer.currentRound.TeamBName = teamNameB
 	}
 }
 

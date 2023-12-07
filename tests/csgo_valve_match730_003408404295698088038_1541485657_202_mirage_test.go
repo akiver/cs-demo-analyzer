@@ -92,6 +92,8 @@ func TestValve_Match730_003408404295698088038_1541485657_202_Mirage(t *testing.T
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            2,
@@ -110,6 +112,8 @@ func TestValve_Match730_003408404295698088038_1541485657_202_Mirage(t *testing.T
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            3,
@@ -128,6 +132,8 @@ func TestValve_Match730_003408404295698088038_1541485657_202_Mirage(t *testing.T
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            4,
@@ -146,6 +152,8 @@ func TestValve_Match730_003408404295698088038_1541485657_202_Mirage(t *testing.T
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            5,
@@ -164,6 +172,8 @@ func TestValve_Match730_003408404295698088038_1541485657_202_Mirage(t *testing.T
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            6,
@@ -182,6 +192,8 @@ func TestValve_Match730_003408404295698088038_1541485657_202_Mirage(t *testing.T
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            7,
@@ -200,6 +212,8 @@ func TestValve_Match730_003408404295698088038_1541485657_202_Mirage(t *testing.T
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            8,
@@ -218,6 +232,8 @@ func TestValve_Match730_003408404295698088038_1541485657_202_Mirage(t *testing.T
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            9,
@@ -236,6 +252,8 @@ func TestValve_Match730_003408404295698088038_1541485657_202_Mirage(t *testing.T
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            10,
@@ -254,6 +272,8 @@ func TestValve_Match730_003408404295698088038_1541485657_202_Mirage(t *testing.T
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            11,
@@ -272,6 +292,8 @@ func TestValve_Match730_003408404295698088038_1541485657_202_Mirage(t *testing.T
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            12,
@@ -290,6 +312,8 @@ func TestValve_Match730_003408404295698088038_1541485657_202_Mirage(t *testing.T
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            13,
@@ -308,6 +332,8 @@ func TestValve_Match730_003408404295698088038_1541485657_202_Mirage(t *testing.T
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            14,
@@ -326,6 +352,8 @@ func TestValve_Match730_003408404295698088038_1541485657_202_Mirage(t *testing.T
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            15,
@@ -344,6 +372,8 @@ func TestValve_Match730_003408404295698088038_1541485657_202_Mirage(t *testing.T
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            16,
@@ -362,6 +392,8 @@ func TestValve_Match730_003408404295698088038_1541485657_202_Mirage(t *testing.T
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 	}
 

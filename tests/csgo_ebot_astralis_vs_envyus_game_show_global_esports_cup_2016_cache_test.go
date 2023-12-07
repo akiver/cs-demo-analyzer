@@ -91,6 +91,8 @@ func TestEbot_Astralis_VS_Envyus_Game_Show_Global_eSports_Cup_2016_Cache(t *test
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 	}
 

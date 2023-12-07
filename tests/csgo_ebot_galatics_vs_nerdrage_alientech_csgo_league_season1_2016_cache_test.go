@@ -90,6 +90,8 @@ func TestEbot_Galatics_VS_Nerdrage_AlienTech_CSGO_League_Season1_2016_Cache(t *t
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            2,
@@ -109,6 +111,8 @@ func TestEbot_Galatics_VS_Nerdrage_AlienTech_CSGO_League_Season1_2016_Cache(t *t
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 	}
 

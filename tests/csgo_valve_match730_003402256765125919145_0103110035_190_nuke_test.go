@@ -224,6 +224,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            2,
@@ -240,6 +242,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            3,
@@ -256,6 +260,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            4,
@@ -272,6 +278,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            5,
@@ -288,6 +296,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            6,
@@ -304,6 +314,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            7,
@@ -320,6 +332,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            8,
@@ -336,6 +350,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            9,
@@ -352,6 +368,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            10,
@@ -368,6 +386,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            11,
@@ -384,6 +404,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            12,
@@ -400,6 +422,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            13,
@@ -416,6 +440,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            14,
@@ -432,6 +458,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            15,
@@ -448,6 +476,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            16,
@@ -466,6 +496,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            17,
@@ -482,6 +514,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            18,
@@ -498,6 +532,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            19,
@@ -514,6 +550,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            20,
@@ -530,6 +568,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            21,
@@ -546,6 +586,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            22,
@@ -562,6 +604,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            23,
@@ -578,6 +622,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            24,
@@ -594,6 +640,8 @@ func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) 
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 	}
 

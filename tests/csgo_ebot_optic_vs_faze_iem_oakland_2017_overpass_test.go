@@ -89,6 +89,8 @@ func TestEbot_Optic_VS_Faze_IEM_Oakland_2017_Overpass(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            2,
@@ -108,6 +110,8 @@ func TestEbot_Optic_VS_Faze_IEM_Oakland_2017_Overpass(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            3,
@@ -127,6 +131,8 @@ func TestEbot_Optic_VS_Faze_IEM_Oakland_2017_Overpass(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            4,
@@ -146,6 +152,8 @@ func TestEbot_Optic_VS_Faze_IEM_Oakland_2017_Overpass(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            5,
@@ -165,6 +173,8 @@ func TestEbot_Optic_VS_Faze_IEM_Oakland_2017_Overpass(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            6,
@@ -184,6 +194,8 @@ func TestEbot_Optic_VS_Faze_IEM_Oakland_2017_Overpass(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            7,
@@ -203,6 +215,8 @@ func TestEbot_Optic_VS_Faze_IEM_Oakland_2017_Overpass(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            8,
@@ -222,6 +236,8 @@ func TestEbot_Optic_VS_Faze_IEM_Oakland_2017_Overpass(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            9,
@@ -241,6 +257,8 @@ func TestEbot_Optic_VS_Faze_IEM_Oakland_2017_Overpass(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            10,
@@ -260,6 +278,8 @@ func TestEbot_Optic_VS_Faze_IEM_Oakland_2017_Overpass(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            11,
@@ -279,6 +299,8 @@ func TestEbot_Optic_VS_Faze_IEM_Oakland_2017_Overpass(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            12,
@@ -298,6 +320,8 @@ func TestEbot_Optic_VS_Faze_IEM_Oakland_2017_Overpass(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            13,
@@ -317,6 +341,8 @@ func TestEbot_Optic_VS_Faze_IEM_Oakland_2017_Overpass(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            14,
@@ -336,6 +362,8 @@ func TestEbot_Optic_VS_Faze_IEM_Oakland_2017_Overpass(t *testing.T) {
 			WinnerName:        expectedTeamNameA,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            15,
@@ -355,6 +383,8 @@ func TestEbot_Optic_VS_Faze_IEM_Oakland_2017_Overpass(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamCounterTerrorists,
 			TeamBSide:         common.TeamTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            16,
@@ -374,6 +404,8 @@ func TestEbot_Optic_VS_Faze_IEM_Oakland_2017_Overpass(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            17,
@@ -393,6 +425,8 @@ func TestEbot_Optic_VS_Faze_IEM_Oakland_2017_Overpass(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            18,
@@ -412,6 +446,8 @@ func TestEbot_Optic_VS_Faze_IEM_Oakland_2017_Overpass(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 		{
 			Number:            19,
@@ -431,6 +467,8 @@ func TestEbot_Optic_VS_Faze_IEM_Oakland_2017_Overpass(t *testing.T) {
 			WinnerName:        expectedTeamNameB,
 			TeamASide:         common.TeamTerrorists,
 			TeamBSide:         common.TeamCounterTerrorists,
+			TeamAName:         expectedTeamNameA,
+			TeamBName:         expectedTeamNameB,
 		},
 	}
 
