@@ -154,6 +154,10 @@ func GetDemoSource(demo *Demo) constants.DemoSource {
 		return constants.DemoSourceCEVO
 	}
 
+	if strings.Contains(serverName, "challengermode") {
+		return constants.DemoSourceChallengermode
+	}
+
 	if strings.Contains(serverName, "esl") {
 		return constants.DemoSourceESL
 	}

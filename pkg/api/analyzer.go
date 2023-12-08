@@ -176,6 +176,8 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 		createEseaAnalyzer(analyzer)
 	case constants.DemoSourceEbot:
 		createEbotAnalyzer(analyzer)
+	case constants.DemoSourceChallengermode:
+		createChallengermodeAnalyzer(analyzer)
 	case constants.DemoSourceEsportal:
 		return nil, errors.New("esportal demos are not supported (EsportalNotSupported)")
 	case constants.DemoSourceCEVO:

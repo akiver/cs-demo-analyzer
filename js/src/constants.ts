@@ -12,6 +12,7 @@ export const DemoSource = {
   Popflash: 'popflash',
   FaceIt: 'faceit',
   Cevo: 'cevo',
+  Challengermode: 'challengermode',
   Esl: 'esl',
   Esea: 'esea',
   Esportal: 'esportal',
