@@ -1225,11 +1225,14 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 				}
 			}
 
+			var lastTimeoutUpdateTick = -1
 			onTimeoutUpdate := func(val st.PropertyValue) {
-				if val.Float() == 0 {
-					analyzer.currentRound.StartTick = analyzer.currentTick()
+				currentTick := analyzer.currentTick()
+				if lastTimeoutUpdateTick != currentTick && val.Float() == 0 {
+					analyzer.currentRound.StartTick = currentTick
 					analyzer.currentRound.StartFrame = parser.CurrentFrame()
 				}
+				lastTimeoutUpdateTick = currentTick
 			}
 			// Demos before the CSGO update that added teams timeout doesn't contain this prop.
 			// In this case round start values will come from round_start event which is fine as timeout didn't exist.
