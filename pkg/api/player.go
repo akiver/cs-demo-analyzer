@@ -346,7 +346,7 @@ func (player *Player) KillCount() int {
 				continue
 			}
 
-			isSuicide := kill.KillerSteamID64 == 0 && kill.KillerName == "World"
+			isSuicide := kill.KillerSteamID64 == 0 && kill.WeaponName == constants.WeaponWorld
 			if isSuicide {
 				killCount--
 			}
