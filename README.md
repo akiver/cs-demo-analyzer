@@ -23,7 +23,7 @@ Usage of csda:
   -positions
         Include entities (players, grenades...) positions (default false)
   -source string
-        Force demo's source, valid values: [valve,esea,faceit,ebot,esl,popflash,gamersclub]
+        Force demo's source, valid values: [valve,esea,faceit,ebot,esl,popflash,challengermode]
 ```
 
 ### Examples

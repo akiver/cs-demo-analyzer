@@ -28,4 +28,5 @@ var SupportedDemoSources = []DemoSource{
 	DemoSourceEbot,
 	DemoSourceESL,
 	DemoSourcePopFlash,
+	DemoSourceChallengermode,
 }
