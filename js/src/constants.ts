@@ -339,5 +339,13 @@ export const GameMode = {
   Competitive: 'competitive',
   Scrimmage2V2: 'scrimcomp2v2',
   Scrimmage5V5: 'scrimcomp5v5',
+  Deathmatch: 'deathmatch',
+  GunGameProgressive: 'gungameprogressive',
+  GunGameBomb: 'gungametrbomb',
+  Custom: 'custom',
+  CoOperative: 'cooperative',
+  CoOperativeMission: 'coopmission',
+  Skirmish: 'skirmish',
+  Survival: 'survival',
 } as const;
 export type GameMode = (typeof GameMode)[keyof typeof GameMode];

@@ -75,11 +75,19 @@ func (gameMode GameModeStr) String() string {
 }
 
 const (
-	GameModeStrCasual       GameModeStr = "casual"
-	GameModeStrPremier      GameModeStr = "premier"
-	GameModeStrCompetitive  GameModeStr = "competitive"
-	GameModeStrScrimmage2V2 GameModeStr = "scrimcomp2v2"
-	GameModeStrScrimmage5v5 GameModeStr = "scrimcomp5v5"
+	GameModeStrCasual             GameModeStr = "casual"
+	GameModeStrPremier            GameModeStr = "premier"
+	GameModeStrCompetitive        GameModeStr = "competitive"
+	GameModeStrScrimmage2V2       GameModeStr = "scrimcomp2v2"
+	GameModeStrScrimmage5v5       GameModeStr = "scrimcomp5v5"
+	GameModeStrDeathmatch         GameModeStr = "deathmatch"
+	GameModeStrGunGameProgressive GameModeStr = "gungameprogressive"
+	GameModeStrGunGameBomb        GameModeStr = "gungametrbomb"
+	GameModeStrCustom             GameModeStr = "custom"
+	GameModeStrCoOperative        GameModeStr = "cooperative"
+	GameModeStrCoOperativeMission GameModeStr = "coopmission"
+	GameModeStrSkirmish           GameModeStr = "skirmish"
+	GameModeStrSurvival           GameModeStr = "survival"
 )
 
 var GameModeMapping = map[GameType]map[GameMode]GameModeStr{
@@ -88,5 +96,23 @@ var GameModeMapping = map[GameType]map[GameMode]GameModeStr{
 		GameModeCompetitive:  GameModeStrCompetitive,
 		GameModeScrimmage2V2: GameModeStrScrimmage2V2,
 		GameModeScrimmage5V5: GameModeStrScrimmage5v5,
+	},
+	GameTypeGunGame: {
+		GameModeProgressive: GameModeStrGunGameProgressive,
+		GameModeBomb:        GameModeStrGunGameBomb,
+		GameModeDeathmatch:  GameModeStrDeathmatch,
+	},
+	GameTypeCustom: {
+		GameModeCustom: GameModeStrCustom,
+	},
+	GameTypeCoOperative: {
+		GameModeCoOperative:        GameModeStrCoOperative,
+		GameModeCoOperativeMission: GameModeStrCoOperativeMission,
+	},
+	GameTypeSkirmish: {
+		GameModeSkirmish: GameModeStrSkirmish,
+	},
+	GameTypeFFA: {
+		GameModeSurvival: GameModeStrSurvival,
 	},
 }
