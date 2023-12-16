@@ -195,7 +195,7 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 			return nil, errors.New("cs2 PopFlash demos are not supported (PopFlashNotSupported)")
 		}
 		createValveAnalyzer(analyzer, demoPath)
-	case constants.DemoSourceValve, constants.DemoSourceESL:
+	case constants.DemoSourceValve, constants.DemoSourcePerfectWorld, constants.DemoSourceESL:
 		createValveAnalyzer(analyzer, demoPath)
 	default:
 		return nil, errors.New("unknown demo source, please specify the source with the -source flag (UnknownSource)")

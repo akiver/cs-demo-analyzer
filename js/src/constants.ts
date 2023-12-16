@@ -18,6 +18,7 @@ export const DemoSource = {
   Esportal: 'esportal',
   Fastcup: 'fastcup',
   Gamersclub: 'gamersclub',
+  PerfectWorld: 'perfectworld',
 } as const;
 export type DemoSource = (typeof DemoSource)[keyof typeof DemoSource];
 

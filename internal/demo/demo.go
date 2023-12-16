@@ -190,6 +190,10 @@ func GetDemoSource(demo *Demo) constants.DemoSource {
 		return constants.DemoSourceValve
 	}
 
+	if strings.Contains(serverName, "完美世界") {
+		return constants.DemoSourcePerfectWorld
+	}
+
 	return constants.DemoSourceUnknown
 }
 

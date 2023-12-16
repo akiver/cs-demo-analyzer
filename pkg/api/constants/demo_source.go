@@ -19,6 +19,8 @@ const (
 	DemoSourceEsportal       DemoSource = "esportal"
 	DemoSourceFastcup        DemoSource = "fastcup"
 	DemoSourceGamersclub     DemoSource = "gamersclub"
+	// "Perfect World" (完美世界) is a Chinese company that Valve partnered with to release CS:GO in China.
+	DemoSourcePerfectWorld DemoSource = "perfectworld"
 )
 
 var SupportedDemoSources = []DemoSource{
@@ -29,4 +31,5 @@ var SupportedDemoSources = []DemoSource{
 	DemoSourceESL,
 	DemoSourcePopFlash,
 	DemoSourceChallengermode,
+	DemoSourcePerfectWorld,
 }
