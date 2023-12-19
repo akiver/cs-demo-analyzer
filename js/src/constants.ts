@@ -29,6 +29,8 @@ export const SupportedDemoSources: DemoSource[] = [
   DemoSource.Ebot,
   DemoSource.Esl,
   DemoSource.Popflash,
+  DemoSource.Challengermode,
+  DemoSource.PerfectWorld,
 ];
 
 export const DemoType = {

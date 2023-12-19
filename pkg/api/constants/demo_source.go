@@ -24,12 +24,12 @@ const (
 )
 
 var SupportedDemoSources = []DemoSource{
-	DemoSourceValve,
-	DemoSourceESEA,
-	DemoSourceFaceIt,
-	DemoSourceEbot,
-	DemoSourceESL,
-	DemoSourcePopFlash,
 	DemoSourceChallengermode,
+	DemoSourceEbot,
+	DemoSourceESEA,
+	DemoSourceESL,
+	DemoSourceFaceIt,
 	DemoSourcePerfectWorld,
+	DemoSourcePopFlash,
+	DemoSourceValve,
 }
