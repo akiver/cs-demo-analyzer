@@ -35,7 +35,7 @@ type Analyzer struct {
 	match              *Match
 	currentRound       *Round
 	matchStarted       func() bool
-	postProcess        func()
+	postProcess        func(analyzer *Analyzer)
 	isSource2          bool
 	isFirstRoundOfHalf bool
 	// Flag to handle demos with missing round end events.
@@ -152,8 +152,9 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 		bombPlantPosition:         r3.Vector{},
 		lastGrenadeThrownByPlayer: make(map[uint64]*Shot),
 		playersUntyingAnHostage:   make(map[uint64]int),
-		postProcess:               func() {},
+		postProcess:               defaultPostProcess,
 	}
+
 	analyzer.currentRound = &Round{
 		analyzer:           analyzer,
 		Number:             1,
@@ -183,7 +184,7 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 	case constants.DemoSourceCEVO:
 		return nil, errors.New("cevo demos are not supported (CevoNotSupported)")
 	case constants.DemoSourceFastcup:
-		return nil, errors.New("fastcup demos are not supported (FastcupNotSupported)")
+		createFastcupAnalyzer(analyzer)
 	case constants.DemoSourceGamersclub:
 		// Looks like they use an eBot fork but rounds are not detected properly.
 		return nil, errors.New("gamersclub demos are not supported (GamersClubNotSupported)")
@@ -217,7 +218,7 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 		match.FrameRate = float64(header.PlaybackFrames) / header.PlaybackTime.Seconds()
 	}
 
-	analyzer.postProcess()
+	analyzer.postProcess(analyzer)
 	match.computeResultStats()
 
 	return &match, nil
@@ -467,7 +468,20 @@ func (analyzer *Analyzer) updatePlayersCurrentTeam() {
 			}
 		}
 	}
+}
 
+func (analyzer *Analyzer) processMatchStart() {
+	parser := analyzer.parser
+	match := analyzer.match
+	analyzer.updatePlayersCurrentTeam()
+
+	currentRound := analyzer.currentRound
+	currentRound.StartFrame = parser.CurrentFrame()
+	currentRound.StartTick = analyzer.currentTick()
+	currentRound.TeamASide = *match.TeamA.CurrentSide
+	currentRound.TeamBSide = *match.TeamB.CurrentSide
+	analyzer.updateTeamNames()
+	analyzer.createPlayersEconomies()
 }
 
 // This creates a Round, reset analyzer data related to the current round and set the new round as the current round.
@@ -549,6 +563,40 @@ func (analyzer *Analyzer) computePlayersEconomies() {
 
 		economy.updateValues(analyzer, player)
 	}
+}
+
+func (analyzer *Analyzer) defaultRoundStartHandler(event events.RoundStart) {
+	if !analyzer.matchStarted() {
+		return
+	}
+
+	// No Rounds have been added yet, don't create a new one in this case, it's still the first round.
+	if len(analyzer.match.Rounds) == 0 {
+		return
+	}
+
+	analyzer.createRound()
+}
+
+func (analyzer *Analyzer) defaultRoundFreezetimeChangedHandler(event events.RoundFreezetimeChanged) {
+	// It may not be accurate to create players economy on round start because it's possible to buy
+	// a few ticks before the round start event and so may results in incorrect values.
+	// Do it when the freeze time starts, it's updated just before round start events.
+	if event.NewIsFreezetime {
+		analyzer.createPlayersEconomies()
+	} else {
+		analyzer.currentRound.FreezeTimeEndTick = analyzer.currentTick()
+		analyzer.currentRound.FreezeTimeEndFrame = analyzer.parser.CurrentFrame()
+		analyzer.lastFreezeTimeEndTick = analyzer.currentTick()
+	}
+}
+
+func (analyzer *Analyzer) defaultRoundEndOfficiallyHandler(event events.RoundEndOfficial) {
+	if !analyzer.matchStarted() {
+		return
+	}
+
+	analyzer.match.Rounds = append(analyzer.match.Rounds, analyzer.currentRound)
 }
 
 func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
@@ -1110,7 +1158,8 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 	})
 
 	parser.RegisterEventHandler(func(event events.DataTablesParsed) {
-		parser.ServerClasses().FindByName("CChicken").OnEntityCreated(func(entity st.Entity) {
+		serverClasses := parser.ServerClasses()
+		serverClasses.FindByName("CChicken").OnEntityCreated(func(entity st.Entity) {
 			analyzer.chickenEntities = append(analyzer.chickenEntities, entity)
 		})
 
@@ -1142,7 +1191,72 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 			}
 		})
 
-		parser.ServerClasses().FindByName("CCSGameRulesProxy").OnEntityCreated(func(entity st.Entity) {
+		getCurrentRoundBombDefusedEvent := func() *BombDefused {
+			bombsDefused := analyzer.match.BombsDefused
+			bombDefusedCount := len(bombsDefused)
+			if bombDefusedCount > 0 {
+				lastBombDefused := bombsDefused[bombDefusedCount-1]
+				if lastBombDefused.RoundNumber == analyzer.currentRound.Number {
+					return lastBombDefused
+				}
+			}
+
+			return nil
+		}
+
+		if !analyzer.isSource2 {
+			// CSGO workaround to detect missing bomb defused events and update the round end reason.
+			// Both events may be missing with old CSGO demos.
+			// We don't have the problem with CS2 demos because the parser dispatch bomb events using props updates
+			// rather than game events.
+			// TODO move it to demoinfocs?
+			serverClasses.FindByName("CPlantedC4").OnEntityCreated(func(bombEntity st.Entity) {
+				// Old CSGO demos don't have these properties (~ before end of 2018).
+				siteProp := bombEntity.Property("m_nBombSite")
+				defuserProp := bombEntity.Property("m_hBombDefuser")
+				if siteProp == nil || defuserProp == nil {
+					return
+				}
+
+				siteNumber := siteProp.Value().Int()
+				site := events.BomsiteUnknown
+				if siteNumber == 0 {
+					site = events.BombsiteA
+				} else if siteNumber == 1 {
+					site = events.BombsiteB
+				}
+
+				var defuser *common.Player
+				defuserProp.OnUpdate(func(val st.PropertyValue) {
+					defuser = parser.GameState().Participants().FindByHandle64(uint64(val.Int()))
+				})
+
+				bombEntity.Property("m_bBombDefused").OnUpdate(func(val st.PropertyValue) {
+					isDefused := val.BoolVal()
+					if !isDefused {
+						return
+					}
+
+					bombsDefused := getCurrentRoundBombDefusedEvent()
+					// Don't create a new bomb defused event if it already exists, it means the game event has been
+					// triggered.
+					if bombsDefused != nil {
+						return
+					}
+
+					bombDefused := newBombDefused(analyzer, events.BombDefused{
+						BombEvent: events.BombEvent{
+							Player: defuser,
+							Site:   site,
+						},
+					})
+					match.BombsDefused = append(match.BombsDefused, bombDefused)
+					analyzer.currentRound.EndReason = events.RoundEndReasonBombDefused
+				})
+			})
+		}
+
+		serverClasses.FindByName("CCSGameRulesProxy").OnEntityCreated(func(entity st.Entity) {
 			// Fallback to detect rounds end for demos missing round end events.
 			// ! Don't use m_eRoundWinReason because it's not available with old demos (at least 2014)
 			roundWinStatusProperty := entity.Property("cs_gamerules_data.m_iRoundWinStatus")
@@ -1181,13 +1295,10 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 							}
 						}
 
-						bombsDefused := analyzer.match.BombsDefused
-						bombDefusedCount := len(bombsDefused)
-						if bombDefusedCount > 0 {
-							lastBombDefused := bombsDefused[bombDefusedCount-1]
-							if lastBombDefused.RoundNumber == currentRound.Number {
-								currentRound.EndReason = events.RoundEndReasonBombDefused
-							}
+						// If there is a bomb defused event, it means CTs won
+						currentRoundBombDefusedEvent := getCurrentRoundBombDefusedEvent()
+						if currentRoundBombDefusedEvent != nil {
+							currentRound.EndReason = events.RoundEndReasonBombDefused
 						}
 					} else {
 						currentRound.EndReason = events.RoundEndReasonTerroristsWin
@@ -1252,4 +1363,12 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 			}
 		})
 	})
+}
+
+func defaultPostProcess(analyzer *Analyzer) {
+	match := analyzer.match
+	currentRound := analyzer.currentRound
+	if len(match.Rounds) < currentRound.Number {
+		match.Rounds = append(match.Rounds, currentRound)
+	}
 }

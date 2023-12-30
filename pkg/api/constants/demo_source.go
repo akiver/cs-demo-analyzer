@@ -32,4 +32,5 @@ var SupportedDemoSources = []DemoSource{
 	DemoSourcePerfectWorld,
 	DemoSourcePopFlash,
 	DemoSourceValve,
+	DemoSourceFastcup,
 }
