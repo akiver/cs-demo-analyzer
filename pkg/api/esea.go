@@ -25,6 +25,9 @@ func createEseaAnalyzer(analyzer *Analyzer) {
 	consecutiveMatchRestartCount := 0 // ESEA uses the old school "LO3"
 	lastMatchStartTick := 0           // Keep track of the last match restart tick to detect LO3
 	shouldSwapTeams := false
+	analyzer.postProcess = func(analyzer *Analyzer) {
+		// noop
+	}
 
 	analyzer.matchStarted = func() bool {
 		return matchStarted

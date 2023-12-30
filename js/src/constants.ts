@@ -31,6 +31,7 @@ export const SupportedDemoSources: DemoSource[] = [
   DemoSource.Popflash,
   DemoSource.Challengermode,
   DemoSource.PerfectWorld,
+  DemoSource.Fastcup,
 ];
 
 export const DemoType = {
