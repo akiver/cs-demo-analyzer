@@ -12,6 +12,7 @@ import (
 
 	"github.com/akiver/cs-demo-analyzer/internal/bitread"
 	"github.com/akiver/cs-demo-analyzer/internal/filepath"
+	str "github.com/akiver/cs-demo-analyzer/internal/strings"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
 	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/msgs2"
 	"google.golang.org/protobuf/proto"
@@ -90,8 +91,21 @@ func GetDemoFromPath(demoPath string) (*Demo, error) {
 		mapName = msg.GetMapName()
 		serverName = msg.GetServerName()
 		clientName = msg.GetClientName()
-		data := fmt.Sprintf("%s%s%s%d%d%s%s%d", mapName, serverName, clientName, msg.GetNetworkProtocol(), msg.GetBuildNum(), msg.GetDemoVersionGuid(), msg.GetDemoVersionName(), stats.Size())
+		data := fmt.Sprintf(
+			"%s%s%s%d%d%s%s%d",
+			mapName,
+			str.RemoveInvalidUTF8Sequences(serverName),
+			str.RemoveInvalidUTF8Sequences(clientName),
+			msg.GetNetworkProtocol(),
+			msg.GetBuildNum(),
+			msg.GetDemoVersionGuid(),
+			msg.GetDemoVersionName(),
+			stats.Size(),
+		)
 		checksum = strconv.FormatUint(crc64.Checksum([]byte(data), crc64.MakeTable(crc64.ECMA)), 16)
+
+		serverName = str.ReplaceUTF8ByteSequences(serverName)
+		clientName = str.ReplaceUTF8ByteSequences(clientName)
 		networkProtocol = int(msg.GetNetworkProtocol())
 		buildNumber = int(msg.GetBuildNum())
 		game := msg.GetGame()
@@ -115,7 +129,17 @@ func GetDemoFromPath(demoPath string) (*Demo, error) {
 			tickRate = float64(tickCount) / duration.Seconds()
 		}
 
-		data := fmt.Sprintf("%s%s%s%d%d%d%d%d", mapName, serverName, clientName, frameCount, tickCount, networkProtocol, signonLength, stats.Size())
+		data := fmt.Sprintf(
+			"%s%s%s%d%d%d%d%d",
+			mapName,
+			serverName,
+			clientName,
+			frameCount,
+			tickCount,
+			networkProtocol,
+			signonLength,
+			stats.Size(),
+		)
 		checksum = strconv.FormatUint(crc64.Checksum([]byte(data), crc64.MakeTable(crc64.ECMA)), 16)
 	}
 

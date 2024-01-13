@@ -12,6 +12,7 @@ import (
 	"github.com/akiver/cs-demo-analyzer/internal/converters"
 	d "github.com/akiver/cs-demo-analyzer/internal/demo"
 	"github.com/akiver/cs-demo-analyzer/internal/slice"
+	"github.com/akiver/cs-demo-analyzer/internal/strings"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
 	"github.com/golang/geo/r3"
 	dem "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs"
@@ -382,7 +383,7 @@ func (analyzer *Analyzer) registerPlayer(player *common.Player, teamState *commo
 		match:              match,
 		SteamID64:          player.SteamID64,
 		Index:              analyzer.getPlayerIndexFromSteamID(player.SteamID64),
-		Name:               player.Name,
+		Name:               strings.ReplaceUTF8ByteSequences(player.Name),
 		Team:               team,
 		CrosshairShareCode: player.CrosshairCode(),
 		Color:              color,
@@ -419,12 +420,12 @@ func (analyzer *Analyzer) registerUnknownPlayers() {
 func (analyzer *Analyzer) updateTeamNames() {
 	gameState := analyzer.parser.GameState()
 	match := analyzer.match
-	teamNameA := gameState.Team(*match.TeamA.CurrentSide).ClanName()
+	teamNameA := strings.ReplaceUTF8ByteSequences(gameState.Team(*match.TeamA.CurrentSide).ClanName())
 	if teamNameA != "" {
 		match.TeamA.Name = teamNameA
 		analyzer.currentRound.TeamAName = teamNameA
 	}
-	teamNameB := gameState.Team(*match.TeamB.CurrentSide).ClanName()
+	teamNameB := strings.ReplaceUTF8ByteSequences(gameState.Team(*match.TeamB.CurrentSide).ClanName())
 	if teamNameB != "" {
 		match.TeamB.Name = teamNameB
 		analyzer.currentRound.TeamBName = teamNameB
