@@ -421,11 +421,15 @@ func (analyzer *Analyzer) updateTeamNames() {
 	gameState := analyzer.parser.GameState()
 	match := analyzer.match
 	teamNameA := strings.ReplaceUTF8ByteSequences(gameState.Team(*match.TeamA.CurrentSide).ClanName())
+	teamNameB := strings.ReplaceUTF8ByteSequences(gameState.Team(*match.TeamB.CurrentSide).ClanName())
+	if teamNameA == teamNameB {
+		return
+	}
+
 	if teamNameA != "" {
 		match.TeamA.Name = teamNameA
 		analyzer.currentRound.TeamAName = teamNameA
 	}
-	teamNameB := strings.ReplaceUTF8ByteSequences(gameState.Team(*match.TeamB.CurrentSide).ClanName())
 	if teamNameB != "" {
 		match.TeamB.Name = teamNameB
 		analyzer.currentRound.TeamBName = teamNameB
