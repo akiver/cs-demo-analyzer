@@ -6,32 +6,34 @@ export const Game = {
 export type Game = (typeof Game)[keyof typeof Game];
 
 export const DemoSource = {
-  Unknown: 'unknown',
-  Valve: 'valve',
-  Ebot: 'ebot',
-  Popflash: 'popflash',
-  FaceIt: 'faceit',
   Cevo: 'cevo',
   Challengermode: 'challengermode',
-  Esl: 'esl',
+  Ebot: 'ebot',
   Esea: 'esea',
+  Esl: 'esl',
   Esportal: 'esportal',
+  FaceIt: 'faceit',
   Fastcup: 'fastcup',
+  FiveEPlay: '5eplay',
   Gamersclub: 'gamersclub',
   PerfectWorld: 'perfectworld',
+  Popflash: 'popflash',
+  Unknown: 'unknown',
+  Valve: 'valve',
 } as const;
 export type DemoSource = (typeof DemoSource)[keyof typeof DemoSource];
 
 export const SupportedDemoSources: DemoSource[] = [
-  DemoSource.Valve,
-  DemoSource.Esea,
-  DemoSource.FaceIt,
-  DemoSource.Ebot,
-  DemoSource.Esl,
-  DemoSource.Popflash,
   DemoSource.Challengermode,
-  DemoSource.PerfectWorld,
+  DemoSource.Ebot,
+  DemoSource.Esea,
+  DemoSource.Esl,
+  DemoSource.FaceIt,
+  DemoSource.FiveEPlay,
   DemoSource.Fastcup,
+  DemoSource.PerfectWorld,
+  DemoSource.Popflash,
+  DemoSource.Valve,
 ];
 
 export const DemoType = {

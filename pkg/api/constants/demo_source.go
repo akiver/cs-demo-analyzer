@@ -7,20 +7,21 @@ func (source DemoSource) String() string {
 }
 
 const (
-	DemoSourceUnknown        DemoSource = "unknown"
-	DemoSourceValve          DemoSource = "valve"
-	DemoSourceESEA           DemoSource = "esea"
-	DemoSourceFaceIt         DemoSource = "faceit"
-	DemoSourceEbot           DemoSource = "ebot"
 	DemoSourceCEVO           DemoSource = "cevo"
 	DemoSourceChallengermode DemoSource = "challengermode"
+	DemoSourceEbot           DemoSource = "ebot"
+	DemoSourceESEA           DemoSource = "esea"
 	DemoSourceESL            DemoSource = "esl"
-	DemoSourcePopFlash       DemoSource = "popflash"
 	DemoSourceEsportal       DemoSource = "esportal"
+	DemoSourceFaceIt         DemoSource = "faceit"
 	DemoSourceFastcup        DemoSource = "fastcup"
+	DemoSourceFiveEPlay      DemoSource = "5eplay"
 	DemoSourceGamersclub     DemoSource = "gamersclub"
 	// "Perfect World" (完美世界) is a Chinese company that Valve partnered with to release CS:GO in China.
 	DemoSourcePerfectWorld DemoSource = "perfectworld"
+	DemoSourcePopFlash     DemoSource = "popflash"
+	DemoSourceUnknown      DemoSource = "unknown"
+	DemoSourceValve        DemoSource = "valve"
 )
 
 var SupportedDemoSources = []DemoSource{
@@ -29,8 +30,9 @@ var SupportedDemoSources = []DemoSource{
 	DemoSourceESEA,
 	DemoSourceESL,
 	DemoSourceFaceIt,
+	DemoSourceFastcup,
+	DemoSourceFiveEPlay,
 	DemoSourcePerfectWorld,
 	DemoSourcePopFlash,
 	DemoSourceValve,
-	DemoSourceFastcup,
 }
