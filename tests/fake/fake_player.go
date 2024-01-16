@@ -6,7 +6,6 @@ type FakePlayer struct {
 	SteamID64     uint64
 	Name          string
 	Score         int
-	Kill          int
 	Team          *api.Team
 	KillCount     int
 	AssistCount   int

@@ -6,7 +6,7 @@ import (
 	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/msgs2"
 )
 
-func createValveAnalyzer(analyzer *Analyzer, demoFilePath string) {
+func createValveAnalyzer(analyzer *Analyzer) {
 	parser := analyzer.parser
 	match := analyzer.match
 	analyzer.matchStarted = parser.GameState().IsMatchStarted

@@ -39,6 +39,7 @@ type Demo struct {
 
 var faceItDemoNameRegex = regexp.MustCompile(`/[0-9]+_team[a-z0-9-]+-Team[a-z0-9-]+_de_[a-z0-9]+\.dem/`)
 var ebotDemoNameRegex = regexp.MustCompile(`/([0-9]*)_(.*?)-(.*?)_(.*?)(.dem)/`)
+var fiveEPlayDemoNameRegex = regexp.MustCompile(`^g\d+-\d+[a-zA-Z0-9_]*$`)
 
 func GetDemoFromPath(demoPath string) (*Demo, error) {
 	file, err := os.Open(demoPath)
@@ -216,6 +217,10 @@ func GetDemoSource(demo *Demo) constants.DemoSource {
 
 	if strings.Contains(serverName, "完美世界") {
 		return constants.DemoSourcePerfectWorld
+	}
+
+	if fiveEPlayDemoNameRegex.MatchString(demoName) {
+		return constants.DemoSourceFiveEPlay
 	}
 
 	return constants.DemoSourceUnknown

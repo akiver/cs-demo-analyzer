@@ -186,6 +186,8 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 		return nil, errors.New("cevo demos are not supported (CevoNotSupported)")
 	case constants.DemoSourceFastcup:
 		createFastcupAnalyzer(analyzer)
+	case constants.DemoSourceFiveEPlay:
+		createFiveEPlayAnalyzer(analyzer)
 	case constants.DemoSourceGamersclub:
 		// Looks like they use an eBot fork but rounds are not detected properly.
 		return nil, errors.New("gamersclub demos are not supported (GamersClubNotSupported)")
@@ -196,9 +198,9 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 		if demo.IsSource2() {
 			return nil, errors.New("cs2 PopFlash demos are not supported (PopFlashNotSupported)")
 		}
-		createValveAnalyzer(analyzer, demoPath)
+		createValveAnalyzer(analyzer)
 	case constants.DemoSourceValve, constants.DemoSourcePerfectWorld, constants.DemoSourceESL:
-		createValveAnalyzer(analyzer, demoPath)
+		createValveAnalyzer(analyzer)
 	default:
 		return nil, errors.New("unknown demo source, please specify the source with the -source flag (UnknownSource)")
 	}
@@ -1344,7 +1346,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 			var lastTimeoutUpdateTick = -1
 			onTimeoutUpdate := func(val st.PropertyValue) {
 				currentTick := analyzer.currentTick()
-				if lastTimeoutUpdateTick != currentTick && val.Float() == 0 {
+				if lastTimeoutUpdateTick != currentTick && val.Float() == 0 && !analyzer.isRoundEndDetected {
 					analyzer.currentRound.StartTick = currentTick
 					analyzer.currentRound.StartFrame = parser.CurrentFrame()
 				}
