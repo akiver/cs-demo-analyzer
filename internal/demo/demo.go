@@ -39,7 +39,7 @@ type Demo struct {
 
 var faceItDemoNameRegex = regexp.MustCompile(`/[0-9]+_team[a-z0-9-]+-Team[a-z0-9-]+_de_[a-z0-9]+\.dem/`)
 var ebotDemoNameRegex = regexp.MustCompile(`/([0-9]*)_(.*?)-(.*?)_(.*?)(.dem)/`)
-var fiveEPlayDemoNameRegex = regexp.MustCompile(`^g\d+-\d+[a-zA-Z0-9_]*$`)
+var fiveEPlayDemoNameRegex = regexp.MustCompile(`^g\d+-(.*)[a-zA-Z0-9_]*$`)
 
 func GetDemoFromPath(demoPath string) (*Demo, error) {
 	file, err := os.Open(demoPath)
