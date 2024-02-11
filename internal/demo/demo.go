@@ -171,7 +171,7 @@ func GetDemoSource(demo *Demo) constants.DemoSource {
 	demoName := strings.ToLower(demo.FileName)
 	serverName := strings.ToLower(demo.ServerName)
 
-	if strings.Contains(serverName, "faceit") || faceItDemoNameRegex.MatchString(demoName) {
+	if strings.Contains(serverName, "faceit") || strings.Contains(serverName, "blast") || faceItDemoNameRegex.MatchString(demoName) {
 		return constants.DemoSourceFaceIt
 	}
 
