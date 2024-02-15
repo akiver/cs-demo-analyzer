@@ -98,7 +98,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 			line := []string{
 				player.Name,
 				converters.Uint64ToString(player.SteamID64),
-				converters.IntToString(player.Index),
 				converters.IntToString(player.Score),
 				player.TeamName(),
 				converters.IntToString(player.KillCount()),
