@@ -10,7 +10,6 @@ import (
 type Player struct {
 	match              *Match
 	SteamID64          uint64       `json:"steamId"`
-	Index              int          `json:"-"`
 	Name               string       `json:"name"`
 	Score              int          `json:"score"`
 	Team               *Team        `json:"team"`

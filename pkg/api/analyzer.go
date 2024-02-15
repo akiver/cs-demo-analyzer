@@ -6,7 +6,6 @@ import (
 	"io"
 	"log"
 	"os"
-	"slices"
 	"strconv"
 
 	"github.com/akiver/cs-demo-analyzer/internal/converters"
@@ -304,47 +303,6 @@ func (analyzer *Analyzer) reset() {
 	}
 }
 
-// Returns the player's index for a SteamID.
-// Indexes are based on players' entity IDs sorted by creation order (ascending order).
-// Usually it's the order players connected joined a team but not always.
-// CTs have indexes from 1 to 5 and Ts from 6 to 10 that correspond to keyboard keys 1 to 0.
-func (analyzer *Analyzer) getPlayerIndexFromSteamID(steamID64 uint64) int {
-	var entityIDs []int
-	for _, player := range analyzer.parser.GameState().Participants().All() {
-		if player.SteamID64 == 0 || player.Team == common.TeamSpectators || player.Team == common.TeamUnassigned {
-			continue
-		}
-		entityIDs = append(entityIDs, player.EntityID)
-	}
-	if len(entityIDs) == 0 {
-		return 0
-	}
-	slices.Sort(entityIDs)
-
-	playersByEntityID := analyzer.parser.GameState().Participants().ByEntityID()
-	currentIndexCt := 0
-	currentIndexT := 5
-	playerIndexPerSteamID := make(map[uint64]int)
-	for _, entityID := range entityIDs {
-		player := playersByEntityID[entityID]
-		if player == nil {
-			continue
-		}
-
-		if player.Team == common.TeamCounterTerrorists {
-			currentIndexCt += 1
-			playerIndexPerSteamID[player.SteamID64] = currentIndexCt
-		} else {
-			currentIndexT += 1
-			playerIndexPerSteamID[player.SteamID64] = currentIndexT
-		}
-	}
-
-	index := playerIndexPerSteamID[steamID64]
-
-	return index
-}
-
 func (analyzer *Analyzer) registerPlayer(player *common.Player, teamState *common.TeamState) {
 	match := analyzer.match
 	if _, alreadyExists := match.PlayersBySteamID[player.SteamID64]; alreadyExists {
@@ -384,7 +342,6 @@ func (analyzer *Analyzer) registerPlayer(player *common.Player, teamState *commo
 	newPlayer := &Player{
 		match:              match,
 		SteamID64:          player.SteamID64,
-		Index:              analyzer.getPlayerIndexFromSteamID(player.SteamID64),
 		Name:               strings.ReplaceUTF8ByteSequences(player.Name),
 		Team:               team,
 		CrosshairShareCode: player.CrosshairCode(),
@@ -620,11 +577,6 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 
 	parser.RegisterEventHandler(func(event events.PlayerTeamChange) {
 		analyzer.registerPlayer(event.Player, event.NewTeamState)
-		if !analyzer.isSource2 {
-			for _, player := range analyzer.match.PlayersBySteamID {
-				player.Index = analyzer.getPlayerIndexFromSteamID(player.SteamID64)
-			}
-		}
 	})
 
 	parser.RegisterEventHandler(func(event events.RoundStart) {
