@@ -29,11 +29,11 @@ var SupportedDemoSources = []DemoSource{
 	DemoSourceEbot,
 	DemoSourceESEA,
 	DemoSourceESL,
+	DemoSourceEsportal,
 	DemoSourceFaceIt,
 	DemoSourceFastcup,
 	DemoSourceFiveEPlay,
 	DemoSourcePerfectWorld,
 	DemoSourcePopFlash,
 	DemoSourceValve,
-	DemoSourceEsportal,
 }
