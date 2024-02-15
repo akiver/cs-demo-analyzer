@@ -35,4 +35,5 @@ var SupportedDemoSources = []DemoSource{
 	DemoSourcePerfectWorld,
 	DemoSourcePopFlash,
 	DemoSourceValve,
+	DemoSourceEsportal,
 }

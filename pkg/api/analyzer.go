@@ -181,7 +181,7 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 	case constants.DemoSourceChallengermode:
 		createChallengermodeAnalyzer(analyzer)
 	case constants.DemoSourceEsportal:
-		return nil, errors.New("esportal demos are not supported (EsportalNotSupported)")
+		createEsportalAnalyzer(analyzer)
 	case constants.DemoSourceCEVO:
 		return nil, errors.New("cevo demos are not supported (CevoNotSupported)")
 	case constants.DemoSourceFastcup:

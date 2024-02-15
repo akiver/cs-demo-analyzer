@@ -28,6 +28,7 @@ export const SupportedDemoSources: DemoSource[] = [
   DemoSource.Ebot,
   DemoSource.Esea,
   DemoSource.Esl,
+  DemoSource.Esportal,
   DemoSource.FaceIt,
   DemoSource.FiveEPlay,
   DemoSource.Fastcup,
