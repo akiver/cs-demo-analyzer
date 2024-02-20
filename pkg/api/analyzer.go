@@ -1,6 +1,7 @@
 package api
 
 import (
+	"embed"
 	"errors"
 	"fmt"
 	"io"
@@ -89,6 +90,18 @@ func getNetMessageDecryptionKey(demoFilePath string) []byte {
 	return key
 }
 
+//go:embed event-list-dump/*.bin
+var eventListFolder embed.FS
+
+func getGameEventListBinForProtocol(networkProtocol int) ([]byte, error) {
+	switch {
+	case networkProtocol < 13992:
+		return eventListFolder.ReadFile("event-list-dump/s2_CMsgSource1LegacyGameEventList.bin")
+	default:
+		return eventListFolder.ReadFile("event-list-dump/s2_CMsgSource1LegacyGameEventList_13992.bin")
+	}
+}
+
 type AnalyzeDemoOptions struct {
 	IncludePositions bool
 	Source           constants.DemoSource
@@ -121,6 +134,12 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 	if key != nil {
 		parserConfig.NetMessageDecryptionKey = key
 	}
+
+	gameEventListBin, err := getGameEventListBinForProtocol(demo.NetworkProtocol)
+	if err != nil {
+		return nil, err
+	}
+	parserConfig.Source2FallbackGameEventListBin = gameEventListBin
 
 	parser := dem.NewParserWithConfig(file, parserConfig)
 	defer parser.Close()
