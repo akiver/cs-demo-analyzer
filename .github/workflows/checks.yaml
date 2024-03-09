@@ -29,7 +29,7 @@ jobs:
         run: curl -L -o demos.txt https://gitlab.com/akiver/cs-demos/-/raw/main/demos.txt
 
       - name: Restore demos cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         id: demos-cache
         with:
           path: cs-demos
