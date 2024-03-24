@@ -960,6 +960,9 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		writeHostagePickedUp,
 		writeHostageRescued,
 	}
+
+	match.deleteIncompleteRounds()
+
 	var wg sync.WaitGroup
 
 	for _, function := range functions {
