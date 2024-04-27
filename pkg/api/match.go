@@ -285,6 +285,7 @@ func newMatch(source constants.DemoSource, demoInfo *demo.Demo) Match {
 		ServerName:                demoInfo.ServerName,
 		ClientName:                demoInfo.ClientName,
 		BuildNumber:               demoInfo.BuildNumber,
+		NetworkProtocol:           demoInfo.NetworkProtocol,
 		PlayersBySteamID:          make(map[uint64]*Player),
 		Rounds:                    []*Round{},
 		Kills:                     []*Kill{},
