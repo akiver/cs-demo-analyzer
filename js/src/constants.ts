@@ -180,6 +180,7 @@ export const HitGroup = {
   RightArm: 5,
   LeftLeg: 6,
   RightLeg: 7,
+  Neck: 8,
   Gear: 10,
 } as const;
 export type HitGroup = (typeof HitGroup)[keyof typeof HitGroup];
