@@ -179,7 +179,7 @@ func GetDemoSource(demo *Demo) constants.DemoSource {
 		return constants.DemoSourceCEVO
 	}
 
-	if strings.Contains(serverName, "challengermode") {
+	if strings.Contains(serverName, "challengermode") || strings.Contains(serverName, "pgl major cs2") {
 		return constants.DemoSourceChallengermode
 	}
 
