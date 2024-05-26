@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io"
 	"log"
+	"math"
 	"os"
 	"strconv"
 
@@ -358,9 +359,15 @@ func (analyzer *Analyzer) registerPlayer(player *common.Player, teamState *commo
 
 	color, _ := player.ColorOrErr()
 	rank := player.Rank()
+	userID := 0
+	if player.UserID <= math.MaxUint16 {
+		userID = player.UserID & 0xff
+	}
+
 	newPlayer := &Player{
 		match:              match,
 		SteamID64:          player.SteamID64,
+		UserID:             userID,
 		Name:               strings.ReplaceUTF8ByteSequences(player.Name),
 		Team:               team,
 		CrosshairShareCode: player.CrosshairCode(),

@@ -98,7 +98,7 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 			line := []string{
 				player.Name,
 				converters.Uint64ToString(player.SteamID64),
-				"0", // Old player's index column, it's not used in CS:DM since the 14/02/2024 CS2 update but the column still exists
+				converters.IntToString(player.UserID + 1),
 				converters.IntToString(player.Score),
 				player.TeamName(),
 				converters.IntToString(player.KillCount()),
