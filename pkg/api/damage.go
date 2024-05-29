@@ -3,6 +3,7 @@ package api
 import (
 	"fmt"
 
+	"github.com/akiver/cs-demo-analyzer/internal/math"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
 	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
 	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/events"
@@ -78,12 +79,12 @@ func newDamageFromGameEvent(analyzer *Analyzer, event events.PlayerHurt) *Damage
 		RoundNumber:              analyzer.currentRound.Number,
 		Frame:                    parser.CurrentFrame(),
 		Tick:                     analyzer.currentTick(),
-		HealthDamage:             event.HealthDamageTaken,
-		ArmorDamage:              event.ArmorDamageTaken,
-		VictimHealth:             event.Player.Health(),
-		VictimArmor:              event.Player.Armor(),
-		VictimNewHealth:          event.Health,
-		VictimNewArmor:           event.Armor,
+		HealthDamage:             math.Max(0, event.HealthDamageTaken),
+		ArmorDamage:              math.Max(0, event.ArmorDamageTaken),
+		VictimHealth:             math.Max(0, event.Player.Health()),
+		VictimArmor:              math.Max(0, event.Player.Armor()),
+		VictimNewHealth:          math.Max(0, event.Health),
+		VictimNewArmor:           math.Max(0, event.Armor),
 		IsVictimControllingBot:   event.Player.IsControllingBot(),
 		AttackerSteamID64:        attackerSteamID,
 		AttackerSide:             attackerSide,
