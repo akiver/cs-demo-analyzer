@@ -5,6 +5,7 @@ node_modules
 *.exe
 *.zip
 *.csv
+*.info
 /*.json
 /debug/*.json
 .vscode/launch.json

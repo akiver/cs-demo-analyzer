@@ -4,8 +4,6 @@ import (
 	"embed"
 	"errors"
 	"fmt"
-	"io"
-	"log"
 	"math"
 	"os"
 	"strconv"
@@ -64,33 +62,6 @@ type Analyzer struct {
 	chickenEntities         []st.Entity
 }
 
-func getNetMessageDecryptionKey(demoFilePath string) []byte {
-	infoFilePath := demoFilePath + ".info"
-	if _, err := os.Stat(infoFilePath); err != nil {
-		return nil
-	}
-
-	file, err := os.Open(infoFilePath)
-	if err != nil {
-		log.Printf("Unable to open .info file: %v", err)
-		return nil
-	}
-
-	bytes, err := io.ReadAll(file)
-	if err != nil {
-		log.Printf("Unable to read .info file: %v", err)
-		return nil
-	}
-
-	key, err := dem.MatchInfoDecryptionKey(bytes)
-	if err != nil {
-		log.Printf("Unable to decrypt ice key: %v", err)
-		return nil
-	}
-
-	return key
-}
-
 //go:embed event-list-dump/*.bin
 var eventListFolder embed.FS
 
@@ -130,11 +101,8 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 	}
 	defer file.Close()
 
-	key := getNetMessageDecryptionKey(demoPath)
 	parserConfig := dem.DefaultParserConfig
-	if key != nil {
-		parserConfig.NetMessageDecryptionKey = key
-	}
+	parserConfig.NetMessageDecryptionKey = demo.NetMessageDecryptionPublicKey
 
 	gameEventListBin, err := getGameEventListBinForProtocol(demo.NetworkProtocol)
 	if err != nil {

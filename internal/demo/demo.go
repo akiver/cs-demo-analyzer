@@ -4,6 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"hash/crc64"
+	"io"
 	"os"
 	"regexp"
 	"strconv"
@@ -14,6 +15,7 @@ import (
 	"github.com/akiver/cs-demo-analyzer/internal/filepath"
 	str "github.com/akiver/cs-demo-analyzer/internal/strings"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
+	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/msg"
 	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/msgs2"
 	"google.golang.org/protobuf/proto"
 )
@@ -23,23 +25,54 @@ type Demo struct {
 	FileName string
 	Type     constants.DemoType
 	// ! Checksums are not generated reading the whole .dem file but only information for the "header" because it would be slow.
-	Checksum        string
-	Filestamp       string
-	Date            time.Time
-	ServerName      string
-	ClientName      string
-	MapName         string
-	NetworkProtocol int
-	BuildNumber     int           // Source 2 demos only
-	TickCount       int           // Not available for Source 2 demos, it's updated during parsing
-	TickRate        float64       // Not available for Source 2 demos, it's updated during parsing
-	FrameRate       float64       // Not available for Source 2 demos, it's updated during parsing
-	Duration        time.Duration // Not available for Source 2 demos, it's updated during parsing
+	Checksum                      string
+	Filestamp                     string
+	Date                          time.Time
+	ServerName                    string
+	ClientName                    string
+	MapName                       string
+	NetMessageDecryptionPublicKey []byte
+	NetworkProtocol               int
+	BuildNumber                   int           // Source 2 demos only
+	TickCount                     int           // Not available for Source 2 demos, it's updated during parsing
+	TickRate                      float64       // Not available for Source 2 demos, it's updated during parsing
+	FrameRate                     float64       // Not available for Source 2 demos, it's updated during parsing
+	Duration                      time.Duration // Not available for Source 2 demos, it's updated during parsing
 }
 
 var faceItDemoNameRegex = regexp.MustCompile(`/[0-9]+_team[a-z0-9-]+-Team[a-z0-9-]+_de_[a-z0-9]+\.dem/`)
 var ebotDemoNameRegex = regexp.MustCompile(`/([0-9]*)_(.*?)-(.*?)_(.*?)(.dem)/`)
 var fiveEPlayDemoNameRegex = regexp.MustCompile(`^g\d+-(.*)[a-zA-Z0-9_]*$`)
+
+// Reads the .info file associated with a demo if it exists and returns its content as bytes.
+func getMatchInfoProtoBytes(demoFilePath string) []byte {
+	infoFilePath := demoFilePath + ".info"
+	if _, err := os.Stat(infoFilePath); err != nil {
+		return nil
+	}
+
+	file, err := os.Open(infoFilePath)
+	if err != nil {
+		fmt.Printf("Unable to open .info file: %v", err)
+		return nil
+	}
+
+	bytes, err := io.ReadAll(file)
+	if err != nil {
+		fmt.Printf("Unable to read .info file: %v", err)
+		return nil
+	}
+
+	return bytes
+}
+
+func getNetMessageDecryptionKeyFromPubKey(clDecryptDataKeyPub uint64) []byte {
+	return []byte(strings.ToUpper(fmt.Sprintf("%016x", clDecryptDataKeyPub)))
+}
+
+func getDateFromMatchTime(matchTime uint32) time.Time {
+	return time.Unix(int64(matchTime), 0)
+}
 
 func GetDemoFromPath(demoPath string) (*Demo, error) {
 	file, err := os.Open(demoPath)
@@ -71,7 +104,11 @@ func GetDemoFromPath(demoPath string) (*Demo, error) {
 	var tickRate float64
 	var networkProtocol int
 	var buildNumber int
+	var date = stats.ModTime()
+	var netMessageDecryptionPublicKey []byte
 	demoType := constants.DemoTypeGOTV
+	matchInfoBytes := getMatchInfoProtoBytes(demoPath)
+
 	if isSource2 {
 		br.ReadBytes(8)
 		msgType := br.ReadVarInt32()
@@ -113,6 +150,15 @@ func GetDemoFromPath(demoPath string) (*Demo, error) {
 		if game != "" {
 			demoType = constants.DemoTypePOV
 		}
+
+		m := new(msgs2.CDataGCCStrike15V2_MatchInfo)
+		err = proto.Unmarshal(matchInfoBytes, m)
+		if err != nil {
+			fmt.Printf("failed to unmarshal MatchInfo message: %v", err)
+		} else {
+			netMessageDecryptionPublicKey = getNetMessageDecryptionKeyFromPubKey(m.Watchablematchinfo.GetClDecryptdataKeyPub())
+			date = getDateFromMatchTime(m.GetMatchtime())
+		}
 	} else {
 		br.ReadSignedInt(32) // demo protocol
 		networkProtocol = br.ReadSignedInt(32)
@@ -142,24 +188,34 @@ func GetDemoFromPath(demoPath string) (*Demo, error) {
 			stats.Size(),
 		)
 		checksum = strconv.FormatUint(crc64.Checksum([]byte(data), crc64.MakeTable(crc64.ECMA)), 16)
+
+		m := new(msg.CDataGCCStrike15V2_MatchInfo)
+		err = proto.Unmarshal(matchInfoBytes, m)
+		if err != nil {
+			fmt.Printf("failed to unmarshal MatchInfo message: %v", err)
+		} else {
+			netMessageDecryptionPublicKey = getNetMessageDecryptionKeyFromPubKey(m.Watchablematchinfo.GetClDecryptdataKeyPub())
+			date = getDateFromMatchTime(m.GetMatchtime())
+		}
 	}
 
 	return &Demo{
-		FilePath:        filepath.GetAbsoluteFilePath(demoPath),
-		FileName:        filepath.GetFileNameWithoutExtension(demoPath),
-		Type:            demoType,
-		Filestamp:       filestamp,
-		Checksum:        checksum,
-		Date:            stats.ModTime(),
-		ServerName:      serverName,
-		ClientName:      clientName,
-		Duration:        duration,
-		MapName:         getMapNameFromHeaderMapName(mapName),
-		TickCount:       tickCount,
-		TickRate:        tickRate,
-		FrameRate:       frameRate,
-		NetworkProtocol: networkProtocol,
-		BuildNumber:     buildNumber,
+		FilePath:                      filepath.GetAbsoluteFilePath(demoPath),
+		FileName:                      filepath.GetFileNameWithoutExtension(demoPath),
+		Type:                          demoType,
+		Filestamp:                     filestamp,
+		Checksum:                      checksum,
+		Date:                          date,
+		ServerName:                    serverName,
+		ClientName:                    clientName,
+		Duration:                      duration,
+		MapName:                       getMapNameFromHeaderMapName(mapName),
+		TickCount:                     tickCount,
+		TickRate:                      tickRate,
+		FrameRate:                     frameRate,
+		NetworkProtocol:               networkProtocol,
+		BuildNumber:                   buildNumber,
+		NetMessageDecryptionPublicKey: netMessageDecryptionPublicKey,
 	}, nil
 }
 
