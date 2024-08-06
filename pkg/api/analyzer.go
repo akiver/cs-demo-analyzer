@@ -103,6 +103,7 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 
 	parserConfig := dem.DefaultParserConfig
 	parserConfig.NetMessageDecryptionKey = demo.NetMessageDecryptionPublicKey
+	parserConfig.DisableMimicSource1Events = demo.Type == constants.DemoTypePOV
 
 	gameEventListBin, err := getGameEventListBinForProtocol(demo.NetworkProtocol)
 	if err != nil {
