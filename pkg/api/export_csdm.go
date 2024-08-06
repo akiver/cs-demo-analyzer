@@ -42,6 +42,7 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 			match.Date.Format(time.RFC3339),
 			match.Source.String(),
 			match.Type.String(),
+			match.ShareCode,
 			match.MapName,
 			match.ServerName,
 			match.ClientName,

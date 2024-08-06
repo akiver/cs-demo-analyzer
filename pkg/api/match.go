@@ -22,6 +22,7 @@ type Match struct {
 	Source                    constants.DemoSource        `json:"source"`
 	Type                      constants.DemoType          `json:"type"`
 	MapName                   string                      `json:"mapName"`
+	ShareCode                 string                      `json:"shareCode"` // Valve demos only, the .info file must be next to the .dem file to be able to generate it
 	TickCount                 int                         `json:"tickCount"`
 	TickRate                  float64                     `json:"tickrate"`
 	FrameRate                 float64                     `json:"framerate"`
@@ -274,6 +275,7 @@ func newMatch(source constants.DemoSource, demoInfo *demo.Demo) Match {
 		Source:                    source,
 		Game:                      game,
 		Type:                      "GOTV", // By default assume it's a GOTV demo, it will be updated during parsing.
+		ShareCode:                 demoInfo.ShareCode,
 		TickCount:                 demoInfo.TickCount,
 		Date:                      demoInfo.Date,
 		DemoFilePath:              demoInfo.FilePath,

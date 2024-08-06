@@ -38,6 +38,7 @@ type Demo struct {
 	TickRate                      float64       // Not available for Source 2 demos, it's updated during parsing
 	FrameRate                     float64       // Not available for Source 2 demos, it's updated during parsing
 	Duration                      time.Duration // Not available for Source 2 demos, it's updated during parsing
+	ShareCode                     string        // Valve demos only, the .info file must be next to the .dem file to be able to generate it
 }
 
 var faceItDemoNameRegex = regexp.MustCompile(`/[0-9]+_team[a-z0-9-]+-Team[a-z0-9-]+_de_[a-z0-9]+\.dem/`)
@@ -105,6 +106,7 @@ func GetDemoFromPath(demoPath string) (*Demo, error) {
 	var networkProtocol int
 	var buildNumber int
 	var date = stats.ModTime()
+	var shareCode string
 	var netMessageDecryptionPublicKey []byte
 	demoType := constants.DemoTypeGOTV
 	matchInfoBytes := getMatchInfoProtoBytes(demoPath)
@@ -158,6 +160,15 @@ func GetDemoFromPath(demoPath string) (*Demo, error) {
 		} else {
 			netMessageDecryptionPublicKey = getNetMessageDecryptionKeyFromPubKey(m.Watchablematchinfo.GetClDecryptdataKeyPub())
 			date = getDateFromMatchTime(m.GetMatchtime())
+			rounds := m.GetRoundstatsall()
+			if len(rounds) > 0 {
+				lastRound := rounds[len(rounds)-1]
+				shareCode = encodeMatchShareCode(MatchInformation{
+					MatchId:       m.GetMatchid(),
+					ReservationId: lastRound.GetReservationid(),
+					TvPort:        m.GetWatchablematchinfo().GetTvPort(),
+				})
+			}
 		}
 	} else {
 		br.ReadSignedInt(32) // demo protocol
@@ -196,6 +207,18 @@ func GetDemoFromPath(demoPath string) (*Demo, error) {
 		} else {
 			netMessageDecryptionPublicKey = getNetMessageDecryptionKeyFromPubKey(m.Watchablematchinfo.GetClDecryptdataKeyPub())
 			date = getDateFromMatchTime(m.GetMatchtime())
+			lastRound := m.GetRoundstatsLegacy()
+			rounds := m.GetRoundstatsall()
+			if lastRound == nil && len(rounds) > 0 {
+				lastRound = rounds[len(rounds)-1]
+			}
+			if lastRound != nil {
+				shareCode = encodeMatchShareCode(MatchInformation{
+					MatchId:       m.GetMatchid(),
+					ReservationId: lastRound.GetReservationid(),
+					TvPort:        m.GetWatchablematchinfo().GetTvPort(),
+				})
+			}
 		}
 	}
 
@@ -216,6 +239,7 @@ func GetDemoFromPath(demoPath string) (*Demo, error) {
 		NetworkProtocol:               networkProtocol,
 		BuildNumber:                   buildNumber,
 		NetMessageDecryptionPublicKey: netMessageDecryptionPublicKey,
+		ShareCode:                     shareCode,
 	}, nil
 }
 
