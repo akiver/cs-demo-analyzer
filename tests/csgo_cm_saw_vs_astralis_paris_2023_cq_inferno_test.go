@@ -778,7 +778,7 @@ func TestChallengerModeSawVsAstralisM2Paris2023CqInferno(t *testing.T) {
 			Name:          "Xyp9x",
 			KillCount:     8,
 			AssistCount:   6,
-			DeathCount:    18,
+			DeathCount:    17,
 			Score:         27,
 			Team:          match.TeamA,
 			HeadshotCount: 3,

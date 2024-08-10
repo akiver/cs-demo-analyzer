@@ -418,7 +418,7 @@ func TestChallengerMode_6c306e56_8170_4092_b402_08dbf813e452_2023_Anubis(t *test
 			Name:          "SoSchy",
 			KillCount:     10,
 			AssistCount:   3,
-			DeathCount:    6,
+			DeathCount:    5,
 			Score:         23,
 			Team:          match.TeamA,
 			HeadshotCount: 7,

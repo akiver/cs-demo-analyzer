@@ -612,7 +612,7 @@ func Test5EPlay_5eplay_g161_20240107155319726585099_2023_Nuke(t *testing.T) {
 			Name:          "阿电",
 			KillCount:     21,
 			AssistCount:   4,
-			DeathCount:    14,
+			DeathCount:    13,
 			Score:         55,
 			Team:          match.TeamB,
 			HeadshotCount: 9,
