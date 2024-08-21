@@ -153,21 +153,23 @@ func GetDemoFromPath(demoPath string) (*Demo, error) {
 			demoType = constants.DemoTypePOV
 		}
 
-		m := new(msgs2.CDataGCCStrike15V2_MatchInfo)
-		err = proto.Unmarshal(matchInfoBytes, m)
-		if err != nil {
-			fmt.Printf("failed to unmarshal MatchInfo message: %v", err)
-		} else {
-			netMessageDecryptionPublicKey = getNetMessageDecryptionKeyFromPubKey(m.Watchablematchinfo.GetClDecryptdataKeyPub())
-			date = getDateFromMatchTime(m.GetMatchtime())
-			rounds := m.GetRoundstatsall()
-			if len(rounds) > 0 {
-				lastRound := rounds[len(rounds)-1]
-				shareCode = encodeMatchShareCode(MatchInformation{
-					MatchId:       m.GetMatchid(),
-					ReservationId: lastRound.GetReservationid(),
-					TvPort:        m.GetWatchablematchinfo().GetTvPort(),
-				})
+		if len(matchInfoBytes) > 0 {
+			m := new(msgs2.CDataGCCStrike15V2_MatchInfo)
+			err = proto.Unmarshal(matchInfoBytes, m)
+			if err != nil {
+				fmt.Printf("failed to unmarshal MatchInfo message: %v", err)
+			} else {
+				netMessageDecryptionPublicKey = getNetMessageDecryptionKeyFromPubKey(m.Watchablematchinfo.GetClDecryptdataKeyPub())
+				date = getDateFromMatchTime(m.GetMatchtime())
+				rounds := m.GetRoundstatsall()
+				if len(rounds) > 0 {
+					lastRound := rounds[len(rounds)-1]
+					shareCode = encodeMatchShareCode(MatchInformation{
+						MatchId:       m.GetMatchid(),
+						ReservationId: lastRound.GetReservationid(),
+						TvPort:        m.GetWatchablematchinfo().GetTvPort(),
+					})
+				}
 			}
 		}
 	} else {
@@ -200,24 +202,26 @@ func GetDemoFromPath(demoPath string) (*Demo, error) {
 		)
 		checksum = strconv.FormatUint(crc64.Checksum([]byte(data), crc64.MakeTable(crc64.ECMA)), 16)
 
-		m := new(msg.CDataGCCStrike15V2_MatchInfo)
-		err = proto.Unmarshal(matchInfoBytes, m)
-		if err != nil {
-			fmt.Printf("failed to unmarshal MatchInfo message: %v", err)
-		} else {
-			netMessageDecryptionPublicKey = getNetMessageDecryptionKeyFromPubKey(m.Watchablematchinfo.GetClDecryptdataKeyPub())
-			date = getDateFromMatchTime(m.GetMatchtime())
-			lastRound := m.GetRoundstatsLegacy()
-			rounds := m.GetRoundstatsall()
-			if lastRound == nil && len(rounds) > 0 {
-				lastRound = rounds[len(rounds)-1]
-			}
-			if lastRound != nil {
-				shareCode = encodeMatchShareCode(MatchInformation{
-					MatchId:       m.GetMatchid(),
-					ReservationId: lastRound.GetReservationid(),
-					TvPort:        m.GetWatchablematchinfo().GetTvPort(),
-				})
+		if len(matchInfoBytes) > 0 {
+			m := new(msg.CDataGCCStrike15V2_MatchInfo)
+			err = proto.Unmarshal(matchInfoBytes, m)
+			if err != nil {
+				fmt.Printf("failed to unmarshal MatchInfo message: %v", err)
+			} else {
+				netMessageDecryptionPublicKey = getNetMessageDecryptionKeyFromPubKey(m.Watchablematchinfo.GetClDecryptdataKeyPub())
+				date = getDateFromMatchTime(m.GetMatchtime())
+				lastRound := m.GetRoundstatsLegacy()
+				rounds := m.GetRoundstatsall()
+				if lastRound == nil && len(rounds) > 0 {
+					lastRound = rounds[len(rounds)-1]
+				}
+				if lastRound != nil {
+					shareCode = encodeMatchShareCode(MatchInformation{
+						MatchId:       m.GetMatchid(),
+						ReservationId: lastRound.GetReservationid(),
+						TvPort:        m.GetWatchablematchinfo().GetTvPort(),
+					})
+				}
 			}
 		}
 	}
