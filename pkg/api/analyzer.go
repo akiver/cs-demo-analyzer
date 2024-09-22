@@ -68,9 +68,11 @@ var eventListFolder embed.FS
 func getGameEventListBinForProtocol(networkProtocol int) ([]byte, error) {
 	switch {
 	case networkProtocol < 13992:
-		return eventListFolder.ReadFile("event-list-dump/s2_CMsgSource1LegacyGameEventList.bin")
+		return eventListFolder.ReadFile("event-list-dump/13990.bin")
+	case networkProtocol <= 13992:
+		return eventListFolder.ReadFile("event-list-dump/13992.bin")
 	default:
-		return eventListFolder.ReadFile("event-list-dump/s2_CMsgSource1LegacyGameEventList_13992.bin")
+		return eventListFolder.ReadFile("event-list-dump/14023.bin")
 	}
 }
 
