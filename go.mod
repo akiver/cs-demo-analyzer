@@ -1,6 +1,6 @@
 module github.com/akiver/cs-demo-analyzer
 
-go 1.21
+go 1.23
 
 require (
 	github.com/golang/geo v0.0.0-20230421003525-6adc56603217
