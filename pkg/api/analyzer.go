@@ -1099,6 +1099,9 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 	})
 
 	parser.RegisterEventHandler(func(event events.ChatMessage) {
+		if event.Sender == nil {
+			return
+		}
 		chatMessage := newChatMessageFromGameEvent(analyzer, event)
 		match.ChatMessages = append(match.ChatMessages, chatMessage)
 	})
