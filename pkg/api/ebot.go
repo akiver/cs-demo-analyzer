@@ -185,7 +185,5 @@ func createEbotAnalyzer(analyzer *Analyzer) {
 		match.Rounds = append(match.Rounds, analyzer.currentRound)
 	})
 
-	parser.RegisterEventHandler(func(event events.AnnouncementWinPanelMatch) {
-		analyzer.updatePlayersScores()
-	})
+	parser.RegisterEventHandler(analyzer.defaultAnnouncementWinPanelMatchHandler)
 }

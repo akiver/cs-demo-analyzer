@@ -16,6 +16,7 @@ export const DemoSource = {
   Fastcup: 'fastcup',
   FiveEPlay: '5eplay',
   Gamersclub: 'gamersclub',
+  MatchZy: 'matchzy',
   PerfectWorld: 'perfectworld',
   Popflash: 'popflash',
   Unknown: 'unknown',

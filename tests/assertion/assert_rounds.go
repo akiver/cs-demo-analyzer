@@ -3,13 +3,22 @@ package assertion
 import (
 	"testing"
 
+	"github.com/akiver/cs-demo-analyzer/internal/slice"
 	"github.com/akiver/cs-demo-analyzer/pkg/api"
 	"github.com/akiver/cs-demo-analyzer/tests/fake"
 )
 
 func AssertRounds(t *testing.T, match *api.Match, rounds []fake.FakeRound) {
-	for index, expectedRound := range rounds {
-		round := match.Rounds[index]
+	for _, expectedRound := range rounds {
+		round, found := slice.Find(match.Rounds, func(round *api.Round) bool {
+			return round.Number == expectedRound.Number
+		})
+
+		if !found {
+			t.Errorf("round %d not found", expectedRound.Number)
+			continue
+		}
+
 		if round.Number != expectedRound.Number {
 			t.Errorf("expected round number %d but got %d", expectedRound.Number, round.Number)
 		}
@@ -85,5 +94,12 @@ func AssertRounds(t *testing.T, match *api.Match, rounds []fake.FakeRound) {
 		if expectedRound.TeamBName != "" && expectedRound.TeamBName != round.TeamBName {
 			t.Errorf("expected team B name to be %s but got %s round number %d", expectedRound.TeamBName, round.TeamBName, round.Number)
 		}
+	}
+}
+
+func AssertKillCountAtRound(t *testing.T, match *api.Match, roundNumber int, killCount int) {
+	roundKillCount := len(match.KillsByRound()[roundNumber])
+	if roundKillCount != killCount {
+		t.Errorf("expected %d kills round %d but got %d", killCount, roundNumber, roundKillCount)
 	}
 }

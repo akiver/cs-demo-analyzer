@@ -28,7 +28,5 @@ func createEsportalAnalyzer(analyzer *Analyzer) {
 
 	parser.RegisterEventHandler(analyzer.defaultRoundEndOfficiallyHandler)
 
-	parser.RegisterEventHandler(func(event events.AnnouncementWinPanelMatch) {
-		analyzer.updatePlayersScores()
-	})
+	parser.RegisterEventHandler(analyzer.defaultAnnouncementWinPanelMatchHandler)
 }
