@@ -359,6 +359,93 @@ func (match *Match) reset() {
 	match.initTeams()
 }
 
+func (match *Match) resetRound(roundNumber int) {
+	match.BombsPlantStart = slice.Filter(match.BombsPlantStart, func(event *BombPlantStart, index int) bool {
+		return event.RoundNumber != roundNumber
+	})
+	match.BombsPlanted = slice.Filter(match.BombsPlanted, func(event *BombPlanted, index int) bool {
+		return event.RoundNumber != roundNumber
+	})
+	match.BombsDefuseStart = slice.Filter(match.BombsDefuseStart, func(event *BombDefuseStart, index int) bool {
+		return event.RoundNumber != roundNumber
+	})
+	match.BombsDefused = slice.Filter(match.BombsDefused, func(event *BombDefused, index int) bool {
+		return event.RoundNumber != roundNumber
+	})
+	match.BombsExploded = slice.Filter(match.BombsExploded, func(event *BombExploded, index int) bool {
+		return event.RoundNumber != roundNumber
+	})
+	match.ChatMessages = slice.Filter(match.ChatMessages, func(msg *ChatMessage, index int) bool {
+		return msg.RoundNumber != roundNumber
+	})
+	match.ChickenDeaths = slice.Filter(match.ChickenDeaths, func(death *ChickenDeath, index int) bool {
+		return death.RoundNumber != roundNumber
+	})
+	match.ChickenPositions = slice.Filter(match.ChickenPositions, func(position *ChickenPosition, index int) bool {
+		return position.RoundNumber != roundNumber
+	})
+	match.Clutches = slice.Filter(match.Clutches, func(clutch *Clutch, index int) bool {
+		return clutch.RoundNumber != roundNumber
+	})
+	match.Damages = slice.Filter(match.Damages, func(damage *Damage, index int) bool {
+		return damage.RoundNumber != roundNumber
+	})
+	match.DecoysStart = slice.Filter(match.DecoysStart, func(decoy *DecoyStart, index int) bool {
+		return decoy.RoundNumber != roundNumber
+	})
+	match.FlashbangsExplode = slice.Filter(match.FlashbangsExplode, func(flash *FlashbangExplode, index int) bool {
+		return flash.RoundNumber != roundNumber
+	})
+	match.GrenadeBounces = slice.Filter(match.GrenadeBounces, func(grenade *GrenadeBounce, index int) bool {
+		return grenade.RoundNumber != roundNumber
+	})
+	match.GrenadePositions = slice.Filter(match.GrenadePositions, func(position *GrenadePosition, index int) bool {
+		return position.RoundNumber != roundNumber
+	})
+	match.GrenadeProjectilesDestroy = slice.Filter(match.GrenadeProjectilesDestroy, func(grenade *GrenadeProjectileDestroy, index int) bool {
+		return grenade.RoundNumber != roundNumber
+	})
+	match.HeGrenadesExplode = slice.Filter(match.HeGrenadesExplode, func(grenade *HeGrenadeExplode, index int) bool {
+		return grenade.RoundNumber != roundNumber
+	})
+	match.HostagePickUpStart = slice.Filter(match.HostagePickUpStart, func(hostage *HostagePickUpStart, index int) bool {
+		return hostage.RoundNumber != roundNumber
+	})
+	match.HostagePickedUp = slice.Filter(match.HostagePickedUp, func(hostage *HostagePickedUp, index int) bool {
+		return hostage.RoundNumber != roundNumber
+	})
+	match.HostagePositions = slice.Filter(match.HostagePositions, func(position *HostagePosition, index int) bool {
+		return position.RoundNumber != roundNumber
+	})
+	match.HostageRescued = slice.Filter(match.HostageRescued, func(hostage *HostageRescued, index int) bool {
+		return hostage.RoundNumber != roundNumber
+	})
+	match.InfernoPositions = slice.Filter(match.InfernoPositions, func(position *InfernoPosition, index int) bool {
+		return position.RoundNumber != roundNumber
+	})
+	match.Kills = slice.Filter(match.Kills, func(kill *Kill, index int) bool {
+		return kill.RoundNumber != roundNumber
+	})
+	match.PlayerEconomies = slice.Filter(match.PlayerEconomies, func(eco *PlayerEconomy, index int) bool {
+		return eco.RoundNumber != roundNumber
+	})
+	match.PlayerPositions = slice.Filter(match.PlayerPositions, func(position *PlayerPosition, index int) bool {
+		return position.RoundNumber != roundNumber
+	})
+	match.PlayersBuy = slice.Filter(match.PlayersBuy, func(event *PlayerBuy, index int) bool {
+		return event.RoundNumber != roundNumber
+	})
+	match.PlayersFlashed = slice.Filter(match.PlayersFlashed, func(event *PlayerFlashed, index int) bool {
+		return event.RoundNumber != roundNumber
+	})
+	match.Shots = slice.Filter(match.Shots, func(event *Shot, index int) bool {
+		return event.RoundNumber != roundNumber
+	})
+	match.SmokesStart = slice.Filter(match.SmokesStart, func(event *SmokeStart, index int) bool {
+		return event.RoundNumber != roundNumber
+	})
+}
+
 func (match *Match) deleteIncompleteRounds() {
 	for i := len(match.Rounds) - 1; i >= 0; i-- {
 		round := match.Rounds[i]
@@ -370,89 +457,6 @@ func (match *Match) deleteIncompleteRounds() {
 
 		match.Rounds = append(match.Rounds[:i], match.Rounds[i+1:]...)
 
-		match.BombsPlantStart = slice.Filter(match.BombsPlantStart, func(event *BombPlantStart, index int) bool {
-			return event.RoundNumber != round.Number
-		})
-		match.BombsPlanted = slice.Filter(match.BombsPlanted, func(event *BombPlanted, index int) bool {
-			return event.RoundNumber != round.Number
-		})
-		match.BombsDefuseStart = slice.Filter(match.BombsDefuseStart, func(event *BombDefuseStart, index int) bool {
-			return event.RoundNumber != round.Number
-		})
-		match.BombsDefused = slice.Filter(match.BombsDefused, func(event *BombDefused, index int) bool {
-			return event.RoundNumber != round.Number
-		})
-		match.BombsExploded = slice.Filter(match.BombsExploded, func(event *BombExploded, index int) bool {
-			return event.RoundNumber != round.Number
-		})
-		match.ChatMessages = slice.Filter(match.ChatMessages, func(msg *ChatMessage, index int) bool {
-			return msg.RoundNumber != round.Number
-		})
-		match.ChickenDeaths = slice.Filter(match.ChickenDeaths, func(death *ChickenDeath, index int) bool {
-			return death.RoundNumber != round.Number
-		})
-		match.ChickenPositions = slice.Filter(match.ChickenPositions, func(position *ChickenPosition, index int) bool {
-			return position.RoundNumber != round.Number
-		})
-		match.Clutches = slice.Filter(match.Clutches, func(clutch *Clutch, index int) bool {
-			return clutch.RoundNumber != round.Number
-		})
-		match.Damages = slice.Filter(match.Damages, func(damage *Damage, index int) bool {
-			return damage.RoundNumber != round.Number
-		})
-		match.DecoysStart = slice.Filter(match.DecoysStart, func(decoy *DecoyStart, index int) bool {
-			return decoy.RoundNumber != round.Number
-		})
-		match.FlashbangsExplode = slice.Filter(match.FlashbangsExplode, func(flash *FlashbangExplode, index int) bool {
-			return flash.RoundNumber != round.Number
-		})
-		match.GrenadeBounces = slice.Filter(match.GrenadeBounces, func(grenade *GrenadeBounce, index int) bool {
-			return grenade.RoundNumber != round.Number
-		})
-		match.GrenadePositions = slice.Filter(match.GrenadePositions, func(position *GrenadePosition, index int) bool {
-			return position.RoundNumber != round.Number
-		})
-		match.GrenadeProjectilesDestroy = slice.Filter(match.GrenadeProjectilesDestroy, func(grenade *GrenadeProjectileDestroy, index int) bool {
-			return grenade.RoundNumber != round.Number
-		})
-		match.HeGrenadesExplode = slice.Filter(match.HeGrenadesExplode, func(grenade *HeGrenadeExplode, index int) bool {
-			return grenade.RoundNumber != round.Number
-		})
-		match.HostagePickUpStart = slice.Filter(match.HostagePickUpStart, func(hostage *HostagePickUpStart, index int) bool {
-			return hostage.RoundNumber != round.Number
-		})
-		match.HostagePickedUp = slice.Filter(match.HostagePickedUp, func(hostage *HostagePickedUp, index int) bool {
-			return hostage.RoundNumber != round.Number
-		})
-		match.HostagePositions = slice.Filter(match.HostagePositions, func(position *HostagePosition, index int) bool {
-			return position.RoundNumber != round.Number
-		})
-		match.HostageRescued = slice.Filter(match.HostageRescued, func(hostage *HostageRescued, index int) bool {
-			return hostage.RoundNumber != round.Number
-		})
-		match.InfernoPositions = slice.Filter(match.InfernoPositions, func(position *InfernoPosition, index int) bool {
-			return position.RoundNumber != round.Number
-		})
-		match.Kills = slice.Filter(match.Kills, func(kill *Kill, index int) bool {
-			return kill.RoundNumber != round.Number
-		})
-		match.PlayerEconomies = slice.Filter(match.PlayerEconomies, func(eco *PlayerEconomy, index int) bool {
-			return eco.RoundNumber != round.Number
-		})
-		match.PlayerPositions = slice.Filter(match.PlayerPositions, func(position *PlayerPosition, index int) bool {
-			return position.RoundNumber != round.Number
-		})
-		match.PlayersBuy = slice.Filter(match.PlayersBuy, func(event *PlayerBuy, index int) bool {
-			return event.RoundNumber != round.Number
-		})
-		match.PlayersFlashed = slice.Filter(match.PlayersFlashed, func(event *PlayerFlashed, index int) bool {
-			return event.RoundNumber != round.Number
-		})
-		match.Shots = slice.Filter(match.Shots, func(event *Shot, index int) bool {
-			return event.RoundNumber != round.Number
-		})
-		match.SmokesStart = slice.Filter(match.SmokesStart, func(event *SmokeStart, index int) bool {
-			return event.RoundNumber != round.Number
-		})
+		match.resetRound(round.Number)
 	}
 }

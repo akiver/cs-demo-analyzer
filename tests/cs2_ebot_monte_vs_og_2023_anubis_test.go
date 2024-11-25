@@ -264,7 +264,7 @@ func TestEbot_Monte_VS_OG_Roobet_Cup_2023_Anubis(t *testing.T) {
 			TeamBStartMoney:   17100,
 			TeamAEconomyType:  constants.EconomyTypeFull,
 			TeamBEconomyType:  constants.EconomyTypeForceBuy,
-			EndReason:         events.RoundEndReasonTargetBombed,
+			EndReason:         events.RoundEndReasonTerroristsWin,
 			WinnerSide:        common.TeamTerrorists,
 			TeamAScore:        3,
 			TeamBScore:        7,

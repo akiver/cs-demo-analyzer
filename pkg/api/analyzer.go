@@ -181,6 +181,8 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 	case constants.DemoSourceGamersclub:
 		// Looks like they use an eBot fork but rounds are not detected properly.
 		return nil, errors.New("gamersclub demos are not supported (GamersClubNotSupported)")
+	case constants.DemoSourceMatchZy:
+		createMatchZyAnalyzer(analyzer)
 	case constants.DemoSourcePopFlash:
 		// TODO notImplemented Unsure how demos from PopFlash are nowadays, need to find some to test.
 		// Even latest CSGO demos from PopFlash may not really work because their recording system has probably changed
@@ -204,11 +206,25 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 	}
 
 	// Required for CS2 demos, the following data are available only at the end of the parsing in the CDemoFileInfo message.
+	// The parser updates the header values when the CDemoFileInfo message is parsed.
+	// Unfortunately, some CS2 demos may not contain this message and so the header values are not updated.
+	// We fallback to the parser's internal values in such cases.
 	header := parser.Header()
 	match.TickCount = header.PlaybackTicks
+	if match.TickCount == 0 {
+		match.TickCount = analyzer.currentTick()
+	}
+
 	match.Duration = header.PlaybackTime
+	if match.Duration == 0 {
+		match.Duration = parser.CurrentTime()
+	}
 	if match.Duration > 0 {
-		match.FrameRate = float64(header.PlaybackFrames) / header.PlaybackTime.Seconds()
+		frames := int(header.PlaybackFrames)
+		if frames == 0 {
+			frames = parser.CurrentFrame()
+		}
+		match.FrameRate = float64(frames) / match.Duration.Seconds()
 	}
 
 	analyzer.postProcess(analyzer)
@@ -292,6 +308,12 @@ func (analyzer *Analyzer) reset() {
 		TeamBName:              analyzer.match.TeamB.Name,
 		weaponsBoughtUniqueIds: nil,
 	}
+	analyzer.createPlayersEconomies()
+}
+
+func (analyzer *Analyzer) resetCurrentRound() {
+	analyzer.match.resetRound(analyzer.currentRound.Number)
+	analyzer.createPlayersEconomies()
 }
 
 func (analyzer *Analyzer) registerPlayer(player *common.Player, teamState *common.TeamState) {
@@ -558,6 +580,10 @@ func (analyzer *Analyzer) defaultRoundEndOfficiallyHandler(event events.RoundEnd
 	}
 
 	analyzer.match.Rounds = append(analyzer.match.Rounds, analyzer.currentRound)
+}
+
+func (analyzer *Analyzer) defaultAnnouncementWinPanelMatchHandler(event events.AnnouncementWinPanelMatch) {
+	analyzer.updatePlayersScores()
 }
 
 func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
@@ -885,9 +911,6 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 
 		bombExploded := newBombExploded(analyzer, event)
 		match.BombsExploded = append(match.BombsExploded, bombExploded)
-		// Update the round end reason because sometimes when the bomb exploded, the round end event indicates
-		// RoundEndReasonTerroristsWin instead of RoundEndReasonTargetBombed.
-		analyzer.currentRound.EndReason = events.RoundEndReasonTargetBombed
 	})
 
 	parser.RegisterEventHandler(func(event events.BombPlantBegin) {

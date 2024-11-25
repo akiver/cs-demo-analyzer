@@ -45,6 +45,10 @@ var faceItDemoNameRegex = regexp.MustCompile(`/[0-9]+_team[a-z0-9-]+-Team[a-z0-9
 var ebotDemoNameRegex = regexp.MustCompile(`/([0-9]*)_(.*?)-(.*?)_(.*?)(.dem)/`)
 var fiveEPlayDemoNameRegex = regexp.MustCompile(`^g\d+-(.*)[a-zA-Z0-9_]*$`)
 
+// Default format: {TIME}_{MATCH_ID}_{MAP}_{TEAM1}_vs_{TEAM2}
+// https://shobhit-pathak.github.io/MatchZy/gotv/#recording-demos
+var matchZyDemoNameRegex = regexp.MustCompile(`^(\d{4}-\d{2}-\d{2}_\d{2}-\d{2}-\d{2})_(\d+)_([a-zA-Z0-9_]+)_(.+?)_vs_(.+)$`)
+
 // Reads the .info file associated with a demo if it exists and returns its content as bytes.
 func getMatchInfoProtoBytes(demoFilePath string) []byte {
 	infoFilePath := demoFilePath + ".info"
@@ -293,6 +297,10 @@ func GetDemoSource(demo *Demo) constants.DemoSource {
 
 	if strings.Contains(serverName, "gamersclub") {
 		return constants.DemoSourceGamersclub
+	}
+
+	if strings.Contains(serverName, "matchzy") || matchZyDemoNameRegex.MatchString(demoName) {
+		return constants.DemoSourceMatchZy
 	}
 
 	if strings.Contains(serverName, "valve") {

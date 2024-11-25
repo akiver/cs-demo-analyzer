@@ -42,3 +42,14 @@ func Filter[T comparable](s []T, predicate func(item T, index int) bool) []T {
 
 	return result
 }
+
+func Find[T comparable](collection []T, predicate func(item T) bool) (T, bool) {
+	for i := range collection {
+		if predicate(collection[i]) {
+			return collection[i], true
+		}
+	}
+
+	var result T
+	return result, false
+}
