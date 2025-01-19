@@ -107,7 +107,7 @@ func newKillFromGameEvent(analyzer *Analyzer, event events.Kill) *Kill {
 	var isTradeKill bool
 	for _, kill := range analyzer.match.Kills {
 		if kill.RoundNumber == analyzer.currentRound.Number && killerSteamID != 0 {
-			if kill.KillerSteamID64 == event.Victim.SteamID64 && analyzer.secondsHasPassedSinceTick(tradeKillDelaySeconds, kill.Tick) {
+			if kill.KillerSteamID64 == event.Victim.SteamID64 && !analyzer.secondsHasPassedSinceTick(tradeKillDelaySeconds, kill.Tick) {
 				isTradeKill = true
 				kill.IsTradeDeath = true
 			}
