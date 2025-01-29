@@ -1,7 +1,6 @@
 package api
 
 import (
-	"embed"
 	"errors"
 	"fmt"
 	"math"
@@ -62,20 +61,6 @@ type Analyzer struct {
 	chickenEntities         []st.Entity
 }
 
-//go:embed event-list-dump/*.bin
-var eventListFolder embed.FS
-
-func getGameEventListBinForProtocol(networkProtocol int) ([]byte, error) {
-	switch {
-	case networkProtocol < 13992:
-		return eventListFolder.ReadFile("event-list-dump/13990.bin")
-	case networkProtocol <= 13992:
-		return eventListFolder.ReadFile("event-list-dump/13992.bin")
-	default:
-		return eventListFolder.ReadFile("event-list-dump/14023.bin")
-	}
-}
-
 type AnalyzeDemoOptions struct {
 	IncludePositions bool
 	Source           constants.DemoSource
@@ -106,12 +91,6 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 	parserConfig := dem.DefaultParserConfig
 	parserConfig.NetMessageDecryptionKey = demo.NetMessageDecryptionPublicKey
 	parserConfig.DisableMimicSource1Events = demo.Type == constants.DemoTypePOV
-
-	gameEventListBin, err := getGameEventListBinForProtocol(demo.NetworkProtocol)
-	if err != nil {
-		return nil, err
-	}
-	parserConfig.Source2FallbackGameEventListBin = gameEventListBin
 
 	parser := dem.NewParserWithConfig(file, parserConfig)
 	defer parser.Close()
