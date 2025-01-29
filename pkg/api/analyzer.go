@@ -82,7 +82,7 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 	file, err := os.Open(demoPath)
 	if err != nil {
 		if errors.Is(err, os.ErrNotExist) {
-			return nil, fmt.Errorf(fmt.Sprintf("demo file \"%s\" not found", demoPath))
+			return nil, fmt.Errorf("demo file %q not found", demoPath)
 		}
 		return nil, err
 	}
