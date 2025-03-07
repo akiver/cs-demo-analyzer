@@ -149,6 +149,8 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 		createEbotAnalyzer(analyzer)
 	case constants.DemoSourceChallengermode:
 		createChallengermodeAnalyzer(analyzer)
+	case constants.DemoSourceRenown:
+		createRenownAnalyzer(analyzer)
 	case constants.DemoSourceEsportal:
 		createEsportalAnalyzer(analyzer)
 	case constants.DemoSourceCEVO:
@@ -527,6 +529,17 @@ func (analyzer *Analyzer) computePlayersEconomies() {
 	}
 }
 
+func (analyzer *Analyzer) createOrUpdatePlayerEconomy(player *common.Player) {
+	match := analyzer.match
+	economy := match.GetPlayerEconomyAtRound(player.Name, player.SteamID64, analyzer.currentRound.Number)
+	if economy == nil {
+		economy = newPlayerEconomy(analyzer, player)
+		match.PlayerEconomies = append(match.PlayerEconomies, economy)
+	} else {
+		economy.updateValues(analyzer, player)
+	}
+}
+
 func (analyzer *Analyzer) defaultRoundStartHandler(event events.RoundStart) {
 	if !analyzer.matchStarted() {
 		return
@@ -749,7 +762,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 	})
 
 	parser.RegisterEventHandler(func(event events.Kill) {
-		if !analyzer.matchStarted() {
+		if !analyzer.matchStarted() || parser.GameState().IsFreezetimePeriod() {
 			return
 		}
 
