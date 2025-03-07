@@ -299,6 +299,10 @@ func GetDemoSource(demo *Demo) constants.DemoSource {
 		return constants.DemoSourceGamersclub
 	}
 
+	if strings.Contains(serverName, "renown") || strings.Contains(demoName, "renown") {
+		return constants.DemoSourceRenown
+	}
+
 	if strings.Contains(serverName, "matchzy") || matchZyDemoNameRegex.MatchString(demoName) {
 		return constants.DemoSourceMatchZy
 	}

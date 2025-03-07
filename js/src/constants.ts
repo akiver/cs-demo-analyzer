@@ -19,6 +19,7 @@ export const DemoSource = {
   MatchZy: 'matchzy',
   PerfectWorld: 'perfectworld',
   Popflash: 'popflash',
+  Renown: 'renown',
   Unknown: 'unknown',
   Valve: 'valve',
 } as const;
@@ -35,6 +36,7 @@ export const SupportedDemoSources: DemoSource[] = [
   DemoSource.Fastcup,
   DemoSource.PerfectWorld,
   DemoSource.Popflash,
+  DemoSource.Renown,
   DemoSource.Valve,
 ];
 
