@@ -151,6 +151,8 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 		createChallengermodeAnalyzer(analyzer)
 	case constants.DemoSourceRenown:
 		createRenownAnalyzer(analyzer)
+	case constants.DemoSourceEsplay:
+		createEsplayAnalyzer(analyzer)
 	case constants.DemoSourceEsportal:
 		createEsportalAnalyzer(analyzer)
 	case constants.DemoSourceCEVO:
@@ -209,6 +211,7 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 	}
 
 	analyzer.postProcess(analyzer)
+	match.deleteIncompleteRounds()
 	match.computeResultStats()
 
 	return &match, nil

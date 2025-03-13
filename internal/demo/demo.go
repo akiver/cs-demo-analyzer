@@ -49,6 +49,9 @@ var fiveEPlayDemoNameRegex = regexp.MustCompile(`^g\d+-(.*)[a-zA-Z0-9_]*$`)
 // https://shobhit-pathak.github.io/MatchZy/gotv/#recording-demos
 var matchZyDemoNameRegex = regexp.MustCompile(`^(\d{4}-\d{2}-\d{2}_\d{2}-\d{2}-\d{2})_(\d+)_([a-zA-Z0-9_]+)_(.+?)_vs_(.+)$`)
 
+// ID of 12 characters long, starts with "n" (probably the game id) and then 11 letters.
+var esplayDemoNameRegex = regexp.MustCompile(`^n[a-zA-Z]{11}$`)
+
 // Reads the .info file associated with a demo if it exists and returns its content as bytes.
 func getMatchInfoProtoBytes(demoFilePath string) []byte {
 	infoFilePath := demoFilePath + ".info"
@@ -313,6 +316,10 @@ func GetDemoSource(demo *Demo) constants.DemoSource {
 
 	if strings.Contains(serverName, "完美世界") {
 		return constants.DemoSourcePerfectWorld
+	}
+
+	if esplayDemoNameRegex.MatchString(demoName) {
+		return constants.DemoSourceEsplay
 	}
 
 	if fiveEPlayDemoNameRegex.MatchString(demoName) {

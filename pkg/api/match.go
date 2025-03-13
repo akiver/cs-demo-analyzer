@@ -453,8 +453,6 @@ func (match *Match) deleteIncompleteRounds() {
 			continue
 		}
 
-		fmt.Printf("Deleting incomplete round number %d\n", round.Number)
-
 		match.Rounds = append(match.Rounds[:i], match.Rounds[i+1:]...)
 
 		match.resetRound(round.Number)

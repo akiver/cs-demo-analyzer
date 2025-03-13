@@ -12,6 +12,7 @@ const (
 	DemoSourceEbot           DemoSource = "ebot"
 	DemoSourceESEA           DemoSource = "esea"
 	DemoSourceESL            DemoSource = "esl"
+	DemoSourceEsplay         DemoSource = "esplay"
 	DemoSourceEsportal       DemoSource = "esportal"
 	DemoSourceFaceIt         DemoSource = "faceit"
 	DemoSourceFastcup        DemoSource = "fastcup"
@@ -31,6 +32,7 @@ var SupportedDemoSources = []DemoSource{
 	DemoSourceEbot,
 	DemoSourceESEA,
 	DemoSourceESL,
+	DemoSourceEsplay,
 	DemoSourceEsportal,
 	DemoSourceFaceIt,
 	DemoSourceFastcup,
