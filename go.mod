@@ -3,15 +3,15 @@ module github.com/akiver/cs-demo-analyzer
 go 1.23
 
 require (
-	github.com/golang/geo v0.0.0-20230421003525-6adc56603217
+	github.com/golang/geo v0.0.0-20250516193853-92f93c4cb289
 	github.com/markus-wa/demoinfocs-golang/v4 v4.3.4
 	github.com/markus-wa/gobitread v0.2.4
 	github.com/pkg/errors v0.9.1
-	google.golang.org/protobuf v1.36.4
+	google.golang.org/protobuf v1.36.6
 )
 
 require (
-	github.com/golang/snappy v0.0.4 // indirect
+	github.com/golang/snappy v1.0.0 // indirect
 	github.com/markus-wa/go-unassert v0.1.3 // indirect
 	github.com/markus-wa/godispatch v1.4.1 // indirect
 	github.com/markus-wa/ice-cipher-go v0.0.0-20230901094113-348096939ba7 // indirect
