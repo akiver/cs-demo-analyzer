@@ -85,6 +85,12 @@ publish-patch: ## Publish a patch version of the JS package
 test: ## Run all tests
 	go test ./tests/ $(ARGS)
 
+test-csgo: ## Run CS:GO tests
+	go test ./tests/csgo_* $(ARGS)
+
+test-cs2: ## Run CS2 tests
+	go test ./tests/cs2_* $(ARGS)
+
 test-verbose: ## Run tests in verbose
 	@"$(MAKE)" --no-print-directory ARGS=-v test
 
