@@ -502,13 +502,11 @@ func TestEbot_Monte_VS_OG_Roobet_Cup_2023_Anubis(t *testing.T) {
 			UtilityDamage: 97,
 		},
 		{
-			SteamID64:   76561198252434500,
-			Name:        "F1KU",
-			KillCount:   14,
-			AssistCount: 8,
-			// It should be 18 because during the round 10 F1KU has been killed by sdy with a molotov but CS2 detected
-			// it as a suicide from F1KU. The kill event contains only the victim.
-			DeathCount:    17,
+			SteamID64:     76561198252434500,
+			Name:          "F1KU",
+			KillCount:     14,
+			AssistCount:   8,
+			DeathCount:    18,
 			Score:         36,
 			Team:          match.TeamA,
 			HeadshotCount: 6,
@@ -576,11 +574,9 @@ func TestEbot_Monte_VS_OG_Roobet_Cup_2023_Anubis(t *testing.T) {
 			UtilityDamage: 111,
 		},
 		{
-			SteamID64: 76561198040577200,
-			Name:      "sdy",
-			// It should be 14 because during the round 10 sdy killed F1KU with a molotov but CS2 detected it as a
-			// suicide from F1KU. The kill event contains only the victim.
-			KillCount:     13,
+			SteamID64:     76561198040577200,
+			Name:          "sdy",
+			KillCount:     14,
 			AssistCount:   8,
 			DeathCount:    14,
 			Score:         49,
