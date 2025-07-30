@@ -57,7 +57,14 @@ func newPlayerPosition(analyzer *Analyzer, player *common.Player) *PlayerPositio
 		case common.EqClassEquipment:
 			equipments = slice.AppendIfNotInSlice(equipments, weaponName)
 		case common.EqClassGrenade:
-			grenades = slice.AppendIfNotInSlice(grenades, weaponName)
+			if weapon.Type == common.EqFlash {
+				flashbangCount := player.FlashbangCount()
+				for i := uint64(0); i < flashbangCount; i++ {
+					grenades = append(grenades, constants.WeaponFlashbang)
+				}
+			} else {
+				grenades = slice.AppendIfNotInSlice(grenades, weaponName)
+			}
 		case common.EqClassPistols:
 			pistols = slice.AppendIfNotInSlice(pistols, weaponName)
 		case common.EqClassSMG:
