@@ -36,6 +36,8 @@ export const SupportedDemoSources: DemoSource[] = [
   DemoSource.FaceIt,
   DemoSource.FiveEPlay,
   DemoSource.Fastcup,
+  DemoSource.Gamersclub,
+  DemoSource.MatchZy,
   DemoSource.PerfectWorld,
   DemoSource.Popflash,
   DemoSource.Renown,

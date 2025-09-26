@@ -37,9 +37,10 @@ var SupportedDemoSources = []DemoSource{
 	DemoSourceFaceIt,
 	DemoSourceFastcup,
 	DemoSourceFiveEPlay,
+	DemoSourceGamersclub,
+	DemoSourceMatchZy,
 	DemoSourcePerfectWorld,
 	DemoSourcePopFlash,
 	DemoSourceRenown,
 	DemoSourceValve,
-	DemoSourceMatchZy,
 }
