@@ -2,10 +2,16 @@
   "name": "@akiver/cs-demo-analyzer",
   "version": "1.7.4",
   "description": "Analyze and extract data from Counter-Strike demos.",
-  "repository": "https://github.com/akiver/cs-demo-analyzer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akiver/cs-demo-analyzer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akiver/cs-demo-analyzer/issues"
+  },
   "main": "./dist/index.js",
   "bin": {
-    "csda": "./dist/cli.js"
+    "csda": "dist/cli.js"
   },
   "scripts": {
     "build": "tsc && tsc --emitDeclarationOnly --declaration --removeComments false",
