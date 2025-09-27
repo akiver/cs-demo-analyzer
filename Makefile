@@ -52,7 +52,6 @@ build-all: ## Run for all platform
 npm-publish: # Publish a new version of the JS package to npm
 	@test -z $(IS_WINDOWS) || (echo "Publishing from a Windows machine is not allowed because chmod would not work for unix binaries" && false)
 	@test -n "$(VERSION)" || (echo "The environment variable VERSION must be provided" && false)
-	@test -n "$(NPM_EMAIL)" || (echo "The environment variable NPM_EMAIL must be provided" && false)
 	@npm --version > /dev/null || (echo "The npm CLI must be installed to publish" && false)
 	@echo "Checking for pending git changes..." && test -z "`git status --porcelain`" || \
 		(echo "Refusing to publish with these penging git changes:" && git status --porcelain && false)
@@ -63,8 +62,8 @@ npm-publish: # Publish a new version of the JS package to npm
 
 	@"$(MAKE)" clean
 	@"$(MAKE)" build-all
-	git config --global user.name AkiVer
-	git config --global user.email $(NPM_EMAIL)
+	git config --global user.name github-actions[bot]
+	git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
 	@cd js && \
 	npm version $(VERSION) --tag-version-prefix="" | awk '{print $$NF}' > /tmp/NEW_VERSION && \
 	git add package.json package-lock.json && \
