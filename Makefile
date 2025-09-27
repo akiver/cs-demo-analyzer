@@ -102,6 +102,7 @@ clean: ## Clean up project files
 	rm -rf ./js/dist
 	rm -f ./cs-demos/*.csv
 	rm -f ./cs-demos/*.json
+	rm -f ./*.csv
 
 help:
 	@echo 'Targets:'
