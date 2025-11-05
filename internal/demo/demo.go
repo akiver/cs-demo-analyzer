@@ -140,7 +140,7 @@ func GetDemoFromPath(demoPath string) (*Demo, error) {
 			mapName,
 			str.RemoveInvalidUTF8Sequences(serverName),
 			str.RemoveInvalidUTF8Sequences(clientName),
-			msg.GetNetworkProtocol(),
+			msg.GetPatchVersion(),
 			msg.GetBuildNum(),
 			msg.GetDemoVersionGuid(),
 			msg.GetDemoVersionName(),
@@ -150,7 +150,7 @@ func GetDemoFromPath(demoPath string) (*Demo, error) {
 
 		serverName = str.ReplaceUTF8ByteSequences(serverName)
 		clientName = str.ReplaceUTF8ByteSequences(clientName)
-		networkProtocol = int(msg.GetNetworkProtocol())
+		networkProtocol = int(msg.GetPatchVersion())
 		buildNumber = int(msg.GetBuildNum())
 		game := msg.GetGame()
 		if game != "" {
