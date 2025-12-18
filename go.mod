@@ -19,4 +19,4 @@ require (
 	github.com/oklog/ulid/v2 v2.1.0 // indirect
 )
 
-replace github.com/markus-wa/demoinfocs-golang/v4 v4.4.0 => github.com/markus-wa/demoinfocs-golang/v4 v4.4.1-0.20251105222226-db1069cfc547
+replace github.com/markus-wa/demoinfocs-golang/v4 v4.4.0 => github.com/markus-wa/demoinfocs-golang/v4 v4.4.1-0.20251218225334-6ea41415523b
