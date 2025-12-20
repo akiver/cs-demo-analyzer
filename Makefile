@@ -72,7 +72,7 @@ npm-publish: # Publish a new version of the JS package to npm
 
 	@test -z "`git status --porcelain`" || (echo "Aborting because git is somehow unclean after a commit" && false)
 	@cd js && \
-	npm publish --access public && \
+	npm publish && \
 	git push origin main --tags
 
 publish-minor: ## Publish a minor version of the JS package

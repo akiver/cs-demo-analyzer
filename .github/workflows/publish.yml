@@ -11,6 +11,10 @@ on:
           - patch
           - minor
 
+permissions:
+  id-token: write
+  contents: write
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -29,11 +33,14 @@ jobs:
         with:
           go-version-file: 'go.mod'
 
+      # Use a recent npm version that supports trusted publishing
+      - name: Install npm
+        run: |
+          sudo npm install -g npm@11.7.0
+
       - name: Publish
         run: |
           make publish-${{ github.event.inputs.release-type }}
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Get last git tag
         id: git-tag
