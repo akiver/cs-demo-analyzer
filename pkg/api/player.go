@@ -756,23 +756,7 @@ func (player *Player) getXKillCount(count int) int {
 
 func (player *Player) IsInspectingWeapon(analyzer *Analyzer) bool {
 	// weapon inspection animation lasts approx. 5 seconds
-	isInspectingWeapon := player.lastWeaponInspection.tick > -1 && !analyzer.secondsHasPassedSinceTick(5, player.lastWeaponInspection.tick)
-	if !isInspectingWeapon {
-		return false
-	}
-
-	// if the player cancelled weapon inspection more than 2 seconds ago, they are no longer considered to be
-	// inspecting the weapon and are able to shoot opponents.
-	if isInspectingWeapon && player.lastWeaponInspection.cancelledTick > -1 && analyzer.secondsHasPassedSinceTick(2, player.lastWeaponInspection.cancelledTick) {
-		isInspectingWeapon = false
-	}
-
-	// if the player cancelled the weapon inspection less than 2 seconds ago, consider that the player is not inspecting the weapon anymore
-	if player.lastWeaponInspection.cancelledTick > -1 && analyzer.secondsHasPassedSinceTick(2, player.lastWeaponInspection.cancelledTick) {
-		return false
-	}
-
-	return true
+	return player.lastWeaponInspection.tick > -1 && !analyzer.secondsHasPassedSinceTick(5, player.lastWeaponInspection.tick)
 }
 
 func (player *Player) startWeaponInspection(tick int) {
