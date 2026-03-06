@@ -27,17 +27,10 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 
 	outputPath = outputPath + string(os.PathSeparator) + match.DemoFileName
 
-	var writeMatch = func() {
-		winnerName := ""
-		winnerSide := common.TeamUnassigned
-		if match.Winner != nil {
-			winnerName = match.Winner.Name
-			winnerSide = *match.Winner.CurrentSide
-		}
+	var writeDemo = func() {
 		line := []string{
 			match.Checksum,
 			match.Game.String(),
-			match.DemoFilePath,
 			match.DemoFileName,
 			match.Date.Format(time.RFC3339),
 			match.Source.String(),
@@ -52,6 +45,23 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 			converters.Float64ToString(match.Duration.Seconds()),
 			converters.IntToString(match.NetworkProtocol),
 			converters.IntToString(match.BuildNumber),
+		}
+
+		csv.WriteLinesIntoCsvFile(outputPath+"_demo.csv", [][]string{
+			line,
+		})
+	}
+
+	var writeMatch = func() {
+		winnerName := ""
+		winnerSide := common.TeamUnassigned
+		if match.Winner != nil {
+			winnerName = match.Winner.Name
+			winnerSide = *match.Winner.CurrentSide
+		}
+		line := []string{
+			match.Checksum,
+			match.DemoFilePath,
 			match.GameType.String(),
 			match.GameMode.String(),
 			match.GameModeStr().String(),
@@ -929,6 +939,7 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 
 	var functions = []func(){
 		writeMatch,
+		writeDemo,
 		writeTeams,
 		writePlayers,
 		writePlayerPositions,
