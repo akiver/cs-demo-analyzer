@@ -163,7 +163,7 @@ func createEbotAnalyzer(analyzer *Analyzer) {
 			killCount++
 		}
 
-		isKnifeRound := killCount > 0 && killCount == knifeKillCount
+		isKnifeRound := killCount > 0 && killCount == knifeKillCount && analyzer.currentRound.Number <= 4
 		if isKnifeRound {
 			analyzer.reset()
 			matchStarted = false
