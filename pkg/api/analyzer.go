@@ -175,6 +175,8 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 		createValveAnalyzer(analyzer)
 	case constants.DemoSourceValve, constants.DemoSourcePerfectWorld, constants.DemoSourceESL:
 		createValveAnalyzer(analyzer)
+	case constants.DemoSourcePracc:
+		createPraccAnalyzer(analyzer)
 	default:
 		return nil, errors.New("unknown demo source, please specify the source with the -source flag (UnknownSource)")
 	}
@@ -313,13 +315,21 @@ func (analyzer *Analyzer) registerPlayer(player *common.Player, teamState *commo
 		return
 	}
 
-	// Ignore coaches
+	// Start of coach detection.
+	// Quick way to detect coaches for demos coming from providers such as PRACC that put coaches as a real player
+	// visible in the scoreboard and make them dead at the end of round freezetime.
+	// Coaches have an out-of-range color value (> 4), which never occurs for real players (valid range: 0-4).
+	if analyzer.isSource2 && player.Entity.PropertyValueMust("m_iCompTeammateColor").Int() > 4 {
+		return
+	}
+
 	if prop, exists := player.Entity.PropertyValue("m_iCoachingTeam"); exists {
 		coachTeam := prop.Int()
 		if coachTeam == int(common.TeamCounterTerrorists) || coachTeam == int(common.TeamTerrorists) {
 			return
 		}
 	}
+	// End of coach detection
 
 	playerTeam := teamState.Team()
 	if playerTeam == common.TeamSpectators || playerTeam == common.TeamUnassigned {

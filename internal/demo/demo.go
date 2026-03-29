@@ -319,6 +319,10 @@ func GetDemoSource(demo *Demo) constants.DemoSource {
 		return constants.DemoSourceEsplay
 	}
 
+	if strings.Contains(serverName, "pracc.com") {
+		return constants.DemoSourcePracc
+	}
+
 	if fiveEPlayDemoNameRegex.MatchString(demoName) {
 		return constants.DemoSourceFiveEPlay
 	}

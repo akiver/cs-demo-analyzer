@@ -22,6 +22,7 @@ const (
 	DemoSourceMatchZy      DemoSource = "matchzy"
 	DemoSourcePerfectWorld DemoSource = "perfectworld"
 	DemoSourcePopFlash     DemoSource = "popflash"
+	DemoSourcePracc        DemoSource = "pracc"
 	DemoSourceRenown       DemoSource = "renown"
 	DemoSourceUnknown      DemoSource = "unknown"
 	DemoSourceValve        DemoSource = "valve"
@@ -41,6 +42,7 @@ var SupportedDemoSources = []DemoSource{
 	DemoSourceMatchZy,
 	DemoSourcePerfectWorld,
 	DemoSourcePopFlash,
+	DemoSourcePracc,
 	DemoSourceRenown,
 	DemoSourceValve,
 }
