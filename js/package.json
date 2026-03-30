@@ -40,8 +40,8 @@
     "replays"
   ],
   "devDependencies": {
-    "@types/node": "24.10.4",
-    "prettier": "3.7.4",
-    "typescript": "5.9.3"
+    "@types/node": "24.12.0",
+    "prettier": "3.8.1",
+    "typescript": "6.0.2"
   }
 }
