@@ -375,10 +375,6 @@ func (player *Player) DeathCount() int {
 			}
 		}
 
-		if kill.WeaponName == constants.WeaponBomb {
-			continue
-		}
-
 		deathCount++
 	}
 

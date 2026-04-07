@@ -478,7 +478,7 @@ func TestEsportal_6045888_2024_Mirage(t *testing.T) {
 			Name:          "Dahlberg",
 			KillCount:     11, // 11 instead of 12 round 17 TK carokann?
 			AssistCount:   2,
-			DeathCount:    13,
+			DeathCount:    14,
 			Score:         28,
 			Team:          match.TeamB,
 			HeadshotCount: 9,

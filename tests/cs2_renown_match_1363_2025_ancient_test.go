@@ -722,7 +722,7 @@ func TestRenown_Match_1363_2025_Ancient(t *testing.T) {
 			Name:          "SpeaR",
 			KillCount:     21,
 			AssistCount:   8,
-			DeathCount:    19,
+			DeathCount:    20,
 			Score:         50,
 			Team:          match.TeamA,
 			HeadshotCount: 7,
