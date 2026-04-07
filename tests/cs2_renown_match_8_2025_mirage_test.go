@@ -479,7 +479,7 @@ func TestRenown_Match_8_2025_Mirage(t *testing.T) {
 			Name:          "Vodka",
 			KillCount:     14,
 			AssistCount:   6,
-			DeathCount:    12, // It's 13 on CS2 and renown because this player had a disconnection
+			DeathCount:    13,
 			Score:         34,
 			Team:          match.TeamA,
 			HeadshotCount: 4,
