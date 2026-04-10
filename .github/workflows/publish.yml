@@ -21,15 +21,15 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Setup node
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           registry-url: 'https://registry.npmjs.org'
 
       - name: Setup Go
-        uses: actions/setup-go@v4
+        uses: actions/setup-go@v5
         with:
           go-version-file: 'go.mod'
 
