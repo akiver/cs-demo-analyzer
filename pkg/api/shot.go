@@ -60,7 +60,11 @@ func newShot(analyzer *Analyzer, event events.WeaponFire) *Shot {
 	var viewPunchAngle r3.Vector
 	if analyzer.isSource2 {
 		pawnEntity := shooter.PlayerPawnEntity()
-		aimPunchAngle = pawnEntity.PropertyValueMust("m_aimPunchAngle").R3Vec()
+		// This prop may not exist with demos after the Animgraph 2 update
+		if prop, exists := pawnEntity.PropertyValue("m_aimPunchAngle"); exists {
+			aimPunchAngle = prop.R3Vec()
+		}
+
 		// This prop may not exist with demos coming from the early CS2 limited test
 		if prop, exists := pawnEntity.PropertyValue("m_pCameraServices.m_vecCsViewPunchAngle"); exists {
 			viewPunchAngle = prop.R3Vec()
