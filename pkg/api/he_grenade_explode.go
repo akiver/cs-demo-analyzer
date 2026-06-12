@@ -42,12 +42,7 @@ func newHeGrenadeExplodeFromGameEvent(analyzer *Analyzer, event events.HeExplode
 
 	throwerTeam := thrower.Team
 	parser := analyzer.parser
-	var projectileID int64
-	for _, projectile := range parser.GameState().GrenadeProjectiles() {
-		if projectile.WeaponInstance.UniqueID2() == grenade.UniqueID2() {
-			projectileID = projectile.UniqueID()
-		}
-	}
+	projectileID := findGrenadeProjectileID(analyzer, grenade.UniqueID2(), event.Position)
 
 	velocity := thrower.Velocity()
 

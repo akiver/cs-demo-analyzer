@@ -42,13 +42,7 @@ func newSmokeStartFromGameEvent(analyzer *Analyzer, event events.SmokeStart) *Sm
 
 	throwerTeam := thrower.Team
 	parser := analyzer.parser
-	var projectileID int64
-	for _, projectile := range parser.GameState().GrenadeProjectiles() {
-		if projectile.WeaponInstance.UniqueID2() == grenade.UniqueID2() {
-			projectileID = projectile.UniqueID()
-			break
-		}
-	}
+	projectileID := findGrenadeProjectileID(analyzer, grenade.UniqueID2(), event.Position)
 
 	velocity := thrower.Velocity()
 

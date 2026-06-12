@@ -181,8 +181,48 @@ main();
 
 ### Tests
 
-1. `./download-demos.sh` it will download the demos used for the tests
-2. `make test`
+Tests compare the analyzer output against the JSON snapshots stored in `tests/snapshots`.
+
+First, download the demos used by the tests (one-time setup):
+
+```bash
+./download-demos.sh
+```
+
+#### Running tests
+
+```bash
+# Run all tests
+make test
+
+# Only CS:GO or only CS2 tests
+make test-csgo
+make test-cs2
+```
+
+Pass extra flags to `go test` through the `ARGS` variable:
+
+```bash
+# Run a single test
+make test ARGS="-run TestEsportal_6008132_2023_Mirage"
+
+# Run every test whose name starts with TestEsportal, in verbose mode
+make test ARGS="-run TestEsportal -v"
+```
+
+#### Updating snapshots
+
+When the analyzer output legitimately changes, regenerate the snapshots by passing `-update`:
+
+```bash
+# Regenerate all snapshots
+make test ARGS="-update"
+
+# Regenerate the snapshot for a single test
+make test ARGS="-update -run TestEsportal_6008132_2023_Mirage"
+```
+
+Review the resulting snapshot diff before committing.
 
 ### VSCode debugger
 
