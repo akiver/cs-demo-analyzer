@@ -33,10 +33,10 @@ jobs:
         with:
           go-version-file: 'go.mod'
 
-      # Use a recent npm version that supports trusted publishing
+      # Use a recent npm version that supports npm stage publish
       - name: Install npm
         run: |
-          sudo npm install -g npm@11.7.0
+          sudo npm install -g npm@11.17.0
 
       - name: Publish
         run: |
