@@ -14,6 +14,7 @@ const (
 	DemoSourceESL            DemoSource = "esl"
 	DemoSourceEsplay         DemoSource = "esplay"
 	DemoSourceEsportal       DemoSource = "esportal"
+	DemoSourceEsportligaen   DemoSource = "esportligaen"
 	DemoSourceFaceIt         DemoSource = "faceit"
 	DemoSourceFastcup        DemoSource = "fastcup"
 	DemoSourceFiveEPlay      DemoSource = "5eplay"
@@ -35,6 +36,7 @@ var SupportedDemoSources = []DemoSource{
 	DemoSourceESL,
 	DemoSourceEsplay,
 	DemoSourceEsportal,
+	DemoSourceEsportligaen,
 	DemoSourceFaceIt,
 	DemoSourceFastcup,
 	DemoSourceFiveEPlay,

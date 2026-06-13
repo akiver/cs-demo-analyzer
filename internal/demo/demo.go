@@ -49,6 +49,10 @@ var fiveEPlayDemoNameRegex = regexp.MustCompile(`^g\d+-(.*)[a-zA-Z0-9_]*$`)
 // https://shobhit-pathak.github.io/MatchZy/gotv/#recording-demos
 var matchZyDemoNameRegex = regexp.MustCompile(`^(\d{4}-\d{2}-\d{2}_\d{2}-\d{2}-\d{2})_(\d+)_([a-zA-Z0-9_]+)_(.+?)_vs_(.+)$`)
 
+// Esportligaen servers name follow the pattern "[{MATCH_ID}] {MAP}: {TEAM1} vs. {TEAM2}".
+// Example: "[37980] de_mirage: Trelleborg Marine Systems DK vs. ForeFeit B"
+var esportligaenServerNameRegex = regexp.MustCompile(`^\[\d+\] [a-z0-9_]+: .+ vs\. .+$`)
+
 // Reads the .info file associated with a demo if it exists and returns its content as bytes.
 func getMatchInfoProtoBytes(demoFilePath string) []byte {
 	infoFilePath := demoFilePath + ".info"
@@ -317,6 +321,10 @@ func GetDemoSource(demo *Demo) constants.DemoSource {
 
 	if strings.Contains(serverName, "esplay") {
 		return constants.DemoSourceEsplay
+	}
+
+	if esportligaenServerNameRegex.MatchString(serverName) {
+		return constants.DemoSourceEsportligaen
 	}
 
 	if strings.Contains(serverName, "pracc.com") {

@@ -152,6 +152,8 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 		createRenownAnalyzer(analyzer)
 	case constants.DemoSourceEsplay:
 		createEsplayAnalyzer(analyzer)
+	case constants.DemoSourceEsportligaen:
+		createEsportligaenAnalyzer(analyzer)
 	case constants.DemoSourceEsportal:
 		createEsportalAnalyzer(analyzer)
 	case constants.DemoSourceCEVO:
