@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "module": "CommonJS",
-    "target": "ES2022",
+    "module": "nodenext",
+    "target": "es2025",
+    "rootDir": "./src",
     "outDir": "dist",
     "skipLibCheck": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
+    "types": ["node"]
   },
   "include": ["src/*.ts"]
 }
