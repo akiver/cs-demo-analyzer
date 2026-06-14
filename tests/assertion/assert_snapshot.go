@@ -20,6 +20,7 @@ var update = flag.Bool("update", false, "update snapshots with the current analy
 var (
 	uniqueIDPattern     = regexp.MustCompile(`("(?:weaponId|grenadeId|weaponUniqueId)": ")([0-9A-Z]{26})(")`)
 	projectileIDPattern = regexp.MustCompile(`("projectileId": )(-?[1-9]\d*)`)
+	datePattern         = regexp.MustCompile(`("date": ")([^"]*)(")`)
 )
 
 // normalizeUniqueIDs makes the random or run-dependent IDs in the JSON stable so the snapshot comparison is
@@ -146,6 +147,18 @@ func describeFirstLineDiff(want []byte, got []byte) string {
 func AssertMatchSnapshot(t *testing.T, match *api.Match, demoName string) {
 	t.Helper()
 
+	// The match's date corresponds to the demo file's modification time, which is machine-specific and so unstable across runs.
+	// The only exception is with Valve demos that have a .info file that contains the original date.
+	// We redact the date if it matches the demo file's mod time.
+	shouldRedactDate := false
+	if stat, err := os.Stat(match.DemoFilePath); err == nil && match.Date.Equal(stat.ModTime()) {
+		shouldRedactDate = true
+	}
+
+	// time.Time is marshaled in its local zone, so the rendered string depends on the test machine's
+	// timezone (for example +01:00 locally vs Z on CI). Pin it to UTC so it stays stable.
+	match.Date = match.Date.UTC()
+
 	// The demo path is machine-specific, exclude it from the comparison.
 	match.DemoFilePath = ""
 	sortUnorderedSlices(match)
@@ -155,6 +168,9 @@ func AssertMatchSnapshot(t *testing.T, match *api.Match, demoName string) {
 		t.Fatalf("failed to marshal match to JSON: %v", err)
 	}
 	got = normalizeUniqueIDs(got)
+	if shouldRedactDate {
+		got = datePattern.ReplaceAll(got, []byte("${1}redacted${3}"))
+	}
 	got = append(got, '\n')
 
 	snapshotPath := filepath.Join("snapshots", demoName+".json")
