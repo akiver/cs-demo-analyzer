@@ -11,6 +11,8 @@ import (
 
 // https://cs2.fastcup.net/matches/11851975
 func TestFastcup11851975_11876310_202312171749Competitive2023Mirage(t *testing.T) {
+	t.Parallel()
+
 	demoName := "fastcup_11851975_11876310_202312171749_2023_mirage"
 	demoPath := testsutils.GetDemoPath("cs2", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

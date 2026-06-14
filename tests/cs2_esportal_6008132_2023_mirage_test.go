@@ -11,6 +11,8 @@ import (
 
 // https://esportal.com/en/match/6008132
 func TestEsportal_6008132_2023_Mirage(t *testing.T) {
+	t.Parallel()
+
 	demoName := "esportal_6008132_2023_mirage"
 	demoPath := testsutils.GetDemoPath("cs2", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

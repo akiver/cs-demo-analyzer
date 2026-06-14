@@ -15,6 +15,8 @@ import (
 // After a few seconds at the end of the round 20, the round is cancelled (!stop) and really starts at tick 330201.
 // https://www.hltv.org/stats/matches/mapstatsid/42335/immortals-vs-north
 func TestEbot_Immortals_VS_North_IEM_Katowice_2017_Overpass(t *testing.T) {
+	t.Parallel()
+
 	demoName := "ebot_immortals_vs_north_iem_katowice_2017_overpass"
 	demoPath := testsutils.GetDemoPath("csgo", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

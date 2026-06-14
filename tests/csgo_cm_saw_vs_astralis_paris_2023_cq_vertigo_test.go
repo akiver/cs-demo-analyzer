@@ -11,6 +11,8 @@ import (
 
 // https://www.hltv.org/stats/matches/mapstatsid/151549/astralis-vs-saw
 func TestChallengerModeSawVsAstralisM2Paris2023CqVertigo(t *testing.T) {
+	t.Parallel()
+
 	demoName := "challengermode_saw_vs_astralis_m2_paris_2023_cq_vertigo"
 	demoPath := testsutils.GetDemoPath("csgo", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

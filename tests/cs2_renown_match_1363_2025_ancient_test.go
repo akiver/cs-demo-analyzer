@@ -14,6 +14,8 @@ import (
 // The match is paused and resumed when all players are reconnected.
 // https://renown.gg/match/1363
 func TestRenown_Match_1363_2025_Ancient(t *testing.T) {
+	t.Parallel()
+
 	demoName := "renown_match_1363_2025_ancient"
 	demoPath := testsutils.GetDemoPath("cs2", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

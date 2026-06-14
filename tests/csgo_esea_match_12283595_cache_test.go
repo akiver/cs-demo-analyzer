@@ -10,6 +10,8 @@ import (
 )
 
 func TestEsea_12283595_Cache(t *testing.T) {
+	t.Parallel()
+
 	demoName := "esea_match_12283595_cache"
 	demoPath := testsutils.GetDemoPath("csgo", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

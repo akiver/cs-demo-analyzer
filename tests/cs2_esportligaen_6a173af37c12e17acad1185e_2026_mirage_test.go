@@ -10,6 +10,8 @@ import (
 )
 
 func TestEsportligaen_6a173af37c12e17acad1185e_2026_Mirage(t *testing.T) {
+	t.Parallel()
+
 	demoName := "esportligaen_6a173af37c12e17acad1185e_2026_mirage"
 	demoPath := testsutils.GetDemoPath("cs2", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

@@ -13,6 +13,8 @@ import (
 // - Contains a round backup restore at round 15
 // - Teams stay after knife round
 func Test_MatchZy_Aurora_vs_3dmax_m3_2024_Anubis(t *testing.T) {
+	t.Parallel()
+
 	demoName := "matchzy_aurora_vs_3dmax_m3_anubis"
 	demoPath := testsutils.GetDemoPath("cs2", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

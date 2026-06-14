@@ -11,6 +11,8 @@ import (
 
 // Contains a knife round
 func Test5EPlay_5eplay_g161_20231231135244670959707_2023_Mirage(t *testing.T) {
+	t.Parallel()
+
 	demoName := "5eplay_g161_20231231135244670959707_2023_mirage"
 	demoPath := testsutils.GetDemoPath("cs2", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

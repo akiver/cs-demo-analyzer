@@ -12,6 +12,8 @@ import (
 // 5v5 with overtimes.
 // https://esplay.com/m/ntfNCNcmKCQc/team-lina-vs-team-qara
 func TestEsplay_ntfNCNcmKCQc_2025_Mirage(t *testing.T) {
+	t.Parallel()
+
 	demoName := "esplay_ntfNCNcmKCQc_2025_mirage"
 	demoPath := testsutils.GetDemoPath("cs2", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

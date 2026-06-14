@@ -11,6 +11,8 @@ import (
 
 // Valve short match (MR 8) demo.
 func TestValve_Match730_003598554255364980910_1802085029_272_Ancient(t *testing.T) {
+	t.Parallel()
+
 	demoName := "valve_match730_003598554255364980910_1802085029_272_ancient"
 	demoPath := testsutils.GetDemoPath("csgo", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

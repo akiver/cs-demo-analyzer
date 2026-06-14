@@ -11,6 +11,8 @@ import (
 
 // https://www.challengermode.com/s/CsgoAllstars/games/b4d31195-bae0-42c0-bbcc-08dbf6b17863
 func TestChallengerMode_6c306e56_8170_4092_b402_08dbf813e452_2023_Anubis(t *testing.T) {
+	t.Parallel()
+
 	demoName := "challengermode_6c306e56-8170-4092-b402-08dbf813e452"
 	demoPath := testsutils.GetDemoPath("cs2", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

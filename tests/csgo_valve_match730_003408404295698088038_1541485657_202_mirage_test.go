@@ -11,6 +11,8 @@ import (
 
 // Demo with a surrender, bots and contains 1 tactical timeout.
 func TestValve_Match730_003408404295698088038_1541485657_202_Mirage(t *testing.T) {
+	t.Parallel()
+
 	demoName := "valve_match730_003408404295698088038_1541485657_202_mirage"
 	demoPath := testsutils.GetDemoPath("csgo", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

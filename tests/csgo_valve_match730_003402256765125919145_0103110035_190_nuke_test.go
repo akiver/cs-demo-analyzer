@@ -11,6 +11,8 @@ import (
 
 // Demo containing 1 tactical timeout, multiple players disconnection, BOT overtake, suicides.
 func TestValve_Match730_003402256765125919145_0103110035_190_Nuke(t *testing.T) {
+	t.Parallel()
+
 	demoName := "valve_match730_003402256765125919145_0103110035_190_nuke"
 	demoPath := testsutils.GetDemoPath("csgo", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

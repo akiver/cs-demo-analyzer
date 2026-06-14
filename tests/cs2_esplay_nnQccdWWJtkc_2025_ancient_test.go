@@ -12,6 +12,8 @@ import (
 // 2v2
 // https://esplay.com/m/nnQccdWWJtkc/midnight-vs-haha123xd
 func TestEsplay_nnQccdWWJtkc_2025_Vertigo(t *testing.T) {
+	t.Parallel()
+
 	demoName := "esplay_nnQccdWWJtkc_2025_vertigo"
 	demoPath := testsutils.GetDemoPath("cs2", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

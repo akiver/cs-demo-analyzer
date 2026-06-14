@@ -12,6 +12,8 @@ import (
 // https://www.hltv.org/matches/2373609/bleed-vs-parivision-skyesports-championship-2024
 // - 2 overtimes
 func Test_MatchZy_Bleed_vs_Parivision_2024_Mirage(t *testing.T) {
+	t.Parallel()
+
 	demoName := "matchzy_bleed_vs_parivision_2024_mirage"
 	demoPath := testsutils.GetDemoPath("cs2", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

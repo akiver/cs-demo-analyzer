@@ -11,6 +11,8 @@ import (
 
 // https://renown.gg/match/8
 func TestRenown_Match_8_2025_Mirage(t *testing.T) {
+	t.Parallel()
+
 	demoName := "renown_match_8_2025_mirage"
 	demoPath := testsutils.GetDemoPath("cs2", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

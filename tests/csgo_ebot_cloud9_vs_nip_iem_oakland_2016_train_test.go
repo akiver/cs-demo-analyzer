@@ -14,6 +14,8 @@ import (
 // The round 6 is cancelled few seconds after it started, a backup is restored and the round 6 really start.
 // https://www.hltv.org/stats/matches/mapstatsid/38754/cloud9-vs-ninjas-in-pyjamas
 func TestEbot_Cloud9_VS_NIP_IEM_Oakland_2016_Train(t *testing.T) {
+	t.Parallel()
+
 	demoName := "ebot_cloud9_vs_nip_iem_oakland_2016_train"
 	demoPath := testsutils.GetDemoPath("csgo", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

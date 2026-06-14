@@ -11,6 +11,8 @@ import (
 
 // The first round is restored 2 times
 func Test_MatchZy_PressurE_vs_cyphin_2024_nuke(t *testing.T) {
+	t.Parallel()
+
 	demoName := "matchzy_pressure_vs_cyphin_2024_nuke"
 	demoPath := testsutils.GetDemoPath("cs2", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

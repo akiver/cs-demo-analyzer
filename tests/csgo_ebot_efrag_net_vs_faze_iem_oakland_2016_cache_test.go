@@ -15,6 +15,8 @@ import (
 // At the beginning of the second round, a pause is requested. The game is paused and the 2nd round starts at tick 74004.
 // https://www.hltv.org/stats/matches/mapstatsid/28406/e-fragnet-vs-faze
 func TestEbot_Efrag_Net_VS_Faze_IEM_Oakland_2016_Cache(t *testing.T) {
+	t.Parallel()
+
 	demoName := "ebot_efrag_net_vs_faze_iem_oakland_2016_cache"
 	demoPath := testsutils.GetDemoPath("csgo", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

@@ -10,6 +10,8 @@ import (
 )
 
 func TestFaceit_2d199377f1794b488ac7e5714c754639_Mirage(t *testing.T) {
+	t.Parallel()
+
 	demoName := "faceit_2d199377-f179-4b48-8ac7-e5714c754639_mirage"
 	demoPath := testsutils.GetDemoPath("csgo", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

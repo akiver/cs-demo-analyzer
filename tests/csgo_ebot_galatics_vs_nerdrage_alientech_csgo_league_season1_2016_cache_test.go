@@ -13,6 +13,8 @@ import (
 // The game is stopped a few seconds after the beginning of the 1st round.
 // https://www.hltv.org/stats/matches/mapstatsid/28613/nerdrage-vs-galatics
 func TestEbot_Galatics_VS_Nerdrage_AlienTech_CSGO_League_Season1_2016_Cache(t *testing.T) {
+	t.Parallel()
+
 	demoName := "ebot_galatics_vs_nerdrage_alientech_csgo_league_season1_2016_cache"
 	demoPath := testsutils.GetDemoPath("csgo", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{

@@ -10,6 +10,8 @@ import (
 )
 
 func Test_Pracc_CHHyStHPwEnGVsFmrZLWsDQwBX_2026_nuke(t *testing.T) {
+	t.Parallel()
+
 	demoName := "pracc_CHHyStHPwEnGVsFmrZLWsDQwBX_2026_nuke"
 	demoPath := testsutils.GetDemoPath("cs2", demoName)
 	match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{
