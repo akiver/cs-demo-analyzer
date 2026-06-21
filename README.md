@@ -183,6 +183,8 @@ main();
 
 Tests compare the analyzer output against the JSON snapshots stored in `tests/snapshots`.
 
+Every demo is an entry in the `demoTestCases` table in `tests/demos_test.go` and runs as a parallel subtest of `TestDemos`, named `TestDemos/<game>/<name>` (e.g. `TestDemos/cs2/Esportal_6008132_2023_Mirage`). To add a demo, add a row to the table rather than a new file.
+
 First, download the demos used by the tests (one-time setup):
 
 ```bash
@@ -200,14 +202,14 @@ make test-csgo
 make test-cs2
 ```
 
-Pass extra flags to `go test` through the `ARGS` variable:
+Pass extra flags to `go test` through the `ARGS` variable. The `-run` value is a regex matched against the slash-separated subtest path:
 
 ```bash
-# Run a single test
-make test ARGS="-run TestEsportal_6008132_2023_Mirage"
+# Run a single demo
+make test ARGS="-run TestDemos/cs2/Esportal_6008132_2023_Mirage"
 
-# Run every test whose name starts with TestEsportal, in verbose mode
-make test ARGS="-run TestEsportal -v"
+# Run every demo whose name contains Esportal, in verbose mode
+make test ARGS="-run TestDemos/.*/Esportal -v"
 ```
 
 #### Updating snapshots
@@ -218,8 +220,8 @@ When the analyzer output legitimately changes, regenerate the snapshots by passi
 # Regenerate all snapshots
 make test ARGS="-update"
 
-# Regenerate the snapshot for a single test
-make test ARGS="-update -run TestEsportal_6008132_2023_Mirage"
+# Regenerate the snapshot for a single demo
+make test ARGS="-update -run TestDemos/cs2/Esportal_6008132_2023_Mirage"
 ```
 
 Review the resulting snapshot diff before committing.
