@@ -328,6 +328,10 @@ func (player *Player) Deaths() []*Kill {
 }
 
 func (player *Player) KillCount() int {
+	// CSGO decreases the player's kill count on suicide and team kill, CS2 doesn't, so we only apply these
+	// decrements for CSGO demos to keep the value consistent with each game's scoreboard.
+	isCSGO := player.match.Game == constants.CSGO
+
 	var killCount int
 	for _, kill := range player.match.Kills {
 		if kill.KillerSteamID64 == player.SteamID64 {
@@ -338,14 +342,16 @@ func (player *Player) KillCount() int {
 			if kill.IsSuicide() {
 				// CSGO decreases player kill count on disconnection caused by network issue or by a vote kick, we don't
 				isClientDisconnection := kill.WeaponName == constants.WeaponWorld
-				if !isClientDisconnection {
+				if isCSGO && !isClientDisconnection {
 					killCount--
 				}
 				continue
 			}
 
 			if kill.IsTeamKill() {
-				killCount--
+				if isCSGO {
+					killCount--
+				}
 				continue
 			}
 
@@ -356,7 +362,7 @@ func (player *Player) KillCount() int {
 			}
 
 			isSuicide := kill.KillerSteamID64 == 0 && kill.WeaponName == constants.WeaponWorld
-			if isSuicide {
+			if isCSGO && isSuicide {
 				killCount--
 			}
 		}
