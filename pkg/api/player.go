@@ -787,6 +787,21 @@ func (player *Player) reset() {
 	}
 }
 
+func getPlayerUserID(analyzer *Analyzer, player common.Player) int {
+	if analyzer.isSource2 {
+		userID, exists := analyzer.playerSlotBySteamID64[player.SteamID64]
+		if exists {
+			return userID
+		}
+	}
+
+	if player.UserID <= math.MaxUint16 {
+		return player.UserID & 0xff
+	}
+
+	return 0
+}
+
 func NewPlayer(analyzer *Analyzer, currentTeam common.Team, player common.Player) *Player {
 	var team *Team
 	if *analyzer.match.TeamA.CurrentSide == currentTeam {
@@ -797,15 +812,10 @@ func NewPlayer(analyzer *Analyzer, currentTeam common.Team, player common.Player
 
 	color, _ := player.ColorOrErr()
 	rank := player.Rank()
-	userID := 0
-	if player.UserID <= math.MaxUint16 {
-		userID = player.UserID & 0xff
-	}
-
 	newPlayer := &Player{
 		match:              analyzer.match,
 		SteamID64:          player.SteamID64,
-		UserID:             userID,
+		UserID:             getPlayerUserID(analyzer, player),
 		Name:               strings.ReplaceUTF8ByteSequences(player.Name),
 		Team:               team,
 		CrosshairShareCode: player.CrosshairCode(),

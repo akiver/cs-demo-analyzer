@@ -57,7 +57,10 @@ type Analyzer struct {
 	// Because several hostages can be untied at the same time, we keep track of players that started untying hostages
 	// to detect which player is untying an hostage in case of consecutive events.
 	playersUntyingAnHostage map[uint64]int
-	chickenEntities         []st.Entity
+	// CS2's game-event user IDs can collide after demoinfocs masks them to their low byte. The userinfo stringtable
+	// index is the stable player slot needed by commands such as spec_player.
+	playerSlotBySteamID64 map[uint64]int
+	chickenEntities       []st.Entity
 }
 
 type AnalyzeDemoOptions struct {
@@ -121,6 +124,7 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 		bombPlantPosition:         r3.Vector{},
 		lastGrenadeThrownByPlayer: make(map[uint64]*Shot),
 		playersUntyingAnHostage:   make(map[uint64]int),
+		playerSlotBySteamID64:     make(map[uint64]int),
 		postProcess:               defaultPostProcess,
 	}
 
@@ -560,6 +564,14 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 
 	parser.RegisterEventHandler(func(event events.POVRecordingPlayerDetected) {
 		match.Type = "POV"
+	})
+
+	parser.RegisterEventHandler(func(event events.PlayerInfo) {
+		if !analyzer.isSource2 || event.Info.XUID == 0 {
+			return
+		}
+
+		analyzer.playerSlotBySteamID64[event.Info.XUID] = event.Index
 	})
 
 	parser.RegisterEventHandler(func(event events.PlayerTeamChange) {
