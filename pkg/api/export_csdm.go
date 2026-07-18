@@ -167,7 +167,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 				converters.Float64ToString(position.Y),
 				converters.Float64ToString(position.Z),
 				converters.Float32ToString(position.Yaw),
-				converters.Float32ToString(position.Pitch),
 				converters.Float64ToString(position.FlashDurationRemaining),
 				converters.TeamToString(position.Side),
 				converters.IntToString(position.Money),
