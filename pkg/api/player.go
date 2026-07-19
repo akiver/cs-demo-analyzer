@@ -665,14 +665,14 @@ func (player *Player) FiveKillCount() int {
 // https://flashed.gg/posts/reverse-engineering-hltv-rating/
 // 2.13*KPR + 0.42*Assist per Round -0.41 ≈ impact
 func (player *Player) impact() float32 {
-	return 2.13*player.AverageKillPerRound() + 0.42*player.AverageAssistPerRound() + -0.41
+	return float32(2.13*player.AverageKillPerRound()) + float32(0.42*player.AverageAssistPerRound()) + -0.41
 }
 
 // This returns the player's HLTV rating 2.0.
 // https://flashed.gg/posts/reverse-engineering-hltv-rating/
 // 0.0073*KAST + 0.3591*KPR + -0.5329*DPR + 0.2372*Impact + 0.0032*ADR + 0.1587 ≈ Rating 2.0
 func (player *Player) HltvRating2() float32 {
-	rating := 0.0073*player.KAST() + 0.3591*player.AverageKillPerRound() + -0.5329*player.AverageDeathPerRound() + 0.2372*player.impact() + 0.0032*float32(player.AverageDamagePerRound()) + 0.1587
+	rating := float32(0.0073*player.KAST()) + float32(0.3591*player.AverageKillPerRound()) + float32(-0.5329*player.AverageDeathPerRound()) + float32(0.2372*player.impact()) + float32(0.0032*player.AverageDamagePerRound()) + 0.1587
 
 	if rating < 0 {
 		return 0
@@ -691,8 +691,8 @@ func (player *Player) HltvRating() float32 {
 
 	killRating := player.AverageKillPerRound() / 0.679
 	survivalRating := (roundCount - float32(player.DeathCount())) / roundCount / 0.317
-	roundsWithMultipleKillsRating := (float32(player.OneKillCount()) + 4*float32(player.TwoKillCount()) + 9*float32(player.ThreeKillCount()) + 16*float32(player.FourKillCount()) + 25*float32(player.FiveKillCount())) / roundCount / 1.277
-	rating := (killRating + 0.7*survivalRating + roundsWithMultipleKillsRating) / 2.7
+	roundsWithMultipleKillsRating := (float32(player.OneKillCount()) + float32(4*player.TwoKillCount()) + float32(9*player.ThreeKillCount()) + float32(16*player.FourKillCount()) + float32(25*player.FiveKillCount())) / roundCount / 1.277
+	rating := (killRating + float32(0.7*survivalRating) + roundsWithMultipleKillsRating) / 2.7
 
 	return rating
 }
