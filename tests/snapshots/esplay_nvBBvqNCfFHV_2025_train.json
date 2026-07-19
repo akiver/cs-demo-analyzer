@@ -134,7 +134,7 @@
       "winCount": 0,
       "crosshairShareCode": "CSGO-2B5Pr-w893D-aLw7x-UNOeN-V8Y2Q",
       "color": 4,
-      "inspectWeaponCount": 20,
+      "inspectWeaponCount": 23,
       "killCount": 3,
       "deathCount": 7,
       "assistCount": 2,
@@ -201,7 +201,7 @@
       "winCount": 0,
       "crosshairShareCode": "CSGO-ZvtTi-RAp3B-4Bhjj-Wj7DV-vJN2G",
       "color": 0,
-      "inspectWeaponCount": 167,
+      "inspectWeaponCount": 195,
       "killCount": 7,
       "deathCount": 8,
       "assistCount": 2,
@@ -268,7 +268,7 @@
       "winCount": 0,
       "crosshairShareCode": "CSGO-3FUxj-mwe3X-M7Lyx-GvybX-DnMHA",
       "color": 3,
-      "inspectWeaponCount": 104,
+      "inspectWeaponCount": 125,
       "killCount": 3,
       "deathCount": 8,
       "assistCount": 0,
@@ -335,7 +335,7 @@
       "winCount": 0,
       "crosshairShareCode": "CSGO-EoxhP-kJfGB-5PZVM-hD8YX-MDr7C",
       "color": 0,
-      "inspectWeaponCount": 235,
+      "inspectWeaponCount": 255,
       "killCount": 6,
       "deathCount": 3,
       "assistCount": 3,
@@ -447,7 +447,7 @@
       "fourKillCount": 0,
       "fiveKillCount": 0,
       "hltvRating": 1.7136043,
-      "hltvRating2": 1.8868055
+      "hltvRating2": 1.8868057
     },
     "76561198174150442": {
       "steamId": 76561198174150442,
@@ -536,7 +536,7 @@
       "winCount": 0,
       "crosshairShareCode": "CSGO-aqerO-Zwiqm-qS39f-2XHBs-pevvE",
       "color": 1,
-      "inspectWeaponCount": 28,
+      "inspectWeaponCount": 29,
       "killCount": 9,
       "deathCount": 3,
       "assistCount": 0,
@@ -603,7 +603,7 @@
       "winCount": 0,
       "crosshairShareCode": "CSGO-F7d6S-o6LHP-vrEiX-i48AQ-osjjD",
       "color": 2,
-      "inspectWeaponCount": 180,
+      "inspectWeaponCount": 195,
       "killCount": 5,
       "deathCount": 8,
       "assistCount": 1,
@@ -670,7 +670,7 @@
       "winCount": 0,
       "crosshairShareCode": "CSGO-5bz9W-Xdqbt-Nfd9a-N8qkj-haBpF",
       "color": 4,
-      "inspectWeaponCount": 81,
+      "inspectWeaponCount": 83,
       "killCount": 7,
       "deathCount": 4,
       "assistCount": 5,
@@ -715,7 +715,7 @@
       "fourKillCount": 0,
       "fiveKillCount": 0,
       "hltvRating": 1.2850012,
-      "hltvRating2": 1.673557
+      "hltvRating2": 1.6735572
     }
   },
   "kills": [

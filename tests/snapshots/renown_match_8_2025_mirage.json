@@ -67,7 +67,7 @@
       "winCount": 0,
       "crosshairShareCode": "CSGO-F7sUF-aAiyW-LWXfy-QFqpN-W7T8N",
       "color": 4,
-      "inspectWeaponCount": 343,
+      "inspectWeaponCount": 408,
       "killCount": 19,
       "deathCount": 10,
       "assistCount": 5,
@@ -201,7 +201,7 @@
       "winCount": 0,
       "crosshairShareCode": "CSGO-tTsum-4Ddw9-b8KEu-eHKOv-ctZQM",
       "color": 0,
-      "inspectWeaponCount": 1192,
+      "inspectWeaponCount": 1347,
       "killCount": 16,
       "deathCount": 12,
       "assistCount": 6,
@@ -246,7 +246,7 @@
       "fourKillCount": 1,
       "fiveKillCount": 0,
       "hltvRating": 1.3053123,
-      "hltvRating2": 1.3695102
+      "hltvRating2": 1.3695103
     },
     "76561198037147623": {
       "steamId": 76561198037147623,
@@ -268,7 +268,7 @@
       "winCount": 0,
       "crosshairShareCode": "CSGO-hEbjf-G9p26-2GRWt-Nzu8X-oUaUN",
       "color": 1,
-      "inspectWeaponCount": 385,
+      "inspectWeaponCount": 426,
       "killCount": 15,
       "deathCount": 10,
       "assistCount": 6,
@@ -335,7 +335,7 @@
       "winCount": 0,
       "crosshairShareCode": "CSGO-v9HLx-O7c29-ZDRTi-m7iaL-PiKPJ",
       "color": 2,
-      "inspectWeaponCount": 222,
+      "inspectWeaponCount": 239,
       "killCount": 14,
       "deathCount": 14,
       "assistCount": 4,
@@ -402,7 +402,7 @@
       "winCount": 0,
       "crosshairShareCode": "CSGO-jSONs-dzboU-5i5Lb-vWLKf-ezWPA",
       "color": 1,
-      "inspectWeaponCount": 364,
+      "inspectWeaponCount": 561,
       "killCount": 8,
       "deathCount": 16,
       "assistCount": 4,
@@ -469,7 +469,7 @@
       "winCount": 0,
       "crosshairShareCode": "CSGO-Et2Yw-28Uw3-KhWZD-rTVrY-vff4D",
       "color": 2,
-      "inspectWeaponCount": 129,
+      "inspectWeaponCount": 132,
       "killCount": 14,
       "deathCount": 17,
       "assistCount": 2,
@@ -514,7 +514,7 @@
       "fourKillCount": 0,
       "fiveKillCount": 0,
       "hltvRating": 0.82416946,
-      "hltvRating2": 1.08304
+      "hltvRating2": 1.0830399
     },
     "76561198087669880": {
       "steamId": 76561198087669880,
@@ -536,7 +536,7 @@
       "winCount": 0,
       "crosshairShareCode": "CSGO-YNL9Z-knQ29-i8wje-nELhk-M5XDJ",
       "color": 3,
-      "inspectWeaponCount": 228,
+      "inspectWeaponCount": 244,
       "killCount": 5,
       "deathCount": 16,
       "assistCount": 5,
@@ -603,7 +603,7 @@
       "winCount": 0,
       "crosshairShareCode": "CSGO-Z3hwQ-hAX3C-f5o3w-NKnbL-AzZkF",
       "color": 3,
-      "inspectWeaponCount": 174,
+      "inspectWeaponCount": 172,
       "killCount": 14,
       "deathCount": 13,
       "assistCount": 6,
@@ -670,7 +670,7 @@
       "winCount": 0,
       "crosshairShareCode": "CSGO-Q38ed-YvoAG-YfMD7-VmUY5-7cRVP",
       "color": 4,
-      "inspectWeaponCount": 366,
+      "inspectWeaponCount": 353,
       "killCount": 24,
       "deathCount": 13,
       "assistCount": 1,
@@ -715,7 +715,7 @@
       "fourKillCount": 1,
       "fiveKillCount": 0,
       "hltvRating": 1.7923362,
-      "hltvRating2": 1.7788472
+      "hltvRating2": 1.7788473
     }
   },
   "kills": [

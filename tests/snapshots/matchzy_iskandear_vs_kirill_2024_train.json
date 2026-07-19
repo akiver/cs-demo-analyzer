@@ -134,7 +134,7 @@
       "winCount": 0,
       "crosshairShareCode": "CSGO-Jhfkc-4UpR6-DJftC-VfGek-pL3ED",
       "color": 4,
-      "inspectWeaponCount": 411,
+      "inspectWeaponCount": 413,
       "killCount": 31,
       "deathCount": 10,
       "assistCount": 5,
@@ -379,7 +379,7 @@
       "threeKillCount": 2,
       "fourKillCount": 0,
       "fiveKillCount": 0,
-      "hltvRating": 0.836173,
+      "hltvRating": 0.8361729,
       "hltvRating2": 0.79084426
     },
     "76561198140231726": {
@@ -447,7 +447,7 @@
       "fourKillCount": 0,
       "fiveKillCount": 0,
       "hltvRating": 0.62232685,
-      "hltvRating2": 0.43263423
+      "hltvRating2": 0.4326343
     },
     "76561198166088951": {
       "steamId": 76561198166088951,
@@ -514,7 +514,7 @@
       "fourKillCount": 0,
       "fiveKillCount": 0,
       "hltvRating": 0.80986893,
-      "hltvRating2": 1.066678
+      "hltvRating2": 1.0666782
     },
     "76561199422206952": {
       "steamId": 76561199422206952,
@@ -603,7 +603,7 @@
       "winCount": 0,
       "crosshairShareCode": "CSGO-ycdEv-8L76B-dbStD-FnYJM-DCdRF",
       "color": 2,
-      "inspectWeaponCount": 118,
+      "inspectWeaponCount": 120,
       "killCount": 27,
       "deathCount": 11,
       "assistCount": 5,
@@ -647,8 +647,8 @@
       "threeKillCount": 2,
       "fourKillCount": 1,
       "fiveKillCount": 0,
-      "hltvRating": 1.908905,
-      "hltvRating2": 1.7569615
+      "hltvRating": 1.9089049,
+      "hltvRating2": 1.7569613
     },
     "76561199546450215": {
       "steamId": 76561199546450215,
@@ -715,7 +715,7 @@
       "fourKillCount": 0,
       "fiveKillCount": 0,
       "hltvRating": 0.22545664,
-      "hltvRating2": 0.1657584
+      "hltvRating2": 0.16575842
     }
   },
   "kills": [
