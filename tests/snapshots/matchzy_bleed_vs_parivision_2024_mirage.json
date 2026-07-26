@@ -262877,6 +262877,36 @@
   ],
   "chatMessages": [
     {
+      "frame": 4045,
+      "tick": 3464,
+      "roundNumber": 1,
+      "message": "!switch",
+      "senderSteamId": 76561198086945950,
+      "senderName": "hampus",
+      "senderSide": 3,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 6662,
+      "tick": 5692,
+      "roundNumber": 1,
+      "message": ".asay parivision choose your side ",
+      "senderSteamId": 76561199190893968,
+      "senderName": "RavenMe1sTeR",
+      "senderSide": 1,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 8022,
+      "tick": 6857,
+      "roundNumber": 1,
+      "message": "!switch",
+      "senderSteamId": 76561198288540801,
+      "senderName": "Patsi",
+      "senderSide": 2,
+      "isSenderAlive": true
+    },
+    {
       "frame": 9173,
       "tick": 7691,
       "roundNumber": 1,

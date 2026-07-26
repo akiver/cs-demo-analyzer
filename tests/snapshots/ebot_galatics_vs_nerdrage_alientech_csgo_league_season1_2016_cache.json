@@ -151713,6 +151713,296 @@
   ],
   "chatMessages": [
     {
+      "frame": 183,
+      "tick": 1418,
+      "roundNumber": 1,
+      "message": "hf",
+      "senderSteamId": 76561198138998220,
+      "senderName": "SHN",
+      "senderSide": 3,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 215,
+      "tick": 1674,
+      "roundNumber": 1,
+      "message": "hf",
+      "senderSteamId": 76561198144401525,
+      "senderName": "dream * SkinsVault",
+      "senderSide": 2,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 235,
+      "tick": 1834,
+      "roundNumber": 1,
+      "message": "hf",
+      "senderSteamId": 76561197962115912,
+      "senderName": "redSNK * SkinsVault",
+      "senderSide": 2,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 351,
+      "tick": 2762,
+      "roundNumber": 1,
+      "message": "hf",
+      "senderSteamId": 76561198122986597,
+      "senderName": "Duarte \u003e.\u003c",
+      "senderSide": 3,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 707,
+      "tick": 5610,
+      "roundNumber": 1,
+      "message": "!switch",
+      "senderSteamId": 76561197962115912,
+      "senderName": "redSNK * SkinsVault",
+      "senderSide": 2,
+      "isSenderAlive": false
+    },
+    {
+      "frame": 746,
+      "tick": 5926,
+      "roundNumber": 1,
+      "message": ".ready",
+      "senderSteamId": 76561198054373555,
+      "senderName": "MKWsf",
+      "senderSide": 2,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 832,
+      "tick": 6614,
+      "roundNumber": 1,
+      "message": "!ready",
+      "senderSteamId": 76561198185420454,
+      "senderName": "Torresᵖᵛᶻ =D",
+      "senderSide": 2,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 1258,
+      "tick": 10022,
+      "roundNumber": 1,
+      "message": ".ready",
+      "senderSteamId": 76561197962115912,
+      "senderName": "redSNK * SkinsVault",
+      "senderSide": 3,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 1500,
+      "tick": 11958,
+      "roundNumber": 1,
+      "message": "hfhf",
+      "senderSteamId": 76561198138998220,
+      "senderName": "SHN",
+      "senderSide": 2,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 1604,
+      "tick": 12790,
+      "roundNumber": 1,
+      "message": "hfhf",
+      "senderSteamId": 76561197962115912,
+      "senderName": "redSNK * SkinsVault",
+      "senderSide": 3,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 1817,
+      "tick": 14494,
+      "roundNumber": 1,
+      "message": "lol",
+      "senderSteamId": 76561198054373555,
+      "senderName": "MKWsf",
+      "senderSide": 2,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 1848,
+      "tick": 14742,
+      "roundNumber": 1,
+      "message": "nl",
+      "senderSteamId": 76561198185420454,
+      "senderName": "Torresᵖᵛᶻ =D",
+      "senderSide": 2,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 1869,
+      "tick": 14910,
+      "roundNumber": 1,
+      "message": "coach",
+      "senderSteamId": 76561198185420454,
+      "senderName": "Torresᵖᵛᶻ =D",
+      "senderSide": 2,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 1869,
+      "tick": 14910,
+      "roundNumber": 1,
+      "message": "ct coach",
+      "senderSteamId": 76561198138998220,
+      "senderName": "SHN",
+      "senderSide": 2,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 1875,
+      "tick": 14958,
+      "roundNumber": 1,
+      "message": "?",
+      "senderSteamId": 76561197962115912,
+      "senderName": "redSNK * SkinsVault",
+      "senderSide": 3,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 1883,
+      "tick": 15022,
+      "roundNumber": 1,
+      "message": "?",
+      "senderSteamId": 76561197985934021,
+      "senderName": "SHANEY * SkinsVault",
+      "senderSide": 3,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 1893,
+      "tick": 15102,
+      "roundNumber": 1,
+      "message": "wait",
+      "senderSteamId": 76561198138998220,
+      "senderName": "SHN",
+      "senderSide": 2,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 1902,
+      "tick": 15174,
+      "roundNumber": 1,
+      "message": ".abort",
+      "senderSteamId": 76561198054373555,
+      "senderName": "MKWsf",
+      "senderSide": 2,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 1903,
+      "tick": 15182,
+      "roundNumber": 1,
+      "message": "sorry",
+      "senderSteamId": 76561198033653629,
+      "senderName": "nobodyysf",
+      "senderSide": 1,
+      "isSenderAlive": false
+    },
+    {
+      "frame": 1932,
+      "tick": 15414,
+      "roundNumber": 1,
+      "message": ".stop",
+      "senderSteamId": 76561198054373555,
+      "senderName": "MKWsf",
+      "senderSide": 2,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 2046,
+      "tick": 16326,
+      "roundNumber": 1,
+      "message": ".STOP",
+      "senderSteamId": 76561197962115912,
+      "senderName": "redSNK * SkinsVault",
+      "senderSide": 3,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 2067,
+      "tick": 16494,
+      "roundNumber": 1,
+      "message": ".stop",
+      "senderSteamId": 76561197962115912,
+      "senderName": "redSNK * SkinsVault",
+      "senderSide": 3,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 2098,
+      "tick": 16742,
+      "roundNumber": 1,
+      "message": "lol",
+      "senderSteamId": 76561198185420454,
+      "senderName": "Torresᵖᵛᶻ =D",
+      "senderSide": 2,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 2148,
+      "tick": 17142,
+      "roundNumber": 1,
+      "message": "!ready",
+      "senderSteamId": 76561197997389119,
+      "senderName": "roma * SkinsVault",
+      "senderSide": 3,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 2166,
+      "tick": 17286,
+      "roundNumber": 1,
+      "message": "great",
+      "senderSteamId": 76561198144401525,
+      "senderName": "dream * SkinsVault",
+      "senderSide": 3,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 2283,
+      "tick": 18222,
+      "roundNumber": 1,
+      "message": "it should have swap when  we switched teams :D",
+      "senderSteamId": 76561198122986597,
+      "senderName": "Duarte \u003e.\u003c",
+      "senderSide": 2,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 3048,
+      "tick": 24343,
+      "roundNumber": 1,
+      "message": ".READY",
+      "senderSteamId": 76561197962115912,
+      "senderName": "redSNK * SkinsVault",
+      "senderSide": 3,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 3073,
+      "tick": 24543,
+      "roundNumber": 1,
+      "message": ".ready",
+      "senderSteamId": 76561197962115912,
+      "senderName": "redSNK * SkinsVault",
+      "senderSide": 3,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 3362,
+      "tick": 26855,
+      "roundNumber": 1,
+      "message": "come on guys i beg of the lord",
+      "senderSteamId": 76561197962115912,
+      "senderName": "redSNK * SkinsVault",
+      "senderSide": 3,
+      "isSenderAlive": true
+    },
+    {
       "frame": 3489,
       "tick": 27871,
       "roundNumber": 1,

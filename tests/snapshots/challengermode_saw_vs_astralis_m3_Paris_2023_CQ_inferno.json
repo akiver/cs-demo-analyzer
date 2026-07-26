@@ -202276,41 +202276,6 @@
   "chickenPositions": [],
   "chickenDeaths": [
     {
-      "frame": 4469,
-      "tick": 4467,
-      "roundNumber": 1,
-      "killerSteamId": 76561198010511021,
-      "weaponName": "Desert Eagle"
-    },
-    {
-      "frame": 27384,
-      "tick": 27386,
-      "roundNumber": 1,
-      "killerSteamId": 76561197994395491,
-      "weaponName": "Knife"
-    },
-    {
-      "frame": 30275,
-      "tick": 30277,
-      "roundNumber": 1,
-      "killerSteamId": 76561198010511021,
-      "weaponName": "Knife"
-    },
-    {
-      "frame": 35552,
-      "tick": 35554,
-      "roundNumber": 1,
-      "killerSteamId": 76561198012987839,
-      "weaponName": "AK-47"
-    },
-    {
-      "frame": 37430,
-      "tick": 37432,
-      "roundNumber": 1,
-      "killerSteamId": 76561197997981170,
-      "weaponName": "Knife"
-    },
-    {
       "frame": 58688,
       "tick": 58730,
       "roundNumber": 1,

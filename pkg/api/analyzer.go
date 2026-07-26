@@ -409,6 +409,7 @@ func (analyzer *Analyzer) updatePlayersCurrentTeam() {
 func (analyzer *Analyzer) processMatchStart() {
 	parser := analyzer.parser
 	match := analyzer.match
+	match.resetRound(1)
 	analyzer.updatePlayersCurrentTeam()
 
 	currentRound := analyzer.currentRound

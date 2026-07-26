@@ -54800,6 +54800,16 @@
       "senderName": "denfruktade",
       "senderSide": 3,
       "isSenderAlive": false
+    },
+    {
+      "frame": 46653,
+      "tick": 38989,
+      "roundNumber": 9,
+      "message": "gg",
+      "senderSteamId": 76561198994886574,
+      "senderName": "teC1",
+      "senderSide": 2,
+      "isSenderAlive": true
     }
   ],
   "gameModeStr": "casual"

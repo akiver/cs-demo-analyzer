@@ -129007,6 +129007,16 @@
   ],
   "chatMessages": [
     {
+      "frame": 7896,
+      "tick": 6720,
+      "roundNumber": 1,
+      "message": ".stay",
+      "senderSteamId": 76561198004813726,
+      "senderName": "milkywayfarer_",
+      "senderSide": 2,
+      "isSenderAlive": true
+    },
+    {
       "frame": 8098,
       "tick": 6895,
       "roundNumber": 1,

@@ -186748,6 +186748,16 @@
   ],
   "chatMessages": [
     {
+      "frame": 6001,
+      "tick": 5038,
+      "roundNumber": 1,
+      "message": ".STAY",
+      "senderSteamId": 76561198179538505,
+      "senderName": "Graviti",
+      "senderSide": 2,
+      "isSenderAlive": true
+    },
+    {
       "frame": 6385,
       "tick": 5268,
       "roundNumber": 1,
@@ -187152,6 +187162,86 @@
       "tick": 146209,
       "roundNumber": 13,
       "message": ".fup",
+      "senderSteamId": 76561199190893968,
+      "senderName": "RavenMe1sTeR",
+      "senderSide": 1,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 193515,
+      "tick": 156212,
+      "roundNumber": 15,
+      "message": "nl",
+      "senderSteamId": 76561198045739761,
+      "senderName": "Maka",
+      "senderSide": 3,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 193595,
+      "tick": 156271,
+      "roundNumber": 15,
+      "message": "!tech",
+      "senderSteamId": 76561198045739761,
+      "senderName": "Maka",
+      "senderSide": 3,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 193700,
+      "tick": 156357,
+      "roundNumber": 15,
+      "message": "i need to rr",
+      "senderSteamId": 76561198045739761,
+      "senderName": "Maka",
+      "senderSide": 3,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 193797,
+      "tick": 156428,
+      "roundNumber": 15,
+      "message": "im bugged",
+      "senderSteamId": 76561198045739761,
+      "senderName": "Maka",
+      "senderSide": 3,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 194321,
+      "tick": 156846,
+      "roundNumber": 15,
+      "message": "kk",
+      "senderSteamId": 76561198350362302,
+      "senderName": "r3salt",
+      "senderSide": 2,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 196438,
+      "tick": 158616,
+      "roundNumber": 15,
+      "message": "need restore",
+      "senderSteamId": 76561198045739761,
+      "senderName": "Maka",
+      "senderSide": 3,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 196604,
+      "tick": 158745,
+      "roundNumber": 15,
+      "message": "and r",
+      "senderSteamId": 76561198045739761,
+      "senderName": "Maka",
+      "senderSide": 3,
+      "isSenderAlive": true
+    },
+    {
+      "frame": 196983,
+      "tick": 159024,
+      "roundNumber": 15,
+      "message": ".restore 14",
       "senderSteamId": 76561199190893968,
       "senderName": "RavenMe1sTeR",
       "senderSide": 1,

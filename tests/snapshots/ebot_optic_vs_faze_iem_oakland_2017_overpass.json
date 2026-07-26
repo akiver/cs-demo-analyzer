@@ -130778,6 +130778,16 @@
   ],
   "chatMessages": [
     {
+      "frame": 3578,
+      "tick": 3578,
+      "roundNumber": 1,
+      "message": "!switch",
+      "senderSteamId": 76561197961610974,
+      "senderName": "allu",
+      "senderSide": 2,
+      "isSenderAlive": true
+    },
+    {
       "frame": 4085,
       "tick": 4122,
       "roundNumber": 1,

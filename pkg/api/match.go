@@ -352,7 +352,6 @@ func (match *Match) reset() {
 	match.HostageRescued = []*HostageRescued{}
 	match.HostagePositions = []*HostagePosition{}
 	match.ChickenPositions = []*ChickenPosition{}
-	match.ChatMessages = []*ChatMessage{}
 	match.ChickenDeaths = []*ChickenDeath{}
 	match.GrenadeProjectilesDestroy = []*GrenadeProjectileDestroy{}
 	match.PlayerEconomies = []*PlayerEconomy{}
@@ -374,9 +373,6 @@ func (match *Match) resetRound(roundNumber int) {
 	})
 	match.BombsExploded = slice.Filter(match.BombsExploded, func(event *BombExploded, index int) bool {
 		return event.RoundNumber != roundNumber
-	})
-	match.ChatMessages = slice.Filter(match.ChatMessages, func(msg *ChatMessage, index int) bool {
-		return msg.RoundNumber != roundNumber
 	})
 	match.ChickenDeaths = slice.Filter(match.ChickenDeaths, func(death *ChickenDeath, index int) bool {
 		return death.RoundNumber != roundNumber

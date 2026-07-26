@@ -72145,36 +72145,7 @@
     }
   ],
   "chickenPositions": [],
-  "chickenDeaths": [
-    {
-      "frame": 8870,
-      "tick": 8568,
-      "roundNumber": 1,
-      "killerSteamId": 76561198084521080,
-      "weaponName": "AK-47"
-    },
-    {
-      "frame": 10213,
-      "tick": 9909,
-      "roundNumber": 1,
-      "killerSteamId": 76561198123409167,
-      "weaponName": "USP-S"
-    },
-    {
-      "frame": 10614,
-      "tick": 10283,
-      "roundNumber": 1,
-      "killerSteamId": 76561198035979505,
-      "weaponName": "AK-47"
-    },
-    {
-      "frame": 11161,
-      "tick": 10820,
-      "roundNumber": 1,
-      "killerSteamId": 76561198030192915,
-      "weaponName": "USP-S"
-    }
-  ],
+  "chickenDeaths": [],
   "damages": [
     {
       "frame": 26880,
@@ -81011,30 +80982,6 @@
   ],
   "playerPositions": [],
   "playersBuy": [
-    {
-      "frame": 16444,
-      "tick": 16064,
-      "roundNumber": 1,
-      "playerSteamId": 76561198084521080,
-      "playerSide": 3,
-      "playerName": "SoSchy",
-      "weaponName": "Kevlar Vest",
-      "weaponType": "equipment",
-      "weaponUniqueId": "redacted",
-      "hasRefunded": false
-    },
-    {
-      "frame": 16535,
-      "tick": 16155,
-      "roundNumber": 1,
-      "playerSteamId": 76561198084521080,
-      "playerSide": 3,
-      "playerName": "SoSchy",
-      "weaponName": "Decoy Grenade",
-      "weaponType": "grenade",
-      "weaponUniqueId": "redacted",
-      "hasRefunded": true
-    },
     {
       "frame": 25818,
       "tick": 25162,
