@@ -39,6 +39,7 @@ type PlayerPosition struct {
 	SMGs                   []constants.WeaponName `json:"smgs"`
 	Rifles                 []constants.WeaponName `json:"rifles"`
 	Heavy                  []constants.WeaponName `json:"heavy"`
+	Ping                   int                    `json:"ping"`
 }
 
 func newPlayerPosition(analyzer *Analyzer, player *common.Player) *PlayerPosition {
@@ -119,5 +120,6 @@ func newPlayerPosition(analyzer *Analyzer, player *common.Player) *PlayerPositio
 		SMGs:                   smgs,
 		Rifles:                 rifles,
 		Heavy:                  heavy,
+		Ping:                   player.Ping(),
 	}
 }
