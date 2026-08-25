@@ -296,6 +296,7 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 			"steamid",
 			"name",
 			"round",
+			"ping",
 			"match checksum",
 		}
 
@@ -334,6 +335,7 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 				converters.Uint64ToString(position.SteamID64),
 				position.Name,
 				converters.IntToString(position.RoundNumber),
+				converters.IntToString(position.Ping),
 				match.Checksum,
 			}
 			lines = append(lines, line)
