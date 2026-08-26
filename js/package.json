@@ -1,6 +1,6 @@
 {
   "name": "@akiver/cs-demo-analyzer",
-  "version": "1.10.5",
+  "version": "1.10.6",
   "description": "Analyze and extract data from Counter-Strike demos.",
   "repository": {
     "type": "git",
