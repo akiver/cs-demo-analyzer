@@ -191,7 +191,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 				converters.Uint64ToString(position.SteamID64),
 				position.Name,
 				converters.IntToString(position.RoundNumber),
-				converters.IntToString(position.Ping),
 				match.Checksum,
 			}
 			lines = append(lines, line)
