@@ -174815,8 +174815,8 @@
       "victimTeamName": "Team Liquid",
       "isVictimControllingBot": false,
       "hitgroup": 0,
-      "weaponName": "C4",
-      "weaponType": "equipment",
+      "weaponName": "World",
+      "weaponType": "world",
       "weaponUniqueId": "redacted"
     },
     {

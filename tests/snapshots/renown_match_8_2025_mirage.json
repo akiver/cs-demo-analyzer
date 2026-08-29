@@ -108753,8 +108753,8 @@
       "victimTeamName": "Team FjobX",
       "isVictimControllingBot": false,
       "hitgroup": 0,
-      "weaponName": "C4",
-      "weaponType": "equipment",
+      "weaponName": "World",
+      "weaponType": "world",
       "weaponUniqueId": "redacted"
     },
     {
@@ -110708,8 +110708,8 @@
       "victimTeamName": "Team svennerN",
       "isVictimControllingBot": false,
       "hitgroup": 0,
-      "weaponName": "C4",
-      "weaponType": "equipment",
+      "weaponName": "World",
+      "weaponType": "world",
       "weaponUniqueId": "redacted"
     },
     {

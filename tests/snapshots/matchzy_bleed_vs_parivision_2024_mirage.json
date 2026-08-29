@@ -222169,8 +222169,8 @@
       "victimTeamName": "Parivision",
       "isVictimControllingBot": false,
       "hitgroup": 0,
-      "weaponName": "C4",
-      "weaponType": "equipment",
+      "weaponName": "World",
+      "weaponType": "world",
       "weaponUniqueId": "redacted"
     },
     {
@@ -240891,8 +240891,8 @@
       "victimTeamName": "Parivision",
       "isVictimControllingBot": false,
       "hitgroup": 0,
-      "weaponName": "C4",
-      "weaponType": "equipment",
+      "weaponName": "World",
+      "weaponType": "world",
       "weaponUniqueId": "redacted"
     },
     {
