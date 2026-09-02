@@ -343,7 +343,7 @@
       "kast": 80,
       "bombDefusedCount": 0,
       "bombPlantedCount": 2,
-      "healthDamage": 2219,
+      "healthDamage": 2125,
       "armorDamage": 357,
       "utilityDamage": 61,
       "headshotCount": 6,
@@ -366,7 +366,7 @@
       "hostageRescuedCount": 0,
       "averageKillPerRound": 0.6333333,
       "averageDeathPerRound": 0.73333335,
-      "averageDamagePerRound": 73.96667,
+      "averageDamagePerRound": 70.833336,
       "utilityDamagePerRound": 2.0333333,
       "firstKillCount": 5,
       "firstDeathCount": 2,
@@ -380,7 +380,7 @@
       "fourKillCount": 0,
       "fiveKillCount": 0,
       "hltvRating": 0.86325413,
-      "hltvRating2": 1.052044
+      "hltvRating2": 1.0420173
     },
     "76561197981849043": {
       "steamId": 76561197981849043,
@@ -678,7 +678,7 @@
       "kast": 73.333336,
       "bombDefusedCount": 0,
       "bombPlantedCount": 0,
-      "healthDamage": 2013,
+      "healthDamage": 1994,
       "armorDamage": 237,
       "utilityDamage": 11,
       "headshotCount": 13,
@@ -701,7 +701,7 @@
       "hostageRescuedCount": 0,
       "averageKillPerRound": 0.7,
       "averageDeathPerRound": 0.6666667,
-      "averageDamagePerRound": 67.1,
+      "averageDamagePerRound": 66.46667,
       "utilityDamagePerRound": 0.36666667,
       "firstKillCount": 3,
       "firstDeathCount": 2,
@@ -715,7 +715,7 @@
       "fourKillCount": 0,
       "fiveKillCount": 0,
       "hltvRating": 0.93480647,
-      "hltvRating2": 1.0712323
+      "hltvRating2": 1.0692056
     }
   },
   "kills": [
@@ -168061,7 +168061,7 @@
       "frame": 33447,
       "tick": 67147,
       "roundNumber": 5,
-      "healthDamage": 40,
+      "healthDamage": 21,
       "armorDamage": 18,
       "attackerSteamId": 76561198129443530,
       "attackerSide": 3,
@@ -174202,7 +174202,7 @@
       "frame": 94777,
       "tick": 190233,
       "roundNumber": 15,
-      "healthDamage": 100,
+      "healthDamage": 6,
       "armorDamage": 2,
       "attackerSteamId": 76561197977830434,
       "attackerSide": 3,

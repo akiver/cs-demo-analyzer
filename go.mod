@@ -1,11 +1,11 @@
 module github.com/akiver/cs-demo-analyzer
 
-go 1.24
+go 1.27.0
 
 require (
 	github.com/golang/geo v0.0.0-20250516193853-92f93c4cb289
 	github.com/markus-wa/demoinfocs-golang/v4 v4.5.1
-	github.com/markus-wa/gobitread v0.2.4
+	github.com/markus-wa/gobitread v0.2.5
 	github.com/oklog/ulid/v2 v2.1.1
 	github.com/pkg/errors v0.9.1
 	google.golang.org/protobuf v1.36.11
@@ -19,4 +19,4 @@ require (
 	github.com/markus-wa/quickhull-go/v2 v2.2.0 // indirect
 )
 
-replace github.com/markus-wa/demoinfocs-golang/v4 v4.5.1 => github.com/markus-wa/demoinfocs-golang/v4 v4.5.2-0.20260830211951-07a4f96ac87d
+replace github.com/markus-wa/demoinfocs-golang/v4 v4.5.1 => github.com/markus-wa/demoinfocs-golang/v4 v4.5.2-0.20260902223806-5be4d04e24fa

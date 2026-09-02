@@ -75,7 +75,7 @@
       "kast": 75,
       "bombDefusedCount": 2,
       "bombPlantedCount": 0,
-      "healthDamage": 1695,
+      "healthDamage": 1663,
       "armorDamage": 163,
       "utilityDamage": 158,
       "headshotCount": 3,
@@ -98,7 +98,7 @@
       "hostageRescuedCount": 0,
       "averageKillPerRound": 0.8,
       "averageDeathPerRound": 0.6,
-      "averageDamagePerRound": 84.75,
+      "averageDamagePerRound": 83.15,
       "utilityDamagePerRound": 7.9,
       "firstKillCount": 1,
       "firstDeathCount": 4,
@@ -112,7 +112,7 @@
       "fourKillCount": 0,
       "fiveKillCount": 0,
       "hltvRating": 1.19856,
-      "hltvRating2": 1.2668204
+      "hltvRating2": 1.2617005
     },
     "76561197985934021": {
       "steamId": 76561197985934021,
@@ -140106,7 +140106,7 @@
       "frame": 10565,
       "tick": 84486,
       "roundNumber": 5,
-      "healthDamage": 48,
+      "healthDamage": 16,
       "armorDamage": 0,
       "attackerSteamId": 76561197962115912,
       "attackerSide": 3,

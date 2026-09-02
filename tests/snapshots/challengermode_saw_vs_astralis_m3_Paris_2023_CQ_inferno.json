@@ -544,7 +544,7 @@
       "kast": 73.333336,
       "bombDefusedCount": 0,
       "bombPlantedCount": 4,
-      "healthDamage": 1751,
+      "healthDamage": 1725,
       "armorDamage": 163,
       "utilityDamage": 139,
       "headshotCount": 5,
@@ -567,7 +567,7 @@
       "hostageRescuedCount": 0,
       "averageKillPerRound": 0.5,
       "averageDeathPerRound": 0.56666666,
-      "averageDamagePerRound": 58.366665,
+      "averageDamagePerRound": 57.5,
       "utilityDamagePerRound": 4.633333,
       "firstKillCount": 2,
       "firstDeathCount": 3,
@@ -581,7 +581,7 @@
       "fourKillCount": 0,
       "fiveKillCount": 0,
       "hltvRating": 0.9074989,
-      "hltvRating2": 0.92370844
+      "hltvRating2": 0.92093515
     },
     "76561198248953762": {
       "steamId": 76561198248953762,
@@ -611,7 +611,7 @@
       "kast": 86.666664,
       "bombDefusedCount": 0,
       "bombPlantedCount": 3,
-      "healthDamage": 3039,
+      "healthDamage": 2985,
       "armorDamage": 397,
       "utilityDamage": 23,
       "headshotCount": 15,
@@ -634,7 +634,7 @@
       "hostageRescuedCount": 0,
       "averageKillPerRound": 0.96666664,
       "averageDeathPerRound": 0.56666666,
-      "averageDamagePerRound": 101.3,
+      "averageDamagePerRound": 99.5,
       "utilityDamagePerRound": 0.76666665,
       "firstKillCount": 3,
       "firstDeathCount": 1,
@@ -648,7 +648,7 @@
       "fourKillCount": 1,
       "fiveKillCount": 0,
       "hltvRating": 1.4520806,
-      "hltvRating2": 1.5651059
+      "hltvRating2": 1.559346
     },
     "76561198262460262": {
       "steamId": 76561198262460262,
@@ -210730,7 +210730,7 @@
       "frame": 262642,
       "tick": 262844,
       "roundNumber": 13,
-      "healthDamage": 38,
+      "healthDamage": 12,
       "armorDamage": 4,
       "attackerSteamId": 76561198065448360,
       "attackerSide": 2,
@@ -215238,7 +215238,7 @@
       "frame": 388285,
       "tick": 388590,
       "roundNumber": 21,
-      "healthDamage": 68,
+      "healthDamage": 14,
       "armorDamage": 3,
       "attackerSteamId": 76561198248953762,
       "attackerSide": 2,
