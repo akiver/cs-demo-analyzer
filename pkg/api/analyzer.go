@@ -4,6 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"os"
+	"sort"
 	"strconv"
 
 	"github.com/akiver/cs-demo-analyzer/internal/converters"
@@ -671,15 +672,31 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 				match.ChickenPositions = append(match.ChickenPositions, chickenPosition)
 			}
 
-			for _, projectile := range parser.GameState().GrenadeProjectiles() {
-				position := newGrenadePositionFromProjectile(analyzer, projectile)
+			// GrenadeProjectiles() and Infernos() are maps and Go randomizes map range
+			// order per process, so iterate them in sorted entity-ID order, otherwise the
+			// within-frame element order differs on every run and the exported JSON is
+			// not reproducible for identical input demos.
+			projectilesByID := parser.GameState().GrenadeProjectiles()
+			projectileIDs := make([]int, 0, len(projectilesByID))
+			for id := range projectilesByID {
+				projectileIDs = append(projectileIDs, id)
+			}
+			sort.Ints(projectileIDs)
+			for _, id := range projectileIDs {
+				position := newGrenadePositionFromProjectile(analyzer, projectilesByID[id])
 				if position != nil {
 					match.GrenadePositions = append(match.GrenadePositions, position)
 				}
 			}
 
-			for _, inferno := range parser.GameState().Infernos() {
-				infernoPosition := newInfernoPositionFromInferno(analyzer, inferno)
+			infernosByID := parser.GameState().Infernos()
+			infernoIDs := make([]int, 0, len(infernosByID))
+			for id := range infernosByID {
+				infernoIDs = append(infernoIDs, id)
+			}
+			sort.Ints(infernoIDs)
+			for _, id := range infernoIDs {
+				infernoPosition := newInfernoPositionFromInferno(analyzer, infernosByID[id])
 				if infernoPosition != nil {
 					match.InfernoPositions = append(match.InfernoPositions, infernoPosition)
 				}

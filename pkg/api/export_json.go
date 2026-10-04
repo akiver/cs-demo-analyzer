@@ -30,13 +30,12 @@ func exportMatchToJSON(match *Match, outputPath string, minify bool) error {
 		return err
 	}
 
-	var jsonString []byte
 	if minify {
-		jsonString, err = json.Marshal(match)
-	} else {
-		jsonString, err = json.MarshalIndent(match, "", "  ")
+		// Same bytes as json.Marshal(match) without holding several copies of the whole document in memory.
+		return exportMatchToJSONStreaming(match, outputFilePath)
 	}
 
+	jsonString, err := json.MarshalIndent(match, "", "  ")
 	if err != nil {
 		return err
 	}

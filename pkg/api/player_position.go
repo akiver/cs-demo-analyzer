@@ -1,6 +1,8 @@
 package api
 
 import (
+	"sort"
+
 	"github.com/akiver/cs-demo-analyzer/internal/slice"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
 	common "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
@@ -51,7 +53,11 @@ func newPlayerPosition(analyzer *Analyzer, player *common.Player) *PlayerPositio
 	var smgs []constants.WeaponName
 	var rifles []constants.WeaponName
 	var heavy []constants.WeaponName
-	for _, weapon := range player.Weapons() {
+	// player.Weapons() is built by ranging the inventory map, whose order Go randomizes per process.
+	// Sort by equipment type so the weapon lists are reproducible across runs.
+	weapons := player.Weapons()
+	sort.Slice(weapons, func(i, j int) bool { return weapons[i].Type < weapons[j].Type })
+	for _, weapon := range weapons {
 		weaponName := equipmentToWeaponName[weapon.Type]
 		// Weird bug encountered with a demo from 2017.
 		// Player's weapons may contains duplicates, add it only if it has not been added yet.
