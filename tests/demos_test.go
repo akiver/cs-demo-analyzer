@@ -114,6 +114,13 @@ func runDemoTestCases(t *testing.T, game string, testCases []demoTestCase) {
 		// Prefix the subtest with the game folder so the suite can be filtered by game,
 		// e.g. go test ./tests -run TestDemos/cs2.
 		t.Run(game+"/"+tc.testName, func(t *testing.T) {
+			if game == "csgo" {
+				// demoinfocs-golang v5+ dropped support for CS:GO (Source 1 / HL2DEMO) demos and returns
+				// ErrInvalidFileType for them. The CS:GO snapshots are kept for reference but can no longer be
+				// re-generated with this parser version.
+				t.Skip("CS:GO demos are not supported by demoinfocs-golang v5+ (requires v4 or older)")
+			}
+
 			t.Parallel()
 
 			demoPath := testsutils.GetDemoPath(game, tc.demoName)
