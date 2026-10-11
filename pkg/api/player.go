@@ -6,8 +6,8 @@ import (
 
 	"github.com/akiver/cs-demo-analyzer/internal/strings"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
-	common "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
-	st "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/sendtables"
+	common "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/common"
+	st "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/sendtables"
 )
 
 type weaponInspectionData struct {

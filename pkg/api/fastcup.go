@@ -1,8 +1,8 @@
 package api
 
 import (
-	events "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/events"
-	st "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/sendtables"
+	events "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/events"
+	st "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/sendtables"
 )
 
 func createFastcupAnalyzer(analyzer *Analyzer) {

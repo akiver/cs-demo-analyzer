@@ -2,8 +2,8 @@ package api
 
 import (
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
-	events "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/events"
-	st "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/sendtables"
+	events "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/events"
+	st "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/sendtables"
 )
 
 func createRenownAnalyzer(analyzer *Analyzer) {

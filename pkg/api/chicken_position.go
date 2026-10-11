@@ -1,7 +1,7 @@
 package api
 
 import (
-	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/sendtables"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/sendtables"
 )
 
 type chickenEntity struct {

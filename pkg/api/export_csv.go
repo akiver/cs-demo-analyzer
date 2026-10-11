@@ -11,7 +11,7 @@ import (
 	"github.com/akiver/cs-demo-analyzer/internal/converters"
 	"github.com/akiver/cs-demo-analyzer/internal/csv"
 	"github.com/akiver/cs-demo-analyzer/internal/slice"
-	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/common"
 )
 
 func exportMatchToCSV(match *Match, outputPath string) error {

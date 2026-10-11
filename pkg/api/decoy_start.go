@@ -3,8 +3,8 @@ package api
 import (
 	"fmt"
 
-	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
-	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/events"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/common"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/events"
 )
 
 type DecoyStart struct {
@@ -44,7 +44,7 @@ func newDecoyStartFromGameEvent(analyzer *Analyzer, event events.DecoyStart) *De
 	parser := analyzer.parser
 	projectileID := findGrenadeProjectileID(analyzer, grenade.UniqueID(), event.Position)
 
-	velocity := thrower.Velocity()
+	velocity := analyzer.playerVelocity(thrower)
 
 	return &DecoyStart{
 		Frame:            parser.CurrentFrame(),

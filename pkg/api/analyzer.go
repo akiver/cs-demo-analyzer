@@ -6,6 +6,7 @@ import (
 	"os"
 	"slices"
 	"strconv"
+	"time"
 
 	"github.com/akiver/cs-demo-analyzer/internal/converters"
 	d "github.com/akiver/cs-demo-analyzer/internal/demo"
@@ -13,10 +14,11 @@ import (
 	"github.com/akiver/cs-demo-analyzer/internal/strings"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
 	"github.com/golang/geo/r3"
-	dem "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs"
-	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
-	events "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/events"
-	st "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/sendtables"
+	dem "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/common"
+	events "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/events"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/msg"
+	st "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/sendtables"
 )
 
 const (
@@ -70,6 +72,9 @@ type Analyzer struct {
 	playerWeaponsScratch playerWeapons
 	// Scratch slice for sortedEntityIDs(), re-used across frames.
 	entityIDsScratch []int
+	// Players position at the end of the previous frame, only maintained for demos recorded before the AnimGraph 2
+	// update to compute players velocity based on the previous/current frames positions.
+	previousFramePositions map[*common.Player]r3.Vector
 }
 
 // sortedEntityIDs returns the keys of a map of entities by entity ID in ascending order, to range over the map in a
@@ -83,6 +88,30 @@ func sortedEntityIDs[T any](scratch []int, entities map[int]T) []int {
 	slices.Sort(ids)
 
 	return ids
+}
+
+// networkProtocolAnimGraph2 is the network protocol version of the CS2 "AnimGraph 2" update (28/07/2025).
+// Since this update, players velocity is networked (m_vecVelocity.m_vec* properties) and available from the parser.
+const networkProtocolAnimGraph2 = 14089
+
+// playerVelocity returns the player's velocity.
+//
+// demoinfocs-golang v6 only reads the networked velocity, which is available only in demos recorded after the
+// AnimGraph 2 update. For older demos we fall back to the position delta between the previous and current frame
+// (this is what the v4 branch of the parser used to do).
+func (analyzer *Analyzer) playerVelocity(player *common.Player) r3.Vector {
+	if analyzer.match.NetworkProtocol >= networkProtocolAnimGraph2 {
+		return player.Velocity()
+	}
+
+	t := 64.0
+	diff := player.Position().Sub(analyzer.previousFramePositions[player])
+
+	return r3.Vector{
+		X: diff.X * t,
+		Y: diff.Y * t,
+		Z: diff.Z * t,
+	}
 }
 
 type AnalyzeDemoOptions struct {
@@ -122,11 +151,6 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 	parser := dem.NewParserWithConfig(file, parserConfig)
 	defer parser.Close()
 
-	_, err = parser.ParseHeader()
-	if err != nil {
-		return nil, err
-	}
-
 	source := options.Source
 	if source == "" {
 		source = d.GetDemoSource(demo)
@@ -152,6 +176,7 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 		lastGrenadeThrownByPlayer: make(map[uint64]*Shot),
 		playersUntyingAnHostage:   make(map[uint64]int),
 		postProcess:               defaultPostProcess,
+		previousFramePositions:    make(map[*common.Player]r3.Vector),
 	}
 
 	analyzer.currentRound = &Round{
@@ -213,6 +238,23 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 		return nil, errors.New("unknown demo source, please specify the source with the -source flag (UnknownSource)")
 	}
 
+	// Playback info for CS2 demos lives in the CDemoFileInfo message at the end of the demo.
+	// demoinfocs v5+ no longer exposes the header, so capture the message ourselves.
+	var fileInfo *msg.CDemoFileInfo
+	parser.RegisterNetMessageHandler(func(m *msg.CDemoFileInfo) {
+		fileInfo = m
+	})
+
+	// Keep track of players position at the end of each frame to compute their velocity on demos recorded before the
+	// AnimGraph 2 update. Registered last so it runs after all other FrameDone handlers, as the v4 parser did.
+	if match.NetworkProtocol < networkProtocolAnimGraph2 {
+		parser.RegisterEventHandler(func(event events.FrameDone) {
+			for _, player := range parser.GameState().Participants().Playing() {
+				analyzer.previousFramePositions[player] = player.Position()
+			}
+		})
+	}
+
 	err = parser.ParseToEnd()
 	// Do not stop if the demo is corrupted, usually the error occurs at the end of the parsing.
 	// Depending on how far we were able to parse the demo we may still have data.
@@ -222,21 +264,20 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 	}
 
 	// Required for CS2 demos, the following data are available only at the end of the parsing in the CDemoFileInfo message.
-	// The parser updates the header values when the CDemoFileInfo message is parsed.
-	// Unfortunately, some CS2 demos may not contain this message and so the header values are not updated.
+	// Unfortunately, some CS2 demos may not contain this message.
 	// We fallback to the parser's internal values in such cases.
-	header := parser.Header()
-	match.TickCount = header.PlaybackTicks
+	match.TickCount = int(fileInfo.GetPlaybackTicks())
 	if match.TickCount == 0 {
 		match.TickCount = analyzer.currentTick()
 	}
 
-	match.Duration = header.PlaybackTime
+	match.Duration = time.Duration(fileInfo.GetPlaybackTime()) * time.Second
 	if match.Duration == 0 {
-		match.Duration = parser.CurrentTime()
+		// Truncated to whole seconds, as the parser's header fallback used to do.
+		match.Duration = time.Duration(parser.CurrentTime().Seconds()) * time.Second
 	}
 	if match.Duration > 0 {
-		frames := int(header.PlaybackFrames)
+		frames := int(fileInfo.GetPlaybackFrames())
 		if frames == 0 {
 			frames = parser.CurrentFrame()
 		}
@@ -919,7 +960,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 			return
 		}
 
-		analyzer.bombPlantPosition = event.Player.LastAlivePosition
+		analyzer.bombPlantPosition = event.Player.Position()
 
 		bombPlanted := newBombPlanted(analyzer, event)
 		match.BombsPlanted = append(match.BombsPlanted, bombPlanted)
@@ -1169,34 +1210,6 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 		}
 		chatMessage := newChatMessageFromGameEvent(analyzer, event)
 		match.ChatMessages = append(match.ChatMessages, chatMessage)
-	})
-
-	// CS:GO only
-	parser.RegisterEventHandler(func(event events.PlayerInspectingWeapon) {
-		if !analyzer.matchStarted() || event.Player == nil {
-			return
-		}
-
-		player := analyzer.match.PlayersBySteamID[event.Player.SteamID64]
-		if player == nil {
-			return
-		}
-
-		player.startWeaponInspection(analyzer.currentTick())
-	})
-
-	// CS:GO only
-	parser.RegisterEventHandler(func(event events.PlayerStopInspectingWeapon) {
-		if !analyzer.matchStarted() || event.Player == nil {
-			return
-		}
-
-		player := analyzer.match.PlayersBySteamID[event.Player.SteamID64]
-		if player == nil {
-			return
-		}
-
-		player.stopWeaponInspection(analyzer.currentTick())
 	})
 
 	// weaponInspectCancelButtons are the buttons (actions) that cancel an ongoing weapon inspection.

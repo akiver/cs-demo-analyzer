@@ -2,7 +2,7 @@ package api
 
 import (
 	"github.com/akiver/cs-demo-analyzer/internal/converters"
-	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/events"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/events"
 )
 
 type BombPlanted struct {
@@ -30,8 +30,8 @@ func newBombPlanted(analyzer *Analyzer, event events.BombPlanted) *BombPlanted {
 		PlanterSteamID64:       player.SteamID64,
 		IsPlayerControllingBot: player.IsControllingBot(),
 		Site:                   converters.BombsiteToString(event.BombEvent.Site),
-		X:                      player.LastAlivePosition.X,
-		Y:                      player.LastAlivePosition.Y,
-		Z:                      player.LastAlivePosition.Z,
+		X:                      player.Position().X,
+		Y:                      player.Position().Y,
+		Z:                      player.Position().Z,
 	}
 }

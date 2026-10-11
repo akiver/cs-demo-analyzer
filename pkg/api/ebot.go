@@ -6,8 +6,8 @@ import (
 
 	s "github.com/akiver/cs-demo-analyzer/internal/strings"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
-	events "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/events"
-	sendtables "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/sendtables"
+	events "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/events"
+	sendtables "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/sendtables"
 )
 
 func createEbotAnalyzer(analyzer *Analyzer) {

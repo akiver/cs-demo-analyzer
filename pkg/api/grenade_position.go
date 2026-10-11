@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
-	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/common"
 )
 
 type GrenadePosition struct {
@@ -44,7 +44,7 @@ func newGrenadePositionFromProjectile(analyzer *Analyzer, projectile *common.Gre
 		}
 	}
 
-	velocity := thrower.Velocity()
+	velocity := analyzer.playerVelocity(thrower)
 
 	parser := analyzer.parser
 	throwerTeam := thrower.Team

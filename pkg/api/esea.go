@@ -4,9 +4,9 @@ import (
 	"fmt"
 
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
-	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
-	events "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/events"
-	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/sendtables"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/common"
+	events "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/events"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/sendtables"
 )
 
 const (
