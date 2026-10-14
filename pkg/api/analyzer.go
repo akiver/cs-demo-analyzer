@@ -77,6 +77,9 @@ type Analyzer struct {
 	// Players position at the end of the previous frame, only maintained for demos recorded before the AnimGraph 2
 	// update to compute players velocity based on the previous/current frames positions.
 	previousFramePositions map[*common.Player]r3.Vector
+	// Stops parsing with the given error, which is returned by the parser.
+	// Handlers must call it instead of panicking: the parser re-panics handler panics on the caller.
+	cancelParsing context.CancelCauseFunc
 }
 
 // sortedEntityIDs returns the keys of a map of entities by entity ID in ascending order, to range over the map in a
@@ -164,7 +167,11 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 
 	match := newMatch(source, demo)
 
+	ctx, cancelParsing := context.WithCancelCause(context.Background())
+	defer cancelParsing(nil)
+
 	analyzer := &Analyzer{
+		cancelParsing:             cancelParsing,
 		parser:                    parser,
 		match:                     &match,
 		isSource2:                 demo.IsSource2(),
@@ -257,10 +264,10 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 		})
 	}
 
-	err = parser.ParseToEnd(context.Background())
-	// Do not stop if the demo is corrupted, usually the error occurs at the end of the parsing.
-	// Depending on how far we were able to parse the demo we may still have data.
-	isCorruptedDemo := errors.Is(err, dem.ErrUnexpectedEndOfDemo)
+	err = parser.ParseToEnd(ctx)
+	// Do not stop if the demo is truncated or contains data that can't be decoded, usually the error occurs at the
+	// end of the parsing. Depending on how far we were able to parse the demo we may still have data.
+	isCorruptedDemo := errors.Is(err, dem.ErrUnexpectedEndOfDemo) || errors.Is(err, dem.ErrDecodeFailed)
 	if err != nil && !isCorruptedDemo {
 		return nil, err
 	}
@@ -830,7 +837,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 		// https://github.com/markus-wa/demoinfocs-golang/pull/460
 		missingGameEventDescriptorsWarnCount += 1
 		if missingGameEventDescriptorsWarnCount >= 20 {
-			panic(errors.New("missing game event descriptors (ErrMissingGameEventDescriptors)"))
+			analyzer.cancelParsing(errors.New("missing game event descriptors (ErrMissingGameEventDescriptors)"))
 		}
 	})
 
