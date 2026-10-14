@@ -820,7 +820,7 @@ func NewPlayer(analyzer *Analyzer, currentTeam common.Team, player common.Player
 		},
 	}
 
-	var activeWeaponProp st.Property
+	var activeWeaponProp *st.Property
 	if analyzer.isSource2 {
 		if pawnEntity := player.PlayerPawnEntity(); pawnEntity != nil {
 			activeWeaponProp = pawnEntity.Property("m_pWeaponServices.m_hActiveWeapon")

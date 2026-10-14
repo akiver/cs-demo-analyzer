@@ -100,7 +100,7 @@ func createEseaAnalyzer(analyzer *Analyzer) {
 	})
 
 	parser.RegisterEventHandler(func(events.DataTablesParsed) {
-		parser.ServerClasses().FindByName("CCSGameRulesProxy").OnEntityCreated(func(entity sendtables.Entity) {
+		parser.ServerClasses().FindByName("CCSGameRulesProxy").OnEntityCreated(func(entity *sendtables.Entity) {
 			gameRestartProp := entity.Property("cs_gamerules_data.m_bGameRestart")
 			if gameRestartProp == nil {
 				gameRestartProp = entity.Property("m_pGameRules.m_bGameRestart")
@@ -119,14 +119,14 @@ func createEseaAnalyzer(analyzer *Analyzer) {
 			})
 		})
 
-		var playerClass sendtables.ServerClass
+		var playerClass *sendtables.ServerClass
 		if analyzer.isSource2 {
 			playerClass = parser.ServerClasses().FindByName("CCSPlayerController")
 		} else {
 			playerClass = parser.ServerClasses().FindByName("CCSPlayer")
 		}
-		playerClass.OnEntityCreated(func(entity sendtables.Entity) {
-			var moneyStartProp sendtables.Property
+		playerClass.OnEntityCreated(func(entity *sendtables.Entity) {
+			var moneyStartProp *sendtables.Property
 			if analyzer.isSource2 {
 				moneyStartProp = entity.Property("m_pInGameMoneyServices.m_iStartAccount")
 			} else {
@@ -185,7 +185,7 @@ func createEseaAnalyzer(analyzer *Analyzer) {
 		})
 
 		if !analyzer.isSource2 {
-			parser.ServerClasses().FindByName("CCSPlayerResource").OnEntityCreated(func(entity sendtables.Entity) {
+			parser.ServerClasses().FindByName("CCSPlayerResource").OnEntityCreated(func(entity *sendtables.Entity) {
 				for i := 0; i < maxPlayers; i++ {
 					iAsString := fmt.Sprintf("%03d", i)
 					scoreProp := entity.Property("m_iScore." + iAsString)

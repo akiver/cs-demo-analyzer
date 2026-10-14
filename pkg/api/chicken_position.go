@@ -6,7 +6,7 @@ import (
 
 type chickenEntity struct {
 	id     int
-	entity sendtables.Entity
+	entity *sendtables.Entity
 }
 
 type ChickenPosition struct {

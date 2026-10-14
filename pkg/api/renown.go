@@ -18,7 +18,7 @@ func createRenownAnalyzer(analyzer *Analyzer) {
 	}
 
 	parser.RegisterEventHandler(func(events.DataTablesParsed) {
-		parser.ServerClasses().FindByName("CCSGameRulesProxy").OnEntityCreated(func(entity st.Entity) {
+		parser.ServerClasses().FindByName("CCSGameRulesProxy").OnEntityCreated(func(entity *st.Entity) {
 			entity.Property("m_pGameRules.m_bTechnicalTimeOut").OnUpdate(func(val st.PropertyValue) {
 				isGamePaused = val.BoolVal()
 			})

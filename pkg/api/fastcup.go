@@ -14,11 +14,11 @@ func createFastcupAnalyzer(analyzer *Analyzer) {
 	}
 
 	parser.RegisterEventHandler(func(events.DataTablesParsed) {
-		parser.ServerClasses().FindByName("CCSGameRulesProxy").OnEntityCreated(func(entity st.Entity) {
+		parser.ServerClasses().FindByName("CCSGameRulesProxy").OnEntityCreated(func(entity *st.Entity) {
 			// Match start detection - the match really starts when:
 			// 1. The warmup period is over
 			// 2. Players can buy, otherwise it means it's the knife round
-			var cantBuyProp st.Property
+			var cantBuyProp *st.Property
 			if analyzer.isSource2 {
 				cantBuyProp = entity.Property("m_pGameRules.m_bTCantBuy")
 			} else {

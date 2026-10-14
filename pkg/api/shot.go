@@ -41,7 +41,7 @@ func newShot(analyzer *Analyzer, event events.WeaponFire) *Shot {
 		return nil
 	}
 
-	var weaponEntity st.Entity
+	var weaponEntity *st.Entity
 	activeWeapon := shooter.ActiveWeapon()
 	if activeWeapon != nil {
 		weaponEntity = activeWeapon.Entity
