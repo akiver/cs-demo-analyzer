@@ -7,9 +7,13 @@
 package api
 
 import (
+	"encoding/binary"
+	"encoding/hex"
 	"errors"
 	"fmt"
+	"math"
 	"os"
+	"sort"
 	"strings"
 	"sync"
 	"time"
@@ -17,8 +21,17 @@ import (
 	"github.com/akiver/cs-demo-analyzer/internal/converters"
 	"github.com/akiver/cs-demo-analyzer/internal/csv"
 	"github.com/akiver/cs-demo-analyzer/internal/slice"
+	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
 	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
 )
+
+// Weapons order may change between frames, sorting them avoids detecting false state changes.
+func joinSortedWeaponNames(weaponNames []constants.WeaponName) string {
+	names := slice.ToStrings(weaponNames)
+	sort.Strings(names)
+
+	return strings.Join(names, ",")
+}
 
 func exportMatchForCSDM(match *Match, outputPath string) error {
 	if stat, err := os.Stat(outputPath); err != nil || !stat.IsDir() {
@@ -156,41 +169,224 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		csv.WriteLinesIntoCsvFile(outputPath+"_players.csv", lines)
 	}
 
+	// Players positions, 1 row per player and round with:
+	// - the movement (position, yaw...) of each tick
+	// - the state (health, weapons...) only when it changes, stateTicks contains the tick of each change
+	// The first state of each player in a round is always written so that a round can be loaded independently.
+	// Numbers and booleans are packed as big-endian binary, it's the byte order used by PostgreSQL (int4send, float4send)
+	// which makes the values easier to query in SQL. Weapon names are PostgreSQL text arrays.
 	var writePlayerPositions = func() {
-		lines := [][]string{}
+		type playerRoundKey struct {
+			steamID     uint64
+			botName     string
+			roundNumber int
+		}
+		type playerState struct {
+			isAlive           bool
+			side              common.Team
+			money             int
+			health            int
+			armor             int
+			hasHelmet         bool
+			hasBomb           bool
+			hasDefuseKit      bool
+			isScoping         bool
+			isDefusing        bool
+			isPlanting        bool
+			isGrabbingHostage bool
+			activeWeaponName  string
+			equipments        string
+			grenades          string
+			pistols           string
+			smgs              string
+			rifles            string
+			heavy             string
+		}
+		type playerRoundPositions struct {
+			steamID                uint64
+			name                   string
+			roundNumber            int
+			lastTick               int
+			ticks                  []byte
+			x                      []byte
+			y                      []byte
+			z                      []byte
+			yaw                    []byte
+			flashDurationRemaining []byte
+			isDucking              []byte
+			isAirborne             []byte
+			lastState              *playerState
+			stateTicks             []byte
+			isAlive                []byte
+			side                   []byte
+			money                  []byte
+			health                 []byte
+			armor                  []byte
+			hasHelmet              []byte
+			hasBomb                []byte
+			hasDefuseKit           []byte
+			isScoping              []byte
+			isDefusing             []byte
+			isPlanting             []byte
+			isGrabbingHostage      []byte
+			activeWeaponName       []string
+			equipments             []string
+			grenades               []string
+			pistols                []string
+			smgs                   []string
+			rifles                 []string
+			heavy                  []string
+		}
+		var appendInt32 = func(bytes []byte, value int) []byte {
+			return binary.BigEndian.AppendUint32(bytes, uint32(value))
+		}
+		var appendFloat32 = func(bytes []byte, value float32) []byte {
+			return binary.BigEndian.AppendUint32(bytes, math.Float32bits(value))
+		}
+		var appendBool = func(bytes []byte, value bool) []byte {
+			if value {
+				return append(bytes, 1)
+			}
+			return append(bytes, 0)
+		}
+
+		positionsPerPlayer := make(map[playerRoundKey]*playerRoundPositions)
+		var orderedPositions []*playerRoundPositions
 		for _, position := range match.PlayerPositions {
+			// BOTs SteamID is always 0, the name is used to differentiate them.
+			// It's not used for real players because they may change their name during a match.
+			botName := ""
+			if position.SteamID64 == 0 {
+				botName = position.Name
+			}
+			key := playerRoundKey{
+				steamID:     position.SteamID64,
+				botName:     botName,
+				roundNumber: position.RoundNumber,
+			}
+			positions, exists := positionsPerPlayer[key]
+			if !exists {
+				positions = &playerRoundPositions{
+					steamID:     position.SteamID64,
+					name:        position.Name,
+					roundNumber: position.RoundNumber,
+					lastTick:    -1,
+				}
+				positionsPerPlayer[key] = positions
+				orderedPositions = append(orderedPositions, positions)
+			}
+
+			// Positions are sorted by frame and there may be multiple frames per tick.
+			if positions.lastTick == position.Tick {
+				continue
+			}
+			positions.lastTick = position.Tick
+
+			positions.ticks = appendInt32(positions.ticks, position.Tick)
+			positions.x = appendFloat32(positions.x, float32(position.X))
+			positions.y = appendFloat32(positions.y, float32(position.Y))
+			positions.z = appendFloat32(positions.z, float32(position.Z))
+			positions.yaw = appendFloat32(positions.yaw, position.Yaw)
+			positions.flashDurationRemaining = appendFloat32(positions.flashDurationRemaining, float32(position.FlashDurationRemaining))
+			positions.isDucking = appendBool(positions.isDucking, position.IsDucking)
+			positions.isAirborne = appendBool(positions.isAirborne, position.IsAirborne)
+
+			state := playerState{
+				isAlive:           position.IsAlive,
+				side:              position.Side,
+				money:             position.Money,
+				health:            position.Health,
+				armor:             position.Armor,
+				hasHelmet:         position.HasHelmet,
+				hasBomb:           position.HasBomb,
+				hasDefuseKit:      position.HasDefuseKit,
+				isScoping:         position.IsScoping,
+				isDefusing:        position.IsDefusing,
+				isPlanting:        position.IsPlanting,
+				isGrabbingHostage: position.IsGrabbingHostage,
+				activeWeaponName:  position.ActiveWeaponName.String(),
+				equipments:        joinSortedWeaponNames(position.Equipments),
+				grenades:          joinSortedWeaponNames(position.Grenades),
+				pistols:           joinSortedWeaponNames(position.Pistols),
+				smgs:              joinSortedWeaponNames(position.SMGs),
+				rifles:            joinSortedWeaponNames(position.Rifles),
+				heavy:             joinSortedWeaponNames(position.Heavy),
+			}
+			if positions.lastState != nil && *positions.lastState == state {
+				continue
+			}
+			positions.lastState = &state
+
+			positions.stateTicks = appendInt32(positions.stateTicks, position.Tick)
+			positions.isAlive = appendBool(positions.isAlive, state.isAlive)
+			positions.side = appendInt32(positions.side, int(state.side))
+			positions.money = appendInt32(positions.money, state.money)
+			positions.health = appendInt32(positions.health, state.health)
+			positions.armor = appendInt32(positions.armor, state.armor)
+			positions.hasHelmet = appendBool(positions.hasHelmet, state.hasHelmet)
+			positions.hasBomb = appendBool(positions.hasBomb, state.hasBomb)
+			positions.hasDefuseKit = appendBool(positions.hasDefuseKit, state.hasDefuseKit)
+			positions.isScoping = appendBool(positions.isScoping, state.isScoping)
+			positions.isDefusing = appendBool(positions.isDefusing, state.isDefusing)
+			positions.isPlanting = appendBool(positions.isPlanting, state.isPlanting)
+			positions.isGrabbingHostage = appendBool(positions.isGrabbingHostage, state.isGrabbingHostage)
+			positions.activeWeaponName = append(positions.activeWeaponName, state.activeWeaponName)
+			positions.equipments = append(positions.equipments, state.equipments)
+			positions.grenades = append(positions.grenades, state.grenades)
+			positions.pistols = append(positions.pistols, state.pistols)
+			positions.smgs = append(positions.smgs, state.smgs)
+			positions.rifles = append(positions.rifles, state.rifles)
+			positions.heavy = append(positions.heavy, state.heavy)
+		}
+
+		// PostgreSQL bytea hex format
+		var toBytea = func(bytes []byte) string {
+			return "\\x" + hex.EncodeToString(bytes)
+		}
+		// PostgreSQL array literal, elements are quoted because weapon lists contain commas.
+		var toTextArray = func(values []string) string {
+			escaper := strings.NewReplacer(`\`, `\\`, `"`, `\"`)
+			elements := make([]string, len(values))
+			for index, value := range values {
+				elements[index] = `"` + escaper.Replace(value) + `"`
+			}
+			return "{" + strings.Join(elements, ",") + "}"
+		}
+
+		lines := [][]string{}
+		for _, positions := range orderedPositions {
 			line := []string{
-				converters.IntToString(position.Frame),
-				converters.IntToString(position.Tick),
-				converters.BoolToString(position.IsAlive),
-				converters.Float64ToString(position.X),
-				converters.Float64ToString(position.Y),
-				converters.Float64ToString(position.Z),
-				converters.Float32ToString(position.Yaw),
-				converters.Float64ToString(position.FlashDurationRemaining),
-				converters.TeamToString(position.Side),
-				converters.IntToString(position.Money),
-				converters.IntToString(position.Health),
-				converters.IntToString(position.Armor),
-				converters.BoolToString(position.HasHelmet),
-				converters.BoolToString(position.HasBomb),
-				converters.BoolToString(position.HasDefuseKit),
-				converters.BoolToString(position.IsDucking),
-				converters.BoolToString(position.IsAirborne),
-				converters.BoolToString(position.IsScoping),
-				converters.BoolToString(position.IsDefusing),
-				converters.BoolToString(position.IsPlanting),
-				converters.BoolToString(position.IsGrabbingHostage),
-				position.ActiveWeaponName.String(),
-				strings.Join(slice.ToStrings(position.Equipments), ","),
-				strings.Join(slice.ToStrings(position.Grenades), ","),
-				strings.Join(slice.ToStrings(position.Pistols), ","),
-				strings.Join(slice.ToStrings(position.SMGs), ","),
-				strings.Join(slice.ToStrings(position.Rifles), ","),
-				strings.Join(slice.ToStrings(position.Heavy), ","),
-				converters.Uint64ToString(position.SteamID64),
-				position.Name,
-				converters.IntToString(position.RoundNumber),
+				converters.IntToString(positions.roundNumber),
+				converters.Uint64ToString(positions.steamID),
+				positions.name,
+				toBytea(positions.ticks),
+				toBytea(positions.x),
+				toBytea(positions.y),
+				toBytea(positions.z),
+				toBytea(positions.yaw),
+				toBytea(positions.flashDurationRemaining),
+				toBytea(positions.isDucking),
+				toBytea(positions.isAirborne),
+				toBytea(positions.stateTicks),
+				toBytea(positions.isAlive),
+				toBytea(positions.side),
+				toBytea(positions.money),
+				toBytea(positions.health),
+				toBytea(positions.armor),
+				toBytea(positions.hasHelmet),
+				toBytea(positions.hasBomb),
+				toBytea(positions.hasDefuseKit),
+				toBytea(positions.isScoping),
+				toBytea(positions.isDefusing),
+				toBytea(positions.isPlanting),
+				toBytea(positions.isGrabbingHostage),
+				toTextArray(positions.activeWeaponName),
+				toTextArray(positions.equipments),
+				toTextArray(positions.grenades),
+				toTextArray(positions.pistols),
+				toTextArray(positions.smgs),
+				toTextArray(positions.rifles),
+				toTextArray(positions.heavy),
 				match.Checksum,
 			}
 			lines = append(lines, line)
