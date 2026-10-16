@@ -87,6 +87,8 @@ func newPlayerPosition(analyzer *Analyzer, player *common.Player) *PlayerPositio
 		activeWeapon = equipmentToWeaponName[player.ActiveWeapon().Type]
 	}
 
+	position := player.Position()
+
 	return &PlayerPosition{
 		Frame:                  parser.CurrentFrame(),
 		Tick:                   analyzer.currentTick(),
@@ -94,9 +96,9 @@ func newPlayerPosition(analyzer *Analyzer, player *common.Player) *PlayerPositio
 		Name:                   player.Name,
 		SteamID64:              player.SteamID64,
 		IsAlive:                player.IsAlive(),
-		X:                      player.Position().X,
-		Y:                      player.Position().Y,
-		Z:                      player.Position().Z,
+		X:                      position.X,
+		Y:                      position.Y,
+		Z:                      position.Z,
 		Yaw:                    player.ViewDirectionX(),
 		Pitch:                  player.ViewDirectionY(),
 		FlashDurationRemaining: player.FlashDurationTimeRemaining().Seconds(),
