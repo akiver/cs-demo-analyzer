@@ -12,7 +12,7 @@ type FlashbangExplode struct {
 	Tick             int         `json:"tick"`
 	RoundNumber      int         `json:"roundNumber"`
 	GrenadeID        string      `json:"grenadeId"`
-	ProjectileID     int64       `json:"projectileId"`
+	ProjectileID     string      `json:"projectileId"`
 	X                float64     `json:"x"`
 	Y                float64     `json:"y"`
 	Z                float64     `json:"z"`
@@ -42,7 +42,7 @@ func newFlashbangExplodeFromGameEvent(analyzer *Analyzer, event events.FlashExpl
 
 	throwerTeam := thrower.Team
 	parser := analyzer.parser
-	projectileID := findGrenadeProjectileID(analyzer, grenade.UniqueID2(), event.Position)
+	projectileID := findGrenadeProjectileID(analyzer, grenade.UniqueID(), event.Position)
 
 	velocity := thrower.Velocity()
 
@@ -50,7 +50,7 @@ func newFlashbangExplodeFromGameEvent(analyzer *Analyzer, event events.FlashExpl
 		Frame:            parser.CurrentFrame(),
 		Tick:             analyzer.currentTick(),
 		RoundNumber:      analyzer.currentRound.Number,
-		GrenadeID:        grenade.UniqueID2().String(),
+		GrenadeID:        grenade.UniqueID().String(),
 		ProjectileID:     projectileID,
 		X:                event.Position.X,
 		Y:                event.Position.Y,

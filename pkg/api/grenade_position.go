@@ -12,7 +12,7 @@ type GrenadePosition struct {
 	Tick             int                  `json:"tick"`
 	RoundNumber      int                  `json:"roundNumber"`
 	GrenadeID        string               `json:"grenadeId"`
-	ProjectileID     int64                `json:"projectileId"`
+	ProjectileID     string               `json:"projectileId"`
 	X                float64              `json:"x"`
 	Y                float64              `json:"y"`
 	Z                float64              `json:"z"`
@@ -52,8 +52,8 @@ func newGrenadePositionFromProjectile(analyzer *Analyzer, projectile *common.Gre
 		Frame:            parser.CurrentFrame(),
 		Tick:             analyzer.currentTick(),
 		RoundNumber:      analyzer.currentRound.Number,
-		GrenadeID:        projectile.WeaponInstance.UniqueID2().String(),
-		ProjectileID:     projectile.UniqueID(),
+		GrenadeID:        projectile.WeaponInstance.UniqueID().String(),
+		ProjectileID:     projectile.UniqueID().String(),
 		GrenadeName:      equipmentToWeaponName[projectile.WeaponInstance.Type],
 		X:                projectile.Position().X,
 		Y:                projectile.Position().Y,

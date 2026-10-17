@@ -137,7 +137,7 @@ func newRound(number int, analyzer *Analyzer) *Round {
 	var weaponsIds []string
 	for _, playingPlayer := range analyzer.parser.GameState().Participants().Playing() {
 		for _, weapon := range playingPlayer.Weapons() {
-			weaponsIds = append(weaponsIds, weapon.UniqueID2().String())
+			weaponsIds = append(weaponsIds, weapon.UniqueID().String())
 		}
 	}
 

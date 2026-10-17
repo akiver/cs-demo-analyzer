@@ -18,15 +18,15 @@ import (
 var update = flag.Bool("update", false, "update snapshots with the current analyzer output")
 
 var (
-	uniqueIDPattern     = regexp.MustCompile(`("(?:weaponId|grenadeId|weaponUniqueId)": ")([0-9A-Z]{26})(")`)
-	projectileIDPattern = regexp.MustCompile(`("projectileId": )(-?[1-9]\d*)`)
+	uniqueIDPattern     = regexp.MustCompile(`("(?:weaponId|grenadeId|weaponUniqueId)": ")(\d+)(")`)
+	projectileIDPattern = regexp.MustCompile(`("projectileId": ")([1-9]\d*)(")`)
 	datePattern         = regexp.MustCompile(`("date": ")([^"]*)(")`)
 )
 
 // normalizeUniqueIDs makes the random or run-dependent IDs in the JSON stable so the snapshot comparison is
 // deterministic.
 func normalizeUniqueIDs(jsonBytes []byte) []byte {
-	// Weapon and grenade unique IDs are random ULIDs that the parser assigns non-deterministically to fungible items
+	// Weapon and grenade unique IDs are assigned by the parser non-deterministically to fungible items
 	// (e.g. a player holding two identical grenades, or a weapon picked up to replace an identical one). The same event
 	// can therefore reference a different entity from one run to another, which no test-side aliasing can stabilize, so
 	// the IDs are redacted entirely.
@@ -45,7 +45,8 @@ func normalizeUniqueIDs(jsonBytes []byte) []byte {
 			aliases[id] = alias
 		}
 		out := append([]byte{}, groups[1]...)
-		return append(out, alias...)
+		out = append(out, alias...)
+		return append(out, groups[3]...)
 	})
 }
 

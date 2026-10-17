@@ -31,6 +31,6 @@ func newPlayerBuy(analyzer *Analyzer, event events.ItemPickup) *PlayerBuy {
 		PlayerSide:      event.Player.Team,
 		WeaponName:      equipmentToWeaponName[event.Weapon.Type],
 		WeaponType:      getEquipmentWeaponType(*event.Weapon),
-		WeaponUniqueID:  event.Weapon.UniqueID2().String(),
+		WeaponUniqueID:  event.Weapon.UniqueID().String(),
 	}
 }

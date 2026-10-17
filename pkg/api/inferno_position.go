@@ -13,7 +13,7 @@ type InfernoPosition struct {
 	RoundNumber      int        `json:"roundNumber"`
 	ThrowerSteamID64 uint64     `json:"throwerSteamId"`
 	ThrowerName      string     `json:"throwerName"`
-	UniqueID         int64      `json:"uniqueId"`
+	UniqueID         string     `json:"uniqueId"`
 	X                float64    `json:"x"`
 	Y                float64    `json:"y"`
 	Z                float64    `json:"z"`
@@ -33,7 +33,7 @@ func newInfernoPositionFromInferno(analyzer *Analyzer, inferno *common.Inferno) 
 		Frame:            parser.CurrentFrame(),
 		Tick:             analyzer.currentTick(),
 		RoundNumber:      analyzer.currentRound.Number,
-		UniqueID:         inferno.UniqueID(),
+		UniqueID:         inferno.UniqueID().String(),
 		ThrowerSteamID64: thrower.SteamID64,
 		ThrowerName:      thrower.Name,
 		X:                inferno.Entity.Position().X,

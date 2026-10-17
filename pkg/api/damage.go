@@ -96,6 +96,6 @@ func newDamageFromGameEvent(analyzer *Analyzer, event events.PlayerHurt) *Damage
 		WeaponName:               equipmentToWeaponName[event.Weapon.Type],
 		WeaponType:               getEquipmentWeaponType(*event.Weapon),
 		HitGroup:                 event.HitGroup,
-		WeaponUniqueID:           event.Weapon.UniqueID2().String(),
+		WeaponUniqueID:           event.Weapon.UniqueID().String(),
 	}
 }

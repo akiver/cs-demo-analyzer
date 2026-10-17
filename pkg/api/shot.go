@@ -14,7 +14,7 @@ type Shot struct {
 	RoundNumber            int                  `json:"roundNumber"`
 	WeaponName             constants.WeaponName `json:"weaponName"`
 	WeaponID               string               `json:"weaponId"`
-	ProjectileID           int64                `json:"projectileId"` // Available only for grenades
+	ProjectileID           string               `json:"projectileId"` // Available only for grenades
 	X                      float64              `json:"x"`
 	Y                      float64              `json:"y"`
 	Z                      float64              `json:"z"`
@@ -81,7 +81,8 @@ func newShot(analyzer *Analyzer, event events.WeaponFire) *Shot {
 		Tick:                   analyzer.currentTick(),
 		RoundNumber:            analyzer.currentRound.Number,
 		WeaponName:             equipmentToWeaponName[event.Weapon.Type],
-		WeaponID:               event.Weapon.UniqueID2().String(),
+		WeaponID:               event.Weapon.UniqueID().String(),
+		ProjectileID:           noProjectileID,
 		X:                      shooter.Position().X,
 		Y:                      shooter.Position().Y,
 		Z:                      shooter.Position().Z,

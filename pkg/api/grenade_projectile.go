@@ -2,18 +2,22 @@ package api
 
 import (
 	"github.com/golang/geo/r3"
-	"github.com/oklog/ulid/v2"
+	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
 )
+
+// noProjectileID is used when a shot or a grenade event can't be linked to a projectile.
+// The parser assigns unique IDs from 1, and it must not be empty because PostgreSQL's COPY reads an empty CSV field as NULL.
+const noProjectileID = "0"
 
 // findGrenadeProjectileID returns the unique ID of the live projectile thrown with the given grenade.
 // A player may have thrown several projectiles with the same grenade (weapon instances are re-used
 // across throws), in that case the closest one to the event position is the right one.
-func findGrenadeProjectileID(analyzer *Analyzer, grenadeUniqueID ulid.ULID, eventPosition r3.Vector) int64 {
-	var projectileID int64
+func findGrenadeProjectileID(analyzer *Analyzer, grenadeUniqueID common.UniqueID, eventPosition r3.Vector) string {
+	projectileID := noProjectileID
 	bestDistance := -1.0
 	bestEntityID := -1
 	for _, projectile := range analyzer.parser.GameState().GrenadeProjectiles() {
-		if projectile.WeaponInstance.UniqueID2() != grenadeUniqueID {
+		if projectile.WeaponInstance.UniqueID() != grenadeUniqueID {
 			continue
 		}
 
@@ -26,7 +30,7 @@ func findGrenadeProjectileID(analyzer *Analyzer, grenadeUniqueID ulid.ULID, even
 		if isCloser || isSameDistanceWithLowerEntityID {
 			bestDistance = distance
 			bestEntityID = entityID
-			projectileID = projectile.UniqueID()
+			projectileID = projectile.UniqueID().String()
 		}
 	}
 
