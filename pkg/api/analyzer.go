@@ -90,6 +90,9 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 	parserConfig := dem.DefaultParserConfig
 	parserConfig.NetMessageDecryptionKey = demo.NetMessageDecryptionPublicKey
 	parserConfig.DisableMimicSource1Events = demo.Type == constants.DemoTypePOV
+	// Older CS2 demos don't network the players velocity, it's derived from their positions which must be tracked
+	// before the first Player.Velocity() call, otherwise it returns 0.
+	parserConfig.EagerVelocityTracking = true
 
 	parser := dem.NewParserWithConfig(file, parserConfig)
 	defer parser.Close()
