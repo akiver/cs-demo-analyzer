@@ -1000,6 +1000,17 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 		analyzer.updatePlayersScores()
 	})
 
+	// Players may be renamed after they have been registered, e.g. CS2 names come from the player controller.
+	parser.RegisterEventHandler(func(event events.PlayerNameChange) {
+		if event.Player == nil {
+			return
+		}
+
+		if player, exist := match.PlayersBySteamID[event.Player.SteamID64]; exist {
+			player.Name = event.NewName
+		}
+	})
+
 	parser.RegisterEventHandler(func(event events.RankUpdate) {
 		match.IsRanked = true
 		if player, exist := match.PlayersBySteamID[event.SteamID64()]; exist {
