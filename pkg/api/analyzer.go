@@ -331,41 +331,67 @@ func (analyzer *Analyzer) resetCurrentRound() {
 	analyzer.createPlayersEconomies()
 }
 
+// entityIntProperty returns the int value of the entity property with the given name.
+// It returns false when the property doesn't exist or has never been networked (Source 2 only).
+func entityIntProperty(entity st.Entity, name string) (int, bool) {
+	prop, exists := entity.PropertyValue(name)
+	if !exists || (prop.S2 && prop.Any == nil) {
+		return 0, false
+	}
+
+	return prop.Int(), true
+}
+
 func (analyzer *Analyzer) registerPlayer(player *common.Player, teamState *common.TeamState) {
 	match := analyzer.match
 	if _, alreadyExists := match.PlayersBySteamID[player.SteamID64]; alreadyExists {
 		return
 	}
 
-	if teamState == nil || player.SteamID64 == 0 {
-		return
-	}
-
-	if player.Entity == nil || (analyzer.isSource2 && player.PlayerPawnEntity() == nil) {
+	if player.SteamID64 == 0 || player.Entity == nil {
 		return
 	}
 
 	// Start of coach detection.
-	// Quick way to detect coaches for demos coming from providers such as PRACC that put coaches as a real player
-	// visible in the scoreboard and make them dead at the end of round freezetime.
-	// Coaches have an out-of-range color value (> 4), which never occurs for real players (valid range: 0-4).
-	if analyzer.isSource2 && player.Entity.PropertyValueMust("m_iCompTeammateColor").Int() > 4 {
-		return
+	// It happens before the team state and pawn checks because coaches may be in the spectators team (no team state)
+	// and without a pawn. Only controller properties are read here so it's safe.
+	if analyzer.isSource2 {
+		// Quick way to detect coaches for demos coming from providers such as PRACC that put coaches as a real player
+		// visible in the scoreboard and make them dead at the end of round freezetime.
+		// Coaches have an out-of-range color value (> 4), which never occurs for real players (valid range: 0-4).
+		if color, exists := entityIntProperty(player.Entity, "m_iCompTeammateColor"); exists && color > 4 {
+			side := common.TeamUnassigned
+			if teamState != nil {
+				side = teamState.Team()
+			}
+			analyzer.registerCoach(player, side)
+			return
+		}
 	}
 
-	if prop, exists := player.Entity.PropertyValue("m_iCoachingTeam"); exists {
-		coachTeam := prop.Int()
-		if coachTeam == int(common.TeamCounterTerrorists) || coachTeam == int(common.TeamTerrorists) {
+	if coachingTeam, exists := entityIntProperty(player.Entity, "m_iCoachingTeam"); exists {
+		side := common.Team(coachingTeam)
+		if side == common.TeamCounterTerrorists || side == common.TeamTerrorists {
+			analyzer.registerCoach(player, side)
 			return
 		}
 	}
 	// End of coach detection
+
+	if teamState == nil {
+		return
+	}
+
+	if analyzer.isSource2 && player.PlayerPawnEntity() == nil {
+		return
+	}
 
 	playerTeam := teamState.Team()
 	if playerTeam == common.TeamSpectators || playerTeam == common.TeamUnassigned {
 		return
 	}
 
+	analyzer.removeCoach(player.SteamID64)
 	newPlayer := NewPlayer(analyzer, playerTeam, *player)
 	match.PlayersBySteamID[player.SteamID64] = newPlayer
 }

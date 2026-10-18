@@ -1452,6 +1452,34 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 		csv.WriteLinesIntoCsvFile(outputPath+"_chat_messages.csv", lines)
 	}
 
+	var writeCoaches = func() {
+		header := []string{
+			"steamid",
+			"user id",
+			"name",
+			"coaching side",
+			"team letter",
+			"first seen tick",
+			"match checksum",
+		}
+
+		lines := [][]string{header}
+		for _, coach := range match.Coaches {
+			line := []string{
+				converters.Uint64ToString(coach.SteamID64),
+				converters.IntToString(coach.UserID),
+				coach.Name,
+				converters.TeamToString(coach.CoachingSide),
+				string(coach.TeamLetter),
+				converters.IntToString(coach.FirstSeenTick),
+				match.Checksum,
+			}
+			lines = append(lines, line)
+		}
+
+		csv.WriteLinesIntoCsvFile(outputPath+"_coaches.csv", lines)
+	}
+
 	var writeHostagePositions = func() {
 		header := []string{
 			"frame",
@@ -1613,6 +1641,7 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 		writeDecoysStart,
 		writeInfernoPositions,
 		writeChatMessages,
+		writeCoaches,
 		writeHostagePositions,
 		writeHostagePickUpStart,
 		writeHostagePickedUp,

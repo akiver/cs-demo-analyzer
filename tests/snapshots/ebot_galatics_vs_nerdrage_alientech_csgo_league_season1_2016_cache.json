@@ -152203,5 +152203,15 @@
       "isSenderAlive": false
     }
   ],
+  "coaches": [
+    {
+      "steamId": 76561198033653629,
+      "userId": 57,
+      "name": "nobodyysf",
+      "coachingSide": 2,
+      "teamLetter": "B",
+      "firstSeenTick": 29447
+    }
+  ],
   "gameModeStr": "competitive"
 }

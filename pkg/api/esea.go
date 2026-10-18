@@ -142,12 +142,13 @@ func createEseaAnalyzer(analyzer *Analyzer) {
 					return
 				}
 
-				// Remove coaches from players
+				// Remove coaches from players and record them as coaches
 				for _, player := range parser.GameState().Participants().All() {
 					if player.EntityID == entity.ID() {
 						if analyzer.match.PlayersBySteamID[player.SteamID64] != nil {
 							delete(analyzer.match.PlayersBySteamID, player.SteamID64)
 						}
+						analyzer.registerCoach(player, teamNumber)
 						break
 					}
 				}

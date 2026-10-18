@@ -168645,5 +168645,15 @@
       "isSenderAlive": false
     }
   ],
+  "coaches": [
+    {
+      "steamId": 76561199478496303,
+      "userId": 4,
+      "name": "COACH E",
+      "coachingSide": 3,
+      "teamLetter": "A",
+      "firstSeenTick": 1
+    }
+  ],
   "gameModeStr": "competitive"
 }

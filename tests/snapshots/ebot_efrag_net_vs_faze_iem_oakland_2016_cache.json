@@ -163979,5 +163979,15 @@
       "isSenderAlive": false
     }
   ],
+  "coaches": [
+    {
+      "steamId": 76561197997160399,
+      "userId": 4,
+      "name": "FaZe RobbaN",
+      "coachingSide": 2,
+      "teamLetter": "B",
+      "firstSeenTick": 17045
+    }
+  ],
   "gameModeStr": "competitive"
 }

@@ -72,6 +72,7 @@ type Match struct {
 	PlayersBuy                []*PlayerBuy                `json:"playersBuy"`
 	PlayerEconomies           []*PlayerEconomy            `json:"playerEconomies"`
 	ChatMessages              []*ChatMessage              `json:"chatMessages"`
+	Coaches                   []*Coach                    `json:"coaches"`
 	scoreTeamA                *int
 	scoreTeamB                *int
 }
@@ -320,6 +321,7 @@ func newMatch(source constants.DemoSource, demoInfo *demo.Demo) Match {
 		HostagePositions:          []*HostagePosition{},
 		ChickenPositions:          []*ChickenPosition{},
 		ChatMessages:              []*ChatMessage{},
+		Coaches:                   []*Coach{},
 		ChickenDeaths:             []*ChickenDeath{},
 		GrenadeProjectilesDestroy: []*GrenadeProjectileDestroy{},
 	}
@@ -331,6 +333,7 @@ func newMatch(source constants.DemoSource, demoInfo *demo.Demo) Match {
 
 func (match *Match) reset() {
 	match.PlayersBySteamID = make(map[uint64]*Player)
+	match.Coaches = []*Coach{}
 	match.Rounds = []*Round{}
 	match.Kills = []*Kill{}
 	match.Clutches = []*Clutch{}

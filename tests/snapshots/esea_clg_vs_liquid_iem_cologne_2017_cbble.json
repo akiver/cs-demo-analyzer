@@ -187355,5 +187355,23 @@
     }
   ],
   "chatMessages": [],
+  "coaches": [
+    {
+      "steamId": 76561198069224981,
+      "userId": 43,
+      "name": "zews",
+      "coachingSide": 3,
+      "teamLetter": "A",
+      "firstSeenTick": 11362
+    },
+    {
+      "steamId": 76561198027858729,
+      "userId": 50,
+      "name": "ImAPet",
+      "coachingSide": 2,
+      "teamLetter": "B",
+      "firstSeenTick": 11362
+    }
+  ],
   "gameModeStr": "competitive"
 }
