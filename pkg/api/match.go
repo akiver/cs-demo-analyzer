@@ -83,12 +83,16 @@ type MatchJSON struct {
 	GameModeStr string `json:"gameModeStr"`
 }
 
-func (match *Match) MarshalJSON() ([]byte, error) {
-
-	return json.Marshal(MatchJSON{
+// toJSON returns the value the match is marshalled as.
+func (match *Match) toJSON() MatchJSON {
+	return MatchJSON{
 		MatchAlias:  (*MatchAlias)(match),
 		GameModeStr: match.GameModeStr().String(),
-	})
+	}
+}
+
+func (match *Match) MarshalJSON() ([]byte, error) {
+	return json.Marshal(match.toJSON())
 }
 
 func (match Match) GameModeStr() constants.GameModeStr {
