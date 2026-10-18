@@ -51,7 +51,9 @@ func newPlayerPosition(analyzer *Analyzer, player *common.Player) *PlayerPositio
 	var smgs []constants.WeaponName
 	var rifles []constants.WeaponName
 	var heavy []constants.WeaponName
-	for _, weapon := range player.Weapons() {
+	// Player.Inventory is Player.Weapons() without copying the map to a slice first, this runs for every player on
+	// every frame.
+	for _, weapon := range player.Inventory {
 		weaponName := equipmentToWeaponName[weapon.Type]
 		// Weird bug encountered with a demo from 2017.
 		// Player's weapons may contains duplicates, add it only if it has not been added yet.
