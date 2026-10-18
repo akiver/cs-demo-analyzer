@@ -60,6 +60,11 @@ type Analyzer struct {
 	chickenEntities         []st.Entity
 	// Cached 2D convex hull of each burning inferno's active fires, only used when positions are included.
 	infernoHulls map[common.UniqueID]*infernoHull
+	// Weapon lists of the last position created for each player, shared with the next positions while the
+	// inventory doesn't change, see internWeapons(). Only used when positions are included.
+	playerWeapons map[*common.Player]*playerWeapons
+	// Scratch lists newPlayerPosition() builds the current inventory into before comparing it with playerWeapons.
+	playerWeaponsScratch playerWeapons
 }
 
 type AnalyzeDemoOptions struct {
@@ -125,6 +130,7 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 		lastFreezeTimeEndTick:     -1,
 		bombPlantPosition:         r3.Vector{},
 		infernoHulls:              map[common.UniqueID]*infernoHull{},
+		playerWeapons:             map[*common.Player]*playerWeapons{},
 		lastGrenadeThrownByPlayer: make(map[uint64]*Shot),
 		playersUntyingAnHostage:   make(map[uint64]int),
 		postProcess:               defaultPostProcess,

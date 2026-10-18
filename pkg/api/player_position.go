@@ -1,6 +1,8 @@
 package api
 
 import (
+	"slices"
+
 	"github.com/akiver/cs-demo-analyzer/internal/slice"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
 	common "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
@@ -42,15 +44,74 @@ type PlayerPosition struct {
 	Ping                   int                    `json:"ping"`
 }
 
+// playerWeapons are the weapon names of a player's inventory by category, as exported in PlayerPosition.
+type playerWeapons struct {
+	equipments []constants.WeaponName
+	grenades   []constants.WeaponName
+	pistols    []constants.WeaponName
+	smgs       []constants.WeaponName
+	rifles     []constants.WeaponName
+	heavy      []constants.WeaponName
+}
+
+// reset empties the lists, keeping their backing arrays.
+func (w *playerWeapons) reset() {
+	w.equipments = w.equipments[:0]
+	w.grenades = w.grenades[:0]
+	w.pistols = w.pistols[:0]
+	w.smgs = w.smgs[:0]
+	w.rifles = w.rifles[:0]
+	w.heavy = w.heavy[:0]
+}
+
+// internWeapons returns previous if it holds the same weapons as current (in any order), otherwise a copy of
+// current (nil when empty). Player positions are created for every player on every frame while inventories
+// change a few times per round, so sharing the lists between consecutive positions avoids allocating six
+// slices per position. Positions only read them.
+func internWeapons(previous []constants.WeaponName, current []constants.WeaponName) []constants.WeaponName {
+	if len(current) == 0 {
+		return nil
+	}
+
+	if sameWeapons(previous, current) {
+		return previous
+	}
+
+	return slices.Clone(current)
+}
+
+// sameWeapons returns whether a and b hold the same weapon names with the same multiplicities, in any order.
+// The order isn't significant: it comes from ranging the inventory map.
+func sameWeapons(a []constants.WeaponName, b []constants.WeaponName) bool {
+	if len(a) != len(b) {
+		return false
+	}
+
+	for _, weapon := range a {
+		if count(a, weapon) != count(b, weapon) {
+			return false
+		}
+	}
+
+	return true
+}
+
+func count(weapons []constants.WeaponName, weapon constants.WeaponName) int {
+	n := 0
+	for _, w := range weapons {
+		if w == weapon {
+			n++
+		}
+	}
+
+	return n
+}
+
 func newPlayerPosition(analyzer *Analyzer, player *common.Player) *PlayerPosition {
 	parser := analyzer.parser
 	hasBomb := false
-	var equipments []constants.WeaponName
-	var grenades []constants.WeaponName
-	var pistols []constants.WeaponName
-	var smgs []constants.WeaponName
-	var rifles []constants.WeaponName
-	var heavy []constants.WeaponName
+	current := &analyzer.playerWeaponsScratch
+	current.reset()
 	// Player.Inventory is Player.Weapons() without copying the map to a slice first, this runs for every player on
 	// every frame.
 	for _, weapon := range player.Inventory {
@@ -59,30 +120,43 @@ func newPlayerPosition(analyzer *Analyzer, player *common.Player) *PlayerPositio
 		// Player's weapons may contains duplicates, add it only if it has not been added yet.
 		switch weapon.Class() {
 		case common.EqClassEquipment:
-			equipments = slice.AppendIfNotInSlice(equipments, weaponName)
+			current.equipments = slice.AppendIfNotInSlice(current.equipments, weaponName)
 		case common.EqClassGrenade:
 			if weapon.Type == common.EqFlash {
 				flashbangCount := player.FlashbangCount()
 				for i := uint64(0); i < flashbangCount; i++ {
-					grenades = append(grenades, constants.WeaponFlashbang)
+					current.grenades = append(current.grenades, constants.WeaponFlashbang)
 				}
 			} else {
-				grenades = slice.AppendIfNotInSlice(grenades, weaponName)
+				current.grenades = slice.AppendIfNotInSlice(current.grenades, weaponName)
 			}
 		case common.EqClassPistols:
-			pistols = slice.AppendIfNotInSlice(pistols, weaponName)
+			current.pistols = slice.AppendIfNotInSlice(current.pistols, weaponName)
 		case common.EqClassSMG:
-			smgs = slice.AppendIfNotInSlice(smgs, weaponName)
+			current.smgs = slice.AppendIfNotInSlice(current.smgs, weaponName)
 		case common.EqClassRifle:
-			rifles = slice.AppendIfNotInSlice(rifles, weaponName)
+			current.rifles = slice.AppendIfNotInSlice(current.rifles, weaponName)
 		case common.EqClassHeavy:
-			heavy = slice.AppendIfNotInSlice(heavy, weaponName)
+			current.heavy = slice.AppendIfNotInSlice(current.heavy, weaponName)
 		}
 
 		if weapon.Type == common.EqBomb {
 			hasBomb = true
 		}
 	}
+
+	weapons, exists := analyzer.playerWeapons[player]
+	if !exists {
+		weapons = &playerWeapons{}
+		analyzer.playerWeapons[player] = weapons
+	}
+
+	weapons.equipments = internWeapons(weapons.equipments, current.equipments)
+	weapons.grenades = internWeapons(weapons.grenades, current.grenades)
+	weapons.pistols = internWeapons(weapons.pistols, current.pistols)
+	weapons.smgs = internWeapons(weapons.smgs, current.smgs)
+	weapons.rifles = internWeapons(weapons.rifles, current.rifles)
+	weapons.heavy = internWeapons(weapons.heavy, current.heavy)
 
 	activeWeapon := constants.WeaponUnknown
 	if player.ActiveWeapon() != nil {
@@ -118,12 +192,12 @@ func newPlayerPosition(analyzer *Analyzer, player *common.Player) *PlayerPositio
 		IsPlanting:             player.IsPlanting,
 		IsGrabbingHostage:      player.IsGrabbingHostage(),
 		ActiveWeaponName:       activeWeapon,
-		Equipments:             equipments,
-		Grenades:               grenades,
-		Pistols:                pistols,
-		SMGs:                   smgs,
-		Rifles:                 rifles,
-		Heavy:                  heavy,
+		Equipments:             weapons.equipments,
+		Grenades:               weapons.grenades,
+		Pistols:                weapons.pistols,
+		SMGs:                   weapons.smgs,
+		Rifles:                 weapons.rifles,
+		Heavy:                  weapons.heavy,
 		Ping:                   player.Ping(),
 	}
 }
