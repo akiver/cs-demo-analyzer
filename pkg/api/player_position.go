@@ -64,10 +64,12 @@ func (w *playerWeapons) reset() {
 	w.heavy = w.heavy[:0]
 }
 
-// internWeapons returns previous if it holds the same weapons as current (in any order), otherwise a copy of
-// current (nil when empty). Player positions are created for every player on every frame while inventories
-// change a few times per round, so sharing the lists between consecutive positions avoids allocating six
-// slices per position. Positions only read them.
+// internWeapons returns previous if it holds the same weapons as current (in any order), otherwise a sorted copy of
+// current (nil when empty). Player positions are created for every player on every frame while inventories change
+// a few times per round, so sharing the lists between consecutive positions avoids allocating six slices per
+// position. Positions only read them.
+// The copies are sorted because current is built by ranging the inventory map, whose order differs on every run;
+// comparing before sorting keeps the sort out of the common case where the inventory didn't change.
 func internWeapons(previous []constants.WeaponName, current []constants.WeaponName) []constants.WeaponName {
 	if len(current) == 0 {
 		return nil
@@ -77,11 +79,13 @@ func internWeapons(previous []constants.WeaponName, current []constants.WeaponNa
 		return previous
 	}
 
-	return slices.Clone(current)
+	weapons := slices.Clone(current)
+	slices.Sort(weapons)
+
+	return weapons
 }
 
 // sameWeapons returns whether a and b hold the same weapon names with the same multiplicities, in any order.
-// The order isn't significant: it comes from ranging the inventory map.
 func sameWeapons(a []constants.WeaponName, b []constants.WeaponName) bool {
 	if len(a) != len(b) {
 		return false

@@ -4,6 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"os"
+	"slices"
 	"strconv"
 
 	"github.com/akiver/cs-demo-analyzer/internal/converters"
@@ -65,6 +66,21 @@ type Analyzer struct {
 	playerWeapons map[*common.Player]*playerWeapons
 	// Scratch lists newPlayerPosition() builds the current inventory into before comparing it with playerWeapons.
 	playerWeaponsScratch playerWeapons
+	// Scratch slice for sortedEntityIDs(), re-used across frames.
+	entityIDsScratch []int
+}
+
+// sortedEntityIDs returns the keys of a map of entities by entity ID in ascending order, to range over the map in a
+// deterministic order. The IDs are appended to scratch (emptied first) to avoid allocating on every call.
+func sortedEntityIDs[T any](scratch []int, entities map[int]T) []int {
+	ids := scratch[:0]
+	for id := range entities {
+		ids = append(ids, id)
+	}
+
+	slices.Sort(ids)
+
+	return ids
 }
 
 type AnalyzeDemoOptions struct {
@@ -683,15 +699,21 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 				match.ChickenPositions = append(match.ChickenPositions, chickenPosition)
 			}
 
-			for _, projectile := range parser.GameState().GrenadeProjectiles() {
-				position := newGrenadePositionFromProjectile(analyzer, projectile)
+			// GrenadeProjectiles() and Infernos() are maps, ranging them yields a different order on every run.
+			// They are visited by entity ID so that the positions of a frame are always exported in the same order.
+			projectiles := parser.GameState().GrenadeProjectiles()
+			analyzer.entityIDsScratch = sortedEntityIDs(analyzer.entityIDsScratch, projectiles)
+			for _, entityID := range analyzer.entityIDsScratch {
+				position := newGrenadePositionFromProjectile(analyzer, projectiles[entityID])
 				if position != nil {
 					match.GrenadePositions = append(match.GrenadePositions, position)
 				}
 			}
 
-			for _, inferno := range parser.GameState().Infernos() {
-				infernoPosition := newInfernoPositionFromInferno(analyzer, inferno)
+			infernos := parser.GameState().Infernos()
+			analyzer.entityIDsScratch = sortedEntityIDs(analyzer.entityIDsScratch, infernos)
+			for _, entityID := range analyzer.entityIDsScratch {
+				infernoPosition := newInfernoPositionFromInferno(analyzer, infernos[entityID])
 				if infernoPosition != nil {
 					match.InfernoPositions = append(match.InfernoPositions, infernoPosition)
 				}
