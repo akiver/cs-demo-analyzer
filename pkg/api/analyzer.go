@@ -58,6 +58,8 @@ type Analyzer struct {
 	// to detect which player is untying an hostage in case of consecutive events.
 	playersUntyingAnHostage map[uint64]int
 	chickenEntities         []st.Entity
+	// Cached 2D convex hull of each burning inferno's active fires, only used when positions are included.
+	infernoHulls map[common.UniqueID]*infernoHull
 }
 
 type AnalyzeDemoOptions struct {
@@ -122,6 +124,7 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 		buyTimeSeconds:            20, // Default mp_buytime value is 20
 		lastFreezeTimeEndTick:     -1,
 		bombPlantPosition:         r3.Vector{},
+		infernoHulls:              map[common.UniqueID]*infernoHull{},
 		lastGrenadeThrownByPlayer: make(map[uint64]*Shot),
 		playersUntyingAnHostage:   make(map[uint64]int),
 		postProcess:               defaultPostProcess,
@@ -697,6 +700,10 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 				hostagePosition := newHostagePositionFromHostage(analyzer, hostage)
 				match.HostagePositions = append(match.HostagePositions, hostagePosition)
 			}
+		})
+
+		parser.RegisterEventHandler(func(event events.InfernoExpired) {
+			delete(analyzer.infernoHulls, event.Inferno.UniqueID())
 		})
 	}
 
