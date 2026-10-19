@@ -1243,6 +1243,12 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 		serverClasses := parser.ServerClasses()
 		serverClasses.FindByName("CChicken").OnEntityCreated(func(entity st.Entity) {
 			analyzer.chickenEntities = append(analyzer.chickenEntities, entity)
+			// Killed chickens are destroyed, their positions must not be exported anymore.
+			entity.OnDestroy(func() {
+				analyzer.chickenEntities = slices.DeleteFunc(analyzer.chickenEntities, func(other st.Entity) bool {
+					return other == entity
+				})
+			})
 		})
 
 		// We don't use the event TeamSideSwitch to detect teams switch because it's triggered several times at the same tick with POV demos.
