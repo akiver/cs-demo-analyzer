@@ -58,7 +58,9 @@ type Analyzer struct {
 	// Because several hostages can be untied at the same time, we keep track of players that started untying hostages
 	// to detect which player is untying an hostage in case of consecutive events.
 	playersUntyingAnHostage map[uint64]int
-	chickenEntities         []st.Entity
+	chickenEntities         []*chickenEntity
+	// Used to give a unique ID to each chicken, entity IDs are re-used once an entity is destroyed.
+	chickenCount int
 	// Cached 2D convex hull of each burning inferno's active fires, only used when positions are included.
 	infernoHulls map[common.UniqueID]*infernoHull
 	// Weapon lists of the last position created for each player, shared with the next positions while the
@@ -720,8 +722,8 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 				return
 			}
 
-			for _, chickenEntity := range analyzer.chickenEntities {
-				chickenPosition := newChickenPositionFromEntity(analyzer, chickenEntity)
+			for _, chicken := range analyzer.chickenEntities {
+				chickenPosition := newChickenPositionFromEntity(analyzer, chicken)
 				match.ChickenPositions = append(match.ChickenPositions, chickenPosition)
 			}
 
@@ -1242,11 +1244,16 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 	parser.RegisterEventHandler(func(event events.DataTablesParsed) {
 		serverClasses := parser.ServerClasses()
 		serverClasses.FindByName("CChicken").OnEntityCreated(func(entity st.Entity) {
-			analyzer.chickenEntities = append(analyzer.chickenEntities, entity)
+			analyzer.chickenCount++
+			chicken := &chickenEntity{
+				id:     analyzer.chickenCount,
+				entity: entity,
+			}
+			analyzer.chickenEntities = append(analyzer.chickenEntities, chicken)
 			// Killed chickens are destroyed, their positions must not be exported anymore.
 			entity.OnDestroy(func() {
-				analyzer.chickenEntities = slices.DeleteFunc(analyzer.chickenEntities, func(other st.Entity) bool {
-					return other == entity
+				analyzer.chickenEntities = slices.DeleteFunc(analyzer.chickenEntities, func(other *chickenEntity) bool {
+					return other == chicken
 				})
 			})
 		})

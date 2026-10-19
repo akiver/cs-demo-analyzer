@@ -55,6 +55,65 @@ func toBytea(bytes []byte) string {
 	return "\\x" + hex.EncodeToString(bytes)
 }
 
+// Positions of an entity packed as big-endian binary.
+// A position is written only when it changes, entities such as smokes or chickens don't move most of the time.
+// The position of the last tick is always written so that it's possible to know when the entity disappeared.
+type packedPositions struct {
+	ticks         []byte
+	x             []byte
+	y             []byte
+	z             []byte
+	lastTick      int
+	lastX         float32
+	lastY         float32
+	lastZ         float32
+	isLastWritten bool
+}
+
+func (positions *packedPositions) write(tick int, x float32, y float32, z float32) {
+	positions.ticks = appendInt32(positions.ticks, tick)
+	positions.x = appendFloat32(positions.x, x)
+	positions.y = appendFloat32(positions.y, y)
+	positions.z = appendFloat32(positions.z, z)
+}
+
+func (positions *packedPositions) add(tick int, x float64, y float64, z float64) {
+	x32, y32, z32 := float32(x), float32(y), float32(z)
+	if len(positions.ticks) == 0 {
+		positions.write(tick, x32, y32, z32)
+		positions.isLastWritten = true
+	} else {
+		// Positions are sorted by frame and there may be multiple frames per tick.
+		if tick == positions.lastTick {
+			return
+		}
+
+		hasMoved := x32 != positions.lastX || y32 != positions.lastY || z32 != positions.lastZ
+		if hasMoved {
+			// The entity didn't move since the last written position, write the position of the previous tick so that
+			// the movement starts at the right tick.
+			if !positions.isLastWritten {
+				positions.write(positions.lastTick, positions.lastX, positions.lastY, positions.lastZ)
+			}
+			positions.write(tick, x32, y32, z32)
+		}
+		positions.isLastWritten = hasMoved
+	}
+
+	positions.lastTick = tick
+	positions.lastX = x32
+	positions.lastY = y32
+	positions.lastZ = z32
+}
+
+// Writes the position of the last tick if it hasn't been written yet.
+func (positions *packedPositions) finish() {
+	if !positions.isLastWritten {
+		positions.write(positions.lastTick, positions.lastX, positions.lastY, positions.lastZ)
+		positions.isLastWritten = true
+	}
+}
+
 func exportMatchForCSDM(match *Match, outputPath string) error {
 	if stat, err := os.Stat(outputPath); err != nil || !stat.IsDir() {
 		return errors.New("incorrect output provided, make sure it's a folder that exists and you have write access")
@@ -534,16 +593,42 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		csv.WriteLinesIntoCsvFile(outputPath+"_chicken_deaths.csv", lines)
 	}
 
+	// Chickens positions, 1 row per chicken and round, see packedPositions.
 	var writeChickenPositions = func() {
-		lines := [][]string{}
+		type chickenRoundKey struct {
+			chickenID   int
+			roundNumber int
+		}
+		type chickenRoundPositions struct {
+			roundNumber int
+			positions   packedPositions
+		}
+
+		positionsPerChicken := make(map[chickenRoundKey]*chickenRoundPositions)
+		var orderedPositions []*chickenRoundPositions
 		for _, position := range match.ChickenPositions {
+			key := chickenRoundKey{
+				chickenID:   position.chickenID,
+				roundNumber: position.RoundNumber,
+			}
+			chicken, exists := positionsPerChicken[key]
+			if !exists {
+				chicken = &chickenRoundPositions{roundNumber: position.RoundNumber}
+				positionsPerChicken[key] = chicken
+				orderedPositions = append(orderedPositions, chicken)
+			}
+			chicken.positions.add(position.Tick, position.X, position.Y, position.Z)
+		}
+
+		lines := [][]string{}
+		for _, chicken := range orderedPositions {
+			chicken.positions.finish()
 			line := []string{
-				converters.IntToString(position.Frame),
-				converters.IntToString(position.Tick),
-				converters.IntToString(position.RoundNumber),
-				converters.Float64ToString(position.X),
-				converters.Float64ToString(position.Y),
-				converters.Float64ToString(position.Z),
+				converters.IntToString(chicken.roundNumber),
+				toBytea(chicken.positions.ticks),
+				toBytea(chicken.positions.x),
+				toBytea(chicken.positions.y),
+				toBytea(chicken.positions.z),
 				match.Checksum,
 			}
 			lines = append(lines, line)
@@ -796,71 +881,30 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		csv.WriteLinesIntoCsvFile(outputPath+"_players_buy.csv", lines)
 	}
 
-	// Grenades positions, 1 row per projectile with its ticks and positions packed as big-endian binary.
-	// A position is written only when it changes, smokes for example don't move during most of their lifetime.
-	// The last tick of a projectile is always written so that it's possible to know when it disappeared.
+	// Grenades positions, 1 row per projectile, see packedPositions.
 	// Thrower values are the ones at the time of the throw.
 	var writeGrenadePositions = func() {
 		type projectilePositions struct {
-			first         *GrenadePosition
-			ticks         []byte
-			x             []byte
-			y             []byte
-			z             []byte
-			lastTick      int
-			lastPosition  *GrenadePosition
-			isLastWritten bool
-		}
-		var appendPosition = func(positions *projectilePositions, position *GrenadePosition) {
-			positions.ticks = appendInt32(positions.ticks, position.Tick)
-			positions.x = appendFloat32(positions.x, float32(position.X))
-			positions.y = appendFloat32(positions.y, float32(position.Y))
-			positions.z = appendFloat32(positions.z, float32(position.Z))
+			first     *GrenadePosition
+			positions packedPositions
 		}
 
 		positionsPerProjectile := make(map[string]*projectilePositions)
 		var orderedPositions []*projectilePositions
 		for _, position := range match.GrenadePositions {
-			positions, exists := positionsPerProjectile[position.ProjectileID]
+			projectile, exists := positionsPerProjectile[position.ProjectileID]
 			if !exists {
-				positions = &projectilePositions{first: position}
-				positionsPerProjectile[position.ProjectileID] = positions
-				orderedPositions = append(orderedPositions, positions)
-				appendPosition(positions, position)
-				positions.lastTick = position.Tick
-				positions.lastPosition = position
-				positions.isLastWritten = true
-				continue
+				projectile = &projectilePositions{first: position}
+				positionsPerProjectile[position.ProjectileID] = projectile
+				orderedPositions = append(orderedPositions, projectile)
 			}
-
-			// Positions are sorted by frame and there may be multiple frames per tick.
-			if position.Tick == positions.lastTick {
-				continue
-			}
-
-			hasMoved := float32(position.X) != float32(positions.lastPosition.X) ||
-				float32(position.Y) != float32(positions.lastPosition.Y) ||
-				float32(position.Z) != float32(positions.lastPosition.Z)
-			if hasMoved {
-				// The projectile didn't move since the last written position, write the position of the previous tick
-				// so that the movement starts at the right tick.
-				if !positions.isLastWritten {
-					appendPosition(positions, positions.lastPosition)
-				}
-				appendPosition(positions, position)
-			}
-			positions.isLastWritten = hasMoved
-			positions.lastTick = position.Tick
-			positions.lastPosition = position
+			projectile.positions.add(position.Tick, position.X, position.Y, position.Z)
 		}
 
 		lines := [][]string{}
-		for _, positions := range orderedPositions {
-			if !positions.isLastWritten {
-				appendPosition(positions, positions.lastPosition)
-			}
-
-			first := positions.first
+		for _, projectile := range orderedPositions {
+			projectile.positions.finish()
+			first := projectile.first
 			line := []string{
 				converters.IntToString(first.RoundNumber),
 				first.GrenadeID,
@@ -875,10 +919,10 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 				converters.Float64ToString(first.ThrowerVelocityZ),
 				converters.Float32ToString(first.ThrowerYaw),
 				converters.Float32ToString(first.ThrowerPitch),
-				toBytea(positions.ticks),
-				toBytea(positions.x),
-				toBytea(positions.y),
-				toBytea(positions.z),
+				toBytea(projectile.positions.ticks),
+				toBytea(projectile.positions.x),
+				toBytea(projectile.positions.y),
+				toBytea(projectile.positions.z),
 				match.Checksum,
 			}
 			lines = append(lines, line)
