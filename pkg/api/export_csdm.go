@@ -33,6 +33,28 @@ func joinSortedWeaponNames(weaponNames []constants.WeaponName) string {
 	return strings.Join(names, ",")
 }
 
+// Numbers and booleans of positions are packed as big-endian binary, it's the byte order used by PostgreSQL (int4send,
+// float4send) which makes the values easier to query in SQL.
+func appendInt32(bytes []byte, value int) []byte {
+	return binary.BigEndian.AppendUint32(bytes, uint32(value))
+}
+
+func appendFloat32(bytes []byte, value float32) []byte {
+	return binary.BigEndian.AppendUint32(bytes, math.Float32bits(value))
+}
+
+func appendBool(bytes []byte, value bool) []byte {
+	if value {
+		return append(bytes, 1)
+	}
+	return append(bytes, 0)
+}
+
+// PostgreSQL bytea hex format
+func toBytea(bytes []byte) string {
+	return "\\x" + hex.EncodeToString(bytes)
+}
+
 func exportMatchForCSDM(match *Match, outputPath string) error {
 	if stat, err := os.Stat(outputPath); err != nil || !stat.IsDir() {
 		return errors.New("incorrect output provided, make sure it's a folder that exists and you have write access")
@@ -173,8 +195,7 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 	// - the movement (position, yaw...) of each tick
 	// - the state (health, weapons...) only when it changes, stateTicks contains the tick of each change
 	// The first state of each player in a round is always written so that a round can be loaded independently.
-	// Numbers and booleans are packed as big-endian binary, it's the byte order used by PostgreSQL (int4send, float4send)
-	// which makes the values easier to query in SQL. Weapon names are PostgreSQL text arrays.
+	// Numbers and booleans are packed as big-endian binary and weapon names are PostgreSQL text arrays.
 	var writePlayerPositions = func() {
 		type playerRoundKey struct {
 			steamID     uint64
@@ -237,19 +258,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 			rifles                 []string
 			heavy                  []string
 		}
-		var appendInt32 = func(bytes []byte, value int) []byte {
-			return binary.BigEndian.AppendUint32(bytes, uint32(value))
-		}
-		var appendFloat32 = func(bytes []byte, value float32) []byte {
-			return binary.BigEndian.AppendUint32(bytes, math.Float32bits(value))
-		}
-		var appendBool = func(bytes []byte, value bool) []byte {
-			if value {
-				return append(bytes, 1)
-			}
-			return append(bytes, 0)
-		}
-
 		positionsPerPlayer := make(map[playerRoundKey]*playerRoundPositions)
 		var orderedPositions []*playerRoundPositions
 		for _, position := range match.PlayerPositions {
@@ -339,10 +347,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 			positions.heavy = append(positions.heavy, state.heavy)
 		}
 
-		// PostgreSQL bytea hex format
-		var toBytea = func(bytes []byte) string {
-			return "\\x" + hex.EncodeToString(bytes)
-		}
 		// PostgreSQL array literal, elements are quoted because weapon lists contain commas.
 		var toTextArray = func(values []string) string {
 			escaper := strings.NewReplacer(`\`, `\\`, `"`, `\"`)
@@ -792,28 +796,89 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		csv.WriteLinesIntoCsvFile(outputPath+"_players_buy.csv", lines)
 	}
 
+	// Grenades positions, 1 row per projectile with its ticks and positions packed as big-endian binary.
+	// A position is written only when it changes, smokes for example don't move during most of their lifetime.
+	// The last tick of a projectile is always written so that it's possible to know when it disappeared.
+	// Thrower values are the ones at the time of the throw.
 	var writeGrenadePositions = func() {
-		lines := [][]string{}
+		type projectilePositions struct {
+			first         *GrenadePosition
+			ticks         []byte
+			x             []byte
+			y             []byte
+			z             []byte
+			lastTick      int
+			lastPosition  *GrenadePosition
+			isLastWritten bool
+		}
+		var appendPosition = func(positions *projectilePositions, position *GrenadePosition) {
+			positions.ticks = appendInt32(positions.ticks, position.Tick)
+			positions.x = appendFloat32(positions.x, float32(position.X))
+			positions.y = appendFloat32(positions.y, float32(position.Y))
+			positions.z = appendFloat32(positions.z, float32(position.Z))
+		}
+
+		positionsPerProjectile := make(map[string]*projectilePositions)
+		var orderedPositions []*projectilePositions
 		for _, position := range match.GrenadePositions {
+			positions, exists := positionsPerProjectile[position.ProjectileID]
+			if !exists {
+				positions = &projectilePositions{first: position}
+				positionsPerProjectile[position.ProjectileID] = positions
+				orderedPositions = append(orderedPositions, positions)
+				appendPosition(positions, position)
+				positions.lastTick = position.Tick
+				positions.lastPosition = position
+				positions.isLastWritten = true
+				continue
+			}
+
+			// Positions are sorted by frame and there may be multiple frames per tick.
+			if position.Tick == positions.lastTick {
+				continue
+			}
+
+			hasMoved := float32(position.X) != float32(positions.lastPosition.X) ||
+				float32(position.Y) != float32(positions.lastPosition.Y) ||
+				float32(position.Z) != float32(positions.lastPosition.Z)
+			if hasMoved {
+				// The projectile didn't move since the last written position, write the position of the previous tick
+				// so that the movement starts at the right tick.
+				if !positions.isLastWritten {
+					appendPosition(positions, positions.lastPosition)
+				}
+				appendPosition(positions, position)
+			}
+			positions.isLastWritten = hasMoved
+			positions.lastTick = position.Tick
+			positions.lastPosition = position
+		}
+
+		lines := [][]string{}
+		for _, positions := range orderedPositions {
+			if !positions.isLastWritten {
+				appendPosition(positions, positions.lastPosition)
+			}
+
+			first := positions.first
 			line := []string{
-				converters.IntToString(position.Frame),
-				converters.IntToString(position.Tick),
-				converters.IntToString(position.RoundNumber),
-				position.GrenadeID,
-				position.ProjectileID,
-				position.GrenadeName.String(),
-				converters.Float64ToString(position.X),
-				converters.Float64ToString(position.Y),
-				converters.Float64ToString(position.Z),
-				converters.Uint64ToString(position.ThrowerSteamID64),
-				position.ThrowerName,
-				converters.TeamToString(position.ThrowerSide),
-				position.ThrowerTeamName,
-				converters.Float64ToString(position.ThrowerVelocityX),
-				converters.Float64ToString(position.ThrowerVelocityY),
-				converters.Float64ToString(position.ThrowerVelocityZ),
-				converters.Float32ToString(position.ThrowerYaw),
-				converters.Float32ToString(position.ThrowerPitch),
+				converters.IntToString(first.RoundNumber),
+				first.GrenadeID,
+				first.ProjectileID,
+				first.GrenadeName.String(),
+				converters.Uint64ToString(first.ThrowerSteamID64),
+				first.ThrowerName,
+				converters.TeamToString(first.ThrowerSide),
+				first.ThrowerTeamName,
+				converters.Float64ToString(first.ThrowerVelocityX),
+				converters.Float64ToString(first.ThrowerVelocityY),
+				converters.Float64ToString(first.ThrowerVelocityZ),
+				converters.Float32ToString(first.ThrowerYaw),
+				converters.Float32ToString(first.ThrowerPitch),
+				toBytea(positions.ticks),
+				toBytea(positions.x),
+				toBytea(positions.y),
+				toBytea(positions.z),
 				match.Checksum,
 			}
 			lines = append(lines, line)
