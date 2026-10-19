@@ -18,4 +18,4 @@ require (
 	github.com/markus-wa/quickhull-go/v2 v2.2.0 // indirect
 )
 
-replace github.com/markus-wa/demoinfocs-golang/v4 v4.5.1 => github.com/markus-wa/demoinfocs-golang/v4 v4.5.2-0.20261018212004-58768c5a81d9
+replace github.com/markus-wa/demoinfocs-golang/v4 v4.5.1 => github.com/markus-wa/demoinfocs-golang/v4 v4.5.2-0.20261019222625-b5a02b17ce7a
