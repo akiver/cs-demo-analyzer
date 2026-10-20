@@ -746,13 +746,8 @@ func (player *Player) getXKillCount(count int) int {
 	return xKillCount
 }
 
-func (player *Player) Reset() {
+func (player *Player) reset() {
 	player.Score = 0
 	player.MvpCount = 0
 	player.InspectWeaponCount = 0
-}
-
-// SetMatch sets the match the player belongs to, used for its computed values. Used by the analyzers.
-func (player *Player) SetMatch(match *Match) {
-	player.match = match
 }

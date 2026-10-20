@@ -6,6 +6,7 @@ import (
 	"encoding/json/jsontext"
 	jsonv2 "encoding/json/v2"
 	"errors"
+	"github.com/akiver/cs-demo-analyzer/internal/modelaccess"
 	"io"
 	"os"
 )
@@ -70,5 +71,5 @@ func writeMatchJSON(w io.Writer, match *Match, minify bool) error {
 
 	// The MatchJSON value is marshalled rather than the match so that Match.MarshalJSON, which marshals the whole
 	// document in memory, isn't called.
-	return jsonv2.MarshalWrite(w, match.ToJSON(), options...)
+	return jsonv2.MarshalWrite(w, modelaccess.MatchJSON(match), options...)
 }

@@ -2,6 +2,7 @@ package csgo
 
 import (
 	"fmt"
+	"github.com/akiver/cs-demo-analyzer/internal/modelaccess"
 	"strings"
 
 	s "github.com/akiver/cs-demo-analyzer/internal/strings"
@@ -12,7 +13,7 @@ import (
 
 func createEbotAnalyzer(analyzer *Analyzer) {
 	match := analyzer.match
-	match.SetGameModeStr(constants.GameModeStrCompetitive)
+	modelaccess.SetGameModeStr(match, constants.GameModeStrCompetitive)
 	parser := analyzer.parser
 	matchStarted := true
 	matchStartDetected := false

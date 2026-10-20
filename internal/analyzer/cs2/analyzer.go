@@ -4,6 +4,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"github.com/akiver/cs-demo-analyzer/internal/modelaccess"
 	"io"
 	"slices"
 	"strconv"
@@ -152,7 +153,7 @@ func Analyze(file io.Reader, demo *d.Demo, source constants.DemoSource, includeP
 		TeamASide:          *match.TeamA.CurrentSide,
 		TeamBSide:          *match.TeamB.CurrentSide,
 	}
-	analyzer.currentRound.SetMatch(analyzer.match)
+	modelaccess.SetRoundMatch(analyzer.currentRound, analyzer.match)
 
 	analyzer.registerCommonHandlers(includePositions)
 
@@ -237,8 +238,8 @@ func Analyze(file io.Reader, demo *d.Demo, source constants.DemoSource, includeP
 	}
 
 	analyzer.postProcess(analyzer)
-	match.DeleteIncompleteRounds()
-	match.ComputeResultStats()
+	modelaccess.DeleteIncompleteRounds(&match)
+	modelaccess.ComputeResultStats(&match)
 
 	return &match, nil
 }
@@ -256,11 +257,11 @@ func (analyzer *Analyzer) reset() {
 	analyzer.chickenEntities = nil
 	analyzer.clutch1 = nil
 	analyzer.clutch2 = nil
-	analyzer.match.Reset()
+	modelaccess.ResetMatch(analyzer.match)
 	analyzer.weaponInspections = make(map[*Player]*weaponInspectionData)
 	analyzer.updateTeamNames()
 	for _, player := range analyzer.match.PlayersBySteamID {
-		player.Reset()
+		modelaccess.ResetPlayer(player)
 	}
 
 	analyzer.weaponsBoughtUniqueIDs = nil
@@ -275,12 +276,12 @@ func (analyzer *Analyzer) reset() {
 		TeamAName:          analyzer.match.TeamA.Name,
 		TeamBName:          analyzer.match.TeamB.Name,
 	}
-	analyzer.currentRound.SetMatch(analyzer.match)
+	modelaccess.SetRoundMatch(analyzer.currentRound, analyzer.match)
 	analyzer.createPlayersEconomies()
 }
 
 func (analyzer *Analyzer) resetCurrentRound() {
-	analyzer.match.ResetRound(analyzer.currentRound.Number)
+	modelaccess.ResetRound(analyzer.match, analyzer.currentRound.Number)
 	analyzer.createPlayersEconomies()
 }
 
@@ -416,7 +417,7 @@ func (analyzer *Analyzer) updatePlayersCurrentTeam() {
 func (analyzer *Analyzer) processMatchStart() {
 	parser := analyzer.parser
 	match := analyzer.match
-	match.ResetRound(1)
+	modelaccess.ResetRound(match, 1)
 	analyzer.updatePlayersCurrentTeam()
 
 	currentRound := analyzer.currentRound
@@ -1197,7 +1198,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 			switch newGamePhase {
 			case common.GamePhaseTeamSideSwitch:
 				{
-					match.SwapTeams()
+					modelaccess.SwapTeams(match)
 					// round_start is triggered before this entity update with CS:GO demos only. Update the current teams side here.
 					// It doesn't happen with CS2 demos because the parser dispatch events in a more expected way.
 					if !analyzer.isSource2 {

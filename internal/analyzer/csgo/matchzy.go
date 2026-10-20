@@ -1,6 +1,7 @@
 package csgo
 
 import (
+	"github.com/akiver/cs-demo-analyzer/internal/modelaccess"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
 	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
 	events "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/events"
@@ -9,7 +10,7 @@ import (
 
 func createMatchZyAnalyzer(analyzer *Analyzer) {
 	match := analyzer.match
-	match.SetGameModeStr(constants.GameModeStrCompetitive)
+	modelaccess.SetGameModeStr(match, constants.GameModeStrCompetitive)
 	parser := analyzer.parser
 	matchStarted := true
 	// Track the end of the game to not re-compute the last round players economy as the freeze time start event is

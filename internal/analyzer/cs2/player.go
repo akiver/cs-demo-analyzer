@@ -1,6 +1,7 @@
 package cs2
 
 import (
+	"github.com/akiver/cs-demo-analyzer/internal/modelaccess"
 	"math"
 
 	"github.com/akiver/cs-demo-analyzer/internal/strings"
@@ -79,7 +80,7 @@ func newPlayer(analyzer *Analyzer, currentTeam common.Team, player common.Player
 		OldRank:            rank,
 		WinCount:           player.CompetitiveWins(),
 	}
-	newPlayer.SetMatch(analyzer.match)
+	modelaccess.SetPlayerMatch(newPlayer, analyzer.match)
 
 	var activeWeaponProp *st.Property
 	if analyzer.isSource2 {

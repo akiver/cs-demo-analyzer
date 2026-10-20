@@ -1,6 +1,7 @@
 package cs2
 
 import (
+	"github.com/akiver/cs-demo-analyzer/internal/modelaccess"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
 	events "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/events"
 	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/msg"
@@ -12,7 +13,7 @@ func createValveAnalyzer(analyzer *Analyzer) {
 	analyzer.matchStarted = parser.GameState().IsMatchStarted
 
 	parser.RegisterNetMessageHandler(func(srvInfo *msg.CSVCMsg_ServerInfo) {
-		match.SetGameModeStr(constants.GameModeStr(srvInfo.GameSessionConfig.GetGamemode()))
+		modelaccess.SetGameModeStr(match, constants.GameModeStr(srvInfo.GameSessionConfig.GetGamemode()))
 	})
 
 	parser.RegisterEventHandler(func(event events.MatchStart) {

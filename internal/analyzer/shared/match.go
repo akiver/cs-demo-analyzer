@@ -2,6 +2,7 @@ package shared
 
 import (
 	"github.com/akiver/cs-demo-analyzer/internal/demo"
+	"github.com/akiver/cs-demo-analyzer/internal/modelaccess"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
 	"github.com/akiver/cs-demo-analyzer/pkg/model"
 )
@@ -69,7 +70,7 @@ func NewMatch(source constants.DemoSource, demoInfo *demo.Demo) model.Match {
 		GrenadeProjectilesDestroy: []*model.GrenadeProjectileDestroy{},
 	}
 
-	match.InitTeams()
+	modelaccess.InitTeams(&match)
 
 	return match
 }

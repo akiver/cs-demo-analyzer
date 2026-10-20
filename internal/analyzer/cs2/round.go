@@ -1,6 +1,7 @@
 package cs2
 
 import (
+	"github.com/akiver/cs-demo-analyzer/internal/modelaccess"
 	"strings"
 
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
@@ -85,7 +86,7 @@ func newRound(number int, analyzer *Analyzer) *Round {
 		TeamASide:          *analyzer.match.TeamA.CurrentSide,
 		TeamBSide:          *analyzer.match.TeamB.CurrentSide,
 	}
-	round.SetMatch(analyzer.match)
+	modelaccess.SetRoundMatch(round, analyzer.match)
 	analyzer.computeTeamsEconomy(round)
 
 	return round

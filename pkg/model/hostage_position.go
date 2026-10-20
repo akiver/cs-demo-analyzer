@@ -7,8 +7,8 @@ import (
 type HostagePosition struct {
 	// Used to identify the hostage, entity IDs are re-used once an entity is destroyed but not with the same serial number.
 	// Not exported because they are used only to group positions by hostage.
-	EntityID    int                    `json:"-"`
-	SerialNum   int                    `json:"-"`
+	entityID    int
+	serialNum   int
 	Frame       int                    `json:"frame"`
 	Tick        int                    `json:"tick"`
 	RoundNumber int                    `json:"roundNumber"`

@@ -1,6 +1,7 @@
 package cs2
 
 import (
+	"github.com/akiver/cs-demo-analyzer/internal/modelaccess"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
 	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/common"
 )
@@ -8,9 +9,7 @@ import (
 func newHostagePositionFromHostage(analyzer *Analyzer, hostage *common.Hostage) *HostagePosition {
 	parser := analyzer.parser
 
-	return &HostagePosition{
-		EntityID:    hostage.Entity.ID(),
-		SerialNum:   hostage.Entity.SerialNum(),
+	position := &HostagePosition{
 		Frame:       parser.CurrentFrame(),
 		Tick:        analyzer.currentTick(),
 		RoundNumber: analyzer.currentRound.Number,
@@ -19,4 +18,7 @@ func newHostagePositionFromHostage(analyzer *Analyzer, hostage *common.Hostage) 
 		Z:           hostage.Position().Z,
 		State:       constants.HostageState(hostage.State()),
 	}
+	modelaccess.SetHostageEntity(position, hostage.Entity.ID(), hostage.Entity.SerialNum())
+
+	return position
 }

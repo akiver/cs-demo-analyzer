@@ -83,7 +83,7 @@ type MatchJSON struct {
 }
 
 // toJSON returns the value the match is marshalled as.
-func (match *Match) ToJSON() MatchJSON {
+func (match *Match) toJSON() MatchJSON {
 	return MatchJSON{
 		MatchAlias:  (*MatchAlias)(match),
 		GameModeStr: match.GameModeStr().String(),
@@ -91,12 +91,7 @@ func (match *Match) ToJSON() MatchJSON {
 }
 
 func (match *Match) MarshalJSON() ([]byte, error) {
-	return json.Marshal(match.ToJSON())
-}
-
-// SetGameModeStr overrides the game mode string, used by the analyzers for sources that run competitive matches.
-func (match *Match) SetGameModeStr(gameModeStr constants.GameModeStr) {
-	match.gameModeStr = gameModeStr
+	return json.Marshal(match.toJSON())
 }
 
 func (match Match) GameModeStr() constants.GameModeStr {
@@ -184,12 +179,12 @@ func (match *Match) GetPlayerEconomyAtRound(playerName string, steamID64 uint64,
 	return nil
 }
 
-func (match Match) SwapTeams() {
+func (match Match) swapTeams() {
 	match.TeamA.swap()
 	match.TeamB.swap()
 }
 
-func (match *Match) ComputeResultStats() {
+func (match *Match) computeResultStats() {
 	// Compute the teams score based on rounds result.
 	// Listening on CCSTeam.m_scoreTotal or the event ScoreUpdated is not reliable with non Valve demos.
 	isFirstHalf := true
@@ -247,7 +242,7 @@ func (match *Match) ComputeResultStats() {
 	}
 }
 
-func (match *Match) InitTeams() {
+func (match *Match) initTeams() {
 	initialSideTeamA := constants.SideCounterTerrorists
 	initialSideTeamB := constants.SideTerrorists
 	teamA := &Team{
@@ -267,7 +262,7 @@ func (match *Match) InitTeams() {
 	match.scoreTeamB = &teamB.Score
 }
 
-func (match *Match) Reset() {
+func (match *Match) reset() {
 	match.PlayersBySteamID = make(map[uint64]*Player)
 	match.Coaches = []*Coach{}
 	match.Rounds = []*Round{}
@@ -298,10 +293,10 @@ func (match *Match) Reset() {
 	match.ChickenDeaths = []*ChickenDeath{}
 	match.GrenadeProjectilesDestroy = []*GrenadeProjectileDestroy{}
 	match.PlayerEconomies = []*PlayerEconomy{}
-	match.InitTeams()
+	match.initTeams()
 }
 
-func (match *Match) ResetRound(roundNumber int) {
+func (match *Match) resetRound(roundNumber int) {
 	match.BombsPlantStart = slice.Filter(match.BombsPlantStart, func(event *BombPlantStart, index int) bool {
 		return event.RoundNumber != roundNumber
 	})
@@ -385,7 +380,7 @@ func (match *Match) ResetRound(roundNumber int) {
 	})
 }
 
-func (match *Match) DeleteIncompleteRounds() {
+func (match *Match) deleteIncompleteRounds() {
 	for i := len(match.Rounds) - 1; i >= 0; i-- {
 		round := match.Rounds[i]
 		if round.WinnerName != "" {
@@ -394,6 +389,6 @@ func (match *Match) DeleteIncompleteRounds() {
 
 		match.Rounds = append(match.Rounds[:i], match.Rounds[i+1:]...)
 
-		match.ResetRound(round.Number)
+		match.resetRound(round.Number)
 	}
 }

@@ -70,8 +70,3 @@ func (round *Round) getTeamStartMoney(side constants.Side) int {
 
 	return total
 }
-
-// SetMatch sets the match the round belongs to, used for its computed values. Used by the analyzers.
-func (round *Round) SetMatch(match *Match) {
-	round.match = match
-}

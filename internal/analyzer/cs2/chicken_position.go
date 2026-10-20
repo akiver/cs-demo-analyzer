@@ -1,6 +1,7 @@
 package cs2
 
 import (
+	"github.com/akiver/cs-demo-analyzer/internal/modelaccess"
 	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/sendtables"
 )
 
@@ -13,8 +14,7 @@ func newChickenPositionFromEntity(analyzer *Analyzer, chicken *chickenEntity) *C
 	parser := analyzer.parser
 	entity := chicken.entity
 
-	return &ChickenPosition{
-		ChickenID:   chicken.id,
+	position := &ChickenPosition{
 		Frame:       parser.CurrentFrame(),
 		Tick:        analyzer.currentTick(),
 		RoundNumber: analyzer.currentRound.Number,
@@ -22,4 +22,7 @@ func newChickenPositionFromEntity(analyzer *Analyzer, chicken *chickenEntity) *C
 		Y:           entity.Position().Y,
 		Z:           entity.Position().Z,
 	}
+	modelaccess.SetChickenID(position, chicken.id)
+
+	return position
 }

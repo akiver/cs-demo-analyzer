@@ -2,7 +2,7 @@ package model
 
 type ChickenPosition struct {
 	// Unique ID of the chicken in the match, not exported because it's used only to group positions by chicken.
-	ChickenID   int     `json:"-"`
+	chickenID   int
 	Frame       int     `json:"frame"`
 	Tick        int     `json:"tick"`
 	RoundNumber int     `json:"roundNumber"`

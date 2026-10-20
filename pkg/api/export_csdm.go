@@ -11,6 +11,7 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
+	"github.com/akiver/cs-demo-analyzer/internal/modelaccess"
 	"math"
 	"os"
 	"slices"
@@ -610,7 +611,7 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		var orderedPositions []*chickenRoundPositions
 		for _, position := range match.ChickenPositions {
 			key := chickenRoundKey{
-				chickenID:   position.ChickenID,
+				chickenID:   modelaccess.ChickenID(position),
 				roundNumber: position.RoundNumber,
 			}
 			chicken, exists := positionsPerChicken[key]
@@ -1227,9 +1228,10 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		positionsPerHostage := make(map[hostageRoundKey]*hostageRoundPositions)
 		var orderedPositions []*hostageRoundPositions
 		for _, position := range match.HostagePositions {
+			entityID, serialNum := modelaccess.HostageEntity(position)
 			key := hostageRoundKey{
-				entityID:    position.EntityID,
-				serialNum:   position.SerialNum,
+				entityID:    entityID,
+				serialNum:   serialNum,
 				roundNumber: position.RoundNumber,
 			}
 			hostage, exists := positionsPerHostage[key]
