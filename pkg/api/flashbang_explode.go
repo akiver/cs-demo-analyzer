@@ -44,7 +44,7 @@ func newFlashbangExplodeFromGameEvent(analyzer *Analyzer, event events.FlashExpl
 	parser := analyzer.parser
 	projectileID := findGrenadeProjectileID(analyzer, grenade.UniqueID(), event.Position)
 
-	velocity := analyzer.playerVelocity(thrower)
+	velocity := thrower.Velocity()
 
 	return &FlashbangExplode{
 		Frame:            parser.CurrentFrame(),

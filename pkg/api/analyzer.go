@@ -74,9 +74,6 @@ type Analyzer struct {
 	playerWeaponsScratch playerWeapons
 	// Scratch slice for sortedEntityIDs(), re-used across frames.
 	entityIDsScratch []int
-	// Players position at the end of the previous frame, only maintained for demos recorded before the AnimGraph 2
-	// update to compute players velocity based on the previous/current frames positions.
-	previousFramePositions map[*common.Player]r3.Vector
 	// Stops parsing with the given error, which is returned by the parser.
 	// Handlers must call it instead of panicking: the parser re-panics handler panics on the caller.
 	cancelParsing context.CancelCauseFunc
@@ -93,30 +90,6 @@ func sortedEntityIDs[T any](scratch []int, entities map[int]T) []int {
 	slices.Sort(ids)
 
 	return ids
-}
-
-// networkProtocolAnimGraph2 is the network protocol version of the CS2 "AnimGraph 2" update (28/07/2025).
-// Since this update, players velocity is networked (m_vecVelocity.m_vec* properties) and available from the parser.
-const networkProtocolAnimGraph2 = 14089
-
-// playerVelocity returns the player's velocity.
-//
-// demoinfocs-golang v6 only reads the networked velocity, which is available only in demos recorded after the
-// AnimGraph 2 update. For older demos we fall back to the position delta between the previous and current frame
-// (this is what the v4 branch of the parser used to do).
-func (analyzer *Analyzer) playerVelocity(player *common.Player) r3.Vector {
-	if analyzer.match.NetworkProtocol >= networkProtocolAnimGraph2 {
-		return player.Velocity()
-	}
-
-	t := 64.0
-	diff := player.Position().Sub(analyzer.previousFramePositions[player])
-
-	return r3.Vector{
-		X: diff.X * t,
-		Y: diff.Y * t,
-		Z: diff.Z * t,
-	}
 }
 
 type AnalyzeDemoOptions struct {
@@ -185,7 +158,6 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 		lastGrenadeThrownByPlayer: make(map[uint64]*Shot),
 		playersUntyingAnHostage:   make(map[uint64]int),
 		postProcess:               defaultPostProcess,
-		previousFramePositions:    make(map[*common.Player]r3.Vector),
 	}
 
 	analyzer.currentRound = &Round{
@@ -253,16 +225,6 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 	parser.RegisterNetMessageHandler(func(m *msg.CDemoFileInfo) {
 		fileInfo = m
 	})
-
-	// Keep track of players position at the end of each frame to compute their velocity on demos recorded before the
-	// AnimGraph 2 update. Registered last so it runs after all other FrameDone handlers, as the v4 parser did.
-	if match.NetworkProtocol < networkProtocolAnimGraph2 {
-		parser.RegisterEventHandler(func(event events.FrameDone) {
-			for _, player := range parser.GameState().Participants().Playing() {
-				analyzer.previousFramePositions[player] = player.Position()
-			}
-		})
-	}
 
 	err = parser.ParseToEnd(ctx)
 	// Do not stop if the demo is truncated or contains data that can't be decoded, usually the error occurs at the

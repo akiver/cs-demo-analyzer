@@ -74,7 +74,7 @@ func newShot(analyzer *Analyzer, event events.WeaponFire) *Shot {
 		viewPunchAngle = shooter.Entity.PropertyValueMust("localdata.m_Local.m_viewPunchAngle").R3Vec()
 	}
 
-	velocity := analyzer.playerVelocity(shooter)
+	velocity := shooter.Velocity()
 
 	return &Shot{
 		Frame:                  analyzer.parser.CurrentFrame(),

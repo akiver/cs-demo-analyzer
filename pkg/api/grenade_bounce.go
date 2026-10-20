@@ -49,7 +49,7 @@ func newGrenadeBounceFromProjectile(analyzer *Analyzer, projectile *common.Grena
 		}
 	}
 
-	velocity := analyzer.playerVelocity(thrower)
+	velocity := thrower.Velocity()
 
 	parser := analyzer.parser
 	throwerTeam := thrower.Team

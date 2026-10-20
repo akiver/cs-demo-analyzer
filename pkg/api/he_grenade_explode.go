@@ -44,7 +44,7 @@ func newHeGrenadeExplodeFromGameEvent(analyzer *Analyzer, event events.HeExplode
 	parser := analyzer.parser
 	projectileID := findGrenadeProjectileID(analyzer, grenade.UniqueID(), event.Position)
 
-	velocity := analyzer.playerVelocity(thrower)
+	velocity := thrower.Velocity()
 
 	return &HeGrenadeExplode{
 		Frame:            parser.CurrentFrame(),
