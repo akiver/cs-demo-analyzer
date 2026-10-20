@@ -611,7 +611,7 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		var orderedPositions []*chickenRoundPositions
 		for _, position := range match.ChickenPositions {
 			key := chickenRoundKey{
-				chickenID:   position.chickenID,
+				chickenID:   position.ChickenID,
 				roundNumber: position.RoundNumber,
 			}
 			chicken, exists := positionsPerChicken[key]
@@ -1229,8 +1229,8 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		var orderedPositions []*hostageRoundPositions
 		for _, position := range match.HostagePositions {
 			key := hostageRoundKey{
-				entityID:    position.entityID,
-				serialNum:   position.serialNum,
+				entityID:    position.EntityID,
+				serialNum:   position.SerialNum,
 				roundNumber: position.RoundNumber,
 			}
 			hostage, exists := positionsPerHostage[key]

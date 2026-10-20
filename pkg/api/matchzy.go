@@ -9,7 +9,7 @@ import (
 
 func createMatchZyAnalyzer(analyzer *Analyzer) {
 	match := analyzer.match
-	match.gameModeStr = constants.GameModeStrCompetitive
+	match.SetGameModeStr(constants.GameModeStrCompetitive)
 	parser := analyzer.parser
 	matchStarted := true
 	// Track the end of the game to not re-compute the last round players economy as the freeze time start event is

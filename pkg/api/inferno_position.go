@@ -8,19 +8,6 @@ import (
 	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/common"
 )
 
-type InfernoPosition struct {
-	Frame            int        `json:"frame"`
-	Tick             int        `json:"tick"`
-	RoundNumber      int        `json:"roundNumber"`
-	ThrowerSteamID64 uint64     `json:"throwerSteamId"`
-	ThrowerName      string     `json:"throwerName"`
-	UniqueID         string     `json:"uniqueId"`
-	X                float64    `json:"x"`
-	Y                float64    `json:"y"`
-	Z                float64    `json:"z"`
-	ConvexHull2D     []r2.Point `json:"convexHull2D"`
-}
-
 func newInfernoPositionFromInferno(analyzer *Analyzer, inferno *common.Inferno) *InfernoPosition {
 	thrower := inferno.Thrower()
 	if thrower == nil {

@@ -5,19 +5,6 @@ import (
 	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/common"
 )
 
-type Clutch struct {
-	Frame             int            `json:"frame"`
-	Tick              int            `json:"tick"`
-	RoundNumber       int            `json:"roundNumber"`
-	OpponentCount     int            `json:"opponentCount"`
-	Side              constants.Side `json:"side"`
-	HasWon            bool           `json:"hasWon"`
-	ClutcherSteamID64 uint64         `json:"clutcherSteamId"`
-	ClutcherName      string         `json:"clutcherName"`
-	ClutcherSurvived  bool           `json:"clutcherSurvived"`
-	ClutcherKillCount int            `json:"clutcherKillCount"`
-}
-
 func newClutch(analyzer *Analyzer, clutcher *common.Player, side common.Team, opponentCount int) *Clutch {
 	parser := analyzer.parser
 

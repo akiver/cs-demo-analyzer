@@ -12,7 +12,7 @@ import (
 
 func createEbotAnalyzer(analyzer *Analyzer) {
 	match := analyzer.match
-	match.gameModeStr = constants.GameModeStrCompetitive
+	match.SetGameModeStr(constants.GameModeStrCompetitive)
 	parser := analyzer.parser
 	matchStarted := true
 	matchStartDetected := false

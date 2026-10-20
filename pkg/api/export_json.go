@@ -70,5 +70,5 @@ func writeMatchJSON(w io.Writer, match *Match, minify bool) error {
 
 	// The MatchJSON value is marshalled rather than the match so that Match.MarshalJSON, which marshals the whole
 	// document in memory, isn't called.
-	return jsonv2.MarshalWrite(w, match.toJSON(), options...)
+	return jsonv2.MarshalWrite(w, match.ToJSON(), options...)
 }

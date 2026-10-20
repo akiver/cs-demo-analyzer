@@ -8,7 +8,7 @@ import (
 func createFaceItAnalyzer(analyzer *Analyzer) {
 	parser := analyzer.parser
 	match := analyzer.match
-	match.gameModeStr = constants.GameModeStrCompetitive
+	match.SetGameModeStr(constants.GameModeStrCompetitive)
 	matchStarted := false
 
 	analyzer.matchStarted = func() bool {

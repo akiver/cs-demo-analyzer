@@ -6,7 +6,7 @@ import (
 
 func createPraccAnalyzer(analyzer *Analyzer) {
 	match := analyzer.match
-	match.gameModeStr = constants.GameModeStrCompetitive
+	match.SetGameModeStr(constants.GameModeStrCompetitive)
 	parser := analyzer.parser
 	matchStarted := true // PRACC servers start demo recording only when the match really starts
 

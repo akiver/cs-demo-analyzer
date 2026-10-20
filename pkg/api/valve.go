@@ -12,7 +12,7 @@ func createValveAnalyzer(analyzer *Analyzer) {
 	analyzer.matchStarted = parser.GameState().IsMatchStarted
 
 	parser.RegisterNetMessageHandler(func(srvInfo *msg.CSVCMsg_ServerInfo) {
-		match.gameModeStr = constants.GameModeStr(srvInfo.GameSessionConfig.GetGamemode())
+		match.SetGameModeStr(constants.GameModeStr(srvInfo.GameSessionConfig.GetGamemode()))
 	})
 
 	parser.RegisterEventHandler(func(event events.MatchStart) {

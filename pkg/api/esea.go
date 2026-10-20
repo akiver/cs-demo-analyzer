@@ -18,7 +18,7 @@ const (
 func createEseaAnalyzer(analyzer *Analyzer) {
 	parser := analyzer.parser
 	match := analyzer.match
-	match.gameModeStr = constants.GameModeStrCompetitive
+	match.SetGameModeStr(constants.GameModeStrCompetitive)
 	matchStarted := false
 	playerSwapTickDetected := -1      // Keep track of the last tick detected that contains a player Team swap, used to detect teams side switch.
 	playerSwappedAtTickCount := 0     // How many players have been swapped at the same tick, used to detect teams side switch.
@@ -71,7 +71,7 @@ func createEseaAnalyzer(analyzer *Analyzer) {
 			}
 
 			if shouldSwapTeams {
-				match.swapTeams()
+				match.SwapTeams()
 				analyzer.currentRound.TeamASide = *match.TeamA.CurrentSide
 				analyzer.currentRound.TeamBSide = *match.TeamB.CurrentSide
 				shouldSwapTeams = false

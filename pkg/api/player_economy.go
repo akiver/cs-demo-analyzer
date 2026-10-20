@@ -5,17 +5,6 @@ import (
 	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/common"
 )
 
-type PlayerEconomy struct {
-	RoundNumber    int                   `json:"roundNumber"`
-	Name           string                `json:"name"`
-	SteamID64      uint64                `json:"steamId"`
-	StartMoney     int                   `json:"startMoney"`
-	MoneySpent     int                   `json:"moneySpent"`
-	EquipmentValue int                   `json:"equipmentValue"`
-	Type           constants.EconomyType `json:"type"`
-	PlayerSide     constants.Side        `json:"playerSide"`
-}
-
 func newPlayerEconomy(analyzer *Analyzer, player *common.Player) *PlayerEconomy {
 	startMoney := player.Money()
 	// eBot demos may start just after the end of the 1st round freeze time.

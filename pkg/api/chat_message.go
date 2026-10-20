@@ -6,17 +6,6 @@ import (
 	events "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/events"
 )
 
-type ChatMessage struct {
-	Frame           int            `json:"frame"`
-	Tick            int            `json:"tick"`
-	RoundNumber     int            `json:"roundNumber"`
-	Message         string         `json:"message"`
-	SenderSteamID64 uint64         `json:"senderSteamId"`
-	SenderName      string         `json:"senderName"`
-	SenderSide      constants.Side `json:"senderSide"`
-	IsSenderAlive   bool           `json:"isSenderAlive"`
-}
-
 func newChatMessageFromGameEvent(analyzer *Analyzer, event events.ChatMessage) *ChatMessage {
 	parser := analyzer.parser
 	return &ChatMessage{
