@@ -70,6 +70,13 @@ type Analyzer struct {
 	playerWeaponsScratch playerWeapons
 	// Scratch slice for sortedEntityIDs(), re-used across frames.
 	entityIDsScratch []int
+	// Used to detect weapons bought by players during buy time.
+	// There is no "player buy" event available, instead we use the "item_pickup" event which occurs when a player pickup a weapon at any time in the game.
+	// Since it's possible to buy and drop a weapon to a teammate and so trigger a new "item_pickup" event, it would result in a wrong weapon buy detection.
+	// To prevent it, this slice contains all unique weapons ids that players had at the beginning of the current round and it's updated when a player buy a weapon.
+	weaponsBoughtUniqueIDs []string
+	// The last weapon inspection of each player, see isInspectingWeapon().
+	weaponInspections map[*Player]*weaponInspectionData
 }
 
 // sortedEntityIDs returns the keys of a map of entities by entity ID in ascending order, to range over the map in a
@@ -150,12 +157,13 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 		infernoHulls:              map[common.UniqueID]*infernoHull{},
 		playerWeapons:             map[*common.Player]*playerWeapons{},
 		lastGrenadeThrownByPlayer: make(map[uint64]*Shot),
+		weaponInspections:         make(map[*Player]*weaponInspectionData),
 		playersUntyingAnHostage:   make(map[uint64]int),
 		postProcess:               defaultPostProcess,
 	}
 
 	analyzer.currentRound = &Round{
-		analyzer:           analyzer,
+		match:              analyzer.match,
 		Number:             1,
 		StartTick:          1,
 		StartFrame:         1,
@@ -307,23 +315,24 @@ func (analyzer *Analyzer) reset() {
 	analyzer.clutch1 = nil
 	analyzer.clutch2 = nil
 	analyzer.match.reset()
+	analyzer.weaponInspections = make(map[*Player]*weaponInspectionData)
 	analyzer.updateTeamNames()
 	for _, player := range analyzer.match.PlayersBySteamID {
 		player.reset()
 	}
 
+	analyzer.weaponsBoughtUniqueIDs = nil
 	analyzer.currentRound = &Round{
-		analyzer:               analyzer,
-		Number:                 1,
-		StartTick:              1,
-		StartFrame:             1,
-		FreezeTimeEndFrame:     -1,
-		FreezeTimeEndTick:      -1,
-		TeamASide:              *analyzer.match.TeamA.CurrentSide,
-		TeamBSide:              *analyzer.match.TeamB.CurrentSide,
-		TeamAName:              analyzer.match.TeamA.Name,
-		TeamBName:              analyzer.match.TeamB.Name,
-		weaponsBoughtUniqueIds: nil,
+		match:              analyzer.match,
+		Number:             1,
+		StartTick:          1,
+		StartFrame:         1,
+		FreezeTimeEndFrame: -1,
+		FreezeTimeEndTick:  -1,
+		TeamASide:          *analyzer.match.TeamA.CurrentSide,
+		TeamBSide:          *analyzer.match.TeamB.CurrentSide,
+		TeamAName:          analyzer.match.TeamA.Name,
+		TeamBName:          analyzer.match.TeamB.Name,
 	}
 	analyzer.createPlayersEconomies()
 }
@@ -394,7 +403,7 @@ func (analyzer *Analyzer) registerPlayer(player *common.Player, teamState *commo
 	}
 
 	analyzer.removeCoach(player.SteamID64)
-	newPlayer := NewPlayer(analyzer, playerTeam, *player)
+	newPlayer := newPlayer(analyzer, playerTeam, *player)
 	match.PlayersBySteamID[player.SteamID64] = newPlayer
 }
 
@@ -554,7 +563,7 @@ func (analyzer *Analyzer) computePlayersEconomies() {
 			continue
 		}
 
-		economy.updateValues(analyzer, player)
+		analyzer.updatePlayerEconomy(economy, player)
 	}
 }
 
@@ -565,7 +574,7 @@ func (analyzer *Analyzer) createOrUpdatePlayerEconomy(player *common.Player) {
 		economy = newPlayerEconomy(analyzer, player)
 		match.PlayerEconomies = append(match.PlayerEconomies, economy)
 	} else {
-		economy.updateValues(analyzer, player)
+		analyzer.updatePlayerEconomy(economy, player)
 	}
 }
 
@@ -682,17 +691,17 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 		}
 
 		currentRound := analyzer.currentRound
-		isDroppedWeapon := slice.Contains(currentRound.weaponsBoughtUniqueIds, event.Weapon.UniqueID().String())
+		isDroppedWeapon := slice.Contains(analyzer.weaponsBoughtUniqueIDs, event.Weapon.UniqueID().String())
 		if isDroppedWeapon {
 			return
 		}
 
-		isBuyTimeEnded := currentRound.secondsPassedSinceRoundStart(analyzer.buyTimeSeconds)
+		isBuyTimeEnded := analyzer.secondsPassedSinceRoundStart(currentRound, analyzer.buyTimeSeconds)
 		if isBuyTimeEnded {
 			return
 		}
 
-		currentRound.weaponsBoughtUniqueIds = append(currentRound.weaponsBoughtUniqueIds, event.Weapon.UniqueID().String())
+		analyzer.weaponsBoughtUniqueIDs = append(analyzer.weaponsBoughtUniqueIDs, event.Weapon.UniqueID().String())
 		match.PlayersBuy = append(match.PlayersBuy, newPlayerBuy(analyzer, event))
 	})
 
@@ -711,7 +720,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 		shouldComputeEconomy := analyzer.lastFreezeTimeEndTick != -1 && analyzer.secondsHasPassedSinceTick(equipmentValueDelaySeconds, analyzer.lastFreezeTimeEndTick)
 		if shouldComputeEconomy {
 			analyzer.computePlayersEconomies()
-			analyzer.currentRound.computeTeamsEconomy()
+			analyzer.computeTeamsEconomy(analyzer.currentRound)
 			analyzer.lastFreezeTimeEndTick = -1
 		}
 	})
@@ -769,7 +778,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 		}
 
 		analyzer.handleRoundEnd(event.Winner)
-		analyzer.currentRound.updateEndReasonFromRoundEndEvent(event, analyzer.match.MapName)
+		updateRoundEndReason(analyzer.currentRound, event, analyzer.match.MapName)
 	})
 
 	missingGameEventDescriptorsWarnCount := 0
@@ -1182,7 +1191,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 			return
 		}
 
-		player.startWeaponInspection(analyzer.currentTick())
+		analyzer.startWeaponInspection(player)
 	})
 
 	// CS:GO only
@@ -1196,7 +1205,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 			return
 		}
 
-		player.stopWeaponInspection(analyzer.currentTick())
+		analyzer.stopWeaponInspection(player)
 	})
 
 	// weaponInspectCancelButtons are the buttons (actions) that cancel an ongoing weapon inspection.
@@ -1219,13 +1228,13 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 		}
 
 		if event.Player.IsPressingButton(common.ButtonLookAtWeapon) {
-			player.startWeaponInspection(analyzer.currentTick())
+			analyzer.startWeaponInspection(player)
 			return
 		}
 
 		for _, button := range weaponInspectCancelButtons {
 			if event.Player.IsPressingButton(button) {
-				player.stopWeaponInspection(analyzer.currentTick())
+				analyzer.stopWeaponInspection(player)
 				break
 			}
 		}
