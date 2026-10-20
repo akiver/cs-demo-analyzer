@@ -17,19 +17,19 @@ type weaponInspectionData struct {
 
 type Player struct {
 	match                *Match
-	SteamID64            uint64       `json:"steamId"`
-	UserID               int          `json:"userId"` // +1 to get the player's slot
-	Name                 string       `json:"name"`
-	Score                int          `json:"score"`
-	Team                 *Team        `json:"team"`
-	MvpCount             int          `json:"mvpCount"`
-	RankType             int          `json:"rankType"`
-	Rank                 int          `json:"rank"`
-	OldRank              int          `json:"oldRank"`
-	WinCount             int          `json:"winCount"`
-	CrosshairShareCode   string       `json:"crosshairShareCode"`
-	Color                common.Color `json:"color"`
-	InspectWeaponCount   int          `json:"inspectWeaponCount"`
+	SteamID64            uint64          `json:"steamId"`
+	UserID               int             `json:"userId"` // +1 to get the player's slot
+	Name                 string          `json:"name"`
+	Score                int             `json:"score"`
+	Team                 *Team           `json:"team"`
+	MvpCount             int             `json:"mvpCount"`
+	RankType             int             `json:"rankType"`
+	Rank                 int             `json:"rank"`
+	OldRank              int             `json:"oldRank"`
+	WinCount             int             `json:"winCount"`
+	CrosshairShareCode   string          `json:"crosshairShareCode"`
+	Color                constants.Color `json:"color"`
+	InspectWeaponCount   int             `json:"inspectWeaponCount"`
 	lastWeaponInspection weaponInspectionData
 }
 
@@ -789,7 +789,7 @@ func (player *Player) reset() {
 
 func NewPlayer(analyzer *Analyzer, currentTeam common.Team, player common.Player) *Player {
 	var team *Team
-	if *analyzer.match.TeamA.CurrentSide == currentTeam {
+	if *analyzer.match.TeamA.CurrentSide == constants.Side(currentTeam) {
 		team = analyzer.match.TeamA
 	} else {
 		team = analyzer.match.TeamB
@@ -809,7 +809,7 @@ func NewPlayer(analyzer *Analyzer, currentTeam common.Team, player common.Player
 		Name:               strings.ReplaceUTF8ByteSequences(player.Name),
 		Team:               team,
 		CrosshairShareCode: player.CrosshairCode(),
-		Color:              color,
+		Color:              constants.Color(color),
 		RankType:           player.RankType(),
 		Rank:               rank,
 		OldRank:            rank,

@@ -17,7 +17,7 @@ type Kill struct {
 	WeaponName               constants.WeaponName `json:"weaponName"`
 	KillerName               string               `json:"killerName"`
 	KillerSteamID64          uint64               `json:"killerSteamId"`
-	KillerSide               common.Team          `json:"killerSide"`
+	KillerSide               constants.Side       `json:"killerSide"`
 	KillerTeamName           string               `json:"killerTeamName"`
 	KillerX                  float64              `json:"killerX"`
 	KillerY                  float64              `json:"killerY"`
@@ -27,7 +27,7 @@ type Kill struct {
 	IsKillerControllingBot   bool                 `json:"isKillerControllingBot"`
 	VictimName               string               `json:"victimName"`
 	VictimSteamID64          uint64               `json:"victimSteamId"`
-	VictimSide               common.Team          `json:"victimSide"`
+	VictimSide               constants.Side       `json:"victimSide"`
 	VictimTeamName           string               `json:"victimTeamName"`
 	VictimX                  float64              `json:"victimX"`
 	VictimY                  float64              `json:"victimY"`
@@ -38,7 +38,7 @@ type Kill struct {
 	IsVictimInspectingWeapon bool                 `json:"isVictimInspectingWeapon"`
 	AssisterName             string               `json:"assisterName"`
 	AssisterSteamID64        uint64               `json:"assisterSteamId"`
-	AssisterSide             common.Team          `json:"assisterSide"`
+	AssisterSide             constants.Side       `json:"assisterSide"`
 	AssisterTeamName         string               `json:"assisterTeamName"`
 	AssisterX                float64              `json:"assisterX"`
 	AssisterY                float64              `json:"assisterY"`
@@ -87,7 +87,7 @@ func newKillFromGameEvent(analyzer *Analyzer, event events.Kill) *Kill {
 		killerName = event.Killer.Name
 		killerSteamID = event.Killer.SteamID64
 		killerSide = event.Killer.Team
-		killerTeamName = match.Team(event.Killer.Team).Name
+		killerTeamName = match.Team(constants.Side(event.Killer.Team)).Name
 		isKillerControllingBot = event.Killer.IsControllingBot()
 		killerX = event.Killer.Position().X
 		killerY = event.Killer.Position().Y
@@ -128,7 +128,7 @@ func newKillFromGameEvent(analyzer *Analyzer, event events.Kill) *Kill {
 		assisterName = event.Assister.Name
 		assisterSteamID = event.Assister.SteamID64
 		assisterSide = event.Assister.Team
-		assisterTeamName = match.Team(event.Assister.Team).Name
+		assisterTeamName = match.Team(constants.Side(event.Assister.Team)).Name
 		isAssisterControllingBot = event.Assister.IsControllingBot()
 		assisterX = event.Assister.Position().X
 		assisterY = event.Assister.Position().Y
@@ -148,15 +148,15 @@ func newKillFromGameEvent(analyzer *Analyzer, event events.Kill) *Kill {
 		RoundNumber:              analyzer.currentRound.Number,
 		KillerName:               killerName,
 		KillerSteamID64:          killerSteamID,
-		KillerSide:               killerSide,
+		KillerSide:               constants.Side(killerSide),
 		KillerTeamName:           killerTeamName,
 		VictimName:               event.Victim.Name,
 		VictimSteamID64:          event.Victim.SteamID64,
-		VictimSide:               event.Victim.Team,
-		VictimTeamName:           match.Team(event.Victim.Team).Name,
+		VictimSide:               constants.Side(event.Victim.Team),
+		VictimTeamName:           match.Team(constants.Side(event.Victim.Team)).Name,
 		AssisterName:             assisterName,
 		AssisterSteamID64:        assisterSteamID,
-		AssisterSide:             assisterSide,
+		AssisterSide:             constants.Side(assisterSide),
 		AssisterTeamName:         assisterTeamName,
 		IsHeadshot:               event.IsHeadshot,
 		PenetratedObjects:        event.PenetratedObjects,

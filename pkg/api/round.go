@@ -11,32 +11,32 @@ import (
 
 type Round struct {
 	analyzer            *Analyzer
-	Number              int                   `json:"number"`
-	StartTick           int                   `json:"startTick"`
-	StartFrame          int                   `json:"startFrame"`
-	FreezeTimeEndTick   int                   `json:"freezeTimeEndTick"`
-	FreezeTimeEndFrame  int                   `json:"freezeTimeEndFrame"`
-	EndTick             int                   `json:"endTick"`
-	EndFrame            int                   `json:"endFrame"`
-	EndOfficiallyTick   int                   `json:"endOfficiallyTick"`
-	EndOfficiallyFrame  int                   `json:"endOfficiallyFrame"`
-	OvertimeNumber      int                   `json:"overtimeNumber"`
-	TeamAName           string                `json:"teamAName"`
-	TeamBName           string                `json:"teamBName"`
-	TeamAScore          int                   `json:"teamAScore"`
-	TeamBScore          int                   `json:"teamBScore"`
-	TeamASide           common.Team           `json:"teamASide"`
-	TeamBSide           common.Team           `json:"teamBSide"`
-	TeamAEquipmentValue int                   `json:"teamAEquipmentValue"`
-	TeamBEquipmentValue int                   `json:"teamBEquipmentValue"`
-	TeamAMoneySpent     int                   `json:"teamAMoneySpent"`
-	TeamBMoneySpent     int                   `json:"teamBmoneySpent"`
-	TeamAEconomyType    constants.EconomyType `json:"teamAEconomyType"`
-	TeamBEconomyType    constants.EconomyType `json:"teamBEconomyType"`
-	Duration            int64                 `json:"duration"`
-	EndReason           events.RoundEndReason `json:"endReason"`
-	WinnerName          string                `json:"winnerName"`
-	WinnerSide          common.Team           `json:"winnerSide"`
+	Number              int                      `json:"number"`
+	StartTick           int                      `json:"startTick"`
+	StartFrame          int                      `json:"startFrame"`
+	FreezeTimeEndTick   int                      `json:"freezeTimeEndTick"`
+	FreezeTimeEndFrame  int                      `json:"freezeTimeEndFrame"`
+	EndTick             int                      `json:"endTick"`
+	EndFrame            int                      `json:"endFrame"`
+	EndOfficiallyTick   int                      `json:"endOfficiallyTick"`
+	EndOfficiallyFrame  int                      `json:"endOfficiallyFrame"`
+	OvertimeNumber      int                      `json:"overtimeNumber"`
+	TeamAName           string                   `json:"teamAName"`
+	TeamBName           string                   `json:"teamBName"`
+	TeamAScore          int                      `json:"teamAScore"`
+	TeamBScore          int                      `json:"teamBScore"`
+	TeamASide           constants.Side           `json:"teamASide"`
+	TeamBSide           constants.Side           `json:"teamBSide"`
+	TeamAEquipmentValue int                      `json:"teamAEquipmentValue"`
+	TeamBEquipmentValue int                      `json:"teamBEquipmentValue"`
+	TeamAMoneySpent     int                      `json:"teamAMoneySpent"`
+	TeamBMoneySpent     int                      `json:"teamBmoneySpent"`
+	TeamAEconomyType    constants.EconomyType    `json:"teamAEconomyType"`
+	TeamBEconomyType    constants.EconomyType    `json:"teamBEconomyType"`
+	Duration            int64                    `json:"duration"`
+	EndReason           constants.RoundEndReason `json:"endReason"`
+	WinnerName          string                   `json:"winnerName"`
+	WinnerSide          constants.Side           `json:"winnerSide"`
 	// Used to detect weapons bought by players during buy time.
 	// There is no "player buy" event available, instead we use the "item_pickup" event which occurs when a player pickup a weapon at any time in the game.
 	// Since it's possible to buy and drop a weapon to a teammate and so trigger a new "item_pickup" event, it would result in a wrong weapon buy detection.
@@ -61,11 +61,11 @@ func (round *Round) MarshalJSON() ([]byte, error) {
 }
 
 func (round *Round) StartMoneyTeamA() int {
-	return round.getTeamStartMoney(round.TeamASide)
+	return round.getTeamStartMoney(common.Team(round.TeamASide))
 }
 
 func (round *Round) StartMoneyTeamB() int {
-	return round.getTeamStartMoney(round.TeamBSide)
+	return round.getTeamStartMoney(common.Team(round.TeamBSide))
 }
 
 // This indicates if x seconds have passed since the beginning of the round.
@@ -78,7 +78,7 @@ func (round *Round) secondsPassedSinceRoundStart(seconds int) bool {
 func (round *Round) getTeamStartMoney(side common.Team) int {
 	total := 0
 	for _, economy := range round.analyzer.match.PlayerEconomies {
-		if economy.RoundNumber == round.Number && economy.PlayerSide == side {
+		if economy.RoundNumber == round.Number && economy.PlayerSide == constants.Side(side) {
 			total += economy.StartMoney
 		}
 	}
@@ -91,12 +91,12 @@ func (round *Round) computeTeamsEconomy() {
 	match := analyzer.match
 	gameState := analyzer.parser.GameState()
 
-	stateTeamA := gameState.Team(*match.TeamA.CurrentSide)
+	stateTeamA := gameState.Team(common.Team(*match.TeamA.CurrentSide))
 	round.TeamAMoneySpent = stateTeamA.MoneySpentThisRound()
 	round.TeamAEquipmentValue = stateTeamA.CurrentEquipmentValue()
 	round.TeamAEconomyType = computeTeamEconomyType(analyzer, stateTeamA)
 
-	stateTeamB := gameState.Team(*match.TeamB.CurrentSide)
+	stateTeamB := gameState.Team(common.Team(*match.TeamB.CurrentSide))
 	round.TeamBMoneySpent = stateTeamB.MoneySpentThisRound()
 	round.TeamBEquipmentValue = stateTeamB.CurrentEquipmentValue()
 	round.TeamBEconomyType = computeTeamEconomyType(analyzer, stateTeamB)
@@ -119,16 +119,16 @@ func getEndReasonFromRoundEndMessage(message string) events.RoundEndReason {
 }
 
 func (round *Round) updateEndReasonFromRoundEndEvent(event events.RoundEnd, mapName string) {
-	round.EndReason = event.Reason
+	round.EndReason = constants.RoundEndReason(event.Reason)
 
 	if round.EndReason == roundEndReasonUnassigned {
-		round.EndReason = getEndReasonFromRoundEndMessage(event.Message)
+		round.EndReason = constants.RoundEndReason(getEndReasonFromRoundEndMessage(event.Message))
 	}
 
 	// Encountered with a demo from 2014.
 	// When CTs won because the bomb exploded and the Ts saved their weapons, the reason may be "HostagesRescued" instead of "TargetSaved" on defuse maps.
-	if round.EndReason == events.RoundEndReasonHostagesRescued && strings.HasPrefix(mapName, "de_") {
-		round.EndReason = events.RoundEndReasonTargetSaved
+	if round.EndReason == constants.RoundEndReasonHostagesRescued && strings.HasPrefix(mapName, "de_") {
+		round.EndReason = constants.RoundEndReasonTargetSaved
 	}
 }
 

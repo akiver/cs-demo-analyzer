@@ -16,7 +16,7 @@ type Damage struct {
 	HealthDamage             int                  `json:"healthDamage"`
 	ArmorDamage              int                  `json:"armorDamage"`
 	AttackerSteamID64        uint64               `json:"attackerSteamId"`
-	AttackerSide             common.Team          `json:"attackerSide"`
+	AttackerSide             constants.Side       `json:"attackerSide"`
 	AttackerTeamName         string               `json:"attackerTeamName"`
 	IsAttackerControllingBot bool                 `json:"isAttackerControllingBot"`
 	VictimHealth             int                  `json:"victimHealth"`
@@ -24,10 +24,10 @@ type Damage struct {
 	VictimArmor              int                  `json:"victimArmor"`
 	VictimNewArmor           int                  `json:"victimNewArmor"`
 	VictimSteamID64          uint64               `json:"victimSteamId"`
-	VictimSide               common.Team          `json:"victimSide"`
+	VictimSide               constants.Side       `json:"victimSide"`
 	VictimTeamName           string               `json:"victimTeamName"`
 	IsVictimControllingBot   bool                 `json:"isVictimControllingBot"`
-	HitGroup                 events.HitGroup      `json:"hitgroup"`
+	HitGroup                 constants.HitGroup   `json:"hitgroup"`
 	WeaponName               constants.WeaponName `json:"weaponName"`
 	WeaponType               constants.WeaponType `json:"weaponType"`
 	WeaponUniqueID           string               `json:"weaponUniqueId"`
@@ -71,7 +71,7 @@ func newDamageFromGameEvent(analyzer *Analyzer, event events.PlayerHurt) *Damage
 	if event.Attacker != nil {
 		attackerSteamID = event.Attacker.SteamID64
 		attackerSide = event.Attacker.Team
-		attackerTeamName = match.Team(event.Attacker.Team).Name
+		attackerTeamName = match.Team(constants.Side(event.Attacker.Team)).Name
 		isAttackerControllingBot = event.Attacker.IsControllingBot()
 	}
 
@@ -87,15 +87,15 @@ func newDamageFromGameEvent(analyzer *Analyzer, event events.PlayerHurt) *Damage
 		VictimNewArmor:           math.Max(0, event.Armor),
 		IsVictimControllingBot:   event.Player.IsControllingBot(),
 		AttackerSteamID64:        attackerSteamID,
-		AttackerSide:             attackerSide,
+		AttackerSide:             constants.Side(attackerSide),
 		AttackerTeamName:         attackerTeamName,
 		IsAttackerControllingBot: isAttackerControllingBot,
 		VictimSteamID64:          event.Player.SteamID64,
-		VictimSide:               event.Player.Team,
-		VictimTeamName:           match.Team(event.Player.Team).Name,
+		VictimSide:               constants.Side(event.Player.Team),
+		VictimTeamName:           match.Team(constants.Side(event.Player.Team)).Name,
 		WeaponName:               equipmentToWeaponName[event.Weapon.Type],
 		WeaponType:               getEquipmentWeaponType(*event.Weapon),
-		HitGroup:                 event.HitGroup,
+		HitGroup:                 constants.HitGroup(event.HitGroup),
 		WeaponUniqueID:           event.Weapon.UniqueID().String(),
 	}
 }

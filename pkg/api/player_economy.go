@@ -13,7 +13,7 @@ type PlayerEconomy struct {
 	MoneySpent     int                   `json:"moneySpent"`
 	EquipmentValue int                   `json:"equipmentValue"`
 	Type           constants.EconomyType `json:"type"`
-	PlayerSide     common.Team           `json:"playerSide"`
+	PlayerSide     constants.Side        `json:"playerSide"`
 }
 
 func newPlayerEconomy(analyzer *Analyzer, player *common.Player) *PlayerEconomy {
@@ -32,14 +32,14 @@ func newPlayerEconomy(analyzer *Analyzer, player *common.Player) *PlayerEconomy 
 		EquipmentValue: player.EquipmentValueCurrent(),
 		MoneySpent:     player.MoneySpentThisRound(),
 		Type:           computePlayerEconomyType(analyzer, player),
-		PlayerSide:     player.Team,
+		PlayerSide:     constants.Side(player.Team),
 	}
 
 	return economy
 }
 
 func (economy *PlayerEconomy) updateValues(analyzer *Analyzer, player *common.Player) {
-	economy.PlayerSide = player.Team
+	economy.PlayerSide = constants.Side(player.Team)
 	economy.EquipmentValue = player.EquipmentValueCurrent()
 	economy.MoneySpent = player.MoneySpentThisRound()
 	economy.Type = computePlayerEconomyType(analyzer, player)

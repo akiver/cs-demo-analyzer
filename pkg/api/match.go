@@ -9,7 +9,6 @@ import (
 	"github.com/akiver/cs-demo-analyzer/internal/math"
 	"github.com/akiver/cs-demo-analyzer/internal/slice"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
-	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/common"
 )
 
 // Match is the root struct that contains relevant data from a demo.
@@ -121,8 +120,8 @@ func (match Match) Players() []*Player {
 }
 
 // This returns the team currently on the given side.
-func (match Match) Team(team common.Team) *Team {
-	if *match.TeamA.CurrentSide == team {
+func (match Match) Team(team constants.Side) *Team {
+	if *match.TeamA.CurrentSide == constants.Side(team) {
 		return match.TeamA
 	}
 
@@ -134,7 +133,7 @@ func (match Match) Team(team common.Team) *Team {
 func (match Match) KillCount() int {
 	killCount := 0
 	for _, kill := range match.Kills {
-		if kill.KillerSteamID64 != 0 && kill.KillerName != kill.VictimName && kill.KillerName != common.EqWorld.String() {
+		if kill.KillerSteamID64 != 0 && kill.KillerName != kill.VictimName && kill.KillerName != constants.WeaponWorld.String() {
 			killCount++
 		}
 	}
@@ -245,8 +244,8 @@ func (match *Match) computeResultStats() {
 }
 
 func (match *Match) initTeams() {
-	initialSideTeamA := common.TeamCounterTerrorists
-	initialSideTeamB := common.TeamTerrorists
+	initialSideTeamA := constants.SideCounterTerrorists
+	initialSideTeamB := constants.SideTerrorists
 	teamA := &Team{
 		Name:        "Team A",
 		Letter:      "A",
