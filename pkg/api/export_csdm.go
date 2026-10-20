@@ -11,6 +11,7 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
+	"github.com/akiver/cs-demo-analyzer/internal/modelaccess"
 	"math"
 	"os"
 	"slices"
@@ -24,7 +25,6 @@ import (
 	"github.com/akiver/cs-demo-analyzer/internal/slice"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
 	"github.com/golang/geo/r2"
-	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
 )
 
 // Weapons order may change between frames, sorting them avoids detecting false state changes.
@@ -161,10 +161,10 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 
 	var writeMatch = func() {
 		winnerName := ""
-		winnerSide := common.TeamUnassigned
+		winnerSide := constants.SideUnassigned
 		if match.Winner != nil {
 			winnerName = match.Winner.Name
-			winnerSide = common.Team(*match.Winner.CurrentSide)
+			winnerSide = *match.Winner.CurrentSide
 		}
 		line := []string{
 			match.Checksum,
@@ -276,7 +276,7 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		}
 		type playerState struct {
 			isAlive           bool
-			side              common.Team
+			side              constants.Side
 			money             int
 			health            int
 			armor             int
@@ -373,7 +373,7 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 
 			state := playerState{
 				isAlive:           position.IsAlive,
-				side:              common.Team(position.Side),
+				side:              position.Side,
 				money:             position.Money,
 				health:            position.Health,
 				armor:             position.Armor,
@@ -611,7 +611,7 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		var orderedPositions []*chickenRoundPositions
 		for _, position := range match.ChickenPositions {
 			key := chickenRoundKey{
-				chickenID:   position.chickenID,
+				chickenID:   modelaccess.ChickenID(position),
 				roundNumber: position.RoundNumber,
 			}
 			chicken, exists := positionsPerChicken[key]
@@ -1222,15 +1222,16 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 			stateTicks  []byte
 			states      []byte
 			lastTick    int
-			lastState   common.HostageState
+			lastState   constants.HostageState
 		}
 
 		positionsPerHostage := make(map[hostageRoundKey]*hostageRoundPositions)
 		var orderedPositions []*hostageRoundPositions
 		for _, position := range match.HostagePositions {
+			entityID, serialNum := modelaccess.HostageEntity(position)
 			key := hostageRoundKey{
-				entityID:    position.entityID,
-				serialNum:   position.serialNum,
+				entityID:    entityID,
+				serialNum:   serialNum,
 				roundNumber: position.RoundNumber,
 			}
 			hostage, exists := positionsPerHostage[key]
@@ -1245,10 +1246,10 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 				continue
 			}
 			hostage.lastTick = position.Tick
-			if !exists || position.State != constants.HostageState(hostage.lastState) {
+			if !exists || position.State != hostage.lastState {
 				hostage.stateTicks = appendInt32(hostage.stateTicks, position.Tick)
 				hostage.states = appendInt32(hostage.states, int(position.State))
-				hostage.lastState = common.HostageState(position.State)
+				hostage.lastState = position.State
 			}
 		}
 
