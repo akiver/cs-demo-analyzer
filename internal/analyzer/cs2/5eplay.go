@@ -1,8 +1,8 @@
 package cs2
 
 import (
-	events "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/events"
-	st "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/sendtables"
+	events "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/events"
+	st "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/sendtables"
 )
 
 func createFiveEPlayAnalyzer(analyzer *Analyzer) {
@@ -34,9 +34,9 @@ func createFiveEPlayAnalyzer(analyzer *Analyzer) {
 	})
 
 	parser.RegisterEventHandler(func(events.DataTablesParsed) {
-		parser.ServerClasses().FindByName("CCSGameRulesProxy").OnEntityCreated(func(entity st.Entity) {
+		parser.ServerClasses().FindByName("CCSGameRulesProxy").OnEntityCreated(func(entity *st.Entity) {
 			// Match start detection when there was a knife round - the game really starts after a restart.
-			var gameRestartProp st.Property
+			var gameRestartProp *st.Property
 			if analyzer.isSource2 {
 				gameRestartProp = entity.Property("m_pGameRules.m_bGameRestart")
 			} else {

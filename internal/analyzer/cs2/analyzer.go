@@ -1,12 +1,14 @@
 package cs2
 
 import (
+	"context"
 	"errors"
 	"fmt"
 	"github.com/akiver/cs-demo-analyzer/internal/modelaccess"
 	"io"
 	"slices"
 	"strconv"
+	"time"
 
 	"github.com/akiver/cs-demo-analyzer/internal/analyzer/shared"
 
@@ -16,10 +18,12 @@ import (
 	"github.com/akiver/cs-demo-analyzer/internal/strings"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
 	"github.com/golang/geo/r3"
-	dem "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs"
-	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
-	events "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/events"
-	st "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/sendtables"
+	dem "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/common"
+	events "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/events"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/msg"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/option"
+	st "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/sendtables"
 )
 
 const (
@@ -33,7 +37,7 @@ const (
 )
 
 type Analyzer struct {
-	parser             dem.Parser
+	parser             *dem.Parser
 	match              *Match
 	currentRound       *Round
 	matchStarted       func() bool
@@ -80,6 +84,9 @@ type Analyzer struct {
 	weaponsBoughtUniqueIDs []string
 	// The last weapon inspection of each player, see isInspectingWeapon().
 	weaponInspections map[*Player]*weaponInspectionData
+	// Stops parsing with the given error, which is returned by the parser.
+	// Handlers must call it instead of panicking: the parser re-panics handler panics on the caller.
+	cancelParsing context.CancelCauseFunc
 }
 
 // sortedEntityIDs returns the keys of a map of entities by entity ID in ascending order, to range over the map in a
@@ -95,21 +102,18 @@ func sortedEntityIDs[T any](scratch []int, entities map[int]T) []int {
 	return ids
 }
 
-// Analyze analyzes a CS:GO demo with demoinfocs-golang v4.
+// Analyze analyzes a CS2 demo with demoinfocs-golang v6.
 // file is the demo's content, demo what is known about it before parsing (see internal/demo).
 func Analyze(file io.Reader, demo *d.Demo, source constants.DemoSource, includePositions bool) (*Match, error) {
-	parserConfig := dem.DefaultParserConfig
-	parserConfig.NetMessageDecryptionKey = demo.NetMessageDecryptionPublicKey
-	parserConfig.DisableMimicSource1Events = demo.Type == constants.DemoTypePOV
-	parserConfig.EagerVelocityTracking = true
-
-	parser := dem.NewParserWithConfig(file, parserConfig)
+	parser := dem.NewParser(
+		file,
+		option.NetMessageDecryptionKey(demo.NetMessageDecryptionPublicKey),
+		option.DisableMimicSource1Events(demo.Type == constants.DemoTypePOV),
+		// Older CS2 demos don't network the players velocity, it's derived from their positions which must be tracked
+		// before the first Player.Velocity() call, otherwise it returns 0.
+		option.EagerVelocityTracking(true),
+	)
 	defer parser.Close()
-
-	_, err := parser.ParseHeader()
-	if err != nil {
-		return nil, err
-	}
 
 	if demo.IsSource2() && demo.Type == constants.DemoTypePOV {
 		return nil, errors.New("cs2 pov demos are not supported (CS2POVDemosNotSupported)")
@@ -117,7 +121,11 @@ func Analyze(file io.Reader, demo *d.Demo, source constants.DemoSource, includeP
 
 	match := shared.NewMatch(source, demo)
 
+	ctx, cancelParsing := context.WithCancelCause(context.Background())
+	defer cancelParsing(nil)
+
 	analyzer := &Analyzer{
+		cancelParsing:             cancelParsing,
 		parser:                    parser,
 		match:                     &match,
 		isSource2:                 demo.IsSource2(),
@@ -193,28 +201,39 @@ func Analyze(file io.Reader, demo *d.Demo, source constants.DemoSource, includeP
 		return nil, errors.New("unknown demo source, please specify the source with the -source flag (UnknownSource)")
 	}
 
-	err = parser.ParseToEnd()
-	// Do not stop if the demo is corrupted, usually the error occurs at the end of the parsing.
-	// Depending on how far we were able to parse the demo we may still have data.
-	isCorruptedDemo := errors.Is(err, dem.ErrUnexpectedEndOfDemo)
+	// Playback info for CS2 demos lives in the CDemoFileInfo message at the end of the demo.
+	// demoinfocs v5+ no longer exposes the header, so capture the message ourselves.
+	var fileInfo *msg.CDemoFileInfo
+	parser.RegisterNetMessageHandler(func(m *msg.CDemoFileInfo) {
+		fileInfo = m
+	})
+
+	err := parser.ParseToEnd(ctx)
+	// Do not stop if the demo is truncated or contains data that can't be decoded, usually the error occurs at the
+	// end of the parsing. Depending on how far we were able to parse the demo we may still have data.
+	isCorruptedDemo := errors.Is(err, dem.ErrUnexpectedEndOfDemo) || errors.Is(err, dem.ErrDecodeFailed)
 	if err != nil && !isCorruptedDemo {
 		return nil, err
 	}
 
-	// CS:GO demos have the playback info in their header.
-	// We fallback to the parser's internal values if they're missing.
-	header := parser.Header()
-	match.TickCount = header.PlaybackTicks
+	// Required for CS2 demos, the following data are available only at the end of the parsing in the CDemoFileInfo message.
+	// Unfortunately, some CS2 demos may not contain this message.
+	// We fallback to the parser's internal values in such cases.
+	match.TickCount = int(fileInfo.GetPlaybackTicks())
 	if match.TickCount == 0 {
 		match.TickCount = analyzer.currentTick()
 	}
 
-	match.Duration = header.PlaybackTime
+	match.Duration = time.Duration(fileInfo.GetPlaybackTime()) * time.Second
 	if match.Duration == 0 {
 		match.Duration = parser.CurrentTime()
+		if err == nil {
+			// Truncated to whole seconds, as v4's header fallback did when the demo was parsed to the end.
+			match.Duration = time.Duration(match.Duration.Seconds()) * time.Second
+		}
 	}
 	if match.Duration > 0 {
-		frames := int(header.PlaybackFrames)
+		frames := int(fileInfo.GetPlaybackFrames())
 		if frames == 0 {
 			frames = parser.CurrentFrame()
 		}
@@ -270,10 +289,10 @@ func (analyzer *Analyzer) resetCurrentRound() {
 }
 
 // entityIntProperty returns the int value of the entity property with the given name.
-// It returns false when the property doesn't exist or has never been networked (Source 2 only).
-func entityIntProperty(entity st.Entity, name string) (int, bool) {
+// It returns false when the property doesn't exist or has never been networked.
+func entityIntProperty(entity *st.Entity, name string) (int, bool) {
 	prop, exists := entity.PropertyValue(name)
-	if !exists || (prop.S2 && prop.Any == nil) {
+	if !exists || prop.Any == nil {
 		return 0, false
 	}
 
@@ -723,7 +742,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 		// https://github.com/markus-wa/demoinfocs-golang/pull/460
 		missingGameEventDescriptorsWarnCount += 1
 		if missingGameEventDescriptorsWarnCount >= 20 {
-			panic(errors.New("missing game event descriptors (ErrMissingGameEventDescriptors)"))
+			analyzer.cancelParsing(errors.New("missing game event descriptors (ErrMissingGameEventDescriptors)"))
 		}
 	})
 
@@ -855,7 +874,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 			return
 		}
 
-		analyzer.bombPlantPosition = event.Player.LastAlivePosition
+		analyzer.bombPlantPosition = event.Player.Position()
 
 		bombPlanted := newBombPlanted(analyzer, event)
 		match.BombsPlanted = append(match.BombsPlanted, bombPlanted)
@@ -1115,34 +1134,6 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 		common.ButtonZoom,
 	}
 
-	// CS:GO only
-	parser.RegisterEventHandler(func(event events.PlayerInspectingWeapon) {
-		if !analyzer.matchStarted() || event.Player == nil {
-			return
-		}
-
-		player := analyzer.match.PlayersBySteamID[event.Player.SteamID64]
-		if player == nil {
-			return
-		}
-
-		analyzer.startWeaponInspection(player)
-	})
-
-	// CS:GO only
-	parser.RegisterEventHandler(func(event events.PlayerStopInspectingWeapon) {
-		if !analyzer.matchStarted() || event.Player == nil {
-			return
-		}
-
-		player := analyzer.match.PlayersBySteamID[event.Player.SteamID64]
-		if player == nil {
-			return
-		}
-
-		analyzer.stopWeaponInspection(player)
-	})
-
 	// CS2 only
 	parser.RegisterEventHandler(func(event events.PlayerButtonsStateUpdate) {
 		if !analyzer.matchStarted() || event.Player == nil {
@@ -1179,7 +1170,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 
 	parser.RegisterEventHandler(func(event events.DataTablesParsed) {
 		serverClasses := parser.ServerClasses()
-		serverClasses.FindByName("CChicken").OnEntityCreated(func(entity st.Entity) {
+		serverClasses.FindByName("CChicken").OnEntityCreated(func(entity *st.Entity) {
 			analyzer.chickenCount++
 			chicken := &chickenEntity{
 				id:     analyzer.chickenCount,
@@ -1241,7 +1232,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 			// We don't have the problem with CS2 demos because the parser dispatch bomb events using props updates
 			// rather than game events.
 			// TODO move it to demoinfocs?
-			serverClasses.FindByName("CPlantedC4").OnEntityCreated(func(bombEntity st.Entity) {
+			serverClasses.FindByName("CPlantedC4").OnEntityCreated(func(bombEntity *st.Entity) {
 				// Old CSGO demos don't have these properties (~ before end of 2018).
 				siteProp := bombEntity.Property("m_nBombSite")
 				defuserProp := bombEntity.Property("m_hBombDefuser")
@@ -1287,7 +1278,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 			})
 		}
 
-		serverClasses.FindByName("CCSGameRulesProxy").OnEntityCreated(func(entity st.Entity) {
+		serverClasses.FindByName("CCSGameRulesProxy").OnEntityCreated(func(entity *st.Entity) {
 			// Fallback to detect rounds end for demos missing round end events.
 			// ! Don't use m_eRoundWinReason because it's not available with old demos (at least 2014)
 			roundWinStatusProperty := entity.Property("cs_gamerules_data.m_iRoundWinStatus")

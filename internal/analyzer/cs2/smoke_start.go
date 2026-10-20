@@ -5,7 +5,7 @@ import (
 
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
 
-	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/events"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/events"
 )
 
 func newSmokeStartFromGameEvent(analyzer *Analyzer, event events.SmokeStart) *SmokeStart {

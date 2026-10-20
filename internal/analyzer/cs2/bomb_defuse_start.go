@@ -1,7 +1,7 @@
 package cs2
 
 import (
-	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/common"
 )
 
 func newBombDefuseStart(analyzer *Analyzer, player *common.Player) *BombDefuseStart {
@@ -14,8 +14,8 @@ func newBombDefuseStart(analyzer *Analyzer, player *common.Player) *BombDefuseSt
 		PlanterName:            player.Name,
 		PlanterSteamID64:       player.SteamID64,
 		IsPlayerControllingBot: player.IsControllingBot(),
-		X:                      player.LastAlivePosition.X,
-		Y:                      player.LastAlivePosition.Y,
-		Z:                      player.LastAlivePosition.Z,
+		X:                      player.Position().X,
+		Y:                      player.Position().Y,
+		Z:                      player.Position().Z,
 	}
 }

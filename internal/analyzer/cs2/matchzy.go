@@ -3,9 +3,9 @@ package cs2
 import (
 	"github.com/akiver/cs-demo-analyzer/internal/modelaccess"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
-	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
-	events "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/events"
-	sendtables "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/sendtables"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/common"
+	events "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/events"
+	sendtables "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/sendtables"
 )
 
 func createMatchZyAnalyzer(analyzer *Analyzer) {
@@ -24,13 +24,13 @@ func createMatchZyAnalyzer(analyzer *Analyzer) {
 
 	parser.RegisterEventHandler(func(events.DataTablesParsed) {
 		serverClasses := parser.ServerClasses()
-		serverClasses.FindByName("CCSTeam").OnEntityCreated(func(entity sendtables.Entity) {
+		serverClasses.FindByName("CCSTeam").OnEntityCreated(func(entity *sendtables.Entity) {
 			entity.Property("m_szClanTeamname").OnUpdate(func(value sendtables.PropertyValue) {
 				analyzer.updateTeamNames()
 			})
 		})
 
-		serverClasses.FindByName("CCSGameRulesProxy").OnEntityCreated(func(entity sendtables.Entity) {
+		serverClasses.FindByName("CCSGameRulesProxy").OnEntityCreated(func(entity *sendtables.Entity) {
 			entity.Property("m_pGameRules.m_eRoundEndReason").OnUpdate(func(value sendtables.PropertyValue) {
 				if value.Int() == int(events.RoundEndReasonDraw) {
 					roundEndWinnerTeam := entity.PropertyValueMust("m_pGameRules.m_iRoundEndWinnerTeam").Int()

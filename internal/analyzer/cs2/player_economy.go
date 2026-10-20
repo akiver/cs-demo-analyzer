@@ -2,7 +2,7 @@ package cs2
 
 import (
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
-	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/common"
 )
 
 func newPlayerEconomy(analyzer *Analyzer, player *common.Player) *PlayerEconomy {

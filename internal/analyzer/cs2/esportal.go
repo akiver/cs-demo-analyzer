@@ -3,7 +3,7 @@ package cs2
 import (
 	"github.com/akiver/cs-demo-analyzer/internal/modelaccess"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
-	events "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/events"
+	events "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/events"
 )
 
 func createEsportalAnalyzer(analyzer *Analyzer) {

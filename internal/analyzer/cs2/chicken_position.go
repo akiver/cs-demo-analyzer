@@ -2,12 +2,12 @@ package cs2
 
 import (
 	"github.com/akiver/cs-demo-analyzer/internal/modelaccess"
-	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/sendtables"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/sendtables"
 )
 
 type chickenEntity struct {
 	id     int
-	entity sendtables.Entity
+	entity *sendtables.Entity
 }
 
 func newChickenPositionFromEntity(analyzer *Analyzer, chicken *chickenEntity) *ChickenPosition {

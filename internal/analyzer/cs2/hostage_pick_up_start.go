@@ -1,7 +1,7 @@
 package cs2
 
 import (
-	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/common"
 )
 
 func newHostagePickupStart(analyzer *Analyzer, player *common.Player, hostage *common.Hostage) *HostagePickUpStart {

@@ -7,8 +7,8 @@ import (
 
 	s "github.com/akiver/cs-demo-analyzer/internal/strings"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
-	events "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/events"
-	sendtables "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/sendtables"
+	events "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/events"
+	sendtables "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/sendtables"
 )
 
 func createEbotAnalyzer(analyzer *Analyzer) {
@@ -60,11 +60,11 @@ func createEbotAnalyzer(analyzer *Analyzer) {
 	})
 
 	parser.RegisterEventHandler(func(events.DataTablesParsed) {
-		parser.ServerClasses().FindByName("CCSTeam").OnEntityCreated(func(entity sendtables.Entity) {
+		parser.ServerClasses().FindByName("CCSTeam").OnEntityCreated(func(entity *sendtables.Entity) {
 			// Detects possible teams switch after the end of a knife round (!switch command).
 			// If the teams are not switched (!stay command) the following players prop of the team entity doesn't change.
 			// Teams data such as its name are updated just before this prop change.
-			var playersProps []sendtables.Property
+			var playersProps []*sendtables.Property
 			if analyzer.isSource2 {
 				// The array is split into 4 props in Source 2
 				for i := 0; i < 4; i++ {
