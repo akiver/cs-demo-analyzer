@@ -10,7 +10,7 @@ import (
 )
 
 type Round struct {
-	analyzer            *Analyzer
+	match               *Match
 	Number              int                      `json:"number"`
 	StartTick           int                      `json:"startTick"`
 	StartFrame          int                      `json:"startFrame"`
@@ -37,11 +37,6 @@ type Round struct {
 	EndReason           constants.RoundEndReason `json:"endReason"`
 	WinnerName          string                   `json:"winnerName"`
 	WinnerSide          constants.Side           `json:"winnerSide"`
-	// Used to detect weapons bought by players during buy time.
-	// There is no "player buy" event available, instead we use the "item_pickup" event which occurs when a player pickup a weapon at any time in the game.
-	// Since it's possible to buy and drop a weapon to a teammate and so trigger a new "item_pickup" event, it would result in a wrong weapon buy detection.
-	// To prevent it, this slice contains all unique weapons ids that players had at the beginning of the round and it's updated when a player buy a weapon.
-	weaponsBoughtUniqueIds []string `json:"-"`
 }
 
 type RoundAlias Round
@@ -61,24 +56,24 @@ func (round *Round) MarshalJSON() ([]byte, error) {
 }
 
 func (round *Round) StartMoneyTeamA() int {
-	return round.getTeamStartMoney(common.Team(round.TeamASide))
+	return round.getTeamStartMoney(round.TeamASide)
 }
 
 func (round *Round) StartMoneyTeamB() int {
-	return round.getTeamStartMoney(common.Team(round.TeamBSide))
+	return round.getTeamStartMoney(round.TeamBSide)
 }
 
 // This indicates if x seconds have passed since the beginning of the round.
-func (round *Round) secondsPassedSinceRoundStart(seconds int) bool {
-	parser := round.analyzer.parser
+func (analyzer *Analyzer) secondsPassedSinceRoundStart(round *Round, seconds int) bool {
+	parser := analyzer.parser
 
 	return float64(parser.GameState().IngameTick()-round.StartTick)*parser.TickTime().Seconds() >= float64(seconds)
 }
 
-func (round *Round) getTeamStartMoney(side common.Team) int {
+func (round *Round) getTeamStartMoney(side constants.Side) int {
 	total := 0
-	for _, economy := range round.analyzer.match.PlayerEconomies {
-		if economy.RoundNumber == round.Number && economy.PlayerSide == constants.Side(side) {
+	for _, economy := range round.match.PlayerEconomies {
+		if economy.RoundNumber == round.Number && economy.PlayerSide == side {
 			total += economy.StartMoney
 		}
 	}
@@ -86,8 +81,7 @@ func (round *Round) getTeamStartMoney(side common.Team) int {
 	return total
 }
 
-func (round *Round) computeTeamsEconomy() {
-	analyzer := round.analyzer
+func (analyzer *Analyzer) computeTeamsEconomy(round *Round) {
 	match := analyzer.match
 	gameState := analyzer.parser.GameState()
 
@@ -118,7 +112,7 @@ func getEndReasonFromRoundEndMessage(message string) events.RoundEndReason {
 	}
 }
 
-func (round *Round) updateEndReasonFromRoundEndEvent(event events.RoundEnd, mapName string) {
+func updateRoundEndReason(round *Round, event events.RoundEnd, mapName string) {
 	round.EndReason = constants.RoundEndReason(event.Reason)
 
 	if round.EndReason == roundEndReasonUnassigned {
@@ -141,23 +135,24 @@ func newRound(number int, analyzer *Analyzer) *Round {
 		}
 	}
 
+	analyzer.weaponsBoughtUniqueIDs = weaponsIds
+
 	round := &Round{
-		analyzer:               analyzer,
-		Number:                 number,
-		StartFrame:             analyzer.parser.CurrentFrame(),
-		StartTick:              analyzer.currentTick(),
-		FreezeTimeEndFrame:     -1,
-		FreezeTimeEndTick:      -1,
-		OvertimeNumber:         analyzer.match.OvertimeCount,
-		TeamAName:              analyzer.match.TeamA.Name,
-		TeamAScore:             analyzer.match.TeamA.Score,
-		TeamBName:              analyzer.match.TeamB.Name,
-		TeamBScore:             analyzer.match.TeamB.Score,
-		TeamASide:              *analyzer.match.TeamA.CurrentSide,
-		TeamBSide:              *analyzer.match.TeamB.CurrentSide,
-		weaponsBoughtUniqueIds: weaponsIds,
+		match:              analyzer.match,
+		Number:             number,
+		StartFrame:         analyzer.parser.CurrentFrame(),
+		StartTick:          analyzer.currentTick(),
+		FreezeTimeEndFrame: -1,
+		FreezeTimeEndTick:  -1,
+		OvertimeNumber:     analyzer.match.OvertimeCount,
+		TeamAName:          analyzer.match.TeamA.Name,
+		TeamAScore:         analyzer.match.TeamA.Score,
+		TeamBName:          analyzer.match.TeamB.Name,
+		TeamBScore:         analyzer.match.TeamB.Score,
+		TeamASide:          *analyzer.match.TeamA.CurrentSide,
+		TeamBSide:          *analyzer.match.TeamB.CurrentSide,
 	}
-	round.computeTeamsEconomy()
+	analyzer.computeTeamsEconomy(round)
 
 	return round
 }

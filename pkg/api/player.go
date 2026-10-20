@@ -16,21 +16,20 @@ type weaponInspectionData struct {
 }
 
 type Player struct {
-	match                *Match
-	SteamID64            uint64          `json:"steamId"`
-	UserID               int             `json:"userId"` // +1 to get the player's slot
-	Name                 string          `json:"name"`
-	Score                int             `json:"score"`
-	Team                 *Team           `json:"team"`
-	MvpCount             int             `json:"mvpCount"`
-	RankType             int             `json:"rankType"`
-	Rank                 int             `json:"rank"`
-	OldRank              int             `json:"oldRank"`
-	WinCount             int             `json:"winCount"`
-	CrosshairShareCode   string          `json:"crosshairShareCode"`
-	Color                constants.Color `json:"color"`
-	InspectWeaponCount   int             `json:"inspectWeaponCount"`
-	lastWeaponInspection weaponInspectionData
+	match              *Match
+	SteamID64          uint64          `json:"steamId"`
+	UserID             int             `json:"userId"` // +1 to get the player's slot
+	Name               string          `json:"name"`
+	Score              int             `json:"score"`
+	Team               *Team           `json:"team"`
+	MvpCount           int             `json:"mvpCount"`
+	RankType           int             `json:"rankType"`
+	Rank               int             `json:"rank"`
+	OldRank            int             `json:"oldRank"`
+	WinCount           int             `json:"winCount"`
+	CrosshairShareCode string          `json:"crosshairShareCode"`
+	Color              constants.Color `json:"color"`
+	InspectWeaponCount int             `json:"inspectWeaponCount"`
 }
 
 type PlayerAlias Player
@@ -756,24 +755,41 @@ func (player *Player) getXKillCount(count int) int {
 	return xKillCount
 }
 
-func (player *Player) IsInspectingWeapon(analyzer *Analyzer) bool {
-	// weapon inspection animation lasts approx. 5 seconds
-	return player.lastWeaponInspection.tick > -1 && !analyzer.secondsHasPassedSinceTick(5, player.lastWeaponInspection.tick)
+// weaponInspection returns the player's last weapon inspection, tick -1 if none.
+func (analyzer *Analyzer) weaponInspection(player *Player) *weaponInspectionData {
+	inspection, ok := analyzer.weaponInspections[player]
+	if !ok {
+		inspection = &weaponInspectionData{
+			tick:          -1,
+			cancelledTick: -1,
+		}
+		analyzer.weaponInspections[player] = inspection
+	}
+
+	return inspection
 }
 
-func (player *Player) startWeaponInspection(tick int) {
+func (analyzer *Analyzer) isInspectingWeapon(player *Player) bool {
+	inspection := analyzer.weaponInspection(player)
+
+	// weapon inspection animation lasts approx. 5 seconds
+	return inspection.tick > -1 && !analyzer.secondsHasPassedSinceTick(5, inspection.tick)
+}
+
+func (analyzer *Analyzer) startWeaponInspection(player *Player) {
 	player.InspectWeaponCount++
-	player.lastWeaponInspection = weaponInspectionData{
-		tick:          tick,
+	*analyzer.weaponInspection(player) = weaponInspectionData{
+		tick:          analyzer.currentTick(),
 		cancelledTick: -1,
 	}
 }
 
-func (player *Player) stopWeaponInspection(tick int) {
+func (analyzer *Analyzer) stopWeaponInspection(player *Player) {
+	inspection := analyzer.weaponInspection(player)
 	// update the cancellation tick only if we didn't already detected a cancellation otherwise we may have multiple
-	// cancellations for a single inspection which would mess up the time-based logic in IsInspectingWeapon.
-	if player.lastWeaponInspection.cancelledTick == -1 {
-		player.lastWeaponInspection.cancelledTick = tick
+	// cancellations for a single inspection which would mess up the time-based logic in isInspectingWeapon.
+	if inspection.cancelledTick == -1 {
+		inspection.cancelledTick = analyzer.currentTick()
 	}
 }
 
@@ -781,13 +797,9 @@ func (player *Player) reset() {
 	player.Score = 0
 	player.MvpCount = 0
 	player.InspectWeaponCount = 0
-	player.lastWeaponInspection = weaponInspectionData{
-		tick:          -1,
-		cancelledTick: -1,
-	}
 }
 
-func NewPlayer(analyzer *Analyzer, currentTeam common.Team, player common.Player) *Player {
+func newPlayer(analyzer *Analyzer, currentTeam common.Team, player common.Player) *Player {
 	var team *Team
 	if *analyzer.match.TeamA.CurrentSide == constants.Side(currentTeam) {
 		team = analyzer.match.TeamA
@@ -814,10 +826,6 @@ func NewPlayer(analyzer *Analyzer, currentTeam common.Team, player common.Player
 		Rank:               rank,
 		OldRank:            rank,
 		WinCount:           player.CompetitiveWins(),
-		lastWeaponInspection: weaponInspectionData{
-			tick:          -1,
-			cancelledTick: -1,
-		},
 	}
 
 	var activeWeaponProp *st.Property
@@ -831,7 +839,7 @@ func NewPlayer(analyzer *Analyzer, currentTeam common.Team, player common.Player
 	if activeWeaponProp != nil {
 		activeWeaponProp.OnUpdate(func(pv st.PropertyValue) {
 			// switching weapon stops the weapon inspection animation
-			newPlayer.stopWeaponInspection(analyzer.currentTick())
+			analyzer.stopWeaponInspection(newPlayer)
 		})
 	}
 

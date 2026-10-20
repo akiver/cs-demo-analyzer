@@ -38,7 +38,7 @@ func newPlayerEconomy(analyzer *Analyzer, player *common.Player) *PlayerEconomy 
 	return economy
 }
 
-func (economy *PlayerEconomy) updateValues(analyzer *Analyzer, player *common.Player) {
+func (analyzer *Analyzer) updatePlayerEconomy(economy *PlayerEconomy, player *common.Player) {
 	economy.PlayerSide = constants.Side(player.Team)
 	economy.EquipmentValue = player.EquipmentValueCurrent()
 	economy.MoneySpent = player.MoneySpentThisRound()

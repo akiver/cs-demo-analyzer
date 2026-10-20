@@ -99,9 +99,10 @@ func newKillFromGameEvent(analyzer *Analyzer, event events.Kill) *Kill {
 	var isVictimInspectingWeapon bool
 	victim := analyzer.match.PlayersBySteamID[event.Victim.SteamID64]
 	if victim != nil {
-		isVictimInspectingWeapon = victim.IsInspectingWeapon(analyzer)
+		isVictimInspectingWeapon = analyzer.isInspectingWeapon(victim)
 		// if inspection was cancelled and 2+ seconds have passed, consider that the victim is no longer inspecting the weapon
-		if isVictimInspectingWeapon && victim.lastWeaponInspection.cancelledTick > -1 && analyzer.secondsHasPassedSinceTick(2, victim.lastWeaponInspection.cancelledTick) {
+		inspection := analyzer.weaponInspection(victim)
+		if isVictimInspectingWeapon && inspection.cancelledTick > -1 && analyzer.secondsHasPassedSinceTick(2, inspection.cancelledTick) {
 			isVictimInspectingWeapon = false
 		}
 	}
