@@ -384,10 +384,10 @@ func (analyzer *Analyzer) resetCurrentRound() {
 }
 
 // entityIntProperty returns the int value of the entity property with the given name.
-// It returns false when the property doesn't exist or has never been networked (Source 2 only).
+// It returns false when the property doesn't exist or has never been networked.
 func entityIntProperty(entity *st.Entity, name string) (int, bool) {
 	prop, exists := entity.PropertyValue(name)
-	if !exists || (prop.S2 && prop.Any == nil) {
+	if !exists || prop.Any == nil {
 		return 0, false
 	}
 
