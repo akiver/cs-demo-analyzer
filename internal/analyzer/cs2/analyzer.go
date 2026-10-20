@@ -226,8 +226,11 @@ func Analyze(file io.Reader, demo *d.Demo, source constants.DemoSource, includeP
 
 	match.Duration = time.Duration(fileInfo.GetPlaybackTime()) * time.Second
 	if match.Duration == 0 {
-		// Truncated to whole seconds, as the parser's header fallback used to do.
-		match.Duration = time.Duration(parser.CurrentTime().Seconds()) * time.Second
+		match.Duration = parser.CurrentTime()
+		if err == nil {
+			// Truncated to whole seconds, as v4's header fallback did when the demo was parsed to the end.
+			match.Duration = time.Duration(match.Duration.Seconds()) * time.Second
+		}
 	}
 	if match.Duration > 0 {
 		frames := int(fileInfo.GetPlaybackFrames())
