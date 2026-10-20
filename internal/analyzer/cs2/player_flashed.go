@@ -1,0 +1,26 @@
+package cs2
+
+import (
+	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
+
+	events "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/events"
+)
+
+func newPlayerFlashed(analyzer *Analyzer, event events.PlayerFlashed) *PlayerFlashed {
+	parser := analyzer.parser
+
+	return &PlayerFlashed{
+		Frame:                   parser.CurrentFrame(),
+		Tick:                    analyzer.currentTick(),
+		RoundNumber:             analyzer.currentRound.Number,
+		Duration:                event.Player.FlashDuration,
+		FlashedName:             event.Player.Name,
+		FlashedSteamID64:        event.Player.SteamID64,
+		FlashedSide:             constants.Side(event.Player.Team),
+		IsFlashedControllingBot: event.Player.IsControllingBot(),
+		FlasherName:             event.Attacker.Name,
+		FlasherSteamID64:        event.Attacker.SteamID64,
+		FlasherSide:             constants.Side(event.Attacker.Team),
+		IsFlasherControllingBot: event.Attacker.IsControllingBot(),
+	}
+}
