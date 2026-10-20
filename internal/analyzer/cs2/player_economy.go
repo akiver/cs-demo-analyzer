@@ -1,0 +1,35 @@
+package cs2
+
+import (
+	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/common"
+)
+
+func newPlayerEconomy(analyzer *Analyzer, player *common.Player) *PlayerEconomy {
+	startMoney := player.Money()
+	// eBot demos may start just after the end of the 1st round freeze time.
+	// As a result to get the correct start money, we need to sum the current money + the money spent during the round.
+	if analyzer.currentRound.Number == 1 {
+		startMoney += player.MoneySpentThisRound()
+	}
+
+	economy := &PlayerEconomy{
+		RoundNumber:    analyzer.currentRound.Number,
+		SteamID64:      player.SteamID64,
+		Name:           player.Name,
+		StartMoney:     startMoney,
+		EquipmentValue: player.EquipmentValueCurrent(),
+		MoneySpent:     player.MoneySpentThisRound(),
+		Type:           computePlayerEconomyType(analyzer, player),
+		PlayerSide:     constants.Side(player.Team),
+	}
+
+	return economy
+}
+
+func (analyzer *Analyzer) updatePlayerEconomy(economy *PlayerEconomy, player *common.Player) {
+	economy.PlayerSide = constants.Side(player.Team)
+	economy.EquipmentValue = player.EquipmentValueCurrent()
+	economy.MoneySpent = player.MoneySpentThisRound()
+	economy.Type = computePlayerEconomyType(analyzer, player)
+}

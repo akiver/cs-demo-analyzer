@@ -15,8 +15,7 @@ import (
 	"github.com/akiver/cs-demo-analyzer/internal/filepath"
 	str "github.com/akiver/cs-demo-analyzer/internal/strings"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
-	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/msg"
-	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/msgs2"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/msg"
 	"google.golang.org/protobuf/proto"
 )
 
@@ -130,39 +129,39 @@ func GetDemoFromPath(demoPath string) (*Demo, error) {
 		br.ReadVarInt32() // tick
 		size := br.ReadVarInt32()
 		bytes := br.ReadBytes(int(size))
-		var msg msgs2.CDemoFileHeader
-		err := proto.Unmarshal(bytes, &msg)
+		var header msg.CDemoFileHeader
+		err := proto.Unmarshal(bytes, &header)
 		if err != nil {
 			return nil, fmt.Errorf("failed to parse CMsgPlayerInfo msg")
 		}
 
-		mapName = msg.GetMapName()
-		serverName = msg.GetServerName()
-		clientName = msg.GetClientName()
+		mapName = header.GetMapName()
+		serverName = header.GetServerName()
+		clientName = header.GetClientName()
 		data := fmt.Sprintf(
 			"%s%s%s%d%d%s%s%d",
 			mapName,
 			str.RemoveInvalidUTF8Sequences(serverName),
 			str.RemoveInvalidUTF8Sequences(clientName),
-			msg.GetPatchVersion(),
-			msg.GetBuildNum(),
-			msg.GetDemoVersionGuid(),
-			msg.GetDemoVersionName(),
+			header.GetPatchVersion(),
+			header.GetBuildNum(),
+			header.GetDemoVersionGuid(),
+			header.GetDemoVersionName(),
 			stats.Size(),
 		)
 		checksum = strconv.FormatUint(crc64.Checksum([]byte(data), crc64.MakeTable(crc64.ECMA)), 16)
 
 		serverName = str.ReplaceUTF8ByteSequences(serverName)
 		clientName = str.ReplaceUTF8ByteSequences(clientName)
-		networkProtocol = int(msg.GetPatchVersion())
-		buildNumber = int(msg.GetBuildNum())
-		game := msg.GetGame()
+		networkProtocol = int(header.GetPatchVersion())
+		buildNumber = int(header.GetBuildNum())
+		game := header.GetGame()
 		if game != "" {
 			demoType = constants.DemoTypePOV
 		}
 
 		if len(matchInfoBytes) > 0 {
-			m := new(msgs2.CDataGCCStrike15V2_MatchInfo)
+			m := new(msg.CDataGCCStrike15V2_MatchInfo)
 			err = proto.Unmarshal(matchInfoBytes, m)
 			if err != nil {
 				fmt.Printf("failed to unmarshal MatchInfo message: %v", err)

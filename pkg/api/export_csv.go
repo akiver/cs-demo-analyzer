@@ -11,7 +11,7 @@ import (
 	"github.com/akiver/cs-demo-analyzer/internal/converters"
 	"github.com/akiver/cs-demo-analyzer/internal/csv"
 	"github.com/akiver/cs-demo-analyzer/internal/slice"
-	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
+	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
 )
 
 func exportMatchToCSV(match *Match, outputPath string) error {
@@ -56,7 +56,7 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 		}
 
 		winnerName := ""
-		winnerSide := common.TeamUnassigned
+		winnerSide := constants.SideUnassigned
 		if match.Winner != nil {
 			winnerName = match.Winner.Name
 			winnerSide = *match.Winner.CurrentSide
