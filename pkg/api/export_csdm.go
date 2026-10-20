@@ -164,7 +164,7 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		winnerSide := common.TeamUnassigned
 		if match.Winner != nil {
 			winnerName = match.Winner.Name
-			winnerSide = *match.Winner.CurrentSide
+			winnerSide = common.Team(*match.Winner.CurrentSide)
 		}
 		line := []string{
 			match.Checksum,
@@ -373,7 +373,7 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 
 			state := playerState{
 				isAlive:           position.IsAlive,
-				side:              position.Side,
+				side:              common.Team(position.Side),
 				money:             position.Money,
 				health:            position.Health,
 				armor:             position.Armor,
@@ -1245,10 +1245,10 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 				continue
 			}
 			hostage.lastTick = position.Tick
-			if !exists || position.State != hostage.lastState {
+			if !exists || position.State != constants.HostageState(hostage.lastState) {
 				hostage.stateTicks = appendInt32(hostage.stateTicks, position.Tick)
 				hostage.states = appendInt32(hostage.states, int(position.State))
-				hostage.lastState = position.State
+				hostage.lastState = common.HostageState(position.State)
 			}
 		}
 

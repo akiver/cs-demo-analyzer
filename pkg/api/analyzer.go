@@ -407,8 +407,8 @@ func (analyzer *Analyzer) registerUnknownPlayers() {
 func (analyzer *Analyzer) updateTeamNames() {
 	gameState := analyzer.parser.GameState()
 	match := analyzer.match
-	teamNameA := strings.ReplaceUTF8ByteSequences(gameState.Team(*match.TeamA.CurrentSide).ClanName())
-	teamNameB := strings.ReplaceUTF8ByteSequences(gameState.Team(*match.TeamB.CurrentSide).ClanName())
+	teamNameA := strings.ReplaceUTF8ByteSequences(gameState.Team(common.Team(*match.TeamA.CurrentSide)).ClanName())
+	teamNameB := strings.ReplaceUTF8ByteSequences(gameState.Team(common.Team(*match.TeamB.CurrentSide)).ClanName())
 	if teamNameA == teamNameB {
 		return
 	}
@@ -449,11 +449,11 @@ func (analyzer *Analyzer) updatePlayersCurrentTeam() {
 				continue
 			}
 
-			if *player.Team.CurrentSide == playerTeam {
+			if *player.Team.CurrentSide == constants.Side(playerTeam) {
 				continue
 			}
 
-			if *match.TeamA.CurrentSide == playerTeam {
+			if *match.TeamA.CurrentSide == constants.Side(playerTeam) {
 				player.Team = match.TeamA
 			} else {
 				player.Team = match.TeamB
@@ -510,8 +510,8 @@ func (analyzer *Analyzer) isKnifeRound() bool {
 func (analyzer *Analyzer) handleRoundEnd(winnerTeam common.Team) {
 	analyzer.isRoundEndDetected = true
 	analyzer.isFirstRoundOfHalf = false
-	analyzer.currentRound.WinnerName = analyzer.match.Team(winnerTeam).Name
-	analyzer.currentRound.WinnerSide = *analyzer.match.Team(winnerTeam).CurrentSide
+	analyzer.currentRound.WinnerName = analyzer.match.Team(constants.Side(winnerTeam)).Name
+	analyzer.currentRound.WinnerSide = *analyzer.match.Team(constants.Side(winnerTeam)).CurrentSide
 	analyzer.currentRound.EndTick = analyzer.currentTick()
 	analyzer.currentRound.EndOfficiallyTick = analyzer.currentTick()
 	analyzer.currentRound.EndFrame = analyzer.parser.CurrentFrame()
@@ -525,10 +525,10 @@ func (analyzer *Analyzer) handleRoundEnd(winnerTeam common.Team) {
 	}
 
 	if analyzer.clutch1 != nil {
-		analyzer.clutch1.HasWon = winnerTeam == analyzer.clutch1.Side
+		analyzer.clutch1.HasWon = constants.Side(winnerTeam) == analyzer.clutch1.Side
 	}
 	if analyzer.clutch2 != nil {
-		analyzer.clutch2.HasWon = winnerTeam == analyzer.clutch2.Side
+		analyzer.clutch2.HasWon = constants.Side(winnerTeam) == analyzer.clutch2.Side
 	}
 
 	analyzer.updatePlayersScores()
@@ -873,7 +873,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 		if analyzer.clutch1 != nil && len(counterTerroristsAlive) == 1 && len(terroristsAlive) == 1 {
 			var side common.Team
 			var clutcher *common.Player
-			if analyzer.clutch1.Side == common.TeamCounterTerrorists {
+			if analyzer.clutch1.Side == constants.SideCounterTerrorists {
 				side = common.TeamTerrorists
 				clutcher = terroristsAlive[0]
 			} else {
@@ -932,7 +932,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 
 		bombDefused := newBombDefused(analyzer, event)
 		match.BombsDefused = append(match.BombsDefused, bombDefused)
-		analyzer.currentRound.EndReason = events.RoundEndReasonBombDefused
+		analyzer.currentRound.EndReason = constants.RoundEndReasonBombDefused
 	})
 
 	parser.RegisterEventHandler(func(event events.BombExplode) {
@@ -1346,7 +1346,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 						},
 					})
 					match.BombsDefused = append(match.BombsDefused, bombDefused)
-					analyzer.currentRound.EndReason = events.RoundEndReasonBombDefused
+					analyzer.currentRound.EndReason = constants.RoundEndReasonBombDefused
 				})
 			})
 		}
@@ -1380,12 +1380,12 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 					// We don't have access to the round end reason here, try to detect it based on current game state.
 					currentRound := analyzer.currentRound
 					if winnerSide == common.TeamCounterTerrorists {
-						currentRound.EndReason = events.RoundEndReasonCTWin
+						currentRound.EndReason = constants.RoundEndReasonCTWin
 
 						// If a T is still alive it means CTs won because Ts ran out of time
 						for _, player := range parser.GameState().Participants().TeamMembers(common.TeamTerrorists) {
 							if player.IsAlive() {
-								currentRound.EndReason = events.RoundEndReasonTargetSaved
+								currentRound.EndReason = constants.RoundEndReasonTargetSaved
 								break
 							}
 						}
@@ -1393,17 +1393,17 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 						// If there is a bomb defused event, it means CTs won
 						currentRoundBombDefusedEvent := getCurrentRoundBombDefusedEvent()
 						if currentRoundBombDefusedEvent != nil {
-							currentRound.EndReason = events.RoundEndReasonBombDefused
+							currentRound.EndReason = constants.RoundEndReasonBombDefused
 						}
 					} else {
-						currentRound.EndReason = events.RoundEndReasonTerroristsWin
+						currentRound.EndReason = constants.RoundEndReasonTerroristsWin
 
 						bombsExploded := analyzer.match.BombsExploded
 						bombExplodedCount := len(bombsExploded)
 						if bombExplodedCount > 0 {
 							lastBombExploded := bombsExploded[bombExplodedCount-1]
 							if lastBombExploded.RoundNumber == currentRound.Number {
-								currentRound.EndReason = events.RoundEndReasonTargetBombed
+								currentRound.EndReason = constants.RoundEndReasonTargetBombed
 							}
 						}
 					}

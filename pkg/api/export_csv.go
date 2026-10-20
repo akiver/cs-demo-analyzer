@@ -59,7 +59,7 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 		winnerSide := common.TeamUnassigned
 		if match.Winner != nil {
 			winnerName = match.Winner.Name
-			winnerSide = *match.Winner.CurrentSide
+			winnerSide = common.Team(*match.Winner.CurrentSide)
 		}
 		line := []string{
 			match.Checksum,

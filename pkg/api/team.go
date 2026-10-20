@@ -2,7 +2,6 @@ package api
 
 import (
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
-	common "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
 )
 
 type Team struct {
@@ -11,13 +10,13 @@ type Team struct {
 	Score           int                  `json:"score"`
 	ScoreFirstHalf  int                  `json:"scoreFirstHalf"`
 	ScoreSecondHalf int                  `json:"scoreSecondHalf"`
-	CurrentSide     *common.Team         `json:"currentSide"`
+	CurrentSide     *constants.Side      `json:"currentSide"`
 }
 
 func (team *Team) swap() {
-	if *team.CurrentSide == common.TeamCounterTerrorists {
-		*team.CurrentSide = common.TeamTerrorists
-	} else if *team.CurrentSide == common.TeamTerrorists {
-		*team.CurrentSide = common.TeamCounterTerrorists
+	if *team.CurrentSide == constants.SideCounterTerrorists {
+		*team.CurrentSide = constants.SideTerrorists
+	} else if *team.CurrentSide == constants.SideTerrorists {
+		*team.CurrentSide = constants.SideCounterTerrorists
 	}
 }

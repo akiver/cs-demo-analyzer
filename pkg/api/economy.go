@@ -38,7 +38,7 @@ func computePlayerEconomyType(analyzer *Analyzer, player *common.Player) constan
 
 	if len(analyzer.match.Rounds) > 0 {
 		previousRound := analyzer.match.Rounds[len(analyzer.match.Rounds)-1]
-		if previousRound.WinnerSide != playerSide && player.Money() <= 400 {
+		if previousRound.WinnerSide != constants.Side(playerSide) && player.Money() <= 400 {
 			return constants.EconomyTypeForceBuy
 		}
 	}
@@ -74,7 +74,7 @@ func computeTeamEconomyType(analyzer *Analyzer, team *common.TeamState) constant
 			money += player.Money()
 		}
 
-		if previousRound.WinnerSide != teamSide && money < 400*playerCount {
+		if previousRound.WinnerSide != constants.Side(teamSide) && money < 400*playerCount {
 			return constants.EconomyTypeForceBuy
 		}
 	}

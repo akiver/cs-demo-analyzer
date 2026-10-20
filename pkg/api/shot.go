@@ -3,7 +3,6 @@ package api
 import (
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
 	"github.com/golang/geo/r3"
-	common "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
 	events "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/events"
 	st "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/sendtables"
 )
@@ -21,7 +20,7 @@ type Shot struct {
 	PlayerName             string               `json:"playerName"`
 	PlayerSteamID64        uint64               `json:"playerSteamId"`
 	PlayerTeamName         string               `json:"playerTeamName"`
-	PlayerSide             common.Team          `json:"playerSide"`
+	PlayerSide             constants.Side       `json:"playerSide"`
 	IsPlayerControllingBot bool                 `json:"isPlayerControllingBot"`
 	PlayerVelocityX        float64              `json:"playerVelocityX"`
 	PlayerVelocityY        float64              `json:"playerVelocityY"`
@@ -88,8 +87,8 @@ func newShot(analyzer *Analyzer, event events.WeaponFire) *Shot {
 		Z:                      shooter.Position().Z,
 		PlayerName:             shooter.Name,
 		PlayerSteamID64:        shooter.SteamID64,
-		PlayerTeamName:         analyzer.match.Team(shooter.Team).Name,
-		PlayerSide:             shooter.Team,
+		PlayerTeamName:         analyzer.match.Team(constants.Side(shooter.Team)).Name,
+		PlayerSide:             constants.Side(shooter.Team),
 		IsPlayerControllingBot: shooter.IsControllingBot(),
 		PlayerVelocityX:        velocity.X,
 		PlayerVelocityY:        velocity.Y,

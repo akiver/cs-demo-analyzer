@@ -19,7 +19,7 @@ type GrenadeBounce struct {
 	Z                float64              `json:"z"`
 	ThrowerSteamID64 uint64               `json:"throwerSteamId"`
 	ThrowerName      string               `json:"throwerName"`
-	ThrowerSide      common.Team          `json:"throwerSide"`
+	ThrowerSide      constants.Side       `json:"throwerSide"`
 	ThrowerTeamName  string               `json:"throwerTeamName"`
 	ThrowerVelocityX float64              `json:"throwerVelocityX"`
 	ThrowerVelocityY float64              `json:"throwerVelocityY"`
@@ -65,8 +65,8 @@ func newGrenadeBounceFromProjectile(analyzer *Analyzer, projectile *common.Grena
 		Z:                projectile.Position().Z,
 		ThrowerSteamID64: thrower.SteamID64,
 		ThrowerName:      thrower.Name,
-		ThrowerSide:      throwerTeam,
-		ThrowerTeamName:  analyzer.match.Team(throwerTeam).Name,
+		ThrowerSide:      constants.Side(throwerTeam),
+		ThrowerTeamName:  analyzer.match.Team(constants.Side(throwerTeam)).Name,
 		ThrowerVelocityX: velocity.X,
 		ThrowerVelocityY: velocity.Y,
 		ThrowerVelocityZ: velocity.Z,

@@ -12,7 +12,7 @@ type Coach struct {
 	SteamID64     uint64               `json:"steamId"`
 	UserID        int                  `json:"userId"`
 	Name          string               `json:"name"`
-	CoachingSide  common.Team          `json:"coachingSide"` // The side being coached when the coach was first seen
+	CoachingSide  constants.Side       `json:"coachingSide"` // The side being coached when the coach was first seen
 	TeamLetter    constants.TeamLetter `json:"teamLetter"`   // The team being coached when the coach was first seen, empty if unknown
 	FirstSeenTick int                  `json:"firstSeenTick"`
 }
@@ -31,7 +31,7 @@ func (analyzer *Analyzer) registerCoach(player *common.Player, side common.Team)
 
 	var teamLetter constants.TeamLetter
 	if side == common.TeamCounterTerrorists || side == common.TeamTerrorists {
-		teamLetter = match.Team(side).Letter
+		teamLetter = match.Team(constants.Side(side)).Letter
 	}
 
 	userID := 0
@@ -43,7 +43,7 @@ func (analyzer *Analyzer) registerCoach(player *common.Player, side common.Team)
 		SteamID64:     player.SteamID64,
 		UserID:        userID,
 		Name:          strings.ReplaceUTF8ByteSequences(player.Name),
-		CoachingSide:  side,
+		CoachingSide:  constants.Side(side),
 		TeamLetter:    teamLetter,
 		FirstSeenTick: analyzer.currentTick(),
 	})

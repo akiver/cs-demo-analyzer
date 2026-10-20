@@ -21,7 +21,7 @@ type PlayerPosition struct {
 	Yaw                    float32                `json:"yaw"`
 	Pitch                  float32                `json:"pitch"`
 	FlashDurationRemaining float64                `json:"flashDurationRemaining"`
-	Side                   common.Team            `json:"side"`
+	Side                   constants.Side         `json:"side"`
 	Money                  int                    `json:"money"`
 	Health                 int                    `json:"health"`
 	Armor                  int                    `json:"armor"`
@@ -182,7 +182,7 @@ func newPlayerPosition(analyzer *Analyzer, player *common.Player) *PlayerPositio
 		Yaw:                    player.ViewDirectionX(),
 		Pitch:                  player.ViewDirectionY(),
 		FlashDurationRemaining: player.FlashDurationTimeRemaining().Seconds(),
-		Side:                   player.Team,
+		Side:                   constants.Side(player.Team),
 		Money:                  player.Money(),
 		Health:                 player.Health(),
 		Armor:                  player.Armor(),
