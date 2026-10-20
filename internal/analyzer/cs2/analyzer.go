@@ -1,0 +1,1392 @@
+package cs2
+
+import (
+	"context"
+	"errors"
+	"fmt"
+	"io"
+	"slices"
+	"strconv"
+	"time"
+
+	"github.com/akiver/cs-demo-analyzer/internal/analyzer/shared"
+
+	"github.com/akiver/cs-demo-analyzer/internal/converters"
+	d "github.com/akiver/cs-demo-analyzer/internal/demo"
+	"github.com/akiver/cs-demo-analyzer/internal/slice"
+	"github.com/akiver/cs-demo-analyzer/internal/strings"
+	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
+	"github.com/golang/geo/r3"
+	dem "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/common"
+	events "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/events"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/msg"
+	"github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/option"
+	st "github.com/markus-wa/demoinfocs-golang/v6/pkg/demoinfocs/sendtables"
+)
+
+const (
+	// Maximum number of seconds between a teammate death and a possible revenge kill to be considered as a trade kill.
+	tradeKillDelaySeconds = 5
+	// Number of seconds that players equipment value will be computed after the end of freezetimes.
+	// It's not done at the end of freezetime because players are still able to buy a few seconds after it.
+	// Using the seconds from mp_buytime which is 20 seconds may leads to inaccurate results since during this timelapse
+	// players may have throw grenades, been killed...
+	equipmentValueDelaySeconds = 7
+)
+
+type Analyzer struct {
+	parser             *dem.Parser
+	match              *Match
+	currentRound       *Round
+	matchStarted       func() bool
+	postProcess        func(analyzer *Analyzer)
+	isSource2          bool
+	isFirstRoundOfHalf bool
+	// Flag to handle demos with missing round end events.
+	isRoundEndDetected bool
+	// How many seconds players are allowed to buy when a round start, this variable is updated if the ConVar
+	// "mp_buytime" has been detected. Used to know what players have bought at the beginning of rounds.
+	buyTimeSeconds int
+	// Store the last freezetime end tick detected, used to compute players equipments value for each round.
+	// It's not done at the end of freezetime because players are still able to buy a few seconds after it.
+	lastFreezeTimeEndTick int
+	clutch1               *Clutch
+	clutch2               *Clutch
+	// Store bomb plant position to retrieve it when it explodes.
+	bombPlantPosition r3.Vector
+	// Store the last grenade thrown by player in order to create a link between the grenade unique ID and the
+	// projectile unique ID.
+	// The grenade ID is not the same as the projectile ID and when a player throws a grenade, its projectile is
+	// created only a few ticks later.
+	lastGrenadeThrownByPlayer map[uint64]*Shot
+	// Used to detect which player is untying an hostage when the hostage's state changed to "Being untied".
+	// Because several hostages can be untied at the same time, we keep track of players that started untying hostages
+	// to detect which player is untying an hostage in case of consecutive events.
+	playersUntyingAnHostage map[uint64]int
+	chickenEntities         []*chickenEntity
+	// Used to give a unique ID to each chicken, entity IDs are re-used once an entity is destroyed.
+	chickenCount int
+	// Cached 2D convex hull of each burning inferno's active fires, only used when positions are included.
+	infernoHulls map[common.UniqueID]*infernoHull
+	// Weapon lists of the last position created for each player, shared with the next positions while the
+	// inventory doesn't change, see internWeapons(). Only used when positions are included.
+	playerWeapons map[*common.Player]*playerWeapons
+	// Scratch lists newPlayerPosition() builds the current inventory into before comparing it with playerWeapons.
+	playerWeaponsScratch playerWeapons
+	// Scratch slice for sortedEntityIDs(), re-used across frames.
+	entityIDsScratch []int
+	// Used to detect weapons bought by players during buy time.
+	// There is no "player buy" event available, instead we use the "item_pickup" event which occurs when a player pickup a weapon at any time in the game.
+	// Since it's possible to buy and drop a weapon to a teammate and so trigger a new "item_pickup" event, it would result in a wrong weapon buy detection.
+	// To prevent it, this slice contains all unique weapons ids that players had at the beginning of the current round and it's updated when a player buy a weapon.
+	weaponsBoughtUniqueIDs []string
+	// The last weapon inspection of each player, see isInspectingWeapon().
+	weaponInspections map[*Player]*weaponInspectionData
+	// Stops parsing with the given error, which is returned by the parser.
+	// Handlers must call it instead of panicking: the parser re-panics handler panics on the caller.
+	cancelParsing context.CancelCauseFunc
+}
+
+// sortedEntityIDs returns the keys of a map of entities by entity ID in ascending order, to range over the map in a
+// deterministic order. The IDs are appended to scratch (emptied first) to avoid allocating on every call.
+func sortedEntityIDs[T any](scratch []int, entities map[int]T) []int {
+	ids := scratch[:0]
+	for id := range entities {
+		ids = append(ids, id)
+	}
+
+	slices.Sort(ids)
+
+	return ids
+}
+
+// Analyze analyzes a CS2 demo with demoinfocs-golang v6.
+// file is the demo's content, demo what is known about it before parsing (see internal/demo).
+func Analyze(file io.Reader, demo *d.Demo, source constants.DemoSource, includePositions bool) (*Match, error) {
+	parser := dem.NewParser(
+		file,
+		option.NetMessageDecryptionKey(demo.NetMessageDecryptionPublicKey),
+		option.DisableMimicSource1Events(demo.Type == constants.DemoTypePOV),
+		// Older CS2 demos don't network the players velocity, it's derived from their positions which must be tracked
+		// before the first Player.Velocity() call, otherwise it returns 0.
+		option.EagerVelocityTracking(true),
+	)
+	defer parser.Close()
+
+	if demo.IsSource2() && demo.Type == constants.DemoTypePOV {
+		return nil, errors.New("cs2 pov demos are not supported (CS2POVDemosNotSupported)")
+	}
+
+	match := shared.NewMatch(source, demo)
+
+	ctx, cancelParsing := context.WithCancelCause(context.Background())
+	defer cancelParsing(nil)
+
+	analyzer := &Analyzer{
+		cancelParsing:             cancelParsing,
+		parser:                    parser,
+		match:                     &match,
+		isSource2:                 demo.IsSource2(),
+		isFirstRoundOfHalf:        true,
+		isRoundEndDetected:        false,
+		buyTimeSeconds:            20, // Default mp_buytime value is 20
+		lastFreezeTimeEndTick:     -1,
+		bombPlantPosition:         r3.Vector{},
+		infernoHulls:              map[common.UniqueID]*infernoHull{},
+		playerWeapons:             map[*common.Player]*playerWeapons{},
+		lastGrenadeThrownByPlayer: make(map[uint64]*Shot),
+		weaponInspections:         make(map[*Player]*weaponInspectionData),
+		playersUntyingAnHostage:   make(map[uint64]int),
+		postProcess:               defaultPostProcess,
+	}
+
+	analyzer.currentRound = &Round{
+		Number:             1,
+		StartTick:          1,
+		StartFrame:         1,
+		FreezeTimeEndFrame: -1,
+		FreezeTimeEndTick:  -1,
+		TeamAName:          match.TeamA.Name,
+		TeamBName:          match.TeamB.Name,
+		TeamASide:          *match.TeamA.CurrentSide,
+		TeamBSide:          *match.TeamB.CurrentSide,
+	}
+	analyzer.currentRound.SetMatch(analyzer.match)
+
+	analyzer.registerCommonHandlers(includePositions)
+
+	switch source {
+	case constants.DemoSourceFaceIt:
+		createFaceItAnalyzer(analyzer)
+	case constants.DemoSourceESEA:
+		createEseaAnalyzer(analyzer)
+	case constants.DemoSourceEbot:
+		createEbotAnalyzer(analyzer)
+	case constants.DemoSourceChallengermode:
+		createChallengermodeAnalyzer(analyzer)
+	case constants.DemoSourceRenown:
+		createRenownAnalyzer(analyzer)
+	case constants.DemoSourceEsplay:
+		createEsplayAnalyzer(analyzer)
+	case constants.DemoSourceEsportligaen:
+		createEsportligaenAnalyzer(analyzer)
+	case constants.DemoSourceEsportal:
+		createEsportalAnalyzer(analyzer)
+	case constants.DemoSourceCEVO:
+		return nil, errors.New("cevo demos are not supported (CevoNotSupported)")
+	case constants.DemoSourceFastcup:
+		createFastcupAnalyzer(analyzer)
+	case constants.DemoSourceFiveEPlay:
+		createFiveEPlayAnalyzer(analyzer)
+	case constants.DemoSourceGamersclub:
+		// Looks like they use an eBot fork but rounds are not detected properly.
+		return nil, errors.New("gamersclub demos are not supported (GamersClubNotSupported)")
+	case constants.DemoSourceMatchZy:
+		createMatchZyAnalyzer(analyzer)
+	case constants.DemoSourcePopFlash:
+		// TODO notImplemented Unsure how demos from PopFlash are nowadays, need to find some to test.
+		// Even latest CSGO demos from PopFlash may not really work because their recording system has probably changed
+		// and may not be compatible with the Valve one anymore (used to be the V2).
+		if demo.IsSource2() {
+			return nil, errors.New("cs2 PopFlash demos are not supported (PopFlashNotSupported)")
+		}
+		createValveAnalyzer(analyzer)
+	case constants.DemoSourceValve, constants.DemoSourcePerfectWorld, constants.DemoSourceESL:
+		createValveAnalyzer(analyzer)
+	case constants.DemoSourcePracc:
+		createPraccAnalyzer(analyzer)
+	default:
+		return nil, errors.New("unknown demo source, please specify the source with the -source flag (UnknownSource)")
+	}
+
+	// Playback info for CS2 demos lives in the CDemoFileInfo message at the end of the demo.
+	// demoinfocs v5+ no longer exposes the header, so capture the message ourselves.
+	var fileInfo *msg.CDemoFileInfo
+	parser.RegisterNetMessageHandler(func(m *msg.CDemoFileInfo) {
+		fileInfo = m
+	})
+
+	err := parser.ParseToEnd(ctx)
+	// Do not stop if the demo is truncated or contains data that can't be decoded, usually the error occurs at the
+	// end of the parsing. Depending on how far we were able to parse the demo we may still have data.
+	isCorruptedDemo := errors.Is(err, dem.ErrUnexpectedEndOfDemo) || errors.Is(err, dem.ErrDecodeFailed)
+	if err != nil && !isCorruptedDemo {
+		return nil, err
+	}
+
+	// Required for CS2 demos, the following data are available only at the end of the parsing in the CDemoFileInfo message.
+	// Unfortunately, some CS2 demos may not contain this message.
+	// We fallback to the parser's internal values in such cases.
+	match.TickCount = int(fileInfo.GetPlaybackTicks())
+	if match.TickCount == 0 {
+		match.TickCount = analyzer.currentTick()
+	}
+
+	match.Duration = time.Duration(fileInfo.GetPlaybackTime()) * time.Second
+	if match.Duration == 0 {
+		// Truncated to whole seconds, as the parser's header fallback used to do.
+		match.Duration = time.Duration(parser.CurrentTime().Seconds()) * time.Second
+	}
+	if match.Duration > 0 {
+		frames := int(fileInfo.GetPlaybackFrames())
+		if frames == 0 {
+			frames = parser.CurrentFrame()
+		}
+		match.FrameRate = float64(frames) / match.Duration.Seconds()
+	}
+
+	analyzer.postProcess(analyzer)
+	match.DeleteIncompleteRounds()
+	match.ComputeResultStats()
+
+	return &match, nil
+}
+
+func (analyzer *Analyzer) currentTick() int {
+	return analyzer.parser.GameState().IngameTick()
+}
+
+func (analyzer *Analyzer) reset() {
+	analyzer.isFirstRoundOfHalf = true
+	analyzer.isRoundEndDetected = false
+	analyzer.lastFreezeTimeEndTick = -1
+	analyzer.lastGrenadeThrownByPlayer = make(map[uint64]*Shot)
+	analyzer.playersUntyingAnHostage = make(map[uint64]int)
+	analyzer.chickenEntities = nil
+	analyzer.clutch1 = nil
+	analyzer.clutch2 = nil
+	analyzer.match.Reset()
+	analyzer.weaponInspections = make(map[*Player]*weaponInspectionData)
+	analyzer.updateTeamNames()
+	for _, player := range analyzer.match.PlayersBySteamID {
+		player.Reset()
+	}
+
+	analyzer.weaponsBoughtUniqueIDs = nil
+	analyzer.currentRound = &Round{
+		Number:             1,
+		StartTick:          1,
+		StartFrame:         1,
+		FreezeTimeEndFrame: -1,
+		FreezeTimeEndTick:  -1,
+		TeamASide:          *analyzer.match.TeamA.CurrentSide,
+		TeamBSide:          *analyzer.match.TeamB.CurrentSide,
+		TeamAName:          analyzer.match.TeamA.Name,
+		TeamBName:          analyzer.match.TeamB.Name,
+	}
+	analyzer.currentRound.SetMatch(analyzer.match)
+	analyzer.createPlayersEconomies()
+}
+
+func (analyzer *Analyzer) resetCurrentRound() {
+	analyzer.match.ResetRound(analyzer.currentRound.Number)
+	analyzer.createPlayersEconomies()
+}
+
+// entityIntProperty returns the int value of the entity property with the given name.
+// It returns false when the property doesn't exist or has never been networked.
+func entityIntProperty(entity *st.Entity, name string) (int, bool) {
+	prop, exists := entity.PropertyValue(name)
+	if !exists || prop.Any == nil {
+		return 0, false
+	}
+
+	return prop.Int(), true
+}
+
+func (analyzer *Analyzer) registerPlayer(player *common.Player, teamState *common.TeamState) {
+	match := analyzer.match
+	if _, alreadyExists := match.PlayersBySteamID[player.SteamID64]; alreadyExists {
+		return
+	}
+
+	if player.SteamID64 == 0 || player.Entity == nil {
+		return
+	}
+
+	// Start of coach detection.
+	// It happens before the team state and pawn checks because coaches may be in the spectators team (no team state)
+	// and without a pawn. Only controller properties are read here so it's safe.
+	if analyzer.isSource2 {
+		// Quick way to detect coaches for demos coming from providers such as PRACC that put coaches as a real player
+		// visible in the scoreboard and make them dead at the end of round freezetime.
+		// Coaches have an out-of-range color value (> 4), which never occurs for real players (valid range: 0-4).
+		if color, exists := entityIntProperty(player.Entity, "m_iCompTeammateColor"); exists && color > 4 {
+			side := common.TeamUnassigned
+			if teamState != nil {
+				side = teamState.Team()
+			}
+			analyzer.registerCoach(player, side)
+			return
+		}
+	}
+
+	if coachingTeam, exists := entityIntProperty(player.Entity, "m_iCoachingTeam"); exists {
+		side := common.Team(coachingTeam)
+		if side == common.TeamCounterTerrorists || side == common.TeamTerrorists {
+			analyzer.registerCoach(player, side)
+			return
+		}
+	}
+	// End of coach detection
+
+	if teamState == nil {
+		return
+	}
+
+	if analyzer.isSource2 && player.PlayerPawnEntity() == nil {
+		return
+	}
+
+	playerTeam := teamState.Team()
+	if playerTeam == common.TeamSpectators || playerTeam == common.TeamUnassigned {
+		return
+	}
+
+	analyzer.removeCoach(player.SteamID64)
+	newPlayer := newPlayer(analyzer, playerTeam, *player)
+	match.PlayersBySteamID[player.SteamID64] = newPlayer
+}
+
+func (analyzer *Analyzer) registerUnknownPlayers() {
+	for _, player := range analyzer.parser.GameState().Participants().All() {
+		analyzer.registerPlayer(player, player.TeamState)
+	}
+}
+
+func (analyzer *Analyzer) updateTeamNames() {
+	gameState := analyzer.parser.GameState()
+	match := analyzer.match
+	teamNameA := strings.ReplaceUTF8ByteSequences(gameState.Team(common.Team(*match.TeamA.CurrentSide)).ClanName())
+	teamNameB := strings.ReplaceUTF8ByteSequences(gameState.Team(common.Team(*match.TeamB.CurrentSide)).ClanName())
+	if teamNameA == teamNameB {
+		return
+	}
+
+	if teamNameA != "" {
+		match.TeamA.Name = teamNameA
+		analyzer.currentRound.TeamAName = teamNameA
+	}
+	if teamNameB != "" {
+		match.TeamB.Name = teamNameB
+		analyzer.currentRound.TeamBName = teamNameB
+	}
+}
+
+// updatePlayersScores updates the score of all PlayersBySteamID that aren't spectating or unassigned from the parser information.
+func (analyzer *Analyzer) updatePlayersScores() {
+	players := analyzer.parser.GameState().Participants().Playing()
+	for _, playingPlayer := range players {
+		// Ignores 0 values because the initial score is 0 and some sources like ESEA reset it when the match is actually not done.
+		if player, exist := analyzer.match.PlayersBySteamID[playingPlayer.SteamID64]; exist && playingPlayer.Score() != 0 {
+			player.Score = playingPlayer.Score()
+			player.MvpCount = playingPlayer.MVPs()
+		}
+	}
+}
+
+func (analyzer *Analyzer) updatePlayersCurrentTeam() {
+	match := analyzer.match
+	parser := analyzer.parser
+	for _, player := range match.PlayersBySteamID {
+		for _, playingPlayer := range parser.GameState().Participants().Playing() {
+			if playingPlayer.SteamID64 != player.SteamID64 {
+				continue
+			}
+
+			playerTeam := playingPlayer.TeamState.Team()
+			if playerTeam == common.TeamSpectators || playerTeam == common.TeamUnassigned {
+				continue
+			}
+
+			if *player.Team.CurrentSide == constants.Side(playerTeam) {
+				continue
+			}
+
+			if *match.TeamA.CurrentSide == constants.Side(playerTeam) {
+				player.Team = match.TeamA
+			} else {
+				player.Team = match.TeamB
+			}
+		}
+	}
+}
+
+func (analyzer *Analyzer) processMatchStart() {
+	parser := analyzer.parser
+	match := analyzer.match
+	match.ResetRound(1)
+	analyzer.updatePlayersCurrentTeam()
+
+	currentRound := analyzer.currentRound
+	currentRound.StartFrame = parser.CurrentFrame()
+	currentRound.StartTick = analyzer.currentTick()
+	currentRound.TeamASide = *match.TeamA.CurrentSide
+	currentRound.TeamBSide = *match.TeamB.CurrentSide
+	analyzer.updateTeamNames()
+	analyzer.createPlayersEconomies()
+}
+
+// This creates a Round, reset analyzer data related to the current round and set the new round as the current round.
+func (analyzer *Analyzer) createRound() {
+	analyzer.clutch1 = nil
+	analyzer.clutch2 = nil
+	analyzer.lastGrenadeThrownByPlayer = make(map[uint64]*Shot)
+	analyzer.playersUntyingAnHostage = map[uint64]int{}
+	roundNumber := analyzer.currentRound.Number + 1
+
+	analyzer.currentRound = newRound(roundNumber, analyzer)
+	analyzer.createPlayersEconomies()
+}
+
+// secondsHasPassedSinceTick indicates if x seconds have passed since a specific tick.
+func (analyzer *Analyzer) secondsHasPassedSinceTick(seconds float64, tick int) bool {
+	parser := analyzer.parser
+	return float64(analyzer.currentTick()-tick)*parser.TickTime().Seconds() >= seconds
+}
+
+func (analyzer *Analyzer) isKnifeRound() bool {
+	playerWithEmptyWalletCount := 0
+	players := analyzer.parser.GameState().Participants()
+	for _, player := range players.Playing() {
+		if player.Money() == 0 {
+			playerWithEmptyWalletCount += 1
+		}
+	}
+
+	return playerWithEmptyWalletCount == len(players.Playing())
+}
+
+func (analyzer *Analyzer) handleRoundEnd(winnerTeam common.Team) {
+	analyzer.isRoundEndDetected = true
+	analyzer.isFirstRoundOfHalf = false
+	analyzer.currentRound.WinnerName = analyzer.match.Team(constants.Side(winnerTeam)).Name
+	analyzer.currentRound.WinnerSide = *analyzer.match.Team(constants.Side(winnerTeam)).CurrentSide
+	analyzer.currentRound.EndTick = analyzer.currentTick()
+	analyzer.currentRound.EndOfficiallyTick = analyzer.currentTick()
+	analyzer.currentRound.EndFrame = analyzer.parser.CurrentFrame()
+	analyzer.currentRound.EndOfficiallyFrame = analyzer.parser.CurrentFrame()
+
+	if analyzer.currentRound.FreezeTimeEndFrame == -1 {
+		analyzer.currentRound.FreezeTimeEndFrame = analyzer.parser.CurrentFrame()
+	}
+	if analyzer.currentRound.FreezeTimeEndTick == -1 {
+		analyzer.currentRound.FreezeTimeEndTick = analyzer.currentTick()
+	}
+
+	if analyzer.clutch1 != nil {
+		analyzer.clutch1.HasWon = constants.Side(winnerTeam) == analyzer.clutch1.Side
+	}
+	if analyzer.clutch2 != nil {
+		analyzer.clutch2.HasWon = constants.Side(winnerTeam) == analyzer.clutch2.Side
+	}
+
+	analyzer.updatePlayersScores()
+}
+
+func (analyzer *Analyzer) createPlayersEconomies() {
+	match := analyzer.match
+
+	match.PlayerEconomies = slice.Filter(match.PlayerEconomies, func(economy *PlayerEconomy, index int) bool {
+		return economy.RoundNumber != analyzer.currentRound.Number
+	})
+
+	for _, player := range analyzer.parser.GameState().Participants().Playing() {
+		economy := newPlayerEconomy(analyzer, player)
+		match.PlayerEconomies = append(match.PlayerEconomies, economy)
+	}
+}
+
+func (analyzer *Analyzer) computePlayersEconomies() {
+	for _, player := range analyzer.parser.GameState().Participants().Playing() {
+		economy := analyzer.match.GetPlayerEconomyAtRound(player.Name, player.SteamID64, analyzer.currentRound.Number)
+		if economy == nil {
+			continue
+		}
+
+		analyzer.updatePlayerEconomy(economy, player)
+	}
+}
+
+func (analyzer *Analyzer) createOrUpdatePlayerEconomy(player *common.Player) {
+	match := analyzer.match
+	economy := match.GetPlayerEconomyAtRound(player.Name, player.SteamID64, analyzer.currentRound.Number)
+	if economy == nil {
+		economy = newPlayerEconomy(analyzer, player)
+		match.PlayerEconomies = append(match.PlayerEconomies, economy)
+	} else {
+		analyzer.updatePlayerEconomy(economy, player)
+	}
+}
+
+func (analyzer *Analyzer) defaultRoundStartHandler(event events.RoundStart) {
+	if !analyzer.matchStarted() {
+		return
+	}
+
+	// No Rounds have been added yet, don't create a new one in this case, it's still the first round.
+	if len(analyzer.match.Rounds) == 0 {
+		return
+	}
+
+	analyzer.createRound()
+}
+
+func (analyzer *Analyzer) defaultRoundFreezetimeChangedHandler(event events.RoundFreezetimeChanged) {
+	// It may not be accurate to create players economy on round start because it's possible to buy
+	// a few ticks before the round start event and so may results in incorrect values.
+	// Do it when the freeze time starts, it's updated just before round start events.
+	if event.NewIsFreezetime {
+		analyzer.createPlayersEconomies()
+	} else {
+		analyzer.currentRound.FreezeTimeEndTick = analyzer.currentTick()
+		analyzer.currentRound.FreezeTimeEndFrame = analyzer.parser.CurrentFrame()
+		analyzer.lastFreezeTimeEndTick = analyzer.currentTick()
+	}
+}
+
+func (analyzer *Analyzer) defaultRoundEndOfficiallyHandler(event events.RoundEndOfficial) {
+	if !analyzer.matchStarted() {
+		return
+	}
+
+	analyzer.match.Rounds = append(analyzer.match.Rounds, analyzer.currentRound)
+}
+
+func (analyzer *Analyzer) defaultAnnouncementWinPanelMatchHandler(event events.AnnouncementWinPanelMatch) {
+	analyzer.updatePlayersScores()
+}
+
+func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
+	parser := analyzer.parser
+	match := analyzer.match
+
+	parser.RegisterEventHandler(func(event events.TickRateInfoAvailable) {
+		match.TickRate = parser.TickRate()
+	})
+
+	parser.RegisterEventHandler(func(event events.POVRecordingPlayerDetected) {
+		match.Type = "POV"
+	})
+
+	parser.RegisterEventHandler(func(event events.PlayerTeamChange) {
+		analyzer.registerPlayer(event.Player, event.NewTeamState)
+	})
+
+	parser.RegisterEventHandler(func(event events.RoundStart) {
+		analyzer.registerUnknownPlayers()
+	})
+
+	parser.RegisterEventHandler(func(event events.ConVarsUpdated) {
+		for varName, varValue := range event.UpdatedConVars {
+			switch varName {
+			case "mp_buytime":
+				buyTime, _ := strconv.Atoi(varValue)
+				if buyTime > 0 {
+					analyzer.buyTimeSeconds = buyTime
+				}
+			case "mp_maxrounds":
+				maxRounds, _ := strconv.Atoi(varValue)
+				// Sanity check for ESEA demos. mp_maxrounds is set high values such as 999.
+				// The real max rounds will be detected at the end of the analyze based on the scores.
+				if maxRounds > 0 && maxRounds < 99 {
+					match.MaxRounds = maxRounds
+				}
+			}
+		}
+	})
+
+	parser.RegisterEventHandler(func(event events.OtherDeath) {
+		if event.OtherType != "chicken" {
+			return
+		}
+
+		if event.Killer == nil {
+			fmt.Println(analyzer.currentTick(), "A chicken has been killed but the killer is nil")
+			return
+		}
+
+		chickenDeath := newChickenDeath(analyzer.parser.CurrentFrame(), analyzer.currentTick(), analyzer.currentRound.Number, event.Killer.SteamID64, equipmentToWeaponName[event.Weapon.Type])
+		analyzer.match.ChickenDeaths = append(analyzer.match.ChickenDeaths, chickenDeath)
+	})
+
+	parser.RegisterEventHandler(func(event events.ItemPickup) {
+		if !analyzer.matchStarted() || event.Player == nil || event.Player.IsBot || !event.Player.IsInBuyZone() {
+			return
+		}
+
+		weaponType := event.Weapon.Type
+		isNotBuyableWeapon := weaponType == common.EqKnife || weaponType == common.EqBomb || weaponType == common.EqUnknown || weaponType == common.EqWorld
+		if isNotBuyableWeapon {
+			return
+		}
+
+		isDefaultTerroristsPistol := event.Player.Team == common.TeamTerrorists && weaponType == common.EqGlock
+		if isDefaultTerroristsPistol {
+			return
+		}
+
+		isDefaultCounterTerroristsPistol := event.Player.Team == common.TeamCounterTerrorists && (weaponType == common.EqUSP || weaponType == common.EqP2000)
+		if isDefaultCounterTerroristsPistol {
+			return
+		}
+
+		currentRound := analyzer.currentRound
+		isDroppedWeapon := slice.Contains(analyzer.weaponsBoughtUniqueIDs, event.Weapon.UniqueID().String())
+		if isDroppedWeapon {
+			return
+		}
+
+		isBuyTimeEnded := analyzer.secondsPassedSinceRoundStart(currentRound, analyzer.buyTimeSeconds)
+		if isBuyTimeEnded {
+			return
+		}
+
+		analyzer.weaponsBoughtUniqueIDs = append(analyzer.weaponsBoughtUniqueIDs, event.Weapon.UniqueID().String())
+		match.PlayersBuy = append(match.PlayersBuy, newPlayerBuy(analyzer, event))
+	})
+
+	parser.RegisterEventHandler(func(event events.PlayerHurt) {
+		if !analyzer.matchStarted() || event.Player == nil {
+			return
+		}
+
+		damage := newDamageFromGameEvent(analyzer, event)
+		if damage != nil {
+			match.Damages = append(match.Damages, damage)
+		}
+	})
+
+	parser.RegisterEventHandler(func(event events.FrameDone) {
+		shouldComputeEconomy := analyzer.lastFreezeTimeEndTick != -1 && analyzer.secondsHasPassedSinceTick(equipmentValueDelaySeconds, analyzer.lastFreezeTimeEndTick)
+		if shouldComputeEconomy {
+			analyzer.computePlayersEconomies()
+			analyzer.computeTeamsEconomy(analyzer.currentRound)
+			analyzer.lastFreezeTimeEndTick = -1
+		}
+	})
+
+	if includePositions {
+		parser.RegisterEventHandler(func(event events.FrameDone) {
+			if !analyzer.matchStarted() {
+				return
+			}
+
+			for _, chicken := range analyzer.chickenEntities {
+				chickenPosition := newChickenPositionFromEntity(analyzer, chicken)
+				match.ChickenPositions = append(match.ChickenPositions, chickenPosition)
+			}
+
+			// GrenadeProjectiles() and Infernos() are maps, ranging them yields a different order on every run.
+			// They are visited by entity ID so that the positions of a frame are always exported in the same order.
+			projectiles := parser.GameState().GrenadeProjectiles()
+			analyzer.entityIDsScratch = sortedEntityIDs(analyzer.entityIDsScratch, projectiles)
+			for _, entityID := range analyzer.entityIDsScratch {
+				position := newGrenadePositionFromProjectile(analyzer, projectiles[entityID])
+				if position != nil {
+					match.GrenadePositions = append(match.GrenadePositions, position)
+				}
+			}
+
+			infernos := parser.GameState().Infernos()
+			analyzer.entityIDsScratch = sortedEntityIDs(analyzer.entityIDsScratch, infernos)
+			for _, entityID := range analyzer.entityIDsScratch {
+				infernoPosition := newInfernoPositionFromInferno(analyzer, infernos[entityID])
+				if infernoPosition != nil {
+					match.InfernoPositions = append(match.InfernoPositions, infernoPosition)
+				}
+			}
+
+			for _, player := range parser.GameState().Participants().Playing() {
+				playerPosition := newPlayerPosition(analyzer, player)
+				match.PlayerPositions = append(match.PlayerPositions, playerPosition)
+			}
+
+			for _, hostage := range parser.GameState().Hostages() {
+				hostagePosition := newHostagePositionFromHostage(analyzer, hostage)
+				match.HostagePositions = append(match.HostagePositions, hostagePosition)
+			}
+		})
+
+		parser.RegisterEventHandler(func(event events.InfernoExpired) {
+			delete(analyzer.infernoHulls, event.Inferno.UniqueID())
+		})
+	}
+
+	parser.RegisterEventHandler(func(event events.RoundEnd) {
+		if !analyzer.matchStarted() {
+			return
+		}
+
+		analyzer.handleRoundEnd(event.Winner)
+		updateRoundEndReason(analyzer.currentRound, event, analyzer.match.MapName)
+	})
+
+	missingGameEventDescriptorsWarnCount := 0
+	parser.RegisterEventHandler(func(event events.ParserWarn) {
+		fmt.Println(event)
+		if event.Type != events.WarnTypeGameEventBeforeDescriptors {
+			return
+		}
+
+		// CS2 demos recorded on a server with sv_hibernate_when_empty 0 doesn't contain the msg CMsgSource1LegacyGameEventList.
+		// It looks like demos coming from https://dathost.net (Esportal seems to use it) use this setting and so
+		// these demos are not analyzable.
+		// While the workaround in the following PR work, it has not been merged because it's not a good long term
+		// solution and as it's CS2 bug, Valve should fix this issue.
+		// https://github.com/markus-wa/demoinfocs-golang/pull/460
+		missingGameEventDescriptorsWarnCount += 1
+		if missingGameEventDescriptorsWarnCount >= 20 {
+			analyzer.cancelParsing(errors.New("missing game event descriptors (ErrMissingGameEventDescriptors)"))
+		}
+	})
+
+	parser.RegisterEventHandler(func(event events.RoundEndOfficial) {
+		if !analyzer.matchStarted() {
+			return
+		}
+
+		analyzer.currentRound.EndOfficiallyFrame = parser.CurrentFrame()
+		analyzer.currentRound.EndOfficiallyTick = analyzer.currentTick()
+	})
+
+	parser.RegisterEventHandler(func(event events.Kill) {
+		if !analyzer.matchStarted() || parser.GameState().IsFreezetimePeriod() {
+			return
+		}
+
+		var killerSteamID64 uint64
+		if event.Killer != nil {
+			killerSteamID64 = event.Killer.SteamID64
+		}
+		var victimSteamID64 uint64
+		if event.Victim != nil {
+			victimSteamID64 = event.Victim.SteamID64
+		}
+		kill := newKillFromGameEvent(analyzer, event)
+		if kill != nil {
+			match.Kills = append(match.Kills, kill)
+		}
+
+		if analyzer.clutch1 != nil {
+			clutcherSteamId := analyzer.clutch1.ClutcherSteamID64
+			if clutcherSteamId == victimSteamID64 {
+				analyzer.clutch1.ClutcherSurvived = false
+			} else if clutcherSteamId == killerSteamID64 {
+				analyzer.clutch1.ClutcherKillCount += 1
+			}
+		}
+
+		if analyzer.clutch2 != nil {
+			clutcherSteamId := analyzer.clutch2.ClutcherSteamID64
+			if clutcherSteamId == victimSteamID64 {
+				analyzer.clutch2.ClutcherSurvived = false
+			} else if clutcherSteamId == killerSteamID64 {
+				analyzer.clutch2.ClutcherKillCount += 1
+			}
+		}
+
+		var counterTerroristsAlive []*common.Player
+		for _, player := range parser.GameState().TeamCounterTerrorists().Members() {
+			if player.IsAlive() && victimSteamID64 != player.SteamID64 {
+				counterTerroristsAlive = append(counterTerroristsAlive, player)
+			}
+		}
+
+		var terroristsAlive []*common.Player
+		for _, player := range parser.GameState().TeamTerrorists().Members() {
+			if player.IsAlive() && victimSteamID64 != player.SteamID64 {
+				terroristsAlive = append(terroristsAlive, player)
+			}
+		}
+
+		// 1vX detection
+		if analyzer.clutch1 == nil && (len(counterTerroristsAlive) == 1 || len(terroristsAlive) == 1) {
+			var side common.Team
+			var opponentCount int
+			var clutcher *common.Player
+			if len(counterTerroristsAlive) == 1 {
+				side = common.TeamCounterTerrorists
+				opponentCount = len(terroristsAlive)
+				clutcher = counterTerroristsAlive[0]
+			} else {
+				side = common.TeamTerrorists
+				opponentCount = len(counterTerroristsAlive)
+				clutcher = terroristsAlive[0]
+			}
+
+			analyzer.clutch1 = newClutch(analyzer, clutcher, side, opponentCount)
+			match.Clutches = append(match.Clutches, analyzer.clutch1)
+		}
+
+		// 1v1 detection
+		if analyzer.clutch1 != nil && len(counterTerroristsAlive) == 1 && len(terroristsAlive) == 1 {
+			var side common.Team
+			var clutcher *common.Player
+			if analyzer.clutch1.Side == constants.SideCounterTerrorists {
+				side = common.TeamTerrorists
+				clutcher = terroristsAlive[0]
+			} else {
+				side = common.TeamCounterTerrorists
+				clutcher = counterTerroristsAlive[0]
+			}
+
+			analyzer.clutch2 = newClutch(analyzer, clutcher, side, 1)
+			match.Clutches = append(match.Clutches, analyzer.clutch2)
+		}
+	})
+
+	parser.RegisterEventHandler(func(event events.HeExplode) {
+		if !analyzer.matchStarted() {
+			return
+		}
+
+		heGrenadeExplode := newHeGrenadeExplodeFromGameEvent(analyzer, event)
+		if heGrenadeExplode != nil {
+			match.HeGrenadesExplode = append(match.HeGrenadesExplode, heGrenadeExplode)
+		}
+	})
+
+	parser.RegisterEventHandler(func(event events.WeaponFire) {
+		if !analyzer.matchStarted() {
+			return
+		}
+
+		shot := newShot(analyzer, event)
+		if shot == nil {
+			return
+		}
+
+		if event.Weapon.Class() == common.EqClassGrenade {
+			analyzer.lastGrenadeThrownByPlayer[shot.PlayerSteamID64] = shot
+		}
+
+		match.Shots = append(match.Shots, shot)
+	})
+
+	parser.RegisterEventHandler(func(event events.BombPlanted) {
+		if !analyzer.matchStarted() {
+			return
+		}
+
+		analyzer.bombPlantPosition = event.Player.Position()
+
+		bombPlanted := newBombPlanted(analyzer, event)
+		match.BombsPlanted = append(match.BombsPlanted, bombPlanted)
+	})
+
+	parser.RegisterEventHandler(func(event events.BombDefused) {
+		if !analyzer.matchStarted() {
+			return
+		}
+
+		bombDefused := newBombDefused(analyzer, event)
+		match.BombsDefused = append(match.BombsDefused, bombDefused)
+		analyzer.currentRound.EndReason = constants.RoundEndReasonBombDefused
+	})
+
+	parser.RegisterEventHandler(func(event events.BombExplode) {
+		if !analyzer.matchStarted() {
+			return
+		}
+
+		bombExploded := newBombExploded(analyzer, event)
+		match.BombsExploded = append(match.BombsExploded, bombExploded)
+	})
+
+	parser.RegisterEventHandler(func(event events.BombPlantBegin) {
+		if !analyzer.matchStarted() {
+			return
+		}
+
+		bombPlantStart := newBombPlantStart(analyzer, event)
+		match.BombsPlantStart = append(match.BombsPlantStart, bombPlantStart)
+	})
+
+	parser.RegisterEventHandler(func(event events.BombDefuseStart) {
+		if !analyzer.matchStarted() {
+			return
+		}
+
+		bombDefuseStart := newBombDefuseStart(analyzer, event.Player)
+		match.BombsDefuseStart = append(match.BombsDefuseStart, bombDefuseStart)
+	})
+
+	parser.RegisterEventHandler(func(event events.PlayerFlashed) {
+		if !analyzer.matchStarted() || event.Player == nil || event.Attacker == nil || event.Player.IsBot {
+			return
+		}
+
+		playerFlashed := newPlayerFlashed(analyzer, event)
+		match.PlayersFlashed = append(match.PlayersFlashed, playerFlashed)
+	})
+
+	parser.RegisterEventHandler(func(event events.FlashExplode) {
+		if !analyzer.matchStarted() {
+			return
+		}
+
+		flashbangExplode := newFlashbangExplodeFromGameEvent(analyzer, event)
+		if flashbangExplode != nil {
+			match.FlashbangsExplode = append(match.FlashbangsExplode, flashbangExplode)
+		}
+	})
+
+	parser.RegisterEventHandler(func(event events.GrenadeProjectileThrow) {
+		if !analyzer.matchStarted() {
+			return
+		}
+
+		projectile := event.Projectile
+		if projectile == nil {
+			fmt.Println("Projectile nil in grenade projectile throw event")
+			return
+		}
+
+		thrower := projectile.Thrower
+		if thrower == nil {
+			fmt.Println("Thrower nil in grenade projectile throw event, falling back to owner")
+			thrower = projectile.WeaponInstance.Owner
+			if thrower == nil {
+				fmt.Println("Owner nil in grenade projectile throw event")
+				return
+			}
+		}
+
+		lastGrenadeShotExist := analyzer.lastGrenadeThrownByPlayer[thrower.SteamID64]
+		if lastGrenadeShotExist == nil {
+			fmt.Println("A projectile throw event occurred whereas its weapon fired event didn't occurred.")
+		} else {
+			lastGrenadeShotExist.ProjectileID = projectile.UniqueID().String()
+			delete(analyzer.lastGrenadeThrownByPlayer, thrower.SteamID64)
+		}
+	})
+
+	parser.RegisterEventHandler(func(event events.GrenadeProjectileBounce) {
+		if !analyzer.matchStarted() {
+			return
+		}
+
+		grenadeBounce := newGrenadeBounceFromProjectile(analyzer, event.Projectile)
+		if grenadeBounce != nil {
+			match.GrenadeBounces = append(match.GrenadeBounces, grenadeBounce)
+		}
+	})
+
+	parser.RegisterEventHandler(func(event events.GrenadeProjectileDestroy) {
+		if !analyzer.matchStarted() {
+			return
+		}
+
+		grenadeProjectileDestroy := newGrenadeProjectileDestroyFromProjectile(analyzer, event.Projectile)
+		if grenadeProjectileDestroy != nil {
+			match.GrenadeProjectilesDestroy = append(match.GrenadeProjectilesDestroy, grenadeProjectileDestroy)
+		}
+	})
+
+	parser.RegisterEventHandler(func(event events.DecoyStart) {
+		if !analyzer.matchStarted() {
+			return
+		}
+
+		decoyStart := newDecoyStartFromGameEvent(analyzer, event)
+		if decoyStart != nil {
+			match.DecoysStart = append(match.DecoysStart, decoyStart)
+		}
+	})
+
+	parser.RegisterEventHandler(func(event events.SmokeStart) {
+		if !analyzer.matchStarted() {
+			return
+		}
+
+		smokeStart := newSmokeStartFromGameEvent(analyzer, event)
+		if smokeStart != nil {
+			match.SmokesStart = append(match.SmokesStart, smokeStart)
+		}
+	})
+
+	parser.RegisterEventHandler(func(event events.ScoreUpdated) {
+		// Update players score when a team's score has been updated to handle the last kill of a match.
+		// The AnnouncementWinPanelMatch event is triggered before ScoreUpdated and we can't use the Kill event because
+		// the player's score at this point is the current player's score (before the kill).
+		analyzer.updatePlayersScores()
+	})
+
+	// Players may be renamed after they have been registered, e.g. CS2 names come from the player controller.
+	parser.RegisterEventHandler(func(event events.PlayerNameChange) {
+		if event.Player == nil {
+			return
+		}
+
+		if player, exist := match.PlayersBySteamID[event.Player.SteamID64]; exist {
+			player.Name = event.NewName
+		}
+	})
+
+	parser.RegisterEventHandler(func(event events.RankUpdate) {
+		match.IsRanked = true
+		if player, exist := match.PlayersBySteamID[event.SteamID64()]; exist {
+			player.Rank = event.RankNew
+			player.OldRank = event.RankOld
+			player.WinCount = event.WinCount
+		}
+	})
+
+	parser.RegisterEventHandler(func(event events.HostageStateChanged) {
+		if !analyzer.matchStarted() {
+			return
+		}
+
+		switch event.NewState {
+		case common.HostageStateBeingUntied:
+			for _, player := range parser.GameState().Participants().Playing() {
+				playerHasNoUntyingInProgress := analyzer.playersUntyingAnHostage[player.SteamID64] == 0
+				if player.IsGrabbingHostage() && playerHasNoUntyingInProgress {
+					analyzer.playersUntyingAnHostage[player.SteamID64] = event.Hostage.Entity.ID()
+					hostagePickedUpStart := newHostagePickupStart(analyzer, player, event.Hostage)
+					match.HostagePickUpStart = append(match.HostagePickUpStart, hostagePickedUpStart)
+					break
+				}
+			}
+		case common.HostageStateGettingPickedUp:
+			if event.Hostage.Leader() != nil {
+				delete(analyzer.playersUntyingAnHostage, event.Hostage.Leader().SteamID64)
+				hostagePickedUp := newHostagePickedUp(analyzer, event.Hostage)
+				match.HostagePickedUp = append(match.HostagePickedUp, hostagePickedUp)
+			}
+		case common.HostageStateIdle:
+			// Case when a player started to untie an hostage and cancelled.
+			for _, player := range parser.GameState().Participants().Playing() {
+				playerWasUntyingTheHostage := analyzer.playersUntyingAnHostage[player.SteamID64] == event.Hostage.Entity.ID()
+				if !player.IsGrabbingHostage() && playerWasUntyingTheHostage {
+					delete(analyzer.playersUntyingAnHostage, player.SteamID64)
+					break
+				}
+			}
+		case common.HostageStateBeingCarried:
+			if event.Hostage.Leader() != nil {
+				delete(analyzer.playersUntyingAnHostage, event.Hostage.Leader().SteamID64)
+			}
+		}
+	})
+
+	parser.RegisterEventHandler(func(event events.HostageRescued) {
+		if !analyzer.matchStarted() || event.Hostage.Leader() == nil {
+			return
+		}
+
+		hostageRescued := newHostageRescued(analyzer, event.Hostage)
+		match.HostageRescued = append(match.HostageRescued, hostageRescued)
+	})
+
+	parser.RegisterEventHandler(func(event events.RoundMVPAnnouncement) {
+		if !analyzer.matchStarted() {
+			return
+		}
+
+		analyzer.updatePlayersScores()
+	})
+
+	parser.RegisterEventHandler(func(event events.ItemRefund) {
+		if !analyzer.matchStarted() {
+			return
+		}
+
+		// Loop in reverse order to find the last purchase of the player and flag it as refunded.
+		for i := len(match.PlayersBuy) - 1; i >= 0; i-- {
+			buy := match.PlayersBuy[i]
+
+			if buy.PlayerSteamID64 != event.Player.SteamID64 || buy.WeaponName != equipmentToWeaponName[event.Weapon.Type] {
+				continue
+			}
+
+			if buy.RoundNumber != analyzer.currentRound.Number {
+				break
+			}
+
+			buy.HasRefunded = true
+		}
+	})
+
+	parser.RegisterEventHandler(func(event events.OvertimeNumberChanged) {
+		match.OvertimeCount = event.NewCount
+	})
+
+	parser.RegisterEventHandler(func(event events.ChatMessage) {
+		if event.Sender == nil {
+			return
+		}
+		chatMessage := newChatMessageFromGameEvent(analyzer, event)
+		match.ChatMessages = append(match.ChatMessages, chatMessage)
+	})
+
+	// weaponInspectCancelButtons are the buttons (actions) that cancel an ongoing weapon inspection.
+	var weaponInspectCancelButtons = []common.ButtonBitMask{
+		common.ButtonAttack,
+		common.ButtonAttack2,
+		common.ButtonReload,
+		common.ButtonZoom,
+	}
+
+	// CS2 only
+	parser.RegisterEventHandler(func(event events.PlayerButtonsStateUpdate) {
+		if !analyzer.matchStarted() || event.Player == nil {
+			return
+		}
+
+		player := analyzer.match.PlayersBySteamID[event.Player.SteamID64]
+		if player == nil {
+			return
+		}
+
+		if event.Player.IsPressingButton(common.ButtonLookAtWeapon) {
+			analyzer.startWeaponInspection(player)
+			return
+		}
+
+		for _, button := range weaponInspectCancelButtons {
+			if event.Player.IsPressingButton(button) {
+				analyzer.stopWeaponInspection(player)
+				break
+			}
+		}
+	})
+
+	parser.RegisterEventHandler(func(event events.ConVarsUpdated) {
+		for conVarName, conVarValue := range event.UpdatedConVars {
+			if conVarName == "game_type" {
+				match.GameType = constants.GameType(converters.StringToInt(conVarValue))
+			} else if conVarName == "game_mode" {
+				match.GameMode = constants.GameMode(converters.StringToInt(conVarValue))
+			}
+		}
+	})
+
+	parser.RegisterEventHandler(func(event events.DataTablesParsed) {
+		serverClasses := parser.ServerClasses()
+		serverClasses.FindByName("CChicken").OnEntityCreated(func(entity *st.Entity) {
+			analyzer.chickenCount++
+			chicken := &chickenEntity{
+				id:     analyzer.chickenCount,
+				entity: entity,
+			}
+			analyzer.chickenEntities = append(analyzer.chickenEntities, chicken)
+			// Killed chickens are destroyed, their positions must not be exported anymore.
+			entity.OnDestroy(func() {
+				analyzer.chickenEntities = slices.DeleteFunc(analyzer.chickenEntities, func(other *chickenEntity) bool {
+					return other == chicken
+				})
+			})
+		})
+
+		// We don't use the event TeamSideSwitch to detect teams switch because it's triggered several times at the same tick with POV demos.
+		var currentGamePhase common.GamePhase = common.GamePhaseInit
+		parser.RegisterEventHandler(func(event events.GamePhaseChanged) {
+			if !analyzer.matchStarted() {
+				return
+			}
+			newGamePhase := event.NewGamePhase
+			valueChanged := newGamePhase != currentGamePhase
+			currentGamePhase = newGamePhase
+			if !valueChanged {
+				return
+			}
+
+			switch newGamePhase {
+			case common.GamePhaseTeamSideSwitch:
+				{
+					match.SwapTeams()
+					// round_start is triggered before this entity update with CS:GO demos only. Update the current teams side here.
+					// It doesn't happen with CS2 demos because the parser dispatch events in a more expected way.
+					if !analyzer.isSource2 {
+						analyzer.currentRound.TeamASide = *match.TeamA.CurrentSide
+						analyzer.currentRound.TeamBSide = *match.TeamB.CurrentSide
+					}
+					analyzer.isFirstRoundOfHalf = true
+				}
+			}
+		})
+
+		getCurrentRoundBombDefusedEvent := func() *BombDefused {
+			bombsDefused := analyzer.match.BombsDefused
+			bombDefusedCount := len(bombsDefused)
+			if bombDefusedCount > 0 {
+				lastBombDefused := bombsDefused[bombDefusedCount-1]
+				if lastBombDefused.RoundNumber == analyzer.currentRound.Number {
+					return lastBombDefused
+				}
+			}
+
+			return nil
+		}
+
+		if !analyzer.isSource2 {
+			// CSGO workaround to detect missing bomb defused events and update the round end reason.
+			// Both events may be missing with old CSGO demos.
+			// We don't have the problem with CS2 demos because the parser dispatch bomb events using props updates
+			// rather than game events.
+			// TODO move it to demoinfocs?
+			serverClasses.FindByName("CPlantedC4").OnEntityCreated(func(bombEntity *st.Entity) {
+				// Old CSGO demos don't have these properties (~ before end of 2018).
+				siteProp := bombEntity.Property("m_nBombSite")
+				defuserProp := bombEntity.Property("m_hBombDefuser")
+				if siteProp == nil || defuserProp == nil {
+					return
+				}
+
+				siteNumber := siteProp.Value().Int()
+				site := events.BomsiteUnknown
+				if siteNumber == 0 {
+					site = events.BombsiteA
+				} else if siteNumber == 1 {
+					site = events.BombsiteB
+				}
+
+				var defuser *common.Player
+				defuserProp.OnUpdate(func(val st.PropertyValue) {
+					defuser = parser.GameState().Participants().FindByHandle64(uint64(val.Int()))
+				})
+
+				bombEntity.Property("m_bBombDefused").OnUpdate(func(val st.PropertyValue) {
+					isDefused := val.BoolVal()
+					if !isDefused {
+						return
+					}
+
+					bombsDefused := getCurrentRoundBombDefusedEvent()
+					// Don't create a new bomb defused event if it already exists, it means the game event has been
+					// triggered.
+					if bombsDefused != nil {
+						return
+					}
+
+					bombDefused := newBombDefused(analyzer, events.BombDefused{
+						BombEvent: events.BombEvent{
+							Player: defuser,
+							Site:   site,
+						},
+					})
+					match.BombsDefused = append(match.BombsDefused, bombDefused)
+					analyzer.currentRound.EndReason = constants.RoundEndReasonBombDefused
+				})
+			})
+		}
+
+		serverClasses.FindByName("CCSGameRulesProxy").OnEntityCreated(func(entity *st.Entity) {
+			// Fallback to detect rounds end for demos missing round end events.
+			// ! Don't use m_eRoundWinReason because it's not available with old demos (at least 2014)
+			roundWinStatusProperty := entity.Property("cs_gamerules_data.m_iRoundWinStatus")
+			if roundWinStatusProperty == nil {
+				roundWinStatusProperty = entity.Property("m_pGameRules.m_iRoundWinStatus")
+			}
+			if roundWinStatusProperty != nil {
+				roundWinStatusProperty.OnUpdate(func(val st.PropertyValue) {
+					roundWinStatus := byte(val.Int())
+					if roundWinStatus == byte(constants.RoundWinStatusUnassigned) {
+						analyzer.isRoundEndDetected = false
+						return
+					}
+
+					if !analyzer.matchStarted() || analyzer.isRoundEndDetected || roundWinStatus == byte(constants.RoundWinStatusDraw) {
+						return
+					}
+
+					winnerSide := common.TeamCounterTerrorists
+					if roundWinStatus == byte(constants.RoundWinStatusTWon) {
+						winnerSide = common.TeamTerrorists
+					}
+
+					analyzer.handleRoundEnd(winnerSide)
+
+					// We don't have access to the round end reason here, try to detect it based on current game state.
+					currentRound := analyzer.currentRound
+					if winnerSide == common.TeamCounterTerrorists {
+						currentRound.EndReason = constants.RoundEndReasonCTWin
+
+						// If a T is still alive it means CTs won because Ts ran out of time
+						for _, player := range parser.GameState().Participants().TeamMembers(common.TeamTerrorists) {
+							if player.IsAlive() {
+								currentRound.EndReason = constants.RoundEndReasonTargetSaved
+								break
+							}
+						}
+
+						// If there is a bomb defused event, it means CTs won
+						currentRoundBombDefusedEvent := getCurrentRoundBombDefusedEvent()
+						if currentRoundBombDefusedEvent != nil {
+							currentRound.EndReason = constants.RoundEndReasonBombDefused
+						}
+					} else {
+						currentRound.EndReason = constants.RoundEndReasonTerroristsWin
+
+						bombsExploded := analyzer.match.BombsExploded
+						bombExplodedCount := len(bombsExploded)
+						if bombExplodedCount > 0 {
+							lastBombExploded := bombsExploded[bombExplodedCount-1]
+							if lastBombExploded.RoundNumber == currentRound.Number {
+								currentRound.EndReason = constants.RoundEndReasonTargetBombed
+							}
+						}
+					}
+				})
+			}
+
+			if analyzer.isSource2 {
+				abortedProp := entity.Property("m_pGameRules.m_nMatchAbortedEarlyReason")
+				if abortedProp != nil {
+					abortedProp.OnUpdate(func(val st.PropertyValue) {
+						reason := val.Int()
+						if reason == 0 {
+							return
+						}
+
+						// TODO notImplemented Find a demo with a VAC live ban to get the correct value
+						fmt.Println("Match aborted with reason", reason)
+						analyzer.match.HasVacLiveBan = true
+					})
+				} else {
+					// Old demos
+					entity.Property("m_pGameRules.m_bMatchAbortedDueToPlayerBan").OnUpdate(func(val st.PropertyValue) {
+						analyzer.match.HasVacLiveBan = val.BoolVal()
+					})
+				}
+			}
+
+			var lastTimeoutUpdateTick = -1
+			onTimeoutUpdate := func(val st.PropertyValue) {
+				currentTick := analyzer.currentTick()
+				if lastTimeoutUpdateTick != currentTick && val.Float() == 0 && !analyzer.isRoundEndDetected {
+					analyzer.currentRound.StartTick = currentTick
+					analyzer.currentRound.StartFrame = parser.CurrentFrame()
+				}
+				lastTimeoutUpdateTick = currentTick
+			}
+			// Demos before the CSGO update that added teams timeout doesn't contain this prop.
+			// In this case round start values will come from round_start event which is fine as timeout didn't exist.
+			counterTerroristTimeoutRemainingProperty := entity.Property("cs_gamerules_data.m_flCTTimeOutRemaining")
+			if counterTerroristTimeoutRemainingProperty == nil {
+				counterTerroristTimeoutRemainingProperty = entity.Property("m_pGameRules.m_flCTTimeOutRemaining")
+			}
+			if counterTerroristTimeoutRemainingProperty != nil {
+				counterTerroristTimeoutRemainingProperty.OnUpdate(onTimeoutUpdate)
+			}
+			terroristTimeoutRemainingProperty := entity.Property("cs_gamerules_data.m_flTerroristTimeOutRemaining")
+			if terroristTimeoutRemainingProperty == nil {
+				terroristTimeoutRemainingProperty = entity.Property("m_pGameRules.m_flTerroristTimeOutRemaining")
+			}
+			if terroristTimeoutRemainingProperty != nil {
+				terroristTimeoutRemainingProperty.OnUpdate(onTimeoutUpdate)
+			}
+		})
+	})
+}
+
+func defaultPostProcess(analyzer *Analyzer) {
+	match := analyzer.match
+	currentRound := analyzer.currentRound
+	if len(match.Rounds) < currentRound.Number {
+		match.Rounds = append(match.Rounds, currentRound)
+	}
+}
