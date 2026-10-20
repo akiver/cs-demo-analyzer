@@ -6,6 +6,7 @@ import (
 	"os"
 
 	"github.com/akiver/cs-demo-analyzer/internal/analyzer/cs2"
+	"github.com/akiver/cs-demo-analyzer/internal/analyzer/csgo"
 	d "github.com/akiver/cs-demo-analyzer/internal/demo"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
 )
@@ -49,7 +50,12 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 		source = d.GetDemoSource(demo)
 	}
 
-	return cs2.Analyze(file, demo, source, options.IncludePositions)
+	// CS2 demos are parsed with demoinfocs-golang v6, CS:GO (Source 1) demos with v4.
+	if demo.IsSource2() {
+		return cs2.Analyze(file, demo, source, options.IncludePositions)
+	}
+
+	return csgo.Analyze(file, demo, source, options.IncludePositions)
 }
 
 func AnalyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
