@@ -1,4 +1,5 @@
-// Package csgo analyzes CS:GO (Source 1) and, for now, CS2 demos with demoinfocs-golang v4.
+// Package csgo analyzes CS:GO (Source 1) demos with demoinfocs-golang v4, which v5+ can't parse anymore.
 //
-// CS2 demos will move to their own analyzer built on demoinfocs-golang v6, which can't parse CS:GO demos anymore.
+// It's mostly the same code as package cs2, which analyzes CS2 demos with demoinfocs-golang v6: a change here
+// usually belongs there too. scripts/diff-analyzers.sh shows how the two differ.
 package csgo
