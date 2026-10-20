@@ -120,7 +120,7 @@ func (match Match) Players() []*Player {
 
 // This returns the team currently on the given side.
 func (match Match) Team(team constants.Side) *Team {
-	if *match.TeamA.CurrentSide == constants.Side(team) {
+	if *match.TeamA.CurrentSide == team {
 		return match.TeamA
 	}
 

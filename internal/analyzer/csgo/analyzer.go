@@ -80,8 +80,6 @@ type Analyzer struct {
 	weaponsBoughtUniqueIDs []string
 	// The last weapon inspection of each player, see isInspectingWeapon().
 	weaponInspections map[*Player]*weaponInspectionData
-	// Stops parsing with the given error, which is returned by the parser.
-	// Handlers must call it instead of panicking: the parser re-panics handler panics on the caller.
 }
 
 // sortedEntityIDs returns the keys of a map of entities by entity ID in ascending order, to range over the map in a
@@ -1117,7 +1115,6 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 		common.ButtonZoom,
 	}
 
-	// CS2 only
 	// CS:GO only
 	parser.RegisterEventHandler(func(event events.PlayerInspectingWeapon) {
 		if !analyzer.matchStarted() || event.Player == nil {
@@ -1146,6 +1143,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 		analyzer.stopWeaponInspection(player)
 	})
 
+	// CS2 only
 	parser.RegisterEventHandler(func(event events.PlayerButtonsStateUpdate) {
 		if !analyzer.matchStarted() || event.Player == nil {
 			return

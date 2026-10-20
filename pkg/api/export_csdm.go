@@ -1246,7 +1246,7 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 				continue
 			}
 			hostage.lastTick = position.Tick
-			if !exists || position.State != constants.HostageState(hostage.lastState) {
+			if !exists || position.State != hostage.lastState {
 				hostage.stateTicks = appendInt32(hostage.stateTicks, position.Tick)
 				hostage.states = appendInt32(hostage.states, int(position.State))
 				hostage.lastState = position.State

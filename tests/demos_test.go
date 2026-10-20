@@ -114,7 +114,6 @@ func runDemoTestCases(t *testing.T, game string, testCases []demoTestCase) {
 		// Prefix the subtest with the game folder so the suite can be filtered by game,
 		// e.g. go test ./tests -run TestDemos/cs2.
 		t.Run(game+"/"+tc.testName, func(t *testing.T) {
-
 			t.Parallel()
 
 			demoPath := testsutils.GetDemoPath(game, tc.demoName)
