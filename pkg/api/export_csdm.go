@@ -13,6 +13,7 @@ import (
 	"fmt"
 	"math"
 	"os"
+	"slices"
 	"sort"
 	"strings"
 	"sync"
@@ -22,6 +23,7 @@ import (
 	"github.com/akiver/cs-demo-analyzer/internal/csv"
 	"github.com/akiver/cs-demo-analyzer/internal/slice"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
+	"github.com/golang/geo/r2"
 	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
 )
 
@@ -53,6 +55,17 @@ func appendBool(bytes []byte, value bool) []byte {
 // PostgreSQL bytea hex format
 func toBytea(bytes []byte) string {
 	return "\\x" + hex.EncodeToString(bytes)
+}
+
+var textArrayEscaper = strings.NewReplacer(`\`, `\\`, `"`, `\"`)
+
+// PostgreSQL array literal, elements are quoted because they may contain commas.
+func toTextArray(values []string) string {
+	elements := make([]string, len(values))
+	for index, value := range values {
+		elements[index] = `"` + textArrayEscaper.Replace(value) + `"`
+	}
+	return "{" + strings.Join(elements, ",") + "}"
 }
 
 // Positions of an entity packed as big-endian binary.
@@ -404,16 +417,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 			positions.smgs = append(positions.smgs, state.smgs)
 			positions.rifles = append(positions.rifles, state.rifles)
 			positions.heavy = append(positions.heavy, state.heavy)
-		}
-
-		// PostgreSQL array literal, elements are quoted because weapon lists contain commas.
-		var toTextArray = func(values []string) string {
-			escaper := strings.NewReplacer(`\`, `\\`, `"`, `\"`)
-			elements := make([]string, len(values))
-			for index, value := range values {
-				elements[index] = `"` + escaper.Replace(value) + `"`
-			}
-			return "{" + strings.Join(elements, ",") + "}"
 		}
 
 		lines := [][]string{}
@@ -1107,31 +1110,76 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		csv.WriteLinesIntoCsvFile(outputPath+"_decoys_start.csv", lines)
 	}
 
+	// Infernos positions, 1 row per inferno. The position and the thrower of an inferno never change, only its 2D convex
+	// hull changes when fires ignite or extinguish.
+	// A convex hull is written only when it changes with its tick packed as big-endian binary, the convex hull of the
+	// last tick is always written so that it's possible to know when the inferno disappeared.
+	// A convex hull is a list of points "x1,y1,x2,y2...", it's empty when the inferno has no active fires.
 	var writeInfernoPositions = func() {
-		lines := [][]string{}
-		for _, position := range match.InfernoPositions {
-			var convexHull2D string
-			for index, point := range position.ConvexHull2D {
-				startCharacter := ""
+		type infernoHulls struct {
+			first         *InfernoPosition
+			ticks         []byte
+			hulls         []string
+			lastTick      int
+			lastHull      []r2.Point
+			isLastWritten bool
+		}
+		var formatHull = func(hull []r2.Point) string {
+			var builder strings.Builder
+			for index, point := range hull {
 				if index > 0 {
-					startCharacter = ","
+					builder.WriteString(",")
 				}
-				convexHull2D += fmt.Sprintf("%s%f,%f", startCharacter, point.X, point.Y)
+				fmt.Fprintf(&builder, "%f,%f", point.X, point.Y)
 			}
-			if convexHull2D == "" {
-				convexHull2D = "0,0"
+			return builder.String()
+		}
+		var writeHull = func(inferno *infernoHulls, tick int, hull []r2.Point) {
+			inferno.ticks = appendInt32(inferno.ticks, tick)
+			inferno.hulls = append(inferno.hulls, formatHull(hull))
+		}
+
+		hullsPerInferno := make(map[string]*infernoHulls)
+		var orderedHulls []*infernoHulls
+		for _, position := range match.InfernoPositions {
+			inferno, exists := hullsPerInferno[position.UniqueID]
+			if !exists {
+				inferno = &infernoHulls{first: position}
+				hullsPerInferno[position.UniqueID] = inferno
+				orderedHulls = append(orderedHulls, inferno)
+				writeHull(inferno, position.Tick, position.ConvexHull2D)
+				inferno.isLastWritten = true
+			} else {
+				// Positions are sorted by frame and there may be multiple frames per tick.
+				if position.Tick == inferno.lastTick {
+					continue
+				}
+				hasChanged := !slices.Equal(position.ConvexHull2D, inferno.lastHull)
+				if hasChanged {
+					writeHull(inferno, position.Tick, position.ConvexHull2D)
+				}
+				inferno.isLastWritten = hasChanged
 			}
+			inferno.lastTick = position.Tick
+			inferno.lastHull = position.ConvexHull2D
+		}
+
+		lines := [][]string{}
+		for _, inferno := range orderedHulls {
+			if !inferno.isLastWritten {
+				writeHull(inferno, inferno.lastTick, inferno.lastHull)
+			}
+			first := inferno.first
 			line := []string{
-				converters.IntToString(position.Frame),
-				converters.IntToString(position.Tick),
-				converters.IntToString(position.RoundNumber),
-				converters.Uint64ToString(position.ThrowerSteamID64),
-				position.ThrowerName,
-				position.UniqueID,
-				converters.Float64ToString(position.X),
-				converters.Float64ToString(position.Y),
-				converters.Float64ToString(position.Z),
-				convexHull2D,
+				converters.IntToString(first.RoundNumber),
+				first.UniqueID,
+				converters.Uint64ToString(first.ThrowerSteamID64),
+				first.ThrowerName,
+				converters.Float64ToString(first.X),
+				converters.Float64ToString(first.Y),
+				converters.Float64ToString(first.Z),
+				toBytea(inferno.ticks),
+				toTextArray(inferno.hulls),
 				match.Checksum,
 			}
 			lines = append(lines, line)
