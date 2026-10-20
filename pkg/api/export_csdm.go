@@ -1208,17 +1208,61 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		csv.WriteLinesIntoCsvFile(outputPath+"_chat_messages.csv", lines)
 	}
 
+	// Hostages positions, 1 row per hostage and round, see packedPositions.
+	// The state of a hostage is written only when it changes, stateTicks contains the tick of each change.
 	var writeHostagePositions = func() {
-		lines := [][]string{}
+		type hostageRoundKey struct {
+			entityID    int
+			serialNum   int
+			roundNumber int
+		}
+		type hostageRoundPositions struct {
+			roundNumber int
+			positions   packedPositions
+			stateTicks  []byte
+			states      []byte
+			lastTick    int
+			lastState   common.HostageState
+		}
+
+		positionsPerHostage := make(map[hostageRoundKey]*hostageRoundPositions)
+		var orderedPositions []*hostageRoundPositions
 		for _, position := range match.HostagePositions {
+			key := hostageRoundKey{
+				entityID:    position.entityID,
+				serialNum:   position.serialNum,
+				roundNumber: position.RoundNumber,
+			}
+			hostage, exists := positionsPerHostage[key]
+			if !exists {
+				hostage = &hostageRoundPositions{roundNumber: position.RoundNumber}
+				positionsPerHostage[key] = hostage
+				orderedPositions = append(orderedPositions, hostage)
+			}
+			hostage.positions.add(position.Tick, position.X, position.Y, position.Z)
+			// Like positions, only the first frame of a tick is used.
+			if exists && position.Tick == hostage.lastTick {
+				continue
+			}
+			hostage.lastTick = position.Tick
+			if !exists || position.State != hostage.lastState {
+				hostage.stateTicks = appendInt32(hostage.stateTicks, position.Tick)
+				hostage.states = appendInt32(hostage.states, int(position.State))
+				hostage.lastState = position.State
+			}
+		}
+
+		lines := [][]string{}
+		for _, hostage := range orderedPositions {
+			hostage.positions.finish()
 			line := []string{
-				converters.IntToString(position.Frame),
-				converters.IntToString(position.Tick),
-				converters.IntToString(position.RoundNumber),
-				converters.Float64ToString(position.X),
-				converters.Float64ToString(position.Y),
-				converters.Float64ToString(position.Z),
-				converters.ByteToString(byte(position.State)),
+				converters.IntToString(hostage.roundNumber),
+				toBytea(hostage.positions.ticks),
+				toBytea(hostage.positions.x),
+				toBytea(hostage.positions.y),
+				toBytea(hostage.positions.z),
+				toBytea(hostage.stateTicks),
+				toBytea(hostage.states),
 				match.Checksum,
 			}
 			lines = append(lines, line)
