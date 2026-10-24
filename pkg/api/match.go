@@ -191,8 +191,8 @@ func (match *Match) computeResultStats() {
 	// Listening on CCSTeam.m_scoreTotal or the event ScoreUpdated is not reliable with non Valve demos.
 	isFirstHalf := true
 	for roundIndex, round := range match.Rounds {
-		if match.FrameRate > 0 {
-			round.Duration = int64(((float64(round.EndFrame) - float64(round.StartFrame)) / match.FrameRate) * 1000)
+		if match.TickRate > 0 {
+			round.Duration = int64(((float64(round.EndTick) - float64(round.StartTick)) / match.TickRate) * 1000)
 		}
 
 		if round.WinnerSide == round.TeamASide {
