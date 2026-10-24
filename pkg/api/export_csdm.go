@@ -465,7 +465,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, shot := range match.Shots {
 			line := []string{
-				converters.IntToString(shot.Frame),
 				converters.IntToString(shot.Tick),
 				converters.IntToString(shot.RoundNumber),
 				shot.WeaponName.String(),
@@ -561,7 +560,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, clutch := range match.Clutches {
 			line := []string{
-				converters.IntToString(clutch.Frame),
 				converters.IntToString(clutch.Tick),
 				converters.IntToString(clutch.RoundNumber),
 				converters.IntToString(clutch.OpponentCount),
@@ -583,7 +581,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, chickenDeath := range match.ChickenDeaths {
 			line := []string{
-				converters.IntToString(chickenDeath.Frame),
 				converters.IntToString(chickenDeath.Tick),
 				converters.IntToString(chickenDeath.RoundNumber),
 				converters.Uint64ToString(chickenDeath.KillerSteamID),
@@ -644,7 +641,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, damage := range match.Damages {
 			line := []string{
-				converters.IntToString(damage.Frame),
 				converters.IntToString(damage.Tick),
 				converters.IntToString(damage.RoundNumber),
 				converters.IntToString(damage.HealthDamage),
@@ -677,7 +673,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, kill := range match.Kills {
 			line := []string{
-				converters.IntToString(kill.Frame),
 				converters.IntToString(kill.Tick),
 				converters.IntToString(kill.RoundNumber),
 				kill.KillerName,
@@ -731,7 +726,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, bombPlanted := range match.BombsPlanted {
 			line := []string{
-				converters.IntToString(bombPlanted.Frame),
 				converters.IntToString(bombPlanted.Tick),
 				converters.IntToString(bombPlanted.RoundNumber),
 				bombPlanted.Site,
@@ -753,7 +747,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, bombDefuseStart := range match.BombsDefuseStart {
 			line := []string{
-				converters.IntToString(bombDefuseStart.Frame),
 				converters.IntToString(bombDefuseStart.Tick),
 				converters.IntToString(bombDefuseStart.RoundNumber),
 				converters.Uint64ToString(bombDefuseStart.PlanterSteamID64),
@@ -774,7 +767,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, bombDefused := range match.BombsDefused {
 			line := []string{
-				converters.IntToString(bombDefused.Frame),
 				converters.IntToString(bombDefused.Tick),
 				converters.IntToString(bombDefused.RoundNumber),
 				bombDefused.Site,
@@ -798,7 +790,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, bombExploded := range match.BombsExploded {
 			line := []string{
-				converters.IntToString(bombExploded.Frame),
 				converters.IntToString(bombExploded.Tick),
 				converters.IntToString(bombExploded.RoundNumber),
 				bombExploded.Site,
@@ -820,7 +811,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, bombPlantStart := range match.BombsPlantStart {
 			line := []string{
-				converters.IntToString(bombPlantStart.Frame),
 				converters.IntToString(bombPlantStart.Tick),
 				converters.IntToString(bombPlantStart.RoundNumber),
 				bombPlantStart.Site,
@@ -842,7 +832,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, playerFlashed := range match.PlayersFlashed {
 			line := []string{
-				converters.IntToString(playerFlashed.Frame),
 				converters.IntToString(playerFlashed.Tick),
 				converters.IntToString(playerFlashed.RoundNumber),
 				converters.Float32ToString(playerFlashed.Duration),
@@ -866,7 +855,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, playerBuy := range match.PlayersBuy {
 			line := []string{
-				converters.IntToString(playerBuy.Frame),
 				converters.IntToString(playerBuy.Tick),
 				converters.IntToString(playerBuy.RoundNumber),
 				converters.Uint64ToString(playerBuy.PlayerSteamID64),
@@ -938,7 +926,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, position := range match.GrenadeBounces {
 			line := []string{
-				converters.IntToString(position.Frame),
 				converters.IntToString(position.Tick),
 				converters.IntToString(position.RoundNumber),
 				position.GrenadeID,
@@ -968,7 +955,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, event := range match.GrenadeProjectilesDestroy {
 			line := []string{
-				converters.IntToString(event.Frame),
 				converters.IntToString(event.Tick),
 				converters.IntToString(event.RoundNumber),
 				event.GrenadeID,
@@ -998,7 +984,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, event := range match.SmokesStart {
 			line := []string{
-				converters.IntToString(event.Frame),
 				converters.IntToString(event.Tick),
 				converters.IntToString(event.RoundNumber),
 				event.GrenadeID,
@@ -1027,7 +1012,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, event := range match.HeGrenadesExplode {
 			line := []string{
-				converters.IntToString(event.Frame),
 				converters.IntToString(event.Tick),
 				converters.IntToString(event.RoundNumber),
 				event.GrenadeID,
@@ -1056,7 +1040,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, event := range match.FlashbangsExplode {
 			line := []string{
-				converters.IntToString(event.Frame),
 				converters.IntToString(event.Tick),
 				converters.IntToString(event.RoundNumber),
 				event.GrenadeID,
@@ -1085,7 +1068,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, event := range match.DecoysStart {
 			line := []string{
-				converters.IntToString(event.Frame),
 				converters.IntToString(event.Tick),
 				converters.IntToString(event.RoundNumber),
 				event.GrenadeID,
@@ -1192,7 +1174,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, chatMessage := range match.ChatMessages {
 			line := []string{
-				converters.IntToString(chatMessage.Frame),
 				converters.IntToString(chatMessage.Tick),
 				converters.IntToString(chatMessage.RoundNumber),
 				converters.Uint64ToString(chatMessage.SenderSteamID64),
@@ -1275,7 +1256,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, event := range match.HostagePickUpStart {
 			line := []string{
-				converters.IntToString(event.Frame),
 				converters.IntToString(event.Tick),
 				converters.IntToString(event.RoundNumber),
 				converters.Uint64ToString(event.PlayerSteamID64),
@@ -1296,7 +1276,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, event := range match.HostagePickedUp {
 			line := []string{
-				converters.IntToString(event.Frame),
 				converters.IntToString(event.Tick),
 				converters.IntToString(event.RoundNumber),
 				converters.Uint64ToString(event.PlayerSteamID64),
@@ -1317,7 +1296,6 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		lines := [][]string{}
 		for _, event := range match.HostageRescued {
 			line := []string{
-				converters.IntToString(event.Frame),
 				converters.IntToString(event.Tick),
 				converters.IntToString(event.RoundNumber),
 				converters.Uint64ToString(event.PlayerSteamID64),
