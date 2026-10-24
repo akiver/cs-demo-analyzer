@@ -17,7 +17,6 @@ func createValveAnalyzer(analyzer *Analyzer) {
 
 	parser.RegisterEventHandler(func(event events.MatchStart) {
 		currentRound := analyzer.currentRound
-		currentRound.StartFrame = parser.CurrentFrame()
 		currentRound.StartTick = analyzer.currentTick()
 		analyzer.updateTeamNames()
 	})

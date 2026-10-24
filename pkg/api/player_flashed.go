@@ -6,7 +6,6 @@ import (
 )
 
 type PlayerFlashed struct {
-	Frame                   int         `json:"frame"`
 	Tick                    int         `json:"tick"`
 	RoundNumber             int         `json:"roundNumber"`
 	Duration                float32     `json:"duration"`
@@ -21,10 +20,8 @@ type PlayerFlashed struct {
 }
 
 func newPlayerFlashed(analyzer *Analyzer, event events.PlayerFlashed) *PlayerFlashed {
-	parser := analyzer.parser
 
 	return &PlayerFlashed{
-		Frame:                   parser.CurrentFrame(),
 		Tick:                    analyzer.currentTick(),
 		RoundNumber:             analyzer.currentRound.Number,
 		Duration:                event.Player.FlashDuration,

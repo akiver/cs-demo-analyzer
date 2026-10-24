@@ -8,7 +8,6 @@ import (
 )
 
 type SmokeStart struct {
-	Frame            int         `json:"frame"`
 	Tick             int         `json:"tick"`
 	RoundNumber      int         `json:"roundNumber"`
 	GrenadeID        string      `json:"grenadeId"`
@@ -41,13 +40,11 @@ func newSmokeStartFromGameEvent(analyzer *Analyzer, event events.SmokeStart) *Sm
 	}
 
 	throwerTeam := thrower.Team
-	parser := analyzer.parser
 	projectileID := findGrenadeProjectileID(analyzer, grenade.UniqueID(), event.Position)
 
 	velocity := thrower.Velocity()
 
 	return &SmokeStart{
-		Frame:            parser.CurrentFrame(),
 		Tick:             analyzer.currentTick(),
 		RoundNumber:      analyzer.currentRound.Number,
 		GrenadeID:        grenade.UniqueID().String(),

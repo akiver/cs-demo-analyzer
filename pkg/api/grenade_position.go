@@ -8,7 +8,6 @@ import (
 )
 
 type GrenadePosition struct {
-	Frame            int                  `json:"frame"`
 	Tick             int                  `json:"tick"`
 	RoundNumber      int                  `json:"roundNumber"`
 	GrenadeID        string               `json:"grenadeId"`
@@ -46,10 +45,8 @@ func newGrenadePositionFromProjectile(analyzer *Analyzer, projectile *common.Gre
 
 	velocity := thrower.Velocity()
 
-	parser := analyzer.parser
 	throwerTeam := thrower.Team
 	return &GrenadePosition{
-		Frame:            parser.CurrentFrame(),
 		Tick:             analyzer.currentTick(),
 		RoundNumber:      analyzer.currentRound.Number,
 		GrenadeID:        projectile.WeaponInstance.UniqueID().String(),

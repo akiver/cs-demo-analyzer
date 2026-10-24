@@ -9,7 +9,6 @@ import (
 )
 
 type Shot struct {
-	Frame                  int                  `json:"frame"`
 	Tick                   int                  `json:"tick"`
 	RoundNumber            int                  `json:"roundNumber"`
 	WeaponName             constants.WeaponName `json:"weaponName"`
@@ -77,7 +76,6 @@ func newShot(analyzer *Analyzer, event events.WeaponFire) *Shot {
 	velocity := shooter.Velocity()
 
 	return &Shot{
-		Frame:                  analyzer.parser.CurrentFrame(),
 		Tick:                   analyzer.currentTick(),
 		RoundNumber:            analyzer.currentRound.Number,
 		WeaponName:             equipmentToWeaponName[event.Weapon.Type],

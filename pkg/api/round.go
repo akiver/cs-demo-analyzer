@@ -13,13 +13,9 @@ type Round struct {
 	analyzer            *Analyzer
 	Number              int                   `json:"number"`
 	StartTick           int                   `json:"startTick"`
-	StartFrame          int                   `json:"startFrame"`
 	FreezeTimeEndTick   int                   `json:"freezeTimeEndTick"`
-	FreezeTimeEndFrame  int                   `json:"freezeTimeEndFrame"`
 	EndTick             int                   `json:"endTick"`
-	EndFrame            int                   `json:"endFrame"`
 	EndOfficiallyTick   int                   `json:"endOfficiallyTick"`
-	EndOfficiallyFrame  int                   `json:"endOfficiallyFrame"`
 	OvertimeNumber      int                   `json:"overtimeNumber"`
 	TeamAName           string                `json:"teamAName"`
 	TeamBName           string                `json:"teamBName"`
@@ -144,9 +140,7 @@ func newRound(number int, analyzer *Analyzer) *Round {
 	round := &Round{
 		analyzer:               analyzer,
 		Number:                 number,
-		StartFrame:             analyzer.parser.CurrentFrame(),
 		StartTick:              analyzer.currentTick(),
-		FreezeTimeEndFrame:     -1,
 		FreezeTimeEndTick:      -1,
 		OvertimeNumber:         analyzer.match.OvertimeCount,
 		TeamAName:              analyzer.match.TeamA.Name,

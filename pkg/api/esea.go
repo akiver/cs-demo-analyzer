@@ -60,7 +60,6 @@ func createEseaAnalyzer(analyzer *Analyzer) {
 			consecutiveMatchRestartCount = 0
 			currentRound := analyzer.currentRound
 			currentRound.StartTick = analyzer.currentTick()
-			currentRound.StartFrame = parser.CurrentFrame()
 
 			// Some players may have joined the wrong team when entering the server, in that case they are silently
 			// switched to the correct team right before the LO3.
@@ -94,7 +93,6 @@ func createEseaAnalyzer(analyzer *Analyzer) {
 		freezetimeEnded := !event.NewIsFreezetime
 		if freezetimeEnded {
 			analyzer.currentRound.FreezeTimeEndTick = analyzer.currentTick()
-			analyzer.currentRound.FreezeTimeEndFrame = parser.CurrentFrame()
 			analyzer.lastFreezeTimeEndTick = analyzer.currentTick()
 		}
 	})

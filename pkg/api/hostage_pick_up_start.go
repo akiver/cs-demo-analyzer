@@ -5,7 +5,6 @@ import (
 )
 
 type HostagePickUpStart struct {
-	Frame                  int     `json:"frame"`
 	Tick                   int     `json:"tick"`
 	RoundNumber            int     `json:"roundNumber"`
 	PlayerSteamID64        uint64  `json:"playerSteamId"`
@@ -17,10 +16,8 @@ type HostagePickUpStart struct {
 }
 
 func newHostagePickupStart(analyzer *Analyzer, player *common.Player, hostage *common.Hostage) *HostagePickUpStart {
-	parser := analyzer.parser
 
 	return &HostagePickUpStart{
-		Frame:                  parser.CurrentFrame(),
 		Tick:                   analyzer.currentTick(),
 		RoundNumber:            analyzer.currentRound.Number,
 		PlayerSteamID64:        player.SteamID64,

@@ -9,7 +9,6 @@ import (
 )
 
 type PlayerPosition struct {
-	Frame                  int                    `json:"frame"`
 	Tick                   int                    `json:"tick"`
 	RoundNumber            int                    `json:"roundNumber"`
 	IsAlive                bool                   `json:"isAlive"`
@@ -112,7 +111,6 @@ func count(weapons []constants.WeaponName, weapon constants.WeaponName) int {
 }
 
 func newPlayerPosition(analyzer *Analyzer, player *common.Player) *PlayerPosition {
-	parser := analyzer.parser
 	hasBomb := false
 	current := &analyzer.playerWeaponsScratch
 	current.reset()
@@ -170,7 +168,6 @@ func newPlayerPosition(analyzer *Analyzer, player *common.Player) *PlayerPositio
 	position := player.Position()
 
 	return &PlayerPosition{
-		Frame:                  parser.CurrentFrame(),
 		Tick:                   analyzer.currentTick(),
 		RoundNumber:            analyzer.currentRound.Number,
 		Name:                   player.Name,

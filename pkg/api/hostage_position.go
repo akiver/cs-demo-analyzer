@@ -9,7 +9,6 @@ type HostagePosition struct {
 	// Not exported because they are used only to group positions by hostage.
 	entityID    int
 	serialNum   int
-	Frame       int                 `json:"frame"`
 	Tick        int                 `json:"tick"`
 	RoundNumber int                 `json:"roundNumber"`
 	X           float64             `json:"x"`
@@ -19,12 +18,10 @@ type HostagePosition struct {
 }
 
 func newHostagePositionFromHostage(analyzer *Analyzer, hostage *common.Hostage) *HostagePosition {
-	parser := analyzer.parser
 
 	return &HostagePosition{
 		entityID:    hostage.Entity.ID(),
 		serialNum:   hostage.Entity.SerialNum(),
-		Frame:       parser.CurrentFrame(),
 		Tick:        analyzer.currentTick(),
 		RoundNumber: analyzer.currentRound.Number,
 		X:           hostage.Position().X,

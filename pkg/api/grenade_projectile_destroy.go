@@ -8,7 +8,6 @@ import (
 )
 
 type GrenadeProjectileDestroy struct {
-	Frame            int                  `json:"frame"`
 	Tick             int                  `json:"tick"`
 	RoundNumber      int                  `json:"roundNumber"`
 	GrenadeID        string               `json:"grenadeId"`
@@ -51,10 +50,8 @@ func newGrenadeProjectileDestroyFromProjectile(analyzer *Analyzer, projectile *c
 
 	velocity := thrower.Velocity()
 
-	parser := analyzer.parser
 	throwerTeam := thrower.Team
 	return &GrenadeProjectileDestroy{
-		Frame:            parser.CurrentFrame(),
 		Tick:             analyzer.currentTick(),
 		RoundNumber:      analyzer.currentRound.Number,
 		GrenadeID:        projectile.WeaponInstance.UniqueID().String(),

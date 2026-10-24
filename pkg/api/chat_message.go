@@ -6,7 +6,6 @@ import (
 )
 
 type ChatMessage struct {
-	Frame           int         `json:"frame"`
 	Tick            int         `json:"tick"`
 	RoundNumber     int         `json:"roundNumber"`
 	Message         string      `json:"message"`
@@ -17,9 +16,7 @@ type ChatMessage struct {
 }
 
 func newChatMessageFromGameEvent(analyzer *Analyzer, event events.ChatMessage) *ChatMessage {
-	parser := analyzer.parser
 	return &ChatMessage{
-		Frame:           parser.CurrentFrame(),
 		Tick:            analyzer.currentTick(),
 		RoundNumber:     analyzer.currentRound.Number,
 		IsSenderAlive:   event.Sender.IsAlive(),

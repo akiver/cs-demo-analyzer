@@ -53,7 +53,6 @@ func createMatchZyAnalyzer(analyzer *Analyzer) {
 					matchStarted = true
 					isPausedDueToBackupRestore = false
 					currentRound := analyzer.currentRound
-					currentRound.StartFrame = parser.CurrentFrame()
 					currentRound.StartTick = analyzer.currentTick()
 				}
 			})
@@ -71,7 +70,6 @@ func createMatchZyAnalyzer(analyzer *Analyzer) {
 			if matchStarted {
 				analyzer.reset()
 				currentRound := analyzer.currentRound
-				currentRound.StartFrame = parser.CurrentFrame()
 				currentRound.StartTick = analyzer.currentTick()
 			} else {
 				matchStarted = false
@@ -90,7 +88,6 @@ func createMatchZyAnalyzer(analyzer *Analyzer) {
 				analyzer.createPlayersEconomies()
 			} else {
 				analyzer.currentRound.FreezeTimeEndTick = analyzer.currentTick()
-				analyzer.currentRound.FreezeTimeEndFrame = parser.CurrentFrame()
 				analyzer.lastFreezeTimeEndTick = analyzer.currentTick()
 			}
 		})

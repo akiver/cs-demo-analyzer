@@ -7,7 +7,6 @@ import (
 )
 
 type PlayerBuy struct {
-	Frame           int                  `json:"frame"`
 	Tick            int                  `json:"tick"`
 	RoundNumber     int                  `json:"roundNumber"`
 	PlayerSteamID64 uint64               `json:"playerSteamId"`
@@ -20,10 +19,8 @@ type PlayerBuy struct {
 }
 
 func newPlayerBuy(analyzer *Analyzer, event events.ItemPickup) *PlayerBuy {
-	parser := analyzer.parser
 
 	return &PlayerBuy{
-		Frame:           parser.CurrentFrame(),
 		Tick:            analyzer.currentTick(),
 		RoundNumber:     analyzer.currentRound.Number,
 		PlayerSteamID64: event.Player.SteamID64,

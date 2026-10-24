@@ -155,16 +155,14 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 	}
 
 	analyzer.currentRound = &Round{
-		analyzer:           analyzer,
-		Number:             1,
-		StartTick:          1,
-		StartFrame:         1,
-		FreezeTimeEndFrame: -1,
-		FreezeTimeEndTick:  -1,
-		TeamAName:          match.TeamA.Name,
-		TeamBName:          match.TeamB.Name,
-		TeamASide:          *match.TeamA.CurrentSide,
-		TeamBSide:          *match.TeamB.CurrentSide,
+		analyzer:          analyzer,
+		Number:            1,
+		StartTick:         1,
+		FreezeTimeEndTick: -1,
+		TeamAName:         match.TeamA.Name,
+		TeamBName:         match.TeamB.Name,
+		TeamASide:         *match.TeamA.CurrentSide,
+		TeamBSide:         *match.TeamB.CurrentSide,
 	}
 
 	analyzer.registerCommonHandlers(options.IncludePositions)
@@ -316,8 +314,6 @@ func (analyzer *Analyzer) reset() {
 		analyzer:               analyzer,
 		Number:                 1,
 		StartTick:              1,
-		StartFrame:             1,
-		FreezeTimeEndFrame:     -1,
 		FreezeTimeEndTick:      -1,
 		TeamASide:              *analyzer.match.TeamA.CurrentSide,
 		TeamBSide:              *analyzer.match.TeamB.CurrentSide,
@@ -496,13 +492,11 @@ func (analyzer *Analyzer) updatePlayersCurrentTeam() {
 }
 
 func (analyzer *Analyzer) processMatchStart() {
-	parser := analyzer.parser
 	match := analyzer.match
 	match.resetRound(1)
 	analyzer.updatePlayersCurrentTeam()
 
 	currentRound := analyzer.currentRound
-	currentRound.StartFrame = parser.CurrentFrame()
 	currentRound.StartTick = analyzer.currentTick()
 	currentRound.TeamASide = *match.TeamA.CurrentSide
 	currentRound.TeamBSide = *match.TeamB.CurrentSide
@@ -547,12 +541,7 @@ func (analyzer *Analyzer) handleRoundEnd(winnerTeam common.Team) {
 	analyzer.currentRound.WinnerSide = *analyzer.match.Team(winnerTeam).CurrentSide
 	analyzer.currentRound.EndTick = analyzer.currentTick()
 	analyzer.currentRound.EndOfficiallyTick = analyzer.currentTick()
-	analyzer.currentRound.EndFrame = analyzer.parser.CurrentFrame()
-	analyzer.currentRound.EndOfficiallyFrame = analyzer.parser.CurrentFrame()
 
-	if analyzer.currentRound.FreezeTimeEndFrame == -1 {
-		analyzer.currentRound.FreezeTimeEndFrame = analyzer.parser.CurrentFrame()
-	}
 	if analyzer.currentRound.FreezeTimeEndTick == -1 {
 		analyzer.currentRound.FreezeTimeEndTick = analyzer.currentTick()
 	}
@@ -623,7 +612,6 @@ func (analyzer *Analyzer) defaultRoundFreezetimeChangedHandler(event events.Roun
 		analyzer.createPlayersEconomies()
 	} else {
 		analyzer.currentRound.FreezeTimeEndTick = analyzer.currentTick()
-		analyzer.currentRound.FreezeTimeEndFrame = analyzer.parser.CurrentFrame()
 		analyzer.lastFreezeTimeEndTick = analyzer.currentTick()
 	}
 }
@@ -700,7 +688,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 			return
 		}
 
-		chickenDeath := newChickenDeath(analyzer.parser.CurrentFrame(), analyzer.currentTick(), analyzer.currentRound.Number, event.Killer.SteamID64, equipmentToWeaponName[event.Weapon.Type])
+		chickenDeath := newChickenDeath(analyzer.currentTick(), analyzer.currentRound.Number, event.Killer.SteamID64, equipmentToWeaponName[event.Weapon.Type])
 		analyzer.match.ChickenDeaths = append(analyzer.match.ChickenDeaths, chickenDeath)
 	})
 
@@ -840,7 +828,6 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 			return
 		}
 
-		analyzer.currentRound.EndOfficiallyFrame = parser.CurrentFrame()
 		analyzer.currentRound.EndOfficiallyTick = analyzer.currentTick()
 	})
 
@@ -1480,7 +1467,6 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 				currentTick := analyzer.currentTick()
 				if lastTimeoutUpdateTick != currentTick && val.Float() == 0 && !analyzer.isRoundEndDetected {
 					analyzer.currentRound.StartTick = currentTick
-					analyzer.currentRound.StartFrame = parser.CurrentFrame()
 				}
 				lastTimeoutUpdateTick = currentTick
 			}

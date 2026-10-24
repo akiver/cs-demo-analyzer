@@ -6,7 +6,6 @@ import (
 )
 
 type BombExploded struct {
-	Frame                  int     `json:"frame"`
 	Tick                   int     `json:"tick"`
 	RoundNumber            int     `json:"roundNumber"`
 	Site                   string  `json:"site"`
@@ -19,11 +18,9 @@ type BombExploded struct {
 }
 
 func newBombExploded(analyzer *Analyzer, event events.BombExplode) *BombExploded {
-	parser := analyzer.parser
 	player := event.Player
 
 	return &BombExploded{
-		Frame:                  parser.CurrentFrame(),
 		Tick:                   analyzer.currentTick(),
 		RoundNumber:            analyzer.currentRound.Number,
 		PlanterName:            player.Name,

@@ -5,7 +5,6 @@ import (
 )
 
 type HostageRescued struct {
-	Frame                  int     `json:"frame"`
 	Tick                   int     `json:"tick"`
 	RoundNumber            int     `json:"roundNumber"`
 	PlayerSteamID64        uint64  `json:"playerSteamId"`
@@ -17,10 +16,8 @@ type HostageRescued struct {
 }
 
 func newHostageRescued(analyzer *Analyzer, hostage *common.Hostage) *HostageRescued {
-	parser := analyzer.parser
 
 	return &HostageRescued{
-		Frame:                  parser.CurrentFrame(),
 		Tick:                   analyzer.currentTick(),
 		RoundNumber:            analyzer.currentRound.Number,
 		PlayerSteamID64:        hostage.Leader().SteamID64,

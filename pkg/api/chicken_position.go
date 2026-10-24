@@ -12,7 +12,6 @@ type chickenEntity struct {
 type ChickenPosition struct {
 	// Unique ID of the chicken in the match, not exported because it's used only to group positions by chicken.
 	chickenID   int
-	Frame       int     `json:"frame"`
 	Tick        int     `json:"tick"`
 	RoundNumber int     `json:"roundNumber"`
 	X           float64 `json:"x"`
@@ -21,12 +20,10 @@ type ChickenPosition struct {
 }
 
 func newChickenPositionFromEntity(analyzer *Analyzer, chicken *chickenEntity) *ChickenPosition {
-	parser := analyzer.parser
 	entity := chicken.entity
 
 	return &ChickenPosition{
 		chickenID:   chicken.id,
-		Frame:       parser.CurrentFrame(),
 		Tick:        analyzer.currentTick(),
 		RoundNumber: analyzer.currentRound.Number,
 		X:           entity.Position().X,

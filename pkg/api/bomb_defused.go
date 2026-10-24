@@ -7,7 +7,6 @@ import (
 )
 
 type BombDefused struct {
-	Frame                      int     `json:"frame"`
 	Tick                       int     `json:"tick"`
 	RoundNumber                int     `json:"roundNumber"`
 	Site                       string  `json:"site"`
@@ -39,7 +38,6 @@ func newBombDefused(analyzer *Analyzer, event events.BombDefused) *BombDefused {
 	}
 
 	return &BombDefused{
-		Frame:                      parser.CurrentFrame(),
 		Tick:                       analyzer.currentTick(),
 		RoundNumber:                analyzer.currentRound.Number,
 		DefuserName:                player.Name,

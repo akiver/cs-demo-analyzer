@@ -10,7 +10,6 @@ import (
 )
 
 type Damage struct {
-	Frame                    int                  `json:"frame"`
 	Tick                     int                  `json:"tick"`
 	RoundNumber              int                  `json:"roundNumber"`
 	HealthDamage             int                  `json:"healthDamage"`
@@ -62,7 +61,6 @@ func newDamageFromGameEvent(analyzer *Analyzer, event events.PlayerHurt) *Damage
 		fmt.Println("Player hurt event without weapon occurred")
 		return nil
 	}
-	parser := analyzer.parser
 	match := analyzer.match
 	attackerSteamID := uint64(0)
 	attackerSide := common.TeamUnassigned
@@ -77,7 +75,6 @@ func newDamageFromGameEvent(analyzer *Analyzer, event events.PlayerHurt) *Damage
 
 	return &Damage{
 		RoundNumber:              analyzer.currentRound.Number,
-		Frame:                    parser.CurrentFrame(),
 		Tick:                     analyzer.currentTick(),
 		HealthDamage:             math.Max(0, event.HealthDamageTaken),
 		ArmorDamage:              math.Max(0, event.ArmorDamageTaken),

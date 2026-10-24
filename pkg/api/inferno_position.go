@@ -9,7 +9,6 @@ import (
 )
 
 type InfernoPosition struct {
-	Frame            int        `json:"frame"`
 	Tick             int        `json:"tick"`
 	RoundNumber      int        `json:"roundNumber"`
 	ThrowerSteamID64 uint64     `json:"throwerSteamId"`
@@ -28,10 +27,7 @@ func newInfernoPositionFromInferno(analyzer *Analyzer, inferno *common.Inferno) 
 		return nil
 	}
 
-	parser := analyzer.parser
-
 	return &InfernoPosition{
-		Frame:            parser.CurrentFrame(),
 		Tick:             analyzer.currentTick(),
 		RoundNumber:      analyzer.currentRound.Number,
 		UniqueID:         inferno.UniqueID().String(),

@@ -11,7 +11,6 @@ import (
 )
 
 type Kill struct {
-	Frame                    int                  `json:"frame"`
 	Tick                     int                  `json:"tick"`
 	RoundNumber              int                  `json:"roundNumber"`
 	WeaponType               constants.WeaponType `json:"weaponType"`
@@ -72,7 +71,6 @@ func newKillFromGameEvent(analyzer *Analyzer, event events.Kill) *Kill {
 		fmt.Println("Player kill event without victim occurred")
 		return nil
 	}
-	parser := analyzer.parser
 	match := analyzer.match
 	var killerName string = "World"
 	var killerSteamID uint64
@@ -154,7 +152,6 @@ func newKillFromGameEvent(analyzer *Analyzer, event events.Kill) *Kill {
 	victimPosition := event.Victim.Position()
 
 	return &Kill{
-		Frame:                    parser.CurrentFrame(),
 		Tick:                     analyzer.currentTick(),
 		RoundNumber:              analyzer.currentRound.Number,
 		KillerName:               killerName,
