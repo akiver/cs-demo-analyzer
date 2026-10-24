@@ -404,11 +404,44 @@ func (analyzer *Analyzer) registerUnknownPlayers() {
 	}
 }
 
+// teamNameFromState returns the name of the team currently playing the given side.
+//
+// Since clan tags have been re-introduced in CS2, the real team name is carried by the players' clan tag (m_szClan)
+// rather than by the team entity's clan name (m_szClanTeamname).
+// The clan tag shared by more than half of the team's players is used so a single player with a personal clan tag
+// doesn't rename the whole team.
+// When no such clan tag exists (older CS2 demos, players without clan tag), it falls back to the team entity's clan name.
+func (analyzer *Analyzer) teamNameFromState(team *common.TeamState) string {
+	if !analyzer.isSource2 {
+		return team.ClanName()
+	}
+
+	members := team.Members()
+	countPerClanTag := make(map[string]int)
+	mostSharedClanTag := ""
+	for _, member := range members {
+		clanTag := member.ClanTag()
+		if clanTag == "" {
+			continue
+		}
+		countPerClanTag[clanTag]++
+		if countPerClanTag[clanTag] > countPerClanTag[mostSharedClanTag] {
+			mostSharedClanTag = clanTag
+		}
+	}
+
+	if mostSharedClanTag != "" && countPerClanTag[mostSharedClanTag]*2 > len(members) {
+		return mostSharedClanTag
+	}
+
+	return team.ClanName()
+}
+
 func (analyzer *Analyzer) updateTeamNames() {
 	gameState := analyzer.parser.GameState()
 	match := analyzer.match
-	teamNameA := strings.ReplaceUTF8ByteSequences(gameState.Team(*match.TeamA.CurrentSide).ClanName())
-	teamNameB := strings.ReplaceUTF8ByteSequences(gameState.Team(*match.TeamB.CurrentSide).ClanName())
+	teamNameA := strings.ReplaceUTF8ByteSequences(analyzer.teamNameFromState(gameState.Team(*match.TeamA.CurrentSide)))
+	teamNameB := strings.ReplaceUTF8ByteSequences(analyzer.teamNameFromState(gameState.Team(*match.TeamB.CurrentSide)))
 	if teamNameA == teamNameB {
 		return
 	}
@@ -626,6 +659,17 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 	parser.RegisterEventHandler(func(event events.RoundStart) {
 		analyzer.registerUnknownPlayers()
 	})
+
+	if analyzer.isSource2 {
+		parser.RegisterEventHandler(func(events.DataTablesParsed) {
+			// CS2 team names are based on players' clan tag, keep them in sync when a player's clan tag changes.
+			parser.ServerClasses().FindByName("CCSPlayerController").OnEntityCreated(func(entity st.Entity) {
+				entity.Property("m_szClan").OnUpdate(func(value st.PropertyValue) {
+					analyzer.updateTeamNames()
+				})
+			})
+		})
+	}
 
 	parser.RegisterEventHandler(func(event events.ConVarsUpdated) {
 		for varName, varValue := range event.UpdatedConVars {
