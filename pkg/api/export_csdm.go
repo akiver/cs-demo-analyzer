@@ -502,13 +502,9 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 			line := []string{
 				converters.IntToString(round.Number),
 				converters.IntToString(round.StartTick),
-				converters.IntToString(round.StartFrame),
 				converters.IntToString(round.FreezeTimeEndTick),
-				converters.IntToString(round.FreezeTimeEndFrame),
 				converters.IntToString(round.EndTick),
-				converters.IntToString(round.EndFrame),
 				converters.IntToString(round.EndOfficiallyTick),
-				converters.IntToString(round.EndOfficiallyFrame),
 				round.TeamAName,
 				round.TeamBName,
 				converters.IntToString(round.TeamAScore),
