@@ -3,6 +3,7 @@ package api
 import (
 	"errors"
 	"fmt"
+	"math"
 	"os"
 	"slices"
 	"strconv"
@@ -70,6 +71,10 @@ type Analyzer struct {
 	playerWeaponsScratch playerWeapons
 	// Scratch slice for sortedEntityIDs(), re-used across frames.
 	entityIDsScratch []int
+	// Second of the round of the last position samples, see samplePlayerPositions().
+	lastPositionSampleSecond positionSampleSecond
+	// Rounded tick rate used to split rounds into seconds, updated when the tick rate is available.
+	ticksPerSecond int
 }
 
 // sortedEntityIDs returns the keys of a map of entities by entity ID in ascending order, to range over the map in a
@@ -83,6 +88,16 @@ func sortedEntityIDs[T any](scratch []int, entities map[int]T) []int {
 	slices.Sort(ids)
 
 	return ids
+}
+
+// ticksPerSecondFromTickRate returns the number of ticks in a second, 64 when the tick rate is unknown.
+func ticksPerSecondFromTickRate(tickRate float64) int {
+	ticksPerSecond := int(math.Round(tickRate))
+	if ticksPerSecond <= 0 {
+		return 64
+	}
+
+	return ticksPerSecond
 }
 
 type AnalyzeDemoOptions struct {
@@ -149,6 +164,8 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 		bombPlantPosition:         r3.Vector{},
 		infernoHulls:              map[common.UniqueID]*infernoHull{},
 		playerWeapons:             map[*common.Player]*playerWeapons{},
+		lastPositionSampleSecond:  noPositionSampleSecond,
+		ticksPerSecond:            ticksPerSecondFromTickRate(match.TickRate),
 		lastGrenadeThrownByPlayer: make(map[uint64]*Shot),
 		playersUntyingAnHostage:   make(map[uint64]int),
 		postProcess:               defaultPostProcess,
@@ -301,6 +318,7 @@ func (analyzer *Analyzer) reset() {
 	analyzer.lastFreezeTimeEndTick = -1
 	analyzer.lastGrenadeThrownByPlayer = make(map[uint64]*Shot)
 	analyzer.playersUntyingAnHostage = make(map[uint64]int)
+	analyzer.lastPositionSampleSecond = noPositionSampleSecond
 	analyzer.chickenEntities = nil
 	analyzer.clutch1 = nil
 	analyzer.clutch2 = nil
@@ -634,6 +652,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 
 	parser.RegisterEventHandler(func(event events.TickRateInfoAvailable) {
 		match.TickRate = parser.TickRate()
+		analyzer.ticksPerSecond = ticksPerSecondFromTickRate(match.TickRate)
 	})
 
 	parser.RegisterEventHandler(func(event events.POVRecordingPlayerDetected) {
@@ -746,6 +765,8 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 			analyzer.currentRound.computeTeamsEconomy()
 			analyzer.lastFreezeTimeEndTick = -1
 		}
+
+		analyzer.samplePlayerPositions()
 	})
 
 	if includePositions {

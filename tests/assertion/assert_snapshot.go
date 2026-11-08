@@ -162,6 +162,8 @@ func AssertMatchSnapshot(t *testing.T, match *api.Match, demoName string) {
 
 	// The demo path is machine-specific, exclude it from the comparison.
 	match.DemoFilePath = ""
+	// Position samples would double the size of the snapshots.
+	match.PlayerPositionSamples = []*api.PlayerPositionSample{}
 	sortUnorderedSlices(match)
 
 	got, err := json.MarshalIndent(match, "", "  ")

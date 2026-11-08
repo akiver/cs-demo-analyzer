@@ -257831,6 +257831,7 @@
     }
   ],
   "playerPositions": [],
+  "playerPositionSamples": [],
   "playersBuy": [
     {
       "tick": 100,

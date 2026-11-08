@@ -342,6 +342,38 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 		csv.WriteLinesIntoCsvFile(outputPath+"_positions.csv", lines)
 	}
 
+	var writePlayerPositionSamples = func() {
+		header := []string{
+			"tick",
+			"round",
+			"steamid",
+			"name",
+			"side",
+			"x",
+			"y",
+			"z",
+			"match checksum",
+		}
+
+		lines := [][]string{header}
+		for _, sample := range match.PlayerPositionSamples {
+			line := []string{
+				converters.IntToString(sample.Tick),
+				converters.IntToString(sample.RoundNumber),
+				converters.Uint64ToString(sample.SteamID64),
+				sample.Name,
+				converters.TeamToString(sample.Side),
+				converters.Float64ToString(sample.X),
+				converters.Float64ToString(sample.Y),
+				converters.Float64ToString(sample.Z),
+				match.Checksum,
+			}
+			lines = append(lines, line)
+		}
+
+		csv.WriteLinesIntoCsvFile(outputPath+"_player_position_samples.csv", lines)
+	}
+
 	var writeShots = func() {
 		header := []string{
 			"tick",
@@ -1555,6 +1587,7 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 		writeTeams,
 		writePlayers,
 		writePlayerPositions,
+		writePlayerPositionSamples,
 		writeShots,
 		writeRounds,
 		writeRoundEconomies,

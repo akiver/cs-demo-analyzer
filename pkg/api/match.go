@@ -69,6 +69,7 @@ type Match struct {
 	ChickenDeaths             []*ChickenDeath             `json:"chickenDeaths"`
 	Damages                   []*Damage                   `json:"damages"`
 	PlayerPositions           []*PlayerPosition           `json:"playerPositions"`
+	PlayerPositionSamples     []*PlayerPositionSample     `json:"playerPositionSamples"`
 	PlayersBuy                []*PlayerBuy                `json:"playersBuy"`
 	PlayerEconomies           []*PlayerEconomy            `json:"playerEconomies"`
 	ChatMessages              []*ChatMessage              `json:"chatMessages"`
@@ -308,6 +309,7 @@ func newMatch(source constants.DemoSource, demoInfo *demo.Demo) Match {
 		PlayersBuy:                []*PlayerBuy{},
 		PlayerEconomies:           []*PlayerEconomy{},
 		PlayerPositions:           []*PlayerPosition{},
+		PlayerPositionSamples:     []*PlayerPositionSample{},
 		GrenadePositions:          []*GrenadePosition{},
 		GrenadeBounces:            []*GrenadeBounce{},
 		InfernoPositions:          []*InfernoPosition{},
@@ -347,6 +349,7 @@ func (match *Match) reset() {
 	match.PlayersFlashed = []*PlayerFlashed{}
 	match.PlayersBuy = []*PlayerBuy{}
 	match.PlayerPositions = []*PlayerPosition{}
+	match.PlayerPositionSamples = []*PlayerPositionSample{}
 	match.GrenadePositions = []*GrenadePosition{}
 	match.GrenadeBounces = []*GrenadeBounce{}
 	match.InfernoPositions = []*InfernoPosition{}
@@ -434,6 +437,9 @@ func (match *Match) resetRound(roundNumber int) {
 	})
 	match.PlayerPositions = slice.Filter(match.PlayerPositions, func(position *PlayerPosition, index int) bool {
 		return position.RoundNumber != roundNumber
+	})
+	match.PlayerPositionSamples = slice.Filter(match.PlayerPositionSamples, func(sample *PlayerPositionSample, index int) bool {
+		return sample.RoundNumber != roundNumber
 	})
 	match.PlayersBuy = slice.Filter(match.PlayersBuy, func(event *PlayerBuy, index int) bool {
 		return event.RoundNumber != roundNumber

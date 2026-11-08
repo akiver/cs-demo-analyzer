@@ -461,6 +461,71 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		csv.WriteLinesIntoCsvFile(outputPath+"_positions.csv", lines)
 	}
 
+	// 1 row per player and round with the tick and position of each sample packed as big-endian binary.
+	var writePlayerPositionSamples = func() {
+		type playerRoundKey struct {
+			steamID     uint64
+			botName     string
+			roundNumber int
+		}
+		type playerRoundSamples struct {
+			steamID     uint64
+			roundNumber int
+			side        common.Team
+			ticks       []byte
+			x           []byte
+			y           []byte
+			z           []byte
+		}
+		samplesPerPlayer := make(map[playerRoundKey]*playerRoundSamples)
+		var orderedSamples []*playerRoundSamples
+		for _, sample := range match.PlayerPositionSamples {
+			// BOTs SteamID is always 0, the name is used to differentiate them.
+			// It's not used for real players because they may change their name during a match.
+			botName := ""
+			if sample.SteamID64 == 0 {
+				botName = sample.Name
+			}
+			key := playerRoundKey{
+				steamID:     sample.SteamID64,
+				botName:     botName,
+				roundNumber: sample.RoundNumber,
+			}
+			samples, exists := samplesPerPlayer[key]
+			if !exists {
+				samples = &playerRoundSamples{
+					steamID:     sample.SteamID64,
+					roundNumber: sample.RoundNumber,
+					side:        sample.Side,
+				}
+				samplesPerPlayer[key] = samples
+				orderedSamples = append(orderedSamples, samples)
+			}
+
+			samples.ticks = appendInt32(samples.ticks, sample.Tick)
+			samples.x = appendFloat32(samples.x, float32(sample.X))
+			samples.y = appendFloat32(samples.y, float32(sample.Y))
+			samples.z = appendFloat32(samples.z, float32(sample.Z))
+		}
+
+		lines := [][]string{}
+		for _, samples := range orderedSamples {
+			line := []string{
+				converters.IntToString(samples.roundNumber),
+				converters.Uint64ToString(samples.steamID),
+				converters.IntToString(int(samples.side)),
+				toBytea(samples.ticks),
+				toBytea(samples.x),
+				toBytea(samples.y),
+				toBytea(samples.z),
+				match.Checksum,
+			}
+			lines = append(lines, line)
+		}
+
+		csv.WriteLinesIntoCsvFile(outputPath+"_player_position_samples.csv", lines)
+	}
+
 	var writeShots = func() {
 		lines := [][]string{}
 		for _, shot := range match.Shots {
@@ -1314,6 +1379,7 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		writeTeams,
 		writePlayers,
 		writePlayerPositions,
+		writePlayerPositionSamples,
 		writeShots,
 		writeRounds,
 		writeRoundEconomies,
