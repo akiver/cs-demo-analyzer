@@ -54,7 +54,16 @@ func appendBool(bytes []byte, value bool) []byte {
 
 // PostgreSQL bytea hex format
 func toBytea(bytes []byte) string {
-	return "\\x" + hex.EncodeToString(bytes)
+	// Encoded into a pre-sized builder so that only the final string is allocated, "\\x" + hex.EncodeToString()
+	// would allocate 3 times the size of the result (the bytes hex.EncodeToString() encodes into, its string copy
+	// and the concatenation).
+	var builder strings.Builder
+	builder.Grow(2 + hex.EncodedLen(len(bytes)))
+	builder.WriteString("\\x")
+	// Writing to a strings.Builder never fails.
+	_, _ = hex.NewEncoder(&builder).Write(bytes)
+
+	return builder.String()
 }
 
 var textArrayEscaper = strings.NewReplacer(`\`, `\\`, `"`, `\"`)
@@ -308,49 +317,103 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 			flashDurationRemaining []byte
 			isDucking              []byte
 			isAirborne             []byte
-			lastState              *playerState
-			stateTicks             []byte
-			isAlive                []byte
-			side                   []byte
-			money                  []byte
-			health                 []byte
-			armor                  []byte
-			hasHelmet              []byte
-			hasBomb                []byte
-			hasDefuseKit           []byte
-			isScoping              []byte
-			isDefusing             []byte
-			isPlanting             []byte
-			isGrabbingHostage      []byte
-			activeWeaponName       []string
-			equipments             []string
-			grenades               []string
-			pistols                []string
-			smgs                   []string
-			rifles                 []string
-			heavy                  []string
+			// Value rather than pointer: taking the address of the state built for each position would make
+			// every one of them escape to the heap.
+			lastState         playerState
+			hasState          bool
+			stateTicks        []byte
+			isAlive           []byte
+			side              []byte
+			money             []byte
+			health            []byte
+			armor             []byte
+			hasHelmet         []byte
+			hasBomb           []byte
+			hasDefuseKit      []byte
+			isScoping         []byte
+			isDefusing        []byte
+			isPlanting        []byte
+			isGrabbingHostage []byte
+			activeWeaponName  []string
+			equipments        []string
+			grenades          []string
+			pistols           []string
+			smgs              []string
+			rifles            []string
+			heavy             []string
 		}
-		positionsPerPlayer := make(map[playerRoundKey]*playerRoundPositions)
-		var orderedPositions []*playerRoundPositions
-		for _, position := range match.PlayerPositions {
+		// The weapon lists of a PlayerWeapons are joined once and re-used for every position sharing it, consecutive
+		// positions of a player share the same PlayerWeapons while the inventory doesn't change (see
+		// internPlayerWeapons) so joining per position would allocate 6 strings for each of the ~1M positions.
+		type joinedWeapons struct {
+			equipments string
+			grenades   string
+			pistols    string
+			smgs       string
+			rifles     string
+			heavy      string
+		}
+		joinedWeaponsCache := make(map[*PlayerWeapons]joinedWeapons)
+		var joinWeapons = func(weapons *PlayerWeapons) joinedWeapons {
+			joined, exists := joinedWeaponsCache[weapons]
+			if !exists {
+				joined = joinedWeapons{
+					equipments: joinSortedWeaponNames(weapons.Equipments),
+					grenades:   joinSortedWeaponNames(weapons.Grenades),
+					pistols:    joinSortedWeaponNames(weapons.Pistols),
+					smgs:       joinSortedWeaponNames(weapons.SMGs),
+					rifles:     joinSortedWeaponNames(weapons.Rifles),
+					heavy:      joinSortedWeaponNames(weapons.Heavy),
+				}
+				joinedWeaponsCache[weapons] = joined
+			}
+
+			return joined
+		}
+
+		var keyOf = func(position *PlayerPosition) playerRoundKey {
 			// BOTs SteamID is always 0, the name is used to differentiate them.
 			// It's not used for real players because they may change their name during a match.
 			botName := ""
 			if position.SteamID64 == 0 {
 				botName = position.Name
 			}
-			key := playerRoundKey{
+
+			return playerRoundKey{
 				steamID:     position.SteamID64,
 				botName:     botName,
 				roundNumber: position.RoundNumber,
 			}
+		}
+
+		// The positions are counted per player and round first so that the packed slices are allocated with their
+		// final capacity: growing them one value at a time would allocate (and copy) several times their final size.
+		// The count is an upper bound as the positions of a tick's extra frames are skipped below.
+		positionCounts := make(map[playerRoundKey]int)
+		for _, position := range match.PlayerPositions {
+			positionCounts[keyOf(position)]++
+		}
+
+		positionsPerPlayer := make(map[playerRoundKey]*playerRoundPositions, len(positionCounts))
+		orderedPositions := make([]*playerRoundPositions, 0, len(positionCounts))
+		for _, position := range match.PlayerPositions {
+			key := keyOf(position)
 			positions, exists := positionsPerPlayer[key]
 			if !exists {
+				count := positionCounts[key]
 				positions = &playerRoundPositions{
-					steamID:     position.SteamID64,
-					name:        position.Name,
-					roundNumber: position.RoundNumber,
-					lastTick:    -1,
+					steamID:                position.SteamID64,
+					name:                   position.Name,
+					roundNumber:            position.RoundNumber,
+					lastTick:               -1,
+					ticks:                  make([]byte, 0, count*4),
+					x:                      make([]byte, 0, count*4),
+					y:                      make([]byte, 0, count*4),
+					z:                      make([]byte, 0, count*4),
+					yaw:                    make([]byte, 0, count*4),
+					flashDurationRemaining: make([]byte, 0, count*4),
+					isDucking:              make([]byte, 0, count),
+					isAirborne:             make([]byte, 0, count),
 				}
 				positionsPerPlayer[key] = positions
 				orderedPositions = append(orderedPositions, positions)
@@ -371,6 +434,7 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 			positions.isDucking = appendBool(positions.isDucking, position.IsDucking)
 			positions.isAirborne = appendBool(positions.isAirborne, position.IsAirborne)
 
+			weapons := joinWeapons(position.PlayerWeapons)
 			state := playerState{
 				isAlive:           position.IsAlive,
 				side:              position.Side,
@@ -385,17 +449,18 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 				isPlanting:        position.IsPlanting,
 				isGrabbingHostage: position.IsGrabbingHostage,
 				activeWeaponName:  position.ActiveWeaponName.String(),
-				equipments:        joinSortedWeaponNames(position.Equipments),
-				grenades:          joinSortedWeaponNames(position.Grenades),
-				pistols:           joinSortedWeaponNames(position.Pistols),
-				smgs:              joinSortedWeaponNames(position.SMGs),
-				rifles:            joinSortedWeaponNames(position.Rifles),
-				heavy:             joinSortedWeaponNames(position.Heavy),
+				equipments:        weapons.equipments,
+				grenades:          weapons.grenades,
+				pistols:           weapons.pistols,
+				smgs:              weapons.smgs,
+				rifles:            weapons.rifles,
+				heavy:             weapons.heavy,
 			}
-			if positions.lastState != nil && *positions.lastState == state {
+			if positions.hasState && positions.lastState == state {
 				continue
 			}
-			positions.lastState = &state
+			positions.lastState = state
+			positions.hasState = true
 
 			positions.stateTicks = appendInt32(positions.stateTicks, position.Tick)
 			positions.isAlive = appendBool(positions.isAlive, state.isAlive)
@@ -419,7 +484,9 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 			positions.heavy = append(positions.heavy, state.heavy)
 		}
 
-		lines := [][]string{}
+		// The rows are written as they are built, their hex encoded positions would otherwise all be in memory at once.
+		writer := csv.NewFileWriter(outputPath + "_positions.csv")
+		defer writer.Close()
 		for _, positions := range orderedPositions {
 			line := []string{
 				converters.IntToString(positions.roundNumber),
@@ -455,10 +522,8 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 				toTextArray(positions.heavy),
 				match.Checksum,
 			}
-			lines = append(lines, line)
+			writer.Write(line)
 		}
-
-		csv.WriteLinesIntoCsvFile(outputPath+"_positions.csv", lines)
 	}
 
 	// 1 row per player and round with the tick and position of each sample packed as big-endian binary.
@@ -508,7 +573,8 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 			samples.z = appendFloat32(samples.z, float32(sample.Z))
 		}
 
-		lines := [][]string{}
+		writer := csv.NewFileWriter(outputPath + "_player_position_samples.csv")
+		defer writer.Close()
 		for _, samples := range orderedSamples {
 			line := []string{
 				converters.IntToString(samples.roundNumber),
@@ -520,10 +586,8 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 				toBytea(samples.z),
 				match.Checksum,
 			}
-			lines = append(lines, line)
+			writer.Write(line)
 		}
-
-		csv.WriteLinesIntoCsvFile(outputPath+"_player_position_samples.csv", lines)
 	}
 
 	var writeShots = func() {
@@ -681,7 +745,8 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 			chicken.positions.add(position.Tick, position.X, position.Y, position.Z)
 		}
 
-		lines := [][]string{}
+		writer := csv.NewFileWriter(outputPath + "_chicken_positions.csv")
+		defer writer.Close()
 		for _, chicken := range orderedPositions {
 			chicken.positions.finish()
 			line := []string{
@@ -692,10 +757,8 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 				toBytea(chicken.positions.z),
 				match.Checksum,
 			}
-			lines = append(lines, line)
+			writer.Write(line)
 		}
-
-		csv.WriteLinesIntoCsvFile(outputPath+"_chicken_positions.csv", lines)
 	}
 
 	var writeDamages = func() {
@@ -953,7 +1016,8 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 			projectile.positions.add(position.Tick, position.X, position.Y, position.Z)
 		}
 
-		lines := [][]string{}
+		writer := csv.NewFileWriter(outputPath + "_grenade_positions.csv")
+		defer writer.Close()
 		for _, projectile := range orderedPositions {
 			projectile.positions.finish()
 			first := projectile.first
@@ -977,10 +1041,8 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 				toBytea(projectile.positions.z),
 				match.Checksum,
 			}
-			lines = append(lines, line)
+			writer.Write(line)
 		}
-
-		csv.WriteLinesIntoCsvFile(outputPath+"_grenade_positions.csv", lines)
 	}
 
 	var writeGrenadeBounces = func() {
@@ -1207,7 +1269,8 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 			inferno.lastHull = position.ConvexHull2D
 		}
 
-		lines := [][]string{}
+		writer := csv.NewFileWriter(outputPath + "_inferno_positions.csv")
+		defer writer.Close()
 		for _, inferno := range orderedHulls {
 			if !inferno.isLastWritten {
 				writeHull(inferno, inferno.lastTick, inferno.lastHull)
@@ -1225,10 +1288,8 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 				toTextArray(inferno.hulls),
 				match.Checksum,
 			}
-			lines = append(lines, line)
+			writer.Write(line)
 		}
-
-		csv.WriteLinesIntoCsvFile(outputPath+"_inferno_positions.csv", lines)
 	}
 
 	var writeChatMessages = func() {
@@ -1294,7 +1355,8 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 			}
 		}
 
-		lines := [][]string{}
+		writer := csv.NewFileWriter(outputPath + "_hostage_positions.csv")
+		defer writer.Close()
 		for _, hostage := range orderedPositions {
 			hostage.positions.finish()
 			line := []string{
@@ -1307,10 +1369,8 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 				toBytea(hostage.states),
 				match.Checksum,
 			}
-			lines = append(lines, line)
+			writer.Write(line)
 		}
-
-		csv.WriteLinesIntoCsvFile(outputPath+"_hostage_positions.csv", lines)
 	}
 
 	var writeHostagePickUpStart = func() {
