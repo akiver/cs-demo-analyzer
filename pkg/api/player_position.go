@@ -9,79 +9,95 @@ import (
 )
 
 type PlayerPosition struct {
-	Tick                   int                    `json:"tick"`
-	RoundNumber            int                    `json:"roundNumber"`
-	IsAlive                bool                   `json:"isAlive"`
-	Name                   string                 `json:"name"`
-	SteamID64              uint64                 `json:"steamId"`
-	X                      float64                `json:"x"`
-	Y                      float64                `json:"y"`
-	Z                      float64                `json:"z"`
-	Yaw                    float32                `json:"yaw"`
-	Pitch                  float32                `json:"pitch"`
-	FlashDurationRemaining float64                `json:"flashDurationRemaining"`
-	Side                   common.Team            `json:"side"`
-	Money                  int                    `json:"money"`
-	Health                 int                    `json:"health"`
-	Armor                  int                    `json:"armor"`
-	HasHelmet              bool                   `json:"hasHelmet"`
-	HasBomb                bool                   `json:"hasBomb"`
-	HasDefuseKit           bool                   `json:"hasDefuseKit"`
-	IsDucking              bool                   `json:"isDucking"`
-	IsAirborne             bool                   `json:"isAirborne"`
-	IsScoping              bool                   `json:"isScoping"`
-	IsDefusing             bool                   `json:"isDefusing"`
-	IsPlanting             bool                   `json:"isPlanting"`
-	IsGrabbingHostage      bool                   `json:"isGrabbingHostage"`
-	ActiveWeaponName       constants.WeaponName   `json:"activeWeaponName"`
-	Equipments             []constants.WeaponName `json:"equipments"`
-	Grenades               []constants.WeaponName `json:"grenades"`
-	Pistols                []constants.WeaponName `json:"pistols"`
-	SMGs                   []constants.WeaponName `json:"smgs"`
-	Rifles                 []constants.WeaponName `json:"rifles"`
-	Heavy                  []constants.WeaponName `json:"heavy"`
-	Ping                   int                    `json:"ping"`
+	Tick                   int                  `json:"tick"`
+	RoundNumber            int                  `json:"roundNumber"`
+	IsAlive                bool                 `json:"isAlive"`
+	Name                   string               `json:"name"`
+	SteamID64              uint64               `json:"steamId"`
+	X                      float64              `json:"x"`
+	Y                      float64              `json:"y"`
+	Z                      float64              `json:"z"`
+	Yaw                    float32              `json:"yaw"`
+	Pitch                  float32              `json:"pitch"`
+	FlashDurationRemaining float64              `json:"flashDurationRemaining"`
+	Side                   common.Team          `json:"side"`
+	Money                  int                  `json:"money"`
+	Health                 int                  `json:"health"`
+	Armor                  int                  `json:"armor"`
+	HasHelmet              bool                 `json:"hasHelmet"`
+	HasBomb                bool                 `json:"hasBomb"`
+	HasDefuseKit           bool                 `json:"hasDefuseKit"`
+	IsDucking              bool                 `json:"isDucking"`
+	IsAirborne             bool                 `json:"isAirborne"`
+	IsScoping              bool                 `json:"isScoping"`
+	IsDefusing             bool                 `json:"isDefusing"`
+	IsPlanting             bool                 `json:"isPlanting"`
+	IsGrabbingHostage      bool                 `json:"isGrabbingHostage"`
+	ActiveWeaponName       constants.WeaponName `json:"activeWeaponName"`
+	// Embedded so the JSON fields stay flat. Never nil, its fields wouldn't be in the JSON otherwise.
+	*PlayerWeapons
+	Ping int `json:"ping"`
 }
 
-// playerWeapons are the weapon names of a player's inventory by category, as exported in PlayerPosition.
-type playerWeapons struct {
-	equipments []constants.WeaponName
-	grenades   []constants.WeaponName
-	pistols    []constants.WeaponName
-	smgs       []constants.WeaponName
-	rifles     []constants.WeaponName
-	heavy      []constants.WeaponName
+// PlayerWeapons are the weapon names of a player's inventory by category.
+// The same PlayerWeapons is shared by consecutive positions of a player while the inventory doesn't change, it must
+// not be mutated.
+type PlayerWeapons struct {
+	Equipments []constants.WeaponName `json:"equipments"`
+	Grenades   []constants.WeaponName `json:"grenades"`
+	Pistols    []constants.WeaponName `json:"pistols"`
+	SMGs       []constants.WeaponName `json:"smgs"`
+	Rifles     []constants.WeaponName `json:"rifles"`
+	Heavy      []constants.WeaponName `json:"heavy"`
 }
 
 // reset empties the lists, keeping their backing arrays.
-func (w *playerWeapons) reset() {
-	w.equipments = w.equipments[:0]
-	w.grenades = w.grenades[:0]
-	w.pistols = w.pistols[:0]
-	w.smgs = w.smgs[:0]
-	w.rifles = w.rifles[:0]
-	w.heavy = w.heavy[:0]
+func (w *PlayerWeapons) reset() {
+	w.Equipments = w.Equipments[:0]
+	w.Grenades = w.Grenades[:0]
+	w.Pistols = w.Pistols[:0]
+	w.SMGs = w.SMGs[:0]
+	w.Rifles = w.Rifles[:0]
+	w.Heavy = w.Heavy[:0]
 }
 
-// internWeapons returns previous if it holds the same weapons as current (in any order), otherwise a sorted copy of
-// current (nil when empty). Player positions are created for every player on every frame while inventories change
-// a few times per round, so sharing the lists between consecutive positions avoids allocating six slices per
-// position. Positions only read them.
+// internPlayerWeapons returns previous if it holds the same weapons as current (in any order), otherwise a new
+// PlayerWeapons with sorted copies of current's lists. Player positions are created for every player on every frame
+// while inventories change a few times per round, so sharing the weapons between consecutive positions keeps
+// the six lists out of each position.
 // The copies are sorted because current is built by ranging the inventory map, whose order differs on every run;
 // comparing before sorting keeps the sort out of the common case where the inventory didn't change.
-func internWeapons(previous []constants.WeaponName, current []constants.WeaponName) []constants.WeaponName {
-	if len(current) == 0 {
-		return nil
-	}
-
-	if sameWeapons(previous, current) {
+func internPlayerWeapons(previous *PlayerWeapons, current *PlayerWeapons) *PlayerWeapons {
+	if previous != nil &&
+		sameWeapons(previous.Equipments, current.Equipments) &&
+		sameWeapons(previous.Grenades, current.Grenades) &&
+		sameWeapons(previous.Pistols, current.Pistols) &&
+		sameWeapons(previous.SMGs, current.SMGs) &&
+		sameWeapons(previous.Rifles, current.Rifles) &&
+		sameWeapons(previous.Heavy, current.Heavy) {
 		return previous
 	}
 
-	weapons := slices.Clone(current)
-	slices.Sort(weapons)
+	return &PlayerWeapons{
+		Equipments: sortedWeapons(current.Equipments),
+		Grenades:   sortedWeapons(current.Grenades),
+		Pistols:    sortedWeapons(current.Pistols),
+		SMGs:       sortedWeapons(current.SMGs),
+		Rifles:     sortedWeapons(current.Rifles),
+		Heavy:      sortedWeapons(current.Heavy),
+	}
+}
 
-	return weapons
+// sortedWeapons returns a sorted copy of weapons, nil when empty.
+func sortedWeapons(weapons []constants.WeaponName) []constants.WeaponName {
+	if len(weapons) == 0 {
+		return nil
+	}
+
+	sorted := slices.Clone(weapons)
+	slices.Sort(sorted)
+
+	return sorted
 }
 
 // sameWeapons returns whether a and b hold the same weapon names with the same multiplicities, in any order.
@@ -122,24 +138,24 @@ func newPlayerPosition(analyzer *Analyzer, player *common.Player) *PlayerPositio
 		// Player's weapons may contains duplicates, add it only if it has not been added yet.
 		switch weapon.Class() {
 		case common.EqClassEquipment:
-			current.equipments = slice.AppendIfNotInSlice(current.equipments, weaponName)
+			current.Equipments = slice.AppendIfNotInSlice(current.Equipments, weaponName)
 		case common.EqClassGrenade:
 			if weapon.Type == common.EqFlash {
 				flashbangCount := player.FlashbangCount()
 				for i := uint64(0); i < flashbangCount; i++ {
-					current.grenades = append(current.grenades, constants.WeaponFlashbang)
+					current.Grenades = append(current.Grenades, constants.WeaponFlashbang)
 				}
 			} else {
-				current.grenades = slice.AppendIfNotInSlice(current.grenades, weaponName)
+				current.Grenades = slice.AppendIfNotInSlice(current.Grenades, weaponName)
 			}
 		case common.EqClassPistols:
-			current.pistols = slice.AppendIfNotInSlice(current.pistols, weaponName)
+			current.Pistols = slice.AppendIfNotInSlice(current.Pistols, weaponName)
 		case common.EqClassSMG:
-			current.smgs = slice.AppendIfNotInSlice(current.smgs, weaponName)
+			current.SMGs = slice.AppendIfNotInSlice(current.SMGs, weaponName)
 		case common.EqClassRifle:
-			current.rifles = slice.AppendIfNotInSlice(current.rifles, weaponName)
+			current.Rifles = slice.AppendIfNotInSlice(current.Rifles, weaponName)
 		case common.EqClassHeavy:
-			current.heavy = slice.AppendIfNotInSlice(current.heavy, weaponName)
+			current.Heavy = slice.AppendIfNotInSlice(current.Heavy, weaponName)
 		}
 
 		if weapon.Type == common.EqBomb {
@@ -147,18 +163,8 @@ func newPlayerPosition(analyzer *Analyzer, player *common.Player) *PlayerPositio
 		}
 	}
 
-	weapons, exists := analyzer.playerWeapons[player]
-	if !exists {
-		weapons = &playerWeapons{}
-		analyzer.playerWeapons[player] = weapons
-	}
-
-	weapons.equipments = internWeapons(weapons.equipments, current.equipments)
-	weapons.grenades = internWeapons(weapons.grenades, current.grenades)
-	weapons.pistols = internWeapons(weapons.pistols, current.pistols)
-	weapons.smgs = internWeapons(weapons.smgs, current.smgs)
-	weapons.rifles = internWeapons(weapons.rifles, current.rifles)
-	weapons.heavy = internWeapons(weapons.heavy, current.heavy)
+	weapons := internPlayerWeapons(analyzer.playerWeapons[player], current)
+	analyzer.playerWeapons[player] = weapons
 
 	activeWeapon := constants.WeaponUnknown
 	if player.ActiveWeapon() != nil {
@@ -193,12 +199,7 @@ func newPlayerPosition(analyzer *Analyzer, player *common.Player) *PlayerPositio
 		IsPlanting:             player.IsPlanting,
 		IsGrabbingHostage:      player.IsGrabbingHostage(),
 		ActiveWeaponName:       activeWeapon,
-		Equipments:             weapons.equipments,
-		Grenades:               weapons.grenades,
-		Pistols:                weapons.pistols,
-		SMGs:                   weapons.smgs,
-		Rifles:                 weapons.rifles,
-		Heavy:                  weapons.heavy,
+		PlayerWeapons:          weapons,
 		Ping:                   player.Ping(),
 	}
 }

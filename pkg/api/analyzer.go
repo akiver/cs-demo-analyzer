@@ -64,11 +64,11 @@ type Analyzer struct {
 	chickenCount int
 	// Cached 2D convex hull of each burning inferno's active fires, only used when positions are included.
 	infernoHulls map[common.UniqueID]*infernoHull
-	// Weapon lists of the last position created for each player, shared with the next positions while the
-	// inventory doesn't change, see internWeapons(). Only used when positions are included.
-	playerWeapons map[*common.Player]*playerWeapons
+	// Weapons of the last position created for each player, shared with the next positions while the
+	// inventory doesn't change, see internPlayerWeapons(). Only used when positions are included.
+	playerWeapons map[*common.Player]*PlayerWeapons
 	// Scratch lists newPlayerPosition() builds the current inventory into before comparing it with playerWeapons.
-	playerWeaponsScratch playerWeapons
+	playerWeaponsScratch PlayerWeapons
 	// Scratch slice for sortedEntityIDs(), re-used across frames.
 	entityIDsScratch []int
 	// Second of the round of the last position samples, see samplePlayerPositions().
@@ -163,7 +163,7 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 		lastFreezeTimeEndTick:     -1,
 		bombPlantPosition:         r3.Vector{},
 		infernoHulls:              map[common.UniqueID]*infernoHull{},
-		playerWeapons:             map[*common.Player]*playerWeapons{},
+		playerWeapons:             map[*common.Player]*PlayerWeapons{},
 		lastPositionSampleSecond:  noPositionSampleSecond,
 		ticksPerSecond:            ticksPerSecondFromTickRate(match.TickRate),
 		lastGrenadeThrownByPlayer: make(map[uint64]*Shot),
