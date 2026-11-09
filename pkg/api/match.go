@@ -76,6 +76,8 @@ type Match struct {
 	Coaches                   []*Coach                    `json:"coaches"`
 	scoreTeamA                *int
 	scoreTeamB                *int
+	// Positions of the rounds that are over when they are spooled to disk during the analysis, nil otherwise.
+	positionsSpool *positionsSpool
 }
 
 type MatchAlias Match
@@ -334,6 +336,9 @@ func newMatch(source constants.DemoSource, demoInfo *demo.Demo) Match {
 }
 
 func (match *Match) reset() {
+	if match.positionsSpool != nil {
+		match.positionsSpool.reset()
+	}
 	match.PlayersBySteamID = make(map[uint64]*Player)
 	match.Coaches = []*Coach{}
 	match.Rounds = []*Round{}
@@ -369,6 +374,9 @@ func (match *Match) reset() {
 }
 
 func (match *Match) resetRound(roundNumber int) {
+	if match.positionsSpool != nil {
+		match.positionsSpool.deleteRound(roundNumber)
+	}
 	match.BombsPlantStart = slice.Filter(match.BombsPlantStart, func(event *BombPlantStart, index int) bool {
 		return event.RoundNumber != roundNumber
 	})

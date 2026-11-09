@@ -63,7 +63,7 @@ func exportMatchToJSON(match *Match, outputPath string, minify bool) error {
 }
 
 func writeMatchJSON(w io.Writer, match *Match, minify bool) error {
-	options := []jsonv2.Options{json.DefaultOptionsV1()}
+	options := []jsonv2.Options{json.DefaultOptionsV1(), jsonv2.WithMarshalers(positionsMarshalers(match))}
 	if !minify {
 		options = append(options, jsontext.WithIndent("  "))
 	}
@@ -71,4 +71,48 @@ func writeMatchJSON(w io.Writer, match *Match, minify bool) error {
 	// The MatchJSON value is marshalled rather than the match so that Match.MarshalJSON, which marshals the whole
 	// document in memory, isn't called.
 	return jsonv2.MarshalWrite(w, match.toJSON(), options...)
+}
+
+// positionsMarshalers returns marshalers of the match's position slices that stream the positions a round at a time,
+// including the ones spooled to disk during the analysis which aren't in the slices, see Match.eachPlayerPositions().
+func positionsMarshalers(match *Match) *jsonv2.Marshalers {
+	return jsonv2.JoinMarshalers(
+		jsonv2.MarshalToFunc(func(encoder *jsontext.Encoder, _ []*PlayerPosition) error {
+			return marshalPositions(encoder, match.eachPlayerPositions)
+		}),
+		jsonv2.MarshalToFunc(func(encoder *jsontext.Encoder, _ []*GrenadePosition) error {
+			return marshalPositions(encoder, match.eachGrenadePositions)
+		}),
+		jsonv2.MarshalToFunc(func(encoder *jsontext.Encoder, _ []*InfernoPosition) error {
+			return marshalPositions(encoder, match.eachInfernoPositions)
+		}),
+		jsonv2.MarshalToFunc(func(encoder *jsontext.Encoder, _ []*ChickenPosition) error {
+			return marshalPositions(encoder, match.eachChickenPositions)
+		}),
+		jsonv2.MarshalToFunc(func(encoder *jsontext.Encoder, _ []*HostagePosition) error {
+			return marshalPositions(encoder, match.eachHostagePositions)
+		}),
+	)
+}
+
+// marshalPositions writes the positions yielded by each as a JSON array.
+func marshalPositions[T any](encoder *jsontext.Encoder, each func(fn func(positions []T) error) error) error {
+	if err := encoder.WriteToken(jsontext.BeginArray); err != nil {
+		return err
+	}
+
+	err := each(func(positions []T) error {
+		for _, position := range positions {
+			if err := jsonv2.MarshalEncode(encoder, position); err != nil {
+				return err
+			}
+		}
+
+		return nil
+	})
+	if err != nil {
+		return err
+	}
+
+	return encoder.WriteToken(jsontext.EndArray)
 }

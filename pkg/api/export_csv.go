@@ -21,6 +21,17 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 
 	outputPath = outputPath + string(os.PathSeparator) + match.DemoFileName
 
+	// The writers run concurrently, the first error is returned.
+	var exportErr error
+	var exportErrMutex sync.Mutex
+	var fail = func(err error) {
+		exportErrMutex.Lock()
+		defer exportErrMutex.Unlock()
+		if exportErr == nil {
+			exportErr = err
+		}
+	}
+
 	var writeMatch = func() {
 		header := []string{
 			"checksum",
@@ -299,47 +310,54 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 			"match checksum",
 		}
 
-		lines := [][]string{header}
-		for _, position := range match.PlayerPositions {
-			line := []string{
-				converters.IntToString(position.Tick),
-				converters.BoolToString(position.IsAlive),
-				converters.Float64ToString(position.X),
-				converters.Float64ToString(position.Y),
-				converters.Float64ToString(position.Z),
-				converters.Float32ToString(position.Yaw),
-				converters.Float32ToString(position.Pitch),
-				converters.Float64ToString(position.FlashDurationRemaining),
-				converters.TeamToString(position.Side),
-				converters.IntToString(position.Money),
-				converters.IntToString(position.Health),
-				converters.IntToString(position.Armor),
-				converters.BoolToString(position.HasHelmet),
-				converters.BoolToString(position.HasBomb),
-				converters.BoolToString(position.HasDefuseKit),
-				converters.BoolToString(position.IsDucking),
-				converters.BoolToString(position.IsAirborne),
-				converters.BoolToString(position.IsScoping),
-				converters.BoolToString(position.IsDefusing),
-				converters.BoolToString(position.IsPlanting),
-				converters.BoolToString(position.IsGrabbingHostage),
-				position.ActiveWeaponName.String(),
-				strings.Join(slice.ToStrings(position.Equipments), ","),
-				strings.Join(slice.ToStrings(position.Grenades), ","),
-				strings.Join(slice.ToStrings(position.Pistols), ","),
-				strings.Join(slice.ToStrings(position.SMGs), ","),
-				strings.Join(slice.ToStrings(position.Rifles), ","),
-				strings.Join(slice.ToStrings(position.Heavy), ","),
-				converters.Uint64ToString(position.SteamID64),
-				position.Name,
-				converters.IntToString(position.RoundNumber),
-				converters.IntToString(position.Ping),
-				match.Checksum,
+		writer := csv.NewFileWriter(outputPath + "_positions.csv")
+		defer writer.Close()
+		writer.Write(header)
+		err := match.eachPlayerPositions(func(chunk []*PlayerPosition) error {
+			for _, position := range chunk {
+				line := []string{
+					converters.IntToString(position.Tick),
+					converters.BoolToString(position.IsAlive),
+					converters.Float64ToString(position.X),
+					converters.Float64ToString(position.Y),
+					converters.Float64ToString(position.Z),
+					converters.Float32ToString(position.Yaw),
+					converters.Float32ToString(position.Pitch),
+					converters.Float64ToString(position.FlashDurationRemaining),
+					converters.TeamToString(position.Side),
+					converters.IntToString(position.Money),
+					converters.IntToString(position.Health),
+					converters.IntToString(position.Armor),
+					converters.BoolToString(position.HasHelmet),
+					converters.BoolToString(position.HasBomb),
+					converters.BoolToString(position.HasDefuseKit),
+					converters.BoolToString(position.IsDucking),
+					converters.BoolToString(position.IsAirborne),
+					converters.BoolToString(position.IsScoping),
+					converters.BoolToString(position.IsDefusing),
+					converters.BoolToString(position.IsPlanting),
+					converters.BoolToString(position.IsGrabbingHostage),
+					position.ActiveWeaponName.String(),
+					strings.Join(slice.ToStrings(position.Equipments), ","),
+					strings.Join(slice.ToStrings(position.Grenades), ","),
+					strings.Join(slice.ToStrings(position.Pistols), ","),
+					strings.Join(slice.ToStrings(position.SMGs), ","),
+					strings.Join(slice.ToStrings(position.Rifles), ","),
+					strings.Join(slice.ToStrings(position.Heavy), ","),
+					converters.Uint64ToString(position.SteamID64),
+					position.Name,
+					converters.IntToString(position.RoundNumber),
+					converters.IntToString(position.Ping),
+					match.Checksum,
+				}
+				writer.Write(line)
 			}
-			lines = append(lines, line)
-		}
 
-		csv.WriteLinesIntoCsvFile(outputPath+"_positions.csv", lines)
+			return nil
+		})
+		if err != nil {
+			fail(err)
+		}
 	}
 
 	var writePlayerPositionSamples = func() {
@@ -599,20 +617,27 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 			"match checksum",
 		}
 
-		lines := [][]string{header}
-		for _, position := range match.ChickenPositions {
-			line := []string{
-				converters.IntToString(position.Tick),
-				converters.IntToString(position.RoundNumber),
-				converters.Float64ToString(position.X),
-				converters.Float64ToString(position.Y),
-				converters.Float64ToString(position.Z),
-				match.Checksum,
+		writer := csv.NewFileWriter(outputPath + "_chicken_positions.csv")
+		defer writer.Close()
+		writer.Write(header)
+		err := match.eachChickenPositions(func(chunk []*ChickenPosition) error {
+			for _, position := range chunk {
+				line := []string{
+					converters.IntToString(position.Tick),
+					converters.IntToString(position.RoundNumber),
+					converters.Float64ToString(position.X),
+					converters.Float64ToString(position.Y),
+					converters.Float64ToString(position.Z),
+					match.Checksum,
+				}
+				writer.Write(line)
 			}
-			lines = append(lines, line)
-		}
 
-		csv.WriteLinesIntoCsvFile(outputPath+"_chicken_positions.csv", lines)
+			return nil
+		})
+		if err != nil {
+			fail(err)
+		}
 	}
 
 	var writeDamages = func() {
@@ -1035,32 +1060,39 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 			"match checksum",
 		}
 
-		lines := [][]string{header}
-		for _, position := range match.GrenadePositions {
-			line := []string{
-				converters.IntToString(position.Tick),
-				converters.IntToString(position.RoundNumber),
-				position.GrenadeID,
-				position.ProjectileID,
-				position.GrenadeName.String(),
-				converters.Float64ToString(position.X),
-				converters.Float64ToString(position.Y),
-				converters.Float64ToString(position.Z),
-				converters.Uint64ToString(position.ThrowerSteamID64),
-				position.ThrowerName,
-				converters.TeamToString(position.ThrowerSide),
-				position.ThrowerTeamName,
-				converters.Float64ToString(position.ThrowerVelocityX),
-				converters.Float64ToString(position.ThrowerVelocityY),
-				converters.Float64ToString(position.ThrowerVelocityZ),
-				converters.Float32ToString(position.ThrowerYaw),
-				converters.Float32ToString(position.ThrowerPitch),
-				match.Checksum,
+		writer := csv.NewFileWriter(outputPath + "_grenade_positions.csv")
+		defer writer.Close()
+		writer.Write(header)
+		err := match.eachGrenadePositions(func(chunk []*GrenadePosition) error {
+			for _, position := range chunk {
+				line := []string{
+					converters.IntToString(position.Tick),
+					converters.IntToString(position.RoundNumber),
+					position.GrenadeID,
+					position.ProjectileID,
+					position.GrenadeName.String(),
+					converters.Float64ToString(position.X),
+					converters.Float64ToString(position.Y),
+					converters.Float64ToString(position.Z),
+					converters.Uint64ToString(position.ThrowerSteamID64),
+					position.ThrowerName,
+					converters.TeamToString(position.ThrowerSide),
+					position.ThrowerTeamName,
+					converters.Float64ToString(position.ThrowerVelocityX),
+					converters.Float64ToString(position.ThrowerVelocityY),
+					converters.Float64ToString(position.ThrowerVelocityZ),
+					converters.Float32ToString(position.ThrowerYaw),
+					converters.Float32ToString(position.ThrowerPitch),
+					match.Checksum,
+				}
+				writer.Write(line)
 			}
-			lines = append(lines, line)
-		}
 
-		csv.WriteLinesIntoCsvFile(outputPath+"_grenade_positions.csv", lines)
+			return nil
+		})
+		if err != nil {
+			fail(err)
+		}
 	}
 
 	var writeGrenadeBounces = func() {
@@ -1369,35 +1401,42 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 			"match checksum",
 		}
 
-		lines := [][]string{header}
-		for _, position := range match.InfernoPositions {
-			var convexHull2D string
-			for index, point := range position.ConvexHull2D {
-				startCharacter := ""
-				if index > 0 {
-					startCharacter = ","
+		writer := csv.NewFileWriter(outputPath + "_inferno_positions.csv")
+		defer writer.Close()
+		writer.Write(header)
+		err := match.eachInfernoPositions(func(chunk []*InfernoPosition) error {
+			for _, position := range chunk {
+				var convexHull2D string
+				for index, point := range position.ConvexHull2D {
+					startCharacter := ""
+					if index > 0 {
+						startCharacter = ","
+					}
+					convexHull2D += fmt.Sprintf("%s%f,%f", startCharacter, point.X, point.Y)
 				}
-				convexHull2D += fmt.Sprintf("%s%f,%f", startCharacter, point.X, point.Y)
+				if convexHull2D == "" {
+					convexHull2D = "0,0"
+				}
+				line := []string{
+					converters.IntToString(position.Tick),
+					converters.IntToString(position.RoundNumber),
+					converters.Uint64ToString(position.ThrowerSteamID64),
+					position.ThrowerName,
+					position.UniqueID,
+					converters.Float64ToString(position.X),
+					converters.Float64ToString(position.Y),
+					converters.Float64ToString(position.Z),
+					convexHull2D,
+					match.Checksum,
+				}
+				writer.Write(line)
 			}
-			if convexHull2D == "" {
-				convexHull2D = "0,0"
-			}
-			line := []string{
-				converters.IntToString(position.Tick),
-				converters.IntToString(position.RoundNumber),
-				converters.Uint64ToString(position.ThrowerSteamID64),
-				position.ThrowerName,
-				position.UniqueID,
-				converters.Float64ToString(position.X),
-				converters.Float64ToString(position.Y),
-				converters.Float64ToString(position.Z),
-				convexHull2D,
-				match.Checksum,
-			}
-			lines = append(lines, line)
-		}
 
-		csv.WriteLinesIntoCsvFile(outputPath+"_inferno_positions.csv", lines)
+			return nil
+		})
+		if err != nil {
+			fail(err)
+		}
 	}
 
 	var writeChatMessages = func() {
@@ -1469,21 +1508,28 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 			"match checksum",
 		}
 
-		lines := [][]string{header}
-		for _, position := range match.HostagePositions {
-			line := []string{
-				converters.IntToString(position.Tick),
-				converters.IntToString(position.RoundNumber),
-				converters.Float64ToString(position.X),
-				converters.Float64ToString(position.Y),
-				converters.Float64ToString(position.Z),
-				converters.ByteToString(byte(position.State)),
-				match.Checksum,
+		writer := csv.NewFileWriter(outputPath + "_hostage_positions.csv")
+		defer writer.Close()
+		writer.Write(header)
+		err := match.eachHostagePositions(func(chunk []*HostagePosition) error {
+			for _, position := range chunk {
+				line := []string{
+					converters.IntToString(position.Tick),
+					converters.IntToString(position.RoundNumber),
+					converters.Float64ToString(position.X),
+					converters.Float64ToString(position.Y),
+					converters.Float64ToString(position.Z),
+					converters.ByteToString(byte(position.State)),
+					match.Checksum,
+				}
+				writer.Write(line)
 			}
-			lines = append(lines, line)
-		}
 
-		csv.WriteLinesIntoCsvFile(outputPath+"_hostage_positions.csv", lines)
+			return nil
+		})
+		if err != nil {
+			fail(err)
+		}
 	}
 
 	var writeHostagePickUpStart = func() {
@@ -1630,5 +1676,5 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 
 	wg.Wait()
 
-	return nil
+	return exportErr
 }

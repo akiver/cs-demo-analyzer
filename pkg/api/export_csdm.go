@@ -143,6 +143,17 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 
 	outputPath = outputPath + string(os.PathSeparator) + match.DemoFileName
 
+	// The writers run concurrently, the first error is returned.
+	var exportErr error
+	var exportErrMutex sync.Mutex
+	var fail = func(err error) {
+		exportErrMutex.Lock()
+		defer exportErrMutex.Unlock()
+		if exportErr == nil {
+			exportErr = err
+		}
+	}
+
 	var writeDemo = func() {
 		line := []string{
 			match.Checksum,
@@ -353,7 +364,8 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 			rifles     string
 			heavy      string
 		}
-		joinedWeaponsCache := make(map[*PlayerWeapons]joinedWeapons)
+		// Reset for each chunk of positions, the PlayerWeapons of a chunk aren't referenced once it's processed.
+		var joinedWeaponsCache map[*PlayerWeapons]joinedWeapons
 		var joinWeapons = func(weapons *PlayerWeapons) joinedWeapons {
 			joined, exists := joinedWeaponsCache[weapons]
 			if !exists {
@@ -389,141 +401,162 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 		// The positions are counted per player and round first so that the packed slices are allocated with their
 		// final capacity: growing them one value at a time would allocate (and copy) several times their final size.
 		// The count is an upper bound as the positions of a tick's extra frames are skipped below.
-		positionCounts := make(map[playerRoundKey]int)
-		for _, position := range match.PlayerPositions {
-			positionCounts[keyOf(position)]++
-		}
-
-		positionsPerPlayer := make(map[playerRoundKey]*playerRoundPositions, len(positionCounts))
-		orderedPositions := make([]*playerRoundPositions, 0, len(positionCounts))
-		for _, position := range match.PlayerPositions {
-			key := keyOf(position)
-			positions, exists := positionsPerPlayer[key]
-			if !exists {
-				count := positionCounts[key]
-				positions = &playerRoundPositions{
-					steamID:                position.SteamID64,
-					name:                   position.Name,
-					roundNumber:            position.RoundNumber,
-					lastTick:               -1,
-					ticks:                  make([]byte, 0, count*4),
-					x:                      make([]byte, 0, count*4),
-					y:                      make([]byte, 0, count*4),
-					z:                      make([]byte, 0, count*4),
-					yaw:                    make([]byte, 0, count*4),
-					flashDurationRemaining: make([]byte, 0, count*4),
-					isDucking:              make([]byte, 0, count),
-					isAirborne:             make([]byte, 0, count),
-				}
-				positionsPerPlayer[key] = positions
-				orderedPositions = append(orderedPositions, positions)
-			}
-
-			// Positions are sorted by frame and there may be multiple frames per tick.
-			if positions.lastTick == position.Tick {
-				continue
-			}
-			positions.lastTick = position.Tick
-
-			positions.ticks = appendInt32(positions.ticks, position.Tick)
-			positions.x = appendFloat32(positions.x, float32(position.X))
-			positions.y = appendFloat32(positions.y, float32(position.Y))
-			positions.z = appendFloat32(positions.z, float32(position.Z))
-			positions.yaw = appendFloat32(positions.yaw, position.Yaw)
-			positions.flashDurationRemaining = appendFloat32(positions.flashDurationRemaining, float32(position.FlashDurationRemaining))
-			positions.isDucking = appendBool(positions.isDucking, position.IsDucking)
-			positions.isAirborne = appendBool(positions.isAirborne, position.IsAirborne)
-
-			weapons := joinWeapons(position.PlayerWeapons)
-			state := playerState{
-				isAlive:           position.IsAlive,
-				side:              position.Side,
-				money:             position.Money,
-				health:            position.Health,
-				armor:             position.Armor,
-				hasHelmet:         position.HasHelmet,
-				hasBomb:           position.HasBomb,
-				hasDefuseKit:      position.HasDefuseKit,
-				isScoping:         position.IsScoping,
-				isDefusing:        position.IsDefusing,
-				isPlanting:        position.IsPlanting,
-				isGrabbingHostage: position.IsGrabbingHostage,
-				activeWeaponName:  position.ActiveWeaponName.String(),
-				equipments:        weapons.equipments,
-				grenades:          weapons.grenades,
-				pistols:           weapons.pistols,
-				smgs:              weapons.smgs,
-				rifles:            weapons.rifles,
-				heavy:             weapons.heavy,
-			}
-			if positions.hasState && positions.lastState == state {
-				continue
-			}
-			positions.lastState = state
-			positions.hasState = true
-
-			positions.stateTicks = appendInt32(positions.stateTicks, position.Tick)
-			positions.isAlive = appendBool(positions.isAlive, state.isAlive)
-			positions.side = appendInt32(positions.side, int(state.side))
-			positions.money = appendInt32(positions.money, state.money)
-			positions.health = appendInt32(positions.health, state.health)
-			positions.armor = appendInt32(positions.armor, state.armor)
-			positions.hasHelmet = appendBool(positions.hasHelmet, state.hasHelmet)
-			positions.hasBomb = appendBool(positions.hasBomb, state.hasBomb)
-			positions.hasDefuseKit = appendBool(positions.hasDefuseKit, state.hasDefuseKit)
-			positions.isScoping = appendBool(positions.isScoping, state.isScoping)
-			positions.isDefusing = appendBool(positions.isDefusing, state.isDefusing)
-			positions.isPlanting = appendBool(positions.isPlanting, state.isPlanting)
-			positions.isGrabbingHostage = appendBool(positions.isGrabbingHostage, state.isGrabbingHostage)
-			positions.activeWeaponName = append(positions.activeWeaponName, state.activeWeaponName)
-			positions.equipments = append(positions.equipments, state.equipments)
-			positions.grenades = append(positions.grenades, state.grenades)
-			positions.pistols = append(positions.pistols, state.pistols)
-			positions.smgs = append(positions.smgs, state.smgs)
-			positions.rifles = append(positions.rifles, state.rifles)
-			positions.heavy = append(positions.heavy, state.heavy)
-		}
-
 		// The rows are written as they are built, their hex encoded positions would otherwise all be in memory at once.
 		writer := csv.NewFileWriter(outputPath + "_positions.csv")
 		defer writer.Close()
-		for _, positions := range orderedPositions {
-			line := []string{
-				converters.IntToString(positions.roundNumber),
-				converters.Uint64ToString(positions.steamID),
-				positions.name,
-				toBytea(positions.ticks),
-				toBytea(positions.x),
-				toBytea(positions.y),
-				toBytea(positions.z),
-				toBytea(positions.yaw),
-				toBytea(positions.flashDurationRemaining),
-				toBytea(positions.isDucking),
-				toBytea(positions.isAirborne),
-				toBytea(positions.stateTicks),
-				toBytea(positions.isAlive),
-				toBytea(positions.side),
-				toBytea(positions.money),
-				toBytea(positions.health),
-				toBytea(positions.armor),
-				toBytea(positions.hasHelmet),
-				toBytea(positions.hasBomb),
-				toBytea(positions.hasDefuseKit),
-				toBytea(positions.isScoping),
-				toBytea(positions.isDefusing),
-				toBytea(positions.isPlanting),
-				toBytea(positions.isGrabbingHostage),
-				toTextArray(positions.activeWeaponName),
-				toTextArray(positions.equipments),
-				toTextArray(positions.grenades),
-				toTextArray(positions.pistols),
-				toTextArray(positions.smgs),
-				toTextArray(positions.rifles),
-				toTextArray(positions.heavy),
-				match.Checksum,
+		// The rows are per player and round. A chunk holds a round, or a part of a long round, so the rows of a round
+		// are written once a position of the next round is reached, before the next chunk is read.
+		positionsPerPlayer := make(map[playerRoundKey]*playerRoundPositions)
+		var orderedPositions []*playerRoundPositions
+		currentRoundNumber := -1
+		var writeRoundRows = func() {
+			for _, positions := range orderedPositions {
+				line := []string{
+					converters.IntToString(positions.roundNumber),
+					converters.Uint64ToString(positions.steamID),
+					positions.name,
+					toBytea(positions.ticks),
+					toBytea(positions.x),
+					toBytea(positions.y),
+					toBytea(positions.z),
+					toBytea(positions.yaw),
+					toBytea(positions.flashDurationRemaining),
+					toBytea(positions.isDucking),
+					toBytea(positions.isAirborne),
+					toBytea(positions.stateTicks),
+					toBytea(positions.isAlive),
+					toBytea(positions.side),
+					toBytea(positions.money),
+					toBytea(positions.health),
+					toBytea(positions.armor),
+					toBytea(positions.hasHelmet),
+					toBytea(positions.hasBomb),
+					toBytea(positions.hasDefuseKit),
+					toBytea(positions.isScoping),
+					toBytea(positions.isDefusing),
+					toBytea(positions.isPlanting),
+					toBytea(positions.isGrabbingHostage),
+					toTextArray(positions.activeWeaponName),
+					toTextArray(positions.equipments),
+					toTextArray(positions.grenades),
+					toTextArray(positions.pistols),
+					toTextArray(positions.smgs),
+					toTextArray(positions.rifles),
+					toTextArray(positions.heavy),
+					match.Checksum,
+				}
+				writer.Write(line)
 			}
-			writer.Write(line)
+			clear(positionsPerPlayer)
+			clear(orderedPositions)
+			orderedPositions = orderedPositions[:0]
 		}
+		err := match.eachPlayerPositions(func(chunk []*PlayerPosition) error {
+			joinedWeaponsCache = make(map[*PlayerWeapons]joinedWeapons)
+			positionCounts := make(map[playerRoundKey]int)
+			for _, position := range chunk {
+				positionCounts[keyOf(position)]++
+			}
+
+			for _, position := range chunk {
+				if position.RoundNumber != currentRoundNumber {
+					writeRoundRows()
+					currentRoundNumber = position.RoundNumber
+				}
+				key := keyOf(position)
+				positions, exists := positionsPerPlayer[key]
+				if !exists {
+					count := positionCounts[key]
+					positions = &playerRoundPositions{
+						steamID:                position.SteamID64,
+						name:                   position.Name,
+						roundNumber:            position.RoundNumber,
+						lastTick:               -1,
+						ticks:                  make([]byte, 0, count*4),
+						x:                      make([]byte, 0, count*4),
+						y:                      make([]byte, 0, count*4),
+						z:                      make([]byte, 0, count*4),
+						yaw:                    make([]byte, 0, count*4),
+						flashDurationRemaining: make([]byte, 0, count*4),
+						isDucking:              make([]byte, 0, count),
+						isAirborne:             make([]byte, 0, count),
+					}
+					positionsPerPlayer[key] = positions
+					orderedPositions = append(orderedPositions, positions)
+				}
+
+				// Positions are sorted by frame and there may be multiple frames per tick.
+				if positions.lastTick == position.Tick {
+					continue
+				}
+				positions.lastTick = position.Tick
+
+				positions.ticks = appendInt32(positions.ticks, position.Tick)
+				positions.x = appendFloat32(positions.x, float32(position.X))
+				positions.y = appendFloat32(positions.y, float32(position.Y))
+				positions.z = appendFloat32(positions.z, float32(position.Z))
+				positions.yaw = appendFloat32(positions.yaw, position.Yaw)
+				positions.flashDurationRemaining = appendFloat32(positions.flashDurationRemaining, float32(position.FlashDurationRemaining))
+				positions.isDucking = appendBool(positions.isDucking, position.IsDucking)
+				positions.isAirborne = appendBool(positions.isAirborne, position.IsAirborne)
+
+				weapons := joinWeapons(position.PlayerWeapons)
+				state := playerState{
+					isAlive:           position.IsAlive,
+					side:              position.Side,
+					money:             position.Money,
+					health:            position.Health,
+					armor:             position.Armor,
+					hasHelmet:         position.HasHelmet,
+					hasBomb:           position.HasBomb,
+					hasDefuseKit:      position.HasDefuseKit,
+					isScoping:         position.IsScoping,
+					isDefusing:        position.IsDefusing,
+					isPlanting:        position.IsPlanting,
+					isGrabbingHostage: position.IsGrabbingHostage,
+					activeWeaponName:  position.ActiveWeaponName.String(),
+					equipments:        weapons.equipments,
+					grenades:          weapons.grenades,
+					pistols:           weapons.pistols,
+					smgs:              weapons.smgs,
+					rifles:            weapons.rifles,
+					heavy:             weapons.heavy,
+				}
+				if positions.hasState && positions.lastState == state {
+					continue
+				}
+				positions.lastState = state
+				positions.hasState = true
+
+				positions.stateTicks = appendInt32(positions.stateTicks, position.Tick)
+				positions.isAlive = appendBool(positions.isAlive, state.isAlive)
+				positions.side = appendInt32(positions.side, int(state.side))
+				positions.money = appendInt32(positions.money, state.money)
+				positions.health = appendInt32(positions.health, state.health)
+				positions.armor = appendInt32(positions.armor, state.armor)
+				positions.hasHelmet = appendBool(positions.hasHelmet, state.hasHelmet)
+				positions.hasBomb = appendBool(positions.hasBomb, state.hasBomb)
+				positions.hasDefuseKit = appendBool(positions.hasDefuseKit, state.hasDefuseKit)
+				positions.isScoping = appendBool(positions.isScoping, state.isScoping)
+				positions.isDefusing = appendBool(positions.isDefusing, state.isDefusing)
+				positions.isPlanting = appendBool(positions.isPlanting, state.isPlanting)
+				positions.isGrabbingHostage = appendBool(positions.isGrabbingHostage, state.isGrabbingHostage)
+				positions.activeWeaponName = append(positions.activeWeaponName, state.activeWeaponName)
+				positions.equipments = append(positions.equipments, state.equipments)
+				positions.grenades = append(positions.grenades, state.grenades)
+				positions.pistols = append(positions.pistols, state.pistols)
+				positions.smgs = append(positions.smgs, state.smgs)
+				positions.rifles = append(positions.rifles, state.rifles)
+				positions.heavy = append(positions.heavy, state.heavy)
+			}
+
+			return nil
+		})
+		if err != nil {
+			fail(err)
+			return
+		}
+		writeRoundRows()
 	}
 
 	// 1 row per player and round with the tick and position of each sample packed as big-endian binary.
@@ -729,36 +762,56 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 			positions   packedPositions
 		}
 
-		positionsPerChicken := make(map[chickenRoundKey]*chickenRoundPositions)
-		var orderedPositions []*chickenRoundPositions
-		for _, position := range match.ChickenPositions {
-			key := chickenRoundKey{
-				chickenID:   position.chickenID,
-				roundNumber: position.RoundNumber,
-			}
-			chicken, exists := positionsPerChicken[key]
-			if !exists {
-				chicken = &chickenRoundPositions{roundNumber: position.RoundNumber}
-				positionsPerChicken[key] = chicken
-				orderedPositions = append(orderedPositions, chicken)
-			}
-			chicken.positions.add(position.Tick, position.X, position.Y, position.Z)
-		}
-
 		writer := csv.NewFileWriter(outputPath + "_chicken_positions.csv")
 		defer writer.Close()
-		for _, chicken := range orderedPositions {
-			chicken.positions.finish()
-			line := []string{
-				converters.IntToString(chicken.roundNumber),
-				toBytea(chicken.positions.ticks),
-				toBytea(chicken.positions.x),
-				toBytea(chicken.positions.y),
-				toBytea(chicken.positions.z),
-				match.Checksum,
+		// The rows are per chicken and round. A chunk holds a round, or a part of a long round, so the rows of a round
+		// are written once a position of the next round is reached, before the next chunk is read.
+		positionsPerChicken := make(map[chickenRoundKey]*chickenRoundPositions)
+		var orderedPositions []*chickenRoundPositions
+		currentRoundNumber := -1
+		var writeRoundRows = func() {
+			for _, chicken := range orderedPositions {
+				chicken.positions.finish()
+				line := []string{
+					converters.IntToString(chicken.roundNumber),
+					toBytea(chicken.positions.ticks),
+					toBytea(chicken.positions.x),
+					toBytea(chicken.positions.y),
+					toBytea(chicken.positions.z),
+					match.Checksum,
+				}
+				writer.Write(line)
 			}
-			writer.Write(line)
+			clear(positionsPerChicken)
+			clear(orderedPositions)
+			orderedPositions = orderedPositions[:0]
 		}
+		err := match.eachChickenPositions(func(chunk []*ChickenPosition) error {
+			for _, position := range chunk {
+				if position.RoundNumber != currentRoundNumber {
+					writeRoundRows()
+					currentRoundNumber = position.RoundNumber
+				}
+				key := chickenRoundKey{
+					chickenID:   position.chickenID,
+					roundNumber: position.RoundNumber,
+				}
+				chicken, exists := positionsPerChicken[key]
+				if !exists {
+					chicken = &chickenRoundPositions{roundNumber: position.RoundNumber}
+					positionsPerChicken[key] = chicken
+					orderedPositions = append(orderedPositions, chicken)
+				}
+				chicken.positions.add(position.Tick, position.X, position.Y, position.Z)
+			}
+
+			return nil
+		})
+		if err != nil {
+			fail(err)
+			return
+		}
+		writeRoundRows()
 	}
 
 	var writeDamages = func() {
@@ -1006,14 +1059,24 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 
 		positionsPerProjectile := make(map[string]*projectilePositions)
 		var orderedPositions []*projectilePositions
-		for _, position := range match.GrenadePositions {
-			projectile, exists := positionsPerProjectile[position.ProjectileID]
-			if !exists {
-				projectile = &projectilePositions{first: position}
-				positionsPerProjectile[position.ProjectileID] = projectile
-				orderedPositions = append(orderedPositions, projectile)
+		// The rows are per projectile and a projectile thrown at the end of a round may still fly during the next
+		// one (so in the next chunk), the rows are written once all the chunks are processed.
+		err := match.eachGrenadePositions(func(chunk []*GrenadePosition) error {
+			for _, position := range chunk {
+				projectile, exists := positionsPerProjectile[position.ProjectileID]
+				if !exists {
+					projectile = &projectilePositions{first: position}
+					positionsPerProjectile[position.ProjectileID] = projectile
+					orderedPositions = append(orderedPositions, projectile)
+				}
+				projectile.positions.add(position.Tick, position.X, position.Y, position.Z)
 			}
-			projectile.positions.add(position.Tick, position.X, position.Y, position.Z)
+
+			return nil
+		})
+		if err != nil {
+			fail(err)
+			return
 		}
 
 		writer := csv.NewFileWriter(outputPath + "_grenade_positions.csv")
@@ -1246,27 +1309,37 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 
 		hullsPerInferno := make(map[string]*infernoHulls)
 		var orderedHulls []*infernoHulls
-		for _, position := range match.InfernoPositions {
-			inferno, exists := hullsPerInferno[position.UniqueID]
-			if !exists {
-				inferno = &infernoHulls{first: position}
-				hullsPerInferno[position.UniqueID] = inferno
-				orderedHulls = append(orderedHulls, inferno)
-				writeHull(inferno, position.Tick, position.ConvexHull2D)
-				inferno.isLastWritten = true
-			} else {
-				// Positions are sorted by frame and there may be multiple frames per tick.
-				if position.Tick == inferno.lastTick {
-					continue
-				}
-				hasChanged := !slices.Equal(position.ConvexHull2D, inferno.lastHull)
-				if hasChanged {
+		// The rows are per inferno and an inferno may still burn when the next round starts (so in the next chunk),
+		// the rows are written once all the chunks are processed.
+		err := match.eachInfernoPositions(func(chunk []*InfernoPosition) error {
+			for _, position := range chunk {
+				inferno, exists := hullsPerInferno[position.UniqueID]
+				if !exists {
+					inferno = &infernoHulls{first: position}
+					hullsPerInferno[position.UniqueID] = inferno
+					orderedHulls = append(orderedHulls, inferno)
 					writeHull(inferno, position.Tick, position.ConvexHull2D)
+					inferno.isLastWritten = true
+				} else {
+					// Positions are sorted by frame and there may be multiple frames per tick.
+					if position.Tick == inferno.lastTick {
+						continue
+					}
+					hasChanged := !slices.Equal(position.ConvexHull2D, inferno.lastHull)
+					if hasChanged {
+						writeHull(inferno, position.Tick, position.ConvexHull2D)
+					}
+					inferno.isLastWritten = hasChanged
 				}
-				inferno.isLastWritten = hasChanged
+				inferno.lastTick = position.Tick
+				inferno.lastHull = position.ConvexHull2D
 			}
-			inferno.lastTick = position.Tick
-			inferno.lastHull = position.ConvexHull2D
+
+			return nil
+		})
+		if err != nil {
+			fail(err)
+			return
 		}
 
 		writer := csv.NewFileWriter(outputPath + "_inferno_positions.csv")
@@ -1328,48 +1401,66 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 			lastState   common.HostageState
 		}
 
-		positionsPerHostage := make(map[hostageRoundKey]*hostageRoundPositions)
-		var orderedPositions []*hostageRoundPositions
-		for _, position := range match.HostagePositions {
-			key := hostageRoundKey{
-				entityID:    position.entityID,
-				serialNum:   position.serialNum,
-				roundNumber: position.RoundNumber,
-			}
-			hostage, exists := positionsPerHostage[key]
-			if !exists {
-				hostage = &hostageRoundPositions{roundNumber: position.RoundNumber}
-				positionsPerHostage[key] = hostage
-				orderedPositions = append(orderedPositions, hostage)
-			}
-			hostage.positions.add(position.Tick, position.X, position.Y, position.Z)
-			// Like positions, only the first frame of a tick is used.
-			if exists && position.Tick == hostage.lastTick {
-				continue
-			}
-			hostage.lastTick = position.Tick
-			if !exists || position.State != hostage.lastState {
-				hostage.stateTicks = appendInt32(hostage.stateTicks, position.Tick)
-				hostage.states = appendInt32(hostage.states, int(position.State))
-				hostage.lastState = position.State
-			}
-		}
-
 		writer := csv.NewFileWriter(outputPath + "_hostage_positions.csv")
 		defer writer.Close()
-		for _, hostage := range orderedPositions {
-			hostage.positions.finish()
-			line := []string{
-				converters.IntToString(hostage.roundNumber),
-				toBytea(hostage.positions.ticks),
-				toBytea(hostage.positions.x),
-				toBytea(hostage.positions.y),
-				toBytea(hostage.positions.z),
-				toBytea(hostage.stateTicks),
-				toBytea(hostage.states),
-				match.Checksum,
+		// The rows are per hostage and round. A chunk holds a round, or a part of a long round, so the rows of a round
+		// are written once a position of the next round is reached, before the next chunk is read.
+		positionsPerHostage := make(map[hostageRoundKey]*hostageRoundPositions)
+		var orderedPositions []*hostageRoundPositions
+		currentRoundNumber := -1
+		var writeRoundRows = func() {
+			for _, hostage := range orderedPositions {
+				hostage.positions.finish()
+				line := []string{
+					converters.IntToString(hostage.roundNumber),
+					toBytea(hostage.positions.ticks),
+					toBytea(hostage.positions.x),
+					toBytea(hostage.positions.y),
+					toBytea(hostage.positions.z),
+					toBytea(hostage.stateTicks),
+					toBytea(hostage.states),
+					match.Checksum,
+				}
+				writer.Write(line)
 			}
-			writer.Write(line)
+			clear(positionsPerHostage)
+			clear(orderedPositions)
+			orderedPositions = orderedPositions[:0]
+		}
+		err := match.eachHostagePositions(func(chunk []*HostagePosition) error {
+			for _, position := range chunk {
+				if position.RoundNumber != currentRoundNumber {
+					writeRoundRows()
+					currentRoundNumber = position.RoundNumber
+				}
+				key := hostageRoundKey{
+					entityID:    position.entityID,
+					serialNum:   position.serialNum,
+					roundNumber: position.RoundNumber,
+				}
+				hostage, exists := positionsPerHostage[key]
+				if !exists {
+					hostage = &hostageRoundPositions{roundNumber: position.RoundNumber}
+					positionsPerHostage[key] = hostage
+					orderedPositions = append(orderedPositions, hostage)
+				}
+				hostage.positions.add(position.Tick, position.X, position.Y, position.Z)
+				// Like positions, only the first frame of a tick is used.
+				if exists && position.Tick == hostage.lastTick {
+					continue
+				}
+				hostage.lastTick = position.Tick
+				if !exists || position.State != hostage.lastState {
+					hostage.stateTicks = appendInt32(hostage.stateTicks, position.Tick)
+					hostage.states = appendInt32(hostage.states, int(position.State))
+					hostage.lastState = position.State
+				}
+			}
+
+			return nil
+		})
+		if err != nil {
+			fail(err)
 		}
 	}
 
@@ -1482,5 +1573,5 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 
 	wg.Wait()
 
-	return nil
+	return exportErr
 }

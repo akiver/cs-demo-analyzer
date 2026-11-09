@@ -105,7 +105,9 @@ type AnalyzeDemoOptions struct {
 	Source           constants.DemoSource
 }
 
-func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
+// spoolPositions stores the positions of the rounds that are over in a temporary file instead of keeping them in
+// memory, the returned match must be closed with closePositionsSpool() once exported.
+func analyzeDemo(demoPath string, options AnalyzeDemoOptions, spoolPositions bool) (*Match, error) {
 	if options.Source != "" {
 		err := ValidateDemoSource(options.Source)
 		if err != nil {
@@ -228,11 +230,22 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 		return nil, errors.New("unknown demo source, please specify the source with the -source flag (UnknownSource)")
 	}
 
+	if spoolPositions && options.IncludePositions {
+		spool, err := newPositionsSpool()
+		if err != nil {
+			// Fall back to keeping all the positions in memory
+			fmt.Fprintf(os.Stderr, "%v, positions will be kept in memory\n", err)
+		} else {
+			match.positionsSpool = spool
+		}
+	}
+
 	err = parser.ParseToEnd()
 	// Do not stop if the demo is corrupted, usually the error occurs at the end of the parsing.
 	// Depending on how far we were able to parse the demo we may still have data.
 	isCorruptedDemo := errors.Is(err, dem.ErrUnexpectedEndOfDemo)
 	if err != nil && !isCorruptedDemo {
+		match.closePositionsSpool()
 		return nil, err
 	}
 
@@ -259,6 +272,11 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 	}
 
 	analyzer.postProcess(analyzer)
+	analyzer.spillPositions()
+	if spool := match.positionsSpool; spool != nil && spool.err != nil {
+		match.closePositionsSpool()
+		return nil, spool.err
+	}
 	match.deleteIncompleteRounds()
 	match.computeResultStats()
 
@@ -266,7 +284,7 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
 }
 
 func AnalyzeDemo(demoPath string, options AnalyzeDemoOptions) (*Match, error) {
-	match, err := analyzeDemo(demoPath, options)
+	match, err := analyzeDemo(demoPath, options, false)
 
 	return match, err
 }
@@ -287,14 +305,17 @@ func AnalyzeAndExportDemo(demoPath string, outputPath string, options AnalyzeAnd
 		}
 	}
 
+	// The positions of the rounds that are over are spooled to disk rather than kept in memory, the exporters read
+	// them back a round at a time.
 	match, err := analyzeDemo(demoPath, AnalyzeDemoOptions{
 		IncludePositions: options.IncludePositions,
 		Source:           options.Source,
-	})
+	}, true)
 
 	if err != nil {
 		return err
 	}
+	defer match.closePositionsSpool()
 
 	switch options.Format {
 	case "csv":
@@ -524,6 +545,7 @@ func (analyzer *Analyzer) processMatchStart() {
 
 // This creates a Round, reset analyzer data related to the current round and set the new round as the current round.
 func (analyzer *Analyzer) createRound() {
+	analyzer.spillPositions()
 	analyzer.clutch1 = nil
 	analyzer.clutch2 = nil
 	analyzer.lastGrenadeThrownByPlayer = make(map[uint64]*Shot)
@@ -808,6 +830,12 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 			for _, hostage := range parser.GameState().Hostages() {
 				hostagePosition := newHostagePositionFromHostage(analyzer, hostage)
 				match.HostagePositions = append(match.HostagePositions, hostagePosition)
+			}
+
+			// A round is spooled once it's over but a very long one (practice demo, long warmup) would keep all its
+			// positions in memory, so it's spooled in parts to bound the memory whatever the demo.
+			if len(match.PlayerPositions)+len(match.GrenadePositions) >= maxPositionsInMemory {
+				analyzer.spillPositions()
 			}
 		})
 
@@ -1517,4 +1545,33 @@ func defaultPostProcess(analyzer *Analyzer) {
 	if len(match.Rounds) < currentRound.Number {
 		match.Rounds = append(match.Rounds, currentRound)
 	}
+}
+
+// maxPositionsInMemory is the number of positions above which the positions of the current round are spooled before
+// it's over. A regular round has up to ~100k player positions at 64 ticks per second and ~200k at 128.
+const maxPositionsInMemory = 250_000
+
+// spillPositions moves the positions of the current round to the positions spool when positions are spooled, see
+// positionsSpool. It's called when a round is over, and during a round that has too many positions, so that only
+// the positions of the current round are in memory.
+func (analyzer *Analyzer) spillPositions() {
+	match := analyzer.match
+	spool := match.positionsSpool
+	if spool == nil {
+		return
+	}
+
+	spool.writeRound(analyzer.currentRound.Number, match)
+
+	// The backing arrays are kept for the next round, cleared so that the spooled positions can be collected.
+	clear(match.PlayerPositions)
+	match.PlayerPositions = match.PlayerPositions[:0]
+	clear(match.GrenadePositions)
+	match.GrenadePositions = match.GrenadePositions[:0]
+	clear(match.InfernoPositions)
+	match.InfernoPositions = match.InfernoPositions[:0]
+	clear(match.ChickenPositions)
+	match.ChickenPositions = match.ChickenPositions[:0]
+	clear(match.HostagePositions)
+	match.HostagePositions = match.HostagePositions[:0]
 }
