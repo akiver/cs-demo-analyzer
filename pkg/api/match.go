@@ -78,6 +78,8 @@ type Match struct {
 	scoreTeamB                *int
 	// Positions of the rounds that are over when they are spooled to disk during the analysis, nil otherwise.
 	positionsSpool *positionsSpool
+	// Entities whose position has been captured during the current tick, see tickPositions.
+	tickPositions tickPositions
 }
 
 type MatchAlias Match
@@ -339,6 +341,7 @@ func (match *Match) reset() {
 	if match.positionsSpool != nil {
 		match.positionsSpool.reset()
 	}
+	match.tickPositions.reset()
 	match.PlayersBySteamID = make(map[uint64]*Player)
 	match.Coaches = []*Coach{}
 	match.Rounds = []*Round{}
@@ -377,6 +380,7 @@ func (match *Match) resetRound(roundNumber int) {
 	if match.positionsSpool != nil {
 		match.positionsSpool.deleteRound(roundNumber)
 	}
+	match.tickPositions.reset()
 	match.BombsPlantStart = slice.Filter(match.BombsPlantStart, func(event *BombPlantStart, index int) bool {
 		return event.RoundNumber != roundNumber
 	})

@@ -797,9 +797,17 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 				return
 			}
 
+			// Several frames may have the same tick, only the first position of an entity is captured for a tick.
+			captured := &match.tickPositions
+			captured.startFrame(analyzer.currentTick(), analyzer.currentRound.Number)
+
 			for _, chicken := range analyzer.chickenEntities {
+				if hasPosition(captured, captured.chickens, chicken) {
+					continue
+				}
 				chickenPosition := newChickenPositionFromEntity(analyzer, chicken)
 				match.ChickenPositions = append(match.ChickenPositions, chickenPosition)
+				captured.chickens = append(captured.chickens, chicken)
 			}
 
 			// GrenadeProjectiles() and Infernos() are maps, ranging them yields a different order on every run.
@@ -807,29 +815,47 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 			projectiles := parser.GameState().GrenadeProjectiles()
 			analyzer.entityIDsScratch = sortedEntityIDs(analyzer.entityIDsScratch, projectiles)
 			for _, entityID := range analyzer.entityIDsScratch {
-				position := newGrenadePositionFromProjectile(analyzer, projectiles[entityID])
+				projectile := projectiles[entityID]
+				if hasPosition(captured, captured.projectiles, projectile) {
+					continue
+				}
+				position := newGrenadePositionFromProjectile(analyzer, projectile)
 				if position != nil {
 					match.GrenadePositions = append(match.GrenadePositions, position)
+					captured.projectiles = append(captured.projectiles, projectile)
 				}
 			}
 
 			infernos := parser.GameState().Infernos()
 			analyzer.entityIDsScratch = sortedEntityIDs(analyzer.entityIDsScratch, infernos)
 			for _, entityID := range analyzer.entityIDsScratch {
-				infernoPosition := newInfernoPositionFromInferno(analyzer, infernos[entityID])
+				inferno := infernos[entityID]
+				if hasPosition(captured, captured.infernos, inferno) {
+					continue
+				}
+				infernoPosition := newInfernoPositionFromInferno(analyzer, inferno)
 				if infernoPosition != nil {
 					match.InfernoPositions = append(match.InfernoPositions, infernoPosition)
+					captured.infernos = append(captured.infernos, inferno)
 				}
 			}
 
 			for _, player := range parser.GameState().Participants().Playing() {
+				if hasPosition(captured, captured.players, player) {
+					continue
+				}
 				playerPosition := newPlayerPosition(analyzer, player)
 				match.PlayerPositions = append(match.PlayerPositions, playerPosition)
+				captured.players = append(captured.players, player)
 			}
 
 			for _, hostage := range parser.GameState().Hostages() {
+				if hasPosition(captured, captured.hostages, hostage) {
+					continue
+				}
 				hostagePosition := newHostagePositionFromHostage(analyzer, hostage)
 				match.HostagePositions = append(match.HostagePositions, hostagePosition)
+				captured.hostages = append(captured.hostages, hostage)
 			}
 
 			// A round is spooled once it's over but a very long one (practice demo, long warmup) would keep all its
