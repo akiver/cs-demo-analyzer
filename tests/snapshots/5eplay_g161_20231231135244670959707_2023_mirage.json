@@ -128003,6 +128003,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 15547,
+      "roundNumber": 3,
+      "playerSteamId": 76561198886914468,
+      "playerSide": 3,
+      "playerName": "和我一起去逃避",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 15563,
       "roundNumber": 3,
       "playerSteamId": 76561199104520853,
@@ -128064,6 +128075,17 @@
       "playerSide": 3,
       "playerName": "Dadddddy",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 15666,
+      "roundNumber": 3,
+      "playerSteamId": 76561198288657828,
+      "playerSide": 3,
+      "playerName": "zHunBi_wOw",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -128311,6 +128333,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 24270,
+      "roundNumber": 4,
+      "playerSteamId": 76561198288657828,
+      "playerSide": 3,
+      "playerName": "zHunBi_wOw",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 24271,
       "roundNumber": 4,
       "playerSteamId": 76561199104520853,
@@ -128520,6 +128553,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 24526,
+      "roundNumber": 4,
+      "playerSteamId": 76561199194343995,
+      "playerSide": 2,
+      "playerName": "二次元小陈",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 24845,
       "roundNumber": 4,
       "playerSteamId": 76561198994608392,
@@ -128609,6 +128653,17 @@
     },
     {
       "tick": 28458,
+      "roundNumber": 5,
+      "playerSteamId": 76561198288657828,
+      "playerSide": 3,
+      "playerName": "zHunBi_wOw",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 28467,
       "roundNumber": 5,
       "playerSteamId": 76561198288657828,
       "playerSide": 3,
@@ -129070,6 +129125,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 34012,
+      "roundNumber": 6,
+      "playerSteamId": 76561199064714350,
+      "playerSide": 2,
+      "playerName": "KG.70",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": true
+    },
+    {
       "tick": 34016,
       "roundNumber": 6,
       "playerSteamId": 76561199194343995,
@@ -129099,6 +129165,17 @@
       "playerName": "zHunBi_wOw",
       "weaponName": "M4A1",
       "weaponType": "rifle",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 34030,
+      "roundNumber": 6,
+      "playerSteamId": 76561199194343995,
+      "playerSide": 2,
+      "playerName": "二次元小陈",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },
@@ -129169,6 +129246,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 34065,
+      "roundNumber": 6,
+      "playerSteamId": 76561198288657828,
+      "playerSide": 3,
+      "playerName": "zHunBi_wOw",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 34071,
       "roundNumber": 6,
       "playerSteamId": 76561198836396113,
@@ -129224,7 +129312,29 @@
       "hasRefunded": false
     },
     {
+      "tick": 34110,
+      "roundNumber": 6,
+      "playerSteamId": 76561199238440889,
+      "playerSide": 2,
+      "playerName": "哥的情绪稳定",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 34116,
+      "roundNumber": 6,
+      "playerSteamId": 76561198836396113,
+      "playerSide": 2,
+      "playerName": "^MDZz....",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 34130,
       "roundNumber": 6,
       "playerSteamId": 76561198836396113,
       "playerSide": 2,
@@ -129571,6 +129681,28 @@
       "playerSide": 2,
       "playerName": "KG.70",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 37382,
+      "roundNumber": 7,
+      "playerSteamId": 76561198886914468,
+      "playerSide": 3,
+      "playerName": "和我一起去逃避",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 37400,
+      "roundNumber": 7,
+      "playerSteamId": 76561198288657828,
+      "playerSide": 3,
+      "playerName": "zHunBi_wOw",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -129951,6 +130083,17 @@
     },
     {
       "tick": 44810,
+      "roundNumber": 8,
+      "playerSteamId": 76561198288657828,
+      "playerSide": 3,
+      "playerName": "zHunBi_wOw",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 44818,
       "roundNumber": 8,
       "playerSteamId": 76561198288657828,
       "playerSide": 3,
@@ -130346,6 +130489,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 52236,
+      "roundNumber": 9,
+      "playerSteamId": 76561198288657828,
+      "playerSide": 3,
+      "playerName": "zHunBi_wOw",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 52243,
       "roundNumber": 9,
       "playerSteamId": 76561199104520853,
@@ -130434,6 +130588,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 52435,
+      "roundNumber": 9,
+      "playerSteamId": 76561198886914468,
+      "playerSide": 3,
+      "playerName": "和我一起去逃避",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 52721,
       "roundNumber": 9,
       "playerSteamId": 76561199064714350,
@@ -130462,6 +130627,17 @@
       "playerSide": 3,
       "playerName": "Dadddddy",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 55071,
+      "roundNumber": 10,
+      "playerSteamId": 76561198288657828,
+      "playerSide": 3,
+      "playerName": "zHunBi_wOw",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -130698,6 +130874,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 55412,
+      "roundNumber": 10,
+      "playerSteamId": 76561198836396113,
+      "playerSide": 2,
+      "playerName": "^MDZz....",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 55426,
       "roundNumber": 10,
       "playerSteamId": 76561199238440889,
@@ -130743,6 +130930,17 @@
     },
     {
       "tick": 55753,
+      "roundNumber": 10,
+      "playerSteamId": 76561199064714350,
+      "playerSide": 2,
+      "playerName": "KG.70",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 55764,
       "roundNumber": 10,
       "playerSteamId": 76561199064714350,
       "playerSide": 2,
@@ -130995,6 +131193,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 59877,
+      "roundNumber": 11,
+      "playerSteamId": 76561198288657828,
+      "playerSide": 3,
+      "playerName": "zHunBi_wOw",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 59879,
       "roundNumber": 11,
       "playerSteamId": 76561199104520853,
@@ -131083,6 +131292,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 59968,
+      "roundNumber": 11,
+      "playerSteamId": 76561198836396113,
+      "playerSide": 2,
+      "playerName": "^MDZz....",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 59981,
       "roundNumber": 11,
       "playerSteamId": 76561198840681151,
@@ -131111,6 +131331,17 @@
       "playerSide": 3,
       "playerName": "Dadddddy",
       "weaponName": "HE Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 60004,
+      "roundNumber": 11,
+      "playerSteamId": 76561198886914468,
+      "playerSide": 3,
+      "playerName": "和我一起去逃避",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -131385,6 +131616,17 @@
       "playerSteamId": 76561198886914468,
       "playerSide": 3,
       "playerName": "和我一起去逃避",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 64612,
+      "roundNumber": 12,
+      "playerSteamId": 76561198288657828,
+      "playerSide": 3,
+      "playerName": "zHunBi_wOw",
       "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
@@ -132139,6 +132381,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 74727,
+      "roundNumber": 14,
+      "playerSteamId": 76561199104520853,
+      "playerSide": 2,
+      "playerName": "开什么枪拿刀",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 74745,
       "roundNumber": 14,
       "playerSteamId": 76561199194343995,
@@ -132146,6 +132399,17 @@
       "playerName": "二次元小陈",
       "weaponName": "Kevlar + Helmet",
       "weaponType": "equipment",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 74749,
+      "roundNumber": 14,
+      "playerSteamId": 76561198886914468,
+      "playerSide": 2,
+      "playerName": "和我一起去逃避",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },
@@ -132524,6 +132788,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 81321,
+      "roundNumber": 15,
+      "playerSteamId": 76561198836396113,
+      "playerSide": 3,
+      "playerName": "^MDZz....",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 81336,
       "roundNumber": 15,
       "playerSteamId": 76561198872277112,
@@ -132887,6 +133162,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 86637,
+      "roundNumber": 16,
+      "playerSteamId": 76561198836396113,
+      "playerSide": 3,
+      "playerName": "^MDZz....",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 86656,
       "roundNumber": 16,
       "playerSteamId": 76561199104520853,
@@ -132904,6 +133190,17 @@
       "playerSide": 3,
       "playerName": "^MDZz....",
       "weaponName": "HE Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 86666,
+      "roundNumber": 16,
+      "playerSteamId": 76561199104520853,
+      "playerSide": 2,
+      "playerName": "开什么枪拿刀",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -132953,6 +133250,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 86730,
+      "roundNumber": 16,
+      "playerSteamId": 76561198288657828,
+      "playerSide": 2,
+      "playerName": "zHunBi_wOw",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 86739,
       "roundNumber": 16,
       "playerSteamId": 76561198886914468,
@@ -132981,6 +133289,17 @@
       "playerSide": 2,
       "playerName": "和我一起去逃避",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 86781,
+      "roundNumber": 16,
+      "playerSteamId": 76561198840681151,
+      "playerSide": 2,
+      "playerName": "Dadddddy",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -133036,6 +133355,17 @@
       "playerSide": 2,
       "playerName": "Dadddddy",
       "weaponName": "Decoy Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 86861,
+      "roundNumber": 16,
+      "playerSteamId": 76561199194343995,
+      "playerSide": 3,
+      "playerName": "二次元小陈",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false

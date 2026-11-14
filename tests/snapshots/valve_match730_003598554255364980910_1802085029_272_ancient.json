@@ -81061,6 +81061,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 15926,
+      "roundNumber": 3,
+      "playerSteamId": 76561199051559268,
+      "playerSide": 3,
+      "playerName": "34_SEDOI_34",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 15988,
       "roundNumber": 3,
       "playerSteamId": 76561198122661778,
@@ -82370,6 +82381,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 37481,
+      "roundNumber": 7,
+      "playerSteamId": 76561198860346297,
+      "playerSide": 3,
+      "playerName": "Tihiro",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 37493,
       "roundNumber": 7,
       "playerSteamId": 76561197985985357,
@@ -82701,6 +82723,17 @@
     },
     {
       "tick": 43347,
+      "roundNumber": 8,
+      "playerSteamId": 76561197962122882,
+      "playerSide": 2,
+      "playerName": "snoopypupsi",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 43355,
       "roundNumber": 8,
       "playerSteamId": 76561197962122882,
       "playerSide": 2,
@@ -83888,6 +83921,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 65647,
+      "roundNumber": 12,
+      "playerSteamId": 76561199003898099,
+      "playerSide": 2,
+      "playerName": "☆ hyoka",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 65657,
       "roundNumber": 12,
       "playerSteamId": 76561197985985357,
@@ -84252,6 +84296,17 @@
     },
     {
       "tick": 71252,
+      "roundNumber": 13,
+      "playerSteamId": 76561198860346297,
+      "playerSide": 2,
+      "playerName": "Tihiro",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 71264,
       "roundNumber": 13,
       "playerSteamId": 76561198860346297,
       "playerSide": 2,

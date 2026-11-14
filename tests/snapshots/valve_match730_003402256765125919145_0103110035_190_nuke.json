@@ -117734,6 +117734,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 12303,
+      "roundNumber": 2,
+      "playerSteamId": 76561198287171166,
+      "playerSide": 2,
+      "playerName": "iRoz0x",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 12369,
       "roundNumber": 2,
       "playerSteamId": 76561198160035572,
@@ -117855,6 +117866,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 18820,
+      "roundNumber": 3,
+      "playerSteamId": 76561198799173940,
+      "playerSide": 3,
+      "playerName": "gorilla",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 18842,
       "roundNumber": 3,
       "playerSteamId": 76561198799173940,
@@ -117960,6 +117982,17 @@
       "playerSide": 2,
       "playerName": "iRoz0x",
       "weaponName": "HE Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 19276,
+      "roundNumber": 3,
+      "playerSteamId": 76561198287171166,
+      "playerSide": 2,
+      "playerName": "iRoz0x",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -118504,6 +118537,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 29610,
+      "roundNumber": 5,
+      "playerSteamId": 76561198273767826,
+      "playerSide": 2,
+      "playerName": "LIION974",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 29626,
       "roundNumber": 5,
       "playerSteamId": 76561198287171166,
@@ -118626,6 +118670,17 @@
     },
     {
       "tick": 30300,
+      "roundNumber": 5,
+      "playerSteamId": 76561199003638064,
+      "playerSide": 2,
+      "playerName": "TheSmallJAT",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 30322,
       "roundNumber": 5,
       "playerSteamId": 76561199003638064,
       "playerSide": 2,
@@ -118823,6 +118878,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 34228,
+      "roundNumber": 6,
+      "playerSteamId": 76561198892628768,
+      "playerSide": 2,
+      "playerName": "I'm gay and proud of it",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 34270,
       "roundNumber": 6,
       "playerSteamId": 76561198445937943,
@@ -118977,6 +119043,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 34980,
+      "roundNumber": 6,
+      "playerSteamId": 76561198799173940,
+      "playerSide": 3,
+      "playerName": "gorilla",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 34984,
       "roundNumber": 6,
       "playerSteamId": 76561198161973676,
@@ -119050,6 +119127,17 @@
       "playerName": "I'm gay and proud of it",
       "weaponName": "Kevlar + Helmet",
       "weaponType": "equipment",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 42738,
+      "roundNumber": 7,
+      "playerSteamId": 76561198287171166,
+      "playerSide": 2,
+      "playerName": "iRoz0x",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },
@@ -119170,6 +119258,17 @@
       "playerSide": 2,
       "playerName": "Maucier",
       "weaponName": "HE Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 42884,
+      "roundNumber": 7,
+      "playerSteamId": 76561198892628768,
+      "playerSide": 2,
+      "playerName": "I'm gay and proud of it",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -119604,6 +119703,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 48137,
+      "roundNumber": 8,
+      "playerSteamId": 76561198892628768,
+      "playerSide": 2,
+      "playerName": "I'm gay and proud of it",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 48333,
       "roundNumber": 8,
       "playerSteamId": 76561198195829963,
@@ -119835,6 +119945,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 54060,
+      "roundNumber": 9,
+      "playerSteamId": 76561198160035572,
+      "playerSide": 2,
+      "playerName": "Maucier",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 54070,
       "roundNumber": 9,
       "playerSteamId": 76561198445937943,
@@ -119952,6 +120073,17 @@
       "playerName": "romania bad",
       "weaponName": "MP9",
       "weaponType": "smg",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 54382,
+      "roundNumber": 9,
+      "playerSteamId": 76561198273767826,
+      "playerSide": 2,
+      "playerName": "LIION974",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },
@@ -120084,6 +120216,17 @@
       "playerName": "romania bad",
       "weaponName": "Defuse Kit",
       "weaponType": "equipment",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 61970,
+      "roundNumber": 10,
+      "playerSteamId": 76561198287171166,
+      "playerSide": 2,
+      "playerName": "iRoz0x",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },
@@ -120319,6 +120462,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 68369,
+      "roundNumber": 11,
+      "playerSteamId": 76561198892628768,
+      "playerSide": 2,
+      "playerName": "I'm gay and proud of it",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 68407,
       "roundNumber": 11,
       "playerSteamId": 76561198831417913,
@@ -120386,6 +120540,17 @@
     },
     {
       "tick": 68513,
+      "roundNumber": 11,
+      "playerSteamId": 76561198799173940,
+      "playerSide": 3,
+      "playerName": "gorilla",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 68523,
       "roundNumber": 11,
       "playerSteamId": 76561198799173940,
       "playerSide": 3,
@@ -121276,6 +121441,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 89081,
+      "roundNumber": 14,
+      "playerSteamId": 76561198799173940,
+      "playerSide": 3,
+      "playerName": "gorilla",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 89119,
       "roundNumber": 14,
       "playerSteamId": 76561198273767826,
@@ -121348,6 +121524,17 @@
       "playerSide": 2,
       "playerName": "TheSmallJAT",
       "weaponName": "HE Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 89249,
+      "roundNumber": 14,
+      "playerSteamId": 76561198273767826,
+      "playerSide": 2,
+      "playerName": "LIION974",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -121431,6 +121618,17 @@
     },
     {
       "tick": 89415,
+      "roundNumber": 14,
+      "playerSteamId": 76561198892628768,
+      "playerSide": 2,
+      "playerName": "I'm gay and proud of it",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 89427,
       "roundNumber": 14,
       "playerSteamId": 76561198892628768,
       "playerSide": 2,
@@ -121778,6 +121976,17 @@
       "playerName": "TheSmallJAT",
       "weaponName": "Zeus x27",
       "weaponType": "melee",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 95205,
+      "roundNumber": 15,
+      "playerSteamId": 76561198831417913,
+      "playerSide": 3,
+      "playerName": "Master Flevo",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },
@@ -122189,6 +122398,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 105818,
+      "roundNumber": 17,
+      "playerSteamId": 76561198799173940,
+      "playerSide": 2,
+      "playerName": "gorilla",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 105820,
       "roundNumber": 17,
       "playerSteamId": 76561198287171166,
@@ -122245,6 +122465,17 @@
     },
     {
       "tick": 105900,
+      "roundNumber": 17,
+      "playerSteamId": 76561199003638064,
+      "playerSide": 3,
+      "playerName": "TheSmallJAT",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 105908,
       "roundNumber": 17,
       "playerSteamId": 76561199003638064,
       "playerSide": 3,
@@ -123025,6 +123256,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 124758,
+      "roundNumber": 20,
+      "playerSteamId": 76561198799173940,
+      "playerSide": 2,
+      "playerName": "gorilla",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 124772,
       "roundNumber": 20,
       "playerSteamId": 76561199003638064,
@@ -123234,6 +123476,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 131237,
+      "roundNumber": 21,
+      "playerSteamId": 76561198287171166,
+      "playerSide": 3,
+      "playerName": "iRoz0x",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 131287,
       "roundNumber": 21,
       "playerSteamId": 76561198273767826,
@@ -123295,6 +123548,17 @@
       "playerSide": 3,
       "playerName": "TheSmallJAT",
       "weaponName": "HE Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 134759,
+      "roundNumber": 21,
+      "playerSteamId": 76561198892628768,
+      "playerSide": 3,
+      "playerName": "I'm gay and proud of it",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -123575,6 +123839,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 141548,
+      "roundNumber": 22,
+      "playerSteamId": 76561198831417913,
+      "playerSide": 2,
+      "playerName": "Master Flevo",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 141584,
       "roundNumber": 22,
       "playerSteamId": 76561198831417913,
@@ -123636,6 +123911,17 @@
       "playerSide": 2,
       "playerName": "Master Flevo",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 145007,
+      "roundNumber": 23,
+      "playerSteamId": 76561198831417913,
+      "playerSide": 2,
+      "playerName": "Master Flevo",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -123774,6 +124060,17 @@
     },
     {
       "tick": 145685,
+      "roundNumber": 23,
+      "playerSteamId": 76561198273767826,
+      "playerSide": 3,
+      "playerName": "LIION974",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 145697,
       "roundNumber": 23,
       "playerSteamId": 76561198273767826,
       "playerSide": 3,
@@ -124022,6 +124319,17 @@
       "playerName": "I'm gay and proud of it",
       "weaponName": "AWP",
       "weaponType": "sniper",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 151419,
+      "roundNumber": 24,
+      "playerSteamId": 76561198831417913,
+      "playerSide": 2,
+      "playerName": "Master Flevo",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },

@@ -212541,6 +212541,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 98566,
+      "roundNumber": 4,
+      "playerSteamId": 76561198012987839,
+      "playerSide": 2,
+      "playerName": "JUSTT",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 98568,
       "roundNumber": 4,
       "playerSteamId": 76561198248953762,
@@ -212640,12 +212651,34 @@
       "hasRefunded": false
     },
     {
+      "tick": 98665,
+      "roundNumber": 4,
+      "playerSteamId": 76561198065448360,
+      "playerSide": 2,
+      "playerName": "story",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 98667,
       "roundNumber": 4,
       "playerSteamId": 76561197994395491,
       "playerSide": 2,
       "playerName": "roman",
       "weaponName": "Molotov",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 98667,
+      "roundNumber": 4,
+      "playerSteamId": 76561197997981170,
+      "playerSide": 2,
+      "playerName": "MUTiRiS",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -212795,6 +212828,17 @@
     },
     {
       "tick": 112105,
+      "roundNumber": 5,
+      "playerSteamId": 76561198065448360,
+      "playerSide": 2,
+      "playerName": "story",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 112120,
       "roundNumber": 5,
       "playerSteamId": 76561198065448360,
       "playerSide": 2,
@@ -212981,6 +213025,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 116629,
+      "roundNumber": 5,
+      "playerSteamId": 76561197997981170,
+      "playerSide": 2,
+      "playerName": "MUTiRiS",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 117000,
       "roundNumber": 5,
       "playerSteamId": 76561198010511021,
@@ -213108,6 +213163,17 @@
       "playerSide": 2,
       "playerName": "roman",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 135755,
+      "roundNumber": 6,
+      "playerSteamId": 76561198065448360,
+      "playerSide": 2,
+      "playerName": "story",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -213289,6 +213355,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 136598,
+      "roundNumber": 6,
+      "playerSteamId": 76561197997981170,
+      "playerSide": 2,
+      "playerName": "MUTiRiS",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 136851,
       "roundNumber": 6,
       "playerSteamId": 76561198010511021,
@@ -213433,6 +213510,17 @@
     },
     {
       "tick": 153225,
+      "roundNumber": 7,
+      "playerSteamId": 76561197987713664,
+      "playerSide": 3,
+      "playerName": "dev1ce",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 153241,
       "roundNumber": 7,
       "playerSteamId": 76561197987713664,
       "playerSide": 3,
@@ -213696,6 +213784,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 153921,
+      "roundNumber": 7,
+      "playerSteamId": 76561198065448360,
+      "playerSide": 2,
+      "playerName": "story",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 153925,
       "roundNumber": 7,
       "playerSteamId": 76561198262460262,
@@ -213861,6 +213960,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 154116,
+      "roundNumber": 7,
+      "playerSteamId": 76561197994395491,
+      "playerSide": 2,
+      "playerName": "roman",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 154140,
       "roundNumber": 7,
       "playerSteamId": 76561197994395491,
@@ -213905,6 +214015,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 154397,
+      "roundNumber": 7,
+      "playerSteamId": 76561197997981170,
+      "playerSide": 2,
+      "playerName": "MUTiRiS",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 173108,
       "roundNumber": 8,
       "playerSteamId": 76561197997981170,
@@ -213939,6 +214060,17 @@
     },
     {
       "tick": 173206,
+      "roundNumber": 8,
+      "playerSteamId": 76561198065448360,
+      "playerSide": 2,
+      "playerName": "story",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 173221,
       "roundNumber": 8,
       "playerSteamId": 76561198065448360,
       "playerSide": 2,
@@ -214070,6 +214202,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 173710,
+      "roundNumber": 8,
+      "playerSteamId": 76561197994395491,
+      "playerSide": 2,
+      "playerName": "roman",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 173724,
       "roundNumber": 8,
       "playerSteamId": 76561198262460262,
@@ -214126,6 +214269,17 @@
     },
     {
       "tick": 174007,
+      "roundNumber": 8,
+      "playerSteamId": 76561197997981170,
+      "playerSide": 2,
+      "playerName": "MUTiRiS",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 174027,
       "roundNumber": 8,
       "playerSteamId": 76561197997981170,
       "playerSide": 2,
@@ -214433,6 +214587,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 190826,
+      "roundNumber": 9,
+      "playerSteamId": 76561197994395491,
+      "playerSide": 2,
+      "playerName": "roman",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 190876,
       "roundNumber": 9,
       "playerSteamId": 76561197987713664,
@@ -214489,6 +214654,17 @@
     },
     {
       "tick": 191028,
+      "roundNumber": 9,
+      "playerSteamId": 76561197997981170,
+      "playerSide": 2,
+      "playerName": "MUTiRiS",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 191047,
       "roundNumber": 9,
       "playerSteamId": 76561197997981170,
       "playerSide": 2,
@@ -214796,6 +214972,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 204035,
+      "roundNumber": 10,
+      "playerSteamId": 76561197994395491,
+      "playerSide": 2,
+      "playerName": "roman",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 204116,
       "roundNumber": 10,
       "playerSteamId": 76561197997981170,
@@ -214879,6 +215066,17 @@
       "playerSide": 2,
       "playerName": "story",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 226406,
+      "roundNumber": 11,
+      "playerSteamId": 76561198065448360,
+      "playerSide": 2,
+      "playerName": "story",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -215099,6 +215297,17 @@
       "playerSide": 3,
       "playerName": "dev1ce",
       "weaponName": "Incendiary Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 226988,
+      "roundNumber": 11,
+      "playerSteamId": 76561197994395491,
+      "playerSide": 2,
+      "playerName": "roman",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -215764,6 +215973,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 252023,
+      "roundNumber": 13,
+      "playerSteamId": 76561197994395491,
+      "playerSide": 2,
+      "playerName": "roman",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 252113,
       "roundNumber": 13,
       "playerSteamId": 76561197997981170,
@@ -215798,6 +216018,17 @@
     },
     {
       "tick": 252167,
+      "roundNumber": 13,
+      "playerSteamId": 76561198065448360,
+      "playerSide": 2,
+      "playerName": "story",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 252183,
       "roundNumber": 13,
       "playerSteamId": 76561198065448360,
       "playerSide": 2,
@@ -216127,6 +216358,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 270319,
+      "roundNumber": 14,
+      "playerSteamId": 76561197987713664,
+      "playerSide": 3,
+      "playerName": "dev1ce",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 270321,
       "roundNumber": 14,
       "playerSteamId": 76561197990682262,
@@ -216292,6 +216534,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 270656,
+      "roundNumber": 14,
+      "playerSteamId": 76561198248953762,
+      "playerSide": 3,
+      "playerName": "Buzz",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 270678,
       "roundNumber": 14,
       "playerSteamId": 76561198012987839,
@@ -216341,6 +216594,17 @@
       "playerSteamId": 76561198012987839,
       "playerSide": 2,
       "playerName": "JUSTT",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 271005,
+      "roundNumber": 14,
+      "playerSteamId": 76561197994395491,
+      "playerSide": 2,
+      "playerName": "roman",
       "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
@@ -216551,6 +216815,17 @@
       "playerSide": 2,
       "playerName": "story",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 279883,
+      "roundNumber": 15,
+      "playerSteamId": 76561197997981170,
+      "playerSide": 2,
+      "playerName": "MUTiRiS",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -217370,6 +217645,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 324321,
+      "roundNumber": 18,
+      "playerSteamId": 76561198010511021,
+      "playerSide": 2,
+      "playerName": "gla1ve",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 324442,
       "roundNumber": 18,
       "playerSteamId": 76561198248953762,
@@ -217920,6 +218206,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 353176,
+      "roundNumber": 20,
+      "playerSteamId": 76561198248953762,
+      "playerSide": 2,
+      "playerName": "Buzz",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 353310,
       "roundNumber": 20,
       "playerSteamId": 76561198010511021,
@@ -217993,6 +218290,28 @@
       "playerName": "Xyp9x",
       "weaponName": "AK-47",
       "weaponType": "rifle",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 357189,
+      "roundNumber": 20,
+      "playerSteamId": 76561197990682262,
+      "playerSide": 2,
+      "playerName": "Xyp9x",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 357189,
+      "roundNumber": 20,
+      "playerSteamId": 76561198010511021,
+      "playerSide": 2,
+      "playerName": "gla1ve",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },
@@ -218250,6 +218569,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 376485,
+      "roundNumber": 21,
+      "playerSteamId": 76561197997981170,
+      "playerSide": 3,
+      "playerName": "MUTiRiS",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 376490,
       "roundNumber": 21,
       "playerSteamId": 76561198012987839,
@@ -218317,6 +218647,17 @@
     },
     {
       "tick": 381517,
+      "roundNumber": 21,
+      "playerSteamId": 76561197987713664,
+      "playerSide": 2,
+      "playerName": "dev1ce",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 381533,
       "roundNumber": 21,
       "playerSteamId": 76561197987713664,
       "playerSide": 2,
@@ -218437,6 +218778,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 395800,
+      "roundNumber": 22,
+      "playerSteamId": 76561197987713664,
+      "playerSide": 2,
+      "playerName": "dev1ce",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 395805,
       "roundNumber": 22,
       "playerSteamId": 76561198028458803,
@@ -218536,6 +218888,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 396380,
+      "roundNumber": 22,
+      "playerSteamId": 76561198248953762,
+      "playerSide": 2,
+      "playerName": "Buzz",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 396410,
       "roundNumber": 22,
       "playerSteamId": 76561197990682262,
@@ -218602,6 +218965,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 397252,
+      "roundNumber": 22,
+      "playerSteamId": 76561198010511021,
+      "playerSide": 2,
+      "playerName": "gla1ve",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 412350,
       "roundNumber": 23,
       "playerSteamId": 76561198028458803,
@@ -218653,6 +219027,17 @@
       "playerName": "dev1ce",
       "weaponName": "Kevlar + Helmet",
       "weaponType": "equipment",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 412584,
+      "roundNumber": 23,
+      "playerSteamId": 76561198248953762,
+      "playerSide": 2,
+      "playerName": "Buzz",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },
@@ -218965,6 +219350,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 423597,
+      "roundNumber": 24,
+      "playerSteamId": 76561197994395491,
+      "playerSide": 3,
+      "playerName": "roman",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 423647,
       "roundNumber": 24,
       "playerSteamId": 76561198012987839,
@@ -219049,6 +219445,17 @@
       "playerName": "story",
       "weaponName": "Kevlar Vest",
       "weaponType": "equipment",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 424299,
+      "roundNumber": 24,
+      "playerSteamId": 76561198010511021,
+      "playerSide": 2,
+      "playerName": "gla1ve",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },
@@ -219394,6 +219801,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 444252,
+      "roundNumber": 25,
+      "playerSteamId": 76561198248953762,
+      "playerSide": 2,
+      "playerName": "Buzz",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 445393,
       "roundNumber": 25,
       "playerSteamId": 76561198262460262,
@@ -219680,6 +220098,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 457808,
+      "roundNumber": 26,
+      "playerSteamId": 76561198010511021,
+      "playerSide": 2,
+      "playerName": "gla1ve",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 457944,
       "roundNumber": 26,
       "playerSteamId": 76561197990682262,
@@ -219933,6 +220362,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 474561,
+      "roundNumber": 27,
+      "playerSteamId": 76561198065448360,
+      "playerSide": 3,
+      "playerName": "story",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 474765,
       "roundNumber": 27,
       "playerSteamId": 76561198262460262,
@@ -220044,6 +220484,17 @@
     },
     {
       "tick": 475062,
+      "roundNumber": 27,
+      "playerSteamId": 76561198010511021,
+      "playerSide": 2,
+      "playerName": "gla1ve",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 475085,
       "roundNumber": 27,
       "playerSteamId": 76561198010511021,
       "playerSide": 2,
@@ -220230,6 +220681,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 475375,
+      "roundNumber": 27,
+      "playerSteamId": 76561198248953762,
+      "playerSide": 2,
+      "playerName": "Buzz",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 475378,
       "roundNumber": 27,
       "playerSteamId": 76561197990682262,
@@ -220395,6 +220857,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 493891,
+      "roundNumber": 28,
+      "playerSteamId": 76561198248953762,
+      "playerSide": 2,
+      "playerName": "Buzz",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 493945,
       "roundNumber": 28,
       "playerSteamId": 76561197987713664,
@@ -220440,6 +220913,17 @@
     },
     {
       "tick": 493986,
+      "roundNumber": 28,
+      "playerSteamId": 76561197987713664,
+      "playerSide": 2,
+      "playerName": "dev1ce",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 494004,
       "roundNumber": 28,
       "playerSteamId": 76561197987713664,
       "playerSide": 2,
@@ -220659,6 +221143,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 494282,
+      "roundNumber": 28,
+      "playerSteamId": 76561198065448360,
+      "playerSide": 3,
+      "playerName": "story",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 494326,
       "roundNumber": 28,
       "playerSteamId": 76561197990682262,
@@ -220748,6 +221243,17 @@
     },
     {
       "tick": 494479,
+      "roundNumber": 28,
+      "playerSteamId": 76561198010511021,
+      "playerSide": 2,
+      "playerName": "gla1ve",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 494502,
       "roundNumber": 28,
       "playerSteamId": 76561198010511021,
       "playerSide": 2,
@@ -220923,6 +221429,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 513833,
+      "roundNumber": 29,
+      "playerSteamId": 76561198248953762,
+      "playerSide": 2,
+      "playerName": "Buzz",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 513842,
       "roundNumber": 29,
       "playerSteamId": 76561198028458803,
@@ -220989,6 +221506,28 @@
       "hasRefunded": false
     },
     {
+      "tick": 514444,
+      "roundNumber": 29,
+      "playerSteamId": 76561198065448360,
+      "playerSide": 3,
+      "playerName": "story",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 514514,
+      "roundNumber": 29,
+      "playerSteamId": 76561198028458803,
+      "playerSide": 2,
+      "playerName": "blameF",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 514525,
       "roundNumber": 29,
       "playerSteamId": 76561198065448360,
@@ -221007,6 +221546,17 @@
       "playerName": "story",
       "weaponName": "Kevlar + Helmet",
       "weaponType": "equipment",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 514623,
+      "roundNumber": 29,
+      "playerSteamId": 76561197987713664,
+      "playerSide": 2,
+      "playerName": "dev1ce",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },
@@ -221183,6 +221733,17 @@
       "playerName": "JUSTT",
       "weaponName": "Kevlar + Helmet",
       "weaponType": "equipment",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 515016,
+      "roundNumber": 29,
+      "playerSteamId": 76561198010511021,
+      "playerSide": 2,
+      "playerName": "gla1ve",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },
@@ -221462,6 +222023,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 522956,
+      "roundNumber": 30,
+      "playerSteamId": 76561198248953762,
+      "playerSide": 2,
+      "playerName": "Buzz",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 522968,
       "roundNumber": 30,
       "playerSteamId": 76561198010511021,
@@ -221704,6 +222276,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 523313,
+      "roundNumber": 30,
+      "playerSteamId": 76561198010511021,
+      "playerSide": 2,
+      "playerName": "gla1ve",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 523402,
       "roundNumber": 30,
       "playerSteamId": 76561197990682262,
@@ -221865,6 +222448,17 @@
       "playerName": "MUTiRiS",
       "weaponName": "Defuse Kit",
       "weaponType": "equipment",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 524045,
+      "roundNumber": 30,
+      "playerSteamId": 76561197987713664,
+      "playerSide": 2,
+      "playerName": "dev1ce",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },

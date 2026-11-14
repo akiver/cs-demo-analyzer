@@ -38,6 +38,8 @@ type Round struct {
 	// Since it's possible to buy and drop a weapon to a teammate and so trigger a new "item_pickup" event, it would result in a wrong weapon buy detection.
 	// To prevent it, this slice contains all unique weapons ids that players had at the beginning of the round and it's updated when a player buy a weapon.
 	weaponsBoughtUniqueIds []string `json:"-"`
+	// Players' flashbang count and money at the previous frame during buy time, see detectFlashbangBuys.
+	playersFlashbangs map[uint64]playerFlashbangs `json:"-"`
 }
 
 type RoundAlias Round

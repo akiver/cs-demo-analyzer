@@ -125858,6 +125858,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 27086,
+      "roundNumber": 4,
+      "playerSteamId": 76561198377812173,
+      "playerSide": 2,
+      "playerName": "Kromann",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 27091,
       "roundNumber": 4,
       "playerSteamId": 76561198069777790,
@@ -129422,6 +129433,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 89110,
+      "roundNumber": 14,
+      "playerSteamId": 76561198377812173,
+      "playerSide": 3,
+      "playerName": "Kromann",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 89150,
       "roundNumber": 14,
       "playerSteamId": 76561198087843860,
@@ -129852,6 +129874,17 @@
     },
     {
       "tick": 96570,
+      "roundNumber": 15,
+      "playerSteamId": 76561198227684036,
+      "playerSide": 2,
+      "playerName": "Rooftop Korean BBQ",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 96581,
       "roundNumber": 15,
       "playerSteamId": 76561198227684036,
       "playerSide": 2,
@@ -130765,6 +130798,17 @@
     },
     {
       "tick": 110374,
+      "roundNumber": 17,
+      "playerSteamId": 76561198227684036,
+      "playerSide": 2,
+      "playerName": "Rooftop Korean BBQ",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 110385,
       "roundNumber": 17,
       "playerSteamId": 76561198227684036,
       "playerSide": 2,
@@ -132057,6 +132101,17 @@
       "playerSide": 3,
       "playerName": "Kromann",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 132126,
+      "roundNumber": 20,
+      "playerSteamId": 76561198377812173,
+      "playerSide": 3,
+      "playerName": "Kromann",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false

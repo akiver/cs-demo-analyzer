@@ -766,7 +766,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 		}
 
 		currentRound.weaponsBoughtUniqueIds = append(currentRound.weaponsBoughtUniqueIds, event.Weapon.UniqueID().String())
-		match.PlayersBuy = append(match.PlayersBuy, newPlayerBuy(analyzer, event))
+		match.PlayersBuy = append(match.PlayersBuy, newPlayerBuy(analyzer, event.Player, event.Weapon))
 	})
 
 	parser.RegisterEventHandler(func(event events.PlayerHurt) {
@@ -788,6 +788,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 			analyzer.lastFreezeTimeEndTick = -1
 		}
 
+		analyzer.detectFlashbangBuys()
 		analyzer.samplePlayerPositions()
 	})
 
@@ -1249,21 +1250,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 			return
 		}
 
-		// Loop in reverse order to find the last purchase of the player and flag it as refunded.
-		for i := len(match.PlayersBuy) - 1; i >= 0; i-- {
-			buy := match.PlayersBuy[i]
-
-			if buy.PlayerSteamID64 != event.Player.SteamID64 || buy.WeaponName != equipmentToWeaponName[event.Weapon.Type] || buy.HasRefunded {
-				continue
-			}
-
-			if buy.RoundNumber != analyzer.currentRound.Number {
-				break
-			}
-
-			buy.HasRefunded = true
-			break
-		}
+		analyzer.flagLastBuyAsRefunded(event.Player, event.Weapon)
 	})
 
 	parser.RegisterEventHandler(func(event events.OvertimeNumberChanged) {

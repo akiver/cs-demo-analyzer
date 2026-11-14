@@ -114410,6 +114410,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 15403,
+      "roundNumber": 3,
+      "playerSteamId": 76561198004813726,
+      "playerSide": 2,
+      "playerName": "milkywayfarer_",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 15422,
       "roundNumber": 3,
       "playerSteamId": 76561199546450215,
@@ -115543,6 +115554,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 32595,
+      "roundNumber": 6,
+      "playerSteamId": 76561198166088951,
+      "playerSide": 2,
+      "playerName": "mad whose bad",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 38720,
       "roundNumber": 7,
       "playerSteamId": 76561199546450215,
@@ -115851,6 +115873,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 39137,
+      "roundNumber": 7,
+      "playerSteamId": 76561199546450215,
+      "playerSide": 3,
+      "playerName": "kurban_ufa",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 39138,
       "roundNumber": 7,
       "playerSteamId": 76561198068561730,
@@ -115874,6 +115907,17 @@
     },
     {
       "tick": 39184,
+      "roundNumber": 7,
+      "playerSteamId": 76561198166088951,
+      "playerSide": 2,
+      "playerName": "mad whose bad",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 39194,
       "roundNumber": 7,
       "playerSteamId": 76561198166088951,
       "playerSide": 2,
@@ -116654,6 +116698,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 51533,
+      "roundNumber": 9,
+      "playerSteamId": 76561198166088951,
+      "playerSide": 2,
+      "playerName": "mad whose bad",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 54399,
       "roundNumber": 10,
       "playerSteamId": 76561198004813726,
@@ -117001,6 +117056,17 @@
       "playerSide": 2,
       "playerName": "Danisik",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 55396,
+      "roundNumber": 10,
+      "playerSteamId": 76561198166088951,
+      "playerSide": 2,
+      "playerName": "mad whose bad",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -117501,6 +117567,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 61902,
+      "roundNumber": 11,
+      "playerSteamId": 76561198166088951,
+      "playerSide": 2,
+      "playerName": "mad whose bad",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 61927,
       "roundNumber": 11,
       "playerSteamId": 76561198166088951,
@@ -117859,6 +117936,17 @@
       "playerSide": 2,
       "playerName": "Danisik",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 67840,
+      "roundNumber": 12,
+      "playerSteamId": 76561199422206952,
+      "playerSide": 2,
+      "playerName": "Danisik",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -118667,6 +118755,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 88853,
+      "roundNumber": 15,
+      "playerSteamId": 76561199422206952,
+      "playerSide": 3,
+      "playerName": "Danisik",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": true
+    },
+    {
       "tick": 88854,
       "roundNumber": 15,
       "playerSteamId": 76561198036013431,
@@ -119184,6 +119283,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 104240,
+      "roundNumber": 17,
+      "playerSteamId": 76561198166088951,
+      "playerSide": 3,
+      "playerName": "mad whose bad",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 104249,
       "roundNumber": 17,
       "playerSteamId": 76561198131837018,
@@ -119405,6 +119515,17 @@
     },
     {
       "tick": 105182,
+      "roundNumber": 17,
+      "playerSteamId": 76561199422206952,
+      "playerSide": 3,
+      "playerName": "Danisik",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 105274,
       "roundNumber": 17,
       "playerSteamId": 76561199422206952,
       "playerSide": 3,
@@ -120775,6 +120896,17 @@
       "playerName": "mad whose bad",
       "weaponName": "Kevlar + Helmet",
       "weaponType": "equipment",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 133750,
+      "roundNumber": 21,
+      "playerSteamId": 76561199422206952,
+      "playerSide": 3,
+      "playerName": "Danisik",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },

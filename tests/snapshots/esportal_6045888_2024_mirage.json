@@ -106081,6 +106081,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 14172,
+      "roundNumber": 3,
+      "playerSteamId": 76561198370755882,
+      "playerSide": 2,
+      "playerName": "R1C",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 14194,
       "roundNumber": 3,
       "playerSteamId": 76561198370755882,
@@ -106137,6 +106148,17 @@
     },
     {
       "tick": 14379,
+      "roundNumber": 3,
+      "playerSteamId": 76561198057057588,
+      "playerSide": 2,
+      "playerName": "Dahlberg",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 14389,
       "roundNumber": 3,
       "playerSteamId": 76561198057057588,
       "playerSide": 2,
@@ -106576,6 +106598,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 23230,
+      "roundNumber": 4,
+      "playerSteamId": 76561199544615952,
+      "playerSide": 3,
+      "playerName": "tikitak",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 23284,
       "roundNumber": 4,
       "playerSteamId": 76561198370755882,
@@ -106658,6 +106691,17 @@
       "playerSteamId": 76561198877382043,
       "playerSide": 2,
       "playerName": "carokann",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 23358,
+      "roundNumber": 4,
+      "playerSteamId": 76561198370755882,
+      "playerSide": 2,
+      "playerName": "R1C",
       "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
@@ -106829,6 +106873,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 26813,
+      "roundNumber": 5,
+      "playerSteamId": 76561199443155864,
+      "playerSide": 3,
+      "playerName": "fukushima",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 26848,
       "roundNumber": 5,
       "playerSteamId": 76561198988232934,
@@ -106928,6 +106983,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 27089,
+      "roundNumber": 5,
+      "playerSteamId": 76561198370755882,
+      "playerSide": 2,
+      "playerName": "R1C",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 27113,
       "roundNumber": 5,
       "playerSteamId": 76561198370755882,
@@ -106994,6 +107060,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 27280,
+      "roundNumber": 5,
+      "playerSteamId": 76561199544615952,
+      "playerSide": 3,
+      "playerName": "tikitak",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 27312,
       "roundNumber": 5,
       "playerSteamId": 76561199068347238,
@@ -107017,6 +107094,17 @@
     },
     {
       "tick": 27372,
+      "roundNumber": 5,
+      "playerSteamId": 76561199068347238,
+      "playerSide": 3,
+      "playerName": "incog",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 27382,
       "roundNumber": 5,
       "playerSteamId": 76561199068347238,
       "playerSide": 3,
@@ -107313,6 +107401,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 30888,
+      "roundNumber": 6,
+      "playerSteamId": 76561198057057588,
+      "playerSide": 2,
+      "playerName": "Dahlberg",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 31496,
       "roundNumber": 6,
       "playerSteamId": 76561198370755882,
@@ -107347,6 +107446,17 @@
     },
     {
       "tick": 31544,
+      "roundNumber": 6,
+      "playerSteamId": 76561199068347238,
+      "playerSide": 3,
+      "playerName": "incog",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 31585,
       "roundNumber": 6,
       "playerSteamId": 76561199068347238,
       "playerSide": 3,
@@ -107496,6 +107606,17 @@
       "playerName": "Livsblatte",
       "weaponName": "Kevlar + Helmet",
       "weaponType": "equipment",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 36408,
+      "roundNumber": 7,
+      "playerSteamId": 76561198370755882,
+      "playerSide": 2,
+      "playerName": "R1C",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },
@@ -107661,6 +107782,17 @@
       "playerName": "Dahlberg",
       "weaponName": "AK-47",
       "weaponType": "rifle",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 36580,
+      "roundNumber": 7,
+      "playerSteamId": 76561198861806199,
+      "playerSide": 3,
+      "playerName": "Livsblatte",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },
@@ -107863,6 +107995,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 36871,
+      "roundNumber": 7,
+      "playerSteamId": 76561199544615952,
+      "playerSide": 3,
+      "playerName": "tikitak",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 36878,
       "roundNumber": 7,
       "playerSteamId": 76561199068347238,
@@ -107908,6 +108051,17 @@
     },
     {
       "tick": 36988,
+      "roundNumber": 7,
+      "playerSteamId": 76561199068347238,
+      "playerSide": 3,
+      "playerName": "incog",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 36997,
       "roundNumber": 7,
       "playerSteamId": 76561199068347238,
       "playerSide": 3,
@@ -107979,6 +108133,17 @@
       "playerSide": 2,
       "playerName": "carokann",
       "weaponName": "HE Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 37158,
+      "roundNumber": 7,
+      "playerSteamId": 76561198877382043,
+      "playerSide": 2,
+      "playerName": "carokann",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -108067,6 +108232,17 @@
       "playerSide": 3,
       "playerName": "incog",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 40460,
+      "roundNumber": 8,
+      "playerSteamId": 76561199068347238,
+      "playerSide": 3,
+      "playerName": "incog",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -108180,6 +108356,17 @@
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
+    },
+    {
+      "tick": 40533,
+      "roundNumber": 8,
+      "playerSteamId": 76561199443155864,
+      "playerSide": 3,
+      "playerName": "fukushima",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": true
     },
     {
       "tick": 40540,
@@ -108391,6 +108578,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 40842,
+      "roundNumber": 8,
+      "playerSteamId": 76561198057057588,
+      "playerSide": 2,
+      "playerName": "Dahlberg",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 40858,
       "roundNumber": 8,
       "playerSteamId": 76561198347044144,
@@ -108534,6 +108732,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 41368,
+      "roundNumber": 8,
+      "playerSteamId": 76561199544615952,
+      "playerSide": 3,
+      "playerName": "tikitak",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 49847,
       "roundNumber": 9,
       "playerSteamId": 76561199443155864,
@@ -108666,6 +108875,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 50082,
+      "roundNumber": 9,
+      "playerSteamId": 76561198057057588,
+      "playerSide": 2,
+      "playerName": "Dahlberg",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 50083,
       "roundNumber": 9,
       "playerSteamId": 76561198988232934,
@@ -108711,6 +108931,17 @@
     },
     {
       "tick": 50138,
+      "roundNumber": 9,
+      "playerSteamId": 76561199544615952,
+      "playerSide": 3,
+      "playerName": "tikitak",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 50146,
       "roundNumber": 9,
       "playerSteamId": 76561199544615952,
       "playerSide": 3,
@@ -108908,6 +109139,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 50697,
+      "roundNumber": 9,
+      "playerSteamId": 76561199068347238,
+      "playerSide": 3,
+      "playerName": "incog",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 56453,
       "roundNumber": 10,
       "playerSteamId": 76561199220179623,
@@ -108953,6 +109195,17 @@
     },
     {
       "tick": 56871,
+      "roundNumber": 10,
+      "playerSteamId": 76561198347044144,
+      "playerSide": 2,
+      "playerName": "RobdudR",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 56881,
       "roundNumber": 10,
       "playerSteamId": 76561198347044144,
       "playerSide": 2,
@@ -109315,6 +109568,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 61334,
+      "roundNumber": 11,
+      "playerSteamId": 76561198370755882,
+      "playerSide": 2,
+      "playerName": "R1C",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 61352,
       "roundNumber": 11,
       "playerSteamId": 76561198057057588,
@@ -109568,6 +109832,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 61703,
+      "roundNumber": 11,
+      "playerSteamId": 76561199443155864,
+      "playerSide": 3,
+      "playerName": "fukushima",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 61806,
       "roundNumber": 11,
       "playerSteamId": 76561199068347238,
@@ -109612,6 +109887,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 61871,
+      "roundNumber": 11,
+      "playerSteamId": 76561199068347238,
+      "playerSide": 3,
+      "playerName": "incog",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 61945,
       "roundNumber": 11,
       "playerSteamId": 76561199544615952,
@@ -109624,6 +109910,17 @@
     },
     {
       "tick": 62197,
+      "roundNumber": 11,
+      "playerSteamId": 76561199544615952,
+      "playerSide": 3,
+      "playerName": "tikitak",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 62205,
       "roundNumber": 11,
       "playerSteamId": 76561199544615952,
       "playerSide": 3,
@@ -109784,6 +110081,17 @@
       "playerName": "RobdudR",
       "weaponName": "Kevlar Vest",
       "weaponType": "equipment",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 65623,
+      "roundNumber": 12,
+      "playerSteamId": 76561199068347238,
+      "playerSide": 3,
+      "playerName": "incog",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },
@@ -110800,6 +111108,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 83152,
+      "roundNumber": 15,
+      "playerSteamId": 76561198057057588,
+      "playerSide": 3,
+      "playerName": "Dahlberg",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": true
+    },
+    {
       "tick": 83158,
       "roundNumber": 15,
       "playerSteamId": 76561199544615952,
@@ -110921,6 +111240,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 83304,
+      "roundNumber": 15,
+      "playerSteamId": 76561199068347238,
+      "playerSide": 2,
+      "playerName": "incog",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 83330,
       "roundNumber": 15,
       "playerSteamId": 76561198877382043,
@@ -110943,6 +111273,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 83455,
+      "roundNumber": 15,
+      "playerSteamId": 76561199544615952,
+      "playerSide": 2,
+      "playerName": "tikitak",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 86733,
       "roundNumber": 16,
       "playerSteamId": 76561198988232934,
@@ -110952,6 +111293,17 @@
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
+    },
+    {
+      "tick": 86736,
+      "roundNumber": 16,
+      "playerSteamId": 76561199443155864,
+      "playerSide": 2,
+      "playerName": "fukushima",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": true
     },
     {
       "tick": 86774,
@@ -111394,6 +111746,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 93189,
+      "roundNumber": 17,
+      "playerSteamId": 76561198370755882,
+      "playerSide": 3,
+      "playerName": "R1C",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 93199,
       "roundNumber": 17,
       "playerSteamId": 76561199443155864,
@@ -111609,6 +111972,17 @@
       "playerSide": 2,
       "playerName": "incog",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 93886,
+      "roundNumber": 17,
+      "playerSteamId": 76561199068347238,
+      "playerSide": 2,
+      "playerName": "incog",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -111900,6 +112274,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 96696,
+      "roundNumber": 18,
+      "playerSteamId": 76561199068347238,
+      "playerSide": 2,
+      "playerName": "incog",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 96710,
       "roundNumber": 18,
       "playerSteamId": 76561198988232934,
@@ -111929,6 +112314,17 @@
       "playerName": "Dahlberg",
       "weaponName": "Kevlar Vest",
       "weaponType": "equipment",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 96744,
+      "roundNumber": 18,
+      "playerSteamId": 76561199544615952,
+      "playerSide": 2,
+      "playerName": "tikitak",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },
@@ -111984,6 +112380,17 @@
       "playerName": "RobdudR",
       "weaponName": "M4A1",
       "weaponType": "rifle",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 96880,
+      "roundNumber": 18,
+      "playerSteamId": 76561198057057588,
+      "playerSide": 3,
+      "playerName": "Dahlberg",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },
@@ -112143,6 +112550,17 @@
     },
     {
       "tick": 97446,
+      "roundNumber": 18,
+      "playerSteamId": 76561198877382043,
+      "playerSide": 3,
+      "playerName": "carokann",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 97456,
       "roundNumber": 18,
       "playerSteamId": 76561198877382043,
       "playerSide": 3,

@@ -48971,6 +48971,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 4028,
+      "roundNumber": 2,
+      "playerSteamId": 76561199261966104,
+      "playerSide": 3,
+      "playerName": "klas",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 4080,
       "roundNumber": 2,
       "playerSteamId": 76561197964870354,
@@ -49312,6 +49323,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 7818,
+      "roundNumber": 3,
+      "playerSteamId": 76561198174150442,
+      "playerSide": 2,
+      "playerName": "Timpelina",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 7825,
       "roundNumber": 3,
       "playerSteamId": 76561199261966104,
@@ -49385,6 +49407,17 @@
       "playerName": "Ludicaken",
       "weaponName": "AK-47",
       "weaponType": "rifle",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 7925,
+      "roundNumber": 3,
+      "playerSteamId": 76561198248008728,
+      "playerSide": 3,
+      "playerName": "Pytonorm",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },
@@ -50335,6 +50368,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 16428,
+      "roundNumber": 5,
+      "playerSteamId": 76561198107761058,
+      "playerSide": 2,
+      "playerName": "Ruggan",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 16475,
       "roundNumber": 5,
       "playerSteamId": 76561197964870354,
@@ -50704,6 +50748,17 @@
       "playerSide": 2,
       "playerName": "Ruggan",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 21811,
+      "roundNumber": 6,
+      "playerSteamId": 76561198174150442,
+      "playerSide": 2,
+      "playerName": "Timpelina",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -51259,6 +51314,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 25280,
+      "roundNumber": 7,
+      "playerSteamId": 76561198107761058,
+      "playerSide": 2,
+      "playerName": "Ruggan",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 25285,
       "roundNumber": 7,
       "playerSteamId": 76561198018488298,
@@ -51345,6 +51411,17 @@
       "weaponType": "equipment",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
+    },
+    {
+      "tick": 30924,
+      "roundNumber": 8,
+      "playerSteamId": 76561199261966104,
+      "playerSide": 3,
+      "playerName": "klas",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": true
     },
     {
       "tick": 30925,

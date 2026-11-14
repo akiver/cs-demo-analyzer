@@ -155905,6 +155905,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 6979,
+      "roundNumber": 2,
+      "playerSteamId": 76561199094835698,
+      "playerSide": 2,
+      "playerName": "烟雨君入江南",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 6983,
       "roundNumber": 2,
       "playerSteamId": 76561199002382108,
@@ -156169,6 +156180,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 14579,
+      "roundNumber": 3,
+      "playerSteamId": 76561198448371692,
+      "playerSide": 2,
+      "playerName": "TSG-",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 14592,
       "roundNumber": 3,
       "playerSteamId": 76561199084592315,
@@ -156225,6 +156247,17 @@
     },
     {
       "tick": 16970,
+      "roundNumber": 4,
+      "playerSteamId": 76561199094835698,
+      "playerSide": 2,
+      "playerName": "烟雨君入江南",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 16980,
       "roundNumber": 4,
       "playerSteamId": 76561199094835698,
       "playerSide": 2,
@@ -156620,6 +156653,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 25503,
+      "roundNumber": 5,
+      "playerSteamId": 76561199094835698,
+      "playerSide": 2,
+      "playerName": "烟雨君入江南",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 25516,
       "roundNumber": 5,
       "playerSteamId": 76561198448371692,
@@ -156769,6 +156813,17 @@
       "playerSide": 2,
       "playerName": "KD4519",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 25674,
+      "roundNumber": 5,
+      "playerSteamId": 76561198448371692,
+      "playerSide": 2,
+      "playerName": "TSG-",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -157093,6 +157148,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 32027,
+      "roundNumber": 6,
+      "playerSteamId": 76561199094835698,
+      "playerSide": 2,
+      "playerName": "烟雨君入江南",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 32037,
       "roundNumber": 6,
       "playerSteamId": 76561199157434599,
@@ -157149,6 +157215,17 @@
     },
     {
       "tick": 32145,
+      "roundNumber": 6,
+      "playerSteamId": 76561198448371692,
+      "playerSide": 2,
+      "playerName": "TSG-",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 32157,
       "roundNumber": 6,
       "playerSteamId": 76561198448371692,
       "playerSide": 2,
@@ -157275,6 +157352,17 @@
       "playerSide": 3,
       "playerName": "dirtyhappy",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 32577,
+      "roundNumber": 6,
+      "playerSteamId": 76561198381364815,
+      "playerSide": 3,
+      "playerName": "dirtyhappy",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -157434,6 +157522,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 36914,
+      "roundNumber": 7,
+      "playerSteamId": 76561198381364815,
+      "playerSide": 3,
+      "playerName": "dirtyhappy",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 36921,
       "roundNumber": 7,
       "playerSteamId": 76561199002382108,
@@ -157468,6 +157567,17 @@
     },
     {
       "tick": 36957,
+      "roundNumber": 7,
+      "playerSteamId": 76561199094835698,
+      "playerSide": 2,
+      "playerName": "烟雨君入江南",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 36967,
       "roundNumber": 7,
       "playerSteamId": 76561199094835698,
       "playerSide": 2,
@@ -157753,6 +157863,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 46208,
+      "roundNumber": 8,
+      "playerSteamId": 76561199094835698,
+      "playerSide": 2,
+      "playerName": "烟雨君入江南",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 46240,
       "roundNumber": 8,
       "playerSteamId": 76561198285600732,
@@ -157902,6 +158023,17 @@
       "playerSide": 2,
       "playerName": "桃色刊物",
       "weaponName": "Molotov",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 46509,
+      "roundNumber": 8,
+      "playerSteamId": 76561198448371692,
+      "playerSide": 2,
+      "playerName": "TSG-",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -158127,6 +158259,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 50458,
+      "roundNumber": 9,
+      "playerSteamId": 76561199094835698,
+      "playerSide": 2,
+      "playerName": "烟雨君入江南",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 50465,
       "roundNumber": 9,
       "playerSteamId": 76561198285600732,
@@ -158227,6 +158370,17 @@
     },
     {
       "tick": 50698,
+      "roundNumber": 9,
+      "playerSteamId": 76561198448371692,
+      "playerSide": 2,
+      "playerName": "TSG-",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 50709,
       "roundNumber": 9,
       "playerSteamId": 76561198448371692,
       "playerSide": 2,
@@ -158666,6 +158820,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 61940,
+      "roundNumber": 11,
+      "playerSteamId": 76561198381364815,
+      "playerSide": 3,
+      "playerName": "dirtyhappy",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 62042,
       "roundNumber": 11,
       "playerSteamId": 76561199002382108,
@@ -158848,6 +159013,17 @@
       "playerSide": 3,
       "playerName": "2847268633",
       "weaponName": "Incendiary Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 62459,
+      "roundNumber": 11,
+      "playerSteamId": 76561199094835698,
+      "playerSide": 2,
+      "playerName": "烟雨君入江南",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -159117,6 +159293,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 66729,
+      "roundNumber": 12,
+      "playerSteamId": 76561199002382108,
+      "playerSide": 2,
+      "playerName": "KD4519",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 66751,
       "roundNumber": 12,
       "playerSteamId": 76561199064836174,
@@ -159212,6 +159399,17 @@
       "playerName": "打爆春袋没钱赔",
       "weaponName": "Kevlar + Helmet",
       "weaponType": "equipment",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 66851,
+      "roundNumber": 12,
+      "playerSteamId": 76561199094835698,
+      "playerSide": 2,
+      "playerName": "烟雨君入江南",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },
@@ -159338,6 +159536,17 @@
     },
     {
       "tick": 67193,
+      "roundNumber": 12,
+      "playerSteamId": 76561198448371692,
+      "playerSide": 2,
+      "playerName": "TSG-",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 67205,
       "roundNumber": 12,
       "playerSteamId": 76561198448371692,
       "playerSide": 2,
@@ -159821,6 +160030,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 82942,
+      "roundNumber": 15,
+      "playerSteamId": 76561198381364815,
+      "playerSide": 2,
+      "playerName": "dirtyhappy",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 82959,
       "roundNumber": 15,
       "playerSteamId": 76561198381364815,
@@ -160041,6 +160261,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 83310,
+      "roundNumber": 15,
+      "playerSteamId": 76561199084592315,
+      "playerSide": 2,
+      "playerName": "2847268633",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 83329,
       "roundNumber": 15,
       "playerSteamId": 76561199084592315,
@@ -160212,6 +160443,17 @@
       "playerSide": 2,
       "playerName": "打爆春袋没钱赔",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 87712,
+      "roundNumber": 16,
+      "playerSteamId": 76561199094835698,
+      "playerSide": 3,
+      "playerName": "烟雨君入江南",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -160778,6 +161020,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 98677,
+      "roundNumber": 18,
+      "playerSteamId": 76561198381364815,
+      "playerSide": 2,
+      "playerName": "dirtyhappy",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 98689,
       "roundNumber": 18,
       "playerSteamId": 76561199157434599,
@@ -160911,6 +161164,17 @@
     },
     {
       "tick": 98770,
+      "roundNumber": 18,
+      "playerSteamId": 76561199094835698,
+      "playerSide": 3,
+      "playerName": "烟雨君入江南",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 98780,
       "roundNumber": 18,
       "playerSteamId": 76561199094835698,
       "playerSide": 3,
@@ -161687,6 +161951,17 @@
       "playerName": "打爆春袋没钱赔",
       "weaponName": "MAC-10",
       "weaponType": "smg",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 112004,
+      "roundNumber": 20,
+      "playerSteamId": 76561199094835698,
+      "playerSide": 3,
+      "playerName": "烟雨君入江南",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },

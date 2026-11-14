@@ -78133,6 +78133,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 29534,
+      "roundNumber": 3,
+      "playerSteamId": 76561198084521080,
+      "playerSide": 3,
+      "playerName": "SoSchy",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 29594,
       "roundNumber": 3,
       "playerSteamId": 76561198035979505,
@@ -78233,6 +78244,17 @@
     },
     {
       "tick": 30011,
+      "roundNumber": 3,
+      "playerSteamId": 76561197996341546,
+      "playerSide": 2,
+      "playerName": "wihu",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 30016,
       "roundNumber": 3,
       "playerSteamId": 76561197996341546,
       "playerSide": 2,
@@ -78386,6 +78408,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 32383,
+      "roundNumber": 4,
+      "playerSteamId": 76561198084521080,
+      "playerSide": 3,
+      "playerName": "SoSchy",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 32420,
       "roundNumber": 4,
       "playerSteamId": 76561197996341546,
@@ -78431,6 +78464,17 @@
     },
     {
       "tick": 32652,
+      "roundNumber": 4,
+      "playerSteamId": 76561197996341546,
+      "playerSide": 2,
+      "playerName": "wihu",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 32658,
       "roundNumber": 4,
       "playerSteamId": 76561197996341546,
       "playerSide": 2,
@@ -78870,6 +78914,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 35832,
+      "roundNumber": 5,
+      "playerSteamId": 76561197996341546,
+      "playerSide": 2,
+      "playerName": "wihu",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 35940,
       "roundNumber": 5,
       "playerSteamId": 76561198051671412,
@@ -79135,6 +79190,17 @@
     },
     {
       "tick": 39438,
+      "roundNumber": 6,
+      "playerSteamId": 76561197996341546,
+      "playerSide": 2,
+      "playerName": "wihu",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 39446,
       "roundNumber": 6,
       "playerSteamId": 76561197996341546,
       "playerSide": 2,
@@ -79454,6 +79520,17 @@
     },
     {
       "tick": 44516,
+      "roundNumber": 7,
+      "playerSteamId": 76561197996341546,
+      "playerSide": 2,
+      "playerName": "wihu",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 44524,
       "roundNumber": 7,
       "playerSteamId": 76561197996341546,
       "playerSide": 2,
@@ -80267,6 +80344,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 56171,
+      "roundNumber": 9,
+      "playerSteamId": 76561198030192915,
+      "playerSide": 3,
+      "playerName": "Mafiii",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 56182,
       "roundNumber": 9,
       "playerSteamId": 76561198051671412,
@@ -81004,6 +81092,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 68380,
+      "roundNumber": 12,
+      "playerSteamId": 76561197996341546,
+      "playerSide": 2,
+      "playerName": "wihu",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 68574,
       "roundNumber": 12,
       "playerSteamId": 76561198386721272,
@@ -81203,6 +81302,17 @@
     },
     {
       "tick": 77145,
+      "roundNumber": 13,
+      "playerSteamId": 76561197996341546,
+      "playerSide": 3,
+      "playerName": "wihu",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 77152,
       "roundNumber": 13,
       "playerSteamId": 76561197996341546,
       "playerSide": 3,
@@ -81775,6 +81885,17 @@
     },
     {
       "tick": 83267,
+      "roundNumber": 15,
+      "playerSteamId": 76561198386721272,
+      "playerSide": 3,
+      "playerName": "Aizputnieks",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 83276,
       "roundNumber": 15,
       "playerSteamId": 76561198386721272,
       "playerSide": 3,

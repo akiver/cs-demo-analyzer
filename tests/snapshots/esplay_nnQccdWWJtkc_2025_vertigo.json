@@ -25641,6 +25641,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 19077,
+      "roundNumber": 6,
+      "playerSteamId": 76561198089429734,
+      "playerSide": 2,
+      "playerName": "Lowlita",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 19140,
       "roundNumber": 6,
       "playerSteamId": 76561198795651874,
@@ -26147,6 +26158,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 36074,
+      "roundNumber": 10,
+      "playerSteamId": 76561198795651874,
+      "playerSide": 3,
+      "playerName": "Emmy",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 36108,
       "roundNumber": 10,
       "playerSteamId": 76561198117702148,
@@ -26275,6 +26297,17 @@
       "playerName": "zietra",
       "weaponName": "AK-47",
       "weaponType": "rifle",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 38770,
+      "roundNumber": 11,
+      "playerSteamId": 76561198795651874,
+      "playerSide": 3,
+      "playerName": "Emmy",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },
@@ -26472,6 +26505,17 @@
       "playerSide": 3,
       "playerName": "Lowlita",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 42567,
+      "roundNumber": 12,
+      "playerSteamId": 76561198795651874,
+      "playerSide": 3,
+      "playerName": "Emmy",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false

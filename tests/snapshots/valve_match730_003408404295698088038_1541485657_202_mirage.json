@@ -92081,6 +92081,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 12626,
+      "roundNumber": 2,
+      "playerSteamId": 76561198872724735,
+      "playerSide": 3,
+      "playerName": ".Izzy",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 12649,
       "roundNumber": 2,
       "playerSteamId": 76561199044985101,
@@ -92180,6 +92191,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 12807,
+      "roundNumber": 2,
+      "playerSteamId": 76561199034633104,
+      "playerSide": 3,
+      "playerName": "h0nda",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 12867,
       "roundNumber": 2,
       "playerSteamId": 76561198355926583,
@@ -92214,6 +92236,17 @@
     },
     {
       "tick": 13239,
+      "roundNumber": 2,
+      "playerSteamId": 76561198052969303,
+      "playerSide": 3,
+      "playerName": "GAMER SUPREMO",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 13247,
       "roundNumber": 2,
       "playerSteamId": 76561198052969303,
       "playerSide": 3,
@@ -92411,6 +92444,28 @@
       "hasRefunded": false
     },
     {
+      "tick": 21257,
+      "roundNumber": 3,
+      "playerSteamId": 76561198872724735,
+      "playerSide": 3,
+      "playerName": ".Izzy",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 21265,
+      "roundNumber": 3,
+      "playerSteamId": 76561198374398001,
+      "playerSide": 2,
+      "playerName": "lucao the majest1c",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 21273,
       "roundNumber": 3,
       "playerSteamId": 76561199044985101,
@@ -92495,6 +92550,17 @@
       "playerName": ".Izzy",
       "weaponName": "Desert Eagle",
       "weaponType": "pistol",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 21435,
+      "roundNumber": 3,
+      "playerSteamId": 76561199034633104,
+      "playerSide": 3,
+      "playerName": "h0nda",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
     },
@@ -92780,6 +92846,17 @@
       "playerSide": 2,
       "playerName": "𝙺𝚒𝚠𝚒𝚜𝚔𝚢",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 26775,
+      "roundNumber": 4,
+      "playerSteamId": 76561198355926583,
+      "playerSide": 2,
+      "playerName": "𝙺𝚒𝚠𝚒𝚜𝚔𝚢",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -93104,6 +93181,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 32276,
+      "roundNumber": 5,
+      "playerSteamId": 76561198192113974,
+      "playerSide": 3,
+      "playerName": "neoxy1st",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 32332,
       "roundNumber": 5,
       "playerSteamId": 76561198192113974,
@@ -93346,6 +93434,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 36976,
+      "roundNumber": 6,
+      "playerSteamId": 76561198245758058,
+      "playerSide": 2,
+      "playerName": "ZyWoO",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 37010,
       "roundNumber": 6,
       "playerSteamId": 76561198245758058,
@@ -93511,12 +93610,34 @@
       "hasRefunded": false
     },
     {
+      "tick": 37430,
+      "roundNumber": 6,
+      "playerSteamId": 76561198355926583,
+      "playerSide": 2,
+      "playerName": "𝙺𝚒𝚠𝚒𝚜𝚔𝚢",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 37440,
       "roundNumber": 6,
       "playerSteamId": 76561198355926583,
       "playerSide": 2,
       "playerName": "𝙺𝚒𝚠𝚒𝚜𝚔𝚢",
       "weaponName": "Molotov",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 41402,
+      "roundNumber": 6,
+      "playerSteamId": 76561198872724735,
+      "playerSide": 3,
+      "playerName": ".Izzy",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -93764,6 +93885,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 49873,
+      "roundNumber": 7,
+      "playerSteamId": 76561198245758058,
+      "playerSide": 2,
+      "playerName": "ZyWoO",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 49907,
       "roundNumber": 7,
       "playerSteamId": 76561198192113974,
@@ -93913,6 +94045,17 @@
       "playerSide": 2,
       "playerName": "lucao the majest1c",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 50301,
+      "roundNumber": 7,
+      "playerSteamId": 76561198374398001,
+      "playerSide": 2,
+      "playerName": "lucao the majest1c",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -94105,6 +94248,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 55204,
+      "roundNumber": 8,
+      "playerSteamId": 76561198192113974,
+      "playerSide": 3,
+      "playerName": "neoxy1st",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 55208,
       "roundNumber": 8,
       "playerSteamId": 76561198872724735,
@@ -94237,6 +94391,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 55488,
+      "roundNumber": 8,
+      "playerSteamId": 76561198374398001,
+      "playerSide": 2,
+      "playerName": "lucao the majest1c",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 55512,
       "roundNumber": 8,
       "playerSteamId": 76561198052969303,
@@ -94265,6 +94430,17 @@
       "playerSide": 3,
       "playerName": "GAMER SUPREMO",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 55582,
+      "roundNumber": 8,
+      "playerSteamId": 76561198052969303,
+      "playerSide": 3,
+      "playerName": "GAMER SUPREMO",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -94457,6 +94633,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 60496,
+      "roundNumber": 9,
+      "playerSteamId": 76561198052969303,
+      "playerSide": 3,
+      "playerName": "GAMER SUPREMO",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 60514,
       "roundNumber": 9,
       "playerSteamId": 76561198052969303,
@@ -94535,6 +94722,17 @@
     },
     {
       "tick": 61144,
+      "roundNumber": 9,
+      "playerSteamId": 76561198374398001,
+      "playerSide": 2,
+      "playerName": "lucao the majest1c",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 61150,
       "roundNumber": 9,
       "playerSteamId": 76561198374398001,
       "playerSide": 2,
@@ -94941,6 +95139,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 65428,
+      "roundNumber": 10,
+      "playerSteamId": 76561198355926583,
+      "playerSide": 2,
+      "playerName": "𝙺𝚒𝚠𝚒𝚜𝚔𝚢",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 65488,
       "roundNumber": 10,
       "playerSteamId": 76561198192113974,
@@ -94985,6 +95194,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 65676,
+      "roundNumber": 10,
+      "playerSteamId": 76561198192113974,
+      "playerSide": 3,
+      "playerName": "neoxy1st",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 65678,
       "roundNumber": 10,
       "playerSteamId": 76561198052969303,
@@ -94997,6 +95217,17 @@
     },
     {
       "tick": 65714,
+      "roundNumber": 10,
+      "playerSteamId": 76561198052969303,
+      "playerSide": 3,
+      "playerName": "GAMER SUPREMO",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 65756,
       "roundNumber": 10,
       "playerSteamId": 76561198052969303,
       "playerSide": 3,
@@ -95068,6 +95299,17 @@
       "playerSide": 2,
       "playerName": "lucao the majest1c",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 66154,
+      "roundNumber": 10,
+      "playerSteamId": 76561198374398001,
+      "playerSide": 2,
+      "playerName": "lucao the majest1c",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -95304,6 +95546,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 70666,
+      "roundNumber": 11,
+      "playerSteamId": 76561198872724735,
+      "playerSide": 3,
+      "playerName": ".Izzy",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 70676,
       "roundNumber": 11,
       "playerSteamId": 76561198192113974,
@@ -95343,6 +95596,17 @@
       "playerSide": 3,
       "playerName": "GAMER SUPREMO",
       "weaponName": "Incendiary Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 70906,
+      "roundNumber": 11,
+      "playerSteamId": 76561198052969303,
+      "playerSide": 3,
+      "playerName": "GAMER SUPREMO",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -95722,6 +95986,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 78262,
+      "roundNumber": 12,
+      "playerSteamId": 76561198374398001,
+      "playerSide": 2,
+      "playerName": "lucao the majest1c",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 78270,
       "roundNumber": 12,
       "playerSteamId": 76561198374398001,
@@ -95811,6 +96086,17 @@
     },
     {
       "tick": 78662,
+      "roundNumber": 12,
+      "playerSteamId": 76561198052969303,
+      "playerSide": 3,
+      "playerName": "GAMER SUPREMO",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 78672,
       "roundNumber": 12,
       "playerSteamId": 76561198052969303,
       "playerSide": 3,
@@ -96129,6 +96415,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 85831,
+      "roundNumber": 14,
+      "playerSteamId": 76561198192113974,
+      "playerSide": 3,
+      "playerName": "neoxy1st",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 85853,
       "roundNumber": 14,
       "playerSteamId": 76561198872724735,
@@ -96206,6 +96503,17 @@
       "hasRefunded": false
     },
     {
+      "tick": 86071,
+      "roundNumber": 14,
+      "playerSteamId": 76561198355926583,
+      "playerSide": 2,
+      "playerName": "𝙺𝚒𝚠𝚒𝚜𝚔𝚢",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
       "tick": 86123,
       "roundNumber": 14,
       "playerSteamId": 76561198300094916,
@@ -96251,6 +96559,17 @@
     },
     {
       "tick": 86567,
+      "roundNumber": 14,
+      "playerSteamId": 76561198245758058,
+      "playerSide": 2,
+      "playerName": "ZyWoO",
+      "weaponName": "Flashbang",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 86587,
       "roundNumber": 14,
       "playerSteamId": 76561198245758058,
       "playerSide": 2,
@@ -96355,6 +96674,17 @@
       "playerSide": 3,
       "playerName": "h0nda",
       "weaponName": "Smoke Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 90225,
+      "roundNumber": 15,
+      "playerSteamId": 76561198192113974,
+      "playerSide": 3,
+      "playerName": "neoxy1st",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
@@ -96476,6 +96806,17 @@
       "playerSide": 3,
       "playerName": "GAMER SUPREMO",
       "weaponName": "Incendiary Grenade",
+      "weaponType": "grenade",
+      "weaponUniqueId": "redacted",
+      "hasRefunded": false
+    },
+    {
+      "tick": 90413,
+      "roundNumber": 15,
+      "playerSteamId": 76561198052969303,
+      "playerSide": 3,
+      "playerName": "GAMER SUPREMO",
+      "weaponName": "Flashbang",
       "weaponType": "grenade",
       "weaponUniqueId": "redacted",
       "hasRefunded": false
