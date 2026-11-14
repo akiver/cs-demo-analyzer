@@ -93,6 +93,9 @@ test-cs2: ## Run CS2 tests
 test-verbose: ## Run tests in verbose
 	@"$(MAKE)" --no-print-directory ARGS=-v test
 
+bench: ## Compare speed and RAM usage between 2 versions, see scripts/bench/main.go
+	go run ./scripts/bench $(ARGS)
+
 vet: ## Run go vet
 	go vet ./cmd/... ./pkg/...
 

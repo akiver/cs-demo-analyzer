@@ -226,6 +226,32 @@ make test ARGS="-update -run TestDemos/cs2/Esportal_6008132_2023_Mirage"
 
 Review the resulting snapshot diff before committing.
 
+### Benchmarks
+
+`scripts/bench` compares the speed (wall time) and RAM usage (peak memory) of 2 versions of the analyzer on a few demos downloaded by `./download-demos.sh`.
+It builds both versions, interleaves their runs and prints the median, min and max of each one.
+By default it compares `HEAD~1` with the current working tree, uncommitted changes included.
+It works on macOS, Linux and Windows, compare results from the same OS only because each OS measures memory differently.
+
+```bash
+# Compare HEAD~1 with the working tree
+make bench
+
+# Compare 2 git refs
+make bench ARGS="v1.14.2 main"
+
+# 10 runs per demo, with positions, on a single demo (<path relative to cs-demos>:<source>), flags go before the refs
+make bench ARGS="-runs 10 -positions -demos cs2/esplay_ntfNCNcmKCQc_2025_mirage.dem:esplay"
+
+# Without make (e.g. on Windows)
+go run ./scripts/bench -runs 3 v1.14.2 main
+
+# All flags
+go run ./scripts/bench -h
+```
+
+Differences of a few percent are usually noise, compare them with the min-max spread of each version.
+
 ### VSCode debugger
 
 1. Inside the `.vscode` folder, copy/paste the file `launch.template.json` and name it `launch.json`
