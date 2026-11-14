@@ -120820,7 +120820,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "hasRefunded": true
+      "hasRefunded": false
     },
     {
       "tick": 133922,

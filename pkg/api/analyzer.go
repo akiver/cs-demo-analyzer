@@ -1253,7 +1253,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 		for i := len(match.PlayersBuy) - 1; i >= 0; i-- {
 			buy := match.PlayersBuy[i]
 
-			if buy.PlayerSteamID64 != event.Player.SteamID64 || buy.WeaponName != equipmentToWeaponName[event.Weapon.Type] {
+			if buy.PlayerSteamID64 != event.Player.SteamID64 || buy.WeaponName != equipmentToWeaponName[event.Weapon.Type] || buy.HasRefunded {
 				continue
 			}
 
@@ -1262,6 +1262,7 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 			}
 
 			buy.HasRefunded = true
+			break
 		}
 	})
 
