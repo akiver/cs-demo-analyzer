@@ -77,7 +77,7 @@
       "bombPlantedCount": 1,
       "healthDamage": 1789,
       "armorDamage": 244,
-      "utilityDamage": 12,
+      "utilityDamage": 11,
       "headshotCount": 7,
       "headshotPercent": 46,
       "oneVsOneCount": 12,
@@ -99,7 +99,7 @@
       "averageKillPerRound": 0.6818182,
       "averageDeathPerRound": 0.8181818,
       "averageDamagePerRound": 81.318184,
-      "utilityDamagePerRound": 0.54545456,
+      "utilityDamagePerRound": 0.5,
       "firstKillCount": 2,
       "firstDeathCount": 7,
       "firstTradeDeathCount": 2,
@@ -278,7 +278,7 @@
       "bombPlantedCount": 2,
       "healthDamage": 1737,
       "armorDamage": 358,
-      "utilityDamage": 128,
+      "utilityDamage": 126,
       "headshotCount": 7,
       "headshotPercent": 36,
       "oneVsOneCount": 15,
@@ -300,7 +300,7 @@
       "averageKillPerRound": 0.8636364,
       "averageDeathPerRound": 0.72727275,
       "averageDamagePerRound": 78.954544,
-      "utilityDamagePerRound": 5.818182,
+      "utilityDamagePerRound": 5.7272725,
       "firstKillCount": 1,
       "firstDeathCount": 0,
       "firstTradeDeathCount": 0,
@@ -119418,7 +119418,8 @@
       "flasherSteamId": 76561199094835698,
       "flasherName": "烟雨君入江南",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 18229,
@@ -119431,7 +119432,8 @@
       "flasherSteamId": 76561199002382108,
       "flasherName": "KD4519",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 18229,
@@ -119444,7 +119446,8 @@
       "flasherSteamId": 76561199002382108,
       "flasherName": "KD4519",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 18402,
@@ -119457,7 +119460,8 @@
       "flasherSteamId": 76561199157434599,
       "flasherName": "众点赵秋香",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 19064,
@@ -119470,7 +119474,8 @@
       "flasherSteamId": 76561199064836174,
       "flasherName": "桃色刊物",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 33141,
@@ -119483,7 +119488,8 @@
       "flasherSteamId": 76561199157434599,
       "flasherName": "众点赵秋香",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 33141,
@@ -119496,7 +119502,8 @@
       "flasherSteamId": 76561199157434599,
       "flasherName": "众点赵秋香",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 33141,
@@ -119509,7 +119516,8 @@
       "flasherSteamId": 76561199157434599,
       "flasherName": "众点赵秋香",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 33141,
@@ -119522,7 +119530,8 @@
       "flasherSteamId": 76561199157434599,
       "flasherName": "众点赵秋香",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 33677,
@@ -119535,7 +119544,8 @@
       "flasherSteamId": 76561198381364815,
       "flasherName": "dirtyhappy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 33677,
@@ -119548,7 +119558,8 @@
       "flasherSteamId": 76561198381364815,
       "flasherName": "dirtyhappy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 33679,
@@ -119561,20 +119572,8 @@
       "flasherSteamId": 76561198285600732,
       "flasherName": "打爆春袋没钱赔",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 35105,
-      "roundNumber": 6,
-      "duration": 4.5449457,
-      "flashedSteamId": 76561198184530382,
-      "flashedName": "1iiiii",
-      "flashedSide": 3,
-      "isFlashedControllingBot": true,
-      "flasherSteamId": 76561198448371692,
-      "flasherName": "TSG-",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 38046,
@@ -119587,7 +119586,8 @@
       "flasherSteamId": 76561198381364815,
       "flasherName": "dirtyhappy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 38046,
@@ -119600,7 +119600,8 @@
       "flasherSteamId": 76561198381364815,
       "flasherName": "dirtyhappy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 38046,
@@ -119613,7 +119614,8 @@
       "flasherSteamId": 76561198381364815,
       "flasherName": "dirtyhappy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 38975,
@@ -119626,20 +119628,8 @@
       "flasherSteamId": 76561198381364815,
       "flasherName": "dirtyhappy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 38975,
-      "roundNumber": 7,
-      "duration": 4.4142656,
-      "flashedSteamId": 76561198184530382,
-      "flashedName": "1iiiii",
-      "flashedSide": 3,
-      "isFlashedControllingBot": true,
-      "flasherSteamId": 76561198381364815,
-      "flasherName": "dirtyhappy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 49060,
@@ -119652,7 +119642,8 @@
       "flasherSteamId": 76561199094835698,
       "flasherName": "烟雨君入江南",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 51610,
@@ -119665,7 +119656,8 @@
       "flasherSteamId": 76561199157434599,
       "flasherName": "众点赵秋香",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 51610,
@@ -119678,7 +119670,8 @@
       "flasherSteamId": 76561199157434599,
       "flasherName": "众点赵秋香",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 51610,
@@ -119691,7 +119684,8 @@
       "flasherSteamId": 76561199157434599,
       "flasherName": "众点赵秋香",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 52186,
@@ -119704,7 +119698,8 @@
       "flasherSteamId": 76561198381364815,
       "flasherName": "dirtyhappy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 52186,
@@ -119717,7 +119712,8 @@
       "flasherSteamId": 76561198381364815,
       "flasherName": "dirtyhappy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 63453,
@@ -119730,7 +119726,8 @@
       "flasherSteamId": 76561198381364815,
       "flasherName": "dirtyhappy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 65721,
@@ -119743,7 +119740,8 @@
       "flasherSteamId": 76561198448371692,
       "flasherName": "TSG-",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 67938,
@@ -119756,7 +119754,8 @@
       "flasherSteamId": 76561199094835698,
       "flasherName": "烟雨君入江南",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 79467,
@@ -119769,7 +119768,8 @@
       "flasherSteamId": 76561198381364815,
       "flasherName": "dirtyhappy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 79467,
@@ -119782,7 +119782,8 @@
       "flasherSteamId": 76561198381364815,
       "flasherName": "dirtyhappy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 79467,
@@ -119795,7 +119796,8 @@
       "flasherSteamId": 76561198381364815,
       "flasherName": "dirtyhappy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 84178,
@@ -119808,7 +119810,8 @@
       "flasherSteamId": 76561199084592315,
       "flasherName": "2847268633",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 89003,
@@ -119821,7 +119824,8 @@
       "flasherSteamId": 76561198381364815,
       "flasherName": "dirtyhappy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 89901,
@@ -119834,7 +119838,8 @@
       "flasherSteamId": 76561198285600732,
       "flasherName": "打爆春袋没钱赔",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 89901,
@@ -119847,7 +119852,8 @@
       "flasherSteamId": 76561198285600732,
       "flasherName": "打爆春袋没钱赔",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 89901,
@@ -119860,7 +119866,8 @@
       "flasherSteamId": 76561198285600732,
       "flasherName": "打爆春袋没钱赔",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 89901,
@@ -119873,7 +119880,8 @@
       "flasherSteamId": 76561198285600732,
       "flasherName": "打爆春袋没钱赔",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 91521,
@@ -119886,7 +119894,8 @@
       "flasherSteamId": 76561199094835698,
       "flasherName": "烟雨君入江南",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 100068,
@@ -119899,7 +119908,8 @@
       "flasherSteamId": 76561198381364815,
       "flasherName": "dirtyhappy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 100068,
@@ -119912,7 +119922,8 @@
       "flasherSteamId": 76561198381364815,
       "flasherName": "dirtyhappy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 100203,
@@ -119925,7 +119936,8 @@
       "flasherSteamId": 76561198381364815,
       "flasherName": "dirtyhappy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 113496,
@@ -119938,7 +119950,8 @@
       "flasherSteamId": 76561199094835698,
       "flasherName": "烟雨君入江南",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 114307,
@@ -119951,7 +119964,8 @@
       "flasherSteamId": 76561199157434599,
       "flasherName": "众点赵秋香",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 118649,
@@ -119964,7 +119978,8 @@
       "flasherSteamId": 76561198285600732,
       "flasherName": "打爆春袋没钱赔",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 118649,
@@ -119977,7 +119992,8 @@
       "flasherSteamId": 76561198285600732,
       "flasherName": "打爆春袋没钱赔",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 121959,
@@ -119990,7 +120006,8 @@
       "flasherSteamId": 76561198381364815,
       "flasherName": "dirtyhappy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 121959,
@@ -120003,7 +120020,8 @@
       "flasherSteamId": 76561198381364815,
       "flasherName": "dirtyhappy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     }
   ],
   "grenadePositions": [],

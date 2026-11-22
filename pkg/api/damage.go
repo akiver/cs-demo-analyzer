@@ -30,6 +30,22 @@ type Damage struct {
 	WeaponName               constants.WeaponName `json:"weaponName"`
 	WeaponType               constants.WeaponType `json:"weaponType"`
 	WeaponUniqueID           string               `json:"weaponUniqueId"`
+	isUtilityDamage          bool
+}
+
+func isUtilityDamage(analyzer *Analyzer, event events.PlayerHurt) bool {
+	switch event.WeaponString {
+	case "inferno":
+		return true
+	case "hegrenade":
+		if event.Attacker == nil {
+			return false
+		}
+		tick, ok := analyzer.lastHeGrenadeExplosionTickByPlayer[event.Attacker]
+		return ok && tick == analyzer.currentTick()
+	default:
+		return false
+	}
 }
 
 func (damage *Damage) IsGrenadeWeapon() bool {
@@ -94,5 +110,6 @@ func newDamageFromGameEvent(analyzer *Analyzer, event events.PlayerHurt) *Damage
 		WeaponType:               getEquipmentWeaponType(*event.Weapon),
 		HitGroup:                 event.HitGroup,
 		WeaponUniqueID:           event.Weapon.UniqueID().String(),
+		isUtilityDamage:          isUtilityDamage(analyzer, event),
 	}
 }

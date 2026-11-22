@@ -278,7 +278,7 @@
       "bombPlantedCount": 0,
       "healthDamage": 1011,
       "armorDamage": 118,
-      "utilityDamage": 39,
+      "utilityDamage": 38,
       "headshotCount": 3,
       "headshotPercent": 37,
       "oneVsOneCount": 2,
@@ -300,7 +300,7 @@
       "averageKillPerRound": 0.5,
       "averageDeathPerRound": 0.875,
       "averageDamagePerRound": 63.1875,
-      "utilityDamagePerRound": 2.4375,
+      "utilityDamagePerRound": 2.375,
       "firstKillCount": 1,
       "firstDeathCount": 1,
       "firstTradeDeathCount": 0,
@@ -613,7 +613,7 @@
       "bombPlantedCount": 1,
       "healthDamage": 470,
       "armorDamage": 84,
-      "utilityDamage": 57,
+      "utilityDamage": 55,
       "headshotCount": 2,
       "headshotPercent": 50,
       "oneVsOneCount": 6,
@@ -635,7 +635,7 @@
       "averageKillPerRound": 0.25,
       "averageDeathPerRound": 0.8125,
       "averageDamagePerRound": 29.375,
-      "utilityDamagePerRound": 3.5625,
+      "utilityDamagePerRound": 3.4375,
       "firstKillCount": 1,
       "firstDeathCount": 1,
       "firstTradeDeathCount": 0,
@@ -94577,7 +94577,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 16583,
@@ -94590,7 +94591,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 16685,
@@ -94603,7 +94605,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 16685,
@@ -94616,7 +94619,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 18199,
@@ -94629,7 +94633,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 25248,
@@ -94642,7 +94647,8 @@
       "flasherSteamId": 76561198840681151,
       "flasherName": "Dadddddy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 25248,
@@ -94655,7 +94661,8 @@
       "flasherSteamId": 76561198840681151,
       "flasherName": "Dadddddy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 25259,
@@ -94668,7 +94675,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 25369,
@@ -94681,7 +94689,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 25369,
@@ -94694,7 +94703,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 25709,
@@ -94707,7 +94717,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 26386,
@@ -94720,7 +94731,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 26386,
@@ -94733,7 +94745,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 29572,
@@ -94746,7 +94759,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 29572,
@@ -94759,7 +94773,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 29572,
@@ -94772,7 +94787,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 29615,
@@ -94785,7 +94801,8 @@
       "flasherSteamId": 76561199104520853,
       "flasherName": "开什么枪拿刀",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 29615,
@@ -94798,7 +94815,8 @@
       "flasherSteamId": 76561199104520853,
       "flasherName": "开什么枪拿刀",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 29757,
@@ -94811,7 +94829,8 @@
       "flasherSteamId": 76561198836396113,
       "flasherName": "^MDZz....",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 29837,
@@ -94824,7 +94843,8 @@
       "flasherSteamId": 76561198872277112,
       "flasherName": "atarax1aa",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 29837,
@@ -94837,7 +94857,8 @@
       "flasherSteamId": 76561198872277112,
       "flasherName": "atarax1aa",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 29854,
@@ -94850,7 +94871,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 29854,
@@ -94863,7 +94885,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 30009,
@@ -94876,7 +94899,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 30009,
@@ -94889,7 +94913,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 30009,
@@ -94902,7 +94927,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 32503,
@@ -94915,7 +94941,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 32503,
@@ -94928,7 +94955,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 32503,
@@ -94941,7 +94969,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 34995,
@@ -94954,7 +94983,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 34995,
@@ -94967,7 +94997,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 34995,
@@ -94980,7 +95011,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 35110,
@@ -94993,7 +95025,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 35110,
@@ -95006,7 +95039,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 35114,
@@ -95019,7 +95053,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 35114,
@@ -95032,7 +95067,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 35279,
@@ -95045,7 +95081,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 35363,
@@ -95058,7 +95095,8 @@
       "flasherSteamId": 76561199238440889,
       "flasherName": "哥的情绪稳定",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 36041,
@@ -95071,7 +95109,8 @@
       "flasherSteamId": 76561198836396113,
       "flasherName": "^MDZz....",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 36153,
@@ -95084,7 +95123,8 @@
       "flasherSteamId": 76561198836396113,
       "flasherName": "^MDZz....",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 36153,
@@ -95097,7 +95137,8 @@
       "flasherSteamId": 76561198836396113,
       "flasherName": "^MDZz....",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 36153,
@@ -95110,7 +95151,8 @@
       "flasherSteamId": 76561198836396113,
       "flasherName": "^MDZz....",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 38275,
@@ -95123,7 +95165,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 38275,
@@ -95136,7 +95179,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 38391,
@@ -95149,7 +95193,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 38550,
@@ -95162,7 +95207,8 @@
       "flasherSteamId": 76561198872277112,
       "flasherName": "atarax1aa",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 38550,
@@ -95175,7 +95221,8 @@
       "flasherSteamId": 76561198872277112,
       "flasherName": "atarax1aa",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 40330,
@@ -95188,7 +95235,8 @@
       "flasherSteamId": 76561199064714350,
       "flasherName": "KG.70",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 45776,
@@ -95201,7 +95249,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 45776,
@@ -95214,7 +95263,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 45893,
@@ -95227,7 +95277,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 45893,
@@ -95240,7 +95291,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 45893,
@@ -95253,7 +95305,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 45893,
@@ -95266,7 +95319,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 46222,
@@ -95279,7 +95333,8 @@
       "flasherSteamId": 76561198840681151,
       "flasherName": "Dadddddy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 46222,
@@ -95292,7 +95347,8 @@
       "flasherSteamId": 76561198840681151,
       "flasherName": "Dadddddy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 46851,
@@ -95305,7 +95361,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 46851,
@@ -95318,7 +95375,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 48580,
@@ -95331,7 +95389,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 48580,
@@ -95344,7 +95403,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 53204,
@@ -95357,7 +95417,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 53204,
@@ -95370,7 +95431,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 53685,
@@ -95383,7 +95445,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 53685,
@@ -95396,7 +95459,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 53685,
@@ -95409,7 +95473,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 53685,
@@ -95422,7 +95487,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 53685,
@@ -95435,7 +95501,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 53687,
@@ -95448,7 +95515,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 53687,
@@ -95461,7 +95529,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 53882,
@@ -95474,7 +95543,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 53882,
@@ -95487,7 +95557,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 53882,
@@ -95500,7 +95571,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 53882,
@@ -95513,7 +95585,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 53882,
@@ -95526,7 +95599,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 53882,
@@ -95539,7 +95613,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 54091,
@@ -95552,7 +95627,8 @@
       "flasherSteamId": 76561199104520853,
       "flasherName": "开什么枪拿刀",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 54091,
@@ -95565,7 +95641,8 @@
       "flasherSteamId": 76561199104520853,
       "flasherName": "开什么枪拿刀",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 54091,
@@ -95578,7 +95655,8 @@
       "flasherSteamId": 76561199104520853,
       "flasherName": "开什么枪拿刀",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 56567,
@@ -95591,7 +95669,8 @@
       "flasherSteamId": 76561198994608392,
       "flasherName": "莫忘风",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 56567,
@@ -95604,7 +95683,8 @@
       "flasherSteamId": 76561198994608392,
       "flasherName": "莫忘风",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 56567,
@@ -95617,7 +95697,8 @@
       "flasherSteamId": 76561198994608392,
       "flasherName": "莫忘风",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 56851,
@@ -95630,7 +95711,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 56851,
@@ -95643,7 +95725,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 56851,
@@ -95656,7 +95739,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 56851,
@@ -95669,7 +95753,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 56851,
@@ -95682,7 +95767,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 56878,
@@ -95695,7 +95781,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 56878,
@@ -95708,20 +95795,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 57204,
-      "roundNumber": 10,
-      "duration": 3.5825806,
-      "flashedSteamId": 76561198886914468,
-      "flashedName": "和我一起去逃避",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561199104520853,
-      "flasherName": "开什么枪拿刀",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 57253,
@@ -95734,7 +95809,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 57253,
@@ -95747,20 +95823,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 57253,
-      "roundNumber": 10,
-      "duration": 2.8169556,
-      "flashedSteamId": 76561198886914468,
-      "flashedName": "和我一起去逃避",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198288657828,
-      "flasherName": "zHunBi_wOw",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 60710,
@@ -95773,7 +95837,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 60710,
@@ -95786,7 +95851,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 60710,
@@ -95799,7 +95865,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 60710,
@@ -95812,7 +95879,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 60944,
@@ -95825,7 +95893,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 60944,
@@ -95838,7 +95907,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 60944,
@@ -95851,7 +95921,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 61255,
@@ -95864,7 +95935,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 62003,
@@ -95877,7 +95949,8 @@
       "flasherSteamId": 76561198872277112,
       "flasherName": "atarax1aa",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 62003,
@@ -95890,7 +95963,8 @@
       "flasherSteamId": 76561198872277112,
       "flasherName": "atarax1aa",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 62482,
@@ -95903,20 +95977,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 62482,
-      "roundNumber": 11,
-      "duration": 1.1928169,
-      "flashedSteamId": 76561199104520853,
-      "flashedName": "开什么枪拿刀",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198886914468,
-      "flasherName": "和我一起去逃避",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 62482,
@@ -95929,7 +95991,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 65682,
@@ -95942,7 +96005,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 65682,
@@ -95955,7 +96019,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 65935,
@@ -95968,7 +96033,8 @@
       "flasherSteamId": 76561199238440889,
       "flasherName": "哥的情绪稳定",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 65935,
@@ -95981,7 +96047,8 @@
       "flasherSteamId": 76561199238440889,
       "flasherName": "哥的情绪稳定",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 65935,
@@ -95994,7 +96061,8 @@
       "flasherSteamId": 76561199238440889,
       "flasherName": "哥的情绪稳定",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 66167,
@@ -96007,7 +96075,8 @@
       "flasherSteamId": 76561198872277112,
       "flasherName": "atarax1aa",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 66275,
@@ -96020,7 +96089,8 @@
       "flasherSteamId": 76561198840681151,
       "flasherName": "Dadddddy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 67304,
@@ -96033,7 +96103,8 @@
       "flasherSteamId": 76561199104520853,
       "flasherName": "开什么枪拿刀",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 67304,
@@ -96046,7 +96117,8 @@
       "flasherSteamId": 76561199104520853,
       "flasherName": "开什么枪拿刀",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 71251,
@@ -96059,7 +96131,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 71251,
@@ -96072,7 +96145,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 75568,
@@ -96085,7 +96159,8 @@
       "flasherSteamId": 76561198840681151,
       "flasherName": "Dadddddy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 75568,
@@ -96098,7 +96173,8 @@
       "flasherSteamId": 76561198840681151,
       "flasherName": "Dadddddy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 76017,
@@ -96111,20 +96187,8 @@
       "flasherSteamId": 76561199104520853,
       "flasherName": "开什么枪拿刀",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 76018,
-      "roundNumber": 14,
-      "duration": 0.74326754,
-      "flashedSteamId": 76561198872277112,
-      "flashedName": "atarax1aa",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561199194343995,
-      "flasherName": "二次元小陈",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 76018,
@@ -96137,7 +96201,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 76018,
@@ -96150,20 +96215,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 76168,
-      "roundNumber": 14,
-      "duration": 0.8408135,
-      "flashedSteamId": 76561198872277112,
-      "flashedName": "atarax1aa",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198886914468,
-      "flasherName": "和我一起去逃避",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 76168,
@@ -96176,7 +96229,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 76168,
@@ -96189,7 +96243,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 76217,
@@ -96202,7 +96257,8 @@
       "flasherSteamId": 76561199104520853,
       "flasherName": "开什么枪拿刀",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 76217,
@@ -96215,20 +96271,8 @@
       "flasherSteamId": 76561199104520853,
       "flasherName": "开什么枪拿刀",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 76295,
-      "roundNumber": 14,
-      "duration": 1.3904103,
-      "flashedSteamId": 76561198872277112,
-      "flashedName": "atarax1aa",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561199238440889,
-      "flasherName": "哥的情绪稳定",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 76295,
@@ -96241,20 +96285,8 @@
       "flasherSteamId": 76561199238440889,
       "flasherName": "哥的情绪稳定",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 76295,
-      "roundNumber": 14,
-      "duration": 0.23199339,
-      "flashedSteamId": 76561198886914468,
-      "flashedName": "和我一起去逃避",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561199238440889,
-      "flasherName": "哥的情绪稳定",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 79904,
@@ -96267,7 +96299,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 81911,
@@ -96280,7 +96313,8 @@
       "flasherSteamId": 76561198840681151,
       "flasherName": "Dadddddy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 81911,
@@ -96293,7 +96327,8 @@
       "flasherSteamId": 76561198840681151,
       "flasherName": "Dadddddy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 81911,
@@ -96306,7 +96341,8 @@
       "flasherSteamId": 76561198840681151,
       "flasherName": "Dadddddy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 81911,
@@ -96319,7 +96355,8 @@
       "flasherSteamId": 76561198840681151,
       "flasherName": "Dadddddy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 82107,
@@ -96332,7 +96369,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 82107,
@@ -96345,7 +96383,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 82107,
@@ -96358,7 +96397,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 82107,
@@ -96371,7 +96411,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 83122,
@@ -96384,7 +96425,8 @@
       "flasherSteamId": 76561198836396113,
       "flasherName": "^MDZz....",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 83122,
@@ -96397,7 +96439,8 @@
       "flasherSteamId": 76561198836396113,
       "flasherName": "^MDZz....",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 83297,
@@ -96410,7 +96453,8 @@
       "flasherSteamId": 76561198872277112,
       "flasherName": "atarax1aa",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 87780,
@@ -96423,7 +96467,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 87780,
@@ -96436,7 +96481,8 @@
       "flasherSteamId": 76561198886914468,
       "flasherName": "和我一起去逃避",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 87824,
@@ -96449,7 +96495,8 @@
       "flasherSteamId": 76561198840681151,
       "flasherName": "Dadddddy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 87824,
@@ -96462,7 +96509,8 @@
       "flasherSteamId": 76561198840681151,
       "flasherName": "Dadddddy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 87921,
@@ -96475,7 +96523,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 87921,
@@ -96488,7 +96537,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 87999,
@@ -96501,7 +96551,8 @@
       "flasherSteamId": 76561199104520853,
       "flasherName": "开什么枪拿刀",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 87999,
@@ -96514,7 +96565,8 @@
       "flasherSteamId": 76561199104520853,
       "flasherName": "开什么枪拿刀",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 88130,
@@ -96527,7 +96579,8 @@
       "flasherSteamId": 76561199104520853,
       "flasherName": "开什么枪拿刀",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 88130,
@@ -96540,7 +96593,8 @@
       "flasherSteamId": 76561199104520853,
       "flasherName": "开什么枪拿刀",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 88130,
@@ -96553,7 +96607,8 @@
       "flasherSteamId": 76561199104520853,
       "flasherName": "开什么枪拿刀",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 88140,
@@ -96566,7 +96621,8 @@
       "flasherSteamId": 76561198840681151,
       "flasherName": "Dadddddy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 88140,
@@ -96579,7 +96635,8 @@
       "flasherSteamId": 76561198840681151,
       "flasherName": "Dadddddy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 88140,
@@ -96592,7 +96649,8 @@
       "flasherSteamId": 76561198840681151,
       "flasherName": "Dadddddy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 88334,
@@ -96605,7 +96663,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 88458,
@@ -96618,7 +96677,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 88458,
@@ -96631,7 +96691,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 88458,
@@ -96644,7 +96705,8 @@
       "flasherSteamId": 76561199194343995,
       "flasherName": "二次元小陈",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 88738,
@@ -96657,7 +96719,8 @@
       "flasherSteamId": 76561198840681151,
       "flasherName": "Dadddddy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 88738,
@@ -96670,7 +96733,8 @@
       "flasherSteamId": 76561198840681151,
       "flasherName": "Dadddddy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 89199,
@@ -96683,33 +96747,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 89199,
-      "roundNumber": 16,
-      "duration": 4.9558363,
-      "flashedSteamId": 76561199194343995,
-      "flashedName": "二次元小陈",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198288657828,
-      "flasherName": "zHunBi_wOw",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 89199,
-      "roundNumber": 16,
-      "duration": 0.9247356,
-      "flashedSteamId": 76561199238440889,
-      "flashedName": "哥的情绪稳定",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198288657828,
-      "flasherName": "zHunBi_wOw",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 89199,
@@ -96722,7 +96761,8 @@
       "flasherSteamId": 76561198288657828,
       "flasherName": "zHunBi_wOw",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     }
   ],
   "grenadePositions": [],

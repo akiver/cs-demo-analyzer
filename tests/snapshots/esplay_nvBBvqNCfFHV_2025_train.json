@@ -77,7 +77,7 @@
       "bombPlantedCount": 0,
       "healthDamage": 842,
       "armorDamage": 112,
-      "utilityDamage": 149,
+      "utilityDamage": 148,
       "headshotCount": 3,
       "headshotPercent": 42,
       "oneVsOneCount": 3,
@@ -99,7 +99,7 @@
       "averageKillPerRound": 0.875,
       "averageDeathPerRound": 0.75,
       "averageDamagePerRound": 105.25,
-      "utilityDamagePerRound": 18.625,
+      "utilityDamagePerRound": 18.5,
       "firstKillCount": 1,
       "firstDeathCount": 1,
       "firstTradeDeathCount": 1,
@@ -36057,7 +36057,8 @@
       "flasherSteamId": 76561199261966104,
       "flasherName": "klas",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 6443,
@@ -36070,7 +36071,8 @@
       "flasherSteamId": 76561197964870354,
       "flasherName": "ddane",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 10351,
@@ -36083,7 +36085,8 @@
       "flasherSteamId": 76561198174150442,
       "flasherName": "Timpelina",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 10351,
@@ -36096,7 +36099,8 @@
       "flasherSteamId": 76561198174150442,
       "flasherName": "Timpelina",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 10351,
@@ -36109,7 +36113,8 @@
       "flasherSteamId": 76561198174150442,
       "flasherName": "Timpelina",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 10458,
@@ -36122,7 +36127,8 @@
       "flasherSteamId": 76561197964870354,
       "flasherName": "ddane",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 10458,
@@ -36135,7 +36141,8 @@
       "flasherSteamId": 76561197964870354,
       "flasherName": "ddane",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 10458,
@@ -36148,7 +36155,8 @@
       "flasherSteamId": 76561197964870354,
       "flasherName": "ddane",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 10458,
@@ -36161,20 +36169,8 @@
       "flasherSteamId": 76561197964870354,
       "flasherName": "ddane",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 10614,
-      "roundNumber": 3,
-      "duration": 0.59511894,
-      "flashedSteamId": 76561198174150442,
-      "flashedName": "Timpelina",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198174150442,
-      "flasherName": "Timpelina",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 10614,
@@ -36187,7 +36183,8 @@
       "flasherSteamId": 76561198174150442,
       "flasherName": "Timpelina",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 14045,
@@ -36200,7 +36197,8 @@
       "flasherSteamId": 76561199261966104,
       "flasherName": "klas",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 14045,
@@ -36213,7 +36211,8 @@
       "flasherSteamId": 76561199261966104,
       "flasherName": "klas",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 14109,
@@ -36226,7 +36225,8 @@
       "flasherSteamId": 76561198059437550,
       "flasherName": "Ludicaken",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 14109,
@@ -36239,7 +36239,8 @@
       "flasherSteamId": 76561198059437550,
       "flasherName": "Ludicaken",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 14109,
@@ -36252,7 +36253,8 @@
       "flasherSteamId": 76561198059437550,
       "flasherName": "Ludicaken",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 14122,
@@ -36265,7 +36267,8 @@
       "flasherSteamId": 76561198248008728,
       "flasherName": "Pytonorm",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 14122,
@@ -36278,7 +36281,8 @@
       "flasherSteamId": 76561198248008728,
       "flasherName": "Pytonorm",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 14122,
@@ -36291,7 +36295,8 @@
       "flasherSteamId": 76561198248008728,
       "flasherName": "Pytonorm",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 14122,
@@ -36304,7 +36309,8 @@
       "flasherSteamId": 76561198248008728,
       "flasherName": "Pytonorm",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 17304,
@@ -36317,7 +36323,8 @@
       "flasherSteamId": 76561199261966104,
       "flasherName": "klas",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 18413,
@@ -36330,7 +36337,8 @@
       "flasherSteamId": 76561197964870354,
       "flasherName": "ddane",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 19095,
@@ -36343,7 +36351,8 @@
       "flasherSteamId": 76561198174150442,
       "flasherName": "Timpelina",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 19095,
@@ -36356,7 +36365,8 @@
       "flasherSteamId": 76561198174150442,
       "flasherName": "Timpelina",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 19095,
@@ -36369,7 +36379,8 @@
       "flasherSteamId": 76561198174150442,
       "flasherName": "Timpelina",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 19095,
@@ -36382,7 +36393,8 @@
       "flasherSteamId": 76561198174150442,
       "flasherName": "Timpelina",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 22934,
@@ -36395,7 +36407,8 @@
       "flasherSteamId": 76561198018488298,
       "flasherName": "Shawty",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 22934,
@@ -36408,7 +36421,8 @@
       "flasherSteamId": 76561198018488298,
       "flasherName": "Shawty",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 22934,
@@ -36421,7 +36435,8 @@
       "flasherSteamId": 76561198018488298,
       "flasherName": "Shawty",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 22934,
@@ -36434,7 +36449,8 @@
       "flasherSteamId": 76561198018488298,
       "flasherName": "Shawty",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 22934,
@@ -36447,7 +36463,8 @@
       "flasherSteamId": 76561198018488298,
       "flasherName": "Shawty",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 23004,
@@ -36460,7 +36477,8 @@
       "flasherSteamId": 76561198129332650,
       "flasherName": "Marmaduke",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 27487,
@@ -36473,7 +36491,8 @@
       "flasherSteamId": 76561199261966104,
       "flasherName": "klas",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 33771,
@@ -36486,7 +36505,8 @@
       "flasherSteamId": 76561199261966104,
       "flasherName": "klas",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     }
   ],
   "grenadePositions": [],

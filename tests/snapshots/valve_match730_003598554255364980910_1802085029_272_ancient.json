@@ -59159,7 +59159,8 @@
       "flasherSteamId": 76561197962122882,
       "flasherName": "snoopypupsi",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 12686,
@@ -59172,7 +59173,8 @@
       "flasherSteamId": 76561197962122882,
       "flasherName": "snoopypupsi",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 16768,
@@ -59185,7 +59187,8 @@
       "flasherSteamId": 76561199051559268,
       "flasherName": "34_SEDOI_34",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 16768,
@@ -59198,7 +59201,8 @@
       "flasherSteamId": 76561199051559268,
       "flasherName": "34_SEDOI_34",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 17152,
@@ -59211,7 +59215,8 @@
       "flasherSteamId": 76561199051559268,
       "flasherName": "34_SEDOI_34",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 17152,
@@ -59224,7 +59229,8 @@
       "flasherSteamId": 76561199051559268,
       "flasherName": "34_SEDOI_34",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 17966,
@@ -59237,7 +59243,8 @@
       "flasherSteamId": 76561198362639856,
       "flasherName": "♡Monika_Liu♡",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 17966,
@@ -59250,7 +59257,8 @@
       "flasherSteamId": 76561198362639856,
       "flasherName": "♡Monika_Liu♡",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 29041,
@@ -59263,7 +59271,8 @@
       "flasherSteamId": 76561197985985357,
       "flasherName": "Krohm - gazpacho police",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 29041,
@@ -59276,7 +59285,8 @@
       "flasherSteamId": 76561197985985357,
       "flasherName": "Krohm - gazpacho police",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 29783,
@@ -59289,7 +59299,8 @@
       "flasherSteamId": 76561198860346297,
       "flasherName": "Tihiro",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 34453,
@@ -59302,7 +59313,8 @@
       "flasherSteamId": 76561197962122882,
       "flasherName": "snoopypupsi",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 34453,
@@ -59315,7 +59327,8 @@
       "flasherSteamId": 76561197962122882,
       "flasherName": "snoopypupsi",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 34453,
@@ -59328,7 +59341,8 @@
       "flasherSteamId": 76561197962122882,
       "flasherName": "snoopypupsi",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 34453,
@@ -59341,7 +59355,8 @@
       "flasherSteamId": 76561197962122882,
       "flasherName": "snoopypupsi",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 39033,
@@ -59354,7 +59369,8 @@
       "flasherSteamId": 76561199051559268,
       "flasherName": "34_SEDOI_34",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 39033,
@@ -59367,7 +59383,8 @@
       "flasherSteamId": 76561199051559268,
       "flasherName": "34_SEDOI_34",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 39033,
@@ -59380,7 +59397,8 @@
       "flasherSteamId": 76561199051559268,
       "flasherName": "34_SEDOI_34",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 45387,
@@ -59393,7 +59411,8 @@
       "flasherSteamId": 76561198024828269,
       "flasherName": "Lion",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 47111,
@@ -59406,7 +59425,8 @@
       "flasherSteamId": 76561197985985357,
       "flasherName": "Krohm - gazpacho police",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 47111,
@@ -59419,46 +59439,8 @@
       "flasherSteamId": 76561197985985357,
       "flasherName": "Krohm - gazpacho police",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 47111,
-      "roundNumber": 8,
-      "duration": 0.7419884,
-      "flashedSteamId": 76561199051559268,
-      "flashedName": "34_SEDOI_34",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197985985357,
-      "flasherName": "Krohm - gazpacho police",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 47111,
-      "roundNumber": 8,
-      "duration": 0.7419884,
-      "flashedSteamId": 76561199147543414,
-      "flashedName": "Scarface",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197985985357,
-      "flasherName": "Krohm - gazpacho police",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 47111,
-      "roundNumber": 8,
-      "duration": 0.7419884,
-      "flashedSteamId": 76561198860346297,
-      "flashedName": "Tihiro",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197985985357,
-      "flasherName": "Krohm - gazpacho police",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 47111,
@@ -59471,7 +59453,8 @@
       "flasherSteamId": 76561197985985357,
       "flasherName": "Krohm - gazpacho police",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 47111,
@@ -59484,7 +59467,8 @@
       "flasherSteamId": 76561197985985357,
       "flasherName": "Krohm - gazpacho police",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 55517,
@@ -59497,7 +59481,8 @@
       "flasherSteamId": 76561199147543414,
       "flasherName": "Scarface",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 55517,
@@ -59510,7 +59495,8 @@
       "flasherSteamId": 76561199147543414,
       "flasherName": "Scarface",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 55517,
@@ -59523,7 +59509,8 @@
       "flasherSteamId": 76561199147543414,
       "flasherName": "Scarface",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 61477,
@@ -59536,7 +59523,8 @@
       "flasherSteamId": 76561199147543414,
       "flasherName": "Scarface",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 61477,
@@ -59549,7 +59537,8 @@
       "flasherSteamId": 76561199147543414,
       "flasherName": "Scarface",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 61477,
@@ -59562,7 +59551,8 @@
       "flasherSteamId": 76561199147543414,
       "flasherName": "Scarface",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 67061,
@@ -59575,7 +59565,8 @@
       "flasherSteamId": 76561199051559268,
       "flasherName": "34_SEDOI_34",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 67069,
@@ -59588,7 +59579,8 @@
       "flasherSteamId": 76561199003898099,
       "flasherName": "☆ hyoka",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 67707,
@@ -59601,7 +59593,8 @@
       "flasherSteamId": 76561199003898099,
       "flasherName": "☆ hyoka",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 72550,
@@ -59614,7 +59607,8 @@
       "flasherSteamId": 76561199051559268,
       "flasherName": "34_SEDOI_34",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 72550,
@@ -59627,7 +59621,8 @@
       "flasherSteamId": 76561199051559268,
       "flasherName": "34_SEDOI_34",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 72550,
@@ -59640,7 +59635,8 @@
       "flasherSteamId": 76561199051559268,
       "flasherName": "34_SEDOI_34",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 72550,
@@ -59653,7 +59649,8 @@
       "flasherSteamId": 76561199051559268,
       "flasherName": "34_SEDOI_34",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 72550,
@@ -59666,7 +59663,8 @@
       "flasherSteamId": 76561199051559268,
       "flasherName": "34_SEDOI_34",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 72550,
@@ -59679,7 +59677,8 @@
       "flasherSteamId": 76561199051559268,
       "flasherName": "34_SEDOI_34",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 72616,
@@ -59692,7 +59691,8 @@
       "flasherSteamId": 76561199147543414,
       "flasherName": "Scarface",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 72616,
@@ -59705,7 +59705,8 @@
       "flasherSteamId": 76561199147543414,
       "flasherName": "Scarface",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 72728,
@@ -59718,7 +59719,8 @@
       "flasherSteamId": 76561198362639856,
       "flasherName": "♡Monika_Liu♡",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 72728,
@@ -59731,7 +59733,8 @@
       "flasherSteamId": 76561198362639856,
       "flasherName": "♡Monika_Liu♡",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 72728,
@@ -59744,7 +59747,8 @@
       "flasherSteamId": 76561198362639856,
       "flasherName": "♡Monika_Liu♡",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 72728,
@@ -59757,7 +59761,8 @@
       "flasherSteamId": 76561198362639856,
       "flasherName": "♡Monika_Liu♡",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 72728,
@@ -59770,7 +59775,8 @@
       "flasherSteamId": 76561198362639856,
       "flasherName": "♡Monika_Liu♡",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 73184,
@@ -59783,7 +59789,8 @@
       "flasherSteamId": 76561198860346297,
       "flasherName": "Tihiro",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 73184,
@@ -59796,7 +59803,8 @@
       "flasherSteamId": 76561198860346297,
       "flasherName": "Tihiro",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 73184,
@@ -59809,7 +59817,8 @@
       "flasherSteamId": 76561198860346297,
       "flasherName": "Tihiro",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 78111,
@@ -59822,7 +59831,8 @@
       "flasherSteamId": 76561198362639856,
       "flasherName": "♡Monika_Liu♡",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     }
   ],
   "grenadePositions": [],

@@ -18024,7 +18024,8 @@
       "flasherSteamId": 76561198089429734,
       "flasherName": "Lowlita",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 13421,
@@ -18037,7 +18038,8 @@
       "flasherSteamId": 76561198117702148,
       "flasherName": "zietra",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 13421,
@@ -18050,7 +18052,8 @@
       "flasherSteamId": 76561198117702148,
       "flasherName": "zietra",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 13421,
@@ -18063,7 +18066,8 @@
       "flasherSteamId": 76561198117702148,
       "flasherName": "zietra",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 36911,
@@ -18076,7 +18080,8 @@
       "flasherSteamId": 76561198795651874,
       "flasherName": "Emmy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 36911,
@@ -18089,7 +18094,8 @@
       "flasherSteamId": 76561198795651874,
       "flasherName": "Emmy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 36935,
@@ -18102,7 +18108,8 @@
       "flasherSteamId": 76561198089429734,
       "flasherName": "Lowlita",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 36935,
@@ -18115,7 +18122,8 @@
       "flasherSteamId": 76561198089429734,
       "flasherName": "Lowlita",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 39569,
@@ -18128,7 +18136,8 @@
       "flasherSteamId": 76561198795651874,
       "flasherName": "Emmy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 39818,
@@ -18141,7 +18150,8 @@
       "flasherSteamId": 76561198795651874,
       "flasherName": "Emmy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 39818,
@@ -18154,7 +18164,8 @@
       "flasherSteamId": 76561198795651874,
       "flasherName": "Emmy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 44000,
@@ -18167,7 +18178,8 @@
       "flasherSteamId": 76561198795651874,
       "flasherName": "Emmy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 44000,
@@ -18180,7 +18192,8 @@
       "flasherSteamId": 76561198795651874,
       "flasherName": "Emmy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 44000,
@@ -18193,7 +18206,8 @@
       "flasherSteamId": 76561198795651874,
       "flasherName": "Emmy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     }
   ],
   "grenadePositions": [],

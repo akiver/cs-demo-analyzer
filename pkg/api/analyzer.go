@@ -59,7 +59,10 @@ type Analyzer struct {
 	// Because several hostages can be untied at the same time, we keep track of players that started untying hostages
 	// to detect which player is untying an hostage in case of consecutive events.
 	playersUntyingAnHostage map[uint64]int
-	chickenEntities         []*chickenEntity
+	// Used to differentiate HE grenade explosion damage from the damage of the grenade hitting a player before it
+	// explodes (-1HP), both are reported with the same weapon.
+	lastHeGrenadeExplosionTickByPlayer map[*common.Player]int
+	chickenEntities                    []*chickenEntity
 	// Used to give a unique ID to each chicken, entity IDs are re-used once an entity is destroyed.
 	chickenCount int
 	// Cached 2D convex hull of each burning inferno's active fires, only used when positions are included.
@@ -156,21 +159,22 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions, spoolPositions boo
 	match := newMatch(source, demo)
 
 	analyzer := &Analyzer{
-		parser:                    parser,
-		match:                     &match,
-		isSource2:                 demo.IsSource2(),
-		isFirstRoundOfHalf:        true,
-		isRoundEndDetected:        false,
-		buyTimeSeconds:            20, // Default mp_buytime value is 20
-		lastFreezeTimeEndTick:     -1,
-		bombPlantPosition:         r3.Vector{},
-		infernoHulls:              map[common.UniqueID]*infernoHull{},
-		playerWeapons:             map[*common.Player]*PlayerWeapons{},
-		lastPositionSampleSecond:  noPositionSampleSecond,
-		ticksPerSecond:            ticksPerSecondFromTickRate(match.TickRate),
-		lastGrenadeThrownByPlayer: make(map[uint64]*Shot),
-		playersUntyingAnHostage:   make(map[uint64]int),
-		postProcess:               defaultPostProcess,
+		parser:                             parser,
+		match:                              &match,
+		isSource2:                          demo.IsSource2(),
+		isFirstRoundOfHalf:                 true,
+		isRoundEndDetected:                 false,
+		buyTimeSeconds:                     20, // Default mp_buytime value is 20
+		lastFreezeTimeEndTick:              -1,
+		bombPlantPosition:                  r3.Vector{},
+		infernoHulls:                       map[common.UniqueID]*infernoHull{},
+		playerWeapons:                      map[*common.Player]*PlayerWeapons{},
+		lastPositionSampleSecond:           noPositionSampleSecond,
+		ticksPerSecond:                     ticksPerSecondFromTickRate(match.TickRate),
+		lastGrenadeThrownByPlayer:          make(map[uint64]*Shot),
+		playersUntyingAnHostage:            make(map[uint64]int),
+		lastHeGrenadeExplosionTickByPlayer: make(map[*common.Player]int),
+		postProcess:                        defaultPostProcess,
 	}
 
 	analyzer.currentRound = &Round{
@@ -994,6 +998,10 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 	})
 
 	parser.RegisterEventHandler(func(event events.HeExplode) {
+		if event.Thrower != nil {
+			analyzer.lastHeGrenadeExplosionTickByPlayer[event.Thrower] = analyzer.currentTick()
+		}
+
 		if !analyzer.matchStarted() {
 			return
 		}
@@ -1071,6 +1079,11 @@ func (analyzer *Analyzer) registerCommonHandlers(includePositions bool) {
 
 	parser.RegisterEventHandler(func(event events.PlayerFlashed) {
 		if !analyzer.matchStarted() || event.Player == nil || event.Attacker == nil || event.Player.IsBot {
+			return
+		}
+
+		// The game also blinds dead players, it has no effect.
+		if !event.Player.IsAlive() {
 			return
 		}
 

@@ -92362,7 +92362,8 @@
       "flasherSteamId": 76561198287171166,
       "flasherName": "iRoz0x",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 12871,
@@ -92375,7 +92376,8 @@
       "flasherSteamId": 76561198287171166,
       "flasherName": "iRoz0x",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 12871,
@@ -92388,7 +92390,8 @@
       "flasherSteamId": 76561198287171166,
       "flasherName": "iRoz0x",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 12871,
@@ -92401,7 +92404,8 @@
       "flasherSteamId": 76561198287171166,
       "flasherName": "iRoz0x",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 12871,
@@ -92414,7 +92418,8 @@
       "flasherSteamId": 76561198287171166,
       "flasherName": "iRoz0x",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 21227,
@@ -92427,7 +92432,8 @@
       "flasherSteamId": 76561198892628768,
       "flasherName": "I'm gay and proud of it",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 21367,
@@ -92440,7 +92446,8 @@
       "flasherSteamId": 76561198892628768,
       "flasherName": "I'm gay and proud of it",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 35532,
@@ -92453,7 +92460,8 @@
       "flasherSteamId": 76561198160035572,
       "flasherName": "Maucier",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 35532,
@@ -92466,7 +92474,8 @@
       "flasherSteamId": 76561198160035572,
       "flasherName": "Maucier",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 35668,
@@ -92479,7 +92488,8 @@
       "flasherSteamId": 76561198892628768,
       "flasherName": "I'm gay and proud of it",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 36070,
@@ -92492,7 +92502,8 @@
       "flasherSteamId": 76561198892628768,
       "flasherName": "I'm gay and proud of it",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 36070,
@@ -92505,7 +92516,8 @@
       "flasherSteamId": 76561198892628768,
       "flasherName": "I'm gay and proud of it",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 36070,
@@ -92518,7 +92530,8 @@
       "flasherSteamId": 76561198892628768,
       "flasherName": "I'm gay and proud of it",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 36430,
@@ -92531,7 +92544,8 @@
       "flasherSteamId": 76561198831417913,
       "flasherName": "Master Flevo",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 36430,
@@ -92544,7 +92558,8 @@
       "flasherSteamId": 76561198831417913,
       "flasherName": "Master Flevo",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 36430,
@@ -92557,33 +92572,8 @@
       "flasherSteamId": 76561198831417913,
       "flasherName": "Master Flevo",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 45930,
-      "roundNumber": 7,
-      "duration": 0.7038049,
-      "flashedSteamId": 76561198831417913,
-      "flashedName": "Master Flevo",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198195829963,
-      "flasherName": "seveN",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 45930,
-      "roundNumber": 7,
-      "duration": 0.70355564,
-      "flashedSteamId": 76561198161973676,
-      "flashedName": "areobatman",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198195829963,
-      "flasherName": "seveN",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 45930,
@@ -92596,7 +92586,8 @@
       "flasherSteamId": 76561198195829963,
       "flasherName": "seveN",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 45930,
@@ -92609,20 +92600,8 @@
       "flasherSteamId": 76561198195829963,
       "flasherName": "seveN",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 45930,
-      "roundNumber": 7,
-      "duration": 5.106004,
-      "flashedSteamId": 76561198160035572,
-      "flashedName": "Maucier",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198195829963,
-      "flasherName": "seveN",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 49345,
@@ -92635,7 +92614,8 @@
       "flasherSteamId": 76561198892628768,
       "flasherName": "I'm gay and proud of it",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 63890,
@@ -92648,7 +92628,8 @@
       "flasherSteamId": 76561198892628768,
       "flasherName": "I'm gay and proud of it",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 63890,
@@ -92661,7 +92642,8 @@
       "flasherSteamId": 76561198892628768,
       "flasherName": "I'm gay and proud of it",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 65112,
@@ -92674,33 +92656,8 @@
       "flasherSteamId": 76561198160035572,
       "flasherName": "Maucier",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 71587,
-      "roundNumber": 11,
-      "duration": 3.9088979,
-      "flashedSteamId": 76561198831417913,
-      "flashedName": "Master Flevo",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198160035572,
-      "flasherName": "Maucier",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 71587,
-      "roundNumber": 11,
-      "duration": 3.9088979,
-      "flashedSteamId": 76561198445937943,
-      "flashedName": "romania bad",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198160035572,
-      "flasherName": "Maucier",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 71587,
@@ -92713,7 +92670,8 @@
       "flasherSteamId": 76561198160035572,
       "flasherName": "Maucier",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 71907,
@@ -92726,7 +92684,8 @@
       "flasherSteamId": 76561198160035572,
       "flasherName": "Maucier",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 71907,
@@ -92739,98 +92698,8 @@
       "flasherSteamId": 76561198160035572,
       "flasherName": "Maucier",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 80277,
-      "roundNumber": 12,
-      "duration": 0.7944128,
-      "flashedSteamId": 76561198287171166,
-      "flashedName": "iRoz0x",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198160035572,
-      "flasherName": "Maucier",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 80277,
-      "roundNumber": 12,
-      "duration": 0.7944128,
-      "flashedSteamId": 76561198273767826,
-      "flashedName": "LIION974",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198160035572,
-      "flasherName": "Maucier",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 80277,
-      "roundNumber": 12,
-      "duration": 1.4883878,
-      "flashedSteamId": 76561198831417913,
-      "flashedName": "Master Flevo",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198160035572,
-      "flasherName": "Maucier",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 80277,
-      "roundNumber": 12,
-      "duration": 1.4883878,
-      "flashedSteamId": 76561198445937943,
-      "flashedName": "romania bad",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198160035572,
-      "flasherName": "Maucier",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 80277,
-      "roundNumber": 12,
-      "duration": 1.4883878,
-      "flashedSteamId": 76561198161973676,
-      "flashedName": "areobatman",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198160035572,
-      "flasherName": "Maucier",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 80277,
-      "roundNumber": 12,
-      "duration": 0.7944478,
-      "flashedSteamId": 76561198892628768,
-      "flashedName": "I'm gay and proud of it",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198160035572,
-      "flasherName": "Maucier",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 80277,
-      "roundNumber": 12,
-      "duration": 0.7944478,
-      "flashedSteamId": 76561199003638064,
-      "flashedName": "TheSmallJAT",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198160035572,
-      "flasherName": "Maucier",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 80277,
@@ -92843,7 +92712,8 @@
       "flasherSteamId": 76561198160035572,
       "flasherName": "Maucier",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 80277,
@@ -92856,7 +92726,8 @@
       "flasherSteamId": 76561198160035572,
       "flasherName": "Maucier",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 82749,
@@ -92869,7 +92740,8 @@
       "flasherSteamId": 76561198287171166,
       "flasherName": "iRoz0x",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 82749,
@@ -92882,7 +92754,8 @@
       "flasherSteamId": 76561198287171166,
       "flasherName": "iRoz0x",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 82749,
@@ -92895,7 +92768,8 @@
       "flasherSteamId": 76561198287171166,
       "flasherName": "iRoz0x",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 90527,
@@ -92908,7 +92782,8 @@
       "flasherSteamId": 76561198160035572,
       "flasherName": "Maucier",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 90527,
@@ -92921,7 +92796,8 @@
       "flasherSteamId": 76561198160035572,
       "flasherName": "Maucier",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 90527,
@@ -92934,7 +92810,8 @@
       "flasherSteamId": 76561198160035572,
       "flasherName": "Maucier",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 90527,
@@ -92947,7 +92824,8 @@
       "flasherSteamId": 76561198160035572,
       "flasherName": "Maucier",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 90577,
@@ -92960,7 +92838,8 @@
       "flasherSteamId": 76561198892628768,
       "flasherName": "I'm gay and proud of it",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 90577,
@@ -92973,7 +92852,8 @@
       "flasherSteamId": 76561198892628768,
       "flasherName": "I'm gay and proud of it",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 96073,
@@ -92986,7 +92866,8 @@
       "flasherSteamId": 76561198160035572,
       "flasherName": "Maucier",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 97279,
@@ -92999,7 +92880,8 @@
       "flasherSteamId": 76561198892628768,
       "flasherName": "I'm gay and proud of it",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 97279,
@@ -93012,7 +92894,8 @@
       "flasherSteamId": 76561198892628768,
       "flasherName": "I'm gay and proud of it",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 97279,
@@ -93025,7 +92908,8 @@
       "flasherSteamId": 76561198892628768,
       "flasherName": "I'm gay and proud of it",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 97657,
@@ -93038,7 +92922,8 @@
       "flasherSteamId": 76561198831417913,
       "flasherName": "Master Flevo",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 97657,
@@ -93051,7 +92936,8 @@
       "flasherSteamId": 76561198831417913,
       "flasherName": "Master Flevo",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 98053,
@@ -93064,7 +92950,8 @@
       "flasherSteamId": 76561198161973676,
       "flasherName": "areobatman",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 98053,
@@ -93077,20 +92964,8 @@
       "flasherSteamId": 76561198161973676,
       "flasherName": "areobatman",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 98053,
-      "roundNumber": 15,
-      "duration": 0.99857104,
-      "flashedSteamId": 76561198160035572,
-      "flashedName": "Maucier",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198161973676,
-      "flasherName": "areobatman",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 109678,
@@ -93103,7 +92978,8 @@
       "flasherSteamId": 76561198892628768,
       "flasherName": "I'm gay and proud of it",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 109678,
@@ -93116,7 +92992,8 @@
       "flasherSteamId": 76561198892628768,
       "flasherName": "I'm gay and proud of it",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 112810,
@@ -93129,7 +93006,8 @@
       "flasherSteamId": 76561198161973676,
       "flasherName": "areobatman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 118525,
@@ -93142,7 +93020,8 @@
       "flasherSteamId": 76561198160035572,
       "flasherName": "Maucier",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 118525,
@@ -93155,7 +93034,8 @@
       "flasherSteamId": 76561198160035572,
       "flasherName": "Maucier",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 118525,
@@ -93168,7 +93048,8 @@
       "flasherSteamId": 76561198160035572,
       "flasherName": "Maucier",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 118525,
@@ -93181,7 +93062,8 @@
       "flasherSteamId": 76561198160035572,
       "flasherName": "Maucier",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 118525,
@@ -93194,7 +93076,8 @@
       "flasherSteamId": 76561198160035572,
       "flasherName": "Maucier",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 136465,
@@ -93207,7 +93090,8 @@
       "flasherSteamId": 76561198160035572,
       "flasherName": "Maucier",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 136465,
@@ -93220,7 +93104,8 @@
       "flasherSteamId": 76561198160035572,
       "flasherName": "Maucier",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 142328,
@@ -93233,7 +93118,8 @@
       "flasherSteamId": 76561198831417913,
       "flasherName": "Master Flevo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 146651,
@@ -93246,7 +93132,8 @@
       "flasherSteamId": 76561198273767826,
       "flasherName": "LIION974",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 146651,
@@ -93259,7 +93146,8 @@
       "flasherSteamId": 76561198273767826,
       "flasherName": "LIION974",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 146725,
@@ -93272,7 +93160,8 @@
       "flasherSteamId": 76561198831417913,
       "flasherName": "Master Flevo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 146725,
@@ -93285,7 +93174,8 @@
       "flasherSteamId": 76561198831417913,
       "flasherName": "Master Flevo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 152721,
@@ -93298,7 +93188,8 @@
       "flasherSteamId": 76561198831417913,
       "flasherName": "Master Flevo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     }
   ],
   "grenadePositions": [],

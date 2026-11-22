@@ -278,7 +278,7 @@
       "bombPlantedCount": 1,
       "healthDamage": 2188,
       "armorDamage": 374,
-      "utilityDamage": 174,
+      "utilityDamage": 173,
       "headshotCount": 6,
       "headshotPercent": 35,
       "oneVsOneCount": 9,
@@ -300,7 +300,7 @@
       "averageKillPerRound": 0.56666666,
       "averageDeathPerRound": 0.8,
       "averageDamagePerRound": 72.933334,
-      "utilityDamagePerRound": 5.8,
+      "utilityDamagePerRound": 5.766667,
       "firstKillCount": 4,
       "firstDeathCount": 4,
       "firstTradeDeathCount": 1,
@@ -479,7 +479,7 @@
       "bombPlantedCount": 1,
       "healthDamage": 1928,
       "armorDamage": 295,
-      "utilityDamage": 289,
+      "utilityDamage": 285,
       "headshotCount": 5,
       "headshotPercent": 27,
       "oneVsOneCount": 5,
@@ -501,7 +501,7 @@
       "averageKillPerRound": 0.6,
       "averageDeathPerRound": 0.46666667,
       "averageDamagePerRound": 64.26667,
-      "utilityDamagePerRound": 9.633333,
+      "utilityDamagePerRound": 9.5,
       "firstKillCount": 3,
       "firstDeathCount": 1,
       "firstTradeDeathCount": 0,
@@ -135636,20 +135636,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 64910,
-      "roundNumber": 1,
-      "duration": 3.1955876,
-      "flashedSteamId": 76561198065448360,
-      "flashedName": "story",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198010511021,
-      "flasherName": "gla1ve",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 64910,
@@ -135662,46 +135650,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 64910,
-      "roundNumber": 1,
-      "duration": 4.5651255,
-      "flashedSteamId": 76561197997981170,
-      "flashedName": "MUTiRiS",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198010511021,
-      "flasherName": "gla1ve",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 64910,
-      "roundNumber": 1,
-      "duration": 1.8935747,
-      "flashedSteamId": 76561197987713664,
-      "flashedName": "dev1ce",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198010511021,
-      "flasherName": "gla1ve",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 64910,
-      "roundNumber": 1,
-      "duration": 4.3514,
-      "flashedSteamId": 76561198262460262,
-      "flashedName": "ewjerkz",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198010511021,
-      "flasherName": "gla1ve",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64910,
@@ -135714,7 +135664,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 66892,
@@ -135727,7 +135678,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 74348,
@@ -135740,7 +135692,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 80151,
@@ -135753,7 +135706,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 94051,
@@ -135766,7 +135720,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 94051,
@@ -135779,7 +135734,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 94051,
@@ -135792,7 +135748,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 94648,
@@ -135805,7 +135762,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 94648,
@@ -135818,7 +135776,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 94648,
@@ -135831,7 +135790,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 94648,
@@ -135844,7 +135804,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 95568,
@@ -135857,7 +135818,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 101740,
@@ -135870,7 +135832,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 101820,
@@ -135883,7 +135846,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 101820,
@@ -135896,7 +135860,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 101884,
@@ -135909,7 +135874,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 102055,
@@ -135922,7 +135888,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 102055,
@@ -135935,7 +135902,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 102120,
@@ -135948,7 +135916,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 102120,
@@ -135961,7 +135930,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 102120,
@@ -135974,7 +135944,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 102438,
@@ -135987,7 +135958,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 102438,
@@ -136000,7 +135972,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 102438,
@@ -136013,7 +135986,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 102438,
@@ -136026,7 +136000,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 102493,
@@ -136039,7 +136014,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 102493,
@@ -136052,20 +136028,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 104882,
-      "roundNumber": 4,
-      "duration": 0.96320826,
-      "flashedSteamId": 76561198248953762,
-      "flashedName": "Buzz",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198012987839,
-      "flasherName": "JUSTT",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 104882,
@@ -136078,7 +136042,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 104882,
@@ -136091,20 +136056,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 104898,
-      "roundNumber": 4,
-      "duration": 1.9237394,
-      "flashedSteamId": 76561198248953762,
-      "flashedName": "Buzz",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997981170,
-      "flasherName": "MUTiRiS",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 104898,
@@ -136117,7 +136070,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 104898,
@@ -136130,33 +136084,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 105709,
-      "roundNumber": 4,
-      "duration": 1.002485,
-      "flashedSteamId": 76561198248953762,
-      "flashedName": "Buzz",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198065448360,
-      "flasherName": "story",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 105709,
-      "roundNumber": 4,
-      "duration": 3.9385881,
-      "flashedSteamId": 76561198012987839,
-      "flashedName": "JUSTT",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198065448360,
-      "flasherName": "story",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 105709,
@@ -136169,7 +136098,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 105709,
@@ -136182,7 +136112,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 107389,
@@ -136195,59 +136126,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 107389,
-      "roundNumber": 4,
-      "duration": 1.0422993,
-      "flashedSteamId": 76561198248953762,
-      "flashedName": "Buzz",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997981170,
-      "flasherName": "MUTiRiS",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 107389,
-      "roundNumber": 4,
-      "duration": 1.7174256,
-      "flashedSteamId": 76561198012987839,
-      "flashedName": "JUSTT",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997981170,
-      "flasherName": "MUTiRiS",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 107389,
-      "roundNumber": 4,
-      "duration": 1.0425493,
-      "flashedSteamId": 76561197987713664,
-      "flashedName": "dev1ce",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997981170,
-      "flasherName": "MUTiRiS",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 107389,
-      "roundNumber": 4,
-      "duration": 1.7174256,
-      "flashedSteamId": 76561198262460262,
-      "flashedName": "ewjerkz",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997981170,
-      "flasherName": "MUTiRiS",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 107389,
@@ -136260,7 +136140,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 107389,
@@ -136273,33 +136154,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 108684,
-      "roundNumber": 4,
-      "duration": 3.9979203,
-      "flashedSteamId": 76561198010511021,
-      "flashedName": "gla1ve",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197990682262,
-      "flasherName": "Xyp9x",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 108684,
-      "roundNumber": 4,
-      "duration": 3.9979203,
-      "flashedSteamId": 76561198248953762,
-      "flashedName": "Buzz",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197990682262,
-      "flasherName": "Xyp9x",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 108684,
@@ -136312,20 +136168,8 @@
       "flasherSteamId": 76561197990682262,
       "flasherName": "Xyp9x",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 108684,
-      "roundNumber": 4,
-      "duration": 3.0448053,
-      "flashedSteamId": 76561198012987839,
-      "flashedName": "JUSTT",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197990682262,
-      "flasherName": "Xyp9x",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 108684,
@@ -136338,20 +136182,8 @@
       "flasherSteamId": 76561197990682262,
       "flasherName": "Xyp9x",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 108684,
-      "roundNumber": 4,
-      "duration": 3.0448053,
-      "flashedSteamId": 76561198262460262,
-      "flashedName": "ewjerkz",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197990682262,
-      "flasherName": "Xyp9x",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 108684,
@@ -136364,7 +136196,8 @@
       "flasherSteamId": 76561197990682262,
       "flasherName": "Xyp9x",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 108684,
@@ -136377,7 +136210,8 @@
       "flasherSteamId": 76561197990682262,
       "flasherName": "Xyp9x",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 122984,
@@ -136390,7 +136224,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 122984,
@@ -136403,7 +136238,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 124164,
@@ -136416,7 +136252,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 124164,
@@ -136429,7 +136266,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 124164,
@@ -136442,7 +136280,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 125053,
@@ -136455,7 +136294,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 125053,
@@ -136468,7 +136308,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 139230,
@@ -136481,7 +136322,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 139484,
@@ -136494,7 +136336,8 @@
       "flasherSteamId": 76561197990682262,
       "flasherName": "Xyp9x",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 139817,
@@ -136507,7 +136350,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 141901,
@@ -136520,7 +136364,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 144778,
@@ -136533,7 +136378,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 146582,
@@ -136546,20 +136392,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 146582,
-      "roundNumber": 6,
-      "duration": 4.6765137,
-      "flashedSteamId": 76561198065448360,
-      "flashedName": "story",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197994395491,
-      "flasherName": "roman",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 146582,
@@ -136572,7 +136406,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 146582,
@@ -136585,7 +136420,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 146582,
@@ -136598,7 +136434,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 146582,
@@ -136611,7 +136448,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 149943,
@@ -136624,7 +136462,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 149943,
@@ -136637,33 +136476,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 149943,
-      "roundNumber": 6,
-      "duration": 0.6386085,
-      "flashedSteamId": 76561198065448360,
-      "flashedName": "story",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198028458803,
-      "flasherName": "blameF",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 149943,
-      "roundNumber": 6,
-      "duration": 0.6386158,
-      "flashedSteamId": 76561198012987839,
-      "flashedName": "JUSTT",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198028458803,
-      "flasherName": "blameF",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 149943,
@@ -136676,59 +136490,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 149943,
-      "roundNumber": 6,
-      "duration": 0.84761065,
-      "flashedSteamId": 76561197987713664,
-      "flashedName": "dev1ce",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198028458803,
-      "flasherName": "blameF",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 149943,
-      "roundNumber": 6,
-      "duration": 0.6386085,
-      "flashedSteamId": 76561198262460262,
-      "flashedName": "ewjerkz",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198028458803,
-      "flasherName": "blameF",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 149943,
-      "roundNumber": 6,
-      "duration": 0.84761065,
-      "flashedSteamId": 76561197990682262,
-      "flashedName": "Xyp9x",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198028458803,
-      "flasherName": "blameF",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 149943,
-      "roundNumber": 6,
-      "duration": 0.6386085,
-      "flashedSteamId": 76561197994395491,
-      "flashedName": "roman",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198028458803,
-      "flasherName": "blameF",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 156533,
@@ -136741,7 +136504,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 156533,
@@ -136754,7 +136518,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 156533,
@@ -136767,7 +136532,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 157642,
@@ -136780,7 +136546,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 157694,
@@ -136793,7 +136560,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 157694,
@@ -136806,7 +136574,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 157694,
@@ -136819,7 +136588,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 157694,
@@ -136832,7 +136602,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 159780,
@@ -136845,7 +136616,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 159860,
@@ -136858,7 +136630,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 163336,
@@ -136871,7 +136644,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 163336,
@@ -136884,7 +136658,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 164242,
@@ -136897,7 +136672,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 164242,
@@ -136910,7 +136686,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 164242,
@@ -136923,7 +136700,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 164242,
@@ -136936,20 +136714,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 166925,
-      "roundNumber": 7,
-      "duration": 0.86812514,
-      "flashedSteamId": 76561198248953762,
-      "flashedName": "Buzz",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198262460262,
-      "flasherName": "ewjerkz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 166925,
@@ -136962,20 +136728,8 @@
       "flasherSteamId": 76561198262460262,
       "flasherName": "ewjerkz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 166925,
-      "roundNumber": 7,
-      "duration": 0.86812514,
-      "flashedSteamId": 76561197990682262,
-      "flashedName": "Xyp9x",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198262460262,
-      "flasherName": "ewjerkz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 176409,
@@ -136988,7 +136742,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 180137,
@@ -137001,7 +136756,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 182884,
@@ -137014,7 +136770,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 182884,
@@ -137027,7 +136784,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 183060,
@@ -137040,7 +136798,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 183060,
@@ -137053,7 +136812,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 183474,
@@ -137066,7 +136826,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 183474,
@@ -137079,7 +136840,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 183474,
@@ -137092,7 +136854,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 194261,
@@ -137105,7 +136868,8 @@
       "flasherSteamId": 76561198262460262,
       "flasherName": "ewjerkz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 195964,
@@ -137118,7 +136882,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 195964,
@@ -137131,7 +136896,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 195964,
@@ -137144,7 +136910,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 196127,
@@ -137157,7 +136924,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 196127,
@@ -137170,7 +136938,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 196520,
@@ -137183,7 +136952,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 196520,
@@ -137196,7 +136966,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 196520,
@@ -137209,7 +136980,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 200566,
@@ -137222,7 +136994,8 @@
       "flasherSteamId": 76561198262460262,
       "flasherName": "ewjerkz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 201822,
@@ -137235,33 +137008,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 201822,
-      "roundNumber": 9,
-      "duration": 1.9792453,
-      "flashedSteamId": 76561198012987839,
-      "flashedName": "JUSTT",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198028458803,
-      "flasherName": "blameF",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 201822,
-      "roundNumber": 9,
-      "duration": 1.9792453,
-      "flashedSteamId": 76561197997981170,
-      "flashedName": "MUTiRiS",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198028458803,
-      "flasherName": "blameF",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 201822,
@@ -137274,20 +137022,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 201822,
-      "roundNumber": 9,
-      "duration": 1.9792453,
-      "flashedSteamId": 76561197994395491,
-      "flashedName": "roman",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198028458803,
-      "flasherName": "blameF",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 213675,
@@ -137300,7 +137036,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 216758,
@@ -137313,7 +137050,8 @@
       "flasherSteamId": 76561198262460262,
       "flasherName": "ewjerkz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 216758,
@@ -137326,7 +137064,8 @@
       "flasherSteamId": 76561198262460262,
       "flasherName": "ewjerkz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 230276,
@@ -137339,7 +137078,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 230276,
@@ -137352,7 +137092,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 231275,
@@ -137365,7 +137106,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 231641,
@@ -137378,7 +137120,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 231641,
@@ -137391,20 +137134,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 231823,
-      "roundNumber": 11,
-      "duration": 4.7046885,
-      "flashedSteamId": 76561198012987839,
-      "flashedName": "JUSTT",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198010511021,
-      "flasherName": "gla1ve",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 231823,
@@ -137417,7 +137148,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 231823,
@@ -137430,72 +137162,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 235706,
-      "roundNumber": 11,
-      "duration": 4.0480742,
-      "flashedSteamId": 76561198010511021,
-      "flashedName": "gla1ve",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997981170,
-      "flasherName": "MUTiRiS",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 235706,
-      "roundNumber": 11,
-      "duration": 4.0480742,
-      "flashedSteamId": 76561198248953762,
-      "flashedName": "Buzz",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997981170,
-      "flasherName": "MUTiRiS",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 235706,
-      "roundNumber": 11,
-      "duration": 4.435203,
-      "flashedSteamId": 76561198065448360,
-      "flashedName": "story",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997981170,
-      "flasherName": "MUTiRiS",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 235706,
-      "roundNumber": 11,
-      "duration": 4.435203,
-      "flashedSteamId": 76561198012987839,
-      "flashedName": "JUSTT",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997981170,
-      "flasherName": "MUTiRiS",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 235706,
-      "roundNumber": 11,
-      "duration": 4.435203,
-      "flashedSteamId": 76561198262460262,
-      "flashedName": "ewjerkz",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997981170,
-      "flasherName": "MUTiRiS",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 235706,
@@ -137508,7 +137176,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 241013,
@@ -137521,7 +137190,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 241421,
@@ -137534,7 +137204,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 241421,
@@ -137547,7 +137218,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 241421,
@@ -137560,7 +137232,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 241710,
@@ -137573,7 +137246,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 243412,
@@ -137586,7 +137260,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 245334,
@@ -137599,20 +137274,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 245334,
-      "roundNumber": 12,
-      "duration": 0.59224737,
-      "flashedSteamId": 76561198248953762,
-      "flashedName": "Buzz",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198010511021,
-      "flasherName": "gla1ve",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 245334,
@@ -137625,7 +137288,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 245334,
@@ -137638,20 +137302,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 245334,
-      "roundNumber": 12,
-      "duration": 2.0828848,
-      "flashedSteamId": 76561198262460262,
-      "flashedName": "ewjerkz",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198010511021,
-      "flasherName": "gla1ve",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 254307,
@@ -137664,7 +137316,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 254307,
@@ -137677,7 +137330,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 254566,
@@ -137690,7 +137344,8 @@
       "flasherSteamId": 76561197990682262,
       "flasherName": "Xyp9x",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 254566,
@@ -137703,7 +137358,8 @@
       "flasherSteamId": 76561197990682262,
       "flasherName": "Xyp9x",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 254566,
@@ -137716,7 +137372,8 @@
       "flasherSteamId": 76561197990682262,
       "flasherName": "Xyp9x",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 254647,
@@ -137729,7 +137386,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 254647,
@@ -137742,20 +137400,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 254647,
-      "roundNumber": 13,
-      "duration": 0.65048754,
-      "flashedSteamId": 76561198028458803,
-      "flashedName": "blameF",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198065448360,
-      "flasherName": "story",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 262194,
@@ -137768,20 +137414,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 262194,
-      "roundNumber": 13,
-      "duration": 0.9809195,
-      "flashedSteamId": 76561197987713664,
-      "flashedName": "dev1ce",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197994395491,
-      "flasherName": "roman",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 262194,
@@ -137794,7 +137428,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 262194,
@@ -137807,7 +137442,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 262671,
@@ -137820,46 +137456,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 262671,
-      "roundNumber": 13,
-      "duration": 3.401121,
-      "flashedSteamId": 76561198028458803,
-      "flashedName": "blameF",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197994395491,
-      "flasherName": "roman",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 262671,
-      "roundNumber": 13,
-      "duration": 3.401121,
-      "flashedSteamId": 76561197987713664,
-      "flashedName": "dev1ce",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197994395491,
-      "flasherName": "roman",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 262671,
-      "roundNumber": 13,
-      "duration": 3.401121,
-      "flashedSteamId": 76561197990682262,
-      "flashedName": "Xyp9x",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197994395491,
-      "flasherName": "roman",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 272870,
@@ -137872,7 +137470,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 273473,
@@ -137885,7 +137484,8 @@
       "flasherSteamId": 76561198262460262,
       "flasherName": "ewjerkz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 274183,
@@ -137898,20 +137498,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 274183,
-      "roundNumber": 14,
-      "duration": 2.7184973,
-      "flashedSteamId": 76561197997981170,
-      "flashedName": "MUTiRiS",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197987713664,
-      "flasherName": "dev1ce",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 274183,
@@ -137924,7 +137512,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 274183,
@@ -137937,7 +137526,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 274332,
@@ -137950,7 +137540,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 274370,
@@ -137963,7 +137554,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 274370,
@@ -137976,7 +137568,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 274370,
@@ -137989,7 +137582,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 274370,
@@ -138002,7 +137596,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 274420,
@@ -138015,7 +137610,8 @@
       "flasherSteamId": 76561198262460262,
       "flasherName": "ewjerkz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 274420,
@@ -138028,7 +137624,8 @@
       "flasherSteamId": 76561198262460262,
       "flasherName": "ewjerkz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 274757,
@@ -138041,7 +137638,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 274920,
@@ -138054,7 +137652,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 274920,
@@ -138067,7 +137666,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 282962,
@@ -138080,7 +137680,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 283115,
@@ -138093,7 +137694,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 283115,
@@ -138106,7 +137708,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 283115,
@@ -138119,7 +137722,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 283115,
@@ -138132,7 +137736,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 283115,
@@ -138145,7 +137750,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 283375,
@@ -138158,7 +137764,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 283375,
@@ -138171,7 +137778,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 283375,
@@ -138184,7 +137792,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 284590,
@@ -138197,7 +137806,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 284901,
@@ -138210,7 +137820,8 @@
       "flasherSteamId": 76561197990682262,
       "flasherName": "Xyp9x",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 284901,
@@ -138223,20 +137834,8 @@
       "flasherSteamId": 76561197990682262,
       "flasherName": "Xyp9x",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 286487,
-      "roundNumber": 15,
-      "duration": 0.5765961,
-      "flashedSteamId": 76561198012987839,
-      "flashedName": "JUSTT",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198065448360,
-      "flasherName": "story",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 286487,
@@ -138249,7 +137848,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 301888,
@@ -138262,7 +137862,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 301888,
@@ -138275,7 +137876,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 301888,
@@ -138288,7 +137890,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 301888,
@@ -138301,7 +137904,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 302861,
@@ -138314,7 +137918,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 302861,
@@ -138327,7 +137932,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 302861,
@@ -138340,7 +137946,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 302861,
@@ -138353,7 +137960,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 302861,
@@ -138366,7 +137974,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 302861,
@@ -138379,7 +137988,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 313351,
@@ -138392,7 +138002,8 @@
       "flasherSteamId": 76561198262460262,
       "flasherName": "ewjerkz",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 314325,
@@ -138405,7 +138016,8 @@
       "flasherSteamId": 76561198262460262,
       "flasherName": "ewjerkz",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 326658,
@@ -138418,7 +138030,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 326658,
@@ -138431,7 +138044,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 326918,
@@ -138444,7 +138058,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 327702,
@@ -138457,7 +138072,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 328275,
@@ -138470,7 +138086,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 328275,
@@ -138483,7 +138100,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 328275,
@@ -138496,7 +138114,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 329082,
@@ -138509,7 +138128,8 @@
       "flasherSteamId": 76561198262460262,
       "flasherName": "ewjerkz",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 329082,
@@ -138522,7 +138142,8 @@
       "flasherSteamId": 76561198262460262,
       "flasherName": "ewjerkz",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 330122,
@@ -138535,7 +138156,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 330122,
@@ -138548,7 +138170,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 330122,
@@ -138561,7 +138184,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 331528,
@@ -138574,7 +138198,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 331528,
@@ -138587,7 +138212,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 331796,
@@ -138600,7 +138226,8 @@
       "flasherSteamId": 76561198262460262,
       "flasherName": "ewjerkz",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 334345,
@@ -138613,7 +138240,8 @@
       "flasherSteamId": 76561198248953762,
       "flasherName": "Buzz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 334345,
@@ -138626,7 +138254,8 @@
       "flasherSteamId": 76561198248953762,
       "flasherName": "Buzz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 342966,
@@ -138639,7 +138268,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 342966,
@@ -138652,7 +138282,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 342966,
@@ -138665,20 +138296,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 345165,
-      "roundNumber": 19,
-      "duration": 3.4374678,
-      "flashedSteamId": 76561198248953762,
-      "flashedName": "Buzz",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198065448360,
-      "flasherName": "story",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 345165,
@@ -138691,46 +138310,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 345165,
-      "roundNumber": 19,
-      "duration": 3.4374678,
-      "flashedSteamId": 76561197990682262,
-      "flashedName": "Xyp9x",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198065448360,
-      "flasherName": "story",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 348147,
-      "roundNumber": 19,
-      "duration": 0.9471029,
-      "flashedSteamId": 76561198010511021,
-      "flashedName": "gla1ve",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198028458803,
-      "flasherName": "blameF",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 348147,
-      "roundNumber": 19,
-      "duration": 0.9471029,
-      "flashedSteamId": 76561198248953762,
-      "flashedName": "Buzz",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198028458803,
-      "flasherName": "blameF",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 348147,
@@ -138743,33 +138324,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 348147,
-      "roundNumber": 19,
-      "duration": 0.9471029,
-      "flashedSteamId": 76561197987713664,
-      "flashedName": "dev1ce",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198028458803,
-      "flasherName": "blameF",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 348147,
-      "roundNumber": 19,
-      "duration": 0.9471029,
-      "flashedSteamId": 76561197990682262,
-      "flashedName": "Xyp9x",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198028458803,
-      "flasherName": "blameF",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 360871,
@@ -138782,7 +138338,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 361159,
@@ -138795,7 +138352,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 361669,
@@ -138808,7 +138366,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 362529,
@@ -138821,7 +138380,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 364427,
@@ -138834,7 +138394,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 364427,
@@ -138847,7 +138408,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 364676,
@@ -138860,7 +138422,8 @@
       "flasherSteamId": 76561197990682262,
       "flasherName": "Xyp9x",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 365763,
@@ -138873,7 +138436,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 365763,
@@ -138886,7 +138450,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 367764,
@@ -138899,7 +138464,8 @@
       "flasherSteamId": 76561198248953762,
       "flasherName": "Buzz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 367764,
@@ -138912,7 +138478,8 @@
       "flasherSteamId": 76561198248953762,
       "flasherName": "Buzz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 367764,
@@ -138925,7 +138492,8 @@
       "flasherSteamId": 76561198248953762,
       "flasherName": "Buzz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 384444,
@@ -138938,7 +138506,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 385248,
@@ -138951,7 +138520,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 385248,
@@ -138964,7 +138534,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 385248,
@@ -138977,7 +138548,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 385430,
@@ -138990,7 +138562,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 385430,
@@ -139003,7 +138576,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 386355,
@@ -139016,7 +138590,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 386355,
@@ -139029,7 +138604,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 386355,
@@ -139042,7 +138618,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 386355,
@@ -139055,7 +138632,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 386355,
@@ -139068,7 +138646,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 386377,
@@ -139081,7 +138660,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 386377,
@@ -139094,7 +138674,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 388167,
@@ -139107,7 +138688,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 399247,
@@ -139120,7 +138702,8 @@
       "flasherSteamId": 76561198248953762,
       "flasherName": "Buzz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 401531,
@@ -139133,7 +138716,8 @@
       "flasherSteamId": 76561198262460262,
       "flasherName": "ewjerkz",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 401531,
@@ -139146,7 +138730,8 @@
       "flasherSteamId": 76561198262460262,
       "flasherName": "ewjerkz",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 403106,
@@ -139159,7 +138744,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 403115,
@@ -139172,7 +138758,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 405466,
@@ -139185,7 +138772,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 405466,
@@ -139198,7 +138786,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 405466,
@@ -139211,7 +138800,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 409383,
@@ -139224,7 +138814,8 @@
       "flasherSteamId": 76561198248953762,
       "flasherName": "Buzz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 409383,
@@ -139237,7 +138828,8 @@
       "flasherSteamId": 76561198248953762,
       "flasherName": "Buzz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 409404,
@@ -139250,7 +138842,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 409404,
@@ -139263,7 +138856,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 409404,
@@ -139276,7 +138870,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 415853,
@@ -139289,7 +138884,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 417456,
@@ -139302,7 +138898,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 426667,
@@ -139315,7 +138912,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 427205,
@@ -139328,7 +138926,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 429179,
@@ -139341,7 +138940,8 @@
       "flasherSteamId": 76561198248953762,
       "flasherName": "Buzz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 435550,
@@ -139354,7 +138954,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 435622,
@@ -139367,7 +138968,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 435622,
@@ -139380,7 +138982,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 435622,
@@ -139393,7 +138996,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 447688,
@@ -139406,7 +139010,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 447688,
@@ -139419,7 +139024,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 448108,
@@ -139432,7 +139038,8 @@
       "flasherSteamId": 76561198262460262,
       "flasherName": "ewjerkz",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 448108,
@@ -139445,7 +139052,8 @@
       "flasherSteamId": 76561198262460262,
       "flasherName": "ewjerkz",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 450118,
@@ -139458,20 +139066,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 450118,
-      "roundNumber": 25,
-      "duration": 1.739997,
-      "flashedSteamId": 76561198012987839,
-      "flashedName": "JUSTT",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198028458803,
-      "flasherName": "blameF",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 450118,
@@ -139484,7 +139080,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 450118,
@@ -139497,20 +139094,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 450556,
-      "roundNumber": 25,
-      "duration": 4.611014,
-      "flashedSteamId": 76561198010511021,
-      "flashedName": "gla1ve",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198065448360,
-      "flasherName": "story",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 450556,
@@ -139523,7 +139108,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 450556,
@@ -139536,7 +139122,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 450556,
@@ -139549,7 +139136,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 452266,
@@ -139562,7 +139150,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 452266,
@@ -139575,20 +139164,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 452266,
-      "roundNumber": 25,
-      "duration": 4.403601,
-      "flashedSteamId": 76561198012987839,
-      "flashedName": "JUSTT",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197994395491,
-      "flasherName": "roman",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 452266,
@@ -139601,7 +139178,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 452266,
@@ -139614,20 +139192,8 @@
       "flasherSteamId": 76561197994395491,
       "flasherName": "roman",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 452266,
-      "roundNumber": 25,
-      "duration": 4.4018593,
-      "flashedSteamId": 76561198262460262,
-      "flashedName": "ewjerkz",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197994395491,
-      "flasherName": "roman",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 452922,
@@ -139640,20 +139206,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 452922,
-      "roundNumber": 25,
-      "duration": 3.581313,
-      "flashedSteamId": 76561198012987839,
-      "flashedName": "JUSTT",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997981170,
-      "flasherName": "MUTiRiS",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 452922,
@@ -139666,7 +139220,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 452922,
@@ -139679,33 +139234,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 452922,
-      "roundNumber": 25,
-      "duration": 3.5803938,
-      "flashedSteamId": 76561198262460262,
-      "flashedName": "ewjerkz",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997981170,
-      "flasherName": "MUTiRiS",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 454141,
-      "roundNumber": 25,
-      "duration": 0.95847464,
-      "flashedSteamId": 76561198010511021,
-      "flashedName": "gla1ve",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197990682262,
-      "flasherName": "Xyp9x",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 454141,
@@ -139718,7 +139248,8 @@
       "flasherSteamId": 76561197990682262,
       "flasherName": "Xyp9x",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 454141,
@@ -139731,20 +139262,8 @@
       "flasherSteamId": 76561197990682262,
       "flasherName": "Xyp9x",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 454141,
-      "roundNumber": 25,
-      "duration": 4.4028378,
-      "flashedSteamId": 76561198012987839,
-      "flashedName": "JUSTT",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197990682262,
-      "flasherName": "Xyp9x",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 454141,
@@ -139757,33 +139276,8 @@
       "flasherSteamId": 76561197990682262,
       "flasherName": "Xyp9x",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 454141,
-      "roundNumber": 25,
-      "duration": 0.95847464,
-      "flashedSteamId": 76561197987713664,
-      "flashedName": "dev1ce",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197990682262,
-      "flasherName": "Xyp9x",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 454141,
-      "roundNumber": 25,
-      "duration": 3.3654594,
-      "flashedSteamId": 76561198262460262,
-      "flashedName": "ewjerkz",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197990682262,
-      "flasherName": "Xyp9x",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 459906,
@@ -139796,7 +139290,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 459906,
@@ -139809,7 +139304,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 460167,
@@ -139822,7 +139318,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 460167,
@@ -139835,7 +139332,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 460167,
@@ -139848,7 +139346,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 460167,
@@ -139861,7 +139360,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 463702,
@@ -139874,7 +139374,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 463702,
@@ -139887,7 +139388,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 463702,
@@ -139900,7 +139402,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 463702,
@@ -139913,7 +139416,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 464431,
@@ -139926,7 +139430,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 464431,
@@ -139939,7 +139444,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 464431,
@@ -139952,7 +139458,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 470655,
@@ -139965,7 +139472,8 @@
       "flasherSteamId": 76561197990682262,
       "flasherName": "Xyp9x",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 470655,
@@ -139978,7 +139486,8 @@
       "flasherSteamId": 76561197990682262,
       "flasherName": "Xyp9x",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 470796,
@@ -139991,7 +139500,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 470796,
@@ -140004,7 +139514,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 470796,
@@ -140017,7 +139528,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 470796,
@@ -140030,7 +139542,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 470796,
@@ -140043,20 +139556,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 470796,
-      "roundNumber": 26,
-      "duration": 0.9897851,
-      "flashedSteamId": 76561197987713664,
-      "flashedName": "dev1ce",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198010511021,
-      "flasherName": "gla1ve",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 470796,
@@ -140069,7 +139570,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 471229,
@@ -140082,7 +139584,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 477816,
@@ -140095,7 +139598,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 478897,
@@ -140108,7 +139612,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 478897,
@@ -140121,7 +139626,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 480996,
@@ -140134,7 +139640,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 480996,
@@ -140147,7 +139654,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 480996,
@@ -140160,7 +139668,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 483999,
@@ -140173,7 +139682,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 485507,
@@ -140186,7 +139696,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 485507,
@@ -140199,7 +139710,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 485507,
@@ -140212,7 +139724,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 485835,
@@ -140225,7 +139738,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 485931,
@@ -140238,7 +139752,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 485931,
@@ -140251,7 +139766,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 485931,
@@ -140264,7 +139780,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 485931,
@@ -140277,7 +139794,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 485931,
@@ -140290,7 +139808,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 485972,
@@ -140303,7 +139822,8 @@
       "flasherSteamId": 76561198248953762,
       "flasherName": "Buzz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 486151,
@@ -140316,7 +139836,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 486151,
@@ -140329,7 +139850,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 497146,
@@ -140342,7 +139864,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 497146,
@@ -140355,7 +139878,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 498566,
@@ -140368,7 +139892,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 498566,
@@ -140381,7 +139906,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 499950,
@@ -140394,7 +139920,8 @@
       "flasherSteamId": 76561198262460262,
       "flasherName": "ewjerkz",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 499950,
@@ -140407,7 +139934,8 @@
       "flasherSteamId": 76561198262460262,
       "flasherName": "ewjerkz",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 501141,
@@ -140420,7 +139948,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 501157,
@@ -140433,7 +139962,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 501157,
@@ -140446,7 +139976,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 501157,
@@ -140459,7 +139990,8 @@
       "flasherSteamId": 76561198012987839,
       "flasherName": "JUSTT",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 504507,
@@ -140472,20 +140004,8 @@
       "flasherSteamId": 76561197990682262,
       "flasherName": "Xyp9x",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 504507,
-      "roundNumber": 28,
-      "duration": 0.92187196,
-      "flashedSteamId": 76561198012987839,
-      "flashedName": "JUSTT",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197990682262,
-      "flasherName": "Xyp9x",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 505756,
@@ -140498,20 +140018,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 505756,
-      "roundNumber": 28,
-      "duration": 0.6275398,
-      "flashedSteamId": 76561198028458803,
-      "flashedName": "blameF",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198010511021,
-      "flasherName": "gla1ve",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 517781,
@@ -140524,7 +140032,8 @@
       "flasherSteamId": 76561197997981170,
       "flasherName": "MUTiRiS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 519257,
@@ -140537,7 +140046,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 519257,
@@ -140550,20 +140060,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 519257,
-      "roundNumber": 29,
-      "duration": 0.8416551,
-      "flashedSteamId": 76561197990682262,
-      "flashedName": "Xyp9x",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198028458803,
-      "flasherName": "blameF",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 519306,
@@ -140576,7 +140074,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 519306,
@@ -140589,20 +140088,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 519306,
-      "roundNumber": 29,
-      "duration": 0.45884258,
-      "flashedSteamId": 76561197990682262,
-      "flashedName": "Xyp9x",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197987713664,
-      "flasherName": "dev1ce",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 520181,
@@ -140615,7 +140102,8 @@
       "flasherSteamId": 76561198248953762,
       "flasherName": "Buzz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 520181,
@@ -140628,20 +140116,8 @@
       "flasherSteamId": 76561198248953762,
       "flasherName": "Buzz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 520181,
-      "roundNumber": 29,
-      "duration": 1.6291356,
-      "flashedSteamId": 76561197994395491,
-      "flashedName": "roman",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198248953762,
-      "flasherName": "Buzz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 520355,
@@ -140654,7 +140130,8 @@
       "flasherSteamId": 76561198248953762,
       "flasherName": "Buzz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 520355,
@@ -140667,7 +140144,8 @@
       "flasherSteamId": 76561198248953762,
       "flasherName": "Buzz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 520355,
@@ -140680,59 +140158,8 @@
       "flasherSteamId": 76561198248953762,
       "flasherName": "Buzz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 520355,
-      "roundNumber": 29,
-      "duration": 0.14947192,
-      "flashedSteamId": 76561197990682262,
-      "flashedName": "Xyp9x",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198248953762,
-      "flasherName": "Buzz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 520355,
-      "roundNumber": 29,
-      "duration": 4.2871413,
-      "flashedSteamId": 76561197994395491,
-      "flashedName": "roman",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198248953762,
-      "flasherName": "Buzz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 520976,
-      "roundNumber": 29,
-      "duration": 0.8744401,
-      "flashedSteamId": 76561198010511021,
-      "flashedName": "gla1ve",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197987713664,
-      "flasherName": "dev1ce",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 520976,
-      "roundNumber": 29,
-      "duration": 0.8744401,
-      "flashedSteamId": 76561198248953762,
-      "flashedName": "Buzz",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197987713664,
-      "flasherName": "dev1ce",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 520976,
@@ -140745,7 +140172,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 520976,
@@ -140758,7 +140186,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 520976,
@@ -140771,33 +140200,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 520976,
-      "roundNumber": 29,
-      "duration": 0.8744401,
-      "flashedSteamId": 76561197990682262,
-      "flashedName": "Xyp9x",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197987713664,
-      "flasherName": "dev1ce",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 520976,
-      "roundNumber": 29,
-      "duration": 3.0746522,
-      "flashedSteamId": 76561197994395491,
-      "flashedName": "roman",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197987713664,
-      "flasherName": "dev1ce",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 525790,
@@ -140810,7 +140214,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 525790,
@@ -140823,7 +140228,8 @@
       "flasherSteamId": 76561198028458803,
       "flasherName": "blameF",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 526330,
@@ -140836,7 +140242,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 526330,
@@ -140849,7 +140256,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 529716,
@@ -140862,7 +140270,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 529716,
@@ -140875,7 +140284,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 529897,
@@ -140888,7 +140298,8 @@
       "flasherSteamId": 76561198010511021,
       "flasherName": "gla1ve",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 529948,
@@ -140901,7 +140312,8 @@
       "flasherSteamId": 76561198248953762,
       "flasherName": "Buzz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 529982,
@@ -140914,7 +140326,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 529982,
@@ -140927,7 +140340,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 529982,
@@ -140940,7 +140354,8 @@
       "flasherSteamId": 76561197987713664,
       "flasherName": "dev1ce",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 533080,
@@ -140953,46 +140368,8 @@
       "flasherSteamId": 76561198248953762,
       "flasherName": "Buzz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 533080,
-      "roundNumber": 30,
-      "duration": 3.9723935,
-      "flashedSteamId": 76561198012987839,
-      "flashedName": "JUSTT",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198248953762,
-      "flasherName": "Buzz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 533080,
-      "roundNumber": 30,
-      "duration": 3.9723935,
-      "flashedSteamId": 76561197997981170,
-      "flashedName": "MUTiRiS",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198248953762,
-      "flasherName": "Buzz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 533080,
-      "roundNumber": 30,
-      "duration": 3.9720857,
-      "flashedSteamId": 76561198262460262,
-      "flashedName": "ewjerkz",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198248953762,
-      "flasherName": "Buzz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 533080,
@@ -141005,7 +140382,8 @@
       "flasherSteamId": 76561198248953762,
       "flasherName": "Buzz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 534216,
@@ -141018,7 +140396,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 534885,
@@ -141031,46 +140410,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 534885,
-      "roundNumber": 30,
-      "duration": 0.9196313,
-      "flashedSteamId": 76561198012987839,
-      "flashedName": "JUSTT",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198065448360,
-      "flasherName": "story",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 534885,
-      "roundNumber": 30,
-      "duration": 0.9196313,
-      "flashedSteamId": 76561197997981170,
-      "flashedName": "MUTiRiS",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198065448360,
-      "flasherName": "story",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 534885,
-      "roundNumber": 30,
-      "duration": 2.8991396,
-      "flashedSteamId": 76561198028458803,
-      "flashedName": "blameF",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198065448360,
-      "flasherName": "story",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 534885,
@@ -141083,20 +140424,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 534885,
-      "roundNumber": 30,
-      "duration": 0.9196313,
-      "flashedSteamId": 76561198262460262,
-      "flashedName": "ewjerkz",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198065448360,
-      "flasherName": "story",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 534885,
@@ -141109,7 +140438,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 534885,
@@ -141122,7 +140452,8 @@
       "flasherSteamId": 76561198065448360,
       "flasherName": "story",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     }
   ],
   "grenadePositions": [],

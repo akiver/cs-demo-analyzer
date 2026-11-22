@@ -562,7 +562,7 @@ func (player *Player) ArmorDamage() int {
 func (player *Player) UtilityDamage() int {
 	var utilityDamage int
 	for _, damage := range player.match.Damages {
-		if damage.isValidPlayerDamageEvent(player) && damage.IsGrenadeWeapon() {
+		if damage.isValidPlayerDamageEvent(player) && damage.isUtilityDamage {
 			utilityDamage += damage.HealthDamage
 		}
 	}

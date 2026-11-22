@@ -412,7 +412,7 @@
       "bombPlantedCount": 1,
       "healthDamage": 1231,
       "armorDamage": 168,
-      "utilityDamage": 2,
+      "utilityDamage": 0,
       "headshotCount": 4,
       "headshotPercent": 40,
       "oneVsOneCount": 6,
@@ -434,7 +434,7 @@
       "averageKillPerRound": 0.5263158,
       "averageDeathPerRound": 0.8947368,
       "averageDamagePerRound": 64.789474,
-      "utilityDamagePerRound": 0.10526316,
+      "utilityDamagePerRound": 0,
       "firstKillCount": 2,
       "firstDeathCount": 2,
       "firstTradeDeathCount": 0,
@@ -79548,7 +79548,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 37932,
@@ -79561,7 +79562,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 40311,
@@ -79574,7 +79576,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 41926,
@@ -79587,20 +79590,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 41926,
-      "roundNumber": 2,
-      "duration": 0.7854481,
-      "flashedSteamId": 76561197988627193,
-      "flashedName": "olofmeister",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197989430253,
-      "flasherName": "karrigan",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 45449,
@@ -79613,7 +79604,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 53075,
@@ -79626,7 +79618,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64165,
@@ -79639,7 +79632,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64165,
@@ -79652,20 +79646,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 64165,
-      "roundNumber": 4,
-      "duration": 1.778183,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197972331023,
-      "flasherName": "GuardiaN",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64165,
@@ -79678,7 +79660,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64378,
@@ -79691,7 +79674,8 @@
       "flasherSteamId": 76561197988627193,
       "flasherName": "olofmeister",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64378,
@@ -79704,7 +79688,8 @@
       "flasherSteamId": 76561197988627193,
       "flasherName": "olofmeister",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64378,
@@ -79717,7 +79702,8 @@
       "flasherSteamId": 76561197988627193,
       "flasherName": "olofmeister",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64378,
@@ -79730,20 +79716,8 @@
       "flasherSteamId": 76561197988627193,
       "flasherName": "olofmeister",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 64378,
-      "roundNumber": 4,
-      "duration": 2.0937846,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197988627193,
-      "flasherName": "olofmeister",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64378,
@@ -79756,7 +79730,8 @@
       "flasherSteamId": 76561197988627193,
       "flasherName": "olofmeister",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64504,
@@ -79769,7 +79744,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64504,
@@ -79782,7 +79758,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64504,
@@ -79795,7 +79772,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 64504,
@@ -79808,33 +79786,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 64504,
-      "roundNumber": 4,
-      "duration": 5.048361,
-      "flashedSteamId": 76561197989143951,
-      "flashedName": "@michau9_",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197972331023,
-      "flasherName": "GuardiaN",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 64504,
-      "roundNumber": 4,
-      "duration": 5.0240827,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197972331023,
-      "flasherName": "GuardiaN",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64504,
@@ -79847,7 +79800,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64649,
@@ -79860,7 +79814,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64649,
@@ -79873,7 +79828,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64649,
@@ -79886,7 +79842,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64649,
@@ -79899,7 +79856,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64649,
@@ -79912,46 +79870,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 64649,
-      "roundNumber": 4,
-      "duration": 3.9155483,
-      "flashedSteamId": 76561197989143951,
-      "flashedName": "@michau9_",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198041683378,
-      "flasherName": "NiKo",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 64649,
-      "roundNumber": 4,
-      "duration": 3.8912702,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198041683378,
-      "flasherName": "NiKo",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 64649,
-      "roundNumber": 4,
-      "duration": 3.9169319,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198041683378,
-      "flasherName": "NiKo",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64649,
@@ -79964,7 +79884,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64816,
@@ -79977,7 +79898,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64816,
@@ -79990,7 +79912,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64816,
@@ -80003,33 +79926,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 64816,
-      "roundNumber": 4,
-      "duration": 4.3295937,
-      "flashedSteamId": 76561197989143951,
-      "flashedName": "@michau9_",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984560929,
-      "flasherName": "friberg",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 64816,
-      "roundNumber": 4,
-      "duration": 4.3211603,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984560929,
-      "flasherName": "friberg",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 64816,
@@ -80042,7 +79940,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 65434,
@@ -80055,7 +79954,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 65434,
@@ -80068,7 +79968,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 65434,
@@ -80081,7 +79982,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 65434,
@@ -80094,7 +79996,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 65434,
@@ -80107,46 +80010,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 65434,
-      "roundNumber": 4,
-      "duration": 4.234787,
-      "flashedSteamId": 76561197989143951,
-      "flashedName": "@michau9_",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197963682761,
-      "flasherName": "HS",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 65434,
-      "roundNumber": 4,
-      "duration": 4.2273016,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197963682761,
-      "flasherName": "HS",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 65434,
-      "roundNumber": 4,
-      "duration": 1.8220196,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197963682761,
-      "flasherName": "HS",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 65434,
@@ -80159,7 +80024,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 65613,
@@ -80172,7 +80038,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 65613,
@@ -80185,7 +80052,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 65613,
@@ -80198,7 +80066,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 65613,
@@ -80211,7 +80080,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 65613,
@@ -80224,46 +80094,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 65613,
-      "roundNumber": 4,
-      "duration": 4.0617294,
-      "flashedSteamId": 76561197989143951,
-      "flashedName": "@michau9_",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197963682761,
-      "flasherName": "HS",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 65613,
-      "roundNumber": 4,
-      "duration": 2.828864,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197963682761,
-      "flasherName": "HS",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 65613,
-      "roundNumber": 4,
-      "duration": 4.269825,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197963682761,
-      "flasherName": "HS",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 65613,
@@ -80276,7 +80108,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 66842,
@@ -80289,7 +80122,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "Magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 66842,
@@ -80302,7 +80136,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "Magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 71641,
@@ -80315,7 +80150,8 @@
       "flasherSteamId": 76561197961610974,
       "flasherName": "allu",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 71641,
@@ -80328,20 +80164,8 @@
       "flasherSteamId": 76561197961610974,
       "flasherName": "allu",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 71641,
-      "roundNumber": 5,
-      "duration": 0.12118768,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961610974,
-      "flasherName": "allu",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 72247,
@@ -80354,7 +80178,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 72247,
@@ -80367,20 +80192,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 72247,
-      "roundNumber": 5,
-      "duration": 3.0733113,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197972331023,
-      "flasherName": "GuardiaN",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 72247,
@@ -80393,20 +80206,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 72247,
-      "roundNumber": 5,
-      "duration": 4.486367,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197972331023,
-      "flasherName": "GuardiaN",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 72247,
@@ -80419,7 +80220,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 72678,
@@ -80432,33 +80234,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 72678,
-      "roundNumber": 5,
-      "duration": 1.1269922,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197989430253,
-      "flasherName": "karrigan",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 74194,
-      "roundNumber": 5,
-      "duration": 0.15888244,
-      "flashedSteamId": 76561197972331023,
-      "flashedName": "GuardiaN",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 74194,
@@ -80471,7 +80248,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 74194,
@@ -80484,20 +80262,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 74194,
-      "roundNumber": 5,
-      "duration": 4.293747,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 74194,
@@ -80510,33 +80276,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 74194,
-      "roundNumber": 5,
-      "duration": 4.293747,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 74297,
-      "roundNumber": 5,
-      "duration": 0.8847494,
-      "flashedSteamId": 76561197972331023,
-      "flashedName": "GuardiaN",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197989430253,
-      "flasherName": "karrigan",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 74297,
@@ -80549,7 +80290,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 74297,
@@ -80562,7 +80304,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 74297,
@@ -80575,20 +80318,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 74297,
-      "roundNumber": 5,
-      "duration": 3.4890594,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197989430253,
-      "flasherName": "karrigan",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 74297,
@@ -80601,20 +80332,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 74297,
-      "roundNumber": 5,
-      "duration": 3.7574596,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197989430253,
-      "flasherName": "karrigan",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 74297,
@@ -80627,20 +80346,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 74401,
-      "roundNumber": 5,
-      "duration": 3.5486667,
-      "flashedSteamId": 76561197972331023,
-      "flashedName": "GuardiaN",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197987489852,
-      "flasherName": "Mixwell",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 74401,
@@ -80653,7 +80360,8 @@
       "flasherSteamId": 76561197987489852,
       "flasherName": "Mixwell",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 74401,
@@ -80666,7 +80374,8 @@
       "flasherSteamId": 76561197987489852,
       "flasherName": "Mixwell",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 74401,
@@ -80679,7 +80388,8 @@
       "flasherSteamId": 76561197987489852,
       "flasherName": "Mixwell",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 80098,
@@ -80692,7 +80402,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 87029,
@@ -80705,7 +80416,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 87029,
@@ -80718,7 +80430,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 87029,
@@ -80731,20 +80444,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 87029,
-      "roundNumber": 6,
-      "duration": 3.8170526,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197963682761,
-      "flasherName": "HS",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 87029,
@@ -80757,7 +80458,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 97513,
@@ -80770,7 +80472,8 @@
       "flasherSteamId": 76561197988627193,
       "flasherName": "olofmeister",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 97513,
@@ -80783,20 +80486,8 @@
       "flasherSteamId": 76561197988627193,
       "flasherName": "olofmeister",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 97513,
-      "roundNumber": 7,
-      "duration": 0.8477196,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197988627193,
-      "flasherName": "olofmeister",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 98171,
@@ -80809,7 +80500,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 99007,
@@ -80822,7 +80514,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 111285,
@@ -80835,20 +80528,8 @@
       "flasherSteamId": 76561197988627193,
       "flasherName": "olofmeister",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 112168,
-      "roundNumber": 8,
-      "duration": 2.8320844,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198041683378,
-      "flasherName": "NiKo",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 112168,
@@ -80861,7 +80542,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 112168,
@@ -80874,7 +80556,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 114242,
@@ -80887,7 +80570,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 117771,
@@ -80900,7 +80584,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 117771,
@@ -80913,7 +80598,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 117771,
@@ -80926,7 +80612,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 123035,
@@ -80939,7 +80626,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 123035,
@@ -80952,7 +80640,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 134652,
@@ -80965,7 +80654,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 134652,
@@ -80978,7 +80668,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 134679,
@@ -80991,20 +80682,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 134679,
-      "roundNumber": 9,
-      "duration": 0.9701562,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197989430253,
-      "flasherName": "karrigan",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 134726,
@@ -81017,7 +80696,8 @@
       "flasherSteamId": 76561197987489852,
       "flasherName": "Mixwell",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 134726,
@@ -81030,20 +80710,8 @@
       "flasherSteamId": 76561197987489852,
       "flasherName": "Mixwell",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 134726,
-      "roundNumber": 9,
-      "duration": 3.5894961,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197987489852,
-      "flasherName": "Mixwell",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 134789,
@@ -81056,20 +80724,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 134789,
-      "roundNumber": 9,
-      "duration": 3.5147173,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197963682761,
-      "flasherName": "HS",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 134861,
@@ -81082,7 +80738,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 134861,
@@ -81095,20 +80752,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 134861,
-      "roundNumber": 9,
-      "duration": 3.177551,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197989430253,
-      "flasherName": "karrigan",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 134861,
@@ -81121,20 +80766,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 134861,
-      "roundNumber": 9,
-      "duration": 0.29547295,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197989430253,
-      "flasherName": "karrigan",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 134861,
@@ -81147,7 +80780,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 135019,
@@ -81160,20 +80794,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 135019,
-      "roundNumber": 9,
-      "duration": 1.943176,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198041683378,
-      "flasherName": "NiKo",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 136467,
@@ -81186,20 +80808,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 136467,
-      "roundNumber": 9,
-      "duration": 0.33038417,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 136467,
@@ -81212,46 +80822,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 136467,
-      "roundNumber": 9,
-      "duration": 0.6131567,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 144302,
-      "roundNumber": 9,
-      "duration": 0.9048425,
-      "flashedSteamId": 76561198041683378,
-      "flashedName": "NiKo",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 144302,
-      "roundNumber": 9,
-      "duration": 0.9048425,
-      "flashedSteamId": 76561197972331023,
-      "flashedName": "GuardiaN",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 144302,
@@ -81264,20 +80836,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 144302,
-      "roundNumber": 9,
-      "duration": 2.9764514,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 156145,
@@ -81290,7 +80850,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 158388,
@@ -81303,7 +80864,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 158388,
@@ -81316,20 +80878,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 166077,
-      "roundNumber": 11,
-      "duration": 0.54850835,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198041683378,
-      "flasherName": "NiKo",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 166077,
@@ -81342,7 +80892,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 166541,
@@ -81355,7 +80906,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 166541,
@@ -81368,33 +80920,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 166541,
-      "roundNumber": 11,
-      "duration": 2.783938,
-      "flashedSteamId": 76561197989143951,
-      "flashedName": "@michau9_",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197989430253,
-      "flasherName": "karrigan",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 166541,
-      "roundNumber": 11,
-      "duration": 2.786382,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197989430253,
-      "flasherName": "karrigan",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 169465,
@@ -81407,20 +80934,8 @@
       "flasherSteamId": 76561197961610974,
       "flasherName": "allu",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 169465,
-      "roundNumber": 11,
-      "duration": 3.7430663,
-      "flashedSteamId": 76561197989430253,
-      "flashedName": "karrigan",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961610974,
-      "flasherName": "allu",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 169465,
@@ -81433,7 +80948,8 @@
       "flasherSteamId": 76561197961610974,
       "flasherName": "allu",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 169465,
@@ -81446,20 +80962,8 @@
       "flasherSteamId": 76561197961610974,
       "flasherName": "allu",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 169465,
-      "roundNumber": 11,
-      "duration": 3.7457168,
-      "flashedSteamId": 76561197989143951,
-      "flashedName": "@michau9_",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961610974,
-      "flasherName": "allu",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 171341,
@@ -81472,7 +80976,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 171341,
@@ -81485,7 +80990,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 171341,
@@ -81498,20 +81004,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 171341,
-      "roundNumber": 11,
-      "duration": 0.7014336,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198041683378,
-      "flasherName": "NiKo",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 172268,
@@ -81524,20 +81018,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 173825,
-      "roundNumber": 11,
-      "duration": 4.844388,
-      "flashedSteamId": 76561197987489852,
-      "flashedName": "Mixwell",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 173825,
@@ -81550,33 +81032,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 173825,
-      "roundNumber": 11,
-      "duration": 4.3733854,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 173825,
-      "roundNumber": 11,
-      "duration": 0.6742123,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 173825,
@@ -81589,7 +81046,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 174294,
@@ -81602,7 +81060,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "Magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 174815,
@@ -81615,20 +81074,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 174815,
-      "roundNumber": 11,
-      "duration": 3.002923,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 175343,
@@ -81641,33 +81088,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 175343,
-      "roundNumber": 11,
-      "duration": 0.61557436,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984560929,
-      "flasherName": "friberg",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 175343,
-      "roundNumber": 11,
-      "duration": 1.8371855,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984560929,
-      "flasherName": "friberg",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 175343,
@@ -81680,20 +81102,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 178325,
-      "roundNumber": 11,
-      "duration": 0.67268175,
-      "flashedSteamId": 76561198041683378,
-      "flashedName": "NiKo",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197988627193,
-      "flasherName": "olofmeister",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 178325,
@@ -81706,33 +81116,8 @@
       "flasherSteamId": 76561197988627193,
       "flasherName": "olofmeister",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 178325,
-      "roundNumber": 11,
-      "duration": 0.52141047,
-      "flashedSteamId": 76561197989143951,
-      "flashedName": "@michau9_",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197988627193,
-      "flasherName": "olofmeister",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 178325,
-      "roundNumber": 11,
-      "duration": 0.93385726,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197988627193,
-      "flasherName": "olofmeister",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 178325,
@@ -81745,46 +81130,8 @@
       "flasherSteamId": 76561197988627193,
       "flasherName": "olofmeister",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 178658,
-      "roundNumber": 11,
-      "duration": 0.8105766,
-      "flashedSteamId": 76561197987489852,
-      "flashedName": "Mixwell",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197988627193,
-      "flasherName": "olofmeister",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 178658,
-      "roundNumber": 11,
-      "duration": 0.8104982,
-      "flashedSteamId": 76561197963682761,
-      "flashedName": "HS",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197988627193,
-      "flasherName": "olofmeister",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 178658,
-      "roundNumber": 11,
-      "duration": 0.8105766,
-      "flashedSteamId": 76561197983956651,
-      "flashedName": "Magisk",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197988627193,
-      "flasherName": "olofmeister",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 178658,
@@ -81797,46 +81144,8 @@
       "flasherSteamId": 76561197988627193,
       "flasherName": "olofmeister",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 178658,
-      "roundNumber": 11,
-      "duration": 0.8105766,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197988627193,
-      "flasherName": "olofmeister",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 178658,
-      "roundNumber": 11,
-      "duration": 0.8105766,
-      "flashedSteamId": 76561197984560929,
-      "flashedName": "friberg",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197988627193,
-      "flasherName": "olofmeister",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 178695,
-      "roundNumber": 11,
-      "duration": 4.511309,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961610974,
-      "flasherName": "allu",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 178695,
@@ -81849,7 +81158,8 @@
       "flasherSteamId": 76561197961610974,
       "flasherName": "allu",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 186033,
@@ -81862,7 +81172,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 186121,
@@ -81875,7 +81186,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 186121,
@@ -81888,7 +81200,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 186121,
@@ -81901,7 +81214,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 186398,
@@ -81914,7 +81228,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 186398,
@@ -81927,7 +81242,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 186441,
@@ -81940,20 +81256,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 186441,
-      "roundNumber": 12,
-      "duration": 4.7941313,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 191994,
@@ -81966,20 +81270,8 @@
       "flasherSteamId": 76561197961610974,
       "flasherName": "allu",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 191994,
-      "roundNumber": 12,
-      "duration": 0.5430893,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961610974,
-      "flasherName": "allu",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 191994,
@@ -81992,7 +81284,8 @@
       "flasherSteamId": 76561197961610974,
       "flasherName": "allu",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 191994,
@@ -82005,7 +81298,8 @@
       "flasherSteamId": 76561197961610974,
       "flasherName": "allu",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 197543,
@@ -82018,20 +81312,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 197543,
-      "roundNumber": 13,
-      "duration": 3.9746919,
-      "flashedSteamId": 76561197989143951,
-      "flashedName": "@michau9_",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198041683378,
-      "flasherName": "NiKo",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 197730,
@@ -82044,7 +81326,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 197730,
@@ -82057,7 +81340,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 197730,
@@ -82070,7 +81354,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 197903,
@@ -82083,7 +81368,8 @@
       "flasherSteamId": 76561197961610974,
       "flasherName": "allu",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 198525,
@@ -82096,20 +81382,8 @@
       "flasherSteamId": 76561197987489852,
       "flasherName": "Mixwell",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 198525,
-      "roundNumber": 13,
-      "duration": 0.61951894,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197987489852,
-      "flasherName": "Mixwell",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 198821,
@@ -82122,7 +81396,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 199727,
@@ -82135,20 +81410,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 199727,
-      "roundNumber": 13,
-      "duration": 3.003755,
-      "flashedSteamId": 76561197997351207,
-      "flashedName": "rain",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197972331023,
-      "flasherName": "GuardiaN",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 200185,
@@ -82161,33 +81424,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 200185,
-      "roundNumber": 13,
-      "duration": 0.2087304,
-      "flashedSteamId": 76561197989143951,
-      "flashedName": "@michau9_",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197963682761,
-      "flasherName": "HS",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 200185,
-      "roundNumber": 13,
-      "duration": 2.2356627,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197963682761,
-      "flasherName": "HS",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 201997,
@@ -82200,20 +81438,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 201997,
-      "roundNumber": 13,
-      "duration": 3.4427397,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984560929,
-      "flasherName": "friberg",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 201997,
@@ -82226,7 +81452,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 202670,
@@ -82239,7 +81466,8 @@
       "flasherSteamId": 76561197988627193,
       "flasherName": "olofmeister",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 211610,
@@ -82252,7 +81480,8 @@
       "flasherSteamId": 76561198041683378,
       "flasherName": "NiKo",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 212133,
@@ -82265,7 +81494,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 212133,
@@ -82278,33 +81508,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 212133,
-      "roundNumber": 14,
-      "duration": 0.53667104,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984560929,
-      "flasherName": "friberg",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 212133,
-      "roundNumber": 14,
-      "duration": 1.8887768,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984560929,
-      "flasherName": "friberg",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 212133,
@@ -82317,7 +81522,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 212351,
@@ -82330,7 +81536,8 @@
       "flasherSteamId": 76561197988627193,
       "flasherName": "olofmeister",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 212351,
@@ -82343,7 +81550,8 @@
       "flasherSteamId": 76561197988627193,
       "flasherName": "olofmeister",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 212351,
@@ -82356,7 +81564,8 @@
       "flasherSteamId": 76561197988627193,
       "flasherName": "olofmeister",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 212508,
@@ -82369,7 +81578,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 212508,
@@ -82382,7 +81592,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 212508,
@@ -82395,7 +81606,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 213006,
@@ -82408,20 +81620,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 213006,
-      "roundNumber": 14,
-      "duration": 3.5808258,
-      "flashedSteamId": 76561197987489852,
-      "flashedName": "Mixwell",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197963682761,
-      "flasherName": "HS",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 213006,
@@ -82434,46 +81634,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 213006,
-      "roundNumber": 14,
-      "duration": 3.9292228,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197963682761,
-      "flasherName": "HS",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 213006,
-      "roundNumber": 14,
-      "duration": 4.3562326,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197963682761,
-      "flasherName": "HS",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 214908,
-      "roundNumber": 14,
-      "duration": 3.1505249,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197963682761,
-      "flasherName": "HS",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 219940,
@@ -82486,7 +81648,8 @@
       "flasherSteamId": 76561197961610974,
       "flasherName": "allu",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 220049,
@@ -82499,20 +81662,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 220049,
-      "roundNumber": 15,
-      "duration": 3.442385,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197963682761,
-      "flasherName": "HS",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 220049,
@@ -82525,20 +81676,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 220121,
-      "roundNumber": 15,
-      "duration": 1.0073054,
-      "flashedSteamId": 76561197989143951,
-      "flashedName": "@michau9_",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197988627193,
-      "flasherName": "olofmeister",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 220121,
@@ -82551,7 +81690,8 @@
       "flasherSteamId": 76561197988627193,
       "flasherName": "olofmeister",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 220121,
@@ -82564,33 +81704,8 @@
       "flasherSteamId": 76561197988627193,
       "flasherName": "olofmeister",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 220121,
-      "roundNumber": 15,
-      "duration": 1.0062293,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197988627193,
-      "flasherName": "olofmeister",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 221870,
-      "roundNumber": 15,
-      "duration": 4.956743,
-      "flashedSteamId": 76561198041683378,
-      "flashedName": "NiKo",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197963682761,
-      "flasherName": "HS",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 221870,
@@ -82603,7 +81718,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 221870,
@@ -82616,7 +81732,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 221870,
@@ -82629,85 +81746,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 221870,
-      "roundNumber": 15,
-      "duration": 0.67178184,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197963682761,
-      "flasherName": "HS",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 221870,
-      "roundNumber": 15,
-      "duration": 4.9569864,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197963682761,
-      "flasherName": "HS",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 223415,
-      "roundNumber": 15,
-      "duration": 3.3848636,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "Magisk",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 223796,
-      "roundNumber": 15,
-      "duration": 0.48925424,
-      "flashedSteamId": 76561197987489852,
-      "flashedName": "Mixwell",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "Magisk",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 223796,
-      "roundNumber": 15,
-      "duration": 0.4883057,
-      "flashedSteamId": 76561197989143951,
-      "flashedName": "@michau9_",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "Magisk",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 223796,
-      "roundNumber": 15,
-      "duration": 3.6286688,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "Magisk",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 223796,
@@ -82720,33 +81760,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "Magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 225261,
-      "roundNumber": 15,
-      "duration": 3.5603974,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197988627193,
-      "flasherName": "olofmeister",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 226300,
-      "roundNumber": 15,
-      "duration": 0.60355073,
-      "flashedSteamId": 76561198041683378,
-      "flashedName": "NiKo",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197972331023,
-      "flasherName": "GuardiaN",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 226300,
@@ -82759,33 +81774,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 226300,
-      "roundNumber": 15,
-      "duration": 0.6040403,
-      "flashedSteamId": 76561197989430253,
-      "flashedName": "karrigan",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197972331023,
-      "flasherName": "GuardiaN",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 226300,
-      "roundNumber": 15,
-      "duration": 0.94912446,
-      "flashedSteamId": 76561197987489852,
-      "flashedName": "Mixwell",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197972331023,
-      "flasherName": "GuardiaN",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 226300,
@@ -82798,33 +81788,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 226300,
-      "roundNumber": 15,
-      "duration": 0.29629546,
-      "flashedSteamId": 76561197989143951,
-      "flashedName": "@michau9_",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197972331023,
-      "flasherName": "GuardiaN",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 226300,
-      "roundNumber": 15,
-      "duration": 4.6572413,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197972331023,
-      "flasherName": "GuardiaN",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 226300,
@@ -82837,46 +81802,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 226300,
-      "roundNumber": 15,
-      "duration": 0.60355073,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197972331023,
-      "flasherName": "GuardiaN",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 226300,
-      "roundNumber": 15,
-      "duration": 0.94912446,
-      "flashedSteamId": 76561197984560929,
-      "flashedName": "friberg",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197972331023,
-      "flasherName": "GuardiaN",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 226481,
-      "roundNumber": 15,
-      "duration": 1.913378,
-      "flashedSteamId": 76561197987489852,
-      "flashedName": "Mixwell",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197972331023,
-      "flasherName": "GuardiaN",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 226481,
@@ -82889,33 +81816,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 226481,
-      "roundNumber": 15,
-      "duration": 3.4550993,
-      "flashedSteamId": 76561197989143951,
-      "flashedName": "@michau9_",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197972331023,
-      "flasherName": "GuardiaN",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 226481,
-      "roundNumber": 15,
-      "duration": 4.2140946,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197972331023,
-      "flasherName": "GuardiaN",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 226481,
@@ -82928,72 +81830,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 226481,
-      "roundNumber": 15,
-      "duration": 1.913378,
-      "flashedSteamId": 76561197984560929,
-      "flashedName": "friberg",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197972331023,
-      "flasherName": "GuardiaN",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 227692,
-      "roundNumber": 15,
-      "duration": 1.0273141,
-      "flashedSteamId": 76561197987489852,
-      "flashedName": "Mixwell",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 227692,
-      "roundNumber": 15,
-      "duration": 1.0271134,
-      "flashedSteamId": 76561197963682761,
-      "flashedName": "HS",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 227692,
-      "roundNumber": 15,
-      "duration": 1.0261041,
-      "flashedSteamId": 76561197989143951,
-      "flashedName": "@michau9_",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 227692,
-      "roundNumber": 15,
-      "duration": 4.71095,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 227692,
@@ -83006,33 +81844,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 227692,
-      "roundNumber": 15,
-      "duration": 1.0271134,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 227692,
-      "roundNumber": 15,
-      "duration": 1.0273141,
-      "flashedSteamId": 76561197984560929,
-      "flashedName": "friberg",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 256246,
@@ -83045,7 +81858,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 258622,
@@ -83058,7 +81872,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 258622,
@@ -83071,7 +81886,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 258622,
@@ -83084,20 +81900,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 258622,
-      "roundNumber": 16,
-      "duration": 0.6858005,
-      "flashedSteamId": 76561197963682761,
-      "flashedName": "HS",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984560929,
-      "flasherName": "friberg",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 258622,
@@ -83110,20 +81914,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 258622,
-      "roundNumber": 16,
-      "duration": 1.7533519,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984560929,
-      "flasherName": "friberg",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 258622,
@@ -83136,7 +81928,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 258622,
@@ -83149,7 +81942,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 281659,
@@ -83162,7 +81956,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 281659,
@@ -83175,7 +81970,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 281664,
@@ -83188,7 +81984,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 281664,
@@ -83201,20 +81998,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 281664,
-      "roundNumber": 18,
-      "duration": 1.3356646,
-      "flashedSteamId": 76561197989143951,
-      "flashedName": "@michau9_",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197963682761,
-      "flasherName": "HS",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 282337,
@@ -83227,7 +82012,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 284188,
@@ -83240,7 +82026,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 284188,
@@ -83253,7 +82040,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 284188,
@@ -83266,7 +82054,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 284188,
@@ -83279,7 +82068,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 285352,
@@ -83292,7 +82082,8 @@
       "flasherSteamId": 76561197987489852,
       "flasherName": "Mixwell",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 285352,
@@ -83305,20 +82096,8 @@
       "flasherSteamId": 76561197987489852,
       "flasherName": "Mixwell",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 285352,
-      "roundNumber": 18,
-      "duration": 0.14737564,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197987489852,
-      "flasherName": "Mixwell",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 285352,
@@ -83331,7 +82110,8 @@
       "flasherSteamId": 76561197987489852,
       "flasherName": "Mixwell",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 286428,
@@ -83344,20 +82124,8 @@
       "flasherSteamId": 76561197988627193,
       "flasherName": "olofmeister",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 286428,
-      "roundNumber": 18,
-      "duration": 0.59134305,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197988627193,
-      "flasherName": "olofmeister",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 292183,
@@ -83370,20 +82138,8 @@
       "flasherSteamId": 76561197972331023,
       "flasherName": "GuardiaN",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 292183,
-      "roundNumber": 19,
-      "duration": 0.77957183,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197972331023,
-      "flasherName": "GuardiaN",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 292294,
@@ -83396,7 +82152,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 292294,
@@ -83409,33 +82166,8 @@
       "flasherSteamId": 76561197963682761,
       "flasherName": "HS",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 292294,
-      "roundNumber": 19,
-      "duration": 1.404545,
-      "flashedSteamId": 76561197989143951,
-      "flashedName": "@michau9_",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197963682761,
-      "flasherName": "HS",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 292294,
-      "roundNumber": 19,
-      "duration": 3.4962573,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197963682761,
-      "flasherName": "HS",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 292736,
@@ -83448,20 +82180,8 @@
       "flasherSteamId": 76561197989430253,
       "flasherName": "karrigan",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 292736,
-      "roundNumber": 19,
-      "duration": 3.7370682,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197989430253,
-      "flasherName": "karrigan",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 292786,
@@ -83474,7 +82194,8 @@
       "flasherSteamId": 76561197961610974,
       "flasherName": "allu",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 294916,
@@ -83487,7 +82208,8 @@
       "flasherSteamId": 76561197961610974,
       "flasherName": "allu",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 294916,
@@ -83500,20 +82222,8 @@
       "flasherSteamId": 76561197961610974,
       "flasherName": "allu",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 294916,
-      "roundNumber": 19,
-      "duration": 3.513777,
-      "flashedSteamId": 76561197992852573,
-      "flashedName": "IEM",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961610974,
-      "flasherName": "allu",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 294916,
@@ -83526,7 +82236,8 @@
       "flasherSteamId": 76561197961610974,
       "flasherName": "allu",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 296948,
@@ -83539,7 +82250,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "Magisk",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 296948,
@@ -83552,7 +82264,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "Magisk",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 296948,
@@ -83565,7 +82278,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "Magisk",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 297344,
@@ -83578,20 +82292,8 @@
       "flasherSteamId": 76561197988627193,
       "flasherName": "olofmeister",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 297344,
-      "roundNumber": 19,
-      "duration": 3.5136032,
-      "flashedSteamId": 76561197992911582,
-      "flashedName": "@sapphiReGG \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197988627193,
-      "flasherName": "olofmeister",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 299380,
@@ -83604,7 +82306,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 299380,
@@ -83617,7 +82320,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 299380,
@@ -83630,7 +82334,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 302386,
@@ -83643,7 +82348,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     }
   ],
   "grenadePositions": [],

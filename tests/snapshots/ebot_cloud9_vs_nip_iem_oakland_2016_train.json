@@ -412,7 +412,7 @@
       "bombPlantedCount": 4,
       "healthDamage": 2487,
       "armorDamage": 323,
-      "utilityDamage": 168,
+      "utilityDamage": 164,
       "headshotCount": 10,
       "headshotPercent": 47,
       "oneVsOneCount": 7,
@@ -434,7 +434,7 @@
       "averageKillPerRound": 0.7,
       "averageDeathPerRound": 0.73333335,
       "averageDamagePerRound": 82.9,
-      "utilityDamagePerRound": 5.6,
+      "utilityDamagePerRound": 5.4666667,
       "firstKillCount": 3,
       "firstDeathCount": 3,
       "firstTradeDeathCount": 0,
@@ -143674,7 +143674,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 12153,
@@ -143687,7 +143688,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 12153,
@@ -143700,7 +143702,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 12153,
@@ -143713,7 +143716,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 24890,
@@ -143726,7 +143730,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 24890,
@@ -143739,7 +143744,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 24890,
@@ -143752,7 +143758,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 27772,
@@ -143765,20 +143772,8 @@
       "flasherSteamId": 76561197964781654,
       "flasherName": "shroud",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 27772,
-      "roundNumber": 3,
-      "duration": 0.34445274,
-      "flashedSteamId": 76561197999004010,
-      "flashedName": "Stewie2K",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197964781654,
-      "flasherName": "shroud",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 27772,
@@ -143791,7 +143786,8 @@
       "flasherSteamId": 76561197964781654,
       "flasherName": "shroud",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 28044,
@@ -143804,7 +143800,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 28044,
@@ -143817,7 +143814,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 28044,
@@ -143830,33 +143828,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 28044,
-      "roundNumber": 3,
-      "duration": 0.49462426,
-      "flashedSteamId": 76561197981341453,
-      "flashedName": "Skadoodle",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961021014,
-      "flasherName": "n0thing",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 28044,
-      "roundNumber": 3,
-      "duration": 0.49452364,
-      "flashedSteamId": 76561197999004010,
-      "flashedName": "Stewie2K",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961021014,
-      "flasherName": "n0thing",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 28044,
@@ -143869,7 +143842,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 29723,
@@ -143882,46 +143856,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 29723,
-      "roundNumber": 3,
-      "duration": 0.72383475,
-      "flashedSteamId": 76561198017578295,
-      "flashedName": "pyth DXRacer",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197986490720,
-      "flasherName": "Xizt Xtrfy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 29723,
-      "roundNumber": 3,
-      "duration": 4.134633,
-      "flashedSteamId": 76561197964781654,
-      "flashedName": "shroud",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197986490720,
-      "flasherName": "Xizt Xtrfy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 29723,
-      "roundNumber": 3,
-      "duration": 4.132135,
-      "flashedSteamId": 76561197981341453,
-      "flashedName": "Skadoodle",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197986490720,
-      "flasherName": "Xizt Xtrfy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 29723,
@@ -143934,33 +143870,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 29723,
-      "roundNumber": 3,
-      "duration": 4.134633,
-      "flashedSteamId": 76561197999004010,
-      "flashedName": "Stewie2K",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197986490720,
-      "flasherName": "Xizt Xtrfy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 29723,
-      "roundNumber": 3,
-      "duration": 4.134633,
-      "flashedSteamId": 76561197961021014,
-      "flashedName": "n0thing",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197986490720,
-      "flasherName": "Xizt Xtrfy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 48270,
@@ -143973,7 +143884,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 55873,
@@ -143986,7 +143898,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 55873,
@@ -143999,7 +143912,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 55873,
@@ -144012,7 +143926,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 55913,
@@ -144025,7 +143940,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 55913,
@@ -144038,7 +143954,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 55913,
@@ -144051,7 +143968,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 55918,
@@ -144064,7 +143982,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 55918,
@@ -144077,7 +143996,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 55918,
@@ -144090,7 +144010,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 56221,
@@ -144103,7 +144024,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 56221,
@@ -144116,7 +144038,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 56221,
@@ -144129,7 +144052,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 61716,
@@ -144142,7 +144066,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 61716,
@@ -144155,7 +144080,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 61716,
@@ -144168,7 +144094,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 61716,
@@ -144181,7 +144108,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 61716,
@@ -144194,7 +144122,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 62877,
@@ -144207,20 +144136,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 62877,
-      "roundNumber": 5,
-      "duration": 4.756999,
-      "flashedSteamId": 76561197981341453,
-      "flashedName": "Skadoodle",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197986490720,
-      "flasherName": "Xizt Xtrfy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 62877,
@@ -144233,7 +144150,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 62877,
@@ -144246,46 +144164,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 62877,
-      "roundNumber": 5,
-      "duration": 0.9853974,
-      "flashedSteamId": 76561198054870849,
-      "flashedName": "autimatic",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197986490720,
-      "flasherName": "Xizt Xtrfy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 65666,
-      "roundNumber": 5,
-      "duration": 0.5244661,
-      "flashedSteamId": 76561198017578295,
-      "flashedName": "pyth DXRacer",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197982036918,
-      "flasherName": "GeT_RiGhT betway",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 65666,
-      "roundNumber": 5,
-      "duration": 0.5244661,
-      "flashedSteamId": 76561197984560929,
-      "flashedName": "friberg NETGEAR",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197982036918,
-      "flasherName": "GeT_RiGhT betway",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 65666,
@@ -144298,7 +144178,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 65666,
@@ -144311,20 +144192,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 65666,
-      "roundNumber": 5,
-      "duration": 4.2600055,
-      "flashedSteamId": 76561197981341453,
-      "flashedName": "Skadoodle",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197982036918,
-      "flasherName": "GeT_RiGhT betway",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 66310,
@@ -144337,46 +144206,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 66310,
-      "roundNumber": 5,
-      "duration": 4.3989754,
-      "flashedSteamId": 76561198017578295,
-      "flashedName": "pyth DXRacer",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197960359452,
-      "flasherName": "f0rest NOCCO",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 66310,
-      "roundNumber": 5,
-      "duration": 4.3989754,
-      "flashedSteamId": 76561197984560929,
-      "flashedName": "friberg NETGEAR",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197960359452,
-      "flasherName": "f0rest NOCCO",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 66310,
-      "roundNumber": 5,
-      "duration": 4.35866,
-      "flashedSteamId": 76561197981341453,
-      "flashedName": "Skadoodle",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197960359452,
-      "flasherName": "f0rest NOCCO",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 66310,
@@ -144389,33 +144220,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 66310,
-      "roundNumber": 5,
-      "duration": 4.35866,
-      "flashedSteamId": 76561197961021014,
-      "flashedName": "n0thing",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197960359452,
-      "flasherName": "f0rest NOCCO",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 66310,
-      "roundNumber": 5,
-      "duration": 4.35866,
-      "flashedSteamId": 76561198054870849,
-      "flashedName": "autimatic",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197960359452,
-      "flasherName": "f0rest NOCCO",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 77600,
@@ -144428,7 +144234,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 77600,
@@ -144441,7 +144248,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 77600,
@@ -144454,7 +144262,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 83147,
@@ -144467,7 +144276,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 83680,
@@ -144480,7 +144290,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 84537,
@@ -144493,7 +144304,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 84537,
@@ -144506,7 +144318,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 84583,
@@ -144519,7 +144332,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 95620,
@@ -144532,7 +144346,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 96150,
@@ -144545,7 +144360,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 96248,
@@ -144558,7 +144374,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 96815,
@@ -144571,7 +144388,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 96827,
@@ -144584,7 +144402,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 96827,
@@ -144597,7 +144416,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 96827,
@@ -144610,20 +144430,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 97848,
-      "roundNumber": 7,
-      "duration": 0.9906367,
-      "flashedSteamId": 76561197986490720,
-      "flashedName": "Xizt Xtrfy",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198017578295,
-      "flasherName": "pyth DXRacer",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 97848,
@@ -144636,7 +144444,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 98345,
@@ -144649,7 +144458,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 98345,
@@ -144662,7 +144472,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 98345,
@@ -144675,7 +144486,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 98345,
@@ -144688,7 +144500,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 103500,
@@ -144701,7 +144514,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 103500,
@@ -144714,7 +144528,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 103616,
@@ -144727,7 +144542,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 107398,
@@ -144740,7 +144556,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 107398,
@@ -144753,7 +144570,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 107459,
@@ -144766,7 +144584,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 107459,
@@ -144779,7 +144598,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 107459,
@@ -144792,7 +144612,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 107502,
@@ -144805,7 +144626,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 107561,
@@ -144818,7 +144640,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 107561,
@@ -144831,7 +144654,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 107714,
@@ -144844,7 +144668,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 107714,
@@ -144857,7 +144682,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 107714,
@@ -144870,7 +144696,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 107978,
@@ -144883,7 +144710,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 107978,
@@ -144896,7 +144724,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 107978,
@@ -144909,7 +144738,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 107978,
@@ -144922,7 +144752,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 108303,
@@ -144935,7 +144766,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 108303,
@@ -144948,7 +144780,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 108303,
@@ -144961,20 +144794,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 109524,
-      "roundNumber": 8,
-      "duration": 0.84979963,
-      "flashedSteamId": 76561197999004010,
-      "flashedName": "Stewie2K",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197986490720,
-      "flasherName": "Xizt Xtrfy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 109524,
@@ -144987,7 +144808,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 109524,
@@ -145000,7 +144822,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 109896,
@@ -145013,7 +144836,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 110304,
@@ -145026,7 +144850,8 @@
       "flasherSteamId": 76561198054870849,
       "flasherName": "autimatic",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 114611,
@@ -145039,7 +144864,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 114611,
@@ -145052,7 +144878,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 114611,
@@ -145065,7 +144892,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 114611,
@@ -145078,7 +144906,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 114757,
@@ -145091,7 +144920,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 118431,
@@ -145104,7 +144934,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 118431,
@@ -145117,7 +144948,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 118431,
@@ -145130,7 +144962,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 123275,
@@ -145143,20 +144976,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 123275,
-      "roundNumber": 9,
-      "duration": 0.9791753,
-      "flashedSteamId": 76561197961021014,
-      "flashedName": "n0thing",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197982036918,
-      "flasherName": "GeT_RiGhT betway",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 128802,
@@ -145169,7 +144990,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 128802,
@@ -145182,7 +145004,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 128802,
@@ -145195,7 +145018,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 133633,
@@ -145208,7 +145032,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 133633,
@@ -145221,7 +145046,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 133633,
@@ -145234,7 +145060,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 133633,
@@ -145247,7 +145074,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 133862,
@@ -145260,7 +145088,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 133862,
@@ -145273,7 +145102,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 133862,
@@ -145286,7 +145116,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 133862,
@@ -145299,7 +145130,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 133953,
@@ -145312,7 +145144,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 133953,
@@ -145325,7 +145158,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 134123,
@@ -145338,7 +145172,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 134123,
@@ -145351,7 +145186,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 134392,
@@ -145364,7 +145200,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 134392,
@@ -145377,7 +145214,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 134392,
@@ -145390,7 +145228,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 134720,
@@ -145403,7 +145242,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 134851,
@@ -145416,7 +145256,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 136035,
@@ -145429,7 +145270,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 136035,
@@ -145442,7 +145284,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 136035,
@@ -145455,33 +145298,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 136196,
-      "roundNumber": 11,
-      "duration": 0.9593735,
-      "flashedSteamId": 76561197986490720,
-      "flashedName": "Xizt Xtrfy",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197982036918,
-      "flasherName": "GeT_RiGhT betway",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 136196,
-      "roundNumber": 11,
-      "duration": 0.9593735,
-      "flashedSteamId": 76561198017578295,
-      "flashedName": "pyth DXRacer",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197982036918,
-      "flasherName": "GeT_RiGhT betway",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 136196,
@@ -145494,7 +145312,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 136196,
@@ -145507,7 +145326,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 136196,
@@ -145520,7 +145340,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 136196,
@@ -145533,7 +145354,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 136196,
@@ -145546,7 +145368,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 141024,
@@ -145559,7 +145382,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 141024,
@@ -145572,7 +145396,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 141024,
@@ -145585,7 +145410,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 141190,
@@ -145598,7 +145424,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 141555,
@@ -145611,7 +145438,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 141555,
@@ -145624,7 +145452,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 141555,
@@ -145637,7 +145466,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 141623,
@@ -145650,7 +145480,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 141623,
@@ -145663,7 +145494,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 141781,
@@ -145676,7 +145508,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 142518,
@@ -145689,7 +145522,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 142518,
@@ -145702,7 +145536,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 142518,
@@ -145715,7 +145550,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 142550,
@@ -145728,7 +145564,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 142550,
@@ -145741,7 +145578,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 143870,
@@ -145754,7 +145592,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 146051,
@@ -145767,7 +145606,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 146051,
@@ -145780,33 +145620,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 146051,
-      "roundNumber": 12,
-      "duration": 3.0763505,
-      "flashedSteamId": 76561197999004010,
-      "flashedName": "Stewie2K",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984560929,
-      "flasherName": "friberg NETGEAR",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 146051,
-      "roundNumber": 12,
-      "duration": 1.688179,
-      "flashedSteamId": 76561198054870849,
-      "flashedName": "autimatic",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984560929,
-      "flasherName": "friberg NETGEAR",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 146258,
@@ -145819,7 +145634,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 146258,
@@ -145832,20 +145648,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 146258,
-      "roundNumber": 12,
-      "duration": 4.053418,
-      "flashedSteamId": 76561197999004010,
-      "flashedName": "Stewie2K",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984560929,
-      "flasherName": "friberg NETGEAR",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 146258,
@@ -145858,20 +145662,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 146258,
-      "roundNumber": 12,
-      "duration": 4.0535536,
-      "flashedSteamId": 76561198054870849,
-      "flashedName": "autimatic",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984560929,
-      "flasherName": "friberg NETGEAR",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 154347,
@@ -145884,7 +145676,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 154788,
@@ -145897,7 +145690,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 154788,
@@ -145910,7 +145704,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 154797,
@@ -145923,7 +145718,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 154797,
@@ -145936,7 +145732,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 155419,
@@ -145949,7 +145746,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 155959,
@@ -145962,7 +145760,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 155959,
@@ -145975,7 +145774,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 156559,
@@ -145988,7 +145788,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 156592,
@@ -146001,7 +145802,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 156592,
@@ -146014,7 +145816,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 156753,
@@ -146027,7 +145830,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 156753,
@@ -146040,7 +145844,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 156753,
@@ -146053,7 +145858,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 156939,
@@ -146066,7 +145872,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 156939,
@@ -146079,7 +145886,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 157912,
@@ -146092,7 +145900,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 159051,
@@ -146105,20 +145914,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 159051,
-      "roundNumber": 13,
-      "duration": 4.2524815,
-      "flashedSteamId": 76561197982036918,
-      "flashedName": "GeT_RiGhT betway",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197999004010,
-      "flasherName": "Stewie2K",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 159051,
@@ -146131,7 +145928,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 159051,
@@ -146144,7 +145942,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 164603,
@@ -146157,7 +145956,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 164603,
@@ -146170,7 +145970,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 170762,
@@ -146183,7 +145984,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 170762,
@@ -146196,7 +145998,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 170762,
@@ -146209,7 +146012,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 172059,
@@ -146222,7 +146026,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 172122,
@@ -146235,7 +146040,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 172122,
@@ -146248,7 +146054,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 172122,
@@ -146261,7 +146068,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 173536,
@@ -146274,7 +146082,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 173536,
@@ -146287,20 +146096,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 173536,
-      "roundNumber": 14,
-      "duration": 0.1525607,
-      "flashedSteamId": 76561197964781654,
-      "flashedName": "shroud",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197999004010,
-      "flasherName": "Stewie2K",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 173536,
@@ -146313,7 +146110,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 173536,
@@ -146326,20 +146124,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 173536,
-      "roundNumber": 14,
-      "duration": 1.0251092,
-      "flashedSteamId": 76561198054870849,
-      "flashedName": "autimatic",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197999004010,
-      "flasherName": "Stewie2K",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 178462,
@@ -146352,7 +146138,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 178462,
@@ -146365,7 +146152,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 178636,
@@ -146378,7 +146166,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 179817,
@@ -146391,7 +146180,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 179817,
@@ -146404,7 +146194,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 181978,
@@ -146417,7 +146208,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 183640,
@@ -146430,7 +146222,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 183640,
@@ -146443,7 +146236,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 183785,
@@ -146456,7 +146250,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 184241,
@@ -146469,7 +146264,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 184804,
@@ -146482,7 +146278,8 @@
       "flasherSteamId": 76561197964781654,
       "flasherName": "shroud",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 184804,
@@ -146495,7 +146292,8 @@
       "flasherSteamId": 76561197964781654,
       "flasherName": "shroud",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 185096,
@@ -146508,7 +146306,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 214585,
@@ -146521,7 +146320,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 214585,
@@ -146534,7 +146334,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 214585,
@@ -146547,7 +146348,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 214585,
@@ -146560,7 +146362,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 214585,
@@ -146573,7 +146376,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 215177,
@@ -146586,7 +146390,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 215177,
@@ -146599,7 +146404,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 215177,
@@ -146612,7 +146418,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 215177,
@@ -146625,7 +146432,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 215177,
@@ -146638,20 +146446,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 215177,
-      "roundNumber": 16,
-      "duration": 1.8130038,
-      "flashedSteamId": 76561197999004010,
-      "flashedName": "Stewie2K",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961021014,
-      "flasherName": "n0thing",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 215177,
@@ -146664,7 +146460,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 215177,
@@ -146677,7 +146474,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 220743,
@@ -146690,7 +146488,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 225166,
@@ -146703,7 +146502,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 225166,
@@ -146716,7 +146516,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 225166,
@@ -146729,7 +146530,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 226223,
@@ -146742,7 +146544,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 226223,
@@ -146755,7 +146558,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 226223,
@@ -146768,7 +146572,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 241085,
@@ -146781,7 +146586,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 241085,
@@ -146794,7 +146600,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 246266,
@@ -146807,7 +146614,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 246557,
@@ -146820,7 +146628,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 246830,
@@ -146833,7 +146642,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 246869,
@@ -146846,7 +146656,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 248088,
@@ -146859,7 +146670,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 248088,
@@ -146872,7 +146684,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 250716,
@@ -146885,7 +146698,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 250716,
@@ -146898,7 +146712,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 253302,
@@ -146911,7 +146726,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 257186,
@@ -146924,7 +146740,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 257186,
@@ -146937,7 +146754,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 257186,
@@ -146950,7 +146768,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 257573,
@@ -146963,7 +146782,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 260880,
@@ -146976,7 +146796,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 260880,
@@ -146989,7 +146810,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 261374,
@@ -147002,7 +146824,8 @@
       "flasherSteamId": 76561198054870849,
       "flasherName": "autimatic",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 261374,
@@ -147015,7 +146838,8 @@
       "flasherSteamId": 76561198054870849,
       "flasherName": "autimatic",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 263329,
@@ -147028,7 +146852,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 264886,
@@ -147041,7 +146866,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 264973,
@@ -147054,7 +146880,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 266775,
@@ -147067,7 +146894,8 @@
       "flasherSteamId": 76561197964781654,
       "flasherName": "shroud",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 278664,
@@ -147080,7 +146908,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 278664,
@@ -147093,7 +146922,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 278664,
@@ -147106,7 +146936,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 278822,
@@ -147119,7 +146950,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 279588,
@@ -147132,7 +146964,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 290515,
@@ -147145,7 +146978,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 294520,
@@ -147158,7 +146992,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 296208,
@@ -147171,7 +147006,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 296208,
@@ -147184,7 +147020,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 300133,
@@ -147197,7 +147034,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 300302,
@@ -147210,20 +147048,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 302259,
-      "roundNumber": 22,
-      "duration": 0.44718528,
-      "flashedSteamId": 76561197984560929,
-      "flashedName": "friberg NETGEAR",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197981341453,
-      "flasherName": "Skadoodle",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 302259,
@@ -147236,20 +147062,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 303153,
-      "roundNumber": 22,
-      "duration": 2.0706103,
-      "flashedSteamId": 76561197986490720,
-      "flashedName": "Xizt Xtrfy",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198017578295,
-      "flasherName": "pyth DXRacer",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 303153,
@@ -147262,46 +147076,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 303153,
-      "roundNumber": 22,
-      "duration": 2.0706103,
-      "flashedSteamId": 76561197984560929,
-      "flashedName": "friberg NETGEAR",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198017578295,
-      "flasherName": "pyth DXRacer",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 303153,
-      "roundNumber": 22,
-      "duration": 2.0706103,
-      "flashedSteamId": 76561197960359452,
-      "flashedName": "f0rest NOCCO",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198017578295,
-      "flasherName": "pyth DXRacer",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 303153,
-      "roundNumber": 22,
-      "duration": 2.0706103,
-      "flashedSteamId": 76561197982036918,
-      "flashedName": "GeT_RiGhT betway",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198017578295,
-      "flasherName": "pyth DXRacer",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 303153,
@@ -147314,7 +147090,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 310725,
@@ -147327,7 +147104,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 310725,
@@ -147340,7 +147118,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 310725,
@@ -147353,7 +147132,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 310725,
@@ -147366,7 +147146,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 310725,
@@ -147379,7 +147160,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 310725,
@@ -147392,7 +147174,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 310759,
@@ -147405,7 +147188,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 310986,
@@ -147418,7 +147202,8 @@
       "flasherSteamId": 76561197960359452,
       "flasherName": "f0rest NOCCO",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 311408,
@@ -147431,7 +147216,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 311408,
@@ -147444,7 +147230,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 311695,
@@ -147457,7 +147244,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 311695,
@@ -147470,7 +147258,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 311778,
@@ -147483,7 +147272,8 @@
       "flasherSteamId": 76561197964781654,
       "flasherName": "shroud",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 311778,
@@ -147496,7 +147286,8 @@
       "flasherSteamId": 76561197964781654,
       "flasherName": "shroud",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 312226,
@@ -147509,7 +147300,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 312494,
@@ -147522,7 +147314,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 312494,
@@ -147535,7 +147328,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 312494,
@@ -147548,7 +147342,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 312631,
@@ -147561,7 +147356,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 312631,
@@ -147574,7 +147370,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 312631,
@@ -147587,7 +147384,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 312631,
@@ -147600,7 +147398,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 312669,
@@ -147613,7 +147412,8 @@
       "flasherSteamId": 76561197964781654,
       "flasherName": "shroud",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 312669,
@@ -147626,7 +147426,8 @@
       "flasherSteamId": 76561197964781654,
       "flasherName": "shroud",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 312669,
@@ -147639,7 +147440,8 @@
       "flasherSteamId": 76561197964781654,
       "flasherName": "shroud",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 312669,
@@ -147652,7 +147454,8 @@
       "flasherSteamId": 76561197964781654,
       "flasherName": "shroud",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 312669,
@@ -147665,7 +147468,8 @@
       "flasherSteamId": 76561197964781654,
       "flasherName": "shroud",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 312722,
@@ -147678,7 +147482,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 312722,
@@ -147691,7 +147496,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 312722,
@@ -147704,7 +147510,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 312722,
@@ -147717,7 +147524,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 313831,
@@ -147730,7 +147538,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 313831,
@@ -147743,7 +147552,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 313831,
@@ -147756,33 +147566,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 313831,
-      "roundNumber": 23,
-      "duration": 1.5488124,
-      "flashedSteamId": 76561197961021014,
-      "flashedName": "n0thing",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197982036918,
-      "flasherName": "GeT_RiGhT betway",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 313831,
-      "roundNumber": 23,
-      "duration": 1.548916,
-      "flashedSteamId": 76561198054870849,
-      "flashedName": "autimatic",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197982036918,
-      "flasherName": "GeT_RiGhT betway",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 319016,
@@ -147795,7 +147580,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 319016,
@@ -147808,7 +147594,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 319016,
@@ -147821,7 +147608,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 319438,
@@ -147834,20 +147622,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 320029,
-      "roundNumber": 24,
-      "duration": 4.916409,
-      "flashedSteamId": 76561198017578295,
-      "flashedName": "pyth DXRacer",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961021014,
-      "flasherName": "n0thing",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 320029,
@@ -147860,7 +147636,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 320524,
@@ -147873,7 +147650,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 320524,
@@ -147886,7 +147664,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 323419,
@@ -147899,20 +147678,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 323419,
-      "roundNumber": 24,
-      "duration": 0.17056166,
-      "flashedSteamId": 76561197960359452,
-      "flashedName": "f0rest NOCCO",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197982036918,
-      "flasherName": "GeT_RiGhT betway",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 331828,
@@ -147925,7 +147692,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 331828,
@@ -147938,7 +147706,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 331828,
@@ -147951,7 +147720,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 331856,
@@ -147964,7 +147734,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 331856,
@@ -147977,7 +147748,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 331858,
@@ -147990,7 +147762,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 331858,
@@ -148003,7 +147776,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 334887,
@@ -148016,7 +147790,8 @@
       "flasherSteamId": 76561198054870849,
       "flasherName": "autimatic",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 338719,
@@ -148029,7 +147804,8 @@
       "flasherSteamId": 76561197964781654,
       "flasherName": "shroud",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 339673,
@@ -148042,7 +147818,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 339673,
@@ -148055,7 +147832,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 339971,
@@ -148068,7 +147846,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 339971,
@@ -148081,7 +147860,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 339971,
@@ -148094,20 +147874,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 339971,
-      "roundNumber": 25,
-      "duration": 0.7993315,
-      "flashedSteamId": 76561197999004010,
-      "flashedName": "Stewie2K",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961021014,
-      "flasherName": "n0thing",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 339971,
@@ -148120,7 +147888,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 340109,
@@ -148133,7 +147902,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 340109,
@@ -148146,7 +147916,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 340205,
@@ -148159,7 +147930,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 340205,
@@ -148172,7 +147944,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 340329,
@@ -148185,7 +147958,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 340329,
@@ -148198,20 +147972,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 340329,
-      "roundNumber": 25,
-      "duration": 0.9537077,
-      "flashedSteamId": 76561197999004010,
-      "flashedName": "Stewie2K",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197986490720,
-      "flasherName": "Xizt Xtrfy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 340329,
@@ -148224,20 +147986,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 341488,
-      "roundNumber": 25,
-      "duration": 1.1886151,
-      "flashedSteamId": 76561197986490720,
-      "flashedName": "Xizt Xtrfy",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197982036918,
-      "flasherName": "GeT_RiGhT betway",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 341488,
@@ -148250,7 +148000,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 341488,
@@ -148263,7 +148014,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 341488,
@@ -148276,33 +148028,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 341488,
-      "roundNumber": 25,
-      "duration": 2.6164365,
-      "flashedSteamId": 76561197999004010,
-      "flashedName": "Stewie2K",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197982036918,
-      "flasherName": "GeT_RiGhT betway",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 341488,
-      "roundNumber": 25,
-      "duration": 2.2713785,
-      "flashedSteamId": 76561198054870849,
-      "flashedName": "autimatic",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197982036918,
-      "flasherName": "GeT_RiGhT betway",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 347758,
@@ -148315,7 +148042,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 347758,
@@ -148328,7 +148056,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 348027,
@@ -148341,7 +148070,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 348027,
@@ -148354,7 +148084,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 348304,
@@ -148367,7 +148098,8 @@
       "flasherSteamId": 76561197964781654,
       "flasherName": "shroud",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 348333,
@@ -148380,7 +148112,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 349522,
@@ -148393,7 +148126,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 349522,
@@ -148406,7 +148140,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 349786,
@@ -148419,7 +148154,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 349786,
@@ -148432,7 +148168,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 350812,
@@ -148445,7 +148182,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 351876,
@@ -148458,7 +148196,8 @@
       "flasherSteamId": 76561197964781654,
       "flasherName": "shroud",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 352990,
@@ -148471,7 +148210,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 354295,
@@ -148484,7 +148224,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 362884,
@@ -148497,7 +148238,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 362884,
@@ -148510,7 +148252,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 362884,
@@ -148523,7 +148266,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 362982,
@@ -148536,7 +148280,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 362982,
@@ -148549,7 +148294,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 363114,
@@ -148562,7 +148308,8 @@
       "flasherSteamId": 76561197964781654,
       "flasherName": "shroud",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 363114,
@@ -148575,7 +148322,8 @@
       "flasherSteamId": 76561197964781654,
       "flasherName": "shroud",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 363114,
@@ -148588,7 +148336,8 @@
       "flasherSteamId": 76561197964781654,
       "flasherName": "shroud",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 363568,
@@ -148601,7 +148350,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 363568,
@@ -148614,7 +148364,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 363568,
@@ -148627,7 +148378,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 363734,
@@ -148640,7 +148392,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 363734,
@@ -148653,7 +148406,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 363734,
@@ -148666,7 +148420,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 363734,
@@ -148679,7 +148434,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 364237,
@@ -148692,7 +148448,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 364257,
@@ -148705,7 +148462,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 364257,
@@ -148718,7 +148476,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 364257,
@@ -148731,7 +148490,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 364516,
@@ -148744,7 +148504,8 @@
       "flasherSteamId": 76561197964781654,
       "flasherName": "shroud",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 364531,
@@ -148757,7 +148518,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 364768,
@@ -148770,7 +148532,8 @@
       "flasherSteamId": 76561197982036918,
       "flasherName": "GeT_RiGhT betway",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 365925,
@@ -148783,33 +148546,8 @@
       "flasherSteamId": 76561198054870849,
       "flasherName": "autimatic",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 365925,
-      "roundNumber": 27,
-      "duration": 0.9988894,
-      "flashedSteamId": 76561197999004010,
-      "flashedName": "Stewie2K",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198054870849,
-      "flasherName": "autimatic",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 365925,
-      "roundNumber": 27,
-      "duration": 0.99885345,
-      "flashedSteamId": 76561197961021014,
-      "flashedName": "n0thing",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198054870849,
-      "flasherName": "autimatic",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 373860,
@@ -148822,7 +148560,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 373860,
@@ -148835,7 +148574,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 373960,
@@ -148848,7 +148588,8 @@
       "flasherSteamId": 76561198054870849,
       "flasherName": "autimatic",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 377830,
@@ -148861,7 +148602,8 @@
       "flasherSteamId": 76561197964781654,
       "flasherName": "shroud",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 377830,
@@ -148874,7 +148616,8 @@
       "flasherSteamId": 76561197964781654,
       "flasherName": "shroud",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 388133,
@@ -148887,7 +148630,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 388445,
@@ -148900,7 +148644,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 388445,
@@ -148913,7 +148658,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 393025,
@@ -148926,7 +148672,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 393025,
@@ -148939,7 +148686,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 393537,
@@ -148952,7 +148700,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 393537,
@@ -148965,7 +148714,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 395366,
@@ -148978,7 +148728,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 398607,
@@ -148991,7 +148742,8 @@
       "flasherSteamId": 76561197999004010,
       "flasherName": "Stewie2K",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 399745,
@@ -149004,7 +148756,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 399745,
@@ -149017,7 +148770,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 399851,
@@ -149030,7 +148784,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 399851,
@@ -149043,7 +148798,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 399851,
@@ -149056,7 +148812,8 @@
       "flasherSteamId": 76561197986490720,
       "flasherName": "Xizt Xtrfy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 400606,
@@ -149069,7 +148826,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 400606,
@@ -149082,7 +148840,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 400606,
@@ -149095,7 +148854,8 @@
       "flasherSteamId": 76561197984560929,
       "flasherName": "friberg NETGEAR",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 400739,
@@ -149108,7 +148868,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 400739,
@@ -149121,7 +148882,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 400739,
@@ -149134,7 +148896,8 @@
       "flasherSteamId": 76561197961021014,
       "flasherName": "n0thing",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 400802,
@@ -149147,7 +148910,8 @@
       "flasherSteamId": 76561198054870849,
       "flasherName": "autimatic",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 400802,
@@ -149160,7 +148924,8 @@
       "flasherSteamId": 76561198054870849,
       "flasherName": "autimatic",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 400802,
@@ -149173,7 +148938,8 @@
       "flasherSteamId": 76561198054870849,
       "flasherName": "autimatic",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 400879,
@@ -149186,7 +148952,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 400879,
@@ -149199,7 +148966,8 @@
       "flasherSteamId": 76561197981341453,
       "flasherName": "Skadoodle",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 401357,
@@ -149212,20 +148980,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 402388,
-      "roundNumber": 30,
-      "duration": 0.7803644,
-      "flashedSteamId": 76561197964781654,
-      "flashedName": "shroud",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198017578295,
-      "flasherName": "pyth DXRacer",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 402388,
@@ -149238,7 +148994,8 @@
       "flasherSteamId": 76561198017578295,
       "flasherName": "pyth DXRacer",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     }
   ],
   "grenadePositions": [],

@@ -479,7 +479,7 @@
       "bombPlantedCount": 2,
       "healthDamage": 992,
       "armorDamage": 80,
-      "utilityDamage": 38,
+      "utilityDamage": 36,
       "headshotCount": 3,
       "headshotPercent": 42,
       "oneVsOneCount": 6,
@@ -501,7 +501,7 @@
       "averageKillPerRound": 0.35,
       "averageDeathPerRound": 1,
       "averageDamagePerRound": 49.6,
-      "utilityDamagePerRound": 1.9,
+      "utilityDamagePerRound": 1.8,
       "firstKillCount": 1,
       "firstDeathCount": 2,
       "firstTradeDeathCount": 0,
@@ -104651,7 +104651,8 @@
       "flasherSteamId": 76561198122986597,
       "flasherName": "Duarte \u003e.\u003c",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 44805,
@@ -104664,7 +104665,8 @@
       "flasherSteamId": 76561197997389119,
       "flasherName": "roma * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 44805,
@@ -104677,7 +104679,8 @@
       "flasherSteamId": 76561197997389119,
       "flasherName": "roma * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 45301,
@@ -104690,20 +104693,8 @@
       "flasherSteamId": 76561198138998220,
       "flasherName": "SHN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 45301,
-      "roundNumber": 2,
-      "duration": 0.21832316,
-      "flashedSteamId": 76561198033653629,
-      "flashedName": "nobodyysf",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198138998220,
-      "flasherName": "SHN",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 46661,
@@ -104716,46 +104707,8 @@
       "flasherSteamId": 76561198158292008,
       "flasherName": "dvn",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 46661,
-      "roundNumber": 2,
-      "duration": 0.7446441,
-      "flashedSteamId": 76561198054373555,
-      "flashedName": "MKWsf",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198158292008,
-      "flasherName": "dvn",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 46661,
-      "roundNumber": 2,
-      "duration": 0.7446519,
-      "flashedSteamId": 76561198033653629,
-      "flashedName": "nobodyysf",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198158292008,
-      "flasherName": "dvn",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 46661,
-      "roundNumber": 2,
-      "duration": 0.16686901,
-      "flashedSteamId": 76561198158292008,
-      "flashedName": "dvn",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198158292008,
-      "flasherName": "dvn",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 55334,
@@ -104768,7 +104721,8 @@
       "flasherSteamId": 76561198144401525,
       "flasherName": "dream * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 55334,
@@ -104781,7 +104735,8 @@
       "flasherSteamId": 76561198144401525,
       "flasherName": "dream * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 57278,
@@ -104794,7 +104749,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 57278,
@@ -104807,7 +104763,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 58446,
@@ -104820,7 +104777,8 @@
       "flasherSteamId": 76561197997389119,
       "flasherName": "roma * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 59166,
@@ -104833,7 +104791,8 @@
       "flasherSteamId": 76561198138998220,
       "flasherName": "SHN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 65470,
@@ -104846,7 +104805,8 @@
       "flasherSteamId": 76561198158292008,
       "flasherName": "dvn",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 65974,
@@ -104859,7 +104819,8 @@
       "flasherSteamId": 76561198185420454,
       "flasherName": "Torresᵖᵛᶻ =D",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 65974,
@@ -104872,7 +104833,8 @@
       "flasherSteamId": 76561198185420454,
       "flasherName": "Torresᵖᵛᶻ =D",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 66934,
@@ -104885,7 +104847,8 @@
       "flasherSteamId": 76561197997389119,
       "flasherName": "roma * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 66934,
@@ -104898,7 +104861,8 @@
       "flasherSteamId": 76561197997389119,
       "flasherName": "roma * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 66982,
@@ -104911,7 +104875,8 @@
       "flasherSteamId": 76561198054373555,
       "flasherName": "MKWsf",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 66982,
@@ -104924,7 +104889,8 @@
       "flasherSteamId": 76561198054373555,
       "flasherName": "MKWsf",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 78598,
@@ -104937,7 +104903,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 78598,
@@ -104950,7 +104917,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 82606,
@@ -104963,7 +104931,8 @@
       "flasherSteamId": 76561197985934021,
       "flasherName": "SHANEY * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 83782,
@@ -104976,7 +104945,8 @@
       "flasherSteamId": 76561198158292008,
       "flasherName": "dvn",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 89088,
@@ -104989,7 +104959,8 @@
       "flasherSteamId": 76561197997389119,
       "flasherName": "roma * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 89088,
@@ -105002,7 +104973,8 @@
       "flasherSteamId": 76561197997389119,
       "flasherName": "roma * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 90400,
@@ -105015,7 +104987,8 @@
       "flasherSteamId": 76561198185420454,
       "flasherName": "Torresᵖᵛᶻ =D",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 90400,
@@ -105028,20 +105001,8 @@
       "flasherSteamId": 76561198185420454,
       "flasherName": "Torresᵖᵛᶻ =D",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 90400,
-      "roundNumber": 6,
-      "duration": 0.6173949,
-      "flashedSteamId": 76561198033653629,
-      "flashedName": "nobodyysf",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198185420454,
-      "flasherName": "Torresᵖᵛᶻ =D",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 90568,
@@ -105054,7 +105015,8 @@
       "flasherSteamId": 76561198185420454,
       "flasherName": "Torresᵖᵛᶻ =D",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 90568,
@@ -105067,7 +105029,8 @@
       "flasherSteamId": 76561198185420454,
       "flasherName": "Torresᵖᵛᶻ =D",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 90568,
@@ -105080,7 +105043,8 @@
       "flasherSteamId": 76561198185420454,
       "flasherName": "Torresᵖᵛᶻ =D",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 90784,
@@ -105093,7 +105057,8 @@
       "flasherSteamId": 76561197994372203,
       "flasherName": "Lumji * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 90784,
@@ -105106,7 +105071,8 @@
       "flasherSteamId": 76561197994372203,
       "flasherName": "Lumji * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 90784,
@@ -105119,7 +105085,8 @@
       "flasherSteamId": 76561197994372203,
       "flasherName": "Lumji * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 90784,
@@ -105132,7 +105099,8 @@
       "flasherSteamId": 76561197994372203,
       "flasherName": "Lumji * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 90784,
@@ -105145,46 +105113,8 @@
       "flasherSteamId": 76561197994372203,
       "flasherName": "Lumji * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 90784,
-      "roundNumber": 6,
-      "duration": 1.8892676,
-      "flashedSteamId": 76561198033653629,
-      "flashedName": "nobodyysf",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197994372203,
-      "flasherName": "Lumji * SkinsVault",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 92792,
-      "roundNumber": 6,
-      "duration": 0.53628474,
-      "flashedSteamId": 76561198054373555,
-      "flashedName": "MKWsf",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197962115912,
-      "flasherName": "redSNK * SkinsVault",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 92792,
-      "roundNumber": 6,
-      "duration": 0.640429,
-      "flashedSteamId": 76561198158292008,
-      "flashedName": "dvn",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197962115912,
-      "flasherName": "redSNK * SkinsVault",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 97320,
@@ -105197,7 +105127,8 @@
       "flasherSteamId": 76561197985934021,
       "flasherName": "SHANEY * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 97320,
@@ -105210,7 +105141,8 @@
       "flasherSteamId": 76561197985934021,
       "flasherName": "SHANEY * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 97320,
@@ -105223,7 +105155,8 @@
       "flasherSteamId": 76561197985934021,
       "flasherName": "SHANEY * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 97592,
@@ -105236,7 +105169,8 @@
       "flasherSteamId": 76561198185420454,
       "flasherName": "Torresᵖᵛᶻ =D",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 99280,
@@ -105249,7 +105183,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 99280,
@@ -105262,7 +105197,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 102320,
@@ -105275,7 +105211,8 @@
       "flasherSteamId": 76561198138998220,
       "flasherName": "SHN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 105216,
@@ -105288,7 +105225,8 @@
       "flasherSteamId": 76561197985934021,
       "flasherName": "SHANEY * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 106256,
@@ -105301,20 +105239,8 @@
       "flasherSteamId": 76561198144401525,
       "flasherName": "dream * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 106256,
-      "roundNumber": 7,
-      "duration": 1.9351927,
-      "flashedSteamId": 76561198033653629,
-      "flashedName": "nobodyysf",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198144401525,
-      "flasherName": "dream * SkinsVault",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 106256,
@@ -105327,7 +105253,8 @@
       "flasherSteamId": 76561198144401525,
       "flasherName": "dream * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 106688,
@@ -105340,7 +105267,8 @@
       "flasherSteamId": 76561198158292008,
       "flasherName": "dvn",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 106688,
@@ -105353,7 +105281,8 @@
       "flasherSteamId": 76561198158292008,
       "flasherName": "dvn",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 106688,
@@ -105366,33 +105295,8 @@
       "flasherSteamId": 76561198158292008,
       "flasherName": "dvn",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 106688,
-      "roundNumber": 7,
-      "duration": 3.6960192,
-      "flashedSteamId": 76561198054373555,
-      "flashedName": "MKWsf",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198158292008,
-      "flasherName": "dvn",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 106688,
-      "roundNumber": 7,
-      "duration": 3.6960192,
-      "flashedSteamId": 76561198033653629,
-      "flashedName": "nobodyysf",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198158292008,
-      "flasherName": "dvn",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 106688,
@@ -105405,7 +105309,8 @@
       "flasherSteamId": 76561198158292008,
       "flasherName": "dvn",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 112838,
@@ -105418,7 +105323,8 @@
       "flasherSteamId": 76561198054373555,
       "flasherName": "MKWsf",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 115286,
@@ -105431,7 +105337,8 @@
       "flasherSteamId": 76561197985934021,
       "flasherName": "SHANEY * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 115286,
@@ -105444,20 +105351,8 @@
       "flasherSteamId": 76561197985934021,
       "flasherName": "SHANEY * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 115286,
-      "roundNumber": 8,
-      "duration": 1.2528496,
-      "flashedSteamId": 76561198033653629,
-      "flashedName": "nobodyysf",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197985934021,
-      "flasherName": "SHANEY * SkinsVault",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 115286,
@@ -105470,7 +105365,8 @@
       "flasherSteamId": 76561197985934021,
       "flasherName": "SHANEY * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 115430,
@@ -105483,20 +105379,8 @@
       "flasherSteamId": 76561198122986597,
       "flasherName": "Duarte \u003e.\u003c",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 115430,
-      "roundNumber": 8,
-      "duration": 0.5890678,
-      "flashedSteamId": 76561197962115912,
-      "flashedName": "redSNK * SkinsVault",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198122986597,
-      "flasherName": "Duarte \u003e.\u003c",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 115430,
@@ -105509,7 +105393,8 @@
       "flasherSteamId": 76561198122986597,
       "flasherName": "Duarte \u003e.\u003c",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 115430,
@@ -105522,20 +105407,8 @@
       "flasherSteamId": 76561198122986597,
       "flasherName": "Duarte \u003e.\u003c",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 115430,
-      "roundNumber": 8,
-      "duration": 0.15857975,
-      "flashedSteamId": 76561198033653629,
-      "flashedName": "nobodyysf",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198122986597,
-      "flasherName": "Duarte \u003e.\u003c",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 115430,
@@ -105548,7 +105421,8 @@
       "flasherSteamId": 76561198122986597,
       "flasherName": "Duarte \u003e.\u003c",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 115830,
@@ -105561,7 +105435,8 @@
       "flasherSteamId": 76561197994372203,
       "flasherName": "Lumji * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 115830,
@@ -105574,20 +105449,8 @@
       "flasherSteamId": 76561197994372203,
       "flasherName": "Lumji * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 115830,
-      "roundNumber": 8,
-      "duration": 3.764982,
-      "flashedSteamId": 76561198033653629,
-      "flashedName": "nobodyysf",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197994372203,
-      "flasherName": "Lumji * SkinsVault",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 115830,
@@ -105600,7 +105463,8 @@
       "flasherSteamId": 76561197994372203,
       "flasherName": "Lumji * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 121135,
@@ -105613,7 +105477,8 @@
       "flasherSteamId": 76561198185420454,
       "flasherName": "Torresᵖᵛᶻ =D",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 121271,
@@ -105626,7 +105491,8 @@
       "flasherSteamId": 76561198144401525,
       "flasherName": "dream * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 121271,
@@ -105639,7 +105505,8 @@
       "flasherSteamId": 76561198144401525,
       "flasherName": "dream * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 121639,
@@ -105652,7 +105519,8 @@
       "flasherSteamId": 76561197994372203,
       "flasherName": "Lumji * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 121639,
@@ -105665,7 +105533,8 @@
       "flasherSteamId": 76561197994372203,
       "flasherName": "Lumji * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 121639,
@@ -105678,7 +105547,8 @@
       "flasherSteamId": 76561197994372203,
       "flasherName": "Lumji * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 123199,
@@ -105691,20 +105561,8 @@
       "flasherSteamId": 76561198138998220,
       "flasherName": "SHN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 123199,
-      "roundNumber": 9,
-      "duration": 1.7272888,
-      "flashedSteamId": 76561198033653629,
-      "flashedName": "nobodyysf",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198138998220,
-      "flasherName": "SHN",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 123199,
@@ -105717,7 +105575,8 @@
       "flasherSteamId": 76561198138998220,
       "flasherName": "SHN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 123567,
@@ -105730,7 +105589,8 @@
       "flasherSteamId": 76561198138998220,
       "flasherName": "SHN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 124463,
@@ -105743,7 +105603,8 @@
       "flasherSteamId": 76561198122986597,
       "flasherName": "Duarte \u003e.\u003c",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 124463,
@@ -105756,7 +105617,8 @@
       "flasherSteamId": 76561198122986597,
       "flasherName": "Duarte \u003e.\u003c",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 126231,
@@ -105769,7 +105631,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 126231,
@@ -105782,7 +105645,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 126231,
@@ -105795,20 +105659,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 126231,
-      "roundNumber": 9,
-      "duration": 1.9002584,
-      "flashedSteamId": 76561198033653629,
-      "flashedName": "nobodyysf",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197962115912,
-      "flasherName": "redSNK * SkinsVault",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 126231,
@@ -105821,7 +105673,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 131314,
@@ -105834,7 +105687,8 @@
       "flasherSteamId": 76561198158292008,
       "flasherName": "dvn",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 131314,
@@ -105847,7 +105701,8 @@
       "flasherSteamId": 76561198158292008,
       "flasherName": "dvn",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 131314,
@@ -105860,7 +105715,8 @@
       "flasherSteamId": 76561198158292008,
       "flasherName": "dvn",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 131378,
@@ -105873,7 +105729,8 @@
       "flasherSteamId": 76561198185420454,
       "flasherName": "Torresᵖᵛᶻ =D",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 131378,
@@ -105886,7 +105743,8 @@
       "flasherSteamId": 76561198185420454,
       "flasherName": "Torresᵖᵛᶻ =D",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 131378,
@@ -105899,7 +105757,8 @@
       "flasherSteamId": 76561198185420454,
       "flasherName": "Torresᵖᵛᶻ =D",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 131834,
@@ -105912,7 +105771,8 @@
       "flasherSteamId": 76561198138998220,
       "flasherName": "SHN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 131834,
@@ -105925,7 +105785,8 @@
       "flasherSteamId": 76561198138998220,
       "flasherName": "SHN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 131834,
@@ -105938,7 +105799,8 @@
       "flasherSteamId": 76561198138998220,
       "flasherName": "SHN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 132074,
@@ -105951,7 +105813,8 @@
       "flasherSteamId": 76561198144401525,
       "flasherName": "dream * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 132546,
@@ -105964,7 +105827,8 @@
       "flasherSteamId": 76561198185420454,
       "flasherName": "Torresᵖᵛᶻ =D",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 132546,
@@ -105977,7 +105841,8 @@
       "flasherSteamId": 76561198185420454,
       "flasherName": "Torresᵖᵛᶻ =D",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 141859,
@@ -105990,7 +105855,8 @@
       "flasherSteamId": 76561198138998220,
       "flasherName": "SHN",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 143819,
@@ -106003,7 +105869,8 @@
       "flasherSteamId": 76561198158292008,
       "flasherName": "dvn",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 161870,
@@ -106016,7 +105883,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 165990,
@@ -106029,33 +105897,8 @@
       "flasherSteamId": 76561197985934021,
       "flasherName": "SHANEY * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 165990,
-      "roundNumber": 12,
-      "duration": 0.8070123,
-      "flashedSteamId": 76561198144401525,
-      "flashedName": "dream * SkinsVault",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197985934021,
-      "flasherName": "SHANEY * SkinsVault",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 168334,
-      "roundNumber": 12,
-      "duration": 0.90995264,
-      "flashedSteamId": 76561197962115912,
-      "flashedName": "redSNK * SkinsVault",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197985934021,
-      "flasherName": "SHANEY * SkinsVault",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 168334,
@@ -106068,20 +105911,8 @@
       "flasherSteamId": 76561197985934021,
       "flasherName": "SHANEY * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 168334,
-      "roundNumber": 12,
-      "duration": 0.91024935,
-      "flashedSteamId": 76561198144401525,
-      "flashedName": "dream * SkinsVault",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197985934021,
-      "flasherName": "SHANEY * SkinsVault",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 184161,
@@ -106094,7 +105925,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 184161,
@@ -106107,33 +105939,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 184161,
-      "roundNumber": 14,
-      "duration": 4.3635874,
-      "flashedSteamId": 76561198054373555,
-      "flashedName": "MKWsf",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197962115912,
-      "flasherName": "redSNK * SkinsVault",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 184161,
-      "roundNumber": 14,
-      "duration": 5.009134,
-      "flashedSteamId": 76561198033653629,
-      "flashedName": "nobodyysf",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197962115912,
-      "flasherName": "redSNK * SkinsVault",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 184161,
@@ -106146,7 +105953,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 185313,
@@ -106159,7 +105967,8 @@
       "flasherSteamId": 76561198122986597,
       "flasherName": "Duarte \u003e.\u003c",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 185313,
@@ -106172,7 +105981,8 @@
       "flasherSteamId": 76561198122986597,
       "flasherName": "Duarte \u003e.\u003c",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 185313,
@@ -106185,7 +105995,8 @@
       "flasherSteamId": 76561198122986597,
       "flasherName": "Duarte \u003e.\u003c",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 185577,
@@ -106198,7 +106009,8 @@
       "flasherSteamId": 76561197994372203,
       "flasherName": "Lumji * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 185577,
@@ -106211,7 +106023,8 @@
       "flasherSteamId": 76561197994372203,
       "flasherName": "Lumji * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 185577,
@@ -106224,20 +106037,8 @@
       "flasherSteamId": 76561197994372203,
       "flasherName": "Lumji * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 185577,
-      "roundNumber": 14,
-      "duration": 4.3162427,
-      "flashedSteamId": 76561198033653629,
-      "flashedName": "nobodyysf",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197994372203,
-      "flasherName": "Lumji * SkinsVault",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 185577,
@@ -106250,7 +106051,8 @@
       "flasherSteamId": 76561197994372203,
       "flasherName": "Lumji * SkinsVault",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 190342,
@@ -106263,7 +106065,8 @@
       "flasherSteamId": 76561198185420454,
       "flasherName": "Torresᵖᵛᶻ =D",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 190342,
@@ -106276,7 +106079,8 @@
       "flasherSteamId": 76561198185420454,
       "flasherName": "Torresᵖᵛᶻ =D",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 197886,
@@ -106289,7 +106093,8 @@
       "flasherSteamId": 76561198054373555,
       "flasherName": "MKWsf",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 198830,
@@ -106302,7 +106107,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 198830,
@@ -106315,7 +106121,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 199126,
@@ -106328,7 +106135,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 199126,
@@ -106341,33 +106149,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 202158,
-      "roundNumber": 16,
-      "duration": 4.465181,
-      "flashedSteamId": 76561197994372203,
-      "flashedName": "Lumji * SkinsVault",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198054373555,
-      "flasherName": "MKWsf",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 202158,
-      "roundNumber": 16,
-      "duration": 1.0244405,
-      "flashedSteamId": 76561198138998220,
-      "flashedName": "SHN",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198054373555,
-      "flasherName": "MKWsf",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 202158,
@@ -106380,7 +106163,8 @@
       "flasherSteamId": 76561198054373555,
       "flasherName": "MKWsf",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 209249,
@@ -106393,7 +106177,8 @@
       "flasherSteamId": 76561198054373555,
       "flasherName": "MKWsf",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 209577,
@@ -106406,7 +106191,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 209705,
@@ -106419,7 +106205,8 @@
       "flasherSteamId": 76561198144401525,
       "flasherName": "dream * SkinsVault",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 209705,
@@ -106432,7 +106219,8 @@
       "flasherSteamId": 76561198144401525,
       "flasherName": "dream * SkinsVault",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 209705,
@@ -106445,20 +106233,8 @@
       "flasherSteamId": 76561198144401525,
       "flasherName": "dream * SkinsVault",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 209705,
-      "roundNumber": 17,
-      "duration": 0.6725327,
-      "flashedSteamId": 76561198033653629,
-      "flashedName": "nobodyysf",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198144401525,
-      "flasherName": "dream * SkinsVault",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 209761,
@@ -106471,7 +106247,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 209761,
@@ -106484,20 +106261,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 209761,
-      "roundNumber": 17,
-      "duration": 1.7645732,
-      "flashedSteamId": 76561198033653629,
-      "flashedName": "nobodyysf",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197962115912,
-      "flasherName": "redSNK * SkinsVault",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 209761,
@@ -106510,20 +106275,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 212641,
-      "roundNumber": 17,
-      "duration": 1.8757359,
-      "flashedSteamId": 76561197997389119,
-      "flashedName": "roma * SkinsVault",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198138998220,
-      "flasherName": "SHN",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 212641,
@@ -106536,46 +106289,8 @@
       "flasherSteamId": 76561198138998220,
       "flasherName": "SHN",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 212641,
-      "roundNumber": 17,
-      "duration": 1.8756139,
-      "flashedSteamId": 76561197962115912,
-      "flashedName": "redSNK * SkinsVault",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198138998220,
-      "flasherName": "SHN",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 212641,
-      "roundNumber": 17,
-      "duration": 1.8756139,
-      "flashedSteamId": 76561197994372203,
-      "flashedName": "Lumji * SkinsVault",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198138998220,
-      "flasherName": "SHN",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 212641,
-      "roundNumber": 17,
-      "duration": 1.8756139,
-      "flashedSteamId": 76561198144401525,
-      "flashedName": "dream * SkinsVault",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198138998220,
-      "flasherName": "SHN",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 218413,
@@ -106588,7 +106303,8 @@
       "flasherSteamId": 76561198054373555,
       "flasherName": "MKWsf",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 218533,
@@ -106601,7 +106317,8 @@
       "flasherSteamId": 76561198158292008,
       "flasherName": "dvn",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 218533,
@@ -106614,7 +106331,8 @@
       "flasherSteamId": 76561198158292008,
       "flasherName": "dvn",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 229972,
@@ -106627,7 +106345,8 @@
       "flasherSteamId": 76561197994372203,
       "flasherName": "Lumji * SkinsVault",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 231220,
@@ -106640,20 +106359,8 @@
       "flasherSteamId": 76561198138998220,
       "flasherName": "SHN",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 233212,
-      "roundNumber": 19,
-      "duration": 4.194883,
-      "flashedSteamId": 76561198144401525,
-      "flashedName": "dream * SkinsVault",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198185420454,
-      "flasherName": "Torresᵖᵛᶻ =D",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 233644,
@@ -106666,20 +106373,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 233644,
-      "roundNumber": 19,
-      "duration": 4.336761,
-      "flashedSteamId": 76561198122986597,
-      "flashedName": "Duarte \u003e.\u003c",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197962115912,
-      "flasherName": "redSNK * SkinsVault",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 234468,
@@ -106692,46 +106387,8 @@
       "flasherSteamId": 76561198054373555,
       "flasherName": "MKWsf",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 234468,
-      "roundNumber": 19,
-      "duration": 4.7575808,
-      "flashedSteamId": 76561197994372203,
-      "flashedName": "Lumji * SkinsVault",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198054373555,
-      "flasherName": "MKWsf",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 234468,
-      "roundNumber": 19,
-      "duration": 4.7575808,
-      "flashedSteamId": 76561198144401525,
-      "flashedName": "dream * SkinsVault",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198054373555,
-      "flasherName": "MKWsf",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 234684,
-      "roundNumber": 19,
-      "duration": 2.008181,
-      "flashedSteamId": 76561198122986597,
-      "flashedName": "Duarte \u003e.\u003c",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197962115912,
-      "flasherName": "redSNK * SkinsVault",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 234684,
@@ -106744,33 +106401,8 @@
       "flasherSteamId": 76561197962115912,
       "flasherName": "redSNK * SkinsVault",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 234684,
-      "roundNumber": 19,
-      "duration": 2.0081553,
-      "flashedSteamId": 76561198033653629,
-      "flashedName": "nobodyysf",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197962115912,
-      "flasherName": "redSNK * SkinsVault",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 235252,
-      "roundNumber": 19,
-      "duration": 0.15354474,
-      "flashedSteamId": 76561197997389119,
-      "flashedName": "roma * SkinsVault",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198054373555,
-      "flasherName": "MKWsf",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 235252,
@@ -106783,33 +106415,8 @@
       "flasherSteamId": 76561198054373555,
       "flasherName": "MKWsf",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 235252,
-      "roundNumber": 19,
-      "duration": 0.1535503,
-      "flashedSteamId": 76561197994372203,
-      "flashedName": "Lumji * SkinsVault",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198054373555,
-      "flasherName": "MKWsf",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 235252,
-      "roundNumber": 19,
-      "duration": 0.1535503,
-      "flashedSteamId": 76561198144401525,
-      "flashedName": "dream * SkinsVault",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198054373555,
-      "flasherName": "MKWsf",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 235252,
@@ -106822,20 +106429,8 @@
       "flasherSteamId": 76561198054373555,
       "flasherName": "MKWsf",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 235252,
-      "roundNumber": 19,
-      "duration": 0.8812368,
-      "flashedSteamId": 76561198033653629,
-      "flashedName": "nobodyysf",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198054373555,
-      "flasherName": "MKWsf",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 244284,
@@ -106848,7 +106443,8 @@
       "flasherSteamId": 76561198122986597,
       "flasherName": "Duarte \u003e.\u003c",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 244284,
@@ -106861,20 +106457,8 @@
       "flasherSteamId": 76561198122986597,
       "flasherName": "Duarte \u003e.\u003c",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 244284,
-      "roundNumber": 20,
-      "duration": 0.823039,
-      "flashedSteamId": 76561198033653629,
-      "flashedName": "nobodyysf",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198122986597,
-      "flasherName": "Duarte \u003e.\u003c",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 244300,
@@ -106887,7 +106471,8 @@
       "flasherSteamId": 76561198158292008,
       "flasherName": "dvn",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 244300,
@@ -106900,7 +106485,8 @@
       "flasherSteamId": 76561198158292008,
       "flasherName": "dvn",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 244300,
@@ -106913,7 +106499,8 @@
       "flasherSteamId": 76561198158292008,
       "flasherName": "dvn",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 244660,
@@ -106926,7 +106513,8 @@
       "flasherSteamId": 76561198185420454,
       "flasherName": "Torresᵖᵛᶻ =D",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 248564,
@@ -106939,20 +106527,8 @@
       "flasherSteamId": 76561197997389119,
       "flasherName": "roma * SkinsVault",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 248564,
-      "roundNumber": 20,
-      "duration": 3.750761,
-      "flashedSteamId": 76561198033653629,
-      "flashedName": "nobodyysf",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997389119,
-      "flasherName": "roma * SkinsVault",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 248772,
@@ -106965,7 +106541,8 @@
       "flasherSteamId": 76561197985934021,
       "flasherName": "SHANEY * SkinsVault",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     }
   ],
   "grenadePositions": [],

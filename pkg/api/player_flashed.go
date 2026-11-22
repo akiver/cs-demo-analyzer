@@ -1,6 +1,9 @@
 package api
 
 import (
+	"math"
+
+	"github.com/golang/geo/r3"
 	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
 	events "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/events"
 )
@@ -17,21 +20,41 @@ type PlayerFlashed struct {
 	FlasherName             string      `json:"flasherName"`
 	FlasherSide             common.Team `json:"flasherSide"`
 	IsFlasherControllingBot bool        `json:"isFlasherControllingBot"`
+	// The flashbang exploded in front of the flashed player (less than 90° from where they were looking).
+	// The in-game scoreboard counts an enemy as flashed only in this case.
+	IsFlashedFacingFlashbang bool `json:"isFlashedFacingFlashbang"`
+}
+
+func isPlayerFacingFlashbang(player *common.Player, projectile *common.GrenadeProjectile) bool {
+	if projectile == nil {
+		return true
+	}
+
+	yaw := float64(player.ViewDirectionX()) * math.Pi / 180
+	pitch := float64(player.ViewDirectionY()) * math.Pi / 180
+	viewDirection := r3.Vector{
+		X: math.Cos(pitch) * math.Cos(yaw),
+		Y: math.Cos(pitch) * math.Sin(yaw),
+		Z: -math.Sin(pitch),
+	}
+	toFlashbang := projectile.Position().Sub(player.PositionEyes())
+
+	return viewDirection.Dot(toFlashbang) > 0
 }
 
 func newPlayerFlashed(analyzer *Analyzer, event events.PlayerFlashed) *PlayerFlashed {
-
 	return &PlayerFlashed{
-		Tick:                    analyzer.currentTick(),
-		RoundNumber:             analyzer.currentRound.Number,
-		Duration:                event.Player.FlashDuration,
-		FlashedName:             event.Player.Name,
-		FlashedSteamID64:        event.Player.SteamID64,
-		FlashedSide:             event.Player.Team,
-		IsFlashedControllingBot: event.Player.IsControllingBot(),
-		FlasherName:             event.Attacker.Name,
-		FlasherSteamID64:        event.Attacker.SteamID64,
-		FlasherSide:             event.Attacker.Team,
-		IsFlasherControllingBot: event.Attacker.IsControllingBot(),
+		Tick:                     analyzer.currentTick(),
+		RoundNumber:              analyzer.currentRound.Number,
+		Duration:                 event.Player.FlashDuration,
+		FlashedName:              event.Player.Name,
+		FlashedSteamID64:         event.Player.SteamID64,
+		FlashedSide:              event.Player.Team,
+		IsFlashedControllingBot:  event.Player.IsControllingBot(),
+		FlasherName:              event.Attacker.Name,
+		FlasherSteamID64:         event.Attacker.SteamID64,
+		FlasherSide:              event.Attacker.Team,
+		IsFlasherControllingBot:  event.Attacker.IsControllingBot(),
+		IsFlashedFacingFlashbang: isPlayerFacingFlashbang(event.Player, event.Projectile),
 	}
 }

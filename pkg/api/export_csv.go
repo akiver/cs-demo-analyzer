@@ -979,6 +979,7 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 			"flasher name",
 			"flasher side",
 			"is flasher controlling bot",
+			"is flashed facing flashbang",
 			"match checksum",
 		}
 
@@ -996,6 +997,7 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 				playerFlashed.FlasherName,
 				converters.TeamToString(playerFlashed.FlasherSide),
 				converters.BoolToString(playerFlashed.IsFlasherControllingBot),
+				converters.BoolToString(playerFlashed.IsFlashedFacingFlashbang),
 				match.Checksum,
 			}
 			lines = append(lines, line)

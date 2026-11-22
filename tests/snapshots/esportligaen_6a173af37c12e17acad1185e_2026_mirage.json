@@ -345,7 +345,7 @@
       "bombPlantedCount": 1,
       "healthDamage": 1936,
       "armorDamage": 318,
-      "utilityDamage": 110,
+      "utilityDamage": 109,
       "headshotCount": 8,
       "headshotPercent": 50,
       "oneVsOneCount": 3,
@@ -367,7 +367,7 @@
       "averageKillPerRound": 0.8,
       "averageDeathPerRound": 0.45,
       "averageDamagePerRound": 96.8,
-      "utilityDamagePerRound": 5.5,
+      "utilityDamagePerRound": 5.45,
       "firstKillCount": 2,
       "firstDeathCount": 1,
       "firstTradeDeathCount": 1,
@@ -412,7 +412,7 @@
       "bombPlantedCount": 1,
       "healthDamage": 1295,
       "armorDamage": 186,
-      "utilityDamage": 34,
+      "utilityDamage": 33,
       "headshotCount": 5,
       "headshotPercent": 71,
       "oneVsOneCount": 4,
@@ -434,7 +434,7 @@
       "averageKillPerRound": 0.35,
       "averageDeathPerRound": 0.85,
       "averageDamagePerRound": 64.75,
-      "utilityDamagePerRound": 1.7,
+      "utilityDamagePerRound": 1.65,
       "firstKillCount": 2,
       "firstDeathCount": 0,
       "firstTradeDeathCount": 0,
@@ -85833,7 +85833,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 19690,
@@ -85846,7 +85847,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 20217,
@@ -85859,7 +85861,8 @@
       "flasherSteamId": 76561198067824174,
       "flasherName": "Thais",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 21813,
@@ -85872,7 +85875,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 22498,
@@ -85885,7 +85889,8 @@
       "flasherSteamId": 76561197981156159,
       "flasherName": "LaR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 22498,
@@ -85898,7 +85903,8 @@
       "flasherSteamId": 76561197981156159,
       "flasherName": "LaR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 28739,
@@ -85911,7 +85917,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 28946,
@@ -85924,7 +85931,8 @@
       "flasherSteamId": 76561198067824174,
       "flasherName": "Thais",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 29625,
@@ -85937,7 +85945,8 @@
       "flasherSteamId": 76561197981156159,
       "flasherName": "LaR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 30473,
@@ -85950,7 +85959,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 30557,
@@ -85963,7 +85973,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 34427,
@@ -85976,7 +85987,8 @@
       "flasherSteamId": 76561197981156159,
       "flasherName": "LaR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 40168,
@@ -85989,7 +86001,8 @@
       "flasherSteamId": 76561197981156159,
       "flasherName": "LaR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 40168,
@@ -86002,7 +86015,8 @@
       "flasherSteamId": 76561197981156159,
       "flasherName": "LaR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 40168,
@@ -86015,7 +86029,8 @@
       "flasherSteamId": 76561197981156159,
       "flasherName": "LaR",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 40201,
@@ -86028,7 +86043,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 40201,
@@ -86041,7 +86057,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 40201,
@@ -86054,7 +86071,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 40773,
@@ -86067,7 +86085,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 40773,
@@ -86080,7 +86099,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 40773,
@@ -86093,7 +86113,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 40773,
@@ -86106,7 +86127,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 41716,
@@ -86119,7 +86141,8 @@
       "flasherSteamId": 76561198087843860,
       "flasherName": "Teasp00n",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 41716,
@@ -86132,7 +86155,8 @@
       "flasherSteamId": 76561198087843860,
       "flasherName": "Teasp00n",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 45318,
@@ -86145,7 +86169,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 47005,
@@ -86158,7 +86183,8 @@
       "flasherSteamId": 76561198227684036,
       "flasherName": "Rooftop Korean BBQ",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 47005,
@@ -86171,20 +86197,8 @@
       "flasherSteamId": 76561198227684036,
       "flasherName": "Rooftop Korean BBQ",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 47005,
-      "roundNumber": 7,
-      "duration": 5.0984187,
-      "flashedSteamId": 76561198067824174,
-      "flashedName": "Thais",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198227684036,
-      "flasherName": "Rooftop Korean BBQ",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 51583,
@@ -86197,7 +86211,8 @@
       "flasherSteamId": 76561198087843860,
       "flasherName": "Teasp00n",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 51583,
@@ -86210,7 +86225,8 @@
       "flasherSteamId": 76561198087843860,
       "flasherName": "Teasp00n",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 52265,
@@ -86223,7 +86239,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 52265,
@@ -86236,7 +86253,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 61289,
@@ -86249,7 +86267,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 61289,
@@ -86262,7 +86281,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 61289,
@@ -86275,7 +86295,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 67719,
@@ -86288,7 +86309,8 @@
       "flasherSteamId": 76561198059235901,
       "flasherName": "Lass",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 67719,
@@ -86301,7 +86323,8 @@
       "flasherSteamId": 76561198059235901,
       "flasherName": "Lass",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 67719,
@@ -86314,7 +86337,8 @@
       "flasherSteamId": 76561198059235901,
       "flasherName": "Lass",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 67719,
@@ -86327,7 +86351,8 @@
       "flasherSteamId": 76561198059235901,
       "flasherName": "Lass",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 67719,
@@ -86340,7 +86365,8 @@
       "flasherSteamId": 76561198059235901,
       "flasherName": "Lass",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 67719,
@@ -86353,7 +86379,8 @@
       "flasherSteamId": 76561198059235901,
       "flasherName": "Lass",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 67763,
@@ -86366,7 +86393,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 67763,
@@ -86379,7 +86407,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 67763,
@@ -86392,7 +86421,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 67763,
@@ -86405,7 +86435,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 72820,
@@ -86418,7 +86449,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 72820,
@@ -86431,7 +86463,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 72820,
@@ -86444,7 +86477,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 78748,
@@ -86457,7 +86491,8 @@
       "flasherSteamId": 76561198067824174,
       "flasherName": "Thais",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 78748,
@@ -86470,7 +86505,8 @@
       "flasherSteamId": 76561198067824174,
       "flasherName": "Thais",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 78748,
@@ -86483,7 +86519,8 @@
       "flasherSteamId": 76561198067824174,
       "flasherName": "Thais",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 80189,
@@ -86496,7 +86533,8 @@
       "flasherSteamId": 76561197960698453,
       "flasherName": "tomsi",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 80189,
@@ -86509,7 +86547,8 @@
       "flasherSteamId": 76561197960698453,
       "flasherName": "tomsi",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 92644,
@@ -86522,20 +86561,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 92644,
-      "roundNumber": 14,
-      "duration": 2.7305024,
-      "flashedSteamId": 76561197981156159,
-      "flashedName": "LaR",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198377812173,
-      "flasherName": "Kromann",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 92644,
@@ -86548,7 +86575,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 92644,
@@ -86561,7 +86589,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 92644,
@@ -86574,7 +86603,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 93538,
@@ -86587,7 +86617,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 93538,
@@ -86600,7 +86631,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 93538,
@@ -86613,7 +86645,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 98277,
@@ -86626,7 +86659,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 98277,
@@ -86639,7 +86673,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 99108,
@@ -86652,7 +86687,8 @@
       "flasherSteamId": 76561198227684036,
       "flasherName": "Rooftop Korean BBQ",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 106941,
@@ -86665,7 +86701,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 107255,
@@ -86678,7 +86715,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 107255,
@@ -86691,7 +86729,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 111701,
@@ -86704,7 +86743,8 @@
       "flasherSteamId": 76561198227684036,
       "flasherName": "Rooftop Korean BBQ",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 111701,
@@ -86717,7 +86757,8 @@
       "flasherSteamId": 76561198227684036,
       "flasherName": "Rooftop Korean BBQ",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 111701,
@@ -86730,7 +86771,8 @@
       "flasherSteamId": 76561198227684036,
       "flasherName": "Rooftop Korean BBQ",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 111960,
@@ -86743,7 +86785,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 112124,
@@ -86756,7 +86799,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 112124,
@@ -86769,7 +86813,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 112124,
@@ -86782,7 +86827,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 112857,
@@ -86795,7 +86841,8 @@
       "flasherSteamId": 76561198227684036,
       "flasherName": "Rooftop Korean BBQ",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 112857,
@@ -86808,7 +86855,8 @@
       "flasherSteamId": 76561198227684036,
       "flasherName": "Rooftop Korean BBQ",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 112857,
@@ -86821,7 +86869,8 @@
       "flasherSteamId": 76561198227684036,
       "flasherName": "Rooftop Korean BBQ",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 117635,
@@ -86834,7 +86883,8 @@
       "flasherSteamId": 76561197960698453,
       "flasherName": "tomsi",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 130719,
@@ -86847,7 +86897,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 130719,
@@ -86860,7 +86911,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 130719,
@@ -86873,7 +86925,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 130892,
@@ -86886,7 +86939,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 130892,
@@ -86899,7 +86953,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 133561,
@@ -86912,7 +86967,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 135217,
@@ -86925,20 +86981,8 @@
       "flasherSteamId": 76561198039665758,
       "flasherName": "luqjensen",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 135217,
-      "roundNumber": 20,
-      "duration": 0.61854523,
-      "flashedSteamId": 76561197981156159,
-      "flashedName": "LaR",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198039665758,
-      "flasherName": "luqjensen",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 136749,
@@ -86951,7 +86995,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 136749,
@@ -86964,7 +87009,8 @@
       "flasherSteamId": 76561198377812173,
       "flasherName": "Kromann",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     }
   ],
   "grenadePositions": [],

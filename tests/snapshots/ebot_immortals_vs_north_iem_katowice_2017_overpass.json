@@ -345,7 +345,7 @@
       "bombPlantedCount": 4,
       "healthDamage": 3010,
       "armorDamage": 406,
-      "utilityDamage": 133,
+      "utilityDamage": 131,
       "headshotCount": 11,
       "headshotPercent": 42,
       "oneVsOneCount": 5,
@@ -367,7 +367,7 @@
       "averageKillPerRound": 0.7647059,
       "averageDeathPerRound": 0.7352941,
       "averageDamagePerRound": 88.52941,
-      "utilityDamagePerRound": 3.9117646,
+      "utilityDamagePerRound": 3.8529413,
       "firstKillCount": 7,
       "firstDeathCount": 6,
       "firstTradeDeathCount": 3,
@@ -148313,7 +148313,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 12081,
@@ -148326,20 +148327,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 15218,
-      "roundNumber": 2,
-      "duration": 3.4759312,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 27087,
@@ -148352,7 +148341,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 27087,
@@ -148365,7 +148355,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 27087,
@@ -148378,7 +148369,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 31014,
@@ -148391,20 +148383,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 31014,
-      "roundNumber": 3,
-      "duration": 3.3670592,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 40102,
@@ -148417,7 +148397,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 40102,
@@ -148430,20 +148411,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 40102,
-      "roundNumber": 4,
-      "duration": 3.579976,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 40465,
@@ -148456,7 +148425,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 40465,
@@ -148469,20 +148439,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 40465,
-      "roundNumber": 4,
-      "duration": 2.0102272,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 43301,
@@ -148495,7 +148453,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 43301,
@@ -148508,33 +148467,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 43301,
-      "roundNumber": 4,
-      "duration": 4.389061,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984400619,
-      "flasherName": "MSL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 49349,
-      "roundNumber": 4,
-      "duration": 0.778288,
-      "flashedSteamId": 76561197978328043,
-      "flashedName": "cajunb",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 49349,
@@ -148547,7 +148481,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 49349,
@@ -148560,20 +148495,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 49349,
-      "roundNumber": 4,
-      "duration": 0.5504899,
-      "flashedSteamId": 76561198050950952,
-      "flashedName": "aizy",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 49349,
@@ -148586,7 +148509,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 49349,
@@ -148599,33 +148523,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 49349,
-      "roundNumber": 4,
-      "duration": 0.9792069,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 51076,
-      "roundNumber": 4,
-      "duration": 0.7095146,
-      "flashedSteamId": 76561197978328043,
-      "flashedName": "cajunb",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 51076,
@@ -148638,7 +148537,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 51076,
@@ -148651,20 +148551,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 51076,
-      "roundNumber": 4,
-      "duration": 0.14145315,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 57773,
@@ -148677,7 +148565,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 57773,
@@ -148690,7 +148579,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 57773,
@@ -148703,20 +148593,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 57773,
-      "roundNumber": 5,
-      "duration": 0.11296334,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 61569,
@@ -148729,7 +148607,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 64220,
@@ -148742,33 +148621,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 64220,
-      "roundNumber": 5,
-      "duration": 0.6267469,
-      "flashedSteamId": 76561198018379400,
-      "flashedName": "boltz",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 64220,
-      "roundNumber": 5,
-      "duration": 0.6267469,
-      "flashedSteamId": 76561198130444302,
-      "flashedName": "fnx",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 74072,
@@ -148781,7 +148635,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 74072,
@@ -148794,7 +148649,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 74072,
@@ -148807,7 +148663,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 75071,
@@ -148820,7 +148677,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 75071,
@@ -148833,7 +148691,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 75269,
@@ -148846,7 +148705,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 75420,
@@ -148859,20 +148719,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 75420,
-      "roundNumber": 6,
-      "duration": 5.0313525,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 75702,
@@ -148885,7 +148733,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 75949,
@@ -148898,7 +148747,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 77208,
@@ -148911,7 +148761,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 77208,
@@ -148924,7 +148775,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 77208,
@@ -148937,7 +148789,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 89688,
@@ -148950,7 +148803,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 89688,
@@ -148963,7 +148817,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 89904,
@@ -148976,20 +148831,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 89904,
-      "roundNumber": 7,
-      "duration": 4.706986,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 91054,
@@ -149002,7 +148845,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 91792,
@@ -149015,7 +148859,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 91792,
@@ -149028,20 +148873,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 91792,
-      "roundNumber": 7,
-      "duration": 0.2912491,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 92716,
@@ -149054,7 +148887,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 92716,
@@ -149067,20 +148901,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 92716,
-      "roundNumber": 7,
-      "duration": 0.67889154,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 93704,
@@ -149093,20 +148915,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 93704,
-      "roundNumber": 7,
-      "duration": 0.61745775,
-      "flashedSteamId": 76561198014778202,
-      "flashedName": "steelega",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 93704,
@@ -149119,7 +148929,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 108445,
@@ -149132,7 +148943,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 110128,
@@ -149145,20 +148957,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 110128,
-      "roundNumber": 8,
-      "duration": 3.5116296,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 113313,
@@ -149171,7 +148971,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 113672,
@@ -149184,7 +148985,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 113672,
@@ -149197,7 +148999,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 113672,
@@ -149210,33 +149013,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 113672,
-      "roundNumber": 8,
-      "duration": 1.4541847,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 113672,
-      "roundNumber": 8,
-      "duration": 4.8919744,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 116823,
@@ -149249,7 +149027,8 @@
       "flasherSteamId": 76561198018379400,
       "flasherName": "boltz",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 116823,
@@ -149262,33 +149041,8 @@
       "flasherSteamId": 76561198018379400,
       "flasherName": "boltz",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 116823,
-      "roundNumber": 8,
-      "duration": 1.8810875,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 117894,
-      "roundNumber": 8,
-      "duration": 1.8227333,
-      "flashedSteamId": 76561198014778202,
-      "flashedName": "steelega",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 117894,
@@ -149301,20 +149055,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 117894,
-      "roundNumber": 8,
-      "duration": 1.8227333,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 117951,
@@ -149327,33 +149069,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 117951,
-      "roundNumber": 8,
-      "duration": 1.3774208,
-      "flashedSteamId": 76561198014778202,
-      "flashedName": "steelega",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 117951,
-      "roundNumber": 8,
-      "duration": 0.5978262,
-      "flashedSteamId": 76561197979669175,
-      "flashedName": "K0NFIG",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 117951,
@@ -149366,46 +149083,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 117951,
-      "roundNumber": 8,
-      "duration": 1.3774208,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 117951,
-      "roundNumber": 8,
-      "duration": 1.4004779,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 118686,
-      "roundNumber": 8,
-      "duration": 0.6302902,
-      "flashedSteamId": 76561197965046352,
-      "flashedName": "lucas1",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 118686,
@@ -149418,46 +149097,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 118686,
-      "roundNumber": 8,
-      "duration": 0.6302902,
-      "flashedSteamId": 76561198018379400,
-      "flashedName": "boltz",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 118686,
-      "roundNumber": 8,
-      "duration": 0.63028663,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 118686,
-      "roundNumber": 8,
-      "duration": 0.12613657,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 120037,
@@ -149470,33 +149111,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 120037,
-      "roundNumber": 8,
-      "duration": 0.83545417,
-      "flashedSteamId": 76561197979669175,
-      "flashedName": "K0NFIG",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 120037,
-      "roundNumber": 8,
-      "duration": 0.83545417,
-      "flashedSteamId": 76561198050950952,
-      "flashedName": "aizy",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 120037,
@@ -149509,20 +149125,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 120037,
-      "roundNumber": 8,
-      "duration": 0.83545417,
-      "flashedSteamId": 76561197984400619,
-      "flashedName": "MSL",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 130998,
@@ -149535,7 +149139,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 131042,
@@ -149548,7 +149153,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 131067,
@@ -149561,7 +149167,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 131067,
@@ -149574,7 +149181,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 131067,
@@ -149587,33 +149195,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 131067,
-      "roundNumber": 9,
-      "duration": 0.9935649,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198014778202,
-      "flasherName": "steelega",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 131067,
-      "roundNumber": 9,
-      "duration": 2.973808,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198014778202,
-      "flasherName": "steelega",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 131517,
@@ -149626,7 +149209,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 131827,
@@ -149639,7 +149223,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 133296,
@@ -149652,7 +149237,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 133296,
@@ -149665,7 +149251,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 146164,
@@ -149678,7 +149265,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 146164,
@@ -149691,7 +149279,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 155274,
@@ -149704,7 +149293,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 155274,
@@ -149717,7 +149307,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 155274,
@@ -149730,7 +149321,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 155274,
@@ -149743,33 +149335,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 155274,
-      "roundNumber": 11,
-      "duration": 0.70242435,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 155274,
-      "roundNumber": 11,
-      "duration": 0.13928863,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 155377,
@@ -149782,33 +149349,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 155377,
-      "roundNumber": 11,
-      "duration": 3.5027843,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 155377,
-      "roundNumber": 11,
-      "duration": 1.9737035,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 155401,
@@ -149821,7 +149363,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 155401,
@@ -149834,33 +149377,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 155401,
-      "roundNumber": 11,
-      "duration": 3.3152843,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 155401,
-      "roundNumber": 11,
-      "duration": 4.9245453,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 155694,
@@ -149873,7 +149391,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 155694,
@@ -149886,20 +149405,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 155694,
-      "roundNumber": 11,
-      "duration": 2.9886148,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198014778202,
-      "flasherName": "steelega",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 156106,
@@ -149912,7 +149419,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 156106,
@@ -149925,7 +149433,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 156106,
@@ -149938,7 +149447,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 156106,
@@ -149951,20 +149461,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 156106,
-      "roundNumber": 11,
-      "duration": 0.92560923,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984400619,
-      "flasherName": "MSL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 156508,
@@ -149977,7 +149475,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 156850,
@@ -149990,7 +149489,8 @@
       "flasherSteamId": 76561198018379400,
       "flasherName": "boltz",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 156850,
@@ -150003,20 +149503,8 @@
       "flasherSteamId": 76561198018379400,
       "flasherName": "boltz",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 156850,
-      "roundNumber": 11,
-      "duration": 3.2406282,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 157405,
@@ -150029,7 +149517,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 157405,
@@ -150042,46 +149531,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 157405,
-      "roundNumber": 11,
-      "duration": 2.074084,
-      "flashedSteamId": 76561198050950952,
-      "flashedName": "aizy",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 157405,
-      "roundNumber": 11,
-      "duration": 0.85768044,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 157405,
-      "roundNumber": 11,
-      "duration": 0.8630384,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 158662,
@@ -150094,7 +149545,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 158662,
@@ -150107,33 +149559,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 158662,
-      "roundNumber": 11,
-      "duration": 1.0053247,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 158662,
-      "roundNumber": 11,
-      "duration": 3.5572486,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 159865,
@@ -150146,20 +149573,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 165771,
-      "roundNumber": 11,
-      "duration": 0.31805533,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 170579,
@@ -150172,7 +149587,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 170579,
@@ -150185,7 +149601,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 170709,
@@ -150198,7 +149615,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 170828,
@@ -150211,7 +149629,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 170828,
@@ -150224,20 +149643,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 170828,
-      "roundNumber": 12,
-      "duration": 0.21381281,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984400619,
-      "flasherName": "MSL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 171023,
@@ -150250,7 +149657,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 171023,
@@ -150263,7 +149671,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 171023,
@@ -150276,20 +149685,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 171023,
-      "roundNumber": 12,
-      "duration": 2.9237545,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197965046352,
-      "flasherName": "lucas1",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 178402,
@@ -150302,7 +149699,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 178402,
@@ -150315,7 +149713,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 178402,
@@ -150328,7 +149727,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 178402,
@@ -150341,33 +149741,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 178402,
-      "roundNumber": 12,
-      "duration": 4.6225023,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 178402,
-      "roundNumber": 12,
-      "duration": 1.0193825,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 184226,
@@ -150380,7 +149755,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 193894,
@@ -150393,7 +149769,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 193894,
@@ -150406,33 +149783,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 193894,
-      "roundNumber": 14,
-      "duration": 1.5539713,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 193894,
-      "roundNumber": 14,
-      "duration": 0.7768965,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 193940,
@@ -150445,7 +149797,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 193940,
@@ -150458,7 +149811,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 193940,
@@ -150471,33 +149825,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 193940,
-      "roundNumber": 14,
-      "duration": 1.863042,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 193940,
-      "roundNumber": 14,
-      "duration": 0.41752148,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 193952,
@@ -150510,7 +149839,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 193952,
@@ -150523,20 +149853,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 193952,
-      "roundNumber": 14,
-      "duration": 3.4932873,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 194045,
@@ -150549,7 +149867,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 194045,
@@ -150562,33 +149881,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 194045,
-      "roundNumber": 14,
-      "duration": 1.0427295,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 194045,
-      "roundNumber": 14,
-      "duration": 0.09768054,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 203479,
@@ -150601,7 +149895,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 203479,
@@ -150614,7 +149909,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 203479,
@@ -150627,7 +149923,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 203479,
@@ -150640,20 +149937,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 203479,
-      "roundNumber": 15,
-      "duration": 4.6698837,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 203672,
@@ -150666,7 +149951,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 203672,
@@ -150679,7 +149965,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 203672,
@@ -150692,7 +149979,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 203672,
@@ -150705,20 +149993,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 203672,
-      "roundNumber": 15,
-      "duration": 4.272826,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 204042,
@@ -150731,20 +150007,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 204042,
-      "roundNumber": 15,
-      "duration": 0.0707383,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 204723,
@@ -150757,20 +150021,8 @@
       "flasherSteamId": 76561198018379400,
       "flasherName": "boltz",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 204723,
-      "roundNumber": 15,
-      "duration": 3.3066814,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 205913,
@@ -150783,7 +150035,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 205913,
@@ -150796,20 +150049,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 205913,
-      "roundNumber": 15,
-      "duration": 4.441581,
-      "flashedSteamId": 76561197983956651,
-      "flashedName": "magisk",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198014778202,
-      "flasherName": "steelega",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 205913,
@@ -150822,20 +150063,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 205913,
-      "roundNumber": 15,
-      "duration": 4.441581,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198014778202,
-      "flasherName": "steelega",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 208777,
@@ -150848,7 +150077,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 208777,
@@ -150861,7 +150091,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 208777,
@@ -150874,7 +150105,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 208777,
@@ -150887,46 +150119,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 208777,
-      "roundNumber": 15,
-      "duration": 0.78897697,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 208777,
-      "roundNumber": 15,
-      "duration": 0.23824999,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 237805,
-      "roundNumber": 16,
-      "duration": 0.72563803,
-      "flashedSteamId": 76561197978328043,
-      "flashedName": "cajunb",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198014778202,
-      "flasherName": "steelega",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 237805,
@@ -150939,7 +150133,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 237805,
@@ -150952,33 +150147,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 237805,
-      "roundNumber": 16,
-      "duration": 0.7256311,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198014778202,
-      "flasherName": "steelega",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 238023,
-      "roundNumber": 16,
-      "duration": 3.0285962,
-      "flashedSteamId": 76561197978328043,
-      "flashedName": "cajunb",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198014778202,
-      "flasherName": "steelega",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 238023,
@@ -150991,7 +150161,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 238023,
@@ -151004,7 +150175,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 238023,
@@ -151017,7 +150189,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 238023,
@@ -151030,33 +150203,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 238023,
-      "roundNumber": 16,
-      "duration": 3.0289829,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198014778202,
-      "flasherName": "steelega",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 238023,
-      "roundNumber": 16,
-      "duration": 1.6313114,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198014778202,
-      "flasherName": "steelega",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 249161,
@@ -151069,20 +150217,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 249161,
-      "roundNumber": 17,
-      "duration": 3.3836405,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 256251,
@@ -151095,20 +150231,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 256251,
-      "roundNumber": 17,
-      "duration": 1.9522575,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 260663,
@@ -151121,7 +150245,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 260663,
@@ -151134,20 +150259,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 260663,
-      "roundNumber": 18,
-      "duration": 0.48403955,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 260916,
@@ -151160,7 +150273,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 260916,
@@ -151173,20 +150287,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 260916,
-      "roundNumber": 18,
-      "duration": 0.61682385,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 261051,
@@ -151199,7 +150301,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 261051,
@@ -151212,7 +150315,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 261051,
@@ -151225,33 +150329,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 261051,
-      "roundNumber": 18,
-      "duration": 3.204947,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984400619,
-      "flasherName": "MSL",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 261051,
-      "roundNumber": 18,
-      "duration": 0.026399804,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984400619,
-      "flasherName": "MSL",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 261725,
@@ -151264,7 +150343,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 261725,
@@ -151277,20 +150357,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 262037,
-      "roundNumber": 18,
-      "duration": 3.214134,
-      "flashedSteamId": 76561197965046352,
-      "flashedName": "lucas1",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 262037,
@@ -151303,7 +150371,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 262037,
@@ -151316,20 +150385,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 262037,
-      "roundNumber": 18,
-      "duration": 1.9826907,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 262090,
@@ -151342,7 +150399,8 @@
       "flasherSteamId": 76561198018379400,
       "flasherName": "boltz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 262090,
@@ -151355,46 +150413,8 @@
       "flasherSteamId": 76561198018379400,
       "flasherName": "boltz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 262090,
-      "roundNumber": 18,
-      "duration": 3.720837,
-      "flashedSteamId": 76561197984400619,
-      "flashedName": "MSL",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 262090,
-      "roundNumber": 18,
-      "duration": 0.12308952,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 262090,
-      "roundNumber": 18,
-      "duration": 1.5686282,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 265615,
@@ -151407,7 +150427,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 270490,
@@ -151420,59 +150441,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 270490,
-      "roundNumber": 18,
-      "duration": 4.634423,
-      "flashedSteamId": 76561197983956651,
-      "flashedName": "magisk",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198014778202,
-      "flasherName": "steelega",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 270490,
-      "roundNumber": 18,
-      "duration": 4.634423,
-      "flashedSteamId": 76561197984400619,
-      "flashedName": "MSL",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198014778202,
-      "flasherName": "steelega",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 270490,
-      "roundNumber": 18,
-      "duration": 4.6365147,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198014778202,
-      "flasherName": "steelega",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 272565,
-      "roundNumber": 18,
-      "duration": 1.0309516,
-      "flashedSteamId": 76561197965046352,
-      "flashedName": "lucas1",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 272565,
@@ -151485,20 +150455,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 272565,
-      "roundNumber": 18,
-      "duration": 4.1964173,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 272648,
@@ -151511,20 +150469,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 272648,
-      "roundNumber": 18,
-      "duration": 1.8232945,
-      "flashedSteamId": 76561197979669175,
-      "flashedName": "K0NFIG",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 272648,
@@ -151537,59 +150483,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 272648,
-      "roundNumber": 18,
-      "duration": 1.8232945,
-      "flashedSteamId": 76561197983956651,
-      "flashedName": "magisk",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 272648,
-      "roundNumber": 18,
-      "duration": 1.9840442,
-      "flashedSteamId": 76561197984400619,
-      "flashedName": "MSL",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 272648,
-      "roundNumber": 18,
-      "duration": 1.8232945,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 272648,
-      "roundNumber": 18,
-      "duration": 3.1700807,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 278202,
@@ -151602,20 +150497,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 281340,
-      "roundNumber": 19,
-      "duration": 3.5068772,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 334860,
@@ -151628,7 +150511,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 334860,
@@ -151641,33 +150525,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 334860,
-      "roundNumber": 20,
-      "duration": 3.9091403,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984400619,
-      "flasherName": "MSL",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 334860,
-      "roundNumber": 20,
-      "duration": 3.859423,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984400619,
-      "flasherName": "MSL",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 334963,
@@ -151680,20 +150539,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 335793,
-      "roundNumber": 20,
-      "duration": 0.6784604,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 336157,
@@ -151706,7 +150553,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 336481,
@@ -151719,7 +150567,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 345180,
@@ -151732,7 +150581,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 345180,
@@ -151745,7 +150595,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 345180,
@@ -151758,20 +150609,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 345180,
-      "roundNumber": 21,
-      "duration": 0.71227175,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984400619,
-      "flasherName": "MSL",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 345354,
@@ -151784,7 +150623,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 345354,
@@ -151797,20 +150637,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 345354,
-      "roundNumber": 21,
-      "duration": 0.16319114,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197965046352,
-      "flasherName": "lucas1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 346258,
@@ -151823,7 +150651,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 346258,
@@ -151836,7 +150665,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 346258,
@@ -151849,20 +150679,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 346258,
-      "roundNumber": 21,
-      "duration": 1.8391693,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197965046352,
-      "flasherName": "lucas1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 346472,
@@ -151875,7 +150693,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 346472,
@@ -151888,85 +150707,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 346472,
-      "roundNumber": 21,
-      "duration": 1.8913689,
-      "flashedSteamId": 76561198014778202,
-      "flashedName": "steelega",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984400619,
-      "flasherName": "MSL",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 346472,
-      "roundNumber": 21,
-      "duration": 3.3594813,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984400619,
-      "flasherName": "MSL",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 350334,
-      "roundNumber": 21,
-      "duration": 0.91121066,
-      "flashedSteamId": 76561197978328043,
-      "flashedName": "cajunb",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 350334,
-      "roundNumber": 21,
-      "duration": 4.519448,
-      "flashedSteamId": 76561197965046352,
-      "flashedName": "lucas1",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 350334,
-      "roundNumber": 21,
-      "duration": 4.523672,
-      "flashedSteamId": 76561198018027263,
-      "flashedName": "hen1",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 350334,
-      "roundNumber": 21,
-      "duration": 4.523672,
-      "flashedSteamId": 76561198014778202,
-      "flashedName": "steelega",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 350334,
@@ -151979,33 +150721,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 350334,
-      "roundNumber": 21,
-      "duration": 0.91121066,
-      "flashedSteamId": 76561198050950952,
-      "flashedName": "aizy",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 350334,
-      "roundNumber": 21,
-      "duration": 0.91121066,
-      "flashedSteamId": 76561197983956651,
-      "flashedName": "magisk",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 350334,
@@ -152018,7 +150735,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 350334,
@@ -152031,72 +150749,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 350334,
-      "roundNumber": 21,
-      "duration": 0.9117942,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 350334,
-      "roundNumber": 21,
-      "duration": 3.5051115,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 350412,
-      "roundNumber": 21,
-      "duration": 0.8990287,
-      "flashedSteamId": 76561197978328043,
-      "flashedName": "cajunb",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 350412,
-      "roundNumber": 21,
-      "duration": 3.9100728,
-      "flashedSteamId": 76561197965046352,
-      "flashedName": "lucas1",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 350412,
-      "roundNumber": 21,
-      "duration": 3.914297,
-      "flashedSteamId": 76561198018027263,
-      "flashedName": "hen1",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 350412,
@@ -152109,33 +150763,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 350412,
-      "roundNumber": 21,
-      "duration": 0.8990287,
-      "flashedSteamId": 76561198050950952,
-      "flashedName": "aizy",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 350412,
-      "roundNumber": 21,
-      "duration": 0.8990287,
-      "flashedSteamId": 76561197983956651,
-      "flashedName": "magisk",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 350412,
@@ -152148,33 +150777,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 350412,
-      "roundNumber": 21,
-      "duration": 0.8996077,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 350412,
-      "roundNumber": 21,
-      "duration": 3.4427738,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 359581,
@@ -152187,33 +150791,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 359581,
-      "roundNumber": 22,
-      "duration": 1.0183616,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 359581,
-      "roundNumber": 22,
-      "duration": 5.109409,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 359920,
@@ -152226,7 +150805,8 @@
       "flasherSteamId": 76561198018379400,
       "flasherName": "boltz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 359920,
@@ -152239,7 +150819,8 @@
       "flasherSteamId": 76561198018379400,
       "flasherName": "boltz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 359920,
@@ -152252,20 +150833,8 @@
       "flasherSteamId": 76561198018379400,
       "flasherName": "boltz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 359920,
-      "roundNumber": 22,
-      "duration": 0.6894402,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 360444,
@@ -152278,7 +150847,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 360832,
@@ -152291,7 +150861,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 360832,
@@ -152304,7 +150875,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 360832,
@@ -152317,7 +150889,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 361634,
@@ -152330,20 +150903,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 361634,
-      "roundNumber": 22,
-      "duration": 0.62347144,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 370535,
@@ -152356,7 +150917,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 370535,
@@ -152369,7 +150931,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 370535,
@@ -152382,20 +150945,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 370535,
-      "roundNumber": 23,
-      "duration": 0.111990914,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197965046352,
-      "flasherName": "lucas1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 372101,
@@ -152408,33 +150959,8 @@
       "flasherSteamId": 76561198018379400,
       "flasherName": "boltz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 372101,
-      "roundNumber": 23,
-      "duration": 0.64136857,
-      "flashedSteamId": 76561197984400619,
-      "flashedName": "MSL",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 372101,
-      "roundNumber": 23,
-      "duration": 3.2509952,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 381647,
@@ -152447,7 +150973,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 381647,
@@ -152460,7 +150987,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 381647,
@@ -152473,20 +151001,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 381647,
-      "roundNumber": 23,
-      "duration": 1.8343908,
-      "flashedSteamId": 76561198014778202,
-      "flashedName": "steelega",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 381647,
@@ -152499,72 +151015,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 381647,
-      "roundNumber": 23,
-      "duration": 1.8343908,
-      "flashedSteamId": 76561198018379400,
-      "flashedName": "boltz",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 381647,
-      "roundNumber": 23,
-      "duration": 4.9302373,
-      "flashedSteamId": 76561198130444302,
-      "flashedName": "fnx",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 381647,
-      "roundNumber": 23,
-      "duration": 0.8329506,
-      "flashedSteamId": 76561197984400619,
-      "flashedName": "MSL",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 381647,
-      "roundNumber": 23,
-      "duration": 4.9302373,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 381647,
-      "roundNumber": 23,
-      "duration": 0.9134707,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 386808,
@@ -152577,7 +151029,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 387251,
@@ -152590,20 +151043,8 @@
       "flasherSteamId": 76561198018379400,
       "flasherName": "boltz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 387251,
-      "roundNumber": 24,
-      "duration": 4.9215055,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 387726,
@@ -152616,7 +151057,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 387726,
@@ -152629,20 +151071,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 387726,
-      "roundNumber": 24,
-      "duration": 4.8272276,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 393114,
@@ -152655,7 +151085,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 393114,
@@ -152668,7 +151099,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 393114,
@@ -152681,59 +151113,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 393114,
-      "roundNumber": 24,
-      "duration": 0.83606535,
-      "flashedSteamId": 76561197984400619,
-      "flashedName": "MSL",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 393114,
-      "roundNumber": 24,
-      "duration": 0.8345416,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 393114,
-      "roundNumber": 24,
-      "duration": 1.9662309,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 393607,
-      "roundNumber": 24,
-      "duration": 0.39977676,
-      "flashedSteamId": 76561197979669175,
-      "flashedName": "K0NFIG",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 393607,
@@ -152746,33 +151127,8 @@
       "flasherSteamId": 76561198018379400,
       "flasherName": "boltz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 393607,
-      "roundNumber": 24,
-      "duration": 0.39977676,
-      "flashedSteamId": 76561197984400619,
-      "flashedName": "MSL",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 393607,
-      "roundNumber": 24,
-      "duration": 0.39977676,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 407269,
@@ -152785,7 +151141,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 407269,
@@ -152798,7 +151155,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 407269,
@@ -152811,7 +151169,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 407269,
@@ -152824,7 +151183,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 407269,
@@ -152837,33 +151197,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 407269,
-      "roundNumber": 25,
-      "duration": 3.4605095,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 407269,
-      "roundNumber": 25,
-      "duration": 4.6189175,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 407856,
@@ -152876,7 +151211,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 407856,
@@ -152889,20 +151225,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 407856,
-      "roundNumber": 25,
-      "duration": 1.8241141,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 409029,
@@ -152915,20 +151239,8 @@
       "flasherSteamId": 76561198018379400,
       "flasherName": "boltz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 415322,
-      "roundNumber": 25,
-      "duration": 0.6165316,
-      "flashedSteamId": 76561197978328043,
-      "flashedName": "cajunb",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 415322,
@@ -152941,7 +151253,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 415322,
@@ -152954,46 +151267,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 415322,
-      "roundNumber": 25,
-      "duration": 3.7488973,
-      "flashedSteamId": 76561198018379400,
-      "flashedName": "boltz",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 415322,
-      "roundNumber": 25,
-      "duration": 3.7488973,
-      "flashedSteamId": 76561198130444302,
-      "flashedName": "fnx",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 415322,
-      "roundNumber": 25,
-      "duration": 2.5918262,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 415441,
@@ -153006,7 +151281,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 415441,
@@ -153019,33 +151295,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 415441,
-      "roundNumber": 25,
-      "duration": 2.8883383,
-      "flashedSteamId": 76561198130444302,
-      "flashedName": "fnx",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 415441,
-      "roundNumber": 25,
-      "duration": 2.848454,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 415859,
@@ -153058,46 +151309,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 415859,
-      "roundNumber": 25,
-      "duration": 1.5642658,
-      "flashedSteamId": 76561198014778202,
-      "flashedName": "steelega",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 415859,
-      "roundNumber": 25,
-      "duration": 1.5642658,
-      "flashedSteamId": 76561198130444302,
-      "flashedName": "fnx",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 415859,
-      "roundNumber": 25,
-      "duration": 1.5642658,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 429493,
@@ -153110,7 +151323,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 434298,
@@ -153123,33 +151337,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 434298,
-      "roundNumber": 26,
-      "duration": 2.593056,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 434298,
-      "roundNumber": 26,
-      "duration": 2.0096912,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 434314,
@@ -153162,46 +151351,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 434314,
-      "roundNumber": 26,
-      "duration": 4.6496186,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197965046352,
-      "flasherName": "lucas1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 434314,
-      "roundNumber": 26,
-      "duration": 1.9227272,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197965046352,
-      "flasherName": "lucas1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 434650,
-      "roundNumber": 26,
-      "duration": 4.5603404,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 434655,
@@ -153214,33 +151365,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 434655,
-      "roundNumber": 26,
-      "duration": 4.521278,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984400619,
-      "flasherName": "MSL",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 434804,
-      "roundNumber": 26,
-      "duration": 3.6051755,
-      "flashedSteamId": 76561197965046352,
-      "flashedName": "lucas1",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198014778202,
-      "flasherName": "steelega",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 434804,
@@ -153253,7 +151379,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 434804,
@@ -153266,7 +151393,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 434804,
@@ -153279,20 +151407,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 434804,
-      "roundNumber": 26,
-      "duration": 0.8214936,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198014778202,
-      "flasherName": "steelega",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 434850,
@@ -153305,7 +151421,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 434850,
@@ -153318,7 +151435,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 434850,
@@ -153331,33 +151449,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 434850,
-      "roundNumber": 26,
-      "duration": 2.8499067,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 434850,
-      "roundNumber": 26,
-      "duration": 2.9978404,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 447354,
@@ -153370,7 +151463,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 447354,
@@ -153383,20 +151477,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 447354,
-      "roundNumber": 27,
-      "duration": 3.7072346,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 452706,
@@ -153409,7 +151491,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 452706,
@@ -153422,7 +151505,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 455769,
@@ -153435,20 +151519,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 455769,
-      "roundNumber": 27,
-      "duration": 4.964159,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 463402,
@@ -153461,7 +151533,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 463402,
@@ -153474,20 +151547,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 463402,
-      "roundNumber": 28,
-      "duration": 4.5018234,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 464894,
@@ -153500,7 +151561,8 @@
       "flasherSteamId": 76561198018379400,
       "flasherName": "boltz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 464894,
@@ -153513,33 +151575,8 @@
       "flasherSteamId": 76561198018379400,
       "flasherName": "boltz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 464894,
-      "roundNumber": 28,
-      "duration": 0.7298499,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 464894,
-      "roundNumber": 28,
-      "duration": 0.69928914,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 467514,
@@ -153552,7 +151589,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 472034,
@@ -153565,7 +151603,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 472034,
@@ -153578,7 +151617,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 472034,
@@ -153591,20 +151631,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 472034,
-      "roundNumber": 28,
-      "duration": 0.39672852,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 478282,
@@ -153617,7 +151645,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 478282,
@@ -153630,7 +151659,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 478282,
@@ -153643,7 +151673,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 478282,
@@ -153656,7 +151687,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 478282,
@@ -153669,7 +151701,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 478282,
@@ -153682,20 +151715,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 478282,
-      "roundNumber": 29,
-      "duration": 5.0099144,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198014778202,
-      "flasherName": "steelega",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 478616,
@@ -153708,7 +151729,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 478616,
@@ -153721,7 +151743,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 478616,
@@ -153734,7 +151757,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 478616,
@@ -153747,33 +151771,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 478616,
-      "roundNumber": 29,
-      "duration": 3.9630601,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 478666,
-      "roundNumber": 29,
-      "duration": 1.963166,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 478948,
@@ -153786,7 +151785,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 478948,
@@ -153799,7 +151799,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 481949,
@@ -153812,20 +151813,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 481949,
-      "roundNumber": 29,
-      "duration": 3.957665,
-      "flashedSteamId": 76561198014778202,
-      "flashedName": "steelega",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 481949,
@@ -153838,72 +151827,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 481949,
-      "roundNumber": 29,
-      "duration": 0.94862115,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 483163,
-      "roundNumber": 29,
-      "duration": 0.54403865,
-      "flashedSteamId": 76561197978328043,
-      "flashedName": "cajunb",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 483163,
-      "roundNumber": 29,
-      "duration": 0.3972203,
-      "flashedSteamId": 76561197965046352,
-      "flashedName": "lucas1",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 483163,
-      "roundNumber": 29,
-      "duration": 0.3972203,
-      "flashedSteamId": 76561198018027263,
-      "flashedName": "hen1",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 483163,
-      "roundNumber": 29,
-      "duration": 0.3972203,
-      "flashedSteamId": 76561198014778202,
-      "flashedName": "steelega",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 483163,
@@ -153916,20 +151841,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 483163,
-      "roundNumber": 29,
-      "duration": 0.10880773,
-      "flashedSteamId": 76561197983956651,
-      "flashedName": "magisk",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 483163,
@@ -153942,98 +151855,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 483163,
-      "roundNumber": 29,
-      "duration": 0.3972203,
-      "flashedSteamId": 76561198130444302,
-      "flashedName": "fnx",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 483163,
-      "roundNumber": 29,
-      "duration": 0.54403865,
-      "flashedSteamId": 76561197984400619,
-      "flashedName": "MSL",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 483163,
-      "roundNumber": 29,
-      "duration": 0.3972203,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 483163,
-      "roundNumber": 29,
-      "duration": 3.1418161,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 483236,
-      "roundNumber": 29,
-      "duration": 3.0642953,
-      "flashedSteamId": 76561197965046352,
-      "flashedName": "lucas1",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 483236,
-      "roundNumber": 29,
-      "duration": 3.0655828,
-      "flashedSteamId": 76561198018027263,
-      "flashedName": "hen1",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 483236,
-      "roundNumber": 29,
-      "duration": 3.0655828,
-      "flashedSteamId": 76561198014778202,
-      "flashedName": "steelega",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 483236,
@@ -154046,7 +151869,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 483236,
@@ -154059,46 +151883,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 483236,
-      "roundNumber": 29,
-      "duration": 3.0655828,
-      "flashedSteamId": 76561198130444302,
-      "flashedName": "fnx",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 483236,
-      "roundNumber": 29,
-      "duration": 3.587733,
-      "flashedSteamId": 76561197984400619,
-      "flashedName": "MSL",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 483236,
-      "roundNumber": 29,
-      "duration": 3.0642953,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 494125,
@@ -154111,7 +151897,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 494125,
@@ -154124,20 +151911,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 494125,
-      "roundNumber": 30,
-      "duration": 3.6802106,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984400619,
-      "flasherName": "MSL",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 494899,
@@ -154150,7 +151925,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 495201,
@@ -154163,7 +151939,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 495201,
@@ -154176,7 +151953,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 495201,
@@ -154189,7 +151967,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 495201,
@@ -154202,33 +151981,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 495201,
-      "roundNumber": 30,
-      "duration": 4.8293796,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 495201,
-      "roundNumber": 30,
-      "duration": 1.953999,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 495380,
@@ -154241,7 +151995,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 495380,
@@ -154254,33 +152009,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 495380,
-      "roundNumber": 30,
-      "duration": 0.7984012,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 495380,
-      "roundNumber": 30,
-      "duration": 1.791777,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 495863,
@@ -154293,7 +152023,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 495863,
@@ -154306,7 +152037,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 495863,
@@ -154319,7 +152051,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 495863,
@@ -154332,33 +152065,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 495863,
-      "roundNumber": 30,
-      "duration": 2.972939,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 496028,
-      "roundNumber": 30,
-      "duration": 4.615736,
-      "flashedSteamId": 76561197979669175,
-      "flashedName": "K0NFIG",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 496028,
@@ -154371,20 +152079,8 @@
       "flasherSteamId": 76561198018379400,
       "flasherName": "boltz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 496028,
-      "roundNumber": 30,
-      "duration": 0.9262865,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 496202,
@@ -154397,7 +152093,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 496202,
@@ -154410,33 +152107,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 496202,
-      "roundNumber": 30,
-      "duration": 4.638478,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 496202,
-      "roundNumber": 30,
-      "duration": 1.9724824,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 497414,
@@ -154449,7 +152121,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 497414,
@@ -154462,7 +152135,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 498828,
@@ -154475,7 +152149,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 498828,
@@ -154488,33 +152163,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 499203,
-      "roundNumber": 30,
-      "duration": 0.9828809,
-      "flashedSteamId": 76561198014778202,
-      "flashedName": "steelega",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197965046352,
-      "flasherName": "lucas1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 499203,
-      "roundNumber": 30,
-      "duration": 4.514241,
-      "flashedSteamId": 76561197979669175,
-      "flashedName": "K0NFIG",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197965046352,
-      "flasherName": "lucas1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 499203,
@@ -154527,59 +152177,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 499203,
-      "roundNumber": 30,
-      "duration": 4.514241,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197965046352,
-      "flasherName": "lucas1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 499203,
-      "roundNumber": 30,
-      "duration": 0.8946313,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197965046352,
-      "flasherName": "lucas1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 499671,
-      "roundNumber": 30,
-      "duration": 0.8579912,
-      "flashedSteamId": 76561197979669175,
-      "flashedName": "K0NFIG",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 499671,
-      "roundNumber": 30,
-      "duration": 0.341593,
-      "flashedSteamId": 76561198050950952,
-      "flashedName": "aizy",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 499671,
@@ -154592,46 +152191,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 499671,
-      "roundNumber": 30,
-      "duration": 0.341593,
-      "flashedSteamId": 76561197984400619,
-      "flashedName": "MSL",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 499671,
-      "roundNumber": 30,
-      "duration": 0.8579912,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 499671,
-      "roundNumber": 30,
-      "duration": 0.60014987,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 508777,
@@ -154644,7 +152205,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 508777,
@@ -154657,7 +152219,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 508777,
@@ -154670,33 +152233,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 508777,
-      "roundNumber": 31,
-      "duration": 3.897667,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984400619,
-      "flasherName": "MSL",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 508777,
-      "roundNumber": 31,
-      "duration": 3.6911352,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984400619,
-      "flasherName": "MSL",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 508966,
@@ -154709,7 +152247,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 508966,
@@ -154722,7 +152261,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 509023,
@@ -154735,7 +152275,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 509023,
@@ -154748,7 +152289,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 509208,
@@ -154761,7 +152303,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 509208,
@@ -154774,33 +152317,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 509208,
-      "roundNumber": 31,
-      "duration": 0.53047943,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197965046352,
-      "flasherName": "lucas1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 509775,
-      "roundNumber": 31,
-      "duration": 0.6989458,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 516955,
@@ -154813,7 +152331,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 516955,
@@ -154826,20 +152345,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 516955,
-      "roundNumber": 31,
-      "duration": 0.26796594,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198130444302,
-      "flasherName": "fnx",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 517981,
@@ -154852,33 +152359,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 517981,
-      "roundNumber": 31,
-      "duration": 4.7084055,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 519400,
-      "roundNumber": 31,
-      "duration": 3.3628764,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 520333,
@@ -154891,7 +152373,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 520333,
@@ -154904,20 +152387,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 520333,
-      "roundNumber": 31,
-      "duration": 3.9456565,
-      "flashedSteamId": 76561197983956651,
-      "flashedName": "magisk",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 520333,
@@ -154930,33 +152401,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 520333,
-      "roundNumber": 31,
-      "duration": 1.0247663,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 520333,
-      "roundNumber": 31,
-      "duration": 2.0533862,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 528945,
@@ -154969,7 +152415,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 529811,
@@ -154982,20 +152429,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 529811,
-      "roundNumber": 32,
-      "duration": 3.3967738,
-      "flashedSteamId": 76561198050950952,
-      "flashedName": "aizy",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 529811,
@@ -155008,33 +152443,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 529811,
-      "roundNumber": 32,
-      "duration": 0.6793548,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 529811,
-      "roundNumber": 32,
-      "duration": 1.9055996,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 532834,
@@ -155047,20 +152457,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 532834,
-      "roundNumber": 32,
-      "duration": 1.003505,
-      "flashedSteamId": 76561198050950952,
-      "flashedName": "aizy",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984400619,
-      "flasherName": "MSL",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 532834,
@@ -155073,7 +152471,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 532938,
@@ -155086,20 +152485,8 @@
       "flasherSteamId": 76561198018379400,
       "flasherName": "boltz",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 532938,
-      "roundNumber": 32,
-      "duration": 2.0072596,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 534140,
@@ -155112,46 +152499,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 534140,
-      "roundNumber": 32,
-      "duration": 0.1619776,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 537875,
-      "roundNumber": 32,
-      "duration": 0.99244493,
-      "flashedSteamId": 76561197978328043,
-      "flashedName": "cajunb",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 537875,
-      "roundNumber": 32,
-      "duration": 0.93274146,
-      "flashedSteamId": 76561197965046352,
-      "flashedName": "lucas1",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 537875,
@@ -155164,33 +152513,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 537875,
-      "roundNumber": 32,
-      "duration": 0.93274146,
-      "flashedSteamId": 76561198014778202,
-      "flashedName": "steelega",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 537875,
-      "roundNumber": 32,
-      "duration": 0.99244493,
-      "flashedSteamId": 76561198050950952,
-      "flashedName": "aizy",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 537875,
@@ -155203,72 +152527,8 @@
       "flasherSteamId": 76561197983956651,
       "flasherName": "magisk",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 537875,
-      "roundNumber": 32,
-      "duration": 0.93274146,
-      "flashedSteamId": 76561198018379400,
-      "flashedName": "boltz",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 537875,
-      "roundNumber": 32,
-      "duration": 3.4993696,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197983956651,
-      "flasherName": "magisk",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 539711,
-      "roundNumber": 32,
-      "duration": 0.32080194,
-      "flashedSteamId": 76561197978328043,
-      "flashedName": "cajunb",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 539711,
-      "roundNumber": 32,
-      "duration": 0.32080194,
-      "flashedSteamId": 76561198050950952,
-      "flashedName": "aizy",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 539711,
-      "roundNumber": 32,
-      "duration": 0.32080194,
-      "flashedSteamId": 76561197983956651,
-      "flashedName": "magisk",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 539711,
@@ -155281,20 +152541,8 @@
       "flasherSteamId": 76561197979669175,
       "flasherName": "K0NFIG",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 539711,
-      "roundNumber": 32,
-      "duration": 0.19884184,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197979669175,
-      "flasherName": "K0NFIG",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 543365,
@@ -155307,7 +152555,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 543365,
@@ -155320,7 +152569,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 543365,
@@ -155333,20 +152583,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 543365,
-      "roundNumber": 33,
-      "duration": 3.823727,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 543509,
@@ -155359,7 +152597,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 543509,
@@ -155372,7 +152611,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 543509,
@@ -155385,7 +152625,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 543509,
@@ -155398,7 +152639,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 543509,
@@ -155411,20 +152653,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 543509,
-      "roundNumber": 33,
-      "duration": 2.698727,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198014778202,
-      "flasherName": "steelega",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 544075,
@@ -155437,7 +152667,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 544075,
@@ -155450,7 +152681,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 544145,
@@ -155463,20 +152695,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 544145,
-      "roundNumber": 33,
-      "duration": 3.7822313,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197965046352,
-      "flasherName": "lucas1",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 553918,
@@ -155489,7 +152709,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 553918,
@@ -155502,7 +152723,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 553918,
@@ -155515,7 +152737,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 553918,
@@ -155528,20 +152751,8 @@
       "flasherSteamId": 76561198018027263,
       "flasherName": "hen1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 553918,
-      "roundNumber": 34,
-      "duration": 3.6951542,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018027263,
-      "flasherName": "hen1",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 553983,
@@ -155554,7 +152765,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 553983,
@@ -155567,20 +152779,8 @@
       "flasherSteamId": 76561197978328043,
       "flasherName": "cajunb",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 553983,
-      "roundNumber": 34,
-      "duration": 3.1873417,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197978328043,
-      "flasherName": "cajunb",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 554459,
@@ -155593,7 +152793,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 554459,
@@ -155606,7 +152807,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 554459,
@@ -155619,7 +152821,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 554459,
@@ -155632,7 +152835,8 @@
       "flasherSteamId": 76561198130444302,
       "flasherName": "fnx",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 555858,
@@ -155645,20 +152849,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 555858,
-      "roundNumber": 34,
-      "duration": 0.1389864,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984400619,
-      "flasherName": "MSL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 556291,
@@ -155671,7 +152863,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 556291,
@@ -155684,7 +152877,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 556291,
@@ -155697,20 +152891,8 @@
       "flasherSteamId": 76561197984400619,
       "flasherName": "MSL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 556291,
-      "roundNumber": 34,
-      "duration": 0.24844271,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197984400619,
-      "flasherName": "MSL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 561355,
@@ -155723,7 +152905,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 561355,
@@ -155736,20 +152919,8 @@
       "flasherSteamId": 76561197965046352,
       "flasherName": "lucas1",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 561355,
-      "roundNumber": 34,
-      "duration": 2.9350486,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197965046352,
-      "flasherName": "lucas1",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 562447,
@@ -155762,7 +152933,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 562447,
@@ -155775,7 +152947,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 562447,
@@ -155788,7 +152961,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 562447,
@@ -155801,7 +152975,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 562447,
@@ -155814,33 +152989,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 562447,
-      "roundNumber": 34,
-      "duration": 2.7366982,
-      "flashedSteamId": 76561198070153452,
-      "flashedName": "@sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 562447,
-      "roundNumber": 34,
-      "duration": 0.07632648,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 562447,
@@ -155853,7 +153003,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 562447,
@@ -155866,20 +153017,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 562447,
-      "roundNumber": 34,
-      "duration": 0.824847,
-      "flashedSteamId": 76561198000457091,
-      "flashedName": "OBS: @sapphiReCSGO \u0026 @PriusCSGO",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 562516,
@@ -155892,7 +153031,8 @@
       "flasherSteamId": 76561198018379400,
       "flasherName": "boltz",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 562516,
@@ -155905,20 +153045,8 @@
       "flasherSteamId": 76561198018379400,
       "flasherName": "boltz",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 562516,
-      "roundNumber": 34,
-      "duration": 4.607531,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198018379400,
-      "flasherName": "boltz",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 566639,
@@ -155931,20 +153059,8 @@
       "flasherSteamId": 76561198014778202,
       "flasherName": "steelega",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 566639,
-      "roundNumber": 34,
-      "duration": 0.36762154,
-      "flashedSteamId": 76561198045695357,
-      "flashedName": "@Sadokist \u0026 @HenryGcsgo",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198014778202,
-      "flasherName": "steelega",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     }
   ],
   "grenadePositions": [],

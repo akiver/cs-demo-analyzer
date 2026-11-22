@@ -77,7 +77,7 @@
       "bombPlantedCount": 2,
       "healthDamage": 1101,
       "armorDamage": 126,
-      "utilityDamage": 5,
+      "utilityDamage": 4,
       "headshotCount": 3,
       "headshotPercent": 33,
       "oneVsOneCount": 6,
@@ -99,7 +99,7 @@
       "averageKillPerRound": 0.42857143,
       "averageDeathPerRound": 0.5714286,
       "averageDamagePerRound": 52.42857,
-      "utilityDamagePerRound": 0.23809524,
+      "utilityDamagePerRound": 0.1904762,
       "firstKillCount": 3,
       "firstDeathCount": 0,
       "firstTradeDeathCount": 0,
@@ -613,7 +613,7 @@
       "bombPlantedCount": 1,
       "healthDamage": 2005,
       "armorDamage": 219,
-      "utilityDamage": 141,
+      "utilityDamage": 139,
       "headshotCount": 9,
       "headshotPercent": 45,
       "oneVsOneCount": 4,
@@ -635,7 +635,7 @@
       "averageKillPerRound": 0.95238096,
       "averageDeathPerRound": 0.47619048,
       "averageDamagePerRound": 95.47619,
-      "utilityDamagePerRound": 6.714286,
+      "utilityDamagePerRound": 6.6190476,
       "firstKillCount": 4,
       "firstDeathCount": 4,
       "firstTradeDeathCount": 1,
@@ -107698,7 +107698,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 20990,
@@ -107711,20 +107712,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 21640,
-      "roundNumber": 1,
-      "duration": 0.8566737,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 21640,
@@ -107737,7 +107726,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 21640,
@@ -107750,7 +107740,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 84297,
@@ -107763,7 +107754,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "FaZe rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 93124,
@@ -107776,7 +107768,8 @@
       "flasherSteamId": 76561198006282027,
       "flasherName": "v1c7oR1g♛♛♛",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 93124,
@@ -107789,7 +107782,8 @@
       "flasherSteamId": 76561198006282027,
       "flasherName": "v1c7oR1g♛♛♛",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 93169,
@@ -107802,7 +107796,8 @@
       "flasherSteamId": 76561198030323900,
       "flasherName": "pNshr -YNWA-",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 93169,
@@ -107815,7 +107810,8 @@
       "flasherSteamId": 76561198030323900,
       "flasherName": "pNshr -YNWA-",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 103386,
@@ -107828,7 +107824,8 @@
       "flasherSteamId": 76561198002708642,
       "flasherName": "FaZe jkaem",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 103386,
@@ -107841,7 +107838,8 @@
       "flasherSteamId": 76561198002708642,
       "flasherName": "FaZe jkaem",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 103386,
@@ -107854,7 +107852,8 @@
       "flasherSteamId": 76561198002708642,
       "flasherName": "FaZe jkaem",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 103386,
@@ -107867,20 +107866,8 @@
       "flasherSteamId": 76561198002708642,
       "flasherName": "FaZe jkaem",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 103386,
-      "roundNumber": 4,
-      "duration": 4.833924,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198002708642,
-      "flasherName": "FaZe jkaem",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 103386,
@@ -107893,7 +107880,8 @@
       "flasherSteamId": 76561198002708642,
       "flasherName": "FaZe jkaem",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 103386,
@@ -107906,20 +107894,8 @@
       "flasherSteamId": 76561198002708642,
       "flasherName": "FaZe jkaem",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 103386,
-      "roundNumber": 4,
-      "duration": 4.785034,
-      "flashedSteamId": 76561198006282027,
-      "flashedName": "v1c7oR1g♛♛♛",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198002708642,
-      "flasherName": "FaZe jkaem",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 108373,
@@ -107932,20 +107908,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 108373,
-      "roundNumber": 5,
-      "duration": 3.559163,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198024569763,
-      "flasherName": "nkl",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 113451,
@@ -107958,7 +107922,8 @@
       "flasherSteamId": 76561198002708642,
       "flasherName": "FaZe jkaem",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 113843,
@@ -107971,7 +107936,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 116683,
@@ -107984,7 +107950,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 116683,
@@ -107997,7 +107964,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 116683,
@@ -108010,7 +107978,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 116683,
@@ -108023,20 +107992,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 116683,
-      "roundNumber": 5,
-      "duration": 1.6006572,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197962205264,
-      "flasherName": "FaZe fox1963",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 116683,
@@ -108049,7 +108006,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 116797,
@@ -108062,7 +108020,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 116797,
@@ -108075,7 +108034,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 116797,
@@ -108088,33 +108048,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 116797,
-      "roundNumber": 5,
-      "duration": 0.9960551,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "FaZe aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 117713,
-      "roundNumber": 5,
-      "duration": 0.896272,
-      "flashedSteamId": 76561198050950952,
-      "flashedName": "FaZe aizy",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 117713,
@@ -108127,20 +108062,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 117713,
-      "roundNumber": 5,
-      "duration": 0.896272,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 117713,
@@ -108153,7 +108076,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 117713,
@@ -108166,7 +108090,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 127171,
@@ -108179,20 +108104,8 @@
       "flasherSteamId": 76561198144314785,
       "flasherName": "spyleader1g",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 127171,
-      "roundNumber": 6,
-      "duration": 3.4107482,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198144314785,
-      "flasherName": "spyleader1g",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 127279,
@@ -108205,7 +108118,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 127279,
@@ -108218,7 +108132,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 127279,
@@ -108231,7 +108146,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 127326,
@@ -108244,7 +108160,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 134129,
@@ -108257,7 +108174,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 134129,
@@ -108270,7 +108188,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 138609,
@@ -108283,20 +108202,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 138609,
-      "roundNumber": 7,
-      "duration": 1.9182935,
-      "flashedSteamId": 76561198000968105,
-      "flashedName": "bubbleONFiRE",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 138609,
@@ -108309,7 +108216,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 138632,
@@ -108322,7 +108230,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 138632,
@@ -108335,33 +108244,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 138632,
-      "roundNumber": 7,
-      "duration": 0.13366391,
-      "flashedSteamId": 76561197962205264,
-      "flashedName": "FaZe fox1963",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "FaZe aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 138632,
-      "roundNumber": 7,
-      "duration": 4.4425197,
-      "flashedSteamId": 76561198000968105,
-      "flashedName": "bubbleONFiRE",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "FaZe aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 138632,
@@ -108374,7 +108258,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 138632,
@@ -108387,7 +108272,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 150891,
@@ -108400,20 +108286,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 150891,
-      "roundNumber": 8,
-      "duration": 0.7798815,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 151184,
@@ -108426,20 +108300,8 @@
       "flasherSteamId": 76561198030323900,
       "flasherName": "pNshr -YNWA-",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 151343,
-      "roundNumber": 8,
-      "duration": 0.63477015,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "FaZe rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 151343,
@@ -108452,7 +108314,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "FaZe rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 154133,
@@ -108465,7 +108328,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 162561,
@@ -108478,7 +108342,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 162561,
@@ -108491,7 +108356,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 162561,
@@ -108504,20 +108370,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 162561,
-      "roundNumber": 9,
-      "duration": 0.80166453,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 163853,
@@ -108530,20 +108384,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 163853,
-      "roundNumber": 9,
-      "duration": 0.9408808,
-      "flashedSteamId": 76561198024569763,
-      "flashedName": "nkl",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197962205264,
-      "flasherName": "FaZe fox1963",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 163988,
@@ -108556,7 +108398,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 163988,
@@ -108569,20 +108412,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 163988,
-      "roundNumber": 9,
-      "duration": 4.4284487,
-      "flashedSteamId": 76561198024569763,
-      "flashedName": "nkl",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 163988,
@@ -108595,7 +108426,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 164653,
@@ -108608,20 +108440,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 166194,
-      "roundNumber": 9,
-      "duration": 0.5546078,
-      "flashedSteamId": 76561198030323900,
-      "flashedName": "pNshr -YNWA-",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "FaZe rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 166194,
@@ -108634,20 +108454,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "FaZe rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 166194,
-      "roundNumber": 9,
-      "duration": 0.5547677,
-      "flashedSteamId": 76561198024569763,
-      "flashedName": "nkl",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "FaZe rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 166194,
@@ -108660,7 +108468,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "FaZe rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 166389,
@@ -108673,20 +108482,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "FaZe rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 166389,
-      "roundNumber": 9,
-      "duration": 3.446559,
-      "flashedSteamId": 76561198024569763,
-      "flashedName": "nkl",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "FaZe rain",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 166389,
@@ -108699,7 +108496,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "FaZe rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 166478,
@@ -108712,20 +108510,8 @@
       "flasherSteamId": 76561198002708642,
       "flasherName": "FaZe jkaem",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 166478,
-      "roundNumber": 9,
-      "duration": 4.01686,
-      "flashedSteamId": 76561198030323900,
-      "flashedName": "pNshr -YNWA-",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198002708642,
-      "flasherName": "FaZe jkaem",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 172539,
@@ -108738,7 +108524,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 172539,
@@ -108751,7 +108538,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 173889,
@@ -108764,7 +108552,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 173889,
@@ -108777,20 +108566,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 173889,
-      "roundNumber": 10,
-      "duration": 0.8576396,
-      "flashedSteamId": 76561197961191700,
-      "flashedName": "FaZe MaikeleleRL",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "FaZe aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 173889,
@@ -108803,20 +108580,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 173889,
-      "roundNumber": 10,
-      "duration": 3.8815367,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "FaZe aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 183640,
@@ -108829,7 +108594,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 183640,
@@ -108842,20 +108608,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 183640,
-      "roundNumber": 11,
-      "duration": 1.4611018,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198024569763,
-      "flasherName": "nkl",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 183640,
@@ -108868,7 +108622,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 186069,
@@ -108881,20 +108636,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 186069,
-      "roundNumber": 11,
-      "duration": 4.2317443,
-      "flashedSteamId": 76561198144314785,
-      "flashedName": "spyleader1g",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197962205264,
-      "flasherName": "FaZe fox1963",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 186069,
@@ -108907,7 +108650,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 186321,
@@ -108920,33 +108664,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 186321,
-      "roundNumber": 11,
-      "duration": 2.2629943,
-      "flashedSteamId": 76561198144314785,
-      "flashedName": "spyleader1g",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197962205264,
-      "flasherName": "FaZe fox1963",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 186321,
-      "roundNumber": 11,
-      "duration": 3.020854,
-      "flashedSteamId": 76561197961191700,
-      "flashedName": "FaZe MaikeleleRL",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197962205264,
-      "flasherName": "FaZe fox1963",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 186321,
@@ -108959,20 +108678,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 186321,
-      "roundNumber": 11,
-      "duration": 1.0671859,
-      "flashedSteamId": 76561198024569763,
-      "flashedName": "nkl",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197962205264,
-      "flasherName": "FaZe fox1963",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 186321,
@@ -108985,7 +108692,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 186321,
@@ -108998,20 +108706,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 189119,
-      "roundNumber": 11,
-      "duration": 1.3365871,
-      "flashedSteamId": 76561198002708642,
-      "flashedName": "FaZe jkaem",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "FaZe aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 189119,
@@ -109024,20 +108720,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 189119,
-      "roundNumber": 11,
-      "duration": 0.78457457,
-      "flashedSteamId": 76561197961191700,
-      "flashedName": "FaZe MaikeleleRL",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "FaZe aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 189119,
@@ -109050,33 +108734,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 189119,
-      "roundNumber": 11,
-      "duration": 0.78457457,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "FaZe aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 189458,
-      "roundNumber": 11,
-      "duration": 0.7938428,
-      "flashedSteamId": 76561198002708642,
-      "flashedName": "FaZe jkaem",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "FaZe aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 189458,
@@ -109089,7 +108748,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 210122,
@@ -109102,7 +108762,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 210122,
@@ -109115,20 +108776,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 210122,
-      "roundNumber": 12,
-      "duration": 3.1948295,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198024569763,
-      "flasherName": "nkl",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 215544,
@@ -109141,20 +108790,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 215544,
-      "roundNumber": 12,
-      "duration": 0.79496306,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "FaZe aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 215544,
@@ -109167,7 +108804,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 217418,
@@ -109180,20 +108818,8 @@
       "flasherSteamId": 76561198030323900,
       "flasherName": "pNshr -YNWA-",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 217418,
-      "roundNumber": 12,
-      "duration": 0.9566018,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198030323900,
-      "flasherName": "pNshr -YNWA-",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 217418,
@@ -109206,20 +108832,8 @@
       "flasherSteamId": 76561198030323900,
       "flasherName": "pNshr -YNWA-",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 218290,
-      "roundNumber": 12,
-      "duration": 4.3619323,
-      "flashedSteamId": 76561198030323900,
-      "flashedName": "pNshr -YNWA-",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198002708642,
-      "flasherName": "FaZe jkaem",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 218290,
@@ -109232,7 +108846,8 @@
       "flasherSteamId": 76561198002708642,
       "flasherName": "FaZe jkaem",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 218290,
@@ -109245,7 +108860,8 @@
       "flasherSteamId": 76561198002708642,
       "flasherName": "FaZe jkaem",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 218290,
@@ -109258,33 +108874,8 @@
       "flasherSteamId": 76561198002708642,
       "flasherName": "FaZe jkaem",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 221058,
-      "roundNumber": 12,
-      "duration": 0.7994953,
-      "flashedSteamId": 76561198144314785,
-      "flashedName": "spyleader1g",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 221058,
-      "roundNumber": 12,
-      "duration": 0.7994953,
-      "flashedSteamId": 76561198030323900,
-      "flashedName": "pNshr -YNWA-",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 221058,
@@ -109297,33 +108888,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 221058,
-      "roundNumber": 12,
-      "duration": 0.7994953,
-      "flashedSteamId": 76561198024569763,
-      "flashedName": "nkl",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 221058,
-      "roundNumber": 12,
-      "duration": 0.15592347,
-      "flashedSteamId": 76561197997351207,
-      "flashedName": "FaZe rain",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 221058,
@@ -109336,59 +108902,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 221247,
-      "roundNumber": 12,
-      "duration": 1.9509982,
-      "flashedSteamId": 76561198002708642,
-      "flashedName": "FaZe jkaem",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 221247,
-      "roundNumber": 12,
-      "duration": 0.7974881,
-      "flashedSteamId": 76561198144314785,
-      "flashedName": "spyleader1g",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 221247,
-      "roundNumber": 12,
-      "duration": 1.9509982,
-      "flashedSteamId": 76561198050950952,
-      "flashedName": "FaZe aizy",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 221247,
-      "roundNumber": 12,
-      "duration": 0.79758734,
-      "flashedSteamId": 76561198030323900,
-      "flashedName": "pNshr -YNWA-",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 221247,
@@ -109401,33 +108916,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 221247,
-      "roundNumber": 12,
-      "duration": 1.9509982,
-      "flashedSteamId": 76561197962205264,
-      "flashedName": "FaZe fox1963",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 221247,
-      "roundNumber": 12,
-      "duration": 1.9509982,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 221247,
@@ -109440,33 +108930,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 221247,
-      "roundNumber": 12,
-      "duration": 0.7974881,
-      "flashedSteamId": 76561198024569763,
-      "flashedName": "nkl",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 221247,
-      "roundNumber": 12,
-      "duration": 1.9509982,
-      "flashedSteamId": 76561197997351207,
-      "flashedName": "FaZe rain",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 227342,
@@ -109479,7 +108944,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 230508,
@@ -109492,7 +108958,8 @@
       "flasherSteamId": 76561198006282027,
       "flasherName": "v1c7oR1g♛♛♛",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 231265,
@@ -109505,7 +108972,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "FaZe rain",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 231952,
@@ -109518,20 +108986,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 232682,
-      "roundNumber": 13,
-      "duration": 0.8075402,
-      "flashedSteamId": 76561198050950952,
-      "flashedName": "FaZe aizy",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 232682,
@@ -109544,7 +109000,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 232682,
@@ -109557,7 +109014,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 232682,
@@ -109570,20 +109028,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 233075,
-      "roundNumber": 13,
-      "duration": 0.14770876,
-      "flashedSteamId": 76561198030323900,
-      "flashedName": "pNshr -YNWA-",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197962205264,
-      "flasherName": "FaZe fox1963",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 233075,
@@ -109596,20 +109042,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 233589,
-      "roundNumber": 13,
-      "duration": 4.599312,
-      "flashedSteamId": 76561198030323900,
-      "flashedName": "pNshr -YNWA-",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197962205264,
-      "flasherName": "FaZe fox1963",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 233589,
@@ -109622,7 +109056,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 233589,
@@ -109635,7 +109070,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 240146,
@@ -109648,7 +109084,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 242630,
@@ -109661,7 +109098,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 242956,
@@ -109674,7 +109112,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 242956,
@@ -109687,20 +109126,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 242956,
-      "roundNumber": 14,
-      "duration": 0.65288454,
-      "flashedSteamId": 76561198006282027,
-      "flashedName": "v1c7oR1g♛♛♛",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 245369,
@@ -109713,7 +109140,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 245369,
@@ -109726,20 +109154,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 245369,
-      "roundNumber": 14,
-      "duration": 0.9044677,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "FaZe aizy",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 253204,
@@ -109752,7 +109168,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 253204,
@@ -109765,7 +109182,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 253400,
@@ -109778,7 +109196,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 253400,
@@ -109791,20 +109210,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 256998,
-      "roundNumber": 15,
-      "duration": 5.2095923,
-      "flashedSteamId": 76561198002708642,
-      "flashedName": "FaZe jkaem",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 256998,
@@ -109817,33 +109224,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 256998,
-      "roundNumber": 15,
-      "duration": 5.2095923,
-      "flashedSteamId": 76561198050950952,
-      "flashedName": "FaZe aizy",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 256998,
-      "roundNumber": 15,
-      "duration": 4.2959237,
-      "flashedSteamId": 76561198030323900,
-      "flashedName": "pNshr -YNWA-",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 256998,
@@ -109856,33 +109238,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 256998,
-      "roundNumber": 15,
-      "duration": 5.2095923,
-      "flashedSteamId": 76561197962205264,
-      "flashedName": "FaZe fox1963",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 256998,
-      "roundNumber": 15,
-      "duration": 5.207144,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 256998,
@@ -109895,7 +109252,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 256998,
@@ -109908,33 +109266,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 256998,
-      "roundNumber": 15,
-      "duration": 5.2095923,
-      "flashedSteamId": 76561197997351207,
-      "flashedName": "FaZe rain",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 256998,
-      "roundNumber": 15,
-      "duration": 0.46945578,
-      "flashedSteamId": 76561198006282027,
-      "flashedName": "v1c7oR1g♛♛♛",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 276089,
@@ -109947,7 +109280,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "FaZe rain",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 276089,
@@ -109960,7 +109294,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "FaZe rain",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 276089,
@@ -109973,7 +109308,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "FaZe rain",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 277869,
@@ -109986,7 +109322,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 278960,
@@ -109999,7 +109336,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 278960,
@@ -110012,7 +109350,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 278960,
@@ -110025,20 +109364,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 278960,
-      "roundNumber": 17,
-      "duration": 3.3060796,
-      "flashedSteamId": 76561198006282027,
-      "flashedName": "v1c7oR1g♛♛♛",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197962205264,
-      "flasherName": "FaZe fox1963",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 284425,
@@ -110051,7 +109378,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 284425,
@@ -110064,7 +109392,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 284444,
@@ -110077,7 +109406,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 284444,
@@ -110090,7 +109420,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 284591,
@@ -110103,7 +109434,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 284591,
@@ -110116,20 +109448,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 284591,
-      "roundNumber": 18,
-      "duration": 0.93659514,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "FaZe aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 288656,
@@ -110142,20 +109462,8 @@
       "flasherSteamId": 76561198144314785,
       "flasherName": "spyleader1g",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 288656,
-      "roundNumber": 18,
-      "duration": 0.7027138,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198144314785,
-      "flasherName": "spyleader1g",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 288656,
@@ -110168,7 +109476,8 @@
       "flasherSteamId": 76561198144314785,
       "flasherName": "spyleader1g",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 288903,
@@ -110181,33 +109490,8 @@
       "flasherSteamId": 76561198144314785,
       "flasherName": "spyleader1g",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 288903,
-      "roundNumber": 18,
-      "duration": 0.9707572,
-      "flashedSteamId": 76561197962205264,
-      "flashedName": "FaZe fox1963",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198144314785,
-      "flasherName": "spyleader1g",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 288903,
-      "roundNumber": 18,
-      "duration": 0.9707572,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198144314785,
-      "flasherName": "spyleader1g",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 288903,
@@ -110220,7 +109504,8 @@
       "flasherSteamId": 76561198144314785,
       "flasherName": "spyleader1g",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 289208,
@@ -110233,33 +109518,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 289208,
-      "roundNumber": 18,
-      "duration": 3.738748,
-      "flashedSteamId": 76561197962205264,
-      "flashedName": "FaZe fox1963",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198024569763,
-      "flasherName": "nkl",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 289208,
-      "roundNumber": 18,
-      "duration": 3.738748,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198024569763,
-      "flasherName": "nkl",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 289208,
@@ -110272,7 +109532,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 289208,
@@ -110285,7 +109546,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 291063,
@@ -110298,20 +109560,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 291063,
-      "roundNumber": 18,
-      "duration": 2.0508296,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197961191700,
-      "flasherName": "FaZe MaikeleleRL",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 299394,
@@ -110324,7 +109574,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "FaZe rain",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 299394,
@@ -110337,7 +109588,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "FaZe rain",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 299394,
@@ -110350,7 +109602,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "FaZe rain",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 299394,
@@ -110363,7 +109616,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "FaZe rain",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 299394,
@@ -110376,7 +109630,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "FaZe rain",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 301231,
@@ -110389,7 +109644,8 @@
       "flasherSteamId": 76561198144314785,
       "flasherName": "spyleader1g",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 301231,
@@ -110402,7 +109658,8 @@
       "flasherSteamId": 76561198144314785,
       "flasherName": "spyleader1g",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 301231,
@@ -110415,7 +109672,8 @@
       "flasherSteamId": 76561198144314785,
       "flasherName": "spyleader1g",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 301346,
@@ -110428,7 +109686,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 301346,
@@ -110441,20 +109700,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 301346,
-      "roundNumber": 19,
-      "duration": 3.3677702,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198024569763,
-      "flasherName": "nkl",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 301346,
@@ -110467,7 +109714,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 301346,
@@ -110480,7 +109728,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 301430,
@@ -110493,20 +109742,8 @@
       "flasherSteamId": 76561198144314785,
       "flasherName": "spyleader1g",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 301430,
-      "roundNumber": 19,
-      "duration": 3.9243681,
-      "flashedSteamId": 76561198050950952,
-      "flashedName": "FaZe aizy",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198144314785,
-      "flasherName": "spyleader1g",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 301430,
@@ -110519,7 +109756,8 @@
       "flasherSteamId": 76561198144314785,
       "flasherName": "spyleader1g",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 301430,
@@ -110532,20 +109770,8 @@
       "flasherSteamId": 76561198144314785,
       "flasherName": "spyleader1g",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 301430,
-      "roundNumber": 19,
-      "duration": 3.9243681,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198144314785,
-      "flasherName": "spyleader1g",
-      "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 301430,
@@ -110558,7 +109784,8 @@
       "flasherSteamId": 76561198144314785,
       "flasherName": "spyleader1g",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 301430,
@@ -110571,7 +109798,8 @@
       "flasherSteamId": 76561198144314785,
       "flasherName": "spyleader1g",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 301430,
@@ -110584,7 +109812,8 @@
       "flasherSteamId": 76561198144314785,
       "flasherName": "spyleader1g",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 301556,
@@ -110597,7 +109826,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 301556,
@@ -110610,7 +109840,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 301556,
@@ -110623,7 +109854,8 @@
       "flasherSteamId": 76561198024569763,
       "flasherName": "nkl",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 301615,
@@ -110636,7 +109868,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 301615,
@@ -110649,7 +109882,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 301615,
@@ -110662,7 +109896,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 301615,
@@ -110675,7 +109910,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 301615,
@@ -110688,7 +109924,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 306849,
@@ -110701,20 +109938,8 @@
       "flasherSteamId": 76561198002708642,
       "flasherName": "FaZe jkaem",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 306849,
-      "roundNumber": 20,
-      "duration": 0.8432622,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198002708642,
-      "flasherName": "FaZe jkaem",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 307676,
@@ -110727,7 +109952,8 @@
       "flasherSteamId": 76561198144314785,
       "flasherName": "spyleader1g",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 307676,
@@ -110740,7 +109966,8 @@
       "flasherSteamId": 76561198144314785,
       "flasherName": "spyleader1g",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 307676,
@@ -110753,7 +109980,8 @@
       "flasherSteamId": 76561198144314785,
       "flasherName": "spyleader1g",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 307676,
@@ -110766,7 +109994,8 @@
       "flasherSteamId": 76561198144314785,
       "flasherName": "spyleader1g",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 307676,
@@ -110779,7 +110008,8 @@
       "flasherSteamId": 76561198144314785,
       "flasherName": "spyleader1g",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 307694,
@@ -110792,7 +110022,8 @@
       "flasherSteamId": 76561198002708642,
       "flasherName": "FaZe jkaem",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 307694,
@@ -110805,7 +110036,8 @@
       "flasherSteamId": 76561198002708642,
       "flasherName": "FaZe jkaem",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 307694,
@@ -110818,20 +110050,8 @@
       "flasherSteamId": 76561198002708642,
       "flasherName": "FaZe jkaem",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 307694,
-      "roundNumber": 20,
-      "duration": 0.844706,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198002708642,
-      "flasherName": "FaZe jkaem",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 307694,
@@ -110844,7 +110064,8 @@
       "flasherSteamId": 76561198002708642,
       "flasherName": "FaZe jkaem",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 307694,
@@ -110857,7 +110078,8 @@
       "flasherSteamId": 76561198002708642,
       "flasherName": "FaZe jkaem",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 309793,
@@ -110870,20 +110092,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "FaZe rain",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 309793,
-      "roundNumber": 20,
-      "duration": 3.1303658,
-      "flashedSteamId": 76561198000968105,
-      "flashedName": "bubbleONFiRE",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "FaZe rain",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 309793,
@@ -110896,7 +110106,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "FaZe rain",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 309793,
@@ -110909,46 +110120,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "FaZe rain",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 310925,
-      "roundNumber": 20,
-      "duration": 3.6319673,
-      "flashedSteamId": 76561198144314785,
-      "flashedName": "spyleader1g",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "FaZe aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 310925,
-      "roundNumber": 20,
-      "duration": 4.770919,
-      "flashedSteamId": 76561197962205264,
-      "flashedName": "FaZe fox1963",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "FaZe aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 310925,
-      "roundNumber": 20,
-      "duration": 4.7704754,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "FaZe aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 310925,
@@ -110961,7 +110134,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 310925,
@@ -110974,7 +110148,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 315743,
@@ -110987,7 +110162,8 @@
       "flasherSteamId": 76561198006282027,
       "flasherName": "v1c7oR1g♛♛♛",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 316269,
@@ -111000,7 +110176,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 316269,
@@ -111013,7 +110190,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 316269,
@@ -111026,20 +110204,8 @@
       "flasherSteamId": 76561198050950952,
       "flasherName": "FaZe aizy",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 316269,
-      "roundNumber": 21,
-      "duration": 1.0029551,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198050950952,
-      "flasherName": "FaZe aizy",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 316271,
@@ -111052,7 +110218,8 @@
       "flasherSteamId": 76561198000968105,
       "flasherName": "bubbleONFiRE",
       "flasherSide": 2,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 316499,
@@ -111065,7 +110232,8 @@
       "flasherSteamId": 76561197961191700,
       "flasherName": "FaZe MaikeleleRL",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 316902,
@@ -111078,7 +110246,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 316902,
@@ -111091,20 +110260,8 @@
       "flasherSteamId": 76561197962205264,
       "flasherName": "FaZe fox1963",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 316902,
-      "roundNumber": 21,
-      "duration": 0.31341136,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197962205264,
-      "flasherName": "FaZe fox1963",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 318040,
@@ -111117,7 +110274,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "FaZe rain",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 318040,
@@ -111130,33 +110288,8 @@
       "flasherSteamId": 76561197997351207,
       "flasherName": "FaZe rain",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 318040,
-      "roundNumber": 21,
-      "duration": 1.0309085,
-      "flashedSteamId": 76561197962205264,
-      "flashedName": "FaZe fox1963",
-      "flashedSide": 3,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "FaZe rain",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 318040,
-      "roundNumber": 21,
-      "duration": 1.0310144,
-      "flashedSteamId": 76561197997160399,
-      "flashedName": "FaZe RobbaN",
-      "flashedSide": 1,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561197997351207,
-      "flasherName": "FaZe rain",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     },
     {
       "tick": 322957,
@@ -111169,7 +110302,8 @@
       "flasherSteamId": 76561198002708642,
       "flasherName": "FaZe jkaem",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": false
     },
     {
       "tick": 323113,
@@ -111182,20 +110316,8 @@
       "flasherSteamId": 76561198002708642,
       "flasherName": "FaZe jkaem",
       "flasherSide": 3,
-      "isFlasherControllingBot": false
-    },
-    {
-      "tick": 323113,
-      "roundNumber": 21,
-      "duration": 3.6928818,
-      "flashedSteamId": 76561198006282027,
-      "flashedName": "v1c7oR1g♛♛♛",
-      "flashedSide": 2,
-      "isFlashedControllingBot": false,
-      "flasherSteamId": 76561198002708642,
-      "flasherName": "FaZe jkaem",
-      "flasherSide": 3,
-      "isFlasherControllingBot": false
+      "isFlasherControllingBot": false,
+      "isFlashedFacingFlashbang": true
     }
   ],
   "grenadePositions": [],
