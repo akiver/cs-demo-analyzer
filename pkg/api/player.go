@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"math"
 
+	csmath "github.com/akiver/cs-demo-analyzer/internal/math"
 	"github.com/akiver/cs-demo-analyzer/internal/strings"
 	"github.com/akiver/cs-demo-analyzer/pkg/api/constants"
 	common "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
@@ -82,6 +83,8 @@ type PlayerJSON struct {
 	FiveKillCount         int     `json:"fiveKillCount"`
 	HltvRating            float32 `json:"hltvRating"`
 	HltvRating2           float32 `json:"hltvRating2"`
+	AverageTimeToDamage   float32 `json:"averageTimeToDamage"`
+	AverageTimeToKill     float32 `json:"averageTimeToKill"`
 }
 
 func (player *Player) MarshalJSON() ([]byte, error) {
@@ -132,6 +135,8 @@ func (player *Player) MarshalJSON() ([]byte, error) {
 		FiveKillCount:         player.FiveKillCount(),
 		HltvRating2:           player.HltvRating2(),
 		HltvRating:            player.HltvRating(),
+		AverageTimeToDamage:   player.AverageTimeToDamage(),
+		AverageTimeToKill:     player.AverageTimeToKill(),
 	})
 }
 
@@ -639,6 +644,40 @@ func (player *Player) UtilityDamagePerRound() float32 {
 	}
 
 	return 0
+}
+
+func (player *Player) timesToDamage() []int {
+	var times []int
+	for _, damage := range player.match.Damages {
+		if damage.TimeToDamage >= 0 && damage.isValidPlayerDamageEvent(player) {
+			times = append(times, damage.TimeToDamage)
+		}
+	}
+
+	return times
+}
+
+func (player *Player) timesToKill() []int {
+	var times []int
+	for _, kill := range player.match.Kills {
+		if kill.TimeToKill >= 0 && kill.KillerSteamID64 == player.SteamID64 && !kill.IsKillerControllingBot {
+			times = append(times, kill.TimeToKill)
+		}
+	}
+
+	return times
+}
+
+// AverageTimeToDamage returns the average milliseconds between the moment the player saw an enemy and damaged them,
+// -1 when not available.
+func (player *Player) AverageTimeToDamage() float32 {
+	return timeToDamageStat(player.timesToDamage(), csmath.Average)
+}
+
+// AverageTimeToKill returns the average milliseconds between the moment the player saw an enemy and killed them, -1
+// when not available.
+func (player *Player) AverageTimeToKill() float32 {
+	return timeToDamageStat(player.timesToKill(), csmath.Average)
 }
 
 func (player *Player) OneKillCount() int {

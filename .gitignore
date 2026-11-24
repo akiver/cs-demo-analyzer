@@ -9,3 +9,5 @@ node_modules
 /*.json
 /debug/*.json
 .vscode/launch.json
+/map-geometry
+/cs2-map-geometry

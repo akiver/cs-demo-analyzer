@@ -202,6 +202,7 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 			converters.IntToString(match.OvertimeCount),
 			converters.IntToString(match.MaxRounds),
 			converters.BoolToString(match.HasVacLiveBan),
+			match.MapGeometryChecksum,
 		}
 
 		csv.WriteLinesIntoCsvFile(outputPath+"_match.csv", [][]string{
@@ -275,6 +276,8 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 				player.CrosshairShareCode,
 				converters.ColorToString(player.Color),
 				converters.IntToString(player.InspectWeaponCount),
+				converters.Float32ToString(player.AverageTimeToDamage()),
+				converters.Float32ToString(player.AverageTimeToKill()),
 				match.Checksum,
 			}
 			lines = append(lines, line)
@@ -838,6 +841,7 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 				string(damage.WeaponType),
 				converters.HitgroupToString(damage.HitGroup),
 				damage.WeaponUniqueID,
+				converters.IntToString(damage.TimeToDamage),
 				match.Checksum,
 			}
 			lines = append(lines, line)
@@ -891,6 +895,7 @@ func exportMatchForCSDM(match *Match, outputPath string) error {
 				converters.BoolToString(kill.IsThroughSmoke),
 				converters.BoolToString(kill.IsNoScope),
 				converters.Float32ToString(kill.Distance),
+				converters.IntToString(kill.TimeToKill),
 				match.Checksum,
 			}
 			lines = append(lines, line)

@@ -30,7 +30,10 @@ type Damage struct {
 	WeaponName               constants.WeaponName `json:"weaponName"`
 	WeaponType               constants.WeaponType `json:"weaponType"`
 	WeaponUniqueID           string               `json:"weaponUniqueId"`
-	isUtilityDamage          bool
+	// Milliseconds between the moment the attacker saw the victim and this damage, only set on the first damage of an
+	// engagement with a firearm and when the map geometry is available, -1 otherwise.
+	TimeToDamage    int `json:"timeToDamage"`
+	isUtilityDamage bool
 }
 
 func isUtilityDamage(analyzer *Analyzer, event events.PlayerHurt) bool {
@@ -110,6 +113,7 @@ func newDamageFromGameEvent(analyzer *Analyzer, event events.PlayerHurt) *Damage
 		WeaponType:               getEquipmentWeaponType(*event.Weapon),
 		HitGroup:                 event.HitGroup,
 		WeaponUniqueID:           event.Weapon.UniqueID().String(),
+		TimeToDamage:             noTimeToDamage,
 		isUtilityDamage:          isUtilityDamage(analyzer, event),
 	}
 }

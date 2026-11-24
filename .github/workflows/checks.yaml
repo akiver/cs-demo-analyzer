@@ -35,9 +35,19 @@ jobs:
           path: cs-demos
           key: demos-${{ hashFiles('demos.txt') }}
 
+      # The script pins the geometry version, the cache is invalidated when it's bumped.
+      - name: Restore map geometry cache
+        uses: actions/cache@v5
+        with:
+          path: cs2-map-geometry
+          key: map-geometry-${{ hashFiles('download-map-geometry.sh') }}
+
       - name: Download demos
         if: steps.demos-cache.outputs.cache-hit != 'true'
         run: ./download-demos.sh
 
+      - name: Download map geometry
+        run: ./download-map-geometry.sh
+
       - name: Test
-        run: go test ./tests
+        run: go test ./...

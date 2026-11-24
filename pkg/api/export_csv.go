@@ -202,6 +202,8 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 			"crosshair share code",
 			"color",
 			"inspect weapon count",
+			"avg time to damage",
+			"avg time to kill",
 			"match checksum",
 		}
 
@@ -265,6 +267,8 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 				player.CrosshairShareCode,
 				converters.ColorToString(player.Color),
 				converters.IntToString(player.InspectWeaponCount),
+				converters.Float32ToString(player.AverageTimeToDamage()),
+				converters.Float32ToString(player.AverageTimeToKill()),
 				match.Checksum,
 			}
 			lines = append(lines, line)
@@ -662,6 +666,7 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 			"weapon class",
 			"hitgroup",
 			"weapon unique id",
+			"time to damage",
 			"match checksum",
 		}
 
@@ -688,6 +693,7 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 				string(damage.WeaponType),
 				converters.HitgroupToString(damage.HitGroup),
 				damage.WeaponUniqueID,
+				converters.IntToString(damage.TimeToDamage),
 				match.Checksum,
 			}
 			lines = append(lines, line)
@@ -739,6 +745,7 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 			"is through smoke",
 			"is no scope",
 			"distance",
+			"time to kill",
 			"match checksum",
 		}
 
@@ -786,6 +793,7 @@ func exportMatchToCSV(match *Match, outputPath string) error {
 				converters.BoolToString(kill.IsThroughSmoke),
 				converters.BoolToString(kill.IsNoScope),
 				converters.Float32ToString(kill.Distance),
+				converters.IntToString(kill.TimeToKill),
 				match.Checksum,
 			}
 			lines = append(lines, line)
