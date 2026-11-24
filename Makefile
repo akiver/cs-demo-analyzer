@@ -81,7 +81,7 @@ publish-minor: ## Publish a minor version of the JS package
 publish-patch: ## Publish a patch version of the JS package
 	@"$(MAKE)" VERSION=patch npm-publish
 
-test: ## Run all tests
+test: ## Run demos tests
 	go test ./tests/ $(ARGS)
 
 test-csgo: ## Run CS:GO tests
@@ -89,6 +89,9 @@ test-csgo: ## Run CS:GO tests
 
 test-cs2: ## Run CS2 tests
 	go test ./tests/ -run TestDemos/cs2 $(ARGS)
+
+test-unit: ## Run unit tests (no demos required)
+	go test ./cmd/... ./internal/... ./pkg/... $(ARGS)
 
 test-verbose: ## Run tests in verbose
 	@"$(MAKE)" --no-print-directory ARGS=-v test

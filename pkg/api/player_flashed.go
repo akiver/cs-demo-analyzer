@@ -1,9 +1,7 @@
 package api
 
 import (
-	"math"
-
-	"github.com/golang/geo/r3"
+	"github.com/akiver/cs-demo-analyzer/internal/math"
 	"github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
 	events "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/events"
 )
@@ -30,13 +28,7 @@ func isPlayerFacingFlashbang(player *common.Player, projectile *common.GrenadePr
 		return true
 	}
 
-	yaw := float64(player.ViewDirectionX()) * math.Pi / 180
-	pitch := float64(player.ViewDirectionY()) * math.Pi / 180
-	viewDirection := r3.Vector{
-		X: math.Cos(pitch) * math.Cos(yaw),
-		Y: math.Cos(pitch) * math.Sin(yaw),
-		Z: -math.Sin(pitch),
-	}
+	viewDirection := math.ViewDirection(float64(player.ViewDirectionX()), float64(player.ViewDirectionY()))
 	toFlashbang := projectile.Position().Sub(player.PositionEyes())
 
 	return viewDirection.Dot(toFlashbang) > 0

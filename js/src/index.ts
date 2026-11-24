@@ -10,6 +10,8 @@ export type Options = {
   source?: DemoSource;
   analyzePositions?: boolean;
   minify?: boolean; // JSON only
+  // Folder containing the <map>.tri files, required to compute the time to damage/kill (CS2 only).
+  mapGeometryFolderPath?: string;
   onStart?: (command: string) => void;
   onStdout?: (data: string) => void;
   onStderr?: (data: string) => void;
@@ -24,6 +26,7 @@ export async function analyzeDemo({
   source,
   analyzePositions,
   minify,
+  mapGeometryFolderPath,
   onStart,
   onStdout,
   onStderr,
@@ -48,6 +51,9 @@ export async function analyzeDemo({
     }
     if (minify) {
       args.push('-minify');
+    }
+    if (mapGeometryFolderPath) {
+      args.push(`-map-geometry-dir="${mapGeometryFolderPath}"`);
     }
     const command = args.join(' ');
     if (onStart) {

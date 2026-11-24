@@ -52,6 +52,9 @@ type Kill struct {
 	IsTradeKill              bool                 `json:"isTradeKill"`  // The attacker did a trade kill
 	IsTradeDeath             bool                 `json:"isTradeDeath"` // The victim did a trade death
 	Distance                 float32              `json:"distance"`
+	// Milliseconds between the moment the killer saw the victim and the kill, only set for kills with a firearm when
+	// the map geometry is available, -1 otherwise.
+	TimeToKill int `json:"timeToKill"`
 }
 
 func (kill *Kill) IsSuicide() bool {
@@ -192,5 +195,6 @@ func newKillFromGameEvent(analyzer *Analyzer, event events.Kill) *Kill {
 		IsThroughSmoke:           event.ThroughSmoke,
 		IsNoScope:                event.NoScope,
 		Distance:                 distance,
+		TimeToKill:               noTimeToDamage,
 	}
 }

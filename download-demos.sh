@@ -17,4 +17,6 @@ for file in $files; do
   curl -s -L -o $demoPath https://gitlab.com/akiver/cs-demos/-/raw/main/$file --create-dirs
 done
 
+./download-map-geometry.sh
+
 echo 'Done'

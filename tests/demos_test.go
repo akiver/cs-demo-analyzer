@@ -117,11 +117,18 @@ func runDemoTestCases(t *testing.T, game string, testCases []demoTestCase) {
 			t.Parallel()
 
 			demoPath := testsutils.GetDemoPath(game, tc.demoName)
-			match, err := api.AnalyzeDemo(demoPath, api.AnalyzeDemoOptions{
+			options := api.AnalyzeDemoOptions{
 				Source: tc.source,
-			})
+			}
+			if game == "cs2" {
+				options.MapGeometryDir = testsutils.GetMapGeometryDir(t)
+			}
+			match, err := api.AnalyzeDemo(demoPath, options)
 			if err != nil {
 				t.Fatal(err)
+			}
+			if game == "cs2" {
+				testsutils.AssertMapGeometry(t, match.MapName)
 			}
 
 			assertion.AssertMatchSnapshot(t, match, tc.demoName)
