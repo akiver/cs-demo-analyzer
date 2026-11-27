@@ -229,6 +229,8 @@ func analyzeDemo(demoPath string, options AnalyzeDemoOptions, spoolPositions boo
 	case constants.DemoSourceGamersclub:
 		// Looks like they use an eBot fork but rounds are not detected properly.
 		return nil, errors.New("gamersclub demos are not supported (GamersClubNotSupported)")
+	case constants.DemoSourceXplay:
+		createXplayAnalyzer(analyzer)
 	case constants.DemoSourceMatchZy:
 		createMatchZyAnalyzer(analyzer)
 	case constants.DemoSourcePopFlash:

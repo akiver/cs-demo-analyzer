@@ -25,6 +25,7 @@ export const DemoSource = {
   Renown: 'renown',
   Unknown: 'unknown',
   Valve: 'valve',
+  Xplay: 'xplay',
 } as const;
 export type DemoSource = (typeof DemoSource)[keyof typeof DemoSource];
 
@@ -46,6 +47,7 @@ export const SupportedDemoSources: DemoSource[] = [
   DemoSource.Pracc,
   DemoSource.Renown,
   DemoSource.Valve,
+  DemoSource.Xplay,
 ];
 
 export const DemoType = {

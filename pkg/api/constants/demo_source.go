@@ -27,6 +27,7 @@ const (
 	DemoSourceRenown       DemoSource = "renown"
 	DemoSourceUnknown      DemoSource = "unknown"
 	DemoSourceValve        DemoSource = "valve"
+	DemoSourceXplay        DemoSource = "xplay"
 )
 
 var SupportedDemoSources = []DemoSource{
@@ -47,4 +48,5 @@ var SupportedDemoSources = []DemoSource{
 	DemoSourcePracc,
 	DemoSourceRenown,
 	DemoSourceValve,
+	DemoSourceXplay,
 }

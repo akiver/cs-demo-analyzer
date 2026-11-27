@@ -25,7 +25,7 @@ Usage of csda:
   -positions
         Include entities (players, grenades...) positions (default false)
   -source string
-        Force demo's source, valid values: [challengermode,ebot,esea,esl,esportal,faceit,fastcup,5eplay,perfectworld,popflash,valve]
+        Force demo's source, valid values: [challengermode,ebot,esea,esl,esplay,esportal,esportligaen,faceit,fastcup,5eplay,gamersclub,matchzy,perfectworld,popflash,pracc,renown,valve,xplay]
 ```
 
 ### Examples

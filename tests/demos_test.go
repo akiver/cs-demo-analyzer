@@ -60,6 +60,7 @@ var cs2DemoTestCases = []demoTestCase{
 	{"Renown_Match_1363_2025_Ancient", "renown_match_1363_2025_ancient", constants.DemoSourceRenown},
 	// https://renown.gg/match/8
 	{"Renown_Match_8_2025_Mirage", "renown_match_8_2025_mirage", constants.DemoSourceRenown},
+	{"Xplay_Match_2810848bc9ea12957e20e0955be5192118366778a9734e2de7e3b8032797da90_2026_Mirage", "xplay_match_2810848bc9ea12957e20e0955be5192118366778a9734e2de7e3b8032797da90_2026_mirage", constants.DemoSourceXplay},
 }
 
 var csgoDemoTestCases = []demoTestCase{
