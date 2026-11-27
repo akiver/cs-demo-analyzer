@@ -114,8 +114,8 @@
       "fiveKillCount": 0,
       "hltvRating": 0.9780746,
       "hltvRating2": 1.0113821,
-      "averageTimeToDamage": 522,
-      "averageTimeToKill": 697.5714
+      "averageTimeToDamage": 519.9091,
+      "averageTimeToKill": 699.7857
     },
     "76561198034489011": {
       "steamId": 76561198034489011,
@@ -183,8 +183,8 @@
       "fiveKillCount": 0,
       "hltvRating": 2.124355,
       "hltvRating2": 2.1622634,
-      "averageTimeToDamage": 551.8571,
-      "averageTimeToKill": 663
+      "averageTimeToDamage": 489.82858,
+      "averageTimeToKill": 589.03845
     },
     "76561198036013431": {
       "steamId": 76561198036013431,
@@ -252,8 +252,8 @@
       "fiveKillCount": 0,
       "hltvRating": 0.98413396,
       "hltvRating2": 1.3472387,
-      "averageTimeToDamage": 661.3214,
-      "averageTimeToKill": 1176.9333
+      "averageTimeToDamage": 618.3929,
+      "averageTimeToKill": 1174.0667
     },
     "76561198068561730": {
       "steamId": 76561198068561730,
@@ -321,8 +321,8 @@
       "fiveKillCount": 0,
       "hltvRating": 0.44090664,
       "hltvRating2": 0.36829352,
-      "averageTimeToDamage": 562.65,
-      "averageTimeToKill": 950.6667
+      "averageTimeToDamage": 622.6316,
+      "averageTimeToKill": 1044.3334
     },
     "76561198131837018": {
       "steamId": 76561198131837018,
@@ -390,8 +390,8 @@
       "fiveKillCount": 0,
       "hltvRating": 0.836173,
       "hltvRating2": 0.79084426,
-      "averageTimeToDamage": 430.89474,
-      "averageTimeToKill": 742.25
+      "averageTimeToDamage": 418.3889,
+      "averageTimeToKill": 724.625
     },
     "76561198140231726": {
       "steamId": 76561198140231726,
@@ -459,8 +459,8 @@
       "fiveKillCount": 0,
       "hltvRating": 0.62232685,
       "hltvRating2": 0.43263423,
-      "averageTimeToDamage": 721,
-      "averageTimeToKill": 1132
+      "averageTimeToDamage": 720.9286,
+      "averageTimeToKill": 1130.3334
     },
     "76561198166088951": {
       "steamId": 76561198166088951,
@@ -528,8 +528,8 @@
       "fiveKillCount": 0,
       "hltvRating": 0.80986893,
       "hltvRating2": 1.066678,
-      "averageTimeToDamage": 747.2273,
-      "averageTimeToKill": 848.2857
+      "averageTimeToDamage": 674.7727,
+      "averageTimeToKill": 845
     },
     "76561199422206952": {
       "steamId": 76561199422206952,
@@ -597,8 +597,8 @@
       "fiveKillCount": 0,
       "hltvRating": 1.2082806,
       "hltvRating2": 1.3706368,
-      "averageTimeToDamage": 672.9667,
-      "averageTimeToKill": 984.5
+      "averageTimeToDamage": 661.56665,
+      "averageTimeToKill": 973.1111
     },
     "76561199502864459": {
       "steamId": 76561199502864459,
@@ -666,8 +666,8 @@
       "fiveKillCount": 0,
       "hltvRating": 1.908905,
       "hltvRating2": 1.7569615,
-      "averageTimeToDamage": 549.8919,
-      "averageTimeToKill": 732.3043
+      "averageTimeToDamage": 555.4054,
+      "averageTimeToKill": 747.3913
     },
     "76561199546450215": {
       "steamId": 76561199546450215,
@@ -735,8 +735,8 @@
       "fiveKillCount": 0,
       "hltvRating": 0.22545664,
       "hltvRating2": 0.1657584,
-      "averageTimeToDamage": 743.6667,
-      "averageTimeToKill": 1437.5
+      "averageTimeToDamage": 763,
+      "averageTimeToKill": 1430
     }
   },
   "kills": [
@@ -826,7 +826,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 13.498822,
-      "timeToKill": 547
+      "timeToKill": 531
     },
     {
       "tick": 10119,
@@ -958,7 +958,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 26.913702,
-      "timeToKill": 359
+      "timeToKill": 344
     },
     {
       "tick": 11064,
@@ -1046,7 +1046,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 24.31737,
-      "timeToKill": 1406
+      "timeToKill": 1516
     },
     {
       "tick": 13771,
@@ -1222,7 +1222,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 33.667088,
-      "timeToKill": 781
+      "timeToKill": 766
     },
     {
       "tick": 14899,
@@ -1354,7 +1354,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 24.86181,
-      "timeToKill": 438
+      "timeToKill": 391
     },
     {
       "tick": 18171,
@@ -1442,7 +1442,7 @@
       "isTradeKill": true,
       "isTradeDeath": false,
       "distance": 28.118885,
-      "timeToKill": 1172
+      "timeToKill": 1469
     },
     {
       "tick": 18783,
@@ -1486,7 +1486,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 19.544363,
-      "timeToKill": 953
+      "timeToKill": 1000
     },
     {
       "tick": 18845,
@@ -1574,7 +1574,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 5.614284,
-      "timeToKill": 469
+      "timeToKill": 453
     },
     {
       "tick": 22185,
@@ -1618,7 +1618,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 3.5939693,
-      "timeToKill": 797
+      "timeToKill": 766
     },
     {
       "tick": 22966,
@@ -1750,7 +1750,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 18.93459,
-      "timeToKill": 734
+      "timeToKill": 719
     },
     {
       "tick": 23558,
@@ -1882,7 +1882,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 31.915947,
-      "timeToKill": 984
+      "timeToKill": 1016
     },
     {
       "tick": 27724,
@@ -1970,7 +1970,7 @@
       "isTradeKill": false,
       "isTradeDeath": true,
       "distance": 18.82158,
-      "timeToKill": 2406
+      "timeToKill": 2422
     },
     {
       "tick": 28703,
@@ -2014,7 +2014,7 @@
       "isTradeKill": true,
       "isTradeDeath": false,
       "distance": 9.484008,
-      "timeToKill": 672
+      "timeToKill": 656
     },
     {
       "tick": 30128,
@@ -2102,7 +2102,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 29.632982,
-      "timeToKill": 719
+      "timeToKill": 766
     },
     {
       "tick": 31389,
@@ -2190,7 +2190,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 10.612645,
-      "timeToKill": 1328
+      "timeToKill": 1313
     },
     {
       "tick": 34742,
@@ -2278,7 +2278,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 37.241394,
-      "timeToKill": 359
+      "timeToKill": 344
     },
     {
       "tick": 36805,
@@ -2322,7 +2322,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 9.2504635,
-      "timeToKill": 2031
+      "timeToKill": 2125
     },
     {
       "tick": 36885,
@@ -2454,7 +2454,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 19.816723,
-      "timeToKill": 672
+      "timeToKill": 703
     },
     {
       "tick": 40599,
@@ -2498,7 +2498,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 40.794464,
-      "timeToKill": 250
+      "timeToKill": 266
     },
     {
       "tick": 40672,
@@ -2542,7 +2542,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 16.987005,
-      "timeToKill": 406
+      "timeToKill": 422
     },
     {
       "tick": 41397,
@@ -2630,7 +2630,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 48.363033,
-      "timeToKill": 422
+      "timeToKill": 406
     },
     {
       "tick": 43493,
@@ -2674,7 +2674,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 18.14037,
-      "timeToKill": 406
+      "timeToKill": 391
     },
     {
       "tick": 43750,
@@ -2718,7 +2718,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 39.912994,
-      "timeToKill": 266
+      "timeToKill": 828
     },
     {
       "tick": 44492,
@@ -2762,7 +2762,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 25.942429,
-      "timeToKill": 1484
+      "timeToKill": 1469
     },
     {
       "tick": 46956,
@@ -2938,7 +2938,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 18.489168,
-      "timeToKill": 969
+      "timeToKill": 875
     },
     {
       "tick": 50119,
@@ -2982,7 +2982,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 8.134275,
-      "timeToKill": 1313
+      "timeToKill": 1266
     },
     {
       "tick": 50321,
@@ -3026,7 +3026,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 5.063636,
-      "timeToKill": 547
+      "timeToKill": 516
     },
     {
       "tick": 52899,
@@ -3158,7 +3158,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 8.150494,
-      "timeToKill": 563
+      "timeToKill": 531
     },
     {
       "tick": 53795,
@@ -3202,7 +3202,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 9.745034,
-      "timeToKill": 625
+      "timeToKill": 609
     },
     {
       "tick": 53989,
@@ -3246,7 +3246,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 5.419112,
-      "timeToKill": 500
+      "timeToKill": 516
     },
     {
       "tick": 56724,
@@ -3334,7 +3334,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 30.990955,
-      "timeToKill": 484
+      "timeToKill": 469
     },
     {
       "tick": 57204,
@@ -3378,7 +3378,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 16.620209,
-      "timeToKill": 547
+      "timeToKill": 516
     },
     {
       "tick": 57670,
@@ -3422,7 +3422,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 26.190247,
-      "timeToKill": 313
+      "timeToKill": 375
     },
     {
       "tick": 59024,
@@ -3466,7 +3466,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 11.4074745,
-      "timeToKill": 781
+      "timeToKill": 766
     },
     {
       "tick": 59121,
@@ -3510,7 +3510,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 9.874306,
-      "timeToKill": 375
+      "timeToKill": 359
     },
     {
       "tick": 59517,
@@ -3554,7 +3554,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 17.775988,
-      "timeToKill": 563
+      "timeToKill": 594
     },
     {
       "tick": 59787,
@@ -3642,7 +3642,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 24.888908,
-      "timeToKill": 1141
+      "timeToKill": 1156
     },
     {
       "tick": 63041,
@@ -3686,7 +3686,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 12.474559,
-      "timeToKill": 766
+      "timeToKill": 781
     },
     {
       "tick": 63764,
@@ -3730,7 +3730,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 5.119984,
-      "timeToKill": 422
+      "timeToKill": 406
     },
     {
       "tick": 63766,
@@ -3774,7 +3774,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 45.800884,
-      "timeToKill": 1641
+      "timeToKill": 1625
     },
     {
       "tick": 64084,
@@ -3950,7 +3950,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 22.667675,
-      "timeToKill": 2531
+      "timeToKill": 2594
     },
     {
       "tick": 69347,
@@ -4126,7 +4126,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 27.398912,
-      "timeToKill": 688
+      "timeToKill": 672
     },
     {
       "tick": 70158,
@@ -4170,7 +4170,7 @@
       "isTradeKill": false,
       "isTradeDeath": true,
       "distance": 13.244763,
-      "timeToKill": 875
+      "timeToKill": 859
     },
     {
       "tick": 70432,
@@ -4258,7 +4258,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 6.9000835,
-      "timeToKill": 953
+      "timeToKill": 938
     },
     {
       "tick": 73441,
@@ -4346,7 +4346,7 @@
       "isTradeKill": false,
       "isTradeDeath": true,
       "distance": 21.31253,
-      "timeToKill": 984
+      "timeToKill": 969
     },
     {
       "tick": 76652,
@@ -4478,7 +4478,7 @@
       "isTradeKill": false,
       "isTradeDeath": true,
       "distance": 41.99247,
-      "timeToKill": 2734
+      "timeToKill": 969
     },
     {
       "tick": 77670,
@@ -4698,7 +4698,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 21.586903,
-      "timeToKill": 391
+      "timeToKill": 328
     },
     {
       "tick": 82411,
@@ -4742,7 +4742,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 19.299397,
-      "timeToKill": 844
+      "timeToKill": 859
     },
     {
       "tick": 83186,
@@ -4786,7 +4786,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 46.47605,
-      "timeToKill": 2766
+      "timeToKill": 2672
     },
     {
       "tick": 83371,
@@ -4830,7 +4830,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 23.26157,
-      "timeToKill": 688
+      "timeToKill": 656
     },
     {
       "tick": 83871,
@@ -4874,7 +4874,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 4.7126307,
-      "timeToKill": 1031
+      "timeToKill": 969
     },
     {
       "tick": 85554,
@@ -4918,7 +4918,7 @@
       "isTradeKill": false,
       "isTradeDeath": true,
       "distance": 26.028934,
-      "timeToKill": 1063
+      "timeToKill": 1016
     },
     {
       "tick": 85700,
@@ -5050,7 +5050,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 16.12247,
-      "timeToKill": 906
+      "timeToKill": 891
     },
     {
       "tick": 91390,
@@ -5094,7 +5094,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 21.917875,
-      "timeToKill": 797
+      "timeToKill": 766
     },
     {
       "tick": 91898,
@@ -5182,7 +5182,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 10.175485,
-      "timeToKill": 750
+      "timeToKill": 719
     },
     {
       "tick": 93274,
@@ -5314,7 +5314,7 @@
       "isTradeKill": true,
       "isTradeDeath": true,
       "distance": 12.399268,
-      "timeToKill": 813
+      "timeToKill": 797
     },
     {
       "tick": 93725,
@@ -5358,7 +5358,7 @@
       "isTradeKill": true,
       "isTradeDeath": false,
       "distance": 17.400442,
-      "timeToKill": 406
+      "timeToKill": 391
     },
     {
       "tick": 99545,
@@ -5402,7 +5402,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 41.77106,
-      "timeToKill": 500
+      "timeToKill": 469
     },
     {
       "tick": 100123,
@@ -5490,7 +5490,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 45.293472,
-      "timeToKill": 2328
+      "timeToKill": 2313
     },
     {
       "tick": 100955,
@@ -5666,7 +5666,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 12.059894,
-      "timeToKill": 2063
+      "timeToKill": 2047
     },
     {
       "tick": 106301,
@@ -5710,7 +5710,7 @@
       "isTradeKill": false,
       "isTradeDeath": true,
       "distance": 45.070553,
-      "timeToKill": 391
+      "timeToKill": 375
     },
     {
       "tick": 106445,
@@ -5754,7 +5754,7 @@
       "isTradeKill": true,
       "isTradeDeath": false,
       "distance": 43.12356,
-      "timeToKill": 422
+      "timeToKill": 406
     },
     {
       "tick": 106914,
@@ -5842,7 +5842,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 20.76338,
-      "timeToKill": 656
+      "timeToKill": 641
     },
     {
       "tick": 107747,
@@ -5930,7 +5930,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 8.724037,
-      "timeToKill": 609
+      "timeToKill": 578
     },
     {
       "tick": 109789,
@@ -6150,7 +6150,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 27.521982,
-      "timeToKill": 594
+      "timeToKill": 609
     },
     {
       "tick": 114993,
@@ -6238,7 +6238,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 10.086976,
-      "timeToKill": 719
+      "timeToKill": 734
     },
     {
       "tick": 115949,
@@ -6282,7 +6282,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 12.197685,
-      "timeToKill": 594
+      "timeToKill": 578
     },
     {
       "tick": 117015,
@@ -6326,7 +6326,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 39.864838,
-      "timeToKill": 906
+      "timeToKill": 875
     },
     {
       "tick": 119554,
@@ -6370,7 +6370,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 6.1281457,
-      "timeToKill": 828
+      "timeToKill": 797
     },
     {
       "tick": 120100,
@@ -6458,7 +6458,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 21.03343,
-      "timeToKill": 641
+      "timeToKill": 656
     },
     {
       "tick": 121773,
@@ -6502,7 +6502,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 14.434765,
-      "timeToKill": 516
+      "timeToKill": 500
     },
     {
       "tick": 121976,
@@ -6634,7 +6634,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 5.7368836,
-      "timeToKill": 797
+      "timeToKill": 766
     },
     {
       "tick": 124033,
@@ -6678,7 +6678,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 24.903492,
-      "timeToKill": 313
+      "timeToKill": 297
     },
     {
       "tick": 127799,
@@ -6722,7 +6722,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 45.293472,
-      "timeToKill": 547
+      "timeToKill": 531
     },
     {
       "tick": 127927,
@@ -6766,7 +6766,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 10.551082,
-      "timeToKill": 609
+      "timeToKill": 672
     },
     {
       "tick": 128347,
@@ -6810,7 +6810,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 13.642831,
-      "timeToKill": 1234
+      "timeToKill": 1266
     },
     {
       "tick": 129756,
@@ -6854,7 +6854,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 27.226976,
-      "timeToKill": 594
+      "timeToKill": 578
     },
     {
       "tick": 130651,
@@ -6898,7 +6898,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 9.762122,
-      "timeToKill": 609
+      "timeToKill": 594
     },
     {
       "tick": 132459,
@@ -7074,7 +7074,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 27.578629,
-      "timeToKill": 1172
+      "timeToKill": 1188
     },
     {
       "tick": 138306,
@@ -7206,7 +7206,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 19.14955,
-      "timeToKill": 1125
+      "timeToKill": 1188
     },
     {
       "tick": 140629,
@@ -7294,7 +7294,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 7.561443,
-      "timeToKill": 1141
+      "timeToKill": 1125
     },
     {
       "tick": 144137,
@@ -7426,7 +7426,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 4.248935,
-      "timeToKill": 1125
+      "timeToKill": 1094
     },
     {
       "tick": 145537,
@@ -7470,7 +7470,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 24.393871,
-      "timeToKill": 1109
+      "timeToKill": 1094
     },
     {
       "tick": 146029,
@@ -7514,7 +7514,7 @@
       "isTradeKill": false,
       "isTradeDeath": true,
       "distance": 7.570381,
-      "timeToKill": 703
+      "timeToKill": 734
     },
     {
       "tick": 146127,
@@ -7602,7 +7602,7 @@
       "isTradeKill": false,
       "isTradeDeath": false,
       "distance": 24.337568,
-      "timeToKill": 1250
+      "timeToKill": 1266
     },
     {
       "tick": 148554,
@@ -99392,7 +99392,7 @@
       "weaponName": "USP-S",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 406
+      "timeToDamage": 219
     },
     {
       "tick": 9110,
@@ -99668,7 +99668,7 @@
       "weaponName": "Glock-18",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 547
+      "timeToDamage": 531
     },
     {
       "tick": 9519,
@@ -99852,7 +99852,7 @@
       "weaponName": "Glock-18",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 469
+      "timeToDamage": 484
     },
     {
       "tick": 10106,
@@ -99944,7 +99944,7 @@
       "weaponName": "P250",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 266
+      "timeToDamage": 234
     },
     {
       "tick": 10172,
@@ -100220,7 +100220,7 @@
       "weaponName": "Glock-18",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 703
+      "timeToDamage": 734
     },
     {
       "tick": 10651,
@@ -100266,7 +100266,7 @@
       "weaponName": "USP-S",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 359
+      "timeToDamage": 344
     },
     {
       "tick": 11051,
@@ -100335,7 +100335,7 @@
       "weaponName": "USP-S",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 1406
+      "timeToDamage": 1516
     },
     {
       "tick": 13758,
@@ -100496,7 +100496,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 375
+      "timeToDamage": 359
     },
     {
       "tick": 14439,
@@ -100726,7 +100726,7 @@
       "weaponName": "MP9",
       "weaponType": "smg",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 563
+      "timeToDamage": 547
     },
     {
       "tick": 17536,
@@ -100933,7 +100933,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 391
+      "timeToDamage": 375
     },
     {
       "tick": 18112,
@@ -100979,7 +100979,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 438
+      "timeToDamage": 391
     },
     {
       "tick": 18171,
@@ -101025,7 +101025,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 563
+      "timeToDamage": 859
     },
     {
       "tick": 18270,
@@ -101094,7 +101094,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 547
+      "timeToDamage": 484
     },
     {
       "tick": 18727,
@@ -101163,7 +101163,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 656
+      "timeToDamage": 703
     },
     {
       "tick": 18771,
@@ -101324,7 +101324,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 359
+      "timeToDamage": 344
     },
     {
       "tick": 19617,
@@ -101370,7 +101370,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 234
+      "timeToDamage": 219
     },
     {
       "tick": 21895,
@@ -101439,7 +101439,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 813
+      "timeToDamage": 797
     },
     {
       "tick": 22185,
@@ -101462,7 +101462,7 @@
       "weaponName": "Tec-9",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 797
+      "timeToDamage": 766
     },
     {
       "tick": 22903,
@@ -101577,7 +101577,7 @@
       "weaponName": "Desert Eagle",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 734
+      "timeToDamage": 719
     },
     {
       "tick": 23558,
@@ -101738,7 +101738,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 563
+      "timeToDamage": 594
     },
     {
       "tick": 25023,
@@ -101807,7 +101807,7 @@
       "weaponName": "MP9",
       "weaponType": "smg",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 844
+      "timeToDamage": 828
     },
     {
       "tick": 27442,
@@ -101968,7 +101968,7 @@
       "weaponName": "MP9",
       "weaponType": "smg",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 1219
+      "timeToDamage": 1625
     },
     {
       "tick": 27696,
@@ -102083,7 +102083,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 2313
+      "timeToDamage": 2328
     },
     {
       "tick": 28567,
@@ -102152,7 +102152,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 1172
+      "timeToDamage": 1188
     },
     {
       "tick": 28624,
@@ -102221,7 +102221,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 359
+      "timeToDamage": 344
     },
     {
       "tick": 28690,
@@ -102359,7 +102359,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 547
+      "timeToDamage": 531
     },
     {
       "tick": 30634,
@@ -102451,7 +102451,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 547
+      "timeToDamage": 516
     },
     {
       "tick": 31055,
@@ -102520,7 +102520,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 422
+      "timeToDamage": 469
     },
     {
       "tick": 31244,
@@ -102681,7 +102681,7 @@
       "weaponName": "P2000",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 641
+      "timeToDamage": 625
     },
     {
       "tick": 34292,
@@ -102842,7 +102842,7 @@
       "weaponName": "USP-S",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 281
+      "timeToDamage": 266
     },
     {
       "tick": 34684,
@@ -102911,7 +102911,7 @@
       "weaponName": "USP-S",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 406
+      "timeToDamage": 391
     },
     {
       "tick": 34742,
@@ -102957,7 +102957,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 156
+      "timeToDamage": 141
     },
     {
       "tick": 34849,
@@ -103026,7 +103026,7 @@
       "weaponName": "P2000",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 406
+      "timeToDamage": 391
     },
     {
       "tick": 36786,
@@ -103049,7 +103049,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 1734
+      "timeToDamage": 1828
     },
     {
       "tick": 36792,
@@ -103072,7 +103072,7 @@
       "weaponName": "P2000",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 297
+      "timeToDamage": 281
     },
     {
       "tick": 36805,
@@ -103233,7 +103233,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 469
+      "timeToDamage": 500
     },
     {
       "tick": 38302,
@@ -103302,7 +103302,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 47
+      "timeToDamage": 63
     },
     {
       "tick": 40593,
@@ -103371,7 +103371,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 406
+      "timeToDamage": 422
     },
     {
       "tick": 41397,
@@ -103463,7 +103463,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 859
+      "timeToDamage": 844
     },
     {
       "tick": 42620,
@@ -103486,7 +103486,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 609
+      "timeToDamage": 578
     },
     {
       "tick": 42651,
@@ -103509,7 +103509,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 1094
+      "timeToDamage": 47
     },
     {
       "tick": 43183,
@@ -103532,7 +103532,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 422
+      "timeToDamage": 406
     },
     {
       "tick": 43493,
@@ -103555,7 +103555,7 @@
       "weaponName": "AWP",
       "weaponType": "sniper",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 406
+      "timeToDamage": 391
     },
     {
       "tick": 43750,
@@ -103578,7 +103578,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 266
+      "timeToDamage": 828
     },
     {
       "tick": 44440,
@@ -103601,7 +103601,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 672
+      "timeToDamage": 656
     },
     {
       "tick": 44446,
@@ -103624,7 +103624,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 641
+      "timeToDamage": 625
     },
     {
       "tick": 44473,
@@ -103647,7 +103647,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 0
+      "timeToDamage": -1
     },
     {
       "tick": 44480,
@@ -103992,7 +103992,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 969
+      "timeToDamage": 875
     },
     {
       "tick": 50093,
@@ -104015,7 +104015,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 906
+      "timeToDamage": 859
     },
     {
       "tick": 50106,
@@ -104084,7 +104084,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 703
+      "timeToDamage": 688
     },
     {
       "tick": 50119,
@@ -104130,7 +104130,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 250
+      "timeToDamage": 219
     },
     {
       "tick": 50308,
@@ -105119,7 +105119,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 563
+      "timeToDamage": 531
     },
     {
       "tick": 53795,
@@ -105142,7 +105142,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 625
+      "timeToDamage": 609
     },
     {
       "tick": 53976,
@@ -105165,7 +105165,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 297
+      "timeToDamage": 313
     },
     {
       "tick": 53982,
@@ -105234,7 +105234,7 @@
       "weaponName": "Galil AR",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 891
+      "timeToDamage": 859
     },
     {
       "tick": 56722,
@@ -105303,7 +105303,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 578
+      "timeToDamage": 547
     },
     {
       "tick": 56850,
@@ -105326,7 +105326,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 484
+      "timeToDamage": 469
     },
     {
       "tick": 56904,
@@ -105349,7 +105349,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 578
+      "timeToDamage": 594
     },
     {
       "tick": 56998,
@@ -105372,7 +105372,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 344
+      "timeToDamage": 313
     },
     {
       "tick": 57002,
@@ -105441,7 +105441,7 @@
       "weaponName": "AWP",
       "weaponType": "sniper",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 547
+      "timeToDamage": 516
     },
     {
       "tick": 57670,
@@ -105464,7 +105464,7 @@
       "weaponName": "AWP",
       "weaponType": "sniper",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 313
+      "timeToDamage": 375
     },
     {
       "tick": 59004,
@@ -105487,7 +105487,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 469
+      "timeToDamage": 453
     },
     {
       "tick": 59011,
@@ -105579,7 +105579,7 @@
       "weaponName": "AWP",
       "weaponType": "sniper",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 375
+      "timeToDamage": 359
     },
     {
       "tick": 59517,
@@ -105602,7 +105602,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 563
+      "timeToDamage": 594
     },
     {
       "tick": 59763,
@@ -105671,7 +105671,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 656
+      "timeToDamage": 672
     },
     {
       "tick": 60657,
@@ -105763,7 +105763,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 469
+      "timeToDamage": 484
     },
     {
       "tick": 63029,
@@ -106039,7 +106039,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 1078
+      "timeToDamage": 1063
     },
     {
       "tick": 63687,
@@ -106062,7 +106062,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 406
+      "timeToDamage": 391
     },
     {
       "tick": 63689,
@@ -106177,7 +106177,7 @@
       "weaponName": "MP9",
       "weaponType": "smg",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 422
+      "timeToDamage": 406
     },
     {
       "tick": 63766,
@@ -106499,7 +106499,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 531
+      "timeToDamage": 594
     },
     {
       "tick": 66583,
@@ -106660,7 +106660,7 @@
       "weaponName": "MAC-10",
       "weaponType": "smg",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 250
+      "timeToDamage": 234
     },
     {
       "tick": 69265,
@@ -106844,7 +106844,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 484
+      "timeToDamage": 469
     },
     {
       "tick": 69347,
@@ -106959,7 +106959,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 797
+      "timeToDamage": 859
     },
     {
       "tick": 69649,
@@ -107005,7 +107005,7 @@
       "weaponName": "AWP",
       "weaponType": "sniper",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 688
+      "timeToDamage": 672
     },
     {
       "tick": 69910,
@@ -107051,7 +107051,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 375
+      "timeToDamage": 359
     },
     {
       "tick": 70129,
@@ -107074,7 +107074,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 391
+      "timeToDamage": 375
     },
     {
       "tick": 70132,
@@ -107189,7 +107189,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 359
+      "timeToDamage": 344
     },
     {
       "tick": 73196,
@@ -107235,7 +107235,7 @@
       "weaponName": "SG 553",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 1406
+      "timeToDamage": 1484
     },
     {
       "tick": 73215,
@@ -107419,7 +107419,7 @@
       "weaponName": "USP-S",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 641
+      "timeToDamage": 625
     },
     {
       "tick": 76569,
@@ -107488,7 +107488,7 @@
       "weaponName": "Glock-18",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 1188
+      "timeToDamage": 1172
     },
     {
       "tick": 76612,
@@ -107626,7 +107626,7 @@
       "weaponName": "Glock-18",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 1234
+      "timeToDamage": 1219
     },
     {
       "tick": 76772,
@@ -107764,7 +107764,7 @@
       "weaponName": "Glock-18",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 2734
+      "timeToDamage": 969
     },
     {
       "tick": 77647,
@@ -108017,7 +108017,7 @@
       "weaponName": "P250",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 1078
+      "timeToDamage": 1063
     },
     {
       "tick": 78934,
@@ -108063,7 +108063,7 @@
       "weaponName": "Desert Eagle",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 469
+      "timeToDamage": 438
     },
     {
       "tick": 81734,
@@ -108132,7 +108132,7 @@
       "weaponName": "Desert Eagle",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 391
+      "timeToDamage": 328
     },
     {
       "tick": 82190,
@@ -108224,7 +108224,7 @@
       "weaponName": "Desert Eagle",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 453
+      "timeToDamage": 469
     },
     {
       "tick": 82388,
@@ -108339,7 +108339,7 @@
       "weaponName": "Desert Eagle",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 844
+      "timeToDamage": 859
     },
     {
       "tick": 83056,
@@ -108362,7 +108362,7 @@
       "weaponName": "Desert Eagle",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 734
+      "timeToDamage": 641
     },
     {
       "tick": 83109,
@@ -108385,7 +108385,7 @@
       "weaponName": "Glock-18",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 1344
+      "timeToDamage": 1328
     },
     {
       "tick": 83135,
@@ -108523,7 +108523,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 391
+      "timeToDamage": 359
     },
     {
       "tick": 83358,
@@ -108615,7 +108615,7 @@
       "weaponName": "P250",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 422
+      "timeToDamage": 359
     },
     {
       "tick": 83842,
@@ -108661,7 +108661,7 @@
       "weaponName": "MP9",
       "weaponType": "smg",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 797
+      "timeToDamage": 781
     },
     {
       "tick": 83871,
@@ -108753,7 +108753,7 @@
       "weaponName": "Desert Eagle",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 1484
+      "timeToDamage": 1406
     },
     {
       "tick": 85554,
@@ -108776,7 +108776,7 @@
       "weaponName": "Desert Eagle",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 1063
+      "timeToDamage": 1016
     },
     {
       "tick": 85695,
@@ -108868,7 +108868,7 @@
       "weaponName": "MP7",
       "weaponType": "smg",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 641
+      "timeToDamage": 625
     },
     {
       "tick": 86698,
@@ -108937,7 +108937,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 906
+      "timeToDamage": 891
     },
     {
       "tick": 91313,
@@ -109006,7 +109006,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 406
+      "timeToDamage": 375
     },
     {
       "tick": 91371,
@@ -109236,7 +109236,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 563
+      "timeToDamage": 531
     },
     {
       "tick": 92653,
@@ -109282,7 +109282,7 @@
       "weaponName": "Galil AR",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 547
+      "timeToDamage": 531
     },
     {
       "tick": 93227,
@@ -109512,7 +109512,7 @@
       "weaponName": "MP9",
       "weaponType": "smg",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 469
+      "timeToDamage": 453
     },
     {
       "tick": 93632,
@@ -109650,7 +109650,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 406
+      "timeToDamage": 391
     },
     {
       "tick": 97222,
@@ -109696,7 +109696,7 @@
       "weaponName": "AWP",
       "weaponType": "sniper",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 500
+      "timeToDamage": 469
     },
     {
       "tick": 99635,
@@ -109788,7 +109788,7 @@
       "weaponName": "MP9",
       "weaponType": "smg",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 406
+      "timeToDamage": 391
     },
     {
       "tick": 100110,
@@ -109949,7 +109949,7 @@
       "weaponName": "Desert Eagle",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 2328
+      "timeToDamage": 2313
     },
     {
       "tick": 100897,
@@ -110386,7 +110386,7 @@
       "weaponName": "MP9",
       "weaponType": "smg",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 1469
+      "timeToDamage": 1484
     },
     {
       "tick": 102845,
@@ -110409,7 +110409,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 750
+      "timeToDamage": 734
     },
     {
       "tick": 102851,
@@ -110501,7 +110501,7 @@
       "weaponName": "AWP",
       "weaponType": "sniper",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 391
+      "timeToDamage": 375
     },
     {
       "tick": 106445,
@@ -110524,7 +110524,7 @@
       "weaponName": "AWP",
       "weaponType": "sniper",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 422
+      "timeToDamage": 406
     },
     {
       "tick": 106895,
@@ -110593,7 +110593,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 656
+      "timeToDamage": 641
     },
     {
       "tick": 107683,
@@ -110754,7 +110754,7 @@
       "weaponName": "AUG",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 344
+      "timeToDamage": 313
     },
     {
       "tick": 108621,
@@ -110777,7 +110777,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 406
+      "timeToDamage": 375
     },
     {
       "tick": 108622,
@@ -111214,7 +111214,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 484
+      "timeToDamage": 500
     },
     {
       "tick": 114802,
@@ -111237,7 +111237,7 @@
       "weaponName": "PP-Bizon",
       "weaponType": "smg",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 547
+      "timeToDamage": 531
     },
     {
       "tick": 114808,
@@ -111421,7 +111421,7 @@
       "weaponName": "MP9",
       "weaponType": "smg",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 297
+      "timeToDamage": 313
     },
     {
       "tick": 115439,
@@ -111536,7 +111536,7 @@
       "weaponName": "M4A4",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 328
+      "timeToDamage": 313
     },
     {
       "tick": 115940,
@@ -111559,7 +111559,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 656
+      "timeToDamage": 641
     },
     {
       "tick": 115946,
@@ -111628,7 +111628,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 484
+      "timeToDamage": 422
     },
     {
       "tick": 116975,
@@ -111697,7 +111697,7 @@
       "weaponName": "M4A4",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 563
+      "timeToDamage": 531
     },
     {
       "tick": 117015,
@@ -111743,7 +111743,7 @@
       "weaponName": "MAC-10",
       "weaponType": "smg",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 375
+      "timeToDamage": 344
     },
     {
       "tick": 119530,
@@ -111996,7 +111996,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 344
+      "timeToDamage": 359
     },
     {
       "tick": 120462,
@@ -112134,7 +112134,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 266
+      "timeToDamage": -1
     },
     {
       "tick": 120730,
@@ -112226,7 +112226,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 406
+      "timeToDamage": 391
     },
     {
       "tick": 121773,
@@ -112341,7 +112341,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 328
+      "timeToDamage": 313
     },
     {
       "tick": 122118,
@@ -112387,7 +112387,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 609
+      "timeToDamage": 578
     },
     {
       "tick": 123702,
@@ -112456,7 +112456,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 313
+      "timeToDamage": 297
     },
     {
       "tick": 127799,
@@ -112479,7 +112479,7 @@
       "weaponName": "AWP",
       "weaponType": "sniper",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 547
+      "timeToDamage": 531
     },
     {
       "tick": 127910,
@@ -112502,7 +112502,7 @@
       "weaponName": "MP9",
       "weaponType": "smg",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 344
+      "timeToDamage": 406
     },
     {
       "tick": 127914,
@@ -112617,7 +112617,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 234
+      "timeToDamage": 266
     },
     {
       "tick": 128292,
@@ -112686,7 +112686,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 1000
+      "timeToDamage": 859
     },
     {
       "tick": 128317,
@@ -112778,7 +112778,7 @@
       "weaponName": "AWP",
       "weaponType": "sniper",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 594
+      "timeToDamage": 578
     },
     {
       "tick": 130643,
@@ -112824,7 +112824,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 516
+      "timeToDamage": 500
     },
     {
       "tick": 130651,
@@ -113146,7 +113146,7 @@
       "weaponName": "FAMAS",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 469
+      "timeToDamage": 484
     },
     {
       "tick": 137981,
@@ -113307,7 +113307,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 672
+      "timeToDamage": 656
     },
     {
       "tick": 138299,
@@ -113399,7 +113399,7 @@
       "weaponName": "FAMAS",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 2156
+      "timeToDamage": 578
     },
     {
       "tick": 138826,
@@ -113537,7 +113537,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 422
+      "timeToDamage": 484
     },
     {
       "tick": 138908,
@@ -113629,7 +113629,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 406
+      "timeToDamage": 375
     },
     {
       "tick": 140620,
@@ -113767,7 +113767,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 953
+      "timeToDamage": 938
     },
     {
       "tick": 141838,
@@ -113836,7 +113836,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 516
+      "timeToDamage": 500
     },
     {
       "tick": 144128,
@@ -113974,7 +113974,7 @@
       "weaponName": "MAC-10",
       "weaponType": "smg",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 297
+      "timeToDamage": 266
     },
     {
       "tick": 144295,
@@ -114043,7 +114043,7 @@
       "weaponName": "Dual Berettas",
       "weaponType": "pistol",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 750
+      "timeToDamage": 781
     },
     {
       "tick": 144318,
@@ -114319,7 +114319,7 @@
       "weaponName": "AK-47",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 484
+      "timeToDamage": 453
     },
     {
       "tick": 145461,
@@ -114342,7 +114342,7 @@
       "weaponName": "FAMAS",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 578
+      "timeToDamage": 563
     },
     {
       "tick": 145467,
@@ -114434,7 +114434,7 @@
       "weaponName": "M4A1",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 500
+      "timeToDamage": 484
     },
     {
       "tick": 145505,
@@ -114549,7 +114549,7 @@
       "weaponName": "MP9",
       "weaponType": "smg",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 281
+      "timeToDamage": 313
     },
     {
       "tick": 146011,
@@ -114595,7 +114595,7 @@
       "weaponName": "PP-Bizon",
       "weaponType": "smg",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 391
+      "timeToDamage": 375
     },
     {
       "tick": 146015,
@@ -114825,7 +114825,7 @@
       "weaponName": "FAMAS",
       "weaponType": "rifle",
       "weaponUniqueId": "redacted",
-      "timeToDamage": 1250
+      "timeToDamage": 1266
     },
     {
       "tick": 148554,
