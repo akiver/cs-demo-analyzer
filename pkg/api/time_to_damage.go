@@ -253,10 +253,12 @@ func newPlayerSnapshot(player *common.Player) playerSnapshot {
 		return playerSnapshot{}
 	}
 
+	weapon := player.ActiveWeapon()
+	isScoped := player.IsScoped()
 	fovTanHorizontal, fovTanVertical := defaultFovTanHorizontal, defaultFovTanVertical
-	if player.IsScoped() {
+	if isScoped {
 		fov := scopedFovDegrees
-		if weapon := player.ActiveWeapon(); weapon != nil && weapon.ZoomLevel() == common.ZoomFull {
+		if weapon != nil && weapon.ZoomLevel() == common.ZoomFull {
 			fov = fullScopedFovDegrees
 		}
 		fovTanHorizontal, fovTanVertical = fovTangents(fov)
@@ -271,7 +273,7 @@ func newPlayerSnapshot(player *common.Player) playerSnapshot {
 		eyes.Z += defaultEyesHeight
 	}
 
-	return playerSnapshot{
+	snapshot := playerSnapshot{
 		recorded:         true,
 		isAlive:          true,
 		origin:           origin,
@@ -282,6 +284,12 @@ func newPlayerSnapshot(player *common.Player) playerSnapshot {
 		fovTanVertical:   fovTanVertical,
 		isBlinded:        player.FlashDurationTimeRemaining().Seconds() > blindedMinRemainingSeconds,
 	}
+
+	stance := visibility.StanceOf(snapshot.eyesHeight(), player.IsAirborne())
+	isMoving := visibility.IsMoving(player.Velocity())
+	snapshot.hitboxTemplate = visibility.GetHitboxTemplate(stance, isMoving, visibility.WeaponKindOf(weapon, isScoped))
+
+	return snapshot
 }
 
 // normalizePitch converts a pitch from the [0, 360[ range to [-180, 180[.
@@ -501,7 +509,7 @@ func (tracker *visibilityTracker) isVisible(frame *visibilityFrame, attackerSlot
 	}
 
 	forward, right, up := attacker.viewBasis()
-	for _, point := range hitboxPoints {
+	for _, point := range victim.hitboxPoints() {
 		position := victim.hitboxPoint(point)
 		if !attacker.isInFieldOfView(position, forward, right, up) {
 			continue

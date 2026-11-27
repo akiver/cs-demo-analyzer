@@ -4,50 +4,13 @@ import (
 	"math"
 
 	csmath "github.com/akiver/cs-demo-analyzer/internal/math"
+	"github.com/akiver/cs-demo-analyzer/internal/visibility"
 	"github.com/golang/geo/r3"
 )
 
-// Demos don't contain players' bones, the body of a player is approximated with points placed from its origin (feet),
-// eyes height (lower when crouching) and yaw. A player is visible when any of these points can be seen.
-
-type hitboxPoint struct {
-	forward float64 // Units along the yaw direction
-	right   float64 // Units to the right of the yaw direction
-	height  float64 // Fraction of the eyes height
-}
-
-// Ordered from the most to the least likely visible point when peeking to exit early.
-var hitboxPoints = [...]hitboxPoint{
-	{0, 0, 1},      // Head (eyes)
-	{2, 0, 0.72},   // Chest
-	{0, 0, 1.08},   // Top of the head
-	{0, 10, 0.82},  // Right shoulder
-	{0, -10, 0.82}, // Left shoulder
-	{26, 4, 0.82},  // Gun muzzle
-	{12, 4, 0.78},  // Hands
-	{0, 0, 0.88},   // Neck
-	{0, 0, 0.6},    // Stomach
-	{0, 5, 0.48},   // Right hip
-	{0, -5, 0.48},  // Left hip
-	{0, 5, 0.25},   // Right knee
-	{0, -5, 0.25},  // Left knee
-	{0, 6, 0.04},   // Right foot
-	{0, -6, 0.04},  // Left foot
-	{0, 0, 0.4},    // Pelvis
-	{-4, 0, 0.7},   // Back
-	{0, 12, 0.66},  // Right elbow
-	{0, -12, 0.66}, // Left elbow
-	{18, -2, 0.8},  // Left hand on the gun
-	{0, 0, 0.14},   // Shins
-	{6, 0, 0.94},   // Face
-	{-3, 0, 0.98},  // Back of the head
-	{0, 7, 0.55},   // Right flank
-	{0, -7, 0.55},  // Left flank
-	{3, 0, 0.32},   // Thighs
-	{0, 0, 0.75},   // Upper chest
-	{-2, 6, 0.36},  // Right buttock
-	{-2, -6, 0.36}, // Left buttock
-}
+// Demos don't contain players' bones, the body of a player is approximated with the points of a hitbox template placed
+// from its origin (feet), eyes height (lower when crouching) and yaw, see internal/visibility/hitbox.go. A player is
+// visible when any of these points can be seen.
 
 const (
 	// Eyes height when standing, used when the view offset is not available.
@@ -77,6 +40,22 @@ type playerSnapshot struct {
 	fovTanVertical   float64
 	// The player is too blinded by a flashbang to see.
 	isBlinded bool
+	// Body of the player for its pose, the default standing pose when nil.
+	hitboxTemplate *visibility.HitboxTemplate
+}
+
+var defaultHitboxTemplate = visibility.GetHitboxTemplate(visibility.StanceStanding, false, visibility.WeaponKindRifle)
+
+func (snapshot *playerSnapshot) hitboxPoints() []visibility.HitboxPoint {
+	return snapshot.template().Points
+}
+
+func (snapshot *playerSnapshot) template() *visibility.HitboxTemplate {
+	if snapshot.hitboxTemplate == nil {
+		return defaultHitboxTemplate
+	}
+
+	return snapshot.hitboxTemplate
 }
 
 // fovTangents returns the horizontal and vertical tangents of half the field of view for a 4:3 fov in degrees.
@@ -86,19 +65,24 @@ func fovTangents(fovDegrees float64) (float64, float64) {
 	return tan * defaultFovTanHorizontal, tan * defaultFovTanVertical
 }
 
-func (snapshot *playerSnapshot) hitboxPoint(point hitboxPoint) r3.Vector {
+func (snapshot *playerSnapshot) eyesHeight() float64 {
 	eyesHeight := snapshot.eyes.Z - snapshot.origin.Z
 	if eyesHeight <= 0 {
-		eyesHeight = defaultEyesHeight
+		return defaultEyesHeight
 	}
 
+	return eyesHeight
+}
+
+// hitboxPoint returns the world position of a point of the player's template, scaled vertically by the eyes height.
+func (snapshot *playerSnapshot) hitboxPoint(point visibility.HitboxPoint) r3.Vector {
 	yaw := snapshot.yaw * math.Pi / 180
 	cos, sin := math.Cos(yaw), math.Sin(yaw)
 
 	return r3.Vector{
-		X: snapshot.origin.X + point.forward*cos + point.right*sin,
-		Y: snapshot.origin.Y + point.forward*sin - point.right*cos,
-		Z: snapshot.origin.Z + point.height*eyesHeight,
+		X: snapshot.origin.X + point.Forward*cos + point.Right*sin,
+		Y: snapshot.origin.Y + point.Forward*sin - point.Right*cos,
+		Z: snapshot.origin.Z + point.Up*snapshot.eyesHeight()/snapshot.template().EyesHeight,
 	}
 }
 

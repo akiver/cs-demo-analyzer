@@ -1,6 +1,7 @@
 package api
 
 import (
+	"math"
 	"testing"
 
 	"github.com/akiver/cs-demo-analyzer/internal/visibility"
@@ -361,25 +362,31 @@ func TestFieldOfView(t *testing.T) {
 
 func TestHitboxPointsFollowYawAndCrouch(t *testing.T) {
 	standing := snapshotAt(r3.Vector{X: 100, Y: 100, Z: 0}, 90)
-	head := standing.hitboxPoint(hitboxPoint{0, 0, 1})
-	if head != standing.eyes {
+	templateEyesHeight := standing.template().EyesHeight
+	point := visibility.HitboxPoint{Forward: 0, Right: 0, Up: templateEyesHeight}
+	if head := standing.hitboxPoint(point); head != standing.eyes {
 		t.Errorf("head = %v, want the eyes %v", head, standing.eyes)
 	}
 
-	// Facing +Y, the right side is +X and the muzzle is in front.
-	rightShoulder := standing.hitboxPoint(hitboxPoint{0, 10, 0.82})
-	if rightShoulder.X <= standing.origin.X {
-		t.Errorf("right shoulder %v should be at +X when facing +Y", rightShoulder)
+	// Facing +Y, the right side is +X and the front is +Y.
+	right := standing.hitboxPoint(visibility.HitboxPoint{Right: 10, Up: 50})
+	if right.X != standing.origin.X+10 {
+		t.Errorf("right point %v should be at +X when facing +Y", right)
 	}
-	muzzle := standing.hitboxPoint(hitboxPoint{26, 4, 0.82})
-	if muzzle.Y <= standing.origin.Y+20 {
-		t.Errorf("muzzle %v should be in front when facing +Y", muzzle)
+	front := standing.hitboxPoint(visibility.HitboxPoint{Forward: 20, Up: 50})
+	if front.Y != standing.origin.Y+20 {
+		t.Errorf("front point %v should be at +Y when facing +Y", front)
 	}
 
 	crouching := standing
 	crouching.eyes.Z = crouching.origin.Z + 46
-	if crouching.hitboxPoint(hitboxPoint{0, 0, 1}).Z != 46 {
-		t.Error("the head must follow the eyes height when crouching")
+	if z := crouching.hitboxPoint(point).Z; math.Abs(z-46) > 1e-9 {
+		t.Errorf("the head must follow the eyes height when crouching, got %v", z)
+	}
+
+	// The top of the head is above the eyes.
+	if top := standing.hitboxPoint(standing.hitboxPoints()[0]); top.Z <= standing.eyes.Z {
+		t.Errorf("the first point %v should be the top of the head, above the eyes %v", top, standing.eyes)
 	}
 }
 
